@@ -1,0 +1,22 @@
+# Local secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+
+# Scratch files and generated artifacts
+tmp/
+output/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# Local editor and OS files
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+*.log
