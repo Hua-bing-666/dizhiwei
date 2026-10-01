@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 Z" fill="#156078"/></marker></defs>
+<rect width="1200" height="660" fill="#f7f9fa"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#19303b"><text x="45" y="52" font-size="28" font-weight="bold">拟定台架与监测结构</text><text x="45" y="83" font-size="17" fill="#965426">设计示意 · 尚未搭建实物 · 阀态获取方式需现场确认</text>
+<g stroke="#156078" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M215,230 H330"/><path d="M480,230 H565 V175 H665"/><path d="M565,230 V305 H665"/><path d="M865,175 H1010 V390 H190 V278"/><path d="M865,305 H1010"/></g>
+<g fill="#fff" stroke="#b9ced6" stroke-width="2"><rect x="45" y="170" width="170" height="110" rx="12"/><rect x="330" y="185" width="150" height="90" rx="12"/><rect x="665" y="125" width="200" height="100" rx="12"/><rect x="665" y="265" width="200" height="80" rx="12"/></g>
+<g text-anchor="middle" font-size="20"><text x="130" y="210">水箱 / 水源</text><text x="130" y="246">泵、过滤与调压</text><text x="405" y="235">分水 / 回水</text><text x="765" y="163">A：受监测支路</text><text x="765" y="196" font-size="16">压力、流量、可控异常</text><text x="765" y="300">B：轮灌切换支路</text><text x="765" y="326" font-size="16">手动阀与操作时间记录</text></g>
+<text x="510" y="420" font-size="16">清水回路；泄漏旁路回水箱；节流模拟供水受限</text>
+<g fill="#e8f2f5" stroke="#b9ced6" stroke-width="2"><rect x="45" y="485" width="215" height="95" rx="12"/><rect x="345" y="485" width="215" height="95" rx="12"/><rect x="645" y="485" width="180" height="95" rx="12"/><rect x="910" y="485" width="235" height="95" rx="12"/></g>
+<g stroke="#156078" stroke-width="3" marker-end="url(#arrow)"><path d="M260,533 H340"/><path d="M560,533 H640"/><path d="M825,533 H905"/></g>
+<g text-anchor="middle" font-size="20"><text x="153" y="523">压力 / 流量测量</text><text x="153" y="553" font-size="16">参考标定与原始值</text><text x="453" y="523">主控监测节点</text><text x="453" y="553" font-size="16">固定测量、记录与告警</text><text x="735" y="523">LoRa 点对点</text><text x="735" y="553" font-size="16">事件与心跳上报</text><text x="1028" y="523">接收端 → 笔记本</text><text x="1028" y="553" font-size="16">接收日志、曲线与告警</text></g>
+<text x="45" y="625" font-size="17" fill="#596d77">首期：1 个监测节点 + 1 个接收端。先有线采集与标定，再完成无线和整机能耗试验。</text></g></svg>
