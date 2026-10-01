@@ -18,6 +18,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 FIG.mkdir(parents=True, exist_ok=True)
 plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
+plt.rcParams['svg.hashsalt'] = 'dizhiwei-20261002'
 COLORS = ['#156078', '#dc7038', '#468a63', '#7654a3']
 
 
@@ -87,7 +88,7 @@ stats = {}
 for key,d in bundle.items():
     with (OUT / f'{key}.csv').open('w', newline='', encoding='utf-8-sig') as f:
         cols = [k for k in d if k != 'name']
-        w = csv.writer(f); w.writerow(cols); w.writerows(zip(*(d[k] for k in cols)))
+        w = csv.writer(f, lineterminator='\n'); w.writerow(cols); w.writerows(zip(*(d[k] for k in cols)))
     stats[key] = {'name':d['name'], 'periodic_packets':sum(d['periodic']),
                   'periodic_priority_packets':sum(d['priority']), 'event_packets':sum(d['event'])}
     fig, axes = plt.subplots(3,1,figsize=(11,7.7),sharex=True,gridspec_kw={'height_ratios':[2,2,1]})
@@ -106,7 +107,10 @@ for key,d in bundle.items():
     axes[2].legend(loc='upper right',fontsize=9,ncol=3);axes[2].grid(alpha=.2)
     fig.text(.07,.012,'黄色：B支路正常开启；橙色：人为设定异常。参数未标定；未计入无线丢包、整机能耗和真实滴头堵塞。',fontsize=9)
     fig.tight_layout(rect=[0,.025,1,.965])
-    for ext in ['png','svg']:fig.savefig(FIG/f'{key}.{ext}',dpi=180)
+    fig.savefig(FIG/f'{key}.png', dpi=180)
+    svg = FIG/f'{key}.svg'
+    fig.savefig(svg, metadata={'Date': None})
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n', encoding='utf-8')
     plt.close(fig)
 
 (OUT/'scenarios.json').write_text(json.dumps(bundle,ensure_ascii=False),encoding='utf-8')
