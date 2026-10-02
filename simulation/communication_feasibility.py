@@ -130,7 +130,7 @@ def main():
     (OUT/'summary.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
     with (OUT/'trials.csv').open('w',encoding='utf-8-sig',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(trials[0]),lineterminator='\n');w.writeheader();w.writerows(trials)
-    
+
     fig,axes=plt.subplots(1,2,figsize=(12,5.8))
     for ax,key,title in zip(axes,['normal','noise'],['正常轮灌','较大噪声']):
         rows=[r for r in summaries if r['case']==key and r['loss']==.1]

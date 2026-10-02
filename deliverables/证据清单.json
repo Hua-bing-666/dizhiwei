@@ -35,8 +35,8 @@
     },
     {
       "path": "simulation/communication_feasibility.py",
-      "sha256": "d9ca9890441a64c2398de9cc71e0a35d6eb44ca59b263a16f84fac00b0895464",
-      "bytes": 9249
+      "sha256": "67d3e17987d6a6c3e8308a416a317aeeda9623e4c08dd2fda2e333736d0cd0b6",
+      "bytes": 9245
     },
     {
       "path": "simulation/COMMUNICATION.md",
