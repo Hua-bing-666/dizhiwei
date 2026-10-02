@@ -22,40 +22,59 @@ plt.rcParams['svg.hashsalt'] = 'dizhiwei-20261002'
 COLORS = ['#156078', '#dc7038', '#468a63', '#7654a3']
 
 
-def equilibrium(b_open, fault):
+def equilibrium(b_open, fault, *, source_pressure=120, common_resistance=.4,
+                leak_delta=.18, restriction_extra=8):
+    if source_pressure <= 0 or common_resistance < 0 or leak_delta < 0 or restriction_extra < 0:
+        raise ValueError('Invalid positive-pressure/resistance model parameters')
     # kPa and L/min. Equivalent quadratic resistances; not emitter-level CFD.
-    c_a = .35 + (.18 if fault == 'leak' else 0.)
-    r_a = .8 + (8. if fault == 'restriction' else 0.)
+    c_a = .35 + (leak_delta if fault == 'leak' else 0.)
+    r_a = .8 + (restriction_extra if fault == 'restriction' else 0.)
     g_a = c_a / np.sqrt(1 + r_a * c_a**2)
     g_b = .35 / np.sqrt(1 + .8 * .35**2) if b_open else 0.
-    p = 120 / (1 + .4 * (g_a + g_b)**2)
+    p = source_pressure / (1 + common_resistance * (g_a + g_b)**2)
     q_a = g_a * np.sqrt(p)
     # Sensor A: after added restriction, before equivalent emitter load.
-    p_sensor = p - (8. * q_a**2 if fault == 'restriction' else 0.)
+    p_sensor = p - (restriction_extra * q_a**2 if fault == 'restriction' else 0.)
     return p, p_sensor, q_a
 
 
-def simulate(kind):
-    rng = np.random.default_rng(20261002)  # common noise realization for illustration
+def simulate(kind, *, seed=20261002, common_resistance=.4, leak_delta=.18,
+             restriction_extra=8, noise_pressure=.6, noise_flow=.02,
+             actual_tau=6, reference_tau=9, valve_delay=0, valve_unavailable=False,
+             source_change=0, pressure_drift=0, flow_drift=0, duration=None):
+    if kind not in {'normal','leak','restriction','overlap'}:
+        raise ValueError('Unknown synthetic scenario')
+    if min(actual_tau,reference_tau) <= 0 or min(noise_pressure,noise_flow,valve_delay) < 0:
+        raise ValueError('Invalid time constant, noise or valve delay')
+    if source_change <= -120 or (duration is not None and not 1 <= duration <= 100):
+        raise ValueError('Invalid source pressure change or short-event duration')
+    rng = np.random.default_rng(seed)
     t = np.arange(601)
     b = (t >= 180) & (t < 300)
     start, end = (190, 280) if kind == 'overlap' else (360, 500)
+    if duration is not None:
+        end = start + duration
     fault = (t >= start) & (t < end) if kind != 'normal' else np.zeros(len(t), bool)
     p = np.zeros(len(t)); q = np.zeros(len(t))
     ep = np.zeros(len(t)); eq = np.zeros(len(t))
-    p[0], q[0] = equilibrium(False, '')[1:]
+    p[0], q[0] = equilibrium(False, '', common_resistance=common_resistance)[1:]
     ep[0], eq[0] = p[0], q[0]
     for i in range(1, len(t)):
         f = ('restriction' if kind == 'restriction' else 'leak') if fault[i] else ''
-        _, ps, qs = equilibrium(bool(b[i]), f)
-        _, ps0, qs0 = equilibrium(bool(b[i]), '')
+        source = 120 + (source_change if 360 <= i < 500 else 0)
+        _, ps, qs = equilibrium(bool(b[i]), f, source_pressure=source,
+                               common_resistance=common_resistance,
+                               leak_delta=leak_delta, restriction_extra=restriction_extra)
+        reference_open = False if valve_unavailable else bool(b[max(0, i-valve_delay)])
+        _, ps0, qs0 = equilibrium(reference_open, '', common_resistance=common_resistance)
         # First-order illustrative dynamics. Reference deliberately has different tau.
-        p[i] = p[i-1] + (ps-p[i-1])*(1-np.exp(-1/6))
-        q[i] = q[i-1] + (qs-q[i-1])*(1-np.exp(-1/6))
-        ep[i] = ep[i-1] + (ps0-ep[i-1])*(1-np.exp(-1/9))
-        eq[i] = eq[i-1] + (qs0-eq[i-1])*(1-np.exp(-1/9))
-    p += rng.normal(0, .6, len(t))
-    q += rng.normal(0, .02, len(t))
+        p[i] = p[i-1] + (ps-p[i-1])*(1-np.exp(-1/actual_tau))
+        q[i] = q[i-1] + (qs-q[i-1])*(1-np.exp(-1/actual_tau))
+        ep[i] = ep[i-1] + (ps0-ep[i-1])*(1-np.exp(-1/reference_tau))
+        eq[i] = eq[i-1] + (qs0-eq[i-1])*(1-np.exp(-1/reference_tau))
+    drift = np.clip((t-60)/540, 0, 1)
+    p += rng.normal(0, noise_pressure, len(t)) + pressure_drift*drift
+    q += rng.normal(0, noise_flow, len(t)) + flow_drift*drift
     raw = (abs(p-ep) > 6) | (abs(q-eq) > .15)
     alarm = np.zeros(len(t), bool)
     run = 0
@@ -81,41 +100,46 @@ def simulate(kind):
     return {k: np.round(v, 4).tolist() if v.dtype.kind == 'f' else v.astype(int).tolist() for k,v in data.items()}
 
 
-NAMES = {'normal':'正常轮灌', 'leak':'稳定期等效泄漏',
-         'restriction':'稳定期节流', 'overlap':'轮灌切换期间等效泄漏'}
-bundle = {k: dict(name=name, **simulate(k)) for k,name in NAMES.items()}
-stats = {}
-for key,d in bundle.items():
-    with (OUT / f'{key}.csv').open('w', newline='', encoding='utf-8-sig') as f:
-        cols = [k for k in d if k != 'name']
-        w = csv.writer(f, lineterminator='\n'); w.writerow(cols); w.writerows(zip(*(d[k] for k in cols)))
-    stats[key] = {'name':d['name'], 'periodic_packets':sum(d['periodic']),
-                  'periodic_priority_packets':sum(d['priority']), 'event_packets':sum(d['event'])}
-    fig, axes = plt.subplots(3,1,figsize=(11,7.7),sharex=True,gridspec_kw={'height_ratios':[2,2,1]})
-    fig.suptitle(d['name']+'｜简化模型仿真 · 非实测数据', fontsize=15)
-    for ax,field,expected,label in zip(axes[:2], ['pressure','flow'], ['expected_pressure','expected_flow'], ['A支路压力 / kPa','A支路流量 / (L/min)']):
-        ax.plot(d['t'], d[field],color=COLORS[0],lw=1.5,label='模拟传感器读数')
-        ax.plot(d['t'], d[expected],color=COLORS[2],lw=1.3,ls='--',label='已知阀态的健康参考（假设）')
-        for a,z in [(180,300)]: ax.axvspan(a,z,color='#e8bc48',alpha=.13)
-        fi=np.flatnonzero(d['fault'])
-        if len(fi): ax.axvspan(fi[0],fi[-1],color='#dc7038',alpha=.14)
-        ax.set_ylabel(label); ax.grid(alpha=.2); ax.legend(loc='best',fontsize=9)
-    axes[2].step(d['t'],d['valve'],label='B支路开启',color=COLORS[2])
-    axes[2].step(d['t'],np.array(d['alarm'])*.8,label='示意告警（为便于阅读移至0.8）',color=COLORS[1])
-    axes[2].scatter(np.array(d['t'])[np.array(d['event'],bool)],np.full(sum(d['event']),-.2),s=9,label='事件上报')
-    axes[2].set_yticks([0,1]);axes[2].set_ylabel('状态 / 0或1');axes[2].set_xlabel('时间 / s')
-    axes[2].legend(loc='upper right',fontsize=9,ncol=3);axes[2].grid(alpha=.2)
-    fig.text(.07,.012,'黄色：B支路正常开启；橙色：人为设定异常。参数未标定；未计入无线丢包、整机能耗和真实滴头堵塞。',fontsize=9)
-    fig.tight_layout(rect=[0,.025,1,.965])
-    fig.savefig(FIG/f'{key}.png', dpi=180)
-    svg = FIG/f'{key}.svg'
-    fig.savefig(svg, metadata={'Date': None})
-    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n', encoding='utf-8')
-    plt.close(fig)
+def main():
+    NAMES = {'normal':'正常轮灌', 'leak':'稳定期等效泄漏',
+             'restriction':'稳定期节流', 'overlap':'轮灌切换期间等效泄漏'}
+    bundle = {k: dict(name=name, **simulate(k)) for k,name in NAMES.items()}
+    stats = {}
+    for key,d in bundle.items():
+        with (OUT / f'{key}.csv').open('w', newline='', encoding='utf-8-sig') as f:
+            cols = [k for k in d if k != 'name']
+            w = csv.writer(f, lineterminator='\n'); w.writerow(cols); w.writerows(zip(*(d[k] for k in cols)))
+        stats[key] = {'name':d['name'], 'periodic_packets':sum(d['periodic']),
+                      'periodic_priority_packets':sum(d['priority']), 'event_packets':sum(d['event'])}
+        fig, axes = plt.subplots(3,1,figsize=(11,7.7),sharex=True,gridspec_kw={'height_ratios':[2,2,1]})
+        fig.suptitle(d['name']+'｜简化模型仿真 · 非实测数据', fontsize=15)
+        for ax,field,expected,label in zip(axes[:2], ['pressure','flow'], ['expected_pressure','expected_flow'], ['A支路压力 / kPa','A支路流量 / (L/min)']):
+            ax.plot(d['t'], d[field],color=COLORS[0],lw=1.5,label='模拟传感器读数')
+            ax.plot(d['t'], d[expected],color=COLORS[2],lw=1.3,ls='--',label='已知阀态的健康参考（假设）')
+            for a,z in [(180,300)]: ax.axvspan(a,z,color='#e8bc48',alpha=.13)
+            fi=np.flatnonzero(d['fault'])
+            if len(fi): ax.axvspan(fi[0],fi[-1],color='#dc7038',alpha=.14)
+            ax.set_ylabel(label); ax.grid(alpha=.2); ax.legend(loc='best',fontsize=9)
+        axes[2].step(d['t'],d['valve'],label='B支路开启',color=COLORS[2])
+        axes[2].step(d['t'],np.array(d['alarm'])*.8,label='示意告警（为便于阅读移至0.8）',color=COLORS[1])
+        axes[2].scatter(np.array(d['t'])[np.array(d['event'],bool)],np.full(sum(d['event']),-.2),s=9,label='事件上报')
+        axes[2].set_yticks([0,1]);axes[2].set_ylabel('状态 / 0或1');axes[2].set_xlabel('时间 / s')
+        axes[2].legend(loc='upper right',fontsize=9,ncol=3);axes[2].grid(alpha=.2)
+        fig.text(.07,.012,'黄色：B支路正常开启；橙色：人为设定异常。参数未标定；未计入无线丢包、整机能耗和真实滴头堵塞。',fontsize=9)
+        fig.tight_layout(rect=[0,.025,1,.965])
+        fig.savefig(FIG/f'{key}.png', dpi=180)
+        svg = FIG/f'{key}.svg'
+        fig.savefig(svg, metadata={'Date': None})
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n', encoding='utf-8', newline='\n')
+        plt.close(fig)
 
-(OUT/'scenarios.json').write_text(json.dumps(bundle,ensure_ascii=False),encoding='utf-8')
-(OUT/'packet_counts.json').write_text(json.dumps(stats,ensure_ascii=False,indent=2),encoding='utf-8')
-template=(ROOT/'simulation'/'viewer.template.html').read_text(encoding='utf-8')
-(ROOT/'application'/'仿真演示.html').write_text(template.replace('__SCENARIOS__',json.dumps(bundle,ensure_ascii=False)),encoding='utf-8')
-print(json.dumps(stats,ensure_ascii=False,indent=2))
-print('Generated four scenarios, figures and offline HTML. Physical checks passed.')
+    (OUT/'scenarios.json').write_text(json.dumps(bundle,ensure_ascii=False),encoding='utf-8',newline='\n')
+    (OUT/'packet_counts.json').write_text(json.dumps(stats,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
+    template=(ROOT/'simulation'/'viewer.template.html').read_text(encoding='utf-8')
+    (ROOT/'application'/'仿真演示.html').write_text(template.replace('__SCENARIOS__',json.dumps(bundle,ensure_ascii=False)),encoding='utf-8',newline='\n')
+    print(json.dumps(stats,ensure_ascii=False,indent=2))
+    print('Generated four scenarios, figures and offline HTML. Array/scheduling checks passed; not physical validation.')
+
+
+if __name__ == "__main__":
+    main()

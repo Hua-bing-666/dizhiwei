@@ -2,6 +2,8 @@
 
 本目录产生的全部曲线和数值是**人为设定参数下的模拟数据**。用途是研究方案论证与可视化，不是田间验证、既有研发成果或论文实测数据。
 
+原四场景是有利条件下的演示，不足以证明方法有效。新增 [对抗检验协议](AUDIT.md) 与 `adversarial_audit.py`，覆盖弱异常、信息失配、噪声/漂移、强基线及假定丢包；交互结果见 `application/对抗性检验.html`。这些仍是合成反例，不能替代实测。
+
 ## 复现
 
 安装 numpy、matplotlib 后，在仓库根目录执行 `python simulation/run_simulation.py`。结果在 `simulation/results/`，静态 PNG/SVG 在 `application/figures/`，离线交互页面在 `application/仿真演示.html`。浏览器打开 HTML 即可，无需服务器、账户或网络。
