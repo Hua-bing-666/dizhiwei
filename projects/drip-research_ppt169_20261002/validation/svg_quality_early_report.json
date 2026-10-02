@@ -4,35 +4,75 @@
   "target": "C:\\Users\\Lenovo\\Desktop\\大创想法\\projects\\drip-research_ppt169_20261002",
   "source_fingerprint": {
     "algorithm": "sha256",
-    "digest": "91183a8d2e326d12e48089d71e9642c9ce5d88f90ed7b599d9392928f762e5b6",
-    "file_count": 5,
+    "digest": "ff088cc3d4654c4bb05a7e57b2e6dd6226e0ed8538c87b58e26034737ae29b68",
+    "file_count": 15,
     "files": [
       {
         "file": "01_slide.svg",
-        "sha256": "ac57342571614cf9d3d68721e2958e2c8ca1d3fb9cc3343be9a65b503ce36db4"
+        "sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
       },
       {
         "file": "02_slide.svg",
-        "sha256": "324655270ffe0f2eade9ab0cce0fd11757c224099393591ec31c1147023e8097"
+        "sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
       },
       {
         "file": "03_slide.svg",
-        "sha256": "68e020a778d1759fe9f7e78bacfbf84dd1e0f1a44c5db4976a74ee3b530771d4"
+        "sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
       },
       {
         "file": "04_slide.svg",
-        "sha256": "71a57c99de288ddaa8c7556379cf45b148f4585a280acdd83e8133e208f68162"
+        "sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
       },
       {
         "file": "05_slide.svg",
-        "sha256": "5e33754203275199049d56de45f5d6e00f5c107af4b9cd3b142c4164da7cfd09"
+        "sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+      },
+      {
+        "file": "06_slide.svg",
+        "sha256": "e8a999f83cd4bdb8328943c80f1493c1dc4df0954a3264550fb919ff84dc47cf"
+      },
+      {
+        "file": "07_slide.svg",
+        "sha256": "46004111e70f411296f67b162f860aa42fd5ea34d89cea23b5d7aa0ab63dcd5a"
+      },
+      {
+        "file": "08_slide.svg",
+        "sha256": "a3a5c52360e00520dd7f63e885c7e50107f3c76e6e910c5f7b6cef6a1f762f46"
+      },
+      {
+        "file": "09_slide.svg",
+        "sha256": "3d82ca62dc4ea1a414d1f0bf9c078bba89f27b24cbf3d38818c2c9f1f54117d2"
+      },
+      {
+        "file": "10_slide.svg",
+        "sha256": "c491243281100964dbf7975551dcfc208319986b71a59b611d3cee7dd70810d3"
+      },
+      {
+        "file": "11_slide.svg",
+        "sha256": "d468422858e994f85de6acd457e83c190aab02b8e31d7640d0db5f3a49e534bb"
+      },
+      {
+        "file": "12_slide.svg",
+        "sha256": "0758e46b0f8f578d313cf9820ba4754c5c81a3e51787579358423ecd5394f7e1"
+      },
+      {
+        "file": "13_slide.svg",
+        "sha256": "6baf05e1ca0ce3492bb8b455210915bf45de9aef816e3aaac0eb2f83494143b4"
+      },
+      {
+        "file": "14_slide.svg",
+        "sha256": "5b1a3d8c0ee1caf4290aa2a8ddb9cb37eed589e9dd72ed0914e30a9dcdcf700e"
+      },
+      {
+        "file": "15_slide.svg",
+        "sha256": "070caaff37d54372f29415105d4416c56fe2011a308518f6291d15591381e948"
       }
     ]
   },
   "summary": {
-    "total": 5,
-    "passed": 0,
-    "warnings": 5,
+    "total": 15,
+    "passed": 15,
+    "warnings": 0,
     "errors": 0
   },
   "issue_types": {},
@@ -42,49 +82,8 @@
       "issues": []
     },
     "introduced": {
-      "count": 10,
-      "issues": [
-        {
-          "file": "01_slide.svg",
-          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "01_slide.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (14 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "02_slide.svg",
-          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "02_slide.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (11 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "03_slide.svg",
-          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "03_slide.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "04_slide.svg",
-          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "04_slide.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "05_slide.svg",
-          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "05_slide.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (16 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        }
-      ]
+      "count": 0,
+      "issues": []
     },
     "inherited": {
       "count": 0,
@@ -100,8 +99,16 @@
   },
   "drift": {
     "colors": {
+      "#83639B": [
+        "07_slide.svg"
+      ],
       "#F4ECE5": [
         "02_slide.svg"
+      ],
+      "#FFFFFF": [
+        "01_slide.svg",
+        "10_slide.svg",
+        "12_slide.svg"
       ]
     },
     "fonts": {},
@@ -109,14 +116,14 @@
   },
   "carrier_receipt": {
     "scope": "informational-not-a-quota",
-    "pages": 5,
+    "pages": 15,
     "totals": {
-      "text_elements": 64,
+      "text_elements": 252,
       "image_placements": 0,
       "icons": 0,
-      "svg_geometry_elements": 35,
+      "svg_geometry_elements": 115,
       "preset_shapes": 0,
-      "page_frame_elements": 10,
+      "page_frame_elements": 30,
       "marker_uses": 0,
       "inline_emphasis_runs": 0,
       "gradient_uses": 0,
@@ -127,7 +134,7 @@
       "images": 0,
       "icons": 0,
       "presets": 0,
-      "charts": 0,
+      "charts": 2,
       "tables": 0,
       "formulas": 1,
       "inline_emphasis_runs": 0,
@@ -137,17 +144,17 @@
     },
     "relationship_pages": 0,
     "geometry_elements": {
-      "circle": 4,
+      "circle": 16,
       "ellipse": 0,
-      "line": 20,
+      "line": 70,
       "path": 0,
       "polygon": 0,
-      "polyline": 0,
-      "rect": 11
+      "polyline": 2,
+      "rect": 27
     },
     "preset_names": {},
     "native_objects": {
-      "chart": 0,
+      "chart": 3,
       "formula_block": 0,
       "formula_inline": 1,
       "other": 0,
@@ -168,14 +175,11 @@
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\01_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [
-        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (14 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-      ],
+      "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 11,
+          "text_elements": 15,
           "images": {
             "placements": 0,
             "files": [],
@@ -218,25 +222,27 @@
         "fonts": [
           "Microsoft YaHei, Arial"
         ],
-        "text_elements": 11,
-        "tspan_elements": 2
+        "text_elements": 15,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "ac57342571614cf9d3d68721e2958e2c8ca1d3fb9cc3343be9a65b503ce36db4"
+      "source_sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
     },
     {
       "file": "02_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\02_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [
-        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (11 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-      ],
+      "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 11,
+          "text_elements": 15,
           "images": {
             "placements": 0,
             "files": [],
@@ -280,7 +286,7 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 11,
+        "text_elements": 15,
         "tspan_elements": 0,
         "contextual_values": {
           "colors": [
@@ -289,21 +295,18 @@
         }
       },
       "passed": true,
-      "source_sha256": "324655270ffe0f2eade9ab0cce0fd11757c224099393591ec31c1147023e8097"
+      "source_sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
     },
     {
       "file": "03_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\03_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [
-        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-      ],
+      "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 13,
+          "text_elements": 17,
           "images": {
             "placements": 0,
             "files": [],
@@ -347,25 +350,22 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 13,
+        "text_elements": 17,
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "68e020a778d1759fe9f7e78bacfbf84dd1e0f1a44c5db4976a74ee3b530771d4"
+      "source_sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
     },
     {
       "file": "04_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\04_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [
-        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (13 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-      ],
+      "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 13,
+          "text_elements": 20,
           "images": {
             "placements": 0,
             "files": [],
@@ -383,7 +383,7 @@
               "rect": 1,
               "circle": 0,
               "ellipse": 0,
-              "line": 4,
+              "line": 5,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -409,25 +409,22 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 13,
+        "text_elements": 20,
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "71a57c99de288ddaa8c7556379cf45b148f4585a280acdd83e8133e208f68162"
+      "source_sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
     },
     {
       "file": "05_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\05_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [
-        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (16 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; source-footer:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-      ],
+      "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 16,
+          "text_elements": 23,
           "images": {
             "placements": 0,
             "files": [],
@@ -443,9 +440,9 @@
           "geometry": {
             "svg_elements": {
               "rect": 5,
-              "circle": 2,
+              "circle": 3,
               "ellipse": 0,
-              "line": 5,
+              "line": 7,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -471,11 +468,616 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 16,
+        "text_elements": 23,
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "5e33754203275199049d56de45f5d6e00f5c107af4b9cd3b142c4164da7cfd09"
+      "source_sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+    },
+    {
+      "file": "06_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\06_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 20,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 2,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 1,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 20,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "e8a999f83cd4bdb8328943c80f1493c1dc4df0954a3264550fb919ff84dc47cf"
+    },
+    {
+      "file": "07_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\07_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 41,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 8,
+              "ellipse": 0,
+              "line": 17,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 2,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 41,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#83639B"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "46004111e70f411296f67b162f860aa42fd5ea34d89cea23b5d7aa0ab63dcd5a"
+    },
+    {
+      "file": "08_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\08_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "a3a5c52360e00520dd7f63e885c7e50107f3c76e6e910c5f7b6cef6a1f762f46"
+    },
+    {
+      "file": "09_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\09_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "3d82ca62dc4ea1a414d1f0bf9c078bba89f27b24cbf3d38818c2c9f1f54117d2"
+    },
+    {
+      "file": "10_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\10_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "c491243281100964dbf7975551dcfc208319986b71a59b611d3cee7dd70810d3"
+    },
+    {
+      "file": "11_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\11_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 3
+      },
+      "passed": true,
+      "source_sha256": "d468422858e994f85de6acd457e83c190aab02b8e31d7640d0db5f3a49e534bb"
+    },
+    {
+      "file": "12_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\12_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 10,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 10,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0758e46b0f8f578d313cf9820ba4754c5c81a3e51787579358423ecd5394f7e1"
+    },
+    {
+      "file": "13_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\13_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 9,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 9,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "6baf05e1ca0ce3492bb8b455210915bf45de9aef816e3aaac0eb2f83494143b4"
+    },
+    {
+      "file": "14_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\14_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "5b1a3d8c0ee1caf4290aa2a8ddb9cb37eed589e9dd72ed0914e30a9dcdcf700e"
+    },
+    {
+      "file": "15_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\15_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "070caaff37d54372f29415105d4416c56fe2011a308518f6291d15591381e948"
     }
   ]
 }

@@ -1,27 +1,27 @@
 {
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "classification": "uncalibrated_model_and_proposed_work",
   "physical_data": false,
   "entries": [
     {
       "path": "application/项目书正文草案.md",
-      "sha256": "860f991b8a34b2694b4e4db3df03d571bf9043c5fac8180a27d3a57947ac2240",
-      "bytes": 16164
+      "sha256": "7b1babc9b6f424293d16e828f87358b92d4981d41789dd001029b6da0b1358ca",
+      "bytes": 16463
     },
     {
       "path": "application/PPT逐页内容与讲稿.md",
-      "sha256": "c15037a3e56cc330095a4152c8f596302d45fa6bb73fc758e8baf5e7d617f5fb",
-      "bytes": 12851
+      "sha256": "6ac7e2af3dd1334165b822bc522188f2e6bb2bf4dca132060db9ce62c296f844",
+      "bytes": 10324
     },
     {
       "path": "application/申报任务体系与立项竞争力.md",
-      "sha256": "241e460a898f1a8d4da90413776874fc94bc16c29da8dfc4c9dfd73c9b00e223",
-      "bytes": 4214
+      "sha256": "6c3eaa0263393f5c6d50709cbf335e94a56fd6fef5b947838ab351a187c64635",
+      "bytes": 4513
     },
     {
       "path": "docs/三阶段路线与执行定稿.md",
-      "sha256": "ced15943e8bf3d5d014ea4e81220434ab185791e14427ff8cdbe77506b4212be",
-      "bytes": 8436
+      "sha256": "6bc1af35d22048d3db19d3c5ae24ddcdfd9ccd8d9490b81550b37884d927d344",
+      "bytes": 8735
     },
     {
       "path": "simulation/run_simulation.py",
@@ -55,18 +55,18 @@
     },
     {
       "path": "deliverables/项目书审阅版.pdf",
-      "sha256": "86497ccaad660272d3053a267cd4ba19fb323490eaa409bb7b4cb4bfec1c1f8a",
-      "bytes": 412648
+      "sha256": "f7f7855cdc6cdb129d60e804fab9aee1d18b50cd94593927fdd2b631bf914c59",
+      "bytes": 634057
     },
     {
       "path": "deliverables/立项答辩.pptx",
-      "sha256": "c9f3e4eb8a7791bebda451b18f473d7840053423cf0a846d1ec201b34837f88f",
-      "bytes": 78202
+      "sha256": "e0a14f0a90c82f67b8b359e71358b4940b8ce6367b135271bcdd9e62d2389593",
+      "bytes": 78957
     },
     {
       "path": "deliverables/立项答辩审阅版.pdf",
-      "sha256": "0748597526c3de7a03f43767ab288ae7450a31530cf872693bc3561a0d37cb8e",
-      "bytes": 365530
+      "sha256": "019c03edc5bdf47f397c8a70f1c533beaac8f6924c80c3f3e355993ec4bfed01",
+      "bytes": 1412991
     },
     {
       "path": "simulation/communication_results/protocol_stress.json",
@@ -80,8 +80,98 @@
     },
     {
       "path": "scripts/qa_deliverables.py",
-      "sha256": "4f0fa49ce0a850ebbee827edc4b009081b752b9b92281f90f46f80ab3005657e",
-      "bytes": 6048
+      "sha256": "37e76d285e8fda49c1c8a0601d52c39509c1f05ec12209adea006a964141a8f7",
+      "bytes": 7304
+    },
+    {
+      "path": "application/正式模板正文.md",
+      "sha256": "d015224db9ebe38f82ac76f692d4ef338f2da667853ddeac69f1eefd73f63244",
+      "bytes": 16114
+    },
+    {
+      "path": "docs/案例对照与老师建议分析.md",
+      "sha256": "513e77a99fc83b424b3c8070f0892635f51acdc47a3f1545647bd322b7a1190c",
+      "bytes": 5363
+    },
+    {
+      "path": "docs/项目范围与三阶段执行方案.md",
+      "sha256": "f6f6fa5a06e7740f266aace0bf4cdcd3c323587530d74bd92701bbcf0a05199d",
+      "bytes": 8293
+    },
+    {
+      "path": "simulation/diagnosis_feasibility.py",
+      "sha256": "e427fd9af502a0fe633a117fdce34befbff367c54540fa2e7514824496653656",
+      "bytes": 7832
+    },
+    {
+      "path": "simulation/DIAGNOSIS.md",
+      "sha256": "8cc6767a049638fbea0cd1eb8251ffe86c93957710abd7f4652d0601db456086",
+      "bytes": 2447
+    },
+    {
+      "path": "simulation/diagnosis_results/summary.json",
+      "sha256": "c987a6d513c7a9302f62ab444e78220c3e5ea95a3b8b69a3cdda4c5c855c0e49",
+      "bytes": 2725122
+    },
+    {
+      "path": "simulation/diagnosis_results/trials.csv",
+      "sha256": "7317491630d3a43c87a62e2ce8e8abd19e00da9c537fb012bb2f201e9e3d423d",
+      "bytes": 22077
+    },
+    {
+      "path": "deliverables/大创申报书_模板填写稿.docx",
+      "sha256": "dd1962f4ec13d1be420a988f5d0363014b5d59cbec42cb3cd0159f91f390912c",
+      "bytes": 750626
+    },
+    {
+      "path": "deliverables/大创申报书_模板审阅版.pdf",
+      "sha256": "57187b769d691813e32146cf0e5fe40500714fedea668928588b11a6d02f5294",
+      "bytes": 748379
+    },
+    {
+      "path": "deliverables/index.html",
+      "sha256": "d53824e27af126d737b34c95ad56be9dcbf84eac97fd1fc166004c65e284388d",
+      "bytes": 1944451
+    },
+    {
+      "path": "deliverables/交付检查.json",
+      "sha256": "c8cd6e372ddd0829de0ad8630ebacf41a89e8eb69be5571c05539ff3b852bf8d",
+      "bytes": 385
+    },
+    {
+      "path": "deliverables/使用说明.md",
+      "sha256": "48712405e54e70aec1573d443195d552986dee254b2caae6a0d690071da7b2d5",
+      "bytes": 2393
+    },
+    {
+      "path": "README.md",
+      "sha256": "8b7f6a5b0f910543d1034475c8c6d8a4ae5c5f66a376c914d5aee5c72b26135d",
+      "bytes": 4736
+    },
+    {
+      "path": "scripts/fill_application_template.ps1",
+      "sha256": "50fdd845b279c2bec0350edf09d904bab117f6154752425ec604d6e82c9877bb",
+      "bytes": 4465
+    },
+    {
+      "path": "scripts/validate_diagnosis_evidence.py",
+      "sha256": "4e238bde0ce16b04dbfe36de5ca70bfae35a43f6021c2fa9e87c63b57e65aef7",
+      "bytes": 2504
+    },
+    {
+      "path": "scripts/export_ppt_review.ps1",
+      "sha256": "5b7b16133543e4fcce93ffc9672c6939c62c104454aa063ee5ebabd8866ecc12",
+      "bytes": 505
+    },
+    {
+      "path": "scripts/package_submission.py",
+      "sha256": "fd0e75f49619ac32660f0768f71e7cf9f081b4fb3ab4ca7df7fb3a461ae0c295",
+      "bytes": 1731
+    },
+    {
+      "path": "附件1：塔里木大学大学生创新训练项目申报书.doc",
+      "sha256": "91a6fe38b74c804482859fc3a5e5369bac2c781069984a5a7b3baf131bf7d48d",
+      "bytes": 412303
     }
   ]
 }

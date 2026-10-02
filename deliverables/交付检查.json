@@ -1,11 +1,14 @@
 {
+  "date": "2026-10-03",
   "browser": "passed",
   "comparison_selections": 24,
+  "diagnosis_selections": 24,
   "slides": 15,
   "notes": 15,
   "pdf_pages": {
-    "proposal": 8,
+    "project_plan": 5,
+    "application": 11,
     "deck": 15
   },
-  "validation_scope": "browser interactions, SVG geometry/export package and PDF page/layout; not physical or native Office rendering"
+  "validation_scope": "browser, chart geometry, native-editable package, WPS-native Word and PPTX export, rendered-page visual review; not physical validation"
 }

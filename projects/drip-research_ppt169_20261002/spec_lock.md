@@ -7,8 +7,8 @@
 ## communication
 - primary_language: zh-CN
 - audience: 大创立项评委与指导教师
-- objective: 以研究问题、模型证据和三工作包支持较高级别立项评审，明确真实实施条件
-- core_message: 建模与异常感知、可靠事件通信、系统集成与分层验证形成可执行研究闭环
+- objective: 以研究问题、模型证据和四工作包支持较高级别立项评审，明确真实实施条件
+- core_message: 测量建模、有限诊断、可靠告警、系统与分层验证形成可执行研究闭环
 ## mode
 - mode: custom
 - mode_behavior: 先问题与已有研究，后任务与模型证据，再失败边界和实现路线，收束到预期系统与研究成果

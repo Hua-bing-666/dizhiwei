@@ -1,0 +1,255 @@
+{
+  "schema": "ppt-master.pptx-postflight-report.v1",
+  "status": "passed",
+  "output": {
+    "path": "C:\\Users\\Lenovo\\Desktop\\大创想法\\projects\\drip-research_ppt169_20261002\\exports\\drip-research_20261003_012116.pptx",
+    "bytes": 78957
+  },
+  "source": {
+    "svg_slide_count": 15,
+    "layout_definition_count": 0,
+    "fingerprint": {
+      "algorithm": "sha256",
+      "digest": "43a9677febd86f7d4b49f8f00249f63478069fc9855b56c898f1b36ea0628fda",
+      "file_count": 15,
+      "files": [
+        {
+          "file": "01_slide.svg",
+          "sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
+        },
+        {
+          "file": "02_slide.svg",
+          "sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
+        },
+        {
+          "file": "03_slide.svg",
+          "sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
+        },
+        {
+          "file": "04_slide.svg",
+          "sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
+        },
+        {
+          "file": "05_slide.svg",
+          "sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+        },
+        {
+          "file": "06_slide.svg",
+          "sha256": "3b5f3d9ac432a29c9a559a29ca7ade53060ae0ac6c425c707b0f8571b20b5026"
+        },
+        {
+          "file": "07_slide.svg",
+          "sha256": "b548d21e05c544b4bd0eba5b407e96b69786614c5617be7cf3254746afa4c949"
+        },
+        {
+          "file": "08_slide.svg",
+          "sha256": "9439c2209c3c069ed740692591131101895e2f4b9443e6daa162d8af48863a45"
+        },
+        {
+          "file": "09_slide.svg",
+          "sha256": "aa1e113a63944a2381962f237505e68d3860eca9eb0f24495e7cd7f467e0cce6"
+        },
+        {
+          "file": "10_slide.svg",
+          "sha256": "35e13749065f6e5b405e9e28c18324ef15e24df09929c2b3f6b0e35161e9abf9"
+        },
+        {
+          "file": "11_slide.svg",
+          "sha256": "2ea90e85c2c4238edaffa69778e4ef7c98eb8dd1c4789b4efa4d781c447f1ae6"
+        },
+        {
+          "file": "12_slide.svg",
+          "sha256": "d758f4c8ac65d853ba55e5bdce34e45e91b7cb8b4a37ccd878dd52027a372356"
+        },
+        {
+          "file": "13_slide.svg",
+          "sha256": "7407baaedc7c60d531c8cb52bec94c84e5d65318bcf0ee127f4e1d207fac43f3"
+        },
+        {
+          "file": "14_slide.svg",
+          "sha256": "689b669035c7e7c32611388007993713ed5ec8457cf30aa527413d61f5882b01"
+        },
+        {
+          "file": "15_slide.svg",
+          "sha256": "6f5ad5b732bfd2f8093a3349a353199f4f2439d36764c7d412fcc973c99f4415"
+        }
+      ]
+    },
+    "authoring_roundtrip": null
+  },
+  "package": {
+    "zip_integrity": "passed",
+    "corrupt_member": null,
+    "slides": 15,
+    "notes": 15,
+    "masters": 1,
+    "layouts": 1
+  },
+  "checks": {
+    "zip_integrity": "passed",
+    "slide_count": "passed",
+    "internal_relationships": "enforced-at-build",
+    "structured_package": "not-applicable",
+    "transitions": "enforced-at-build",
+    "animations": "enforced-at-build",
+    "project_svg_contract": "enforced-at-build",
+    "compatibility_normalization": "not-applicable",
+    "authoring_roundtrip": "not-applicable",
+    "quality_gate": "passed",
+    "quality_warnings": "passed",
+    "template_tokens": "passed",
+    "external_images": "passed",
+    "font_portability": "passed"
+  },
+  "quality": {
+    "status": "loaded",
+    "path": "projects\\drip-research_ppt169_20261002\\validation\\svg_quality_report.json",
+    "schema": "ppt-master.svg-quality-report.v1",
+    "stage": "final",
+    "source_match": "passed",
+    "source_fingerprint": {
+      "algorithm": "sha256",
+      "digest": "43a9677febd86f7d4b49f8f00249f63478069fc9855b56c898f1b36ea0628fda",
+      "file_count": 15,
+      "files": [
+        {
+          "file": "01_slide.svg",
+          "sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
+        },
+        {
+          "file": "02_slide.svg",
+          "sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
+        },
+        {
+          "file": "03_slide.svg",
+          "sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
+        },
+        {
+          "file": "04_slide.svg",
+          "sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
+        },
+        {
+          "file": "05_slide.svg",
+          "sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+        },
+        {
+          "file": "06_slide.svg",
+          "sha256": "3b5f3d9ac432a29c9a559a29ca7ade53060ae0ac6c425c707b0f8571b20b5026"
+        },
+        {
+          "file": "07_slide.svg",
+          "sha256": "b548d21e05c544b4bd0eba5b407e96b69786614c5617be7cf3254746afa4c949"
+        },
+        {
+          "file": "08_slide.svg",
+          "sha256": "9439c2209c3c069ed740692591131101895e2f4b9443e6daa162d8af48863a45"
+        },
+        {
+          "file": "09_slide.svg",
+          "sha256": "aa1e113a63944a2381962f237505e68d3860eca9eb0f24495e7cd7f467e0cce6"
+        },
+        {
+          "file": "10_slide.svg",
+          "sha256": "35e13749065f6e5b405e9e28c18324ef15e24df09929c2b3f6b0e35161e9abf9"
+        },
+        {
+          "file": "11_slide.svg",
+          "sha256": "2ea90e85c2c4238edaffa69778e4ef7c98eb8dd1c4789b4efa4d781c447f1ae6"
+        },
+        {
+          "file": "12_slide.svg",
+          "sha256": "d758f4c8ac65d853ba55e5bdce34e45e91b7cb8b4a37ccd878dd52027a372356"
+        },
+        {
+          "file": "13_slide.svg",
+          "sha256": "7407baaedc7c60d531c8cb52bec94c84e5d65318bcf0ee127f4e1d207fac43f3"
+        },
+        {
+          "file": "14_slide.svg",
+          "sha256": "689b669035c7e7c32611388007993713ed5ec8457cf30aa527413d61f5882b01"
+        },
+        {
+          "file": "15_slide.svg",
+          "sha256": "6f5ad5b732bfd2f8093a3349a353199f4f2439d36764c7d412fcc973c99f4415"
+        }
+      ]
+    },
+    "summary": {
+      "total": 15,
+      "passed": 15,
+      "warnings": 0,
+      "errors": 0
+    },
+    "categories": {
+      "blocking": {
+        "count": 0,
+        "issues": []
+      },
+      "introduced": {
+        "count": 0,
+        "issues": []
+      },
+      "inherited": {
+        "count": 0,
+        "issues": []
+      },
+      "source-import": {
+        "count": 0,
+        "summary": {
+          "warning_count": 0,
+          "by_code": {}
+        }
+      }
+    }
+  },
+  "resources": {
+    "unresolved_template_tokens": [],
+    "fonts": {
+      "stacks": [
+        "Microsoft YaHei, Arial",
+        "SimHei, Arial"
+      ],
+      "generic_only_stacks": [],
+      "unsafe_exported_faces": []
+    },
+    "images": {
+      "data_uri": 0,
+      "local": 0,
+      "external": 0,
+      "external_references": []
+    }
+  },
+  "export_policy": {
+    "project_svg_contract": "strict",
+    "dangerous_normalization_count": 0
+  },
+  "deck_motion": {
+    "transition": {
+      "effect": "fade",
+      "effect_options": {},
+      "duration": 0.4,
+      "auto_advance": null,
+      "sound": null
+    },
+    "animation": {
+      "effect": "none",
+      "effect_request": null,
+      "duration": 0.4,
+      "stagger": 0.5,
+      "trigger": "after-previous"
+    },
+    "cli_overrides": {
+      "transition": false,
+      "transition_duration": false,
+      "auto_advance": false,
+      "transition_sound": false,
+      "animation": false,
+      "animation_duration": false,
+      "animation_stagger": false,
+      "animation_trigger": false
+    },
+    "narration_timings": false
+  },
+  "backup_path": "C:\\Users\\Lenovo\\Desktop\\大创想法\\projects\\drip-research_ppt169_20261002\\backup\\20261003_012116\\svg_output",
+  "conversion_trace_path": null
+}

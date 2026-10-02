@@ -1,4 +1,7 @@
-"""Typeset proposal and browser-render the slide SVGs as a readable PDF."""
+"""Typeset scope plan; export the delivered PPTX through native WPS/Office.
+
+deck_pdf() is an optional SVG authoring preview, not the delivered PPTX review.
+"""
 from pathlib import Path
 from html import escape
 import re, shutil, subprocess, json
@@ -18,7 +21,7 @@ pdfmetrics.registerFontFamily('CJK',normal='CJK',bold='CJK',italic='CJK',boldIta
 g=colors.HexColor('#164c45');ink=colors.HexColor('#20332f');muted=colors.HexColor('#556762')
 styles={
  'body':ParagraphStyle('body',fontName='CJK',fontSize=10.5,leading=17.5,textColor=ink,spaceAfter=8,wordWrap='CJK'),
- 'h1':ParagraphStyle('h1',fontName='CJK',fontSize=20,leading=29,textColor=g,spaceAfter=16,wordWrap='CJK'),
+ 'h1':ParagraphStyle('h1',fontName='CJK',fontSize=18,leading=27,textColor=g,spaceAfter=16,wordWrap='CJK'),
  'h2':ParagraphStyle('h2',fontName='CJK',fontSize=14,leading=21,textColor=g,spaceBefore=16,spaceAfter=9,keepWithNext=True,wordWrap='CJK'),
  'h3':ParagraphStyle('h3',fontName='CJK',fontSize=11.5,leading=19,textColor=g,spaceBefore=10,spaceAfter=6,keepWithNext=True,wordWrap='CJK'),
  'cell':ParagraphStyle('cell',fontName='CJK',fontSize=9,leading=14,textColor=ink,wordWrap='CJK'),
@@ -35,20 +38,14 @@ def markup(value):
 
 def page_frame(canvas,doc):
     canvas.saveState();canvas.setStrokeColor(g);canvas.setLineWidth(.7);canvas.line(42,801,553,801)
-    canvas.setFont('CJK',9);canvas.setFillColor(muted);canvas.drawString(42,815,'创新训练申报正文 · 审阅版 / 2026.10.02')
-    canvas.drawString(42,25,'模型分析为前期基础；实物与性能验证为拟开展工作。正式模板与行政字段另补。')
+    canvas.setFont('CJK',9);canvas.setFillColor(muted);canvas.drawString(42,815,'南疆滴灌支管诊断系统 · 项目范围与执行 / 2026.10.03')
+    canvas.drawString(42,25,'模型为前期基础；实物与性能为拟开展工作。申报正文见另附学校模板填写稿。')
     canvas.drawRightString(553,25,str(doc.page));canvas.restoreState()
 
 def proposal():
     path=OUT/'项目书审阅版.pdf'
-    doc=SimpleDocTemplate(str(path),pagesize=(595.28,841.89),rightMargin=42,leftMargin=42,topMargin=55,bottomMargin=47,title='滴灌支管异常监测与可靠事件通信：创新训练申报正文',author='项目团队（待正式填写）')
-    lines=(ROOT/'application/项目书正文草案.md').read_text(encoding='utf-8').splitlines();story=[];i=0
-    review=pymupdf.open(OUT/'立项答辩审阅版.pdf')
-    model_fig=TMP/'proposal-model.png';response_fig=TMP/'proposal-response.png'
-    for page_idx,region,dest in [(4,(48,175,1232,590),model_fig),(5,(48,165,1232,550),response_fig)]:
-        clip=pymupdf.Rect(*(value*.75 for value in region))
-        review[page_idx].get_pixmap(matrix=pymupdf.Matrix(2,2),clip=clip).save(dest)
-    review.close()
+    doc=SimpleDocTemplate(str(path),pagesize=(595.28,841.89),rightMargin=42,leftMargin=42,topMargin=55,bottomMargin=47,title='南疆滴灌支管诊断系统项目范围与执行方案',author='项目团队（待正式填写）')
+    lines=(ROOT/'docs/项目范围与三阶段执行方案.md').read_text(encoding='utf-8').splitlines();story=[];i=0
     while i<len(lines):
         l=lines[i].strip()
         if not l:i+=1;continue
@@ -64,24 +61,23 @@ def proposal():
             table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#eef3ef')),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.7,g),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#c7d2cb')),('LEFTPADDING',(0,0),(-1,-1),7),('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
             story.extend([table,Spacer(1,10)]);continue
         kind='body';value=l
-        if l.startswith('# '):kind='h1';value='创新训练项目申报书正文\n模型证据与实施路线版'
+        if l.startswith('# '):kind='h1';value=l[2:]
         elif l.startswith('## '):kind='h2';value=l[3:]
         elif l.startswith('### '):kind='h3';value=l[4:]
         elif l.startswith('#### '):kind='h3';value=l[5:]
         elif l.startswith('- '):value='• '+l[2:]
         para=Paragraph(markup(value).replace('\n','<br/>'),styles[kind])
         story.append(KeepTogether([para]) if re.match(r'^\[\d+\]',l) else para);i+=1
-        if l.startswith('技术路线：'):
-            img=Image(str(model_fig));img.drawWidth=511;img.drawHeight=511*415/1184
-            story.extend([img,Paragraph('图1　双支路等效水路与测点。未标定模型示意，压力测点位于A支路额外节流之后；不是设备照片或已搭建台架。',styles['caption'])])
-        if l.startswith('**新完成的对抗检验：'):
-            img=Image(str(response_fig));img.drawWidth=511;img.drawHeight=511*385/1184
-            story.extend([img,Paragraph('图2　同参数下正常切换与切换期间等效泄漏的模拟压力。来源scenarios.json，种子20261002，绘图5秒抽取；未标定、非实测。用于工况设计，不支持田间准确率结论。',styles['caption'])])
+        figures=[('申报名称采用','system_scope.png','系统设计：感知、有限诊断、可靠告警与管理确认；尚无在线实物。'),('必做配置为','dual_pressure_layout.png','布点与台架设计：P0/P1/Q包围目标区段；量程与差压误差仍须参考标定。'),('第2周完成','early_diagnosis.png','未标定合成模型480试次；15%仅为演示失效参照。非实物识别率。')]
+        for trigger,name,caption in figures:
+            if l.startswith(trigger):
+                img=Image(str(ROOT/'application/figures'/name));img.drawHeight=511*img.imageHeight/img.imageWidth;img.drawWidth=511
+                story.extend([img,Paragraph(caption,styles['caption'])])
     story.append(PageBreak());story.append(Paragraph('附件：前期通信取舍图',styles['h2']))
     img=Image(str(ROOT/'application/figures/communication_tradeoff.png'));img.drawWidth=511;img.drawHeight=511*1044/2160
     story.append(img);story.append(Paragraph('图为未标定的合成回放；四策略同检测、同滤波载荷、同告警确认。每点为20个种子均值，发送帧包含确认和尾段清队列；误差相对本地模拟滤波量。',styles['caption']))
     story.append(Paragraph('复现与材料索引',styles['h2']))
-    story.append(Paragraph('本地打开 deliverables/index.html 查看参数化水路、反例、通信对照和PPT。程序与JSON/CSV保存在simulation目录；三阶段路线和立项任务体系分别保存在docs和application目录。网站不连接真实传感器。',styles['body']))
+    story.append(Paragraph('本地打开deliverables/index.html查看双点诊断、管理交互设计、历史模型反例、通信对照和PPT。学校申报正文见大创申报书_模板填写稿.docx；程序与JSON/CSV保存在simulation，案例与执行文件在docs。网站不连接真实传感器。',styles['body']))
     doc.build(story,onFirstPage=page_frame,onLaterPages=page_frame)
     shutil.copy2(path,DEL/path.name);print('Proposal PDF:',path)
 
@@ -98,7 +94,12 @@ def deck_pdf():
     shutil.copy2(target,DEL/target.name);print('Deck review PDF:',target)
 
 if __name__=='__main__':
-    deck_pdf();proposal()
+    proposal()
     latest=max((P/'exports').glob('*.pptx'),key=lambda p:p.stat().st_mtime)
     shutil.copy2(latest,DEL/'立项答辩.pptx')
     print('Copied editable PPTX:',latest.name)
+    shell=shutil.which('pwsh') or shutil.which('powershell')
+    if not shell:raise RuntimeError('PowerShell required for native PPTX review export.')
+    subprocess.run([shell,'-NoProfile','-File',str(ROOT/'scripts/export_ppt_review.ps1'),
+                    '-InputPptx',str(DEL/'立项答辩.pptx'),
+                    '-OutputPdf',str(DEL/'立项答辩审阅版.pdf')],check=True,timeout=90)
