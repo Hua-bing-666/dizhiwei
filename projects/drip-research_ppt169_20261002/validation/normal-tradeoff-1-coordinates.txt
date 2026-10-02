@@ -1,0 +1,11 @@
+
+=== Line / Scatter Chart Coordinate Calculation ===
+Canvas: 1280×720
+Chart area: (110.0, 293.0) - (563.0, 494.0)
+
+Index X_Value    Y_Value    SVG_X     SVG_Y
+----  ---------  ---------  --------  --------
+   1      23.00       1.12     214.2     344.0
+
+=== SVG Path ===
+M 214.2,344.0

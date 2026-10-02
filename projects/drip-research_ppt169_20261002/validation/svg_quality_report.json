@@ -1,0 +1,1077 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "C:\\Users\\Lenovo\\Desktop\\大创想法\\projects\\drip-research_ppt169_20261002",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "c3e3431ff4b6cca8a20960cb9866cc5ac93eac651e4d55a3437836935be1bb93",
+    "file_count": 15,
+    "files": [
+      {
+        "file": "01_slide.svg",
+        "sha256": "ed7b76deb975ce9d33c2ceef4d5c0d5556760cc7ec5b75e28cc10b351eba053f"
+      },
+      {
+        "file": "02_slide.svg",
+        "sha256": "6402c42c7b86c33632df3bec38d15451533bab86f42a68d03fe2510ef71bd2f3"
+      },
+      {
+        "file": "03_slide.svg",
+        "sha256": "1779624fc68c08385856fa8aca9730c658fe1dc90f6c1bed5e0f9551f93f3ef2"
+      },
+      {
+        "file": "04_slide.svg",
+        "sha256": "341a11cef2aec413bcd858150bb74659442361662bd7b8ce6bad63c55391d533"
+      },
+      {
+        "file": "05_slide.svg",
+        "sha256": "79b2b0d7b3427c4fd18eea3b2c0a3ae5f37e5e285890cabd4b484a0657130c0f"
+      },
+      {
+        "file": "06_slide.svg",
+        "sha256": "e8a999f83cd4bdb8328943c80f1493c1dc4df0954a3264550fb919ff84dc47cf"
+      },
+      {
+        "file": "07_slide.svg",
+        "sha256": "46004111e70f411296f67b162f860aa42fd5ea34d89cea23b5d7aa0ab63dcd5a"
+      },
+      {
+        "file": "08_slide.svg",
+        "sha256": "a3a5c52360e00520dd7f63e885c7e50107f3c76e6e910c5f7b6cef6a1f762f46"
+      },
+      {
+        "file": "09_slide.svg",
+        "sha256": "3d82ca62dc4ea1a414d1f0bf9c078bba89f27b24cbf3d38818c2c9f1f54117d2"
+      },
+      {
+        "file": "10_slide.svg",
+        "sha256": "c491243281100964dbf7975551dcfc208319986b71a59b611d3cee7dd70810d3"
+      },
+      {
+        "file": "11_slide.svg",
+        "sha256": "d468422858e994f85de6acd457e83c190aab02b8e31d7640d0db5f3a49e534bb"
+      },
+      {
+        "file": "12_slide.svg",
+        "sha256": "0758e46b0f8f578d313cf9820ba4754c5c81a3e51787579358423ecd5394f7e1"
+      },
+      {
+        "file": "13_slide.svg",
+        "sha256": "6baf05e1ca0ce3492bb8b455210915bf45de9aef816e3aaac0eb2f83494143b4"
+      },
+      {
+        "file": "14_slide.svg",
+        "sha256": "5b1a3d8c0ee1caf4290aa2a8ddb9cb37eed589e9dd72ed0914e30a9dcdcf700e"
+      },
+      {
+        "file": "15_slide.svg",
+        "sha256": "070caaff37d54372f29415105d4416c56fe2011a308518f6291d15591381e948"
+      }
+    ]
+  },
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "warnings": 0,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 0,
+      "issues": []
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#83639B": [
+        "07_slide.svg"
+      ],
+      "#F4ECE5": [
+        "02_slide.svg"
+      ],
+      "#FFFFFF": [
+        "10_slide.svg",
+        "12_slide.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 15,
+    "totals": {
+      "text_elements": 226,
+      "image_placements": 0,
+      "icons": 0,
+      "svg_geometry_elements": 111,
+      "preset_shapes": 0,
+      "page_frame_elements": 30,
+      "marker_uses": 0,
+      "inline_emphasis_runs": 0,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 0,
+      "presets": 0,
+      "charts": 2,
+      "tables": 0,
+      "formulas": 1,
+      "inline_emphasis_runs": 0,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 0,
+    "geometry_elements": {
+      "circle": 15,
+      "ellipse": 0,
+      "line": 67,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 2,
+      "rect": 27
+    },
+    "preset_names": {},
+    "native_objects": {
+      "chart": 3,
+      "formula_block": 0,
+      "formula_inline": 1,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\01_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "ed7b76deb975ce9d33c2ceef4d5c0d5556760cc7ec5b75e28cc10b351eba053f"
+    },
+    {
+      "file": "02_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\02_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 3,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#F4ECE5"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "6402c42c7b86c33632df3bec38d15451533bab86f42a68d03fe2510ef71bd2f3"
+    },
+    {
+      "file": "03_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\03_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 13,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 13,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "1779624fc68c08385856fa8aca9730c658fe1dc90f6c1bed5e0f9551f93f3ef2"
+    },
+    {
+      "file": "04_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\04_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 13,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 13,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "341a11cef2aec413bcd858150bb74659442361662bd7b8ce6bad63c55391d533"
+    },
+    {
+      "file": "05_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\05_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 1,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "79b2b0d7b3427c4fd18eea3b2c0a3ae5f37e5e285890cabd4b484a0657130c0f"
+    },
+    {
+      "file": "06_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\06_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 20,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 2,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 1,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 20,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "e8a999f83cd4bdb8328943c80f1493c1dc4df0954a3264550fb919ff84dc47cf"
+    },
+    {
+      "file": "07_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\07_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 41,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 8,
+              "ellipse": 0,
+              "line": 17,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 2,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 41,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#83639B"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "46004111e70f411296f67b162f860aa42fd5ea34d89cea23b5d7aa0ab63dcd5a"
+    },
+    {
+      "file": "08_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\08_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "a3a5c52360e00520dd7f63e885c7e50107f3c76e6e910c5f7b6cef6a1f762f46"
+    },
+    {
+      "file": "09_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\09_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "3d82ca62dc4ea1a414d1f0bf9c078bba89f27b24cbf3d38818c2c9f1f54117d2"
+    },
+    {
+      "file": "10_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\10_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "c491243281100964dbf7975551dcfc208319986b71a59b611d3cee7dd70810d3"
+    },
+    {
+      "file": "11_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\11_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 3
+      },
+      "passed": true,
+      "source_sha256": "d468422858e994f85de6acd457e83c190aab02b8e31d7640d0db5f3a49e534bb"
+    },
+    {
+      "file": "12_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\12_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 10,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 10,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0758e46b0f8f578d313cf9820ba4754c5c81a3e51787579358423ecd5394f7e1"
+    },
+    {
+      "file": "13_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\13_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 9,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 9,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "6baf05e1ca0ce3492bb8b455210915bf45de9aef816e3aaac0eb2f83494143b4"
+    },
+    {
+      "file": "14_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\14_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "5b1a3d8c0ee1caf4290aa2a8ddb9cb37eed589e9dd72ed0914e30a9dcdcf700e"
+    },
+    {
+      "file": "15_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\15_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial",
+          "SimHei, Arial"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "070caaff37d54372f29415105d4416c56fe2011a308518f6291d15591381e948"
+    }
+  ]
+}

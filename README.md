@@ -2,7 +2,19 @@
 
 面向南疆棉田滴灌支管的异常监测与无线通信研究项目；低功耗是待实测评价的目标。
 
-当前阶段：已形成申报内容草案、文献方案及四场景简化模型仿真；尚未搭建硬件或完成台架、田间实测。仿真判据为展示用规则，正式检测方法仍待独立实验验证。
+当前阶段：已完成三工作包申报方案、8页项目书审阅PDF、15页可编辑PPTX与讲稿、离线交互研究网站、模型反例及公平通信回放。尚未搭建硬件或完成台架、真实无线、功耗或田间实测；仿真不代替这些证据。
+
+## 最新交付（2026-10-02）
+
+- [先打开：研究与申报交互网站](deliverables/index.html)（下载完整仓库后用浏览器打开，保留目录结构）
+- [项目书审阅PDF](deliverables/项目书审阅版.pdf) / [可编辑正文](application/项目书正文草案.md)
+- [可编辑答辩PPTX](deliverables/立项答辩.pptx) / [审阅PDF](deliverables/立项答辩审阅版.pdf)
+- [三工作包与立项竞争力](application/申报任务体系与立项竞争力.md)
+- [申报—大创—论文三阶段路线](docs/三阶段路线与执行定稿.md)
+- [公平通信取舍回放协议](simulation/COMMUNICATION.md)
+- [交付检查及检查范围](deliverables/交付检查.json) / [证据哈希清单](deliverables/证据清单.json)
+
+按争取国家级组织申报：WP1水力建模与异常感知、WP2可靠事件通信、WP3系统集成与分层验证。任务数量不保证立项级别，2000元为借用条件下的启动额度；资助落实后优先扩展实验条件和独立批次。项目书、最终结项和论文具有不同完成标准。
 
 ## 项目定位
 
@@ -43,4 +55,6 @@
 
 ## 后续工作
 
-按申报剩余约一个月倒排：先落实导师、团队编程支持和可借水路/仪器，完成访谈、传感器小试和独立批次初步对比；拿到正式模板后迁移正文和制作 PPTX。当前 PPT 文件是逐页内容稿，项目书文件是 Markdown 草案，均不是学校格式提交版。
+当前无实物基础，申报先以文献、模型、反例和公平通信分析支持可行性论证，并提交完整研究任务和验证计划。提交前须据实补导师/团队、正式模板及实际条件，调整答辩时长和冻结承诺指标。真实需求、标定与台架实验按实施阶段推进；现有PDF/PPTX为可审阅材料，不是已经提交或批准的学校格式项目书。
+
+复跑数据：`python simulation/communication_feasibility.py`。检查协议和图表：`python scripts/validate_new_evidence.py`。已有对抗结果检查：`python simulation/verify_audit.py`。网站构建：`python scripts/build_portal.py`。依赖为Python、NumPy、Matplotlib；PDF构建另需ReportLab、PyMuPDF与本机Edge。PPT源码在`projects/drip-research_ppt169_20261002`，导出依赖本机PPT Master技能。

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-02",
+  "classification": "uncalibrated_model_and_proposed_work",
+  "physical_data": false,
+  "entries": [
+    {
+      "path": "application/项目书正文草案.md",
+      "sha256": "860f991b8a34b2694b4e4db3df03d571bf9043c5fac8180a27d3a57947ac2240",
+      "bytes": 16164
+    },
+    {
+      "path": "application/PPT逐页内容与讲稿.md",
+      "sha256": "c15037a3e56cc330095a4152c8f596302d45fa6bb73fc758e8baf5e7d617f5fb",
+      "bytes": 12851
+    },
+    {
+      "path": "application/申报任务体系与立项竞争力.md",
+      "sha256": "241e460a898f1a8d4da90413776874fc94bc16c29da8dfc4c9dfd73c9b00e223",
+      "bytes": 4214
+    },
+    {
+      "path": "docs/三阶段路线与执行定稿.md",
+      "sha256": "ced15943e8bf3d5d014ea4e81220434ab185791e14427ff8cdbe77506b4212be",
+      "bytes": 8436
+    },
+    {
+      "path": "simulation/run_simulation.py",
+      "sha256": "f6ca745c4d6e320bf952e6b24612d9d17959ff4894f28bbddcb5d52f98b50ac7",
+      "bytes": 8431
+    },
+    {
+      "path": "simulation/adversarial_audit.py",
+      "sha256": "dad40dc4791513c486e097ff2cd1533c95d65ca2a2c95a0c552417577f1d80e0",
+      "bytes": 10760
+    },
+    {
+      "path": "simulation/communication_feasibility.py",
+      "sha256": "d9ca9890441a64c2398de9cc71e0a35d6eb44ca59b263a16f84fac00b0895464",
+      "bytes": 9249
+    },
+    {
+      "path": "simulation/COMMUNICATION.md",
+      "sha256": "c04533029be22932e39b71295eafd986c157ed737d3ee1e10416e2e1a19d139f",
+      "bytes": 2753
+    },
+    {
+      "path": "simulation/communication_results/summary.json",
+      "sha256": "0a254e19f2157949dacfbdc398ed0122316b7245b373a54ce826afecf30850bf",
+      "bytes": 46908
+    },
+    {
+      "path": "simulation/communication_results/trials.csv",
+      "sha256": "7245a07c2f9a1cbb718d232dc8ef64c22dbc147d6ccba956ff3314b63b7069e6",
+      "bytes": 217192
+    },
+    {
+      "path": "deliverables/项目书审阅版.pdf",
+      "sha256": "86497ccaad660272d3053a267cd4ba19fb323490eaa409bb7b4cb4bfec1c1f8a",
+      "bytes": 412648
+    },
+    {
+      "path": "deliverables/立项答辩.pptx",
+      "sha256": "c9f3e4eb8a7791bebda451b18f473d7840053423cf0a846d1ec201b34837f88f",
+      "bytes": 78202
+    },
+    {
+      "path": "deliverables/立项答辩审阅版.pdf",
+      "sha256": "0748597526c3de7a03f43767ab288ae7450a31530cf872693bc3561a0d37cb8e",
+      "bytes": 365530
+    },
+    {
+      "path": "simulation/communication_results/protocol_stress.json",
+      "sha256": "2e3a072015e933a6c5ab0b2347acc2d79550c9b89b7aa0664730dbe2962a2fcf",
+      "bytes": 3871
+    },
+    {
+      "path": "scripts/validate_new_evidence.py",
+      "sha256": "562b320be67fbe596268bfff87d584ea25d25eca1613507596fc14f7f95094bf",
+      "bytes": 4194
+    },
+    {
+      "path": "scripts/qa_deliverables.py",
+      "sha256": "4f0fa49ce0a850ebbee827edc4b009081b752b9b92281f90f46f80ab3005657e",
+      "bytes": 6048
+    }
+  ]
+}

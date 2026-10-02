@@ -14,6 +14,11 @@ __pycache__/
 venv/
 node_modules/
 
+# PPT runtime state and redundant timestamp exports; final deliverables are tracked
+projects/**/live_preview/
+projects/**/backup/
+projects/**/exports/
+
 # Local editor and OS files
 .idea/
 .vscode/
