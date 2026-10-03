@@ -7,16 +7,17 @@
 ## 最新材料
 
 - [先打开：研究与申报网站](deliverables/index.html)，下载完整仓库后用浏览器打开，保留目录结构。
-- [学校模板填写稿 Word](deliverables/大创申报书_模板填写稿.docx) / [原生审阅 PDF](deliverables/大创申报书_模板审阅版.pdf)：11页，原封面、九节正文、三幅图及原审批栏。
+- [学校模板填写稿 Word](deliverables/大创申报书_模板填写稿.docx) / [原生审阅 PDF](deliverables/大创申报书_模板审阅版.pdf)：19页，原封面、九节正文、9幅图、4张可编辑表及审批栏；图文按论证步骤展开。
 - [项目范围与执行 PDF](deliverables/项目书审阅版.pdf) / [可编辑三阶段方案](docs/项目范围与三阶段执行方案.md)：5页，明确申报、结项、论文的不同标准。
-- [可编辑答辩 PPTX](deliverables/立项答辩.pptx) / [原生审阅 PDF](deliverables/立项答辩审阅版.pdf)：12页主讲、3页备用，附15页讲稿。
+- [可编辑答辩 PPTX](deliverables/立项答辩.pptx) / [原生审阅 PDF](deliverables/立项答辩审阅版.pdf)：视觉修订草案，12页主讲、3页备用，附15页讲稿；最新硬件及预算尚待同步，后续再完成。
+- [国内硬件选型与淘宝入口](docs/国内硬件选型与可行性核对.md) / [国家级案例写法拆解](docs/国家级案例写法拆解与申报书改写.md)。
 - [案例对照与老师建议分析](docs/案例对照与老师建议分析.md) / [申报九节正文源稿](application/正式模板正文.md)。
 - [打包材料与源文件](deliverables/申报材料与证据包.zip) / [使用说明](deliverables/使用说明.md)。
 - [交付检查及范围](deliverables/交付检查.json) / [证据哈希清单](deliverables/证据清单.json)。
 
 ## 当前范围
 
-实施期2027年3月至2028年2月。必做配置为一个P0/P1/Q双压力流量节点、一个LoRa接收端、一套可重复双支路清水台架及本地Web管理软件。约2000元是借用参考仪器条件下的启动额度估计，未获得报价或资助；团队、导师支持、场地与仪器仍待落实。
+实施期2027年3月至2028年2月。必做配置为一个P0/P1/Q双压力流量节点、一个LoRa接收端、一套可重复双支路清水台架及本地Web管理软件。约2000元以借用参考仪器及可调连续水源为前提，两压力传感器待询价，是启动额度估计，未获得报价或资助；团队、导师支持、场地与仪器仍待落实。
 
 四个工作包分别为测量与建模、渐进故障诊断与边界、LoRa可靠告警、系统集成与分层验证。主要研究下游等效泄漏与支管等效受限，评价供压、切换、漂移及未知负载下的误报、漏检和早期提前量。位置只到所监测支管/区段；节流不证明真实滴头堵塞。自动阀控、多节点、太阳能和云端按资源扩展。
 
@@ -35,6 +36,8 @@
 申报文字源为 `application/正式模板正文.md`，学校原模板为根目录DOC。先运行 `python scripts/prepare_application_payload.py`，再在PowerShell 7运行 `./scripts/fill_application_template.ps1`，使用本机WPS原生填写和导出。真实行政资料、意见与签字需要本人及导师补齐。
 
 诊断复跑：`python simulation/diagnosis_feasibility.py`；验证：`python scripts/validate_diagnosis_evidence.py`。通信复跑：`python simulation/communication_feasibility.py`；协议及图表验证：`python scripts/validate_new_evidence.py`。网站重建：`python scripts/build_portal.py`；交付检查：`python scripts/qa_deliverables.py`。
+
+诊断数据复跑后，应再运行 `scripts/redesign_document_figures.py` 恢复申报版图形；设计图运行 `scripts/build_application_design_figures.py`，硬件核对运行 `simulation/hardware_design_check.py`。PPT新图形源为 `scripts/author_visual_redesign.py`。`rewrite_application_argument.py`、`redesign_visual_plan.py`及`redesign_portal_surface.py`是一次性迁移脚本，不重复覆盖当前材料。
 
 图形/PDF脚本依赖NumPy、Matplotlib、ReportLab、PyMuPDF、Pillow；浏览器检查使用Edge，原生审阅导出使用本机WPS。PPT可编辑源码保存在 `projects/drip-research_ppt169_20261002`，生产工作流依赖本机ppt-master技能。`prepare_materials.py`和两个`revise_*.py`是历史/一次性迁移脚本，不要重复运行来覆盖当前内容。
 

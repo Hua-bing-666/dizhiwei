@@ -4,68 +4,68 @@
   "target": "C:\\Users\\Lenovo\\Desktop\\大创想法\\projects\\drip-research_ppt169_20261002",
   "source_fingerprint": {
     "algorithm": "sha256",
-    "digest": "43a9677febd86f7d4b49f8f00249f63478069fc9855b56c898f1b36ea0628fda",
+    "digest": "3b7152e6f2cf4e3591d7726476d8e2c002f8d56b234af26549be013ab6fd7e2c",
     "file_count": 15,
     "files": [
       {
         "file": "01_slide.svg",
-        "sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
+        "sha256": "6fe22bf20d53afddf026acd3e30c397dca911c2fba4823092debec4a5127b9cc"
       },
       {
         "file": "02_slide.svg",
-        "sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
+        "sha256": "fd3cbb03219021e95cdbd41188f23ce95bb04efbaf6ff8bfaf4027bdc73c8a5e"
       },
       {
         "file": "03_slide.svg",
-        "sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
+        "sha256": "f71cc9207cdefab6416db823fb8097105bda00d09bb6802ed1bf221669715c6f"
       },
       {
         "file": "04_slide.svg",
-        "sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
+        "sha256": "a951aefdddca92d84d339209f3a8ad6cd02476d745e28576319e96ddb79d3b7d"
       },
       {
         "file": "05_slide.svg",
-        "sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+        "sha256": "a8bb621fe74bacfbfca1a301856874d52df3f10a345c6cee3a230a15ce5a8aa6"
       },
       {
         "file": "06_slide.svg",
-        "sha256": "3b5f3d9ac432a29c9a559a29ca7ade53060ae0ac6c425c707b0f8571b20b5026"
+        "sha256": "93dd8e882a4775cd08cc65e5c18b0acfd38e7d5c20c965ac8f62f9ca5a0d9a12"
       },
       {
         "file": "07_slide.svg",
-        "sha256": "b548d21e05c544b4bd0eba5b407e96b69786614c5617be7cf3254746afa4c949"
+        "sha256": "c6fc9f22104e3b67735b12e35fb790084e9635cbd3aa93bd3b2b93b6a3ec41db"
       },
       {
         "file": "08_slide.svg",
-        "sha256": "9439c2209c3c069ed740692591131101895e2f4b9443e6daa162d8af48863a45"
+        "sha256": "1f69ab8b37127b7d9b372129e792814aa632947ba9d1a607860596e166557410"
       },
       {
         "file": "09_slide.svg",
-        "sha256": "aa1e113a63944a2381962f237505e68d3860eca9eb0f24495e7cd7f467e0cce6"
+        "sha256": "5b32fc18e347f40473ac29b5f60278aba423b67dc974d8da59a19f2f406d2eb2"
       },
       {
         "file": "10_slide.svg",
-        "sha256": "35e13749065f6e5b405e9e28c18324ef15e24df09929c2b3f6b0e35161e9abf9"
+        "sha256": "fe2b29870fd49aa373f2ae9891de95acf1a0efd8eebc560deb423e6f5b1c6659"
       },
       {
         "file": "11_slide.svg",
-        "sha256": "2ea90e85c2c4238edaffa69778e4ef7c98eb8dd1c4789b4efa4d781c447f1ae6"
+        "sha256": "6a90aff61b5b45922158436a3a507e7632cb031f44e93826a8dfa11f50979fad"
       },
       {
         "file": "12_slide.svg",
-        "sha256": "d758f4c8ac65d853ba55e5bdce34e45e91b7cb8b4a37ccd878dd52027a372356"
+        "sha256": "d56a5d8807a83ecfe1abd7d8a304de7d5714778765160b40f135d27f851ccc14"
       },
       {
         "file": "13_slide.svg",
-        "sha256": "7407baaedc7c60d531c8cb52bec94c84e5d65318bcf0ee127f4e1d207fac43f3"
+        "sha256": "fc1f49ccd80c3fe69c554814d334ca745f4453567ef007177fa96a57d320427c"
       },
       {
         "file": "14_slide.svg",
-        "sha256": "689b669035c7e7c32611388007993713ed5ec8457cf30aa527413d61f5882b01"
+        "sha256": "39910e55dcd740a8a16b31b1a0746154e6151f2d835e928ab245640ed3f5f5af"
       },
       {
         "file": "15_slide.svg",
-        "sha256": "6f5ad5b732bfd2f8093a3349a353199f4f2439d36764c7d412fcc973c99f4415"
+        "sha256": "7eb51daec867bbcb6e54fa3f21c74c5d53f46624040467dde753edf2e55d1e16"
       }
     ]
   },
@@ -99,16 +99,109 @@
   },
   "drift": {
     "colors": {
+      "#103B35": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
+      "#215749": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
+      "#23554E": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "04_slide.svg",
+        "08_slide.svg",
+        "12_slide.svg"
+      ],
+      "#2C6259": [
+        "09_slide.svg"
+      ],
+      "#40736A": [
+        "01_slide.svg"
+      ],
+      "#437966": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
+      "#46766B": [
+        "08_slide.svg"
+      ],
+      "#4A776F": [
+        "12_slide.svg"
+      ],
+      "#4F8165": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
       "#83639B": [
         "07_slide.svg"
       ],
-      "#F4ECE5": [
-        "02_slide.svg"
+      "#8EAF7A": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
+      "#B7CCC6": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "04_slide.svg",
+        "08_slide.svg",
+        "12_slide.svg"
+      ],
+      "#CFDED7": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
+      "#D8EAE2": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "04_slide.svg",
+        "08_slide.svg",
+        "10_slide.svg",
+        "11_slide.svg",
+        "12_slide.svg",
+        "14_slide.svg"
+      ],
+      "#DBA897": [
+        "09_slide.svg"
+      ],
+      "#DEE7E0": [
+        "09_slide.svg"
+      ],
+      "#E7F2EA": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "12_slide.svg"
+      ],
+      "#F0F4F1": [
+        "09_slide.svg"
+      ],
+      "#F6ECE6": [
+        "05_slide.svg",
+        "06_slide.svg",
+        "09_slide.svg",
+        "13_slide.svg"
       ],
       "#FFFFFF": [
         "01_slide.svg",
+        "02_slide.svg",
+        "03_slide.svg",
+        "04_slide.svg",
+        "05_slide.svg",
+        "07_slide.svg",
+        "08_slide.svg",
+        "09_slide.svg",
         "10_slide.svg",
-        "12_slide.svg"
+        "11_slide.svg",
+        "12_slide.svg",
+        "13_slide.svg",
+        "14_slide.svg"
       ]
     },
     "fonts": {},
@@ -118,15 +211,15 @@
     "scope": "informational-not-a-quota",
     "pages": 15,
     "totals": {
-      "text_elements": 295,
+      "text_elements": 445,
       "image_placements": 0,
       "icons": 0,
-      "svg_geometry_elements": 117,
+      "svg_geometry_elements": 501,
       "preset_shapes": 0,
-      "page_frame_elements": 30,
+      "page_frame_elements": 45,
       "marker_uses": 0,
       "inline_emphasis_runs": 0,
-      "gradient_uses": 0,
+      "gradient_uses": 5,
       "filter_uses": 0,
       "text_effects": 0
     },
@@ -138,19 +231,19 @@
       "tables": 0,
       "formulas": 1,
       "inline_emphasis_runs": 0,
-      "gradient_uses": 0,
+      "gradient_uses": 5,
       "filter_uses": 0,
       "text_effects": 0
     },
     "relationship_pages": 0,
     "geometry_elements": {
-      "circle": 16,
+      "circle": 209,
       "ellipse": 0,
-      "line": 71,
+      "line": 141,
       "path": 0,
-      "polygon": 0,
-      "polyline": 3,
-      "rect": 27
+      "polygon": 17,
+      "polyline": 4,
+      "rect": 130
     },
     "preset_names": {},
     "native_objects": {
@@ -179,7 +272,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 20,
           "images": {
             "placements": 0,
             "files": [],
@@ -188,23 +281,23 @@
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
+            "gradient_uses": 1,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
-              "circle": 2,
+              "rect": 9,
+              "circle": 61,
               "ellipse": 0,
-              "line": 6,
+              "line": 22,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 2,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -222,16 +315,27 @@
         "fonts": [
           "Microsoft YaHei, Arial"
         ],
-        "text_elements": 15,
+        "text_elements": 20,
         "tspan_elements": 2,
         "contextual_values": {
           "colors": [
+            "#103B35",
+            "#215749",
+            "#23554E",
+            "#40736A",
+            "#437966",
+            "#4F8165",
+            "#8EAF7A",
+            "#B7CCC6",
+            "#CFDED7",
+            "#D8EAE2",
+            "#E7F2EA",
             "#FFFFFF"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
+      "source_sha256": "6fe22bf20d53afddf026acd3e30c397dca911c2fba4823092debec4a5127b9cc"
     },
     {
       "file": "02_slide.svg",
@@ -242,7 +346,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 25,
           "images": {
             "placements": 0,
             "files": [],
@@ -251,23 +355,23 @@
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
+            "gradient_uses": 1,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 3,
-              "circle": 0,
+              "rect": 9,
+              "circle": 61,
               "ellipse": 0,
-              "line": 1,
+              "line": 24,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 2,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -283,19 +387,28 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 15,
-        "tspan_elements": 0,
+        "text_elements": 25,
+        "tspan_elements": 1,
         "contextual_values": {
           "colors": [
-            "#F4ECE5"
+            "#103B35",
+            "#215749",
+            "#23554E",
+            "#437966",
+            "#4F8165",
+            "#8EAF7A",
+            "#B7CCC6",
+            "#CFDED7",
+            "#D8EAE2",
+            "#E7F2EA",
+            "#FFFFFF"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
+      "source_sha256": "fd3cbb03219021e95cdbd41188f23ce95bb04efbaf6ff8bfaf4027bdc73c8a5e"
     },
     {
       "file": "03_slide.svg",
@@ -306,7 +419,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 17,
+          "text_elements": 26,
           "images": {
             "placements": 0,
             "files": [],
@@ -321,17 +434,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
+              "rect": 7,
               "circle": 0,
               "ellipse": 0,
-              "line": 4,
+              "line": 3,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 3,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -347,14 +460,18 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 17,
-        "tspan_elements": 0
+        "text_elements": 26,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
+      "source_sha256": "f71cc9207cdefab6416db823fb8097105bda00d09bb6802ed1bf221669715c6f"
     },
     {
       "file": "04_slide.svg",
@@ -365,7 +482,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 20,
+          "text_elements": 30,
           "images": {
             "placements": 0,
             "files": [],
@@ -374,23 +491,23 @@
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
+            "gradient_uses": 1,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
-              "circle": 0,
+              "rect": 15,
+              "circle": 6,
               "ellipse": 0,
-              "line": 5,
+              "line": 12,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 3,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -406,14 +523,21 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 20,
-        "tspan_elements": 0
+        "text_elements": 30,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#23554E",
+            "#B7CCC6",
+            "#D8EAE2",
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
+      "source_sha256": "a951aefdddca92d84d339209f3a8ad6cd02476d745e28576319e96ddb79d3b7d"
     },
     {
       "file": "05_slide.svg",
@@ -424,7 +548,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 23,
+          "text_elements": 29,
           "images": {
             "placements": 0,
             "files": [],
@@ -439,17 +563,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 5,
+              "rect": 12,
               "circle": 3,
               "ellipse": 0,
-              "line": 7,
+              "line": 6,
               "polyline": 0,
               "polygon": 0,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -465,14 +589,19 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 23,
-        "tspan_elements": 1
+        "text_elements": 29,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#F6ECE6",
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+      "source_sha256": "a8bb621fe74bacfbfca1a301856874d52df3f10a345c6cee3a230a15ce5a8aa6"
     },
     {
       "file": "06_slide.svg",
@@ -483,7 +612,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 27,
+          "text_elements": 39,
           "images": {
             "placements": 0,
             "files": [],
@@ -498,17 +627,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
-              "circle": 0,
+              "rect": 6,
+              "circle": 2,
               "ellipse": 0,
-              "line": 9,
+              "line": 15,
               "polyline": 3,
               "polygon": 0,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -524,14 +653,18 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 27,
-        "tspan_elements": 0
+        "text_elements": 39,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#F6ECE6"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "3b5f3d9ac432a29c9a559a29ca7ade53060ae0ac6c425c707b0f8571b20b5026"
+      "source_sha256": "93dd8e882a4775cd08cc65e5c18b0acfd38e7d5c20c965ac8f62f9ca5a0d9a12"
     },
     {
       "file": "07_slide.svg",
@@ -557,17 +690,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
+              "rect": 6,
               "circle": 8,
               "ellipse": 0,
-              "line": 17,
+              "line": 16,
               "polyline": 0,
               "polygon": 0,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -583,23 +716,360 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
         "text_elements": 45,
         "tspan_elements": 0,
         "contextual_values": {
           "colors": [
-            "#83639B"
+            "#83639B",
+            "#FFFFFF"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "b548d21e05c544b4bd0eba5b407e96b69786614c5617be7cf3254746afa4c949"
+      "source_sha256": "c6fc9f22104e3b67735b12e35fb790084e9635cbd3aa93bd3b2b93b6a3ec41db"
     },
     {
       "file": "08_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\08_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 3,
+        "contextual_values": {
+          "colors": [
+            "#23554E",
+            "#46766B",
+            "#B7CCC6",
+            "#D8EAE2",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "1f69ab8b37127b7d9b372129e792814aa632947ba9d1a607860596e166557410"
+    },
+    {
+      "file": "09_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\09_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 49,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 13,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 1,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 49,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#2C6259",
+            "#DBA897",
+            "#DEE7E0",
+            "#F0F4F1",
+            "#F6ECE6",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "5b32fc18e347f40473ac29b5f60278aba423b67dc974d8da59a19f2f406d2eb2"
+    },
+    {
+      "file": "10_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\10_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 40,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 13,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 40,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#D8EAE2",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "fe2b29870fd49aa373f2ae9891de95acf1a0efd8eebc560deb423e6f5b1c6659"
+    },
+    {
+      "file": "11_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\11_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 35,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 4,
+              "ellipse": 0,
+              "line": 7,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 35,
+        "tspan_elements": 1,
+        "contextual_values": {
+          "colors": [
+            "#D8EAE2",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "6a90aff61b5b45922158436a3a507e7632cb031f44e93826a8dfa11f50979fad"
+    },
+    {
+      "file": "12_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\12_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 24,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 9,
+              "circle": 61,
+              "ellipse": 0,
+              "line": 22,
+              "polyline": 0,
+              "polygon": 2,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 24,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#103B35",
+            "#215749",
+            "#23554E",
+            "#437966",
+            "#4A776F",
+            "#4F8165",
+            "#8EAF7A",
+            "#B7CCC6",
+            "#CFDED7",
+            "#D8EAE2",
+            "#E7F2EA",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "d56a5d8807a83ecfe1abd7d8a304de7d5714778765160b40f135d27f851ccc14"
+    },
+    {
+      "file": "13_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\13_slide.svg",
       "exists": true,
       "errors": [],
       "warnings": [],
@@ -621,17 +1091,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
+              "rect": 7,
               "circle": 0,
               "ellipse": 0,
-              "line": 2,
+              "line": 3,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 3,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -647,319 +1117,19 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
         "text_elements": 18,
-        "tspan_elements": 0
-      },
-      "passed": true,
-      "source_sha256": "9439c2209c3c069ed740692591131101895e2f4b9443e6daa162d8af48863a45"
-    },
-    {
-      "file": "09_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\09_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 19,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 5,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 4,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 19,
-        "tspan_elements": 0
-      },
-      "passed": true,
-      "source_sha256": "aa1e113a63944a2381962f237505e68d3860eca9eb0f24495e7cd7f467e0cce6"
-    },
-    {
-      "file": "10_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\10_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 19,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 1,
-              "circle": 3,
-              "ellipse": 0,
-              "line": 4,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 19,
-        "tspan_elements": 0,
+        "tspan_elements": 1,
         "contextual_values": {
           "colors": [
+            "#F6ECE6",
             "#FFFFFF"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "35e13749065f6e5b405e9e28c18324ef15e24df09929c2b3f6b0e35161e9abf9"
-    },
-    {
-      "file": "11_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\11_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 20,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 2,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 5,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 20,
-        "tspan_elements": 3
-      },
-      "passed": true,
-      "source_sha256": "2ea90e85c2c4238edaffa69778e4ef7c98eb8dd1c4789b4efa4d781c447f1ae6"
-    },
-    {
-      "file": "12_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\12_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 14,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 2,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 1,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 14,
-        "tspan_elements": 0,
-        "contextual_values": {
-          "colors": [
-            "#FFFFFF"
-          ]
-        }
-      },
-      "passed": true,
-      "source_sha256": "d758f4c8ac65d853ba55e5bdce34e45e91b7cb8b4a37ccd878dd52027a372356"
-    },
-    {
-      "file": "13_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\13_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 13,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 1,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 1,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 13,
-        "tspan_elements": 0
-      },
-      "passed": true,
-      "source_sha256": "7407baaedc7c60d531c8cb52bec94c84e5d65318bcf0ee127f4e1d207fac43f3"
+      "source_sha256": "fc1f49ccd80c3fe69c554814d334ca745f4453567ef007177fa96a57d320427c"
     },
     {
       "file": "14_slide.svg",
@@ -970,7 +1140,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 19,
           "images": {
             "placements": 0,
             "files": [],
@@ -985,17 +1155,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
+              "rect": 10,
               "circle": 0,
               "ellipse": 0,
-              "line": 4,
+              "line": 2,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 2,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -1011,14 +1181,19 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 15,
-        "tspan_elements": 0
+        "text_elements": 19,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#D8EAE2",
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "689b669035c7e7c32611388007993713ed5ec8457cf30aa527413d61f5882b01"
+      "source_sha256": "39910e55dcd740a8a16b31b1a0746154e6151f2d835e928ab245640ed3f5f5af"
     },
     {
       "file": "15_slide.svg",
@@ -1029,7 +1204,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 27,
           "images": {
             "placements": 0,
             "files": [],
@@ -1044,17 +1219,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
+              "rect": 4,
               "circle": 0,
               "ellipse": 0,
-              "line": 1,
+              "line": 0,
               "polyline": 0,
               "polygon": 0,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 3,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -1070,14 +1245,13 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 15,
-        "tspan_elements": 0
+        "text_elements": 27,
+        "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "6f5ad5b732bfd2f8093a3349a353199f4f2439d36764c7d412fcc973c99f4415"
+      "source_sha256": "7eb51daec867bbcb6e54fa3f21c74c5d53f46624040467dde753edf2e55d1e16"
     }
   ]
 }

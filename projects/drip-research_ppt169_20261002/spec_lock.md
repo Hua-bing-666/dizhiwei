@@ -14,7 +14,7 @@
 - mode_behavior: 先问题与已有研究，后任务与模型证据，再失败边界和实现路线，收束到预期系统与研究成果
 ## visual_style
 - visual_style: custom
-- visual_style_behavior: 暖白证据版面、深绿结构线、克制异常强调；以坐标、依赖和阶段表达语义，图表与系统页具有不同空间组织
+- visual_style_behavior: 深色场景/架构与浅色证据交替；概念场景、分层系统、布点、软件界面、判据标注和实验网格各有对应载体
 ## colors
 - background: #FAF9F5
 - secondary_bg: #EEF3EF
@@ -25,9 +25,12 @@
 - secondary_text: #556762
 - divider: #C7D2CB
 - grid: #E0E7E2
+- dark_surface: #092E2B
+- signal: #78DFC5
+- warm_highlight: #F3C77B
 ## typography
 - font_family: Microsoft YaHei, Arial
-- title_family: SimHei, Arial
+- title_family: Microsoft YaHei, Arial
 - body_family: Microsoft YaHei, Arial
 - body: 24
 - title: 42
@@ -35,7 +38,9 @@
 - lead: 28
 - annotation: 18
 - footnote: 16
-- display: 60
+- display: 64
+- hero: 72
+- diagram_label: 20
 ## icons
 - library: none
 - inventory: none

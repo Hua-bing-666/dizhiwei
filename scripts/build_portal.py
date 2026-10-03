@@ -16,6 +16,12 @@ paths+=['deliverables/'+name for name in ['项目书审阅版.pdf','立项答辩
 paths+=['simulation/communication_results/protocol_stress.json','scripts/validate_new_evidence.py','scripts/qa_deliverables.py']
 paths+=['application/正式模板正文.md','docs/案例对照与老师建议分析.md','docs/项目范围与三阶段执行方案.md','simulation/diagnosis_feasibility.py','simulation/DIAGNOSIS.md','simulation/diagnosis_results/summary.json','simulation/diagnosis_results/trials.csv','deliverables/大创申报书_模板填写稿.docx','deliverables/大创申报书_模板审阅版.pdf']
 paths+=['deliverables/index.html','deliverables/交付检查.json','deliverables/使用说明.md','README.md','scripts/fill_application_template.ps1','scripts/validate_diagnosis_evidence.py','scripts/export_ppt_review.ps1','scripts/package_submission.py','附件1：塔里木大学大学生创新训练项目申报书.doc']
+paths+=['docs/国内硬件选型与可行性核对.md','docs/国家级案例写法拆解与申报书改写.md','docs/视觉复核与重设计.md','simulation/hardware_design_check.py','simulation/hardware_results/summary.json','simulation/hardware_results/range_grid.csv','application/figures/vendor/provenance.json','scripts/build_application_design_figures.py','scripts/redesign_document_figures.py','scripts/save_supplier_illustrations.py','scripts/capture_application_platform.py']
+paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures').glob('*')) if p.is_file() and p.suffix in ('.png','.svg')]
+paths+=['simulation/hardware_results/observability.csv']
+paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures/vendor').glob('*.png'))]
+paths+=['docs/本轮申报书验收记录.md']
+paths+=['deliverables/申报书验收记录.json']
 manifest={'date':'2026-10-03','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
 (OUT/'证据清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
 print('Offline portal written. Slides embedded:',len(svgs),'evidence records:',len(paths))

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-03",
+  "status": "research_application_review_draft_complete",
+  "physical_validation": false,
+  "visual_review": {
+    "application_native_wps_pdf_pages": 19,
+    "application_reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "scope_pdf_pages": 5,
+    "scope_reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "figures": 9,
+    "editable_record_tables": 4,
+    "approval_fields_retained": true,
+    "ppt": "draft; latest hardware/budget pending"
+  },
+  "evidence_checks": {
+    "candidate_range_grid": 24,
+    "severity_targets": 36,
+    "reading_error_disjoint": 36,
+    "full_scale_error_disjoint": 34,
+    "early_5percent_leak_low_pressure_not_guaranteed": true
+  },
+  "unresolved_conditions": [
+    "pressure sensor matching specification and quote",
+    "continuous adjustable water source and reference instruments",
+    "team coding responsibilities and ability",
+    "actual calibration and pump working curve"
+  ],
+  "native_pdf_sha256": "e7fd5f62b0a0f87656e696ae9475ff5a032c58f6bdd7fff4b61778825b0e877f"
+}

@@ -1,14 +1,32 @@
-"""Plain-text payload for native Windows template editing; no DOCX authoring."""
+"""Parse nine prose sections, local figure anchors and native table records."""
 from pathlib import Path
 import re,json
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'tmp/reference_review';OUT.mkdir(parents=True,exist_ok=True)
 text=(ROOT/'application/正式模板正文.md').read_text(encoding='utf-8')
-parts=re.split(r'^## ',text,flags=re.M)[1:]
-sections=['\r'.join(line for line in re.sub(r'^### ', '',part,flags=re.M).splitlines() if line.strip()) for part in parts]
-assert len(sections)==9
-payload={'title':text.splitlines()[0][2:],'sections':sections,'figures':[
- {'path':'application/figures/system_scope.png','caption':'图1 支管巡检系统信息闭环设计 尚未连接实物'},
- {'path':'application/figures/dual_pressure_layout.png','caption':'图2 双压力流量布点与台架设计 非实物照片'},
- {'path':'application/figures/early_diagnosis.png','caption':'图3 渐进故障与早期判据的合成模型检验 参数未标定 非实物性能'}]}
+parts=re.split(r'^## ',text,flags=re.M)[1:];sections=[];figures=[];tables=[]
+for section_id,part in enumerate(parts):
+    lines=part.splitlines();result=[];i=0
+    while i<len(lines):
+        line=lines[i].strip()
+        if not line:i+=1;continue
+        match=re.fullmatch(r'!\[(.+)\]\((figures/[^)]+)\)',line)
+        if match:
+            marker=f'[[FIGURE{len(figures)+1}]]'
+            figures.append({'marker':marker,'section':section_id,'path':'application/'+match[2],'caption':match[1]})
+            result.append(marker);i+=1;continue
+        if line.startswith('|'):
+            rows=[]
+            while i<len(lines) and lines[i].strip().startswith('|'):
+                row=[x.strip() for x in lines[i].strip().strip('|').split('|')]
+                if not all(re.fullmatch(r':?-+:?',x) for x in row):rows.append(row)
+                i+=1
+            marker=f'[[TABLE{len(tables)+1}]]'
+            caption=result.pop() if result and re.match(r'^表\d+\s',result[-1]) else ''
+            tables.append({'marker':marker,'section':section_id,'caption':caption,'rows':rows})
+            result.append(marker);continue
+        result.append(re.sub(r'^#{3,4}\s+','',line));i+=1
+    sections.append('\r'.join(result))
+assert len(sections)==9 and len(figures)==9 and len(tables)==4
+payload={'title':text.splitlines()[0][2:],'sections':sections,'figures':figures,'tables':tables}
 (OUT/'application_payload.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
-print('Nine template sections prepared; abstract',len(parts[0].split('\n\n')[1]),'characters.')
+print('Nine template sections; nine anchored figures; four native table records; abstract',len(parts[0].split('\n\n')[1]),'characters.')

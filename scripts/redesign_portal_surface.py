@@ -1,0 +1,16 @@
+"""Restructure the website's opening around the project and its visual model."""
+from pathlib import Path
+import re
+ROOT=Path(__file__).resolve().parents[1];p=ROOT/'scripts/portal.template.html'
+s=p.read_text(encoding='utf-8')
+start=s.index('<section id="overview"');end=s.index('<h2>一个完整原型，四个工作包</h2>',start)
+hero='''<section id="overview" class="active"><div class="proposal-hero"><div class="hero-copy"><span class="eyebrow">滴智卫 / 创新训练申报</span><h1>南疆滴灌支管<br>早期故障诊断</h1><p class="hero-subtitle">基于 LoRa 的物联网原型系统</p><p>双压力与流量感知，有限诊断，可靠告警与管理确认。</p><div class="hero-tags"><span>2027.03—2028.02</span><span>四个工作包</span><span>一套原型</span></div><div class="hero-actions"><button data-jump="diagnosis">打开双点诊断回放</button><a href="立项答辩.pptx">答辩PPT</a></div></div><div class="hero-model"><img src="../application/figures/field_concept.svg" alt="滴灌支管、P0/P1/Q、感知节点与LoRa接收端的概念场景，非实物"><p>目标部署概念 · 基础验收采用双支路台架</p></div></div><div class="evidence-status"><b>当前证据状态</b><span>文献、未标定模型与合成回放；暂无实物或田间数据。网站没有在线设备，诊断与通信回放尚未形成经实测验证的端到端系统。</span></div>'''
+s=s[:start]+hero+s[end:]
+css='''
+/* Visual revision: the project scene and replay are primary, with evidence status visible. */
+aside{background:#092e2b}aside b{font-weight:700}main{padding:30px 34px}h1{font-weight:700;letter-spacing:0}.panel{border-radius:10px}.figure{background:white;border-radius:8px;border:1px solid #d6dfd8}.proposal-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:24px;padding:34px;background:linear-gradient(125deg,#164c45,#092e2b);border-radius:14px;color:#fff;align-items:center}.hero-copy{min-width:0}.hero-copy .eyebrow{color:#b7ccc6}.hero-copy h1{font-size:clamp(30px,3.2vw,49px);line-height:1.28;margin:24px 0 14px}.hero-copy p{color:#d8eae2;font-size:16px;max-width:460px}.hero-copy .hero-subtitle{color:#78dfc5;font-size:21px}.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.hero-tags span{background:#23554e;padding:5px 10px;border-radius:4px;font-size:13px;color:#d8eae2}.hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.hero-actions button{border:0;background:#78dfc5;color:#092e2b;padding:11px 17px;border-radius:6px;cursor:pointer;font-weight:700}.hero-actions a{color:#fff}.hero-model{min-width:0}.hero-model img{width:100%;display:block;border-radius:8px}.hero-model p{font-size:12px;color:#b7ccc6;text-align:center}.evidence-status{display:flex;gap:16px;border-left:4px solid #b4512b;padding:15px 18px;margin:20px 0 26px;background:#f4ece5;font-size:13px}.evidence-status b{white-space:nowrap;color:#b4512b}.evidence-status span{color:#556762}.grid .panel{box-shadow:none}#overview>h2{margin-top:30px}#diagnosis .controls{border-radius:9px;background:#eef3ef;padding:20px}#diag-status{border-radius:5px}#diag-plot svg{display:block;width:100%;height:auto}
+@media(max-width:1100px){.proposal-hero{grid-template-columns:1fr;gap:10px}.hero-model{max-width:620px}.hero-copy h1{font-size:42px}}@media(max-width:700px){main{padding:22px 20px}.proposal-hero{padding:24px}.hero-copy h1{font-size:34px}.evidence-status{display:block}.evidence-status b{display:block;margin-bottom:5px}.hero-copy .hero-subtitle{font-size:18px}}
+'''
+s=s.replace('</style>',css+'</style>',1)
+p.write_text(s,encoding='utf-8',newline='\n')
+print('Website opening redesigned; controls/data/evidence statements retained.')

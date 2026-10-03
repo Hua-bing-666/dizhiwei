@@ -28,7 +28,6 @@ try {
     for ($i=0;$i -lt 9;$i++) {
         $index = 63+$i
         $value = [string]$payload.sections[$i]
-        if ($i -eq 8) {$value += "`r`r项目组成员签字："}
         Set-Cell $index $value
         $cell = $table.Range.Cells.Item($index)
         $cell.Range.Font.Name = 'Times New Roman'
@@ -38,27 +37,111 @@ try {
         $cell.Range.ParagraphFormat.SpaceAfter = 5
         $cell.Range.ParagraphFormat.SpaceBefore = 0
         $cell.Range.ParagraphFormat.Alignment = 0
-        $cell.Range.ParagraphFormat.KeepTogether = 0
+        $cell.Range.ParagraphFormat.KeepTogether = -1
         $cell.Range.ParagraphFormat.KeepWithNext = 0
         $cell.Range.Rows.Item(1).HeightRule = 0
         $cell.Range.Rows.Item(1).AllowBreakAcrossPages = $true
         $cell.Range.Paragraphs.Item(1).Range.Font.Bold = $true
         $cell.Range.Paragraphs.Item(1).Range.ParagraphFormat.KeepWithNext = -1
     }
-    # Start the research-basis section on a fresh page after the design figures.
-    $table.Range.Cells.Item(66).Range.Paragraphs.Item(1).Range.ParagraphFormat.PageBreakBefore = -1
-    # Add native inline drawings to the end of the project scheme section.
-    $cell = $table.Range.Cells.Item(65)
+    # Preserve the school template while giving the long scheme a heading ladder.
+    for ($i=0;$i -lt 9;$i++) {
+        foreach ($paragraph in $table.Range.Cells.Item(63+$i).Range.Paragraphs) {
+            $line=$paragraph.Range.Text.Trim()
+            if ($line -match '^\d+(\.\d+)?\s' -or $line -match '^表\d+\s') {
+                $paragraph.Range.Font.Bold=-1
+                $paragraph.Range.ParagraphFormat.SpaceBefore=7
+                $paragraph.Range.ParagraphFormat.KeepWithNext=-1
+            }
+        }
+    }
+    # The original references section follows the system and experiment scheme.
+    $table.Range.Cells.Item(66).Range.Paragraphs.Item(1).Range.ParagraphFormat.PageBreakBefore = 0
+    # Keep the original three signature rows together on one page.
+    # Put its label in the first cell so it cannot be orphaned on the prior page.
+    Set-Cell 72 '项目组成员签字：'
+    $table.Range.Cells.Item(72).Range.Font.NameFarEast='宋体'
+    $table.Range.Cells.Item(72).Range.Font.Size=10.5
+    for ($i=72;$i -le 80;$i++) {
+        $signature=$table.Range.Cells.Item($i)
+        $signature.Range.Rows.AllowBreakAcrossPages=$false
+        $signature.Range.ParagraphFormat.KeepWithNext=if ($i -lt 78) {-1} else {0}
+    }
+    $table.Range.Cells.Item(72).Range.Paragraphs.Item(1).Range.ParagraphFormat.PageBreakBefore=-1
+    # Insert each figure at its argument anchor, rather than append them together.
     foreach ($figure in $payload.figures) {
-        $range = $cell.Range.Duplicate
-        $range.End = $range.End - 1
-        $range.Collapse(0)
-        $range.InsertBefore("`r"+[string]$figure.caption+"`r")
-        $range = $cell.Range.Duplicate; $range.End = $range.End - 1; $range.Collapse(0)
+        $range=$doc.Content.Duplicate
+        $range.Find.ClearFormatting();$range.Find.Text=[string]$figure.marker;$range.Find.Wrap=0
+        if (-not $range.Find.Execute()) {throw ('Missing figure anchor: '+$figure.marker)}
+        $range.Text='';$range.Collapse(1)
         $shape = $doc.InlineShapes.AddPicture((Join-Path $Workspace ([string]$figure.path)),$false,$true,$range)
-        $shape.LockAspectRatio = -1; $shape.Width = 435
+        $shape.LockAspectRatio = -1; $shape.Width = 425
         $shape.Range.ParagraphFormat.Alignment = 1
+        $shape.Range.ParagraphFormat.KeepTogether = -1
         $shape.Range.ParagraphFormat.KeepWithNext = 0
+        $shape.AlternativeText = [string]$figure.caption
+        $tail=$shape.Range.Duplicate;$tail.Collapse(0)
+        $tail.InsertAfter([char]11+[string]$figure.caption)
+    }
+    foreach ($figure in $payload.figures) {
+        $caption = $doc.Content.Duplicate
+        $caption.Find.ClearFormatting()
+        $caption.Find.Text = [string]$figure.caption
+        $caption.Find.Wrap = 0
+        if ($caption.Find.Execute()) {
+            $caption.ParagraphFormat.KeepWithNext = 0
+            $caption.ParagraphFormat.KeepTogether = -1
+            $caption.Font.Size=9
+        } else { throw 'Expected figure caption missing from native template.' }
+    }
+    # Numeric/verification records become editable nested Word tables.
+    foreach ($record in $payload.tables) {
+        $range=$doc.Content.Duplicate
+        $range.Find.ClearFormatting();$range.Find.Text=[string]$record.marker;$range.Find.Wrap=0
+        if (-not $range.Find.Execute()) {throw ('Missing table anchor: '+$record.marker)}
+        $range.Text='';$range.Collapse(1)
+        $rowCount=$record.rows.Count;$columnCount=$record.rows[0].Count
+        # One non-splittable row keeps the editable record and caption together.
+        # It is a pagination container, with no visible panel or borders.
+        $holder=$doc.Tables.Add($range,1,1)
+        $holder.PreferredWidthType=3;$holder.PreferredWidth=425
+        $holder.TopPadding=0;$holder.BottomPadding=0;$holder.LeftPadding=0;$holder.RightPadding=0
+        $holder.Rows.HeightRule=0;$holder.Rows.AllowBreakAcrossPages=$false
+        foreach ($border in $holder.Borders) {$border.LineStyle=0}
+        $holderRange=$holder.Cell(1,1).Range.Duplicate;$holderRange.End=$holderRange.End-1
+        $holderRange.Text=[string]$record.caption+"`r"
+        $holder.Cell(1,1).Range.Paragraphs.Item(1).Range.Font.Bold=-1
+        $holder.Cell(1,1).Range.Paragraphs.Item(1).Range.ParagraphFormat.SpaceAfter=7
+        $innerRange=$holder.Cell(1,1).Range.Duplicate;$innerRange.End=$innerRange.End-1;$innerRange.Collapse(0)
+        $native=$doc.Tables.Add($innerRange,$rowCount,$columnCount)
+        $native.AllowAutoFit=$false
+        $native.PreferredWidthType=3;$native.PreferredWidth=425
+        $native.Range.Font.NameFarEast='宋体';$native.Range.Font.Name='Times New Roman'
+        $native.Range.Font.Size=9.5;$native.Range.Font.Bold=0
+        $native.Range.ParagraphFormat.SpaceBefore=0;$native.Range.ParagraphFormat.SpaceAfter=4
+        $native.Range.ParagraphFormat.LineSpacingRule=0
+        $native.Range.ParagraphFormat.KeepWithNext=-1
+        $native.Rows.Item($rowCount).Range.ParagraphFormat.KeepWithNext=0
+        $native.TopPadding=5;$native.BottomPadding=5;$native.LeftPadding=5;$native.RightPadding=5
+        $native.Rows.AllowBreakAcrossPages=$false
+        $native.Rows.Item(1).HeadingFormat=-1
+        $widths=if ([string]$record.rows[0][0] -eq '用途') {@(105,60,260)} else {@(85,165,175)}
+        for ($r=1;$r -le $rowCount;$r++) {
+            for ($c=1;$c -le $columnCount;$c++) {
+                $targetCell=$native.Cell($r,$c)
+                $targetCell.Range.Text=[string]$record.rows[$r-1][$c-1]
+                $targetCell.VerticalAlignment=1
+                if ($r -eq 1) {$targetCell.Shading.BackgroundPatternColor=15592941;$targetCell.Range.Font.Bold=-1}
+                else {$targetCell.Shading.BackgroundPatternColor=16777215}
+            }
+        }
+        for ($c=1;$c -le $columnCount;$c++) {$native.Columns.Item($c).Width=$widths[$c-1]}
+        foreach ($edge in @(-1,-2,-3,-4,-5,-6)) {
+            $border=$native.Borders.Item($edge)
+            $border.LineStyle=1;$border.LineWidth=2;$border.Color=14277081
+        }
+        $native.Borders.Item(-7).LineStyle=0
+        $native.Borders.Item(-8).LineStyle=0
     }
     # Cover fields retain the school's logo and original page design.
     foreach ($p in $doc.Paragraphs) {

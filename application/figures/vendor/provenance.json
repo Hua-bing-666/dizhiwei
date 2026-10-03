@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-10-03",
+  "entries": [
+    {
+      "key": "mcu",
+      "page_url": "https://www.lcdwiki.com/zh/STM32F103C8T6_Minimum_System_Development_Board",
+      "image_url": "https://www.lcdwiki.com/images/thumb/7/72/开发板STM32F103C8T6-40.jpg/400px-开发板STM32F103C8T6-40.jpg",
+      "local": "application/figures/vendor/mcu.png",
+      "sha256": "f0e484d9aba0ec9542470e163b86af594d7b0a0b0b5aba82164470440ed5dc27",
+      "classification": "supplier_product_illustration_not_project_prototype"
+    },
+    {
+      "key": "pressure",
+      "page_url": "https://www.microsensor.cn/products-193",
+      "image_url": "https://www.microsensor.cn/uploads/20251216/b81c68c6f0bf513ae31e06a1a919981e.webp",
+      "local": "application/figures/vendor/pressure.png",
+      "sha256": "2532dec7d67628100916039830ca9c82a217a5cd8342b64466e4588545674d8d",
+      "classification": "supplier_product_illustration_not_project_prototype"
+    },
+    {
+      "key": "flow",
+      "page_url": "https://www.dfrobot.com.cn/goods-3561.html",
+      "image_url": "https://ws.dfrobot.com.cn/FtE4Gxx_cSyORQvAHN3GkdMlgngz?imageView2/1/w/486/h/486",
+      "local": "application/figures/vendor/flow.png",
+      "sha256": "33d12c229da1812d52f2d2175eae2f75da4c9a33ebb64819617feff0bed7040d",
+      "classification": "supplier_product_illustration_not_project_prototype"
+    }
+  ]
+}

@@ -21,9 +21,9 @@ pdfmetrics.registerFontFamily('CJK',normal='CJK',bold='CJK',italic='CJK',boldIta
 g=colors.HexColor('#164c45');ink=colors.HexColor('#20332f');muted=colors.HexColor('#556762')
 styles={
  'body':ParagraphStyle('body',fontName='CJK',fontSize=10.5,leading=17.5,textColor=ink,spaceAfter=8,wordWrap='CJK'),
- 'h1':ParagraphStyle('h1',fontName='CJK',fontSize=18,leading=27,textColor=g,spaceAfter=16,wordWrap='CJK'),
- 'h2':ParagraphStyle('h2',fontName='CJK',fontSize=14,leading=21,textColor=g,spaceBefore=16,spaceAfter=9,keepWithNext=True,wordWrap='CJK'),
- 'h3':ParagraphStyle('h3',fontName='CJK',fontSize=11.5,leading=19,textColor=g,spaceBefore=10,spaceAfter=6,keepWithNext=True,wordWrap='CJK'),
+ 'h1':ParagraphStyle('h1',fontName='CJK',fontSize=18,leading=27,textColor=colors.black,spaceAfter=16,wordWrap='CJK'),
+ 'h2':ParagraphStyle('h2',fontName='CJK',fontSize=14,leading=21,textColor=colors.black,spaceBefore=16,spaceAfter=9,keepWithNext=True,wordWrap='CJK'),
+ 'h3':ParagraphStyle('h3',fontName='CJK',fontSize=11.5,leading=19,textColor=colors.black,spaceBefore=10,spaceAfter=6,keepWithNext=True,wordWrap='CJK'),
  'cell':ParagraphStyle('cell',fontName='CJK',fontSize=9,leading=14,textColor=ink,wordWrap='CJK'),
  'caption':ParagraphStyle('caption',fontName='CJK',fontSize=9,leading=14,textColor=muted,spaceAfter=12,wordWrap='CJK')}
 
@@ -67,13 +67,13 @@ def proposal():
         elif l.startswith('#### '):kind='h3';value=l[5:]
         elif l.startswith('- '):value='• '+l[2:]
         para=Paragraph(markup(value).replace('\n','<br/>'),styles[kind])
-        story.append(KeepTogether([para]) if re.match(r'^\[\d+\]',l) else para);i+=1
+        story.append(KeepTogether([para]) if kind=='body' else para);i+=1
         figures=[('申报名称采用','system_scope.png','系统设计：感知、有限诊断、可靠告警与管理确认；尚无在线实物。'),('必做配置为','dual_pressure_layout.png','布点与台架设计：P0/P1/Q包围目标区段；量程与差压误差仍须参考标定。'),('第2周完成','early_diagnosis.png','未标定合成模型480试次；15%仅为演示失效参照。非实物识别率。')]
         for trigger,name,caption in figures:
             if l.startswith(trigger):
                 img=Image(str(ROOT/'application/figures'/name));img.drawHeight=511*img.imageHeight/img.imageWidth;img.drawWidth=511
-                story.extend([img,Paragraph(caption,styles['caption'])])
-    story.append(PageBreak());story.append(Paragraph('附件：前期通信取舍图',styles['h2']))
+                story.append(KeepTogether([img,Paragraph(caption,styles['caption'])]))
+    story.append(Paragraph('附件：前期通信取舍图',styles['h2']))
     img=Image(str(ROOT/'application/figures/communication_tradeoff.png'));img.drawWidth=511;img.drawHeight=511*1044/2160
     story.append(img);story.append(Paragraph('图为未标定的合成回放；四策略同检测、同滤波载荷、同告警确认。每点为20个种子均值，发送帧包含确认和尾段清队列；误差相对本地模拟滤波量。',styles['caption']))
     story.append(Paragraph('复现与材料索引',styles['h2']))

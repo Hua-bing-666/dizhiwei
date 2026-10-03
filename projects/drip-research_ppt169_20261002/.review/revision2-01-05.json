@@ -1,0 +1,53 @@
+{
+  "reviewer": "visual_review_01_05",
+  "mode": "read_only_visual_review",
+  "prerequisites": {"static_gate_exit": 0, "blocking": 0, "introduced": 0, "renderer": "Edge Chromium", "canvas": {"view_box": [0,0,1280,720], "width":1280,"height":720,"png_width":1280,"png_height":720}},
+  "pages": [
+    {
+      "page": "01_slide.svg", "page_role": "cover", "status": "needs_human", "iterations_run":1,
+      "screenshot_paths": ["tmp/visual_redesign/01_slide.png"],
+      "findings": [{"rule":"H6","severity":"hard","evidence":"感知节点文字的顶部与设备深绿色屏幕底部相交。屏幕 y535.64—571.64；同色文字基线 y578.64、font-size16，字顶约565，导致上半截文字消失。实际 PNG 已可见。","fix_applied":null}],
+      "needs_human_items": [
+        {"rule":"H6","suggested_fix_summary":"将感知节点标签放到设备外下方，或扩大设备标签区域，保证文字与屏幕有至少8px净间距；同步处理 P02 同一组件。"},
+        {"rule":"SEMANTIC","suggested_fix_summary":"橙色向下折出的支路位于 P0 与 P1 之间，而 P05 的泄漏在 Q 之后；应明确它是何种元件，若表示泄漏则移到 Q 下游，避免封面概念模型与研究测点关系矛盾。"}
+      ],
+      "untouched_concerns": [{"rule":"S9","evidence":"橙色分支没有名称；观众容易将其理解为故障位置，含义不足以独立解释。","reason":"ambiguous_design_intent"}],
+      "design_intent_check":{"spec_says":"田块/节点/接收端概念模型，明确无实物数据","render_delivers":true,"note":"P0/P1/Q 均存在，概念/无实物声明明确；但节点标签受遮挡，故障符号位置须核对。"}
+    },
+    {
+      "page":"02_slide.svg","page_role":"content","status":"needs_human","iterations_run":1,
+      "screenshot_paths":["tmp/visual_redesign/02_slide.png"],
+      "findings":[{"rule":"H6","severity":"hard","evidence":"感知节点标签与深绿色屏幕底边发生同类碰撞，文字上部不可读；全尺寸 PNG 可见。","fix_applied":null}],
+      "needs_human_items":[
+        {"rule":"H6","suggested_fix_summary":"修正与 P01 共用的感知节点组件标签位置。"},
+        {"rule":"SEMANTIC","suggested_fix_summary":"校正或标明橙色分支：当前图上位于 P0/P1 之间，不能无解释地承担右栏的下游等效泄漏语义。"}
+      ],
+      "untouched_concerns":[{"rule":"S9","evidence":"三状态目前主要靠右栏文字区分，左图只有一个无名称的橙色分支，不能直接说明等效泄漏与等效受限发生在不同研究位置。","reason":"ambiguous_design_intent"}],
+      "design_intent_check":{"spec_says":"正常/泄漏/受限场景与有限管理交付","render_delivers":true,"note":"三状态文字和范围清楚；图的故障位置语义仍需与 P05 一致。"}
+    },
+    {
+      "page":"03_slide.svg","page_role":"content","status":"needs_human","iterations_run":1,
+      "screenshot_paths":["tmp/visual_redesign/03_slide.png"],
+      "findings":[
+        {"rule":"H3","severity":"hard","evidence":"第二行左侧引用 HydroNeuro / Sensors 2026 从x70开始延伸到x300左右，与x280开始的‘阀态建模与嵌入式感知已有先例’共用y415/416基线，实际 PNG 文本重叠。","fix_applied":null},
+        {"rule":"H3","severity":"hard","evidence":"第三行引用 Land 2026 / Sensors / IFAC 从x70延伸至x300左右，与x280开始的‘灌溉物联网与事件通信已有研究’共用y541/542基线，实际 PNG 文本重叠。","fix_applied":null}
+      ],
+      "needs_human_items":[{"rule":"H3","suggested_fix_summary":"将三个引用行与说明行分开基线或调整为上下排列；保持三行结构一致，避免只修两条导致对齐漂移。不要单纯缩小字体。"}],
+      "untouched_concerns":[],
+      "design_intent_check":{"spec_says":"已有工作与候选增量三组一一对应","render_delivers":false,"note":"结构对应成立，但两组来源与说明文本碰撞，妨碍真实来源和研究差异的读取。"}
+    },
+    {
+      "page":"04_slide.svg","page_role":"content","status":"ok","iterations_run":1,
+      "screenshot_paths":["tmp/visual_redesign/04_slide.png"],"findings":[],"needs_human_items":[],
+      "untouched_concerns":[{"rule":"SEMANTIC","evidence":"WP2 诊断与边界仍使用无线发射形状，与 WP3 可靠告警的相近图标重复，难从图标理解两工作包差异。建议诊断图标采用阈值/特征/比较语义。","reason":"ambiguous_design_intent"}],
+      "design_intent_check":{"spec_says":"四工作包分层及闭环任务关系","render_delivers":true,"note":"四列和箭头不存在明显碰撞；任务文本足以区分工作包，图标语义是可优化项。"}
+    },
+    {
+      "page":"05_slide.svg","page_role":"content","status":"ok","iterations_run":1,
+      "screenshot_paths":["tmp/visual_redesign/05_slide.png"],"findings":[],"needs_human_items":[],
+      "untouched_concerns":[{"rule":"SEMANTIC","evidence":"水路没有流向箭头，首次观看主要依赖左侧共同供水与右侧负载推断方向；少量方向箭头会更直接说明 Q 含泄漏总流量。","reason":"ambiguous_design_intent"}],
+      "design_intent_check":{"spec_says":"P0受限前、P1受限后、Q含下游负载与泄漏，列出特征及成立条件","render_delivers":true,"note":"此页 P0/P1/Q 与泄漏布点关系清楚，公式与条件没有明显碰撞；是校正 P01/P02 概念图的参照。"}
+    }
+  ],
+  "summary":{"hard_hits":4,"pages_needing_fix":["01_slide.svg","02_slide.svg","03_slide.svg"],"modified_files":[],"remaining_uncertainty":"本审阅未检查最终 PPTX 中 Office 字体替换及公式排版，仅针对已提供 1280×720 SVG 原生 PNG。"}
+}

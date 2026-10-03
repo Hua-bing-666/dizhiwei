@@ -4,75 +4,75 @@
   "target": "C:\\Users\\Lenovo\\Desktop\\大创想法\\projects\\drip-research_ppt169_20261002",
   "source_fingerprint": {
     "algorithm": "sha256",
-    "digest": "ff088cc3d4654c4bb05a7e57b2e6dd6226e0ed8538c87b58e26034737ae29b68",
+    "digest": "9d43488bb0bfefcee35dad91da4840aeee960d7f91b0b6fe96866d7a02329da6",
     "file_count": 15,
     "files": [
       {
         "file": "01_slide.svg",
-        "sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
+        "sha256": "05f01ca73109dbc0512e5e62aa1cb53f27646a1eb687cba273ebd727ef424367"
       },
       {
         "file": "02_slide.svg",
-        "sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
+        "sha256": "0eb4248af73360100ee76f25eb3f6009121838143770ae06a15cb8de94b91355"
       },
       {
         "file": "03_slide.svg",
-        "sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
+        "sha256": "c0c2ce3ac1a0f8e9cffccf2f8a4327ac137094f019bfe251e8703bf7b7bb98a9"
       },
       {
         "file": "04_slide.svg",
-        "sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
+        "sha256": "df4de28aa8a32274e22f567a47a144c47189b2544abb1f0c9b70b381e1c9cb1b"
       },
       {
         "file": "05_slide.svg",
-        "sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+        "sha256": "9db0300ba806a3e098f01ac943cf2053f69a5303547b82f7784f5596399eaf77"
       },
       {
         "file": "06_slide.svg",
-        "sha256": "e8a999f83cd4bdb8328943c80f1493c1dc4df0954a3264550fb919ff84dc47cf"
+        "sha256": "3b5f3d9ac432a29c9a559a29ca7ade53060ae0ac6c425c707b0f8571b20b5026"
       },
       {
         "file": "07_slide.svg",
-        "sha256": "46004111e70f411296f67b162f860aa42fd5ea34d89cea23b5d7aa0ab63dcd5a"
+        "sha256": "b548d21e05c544b4bd0eba5b407e96b69786614c5617be7cf3254746afa4c949"
       },
       {
         "file": "08_slide.svg",
-        "sha256": "a3a5c52360e00520dd7f63e885c7e50107f3c76e6e910c5f7b6cef6a1f762f46"
+        "sha256": "9439c2209c3c069ed740692591131101895e2f4b9443e6daa162d8af48863a45"
       },
       {
         "file": "09_slide.svg",
-        "sha256": "3d82ca62dc4ea1a414d1f0bf9c078bba89f27b24cbf3d38818c2c9f1f54117d2"
+        "sha256": "aa1e113a63944a2381962f237505e68d3860eca9eb0f24495e7cd7f467e0cce6"
       },
       {
         "file": "10_slide.svg",
-        "sha256": "c491243281100964dbf7975551dcfc208319986b71a59b611d3cee7dd70810d3"
+        "sha256": "35e13749065f6e5b405e9e28c18324ef15e24df09929c2b3f6b0e35161e9abf9"
       },
       {
         "file": "11_slide.svg",
-        "sha256": "d468422858e994f85de6acd457e83c190aab02b8e31d7640d0db5f3a49e534bb"
+        "sha256": "2ea90e85c2c4238edaffa69778e4ef7c98eb8dd1c4789b4efa4d781c447f1ae6"
       },
       {
         "file": "12_slide.svg",
-        "sha256": "0758e46b0f8f578d313cf9820ba4754c5c81a3e51787579358423ecd5394f7e1"
+        "sha256": "d758f4c8ac65d853ba55e5bdce34e45e91b7cb8b4a37ccd878dd52027a372356"
       },
       {
         "file": "13_slide.svg",
-        "sha256": "6baf05e1ca0ce3492bb8b455210915bf45de9aef816e3aaac0eb2f83494143b4"
+        "sha256": "7407baaedc7c60d531c8cb52bec94c84e5d65318bcf0ee127f4e1d207fac43f3"
       },
       {
         "file": "14_slide.svg",
-        "sha256": "5b1a3d8c0ee1caf4290aa2a8ddb9cb37eed589e9dd72ed0914e30a9dcdcf700e"
+        "sha256": "689b669035c7e7c32611388007993713ed5ec8457cf30aa527413d61f5882b01"
       },
       {
         "file": "15_slide.svg",
-        "sha256": "070caaff37d54372f29415105d4416c56fe2011a308518f6291d15591381e948"
+        "sha256": "6f5ad5b732bfd2f8093a3349a353199f4f2439d36764c7d412fcc973c99f4415"
       }
     ]
   },
   "summary": {
     "total": 15,
-    "passed": 15,
-    "warnings": 0,
+    "passed": 10,
+    "warnings": 5,
     "errors": 0
   },
   "issue_types": {},
@@ -82,8 +82,73 @@
       "issues": []
     },
     "introduced": {
-      "count": 0,
-      "issues": []
+      "count": 16,
+      "issues": [
+        {
+          "file": "01_slide.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "01_slide.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (21 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "01_slide.svg",
+          "message": "<text> (x=873, y=617; text='方案概念模型 · 非现场照片') exceeds <g id=\"cover-field\"> data-pptx-bounds on the vertical axis: content (757.1, 601.7)-(988.9, 623.3), container (566.0, 184.0)-(1231.0, 622.0), overflow horizontal 0.0%, vertical 0.3% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        },
+        {
+          "file": "01_slide.svg",
+          "message": "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #4); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "02_slide.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "02_slide.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (26 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "02_slide.svg",
+          "message": "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #4); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "03_slide.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "03_slide.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (27 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "03_slide.svg",
+          "message": "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #4); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "04_slide.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "04_slide.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (31 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "04_slide.svg",
+          "message": "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #5); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "05_slide.svg",
+          "message": "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "05_slide.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (30 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "05_slide.svg",
+          "message": "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #5); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        }
+      ]
     },
     "inherited": {
       "count": 0,
@@ -99,34 +164,102 @@
   },
   "drift": {
     "colors": {
+      "#103B35": [
+        "01_slide.svg",
+        "02_slide.svg"
+      ],
+      "#215749": [
+        "01_slide.svg",
+        "02_slide.svg"
+      ],
+      "#23554E": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "04_slide.svg"
+      ],
+      "#40736A": [
+        "01_slide.svg"
+      ],
+      "#437966": [
+        "01_slide.svg",
+        "02_slide.svg"
+      ],
+      "#4F8165": [
+        "01_slide.svg",
+        "02_slide.svg"
+      ],
       "#83639B": [
         "07_slide.svg"
       ],
-      "#F4ECE5": [
+      "#8EAF7A": [
+        "01_slide.svg",
         "02_slide.svg"
+      ],
+      "#B7CCC6": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "04_slide.svg"
+      ],
+      "#CFDED7": [
+        "01_slide.svg",
+        "02_slide.svg"
+      ],
+      "#D8EAE2": [
+        "01_slide.svg",
+        "02_slide.svg",
+        "04_slide.svg"
+      ],
+      "#E7F2EA": [
+        "01_slide.svg",
+        "02_slide.svg"
+      ],
+      "#F6ECE6": [
+        "05_slide.svg"
       ],
       "#FFFFFF": [
         "01_slide.svg",
+        "02_slide.svg",
+        "03_slide.svg",
+        "04_slide.svg",
+        "05_slide.svg",
         "10_slide.svg",
         "12_slide.svg"
       ]
     },
-    "fonts": {},
-    "sizes": {}
+    "fonts": {
+      "SimHei, Arial": [
+        "06_slide.svg",
+        "07_slide.svg",
+        "08_slide.svg",
+        "09_slide.svg",
+        "10_slide.svg",
+        "11_slide.svg",
+        "12_slide.svg",
+        "13_slide.svg",
+        "14_slide.svg",
+        "15_slide.svg"
+      ]
+    },
+    "sizes": {
+      "60": [
+        "08_slide.svg",
+        "11_slide.svg"
+      ]
+    }
   },
   "carrier_receipt": {
     "scope": "informational-not-a-quota",
     "pages": 15,
     "totals": {
-      "text_elements": 252,
+      "text_elements": 335,
       "image_placements": 0,
       "icons": 0,
-      "svg_geometry_elements": 115,
+      "svg_geometry_elements": 339,
       "preset_shapes": 0,
-      "page_frame_elements": 30,
+      "page_frame_elements": 25,
       "marker_uses": 0,
       "inline_emphasis_runs": 0,
-      "gradient_uses": 0,
+      "gradient_uses": 3,
       "filter_uses": 0,
       "text_effects": 0
     },
@@ -138,19 +271,19 @@
       "tables": 0,
       "formulas": 1,
       "inline_emphasis_runs": 0,
-      "gradient_uses": 0,
+      "gradient_uses": 3,
       "filter_uses": 0,
       "text_effects": 0
     },
     "relationship_pages": 0,
     "geometry_elements": {
-      "circle": 16,
+      "circle": 140,
       "ellipse": 0,
-      "line": 70,
+      "line": 118,
       "path": 0,
-      "polygon": 0,
-      "polyline": 2,
-      "rect": 27
+      "polygon": 10,
+      "polyline": 3,
+      "rect": 68
     },
     "preset_names": {},
     "native_objects": {
@@ -175,11 +308,16 @@
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\01_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (21 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "<text> (x=873, y=617; text='方案概念模型 · 非现场照片') exceeds <g id=\"cover-field\"> data-pptx-bounds on the vertical axis: content (757.1, 601.7)-(988.9, 623.3), container (566.0, 184.0)-(1231.0, 622.0), overflow horizontal 0.0%, vertical 0.3% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #4); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 20,
           "images": {
             "placements": 0,
             "files": [],
@@ -188,23 +326,23 @@
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
+            "gradient_uses": 1,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
-              "circle": 2,
+              "rect": 9,
+              "circle": 61,
               "ellipse": 0,
-              "line": 6,
+              "line": 22,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 2,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 1,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -222,8 +360,163 @@
         "fonts": [
           "Microsoft YaHei, Arial"
         ],
-        "text_elements": 15,
+        "text_elements": 20,
         "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#103B35",
+            "#215749",
+            "#23554E",
+            "#40736A",
+            "#437966",
+            "#4F8165",
+            "#8EAF7A",
+            "#B7CCC6",
+            "#CFDED7",
+            "#D8EAE2",
+            "#E7F2EA",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "05f01ca73109dbc0512e5e62aa1cb53f27646a1eb687cba273ebd727ef424367"
+    },
+    {
+      "file": "02_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\02_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (26 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #4); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 25,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 9,
+              "circle": 61,
+              "ellipse": 0,
+              "line": 24,
+              "polyline": 0,
+              "polygon": 2,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 25,
+        "tspan_elements": 1,
+        "contextual_values": {
+          "colors": [
+            "#103B35",
+            "#215749",
+            "#23554E",
+            "#437966",
+            "#4F8165",
+            "#8EAF7A",
+            "#B7CCC6",
+            "#CFDED7",
+            "#D8EAE2",
+            "#E7F2EA",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0eb4248af73360100ee76f25eb3f6009121838143770ae06a15cb8de94b91355"
+    },
+    {
+      "file": "03_slide.svg",
+      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\03_slide.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (27 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #4); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 26,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 7,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 3,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 26,
+        "tspan_elements": 0,
         "contextual_values": {
           "colors": [
             "#FFFFFF"
@@ -231,141 +524,22 @@
         }
       },
       "passed": true,
-      "source_sha256": "b189bff9bd150eb541603ace48a1dda43314e65b403f3abbfed7a9abceea8d7f"
-    },
-    {
-      "file": "02_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\02_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 15,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 3,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 1,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 15,
-        "tspan_elements": 0,
-        "contextual_values": {
-          "colors": [
-            "#F4ECE5"
-          ]
-        }
-      },
-      "passed": true,
-      "source_sha256": "26e4098d9e4dc5dd628bbc5d8a14b42a60f8d107bfbb9eb41b2fe102114a5db1"
-    },
-    {
-      "file": "03_slide.svg",
-      "path": "projects\\drip-research_ppt169_20261002\\svg_output\\03_slide.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 17,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 1,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 4,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 2,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
-        ],
-        "text_elements": 17,
-        "tspan_elements": 0
-      },
-      "passed": true,
-      "source_sha256": "c43b5f60b50fabfb7c2ba915f33e4ee5c52cda199f9502317327e1483d4adeeb"
+      "source_sha256": "c0c2ce3ac1a0f8e9cffccf2f8a4327ac137094f019bfe251e8703bf7b7bb98a9"
     },
     {
       "file": "04_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\04_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (31 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #5); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 20,
+          "text_elements": 30,
           "images": {
             "placements": 0,
             "files": [],
@@ -374,23 +548,23 @@
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
+            "gradient_uses": 1,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 1,
-              "circle": 0,
+              "rect": 15,
+              "circle": 4,
               "ellipse": 0,
-              "line": 5,
+              "line": 15,
               "polyline": 0,
-              "polygon": 0,
+              "polygon": 3,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 1,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -406,25 +580,36 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 20,
-        "tspan_elements": 0
+        "text_elements": 30,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#23554E",
+            "#B7CCC6",
+            "#D8EAE2",
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "8a6633fadda29ebad9ba2303720ee0f29ce674561cb4de87cbbcc023e1493b2e"
+      "source_sha256": "df4de28aa8a32274e22f567a47a144c47189b2544abb1f0c9b70b381e1c9cb1b"
     },
     {
       "file": "05_slide.svg",
       "path": "projects\\drip-research_ppt169_20261002\\svg_output\\05_slide.svg",
       "exists": true,
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Noncanonical compact authoring: Visible text requires one direct root font-family default; semantic groups and text elements keep only real overrides (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (30 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): svg[1]:font-family None -> 'Microsoft YaHei, Arial'; page-kicker:font-family 'Microsoft YaHei, Arial' -> None; page-route-0:font-family 'Microsoft YaHei, Arial' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <rect> #5); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 23,
+          "text_elements": 29,
           "images": {
             "placements": 0,
             "files": [],
@@ -439,17 +624,17 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 5,
+              "rect": 12,
               "circle": 3,
               "ellipse": 0,
-              "line": 7,
+              "line": 6,
               "polyline": 0,
               "polygon": 0,
               "path": 0
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 2,
+            "page_frame_elements": 1,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -465,14 +650,19 @@
           }
         },
         "fonts": [
-          "Microsoft YaHei, Arial",
-          "SimHei, Arial"
+          "Microsoft YaHei, Arial"
         ],
-        "text_elements": 23,
-        "tspan_elements": 1
+        "text_elements": 29,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#F6ECE6",
+            "#FFFFFF"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "d5d3d8a0aea7991c3a7b586b5e001fc86c85c05825255ddcf896dfaa7897f49d"
+      "source_sha256": "9db0300ba806a3e098f01ac943cf2053f69a5303547b82f7784f5596399eaf77"
     },
     {
       "file": "06_slide.svg",
@@ -483,7 +673,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 20,
+          "text_elements": 27,
           "images": {
             "placements": 0,
             "files": [],
@@ -501,8 +691,8 @@
               "rect": 1,
               "circle": 0,
               "ellipse": 0,
-              "line": 8,
-              "polyline": 2,
+              "line": 9,
+              "polyline": 3,
               "polygon": 0,
               "path": 0
             },
@@ -527,11 +717,16 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 20,
-        "tspan_elements": 0
+        "text_elements": 27,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "e8a999f83cd4bdb8328943c80f1493c1dc4df0954a3264550fb919ff84dc47cf"
+      "source_sha256": "3b5f3d9ac432a29c9a559a29ca7ade53060ae0ac6c425c707b0f8571b20b5026"
     },
     {
       "file": "07_slide.svg",
@@ -542,7 +737,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 41,
+          "text_elements": 45,
           "images": {
             "placements": 0,
             "files": [],
@@ -586,16 +781,19 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 41,
+        "text_elements": 45,
         "tspan_elements": 0,
         "contextual_values": {
           "colors": [
             "#83639B"
+          ],
+          "font_families": [
+            "SimHei, Arial"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "46004111e70f411296f67b162f860aa42fd5ea34d89cea23b5d7aa0ab63dcd5a"
+      "source_sha256": "b548d21e05c544b4bd0eba5b407e96b69786614c5617be7cf3254746afa4c949"
     },
     {
       "file": "08_slide.svg",
@@ -606,7 +804,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 14,
+          "text_elements": 18,
           "images": {
             "placements": 0,
             "files": [],
@@ -650,11 +848,19 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 14,
-        "tspan_elements": 0
+        "text_elements": 18,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        },
+        "sparse_typography_sizes": {
+          "60": 1
+        }
       },
       "passed": true,
-      "source_sha256": "a3a5c52360e00520dd7f63e885c7e50107f3c76e6e910c5f7b6cef6a1f762f46"
+      "source_sha256": "9439c2209c3c069ed740692591131101895e2f4b9443e6daa162d8af48863a45"
     },
     {
       "file": "09_slide.svg",
@@ -665,7 +871,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 19,
           "images": {
             "placements": 0,
             "files": [],
@@ -709,11 +915,16 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 15,
-        "tspan_elements": 0
+        "text_elements": 19,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "3d82ca62dc4ea1a414d1f0bf9c078bba89f27b24cbf3d38818c2c9f1f54117d2"
+      "source_sha256": "aa1e113a63944a2381962f237505e68d3860eca9eb0f24495e7cd7f467e0cce6"
     },
     {
       "file": "10_slide.svg",
@@ -724,7 +935,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 15,
+          "text_elements": 19,
           "images": {
             "placements": 0,
             "files": [],
@@ -768,16 +979,19 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 15,
+        "text_elements": 19,
         "tspan_elements": 0,
         "contextual_values": {
           "colors": [
             "#FFFFFF"
+          ],
+          "font_families": [
+            "SimHei, Arial"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "c491243281100964dbf7975551dcfc208319986b71a59b611d3cee7dd70810d3"
+      "source_sha256": "35e13749065f6e5b405e9e28c18324ef15e24df09929c2b3f6b0e35161e9abf9"
     },
     {
       "file": "11_slide.svg",
@@ -788,7 +1002,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 16,
+          "text_elements": 20,
           "images": {
             "placements": 0,
             "files": [],
@@ -832,11 +1046,19 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 16,
-        "tspan_elements": 3
+        "text_elements": 20,
+        "tspan_elements": 3,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        },
+        "sparse_typography_sizes": {
+          "60": 1
+        }
       },
       "passed": true,
-      "source_sha256": "d468422858e994f85de6acd457e83c190aab02b8e31d7640d0db5f3a49e534bb"
+      "source_sha256": "2ea90e85c2c4238edaffa69778e4ef7c98eb8dd1c4789b4efa4d781c447f1ae6"
     },
     {
       "file": "12_slide.svg",
@@ -847,7 +1069,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 10,
+          "text_elements": 14,
           "images": {
             "placements": 0,
             "files": [],
@@ -891,16 +1113,19 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 10,
+        "text_elements": 14,
         "tspan_elements": 0,
         "contextual_values": {
           "colors": [
             "#FFFFFF"
+          ],
+          "font_families": [
+            "SimHei, Arial"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "0758e46b0f8f578d313cf9820ba4754c5c81a3e51787579358423ecd5394f7e1"
+      "source_sha256": "d758f4c8ac65d853ba55e5bdce34e45e91b7cb8b4a37ccd878dd52027a372356"
     },
     {
       "file": "13_slide.svg",
@@ -911,7 +1136,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 9,
+          "text_elements": 13,
           "images": {
             "placements": 0,
             "files": [],
@@ -955,11 +1180,16 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 9,
-        "tspan_elements": 0
+        "text_elements": 13,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "6baf05e1ca0ce3492bb8b455210915bf45de9aef816e3aaac0eb2f83494143b4"
+      "source_sha256": "7407baaedc7c60d531c8cb52bec94c84e5d65318bcf0ee127f4e1d207fac43f3"
     },
     {
       "file": "14_slide.svg",
@@ -970,7 +1200,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 11,
+          "text_elements": 15,
           "images": {
             "placements": 0,
             "files": [],
@@ -1014,11 +1244,16 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 11,
-        "tspan_elements": 0
+        "text_elements": 15,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "5b1a3d8c0ee1caf4290aa2a8ddb9cb37eed589e9dd72ed0914e30a9dcdcf700e"
+      "source_sha256": "689b669035c7e7c32611388007993713ed5ec8457cf30aa527413d61f5882b01"
     },
     {
       "file": "15_slide.svg",
@@ -1029,7 +1264,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 11,
+          "text_elements": 15,
           "images": {
             "placements": 0,
             "files": [],
@@ -1073,11 +1308,16 @@
           "Microsoft YaHei, Arial",
           "SimHei, Arial"
         ],
-        "text_elements": 11,
-        "tspan_elements": 0
+        "text_elements": 15,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "font_families": [
+            "SimHei, Arial"
+          ]
+        }
       },
       "passed": true,
-      "source_sha256": "070caaff37d54372f29415105d4416c56fe2011a308518f6291d15591381e948"
+      "source_sha256": "6f5ad5b732bfd2f8093a3349a353199f4f2439d36764c7d412fcc973c99f4415"
     }
   ]
 }
