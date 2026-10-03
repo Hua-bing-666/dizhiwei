@@ -15,3 +15,6 @@
 *.step binary
 *.LICENSE text eol=lf
 /.gitattributes text eol=lf
+# Preserve indentation in the unmodified upstream renderer and its HTML bundle.
+application/models/vendor/three.cjs whitespace=-space-before-tab
+deliverables/台架三维结构交互模型.html whitespace=-space-before-tab
