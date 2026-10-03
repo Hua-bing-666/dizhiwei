@@ -55,8 +55,8 @@
     },
     {
       "path": "deliverables/项目书审阅版.pdf",
-      "sha256": "0e00a5dbfb089c8f426df42f35f4f26c0ccfbee78dceb9197e81e67e10e84a1d",
-      "bytes": 727141
+      "sha256": "eed0522bc5557f42167407c7d18a2ee6584b765dfa319fe554f305a31a90312e",
+      "bytes": 796364
     },
     {
       "path": "deliverables/立项答辩.pptx",
@@ -85,8 +85,8 @@
     },
     {
       "path": "application/正式模板正文.md",
-      "sha256": "2d1c7cfe591753c072d480951cec40aecf1d1a43c24695ea1379ac23c0482c4f",
-      "bytes": 34667
+      "sha256": "a715243156b141351cd5b05fea5581cad9e8664730f4c2bb8d5e1db763c5fb09",
+      "bytes": 38081
     },
     {
       "path": "docs/案例对照与老师建议分析.md",
@@ -95,8 +95,8 @@
     },
     {
       "path": "docs/项目范围与三阶段执行方案.md",
-      "sha256": "3ae501a696e4c4bacc9630e5a1da9756b4c3197504e6f51e3e4b202c4ee21df2",
-      "bytes": 8921
+      "sha256": "7796f0710283b20c4f65bdbddde6aec4916e4b8fa05e7c4164adf4717599ae04",
+      "bytes": 11231
     },
     {
       "path": "simulation/diagnosis_feasibility.py",
@@ -120,37 +120,37 @@
     },
     {
       "path": "deliverables/大创申报书_模板填写稿.docx",
-      "sha256": "0708f8f6a735a306bb43dfa9dc65d0cc0f203ada37193e3d6a5692e5b30ee7ce",
-      "bytes": 2253452
+      "sha256": "2bc9630d792c835e29651d70f049ee24a45c57d3ee8cb7e2c23c63189dc3c0f9",
+      "bytes": 2329463
     },
     {
       "path": "deliverables/大创申报书_模板审阅版.pdf",
-      "sha256": "d73fccf86e4b538fb0e11e30fb6099695067d4fe5f5ffb5b51e87c99064b9b22",
-      "bytes": 2132915
+      "sha256": "2a12aa6b42a51ee3bc39f5bd78a43a543a205b8a70f0991e627fb8d9ccdce2b0",
+      "bytes": 2220502
     },
     {
       "path": "deliverables/index.html",
-      "sha256": "1a2feddbd158539f205ae3859ee174854da59aeb9312502bf0c2780c7353da44",
-      "bytes": 2019358
+      "sha256": "e355efb51dfe676ccf0d8942e35d0304ebd7e893affec01482e7bf5805c81d2c",
+      "bytes": 2035517
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "3bd0637b0bacf49b71d0be576b3c0b1e329d614bc17bc062684ac5bf12741363",
+      "sha256": "ec0fb2d00005a7e96a013b5dc574b3f1f4518087814bda7261b5e59146cc4672",
       "bytes": 508
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "b66db3550584cb7e1a181187c5d90f3b1ccf73a860f2501b1e3d3f682551ee5c",
-      "bytes": 3586
+      "sha256": "fa294f3af0da4a042fbdc7b6e4f764a8c1a8df6fcb69e4b02057fa9c137376c9",
+      "bytes": 4138
     },
     {
       "path": "README.md",
-      "sha256": "007c9d5b386497887e83e277c3dc607319739f67de71a52866c13c09a88afba7",
-      "bytes": 6391
+      "sha256": "74fabb1df98c07fbabb0b3714c920b5c95eea8993bd696ca37fb06753665b246",
+      "bytes": 6878
     },
     {
       "path": "scripts/fill_application_template.ps1",
-      "sha256": "cb58722e0e19157d258c9a3f87373085137a60554c21ce51dcdd773452b55a04",
+      "sha256": "d8ee076a42ab5001285ce082a5f2544420f60ab9ef76dff4c23bf6d6e25e8839",
       "bytes": 14397
     },
     {
@@ -165,8 +165,8 @@
     },
     {
       "path": "scripts/package_submission.py",
-      "sha256": "fd0e75f49619ac32660f0768f71e7cf9f081b4fb3ab4ca7df7fb3a461ae0c295",
-      "bytes": 1731
+      "sha256": "6e16b4b98dedfe0bd2fe40af620c1c0b66c362027b7efc7831bd20e47c02b155",
+      "bytes": 1747
     },
     {
       "path": "附件1：塔里木大学大学生创新训练项目申报书.doc",
@@ -225,8 +225,8 @@
     },
     {
       "path": "scripts/capture_application_platform.py",
-      "sha256": "ef4bbbaaa80c5104327a0a7d126cd93fc69a64de770563033582001190699918",
-      "bytes": 2438
+      "sha256": "42ea576d6d416ebdff98456749c2625bc97d2ba7dffa309b95e6b94493d4f563",
+      "bytes": 2718
     },
     {
       "path": "application/figures/acquisition_flow.png",
@@ -410,8 +410,8 @@
     },
     {
       "path": "application/figures/platform_replay.png",
-      "sha256": "8d699de6b0caa1a4044f083bb6e397e5352265781a7ea8b817528baa3cab26ca",
-      "bytes": 137776
+      "sha256": "2cb75d9c851b34bab6898a893acb6b0f0620c83dbdf57717e8998ca1e9b16196",
+      "bytes": 144791
     },
     {
       "path": "application/figures/pressure_frontend.png",
@@ -460,13 +460,13 @@
     },
     {
       "path": "application/figures/system_scope.png",
-      "sha256": "3da7ff7a3caec16779746081a19fa1d011d2151fc8f86012dd8dd0e1b7b210fd",
-      "bytes": 178539
+      "sha256": "22a40210792bb3a54ca7cbb23089154836daa95566d62a1e24bc36e3bbf5061d",
+      "bytes": 245747
     },
     {
       "path": "application/figures/system_scope.svg",
-      "sha256": "dfdb0f32399c25a0b6e6a6080508198271b648e3e79d4dbf89f5677832b80ae9",
-      "bytes": 4286
+      "sha256": "9c4aae348372bd7c95f91b7cf4af4372b457fa65af1f8b1f80401f7620219d3b",
+      "bytes": 5016
     },
     {
       "path": "simulation/hardware_results/observability.csv",
@@ -490,13 +490,13 @@
     },
     {
       "path": "docs/本轮申报书验收记录.md",
-      "sha256": "a3d141c9c9820adf17769d95d97ba411b2616cf0adccc45e0a3a8b25d009a591",
-      "bytes": 4350
+      "sha256": "9b1d7bdbdac9693c219c45063428911a7cc934f33f1b10d19ac8886f11662de6",
+      "bytes": 5688
     },
     {
       "path": "deliverables/申报书验收记录.json",
-      "sha256": "ed9768cb2feb2429668377c28eb32c3e5338ccad66636c74350292ee05fab8ee",
-      "bytes": 3136
+      "sha256": "1b8c405a4a9a4b49f83ad5e69b06f90cb2e70d825a1ff8e50abb25a30a3e6d38",
+      "bytes": 3155
     },
     {
       "path": "docs/申报书黑白流程与模型验收.md",
@@ -510,8 +510,8 @@
     },
     {
       "path": "application/figures/design_provenance.json",
-      "sha256": "d7b5c06be14ad5163c381ade19485d3e19a481437872ed9adfc4de10fc679054",
-      "bytes": 5402
+      "sha256": "63d7b8ddc6a7a8c0ca9bc0c7d7c6425e76d51ffaab8fbe2641832ff7ca113da0",
+      "bytes": 5690
     },
     {
       "path": "application/references.json",
@@ -550,8 +550,8 @@
     },
     {
       "path": "scripts/build_application_visuals.py",
-      "sha256": "377d7bfbc6251ae3b6ac45de809ff541398c2cbfe1940101f9fa49f90cfdc7fa",
-      "bytes": 8145
+      "sha256": "ddc7c58a003489070ff995cf2bdbb13b0b18a0a897a0a517ea114e2bc4750bb3",
+      "bytes": 8395
     },
     {
       "path": "docs/论文图示借鉴与本轮结构调整.md",
@@ -570,8 +570,8 @@
     },
     {
       "path": "deliverables/台架三维结构交互模型.html",
-      "sha256": "53dd5a47ec9dbb18a0bf167b52a1ac87134e09b9b2547d3a426e8896ec9a4a7b",
-      "bytes": 2540973
+      "sha256": "7573c23f95e4f95ac4fd308fcc82f0aa05001c67949ac19451b927c7b435d700",
+      "bytes": 2545285
     },
     {
       "path": "docs/三维结构模型优化说明.md",
@@ -590,8 +590,8 @@
     },
     {
       "path": "scripts/bench_viewer.template.html",
-      "sha256": "5e505041c26f7d07b53daa411157f31b1e858e6ee36acd8aecab5e6ca7145fdb",
-      "bytes": 11816
+      "sha256": "7f06c964b1cf7ecb0a257f31a55dc333345be65be84631842d888ecf0f453caf",
+      "bytes": 16128
     },
     {
       "path": "scripts/capture_bench_views.mjs",
@@ -657,6 +657,46 @@
       "path": "application/models/vendor/three.LICENSE",
       "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
       "bytes": 1081
+    },
+    {
+      "path": "docs/系统定位与后续研究路线.md",
+      "sha256": "fc7ebcd1722a56ebfc6ae096cbf6efcbed435d704b3d11ec7d67dbd6bf09497f",
+      "bytes": 7398
+    },
+    {
+      "path": "docs/UI重设计与来源记录.md",
+      "sha256": "e55f1450ecddfb04d9948d9e1d632aef4c9f37f253c2bed725d6cf287b750d8d",
+      "bytes": 3057
+    },
+    {
+      "path": "deliverables/界面验收记录.json",
+      "sha256": "ece28830c1fca722dc3b6815f820193d77180cbfc87be972504d2fbb85a9d471",
+      "bytes": 3472
+    },
+    {
+      "path": "scripts/portal.template.html",
+      "sha256": "8acc160c8f801bfa2cdaab8e59ff8c6971d9f4561c9ee134b0f7f7f09d75d907",
+      "bytes": 57677
+    },
+    {
+      "path": "scripts/verify_research_ui.mjs",
+      "sha256": "5cd7cfcdfdce0c0e81bb4e13dd31d64781a0b890dfc32851df05066ad6265b41",
+      "bytes": 9096
+    },
+    {
+      "path": "scripts/refine_system_ui.py",
+      "sha256": "57c9933b59d48a7e25c1ecd4d272030132e030607c215e836b83d34f565cfbcd",
+      "bytes": 43335
+    },
+    {
+      "path": "design-system/drip-research-console/MASTER.md",
+      "sha256": "130ee560ba4c92ba53d8e9d53522b8f89ffa38abfa412b4abc4f7f44d0a6e248",
+      "bytes": 6340
+    },
+    {
+      "path": "design-system/drip-research-console/pages/research-workspace.md",
+      "sha256": "e41b0ff3f2be5c11e31cd0bde9221ec571d87afa26b61d829684610e9a653ac6",
+      "bytes": 2341
     }
   ]
 }

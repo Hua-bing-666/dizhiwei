@@ -3,7 +3,7 @@
   "status": "material_review_completed_with_unresolved_submission_and_physical_conditions",
   "physical_validation": false,
   "visual_review": {
-    "application_native_wps_pdf_pages": 22,
+    "application_native_wps_pdf_pages": 23,
     "application_reviewed_pages": [
       1,
       2,
@@ -26,15 +26,17 @@
       19,
       20,
       21,
-      22
+      22,
+      23
     ],
-    "scope_pdf_pages": 5,
+    "scope_pdf_pages": 6,
     "scope_reviewed_pages": [
       1,
       2,
       3,
       4,
-      5
+      5,
+      6
     ],
     "figures": 9,
     "editable_record_tables": 4,
@@ -71,7 +73,7 @@
     "team coding responsibilities and ability",
     "actual calibration and pump working curve"
   ],
-  "native_pdf_sha256": "d73fccf86e4b538fb0e11e30fb6099695067d4fe5f5ffb5b51e87c99064b9b22",
+  "native_pdf_sha256": "2a12aa6b42a51ee3bc39f5bd78a43a543a205b8a70f0991e627fb8d9ccdce2b0",
   "submission_ready": false,
   "references": {
     "total": 17,
@@ -88,7 +90,7 @@
     "journal_browser_verifications": 1,
     "all_full_text_read": false
   },
-  "scope_pdf_sha256": "0e00a5dbfb089c8f426df42f35f4f26c0ccfbee78dceb9197e81e67e10e84a1d",
+  "scope_pdf_sha256": "eed0522bc5557f42167407c7d18a2ee6584b765dfa319fe554f305a31a90312e",
   "geometry_check": {
     "vertices": 57122,
     "faces": 60342,

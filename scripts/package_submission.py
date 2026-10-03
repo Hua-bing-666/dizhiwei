@@ -4,7 +4,7 @@ import json,zipfile,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 target=ROOT/'deliverables/申报材料与证据包.zip'
 selected=[]
-for base in ['application','docs','simulation','scripts','deliverables',
+for base in ['application','docs','simulation','scripts','deliverables','design-system',
              'projects/drip-research_ppt169_20261002/analysis',
              'projects/drip-research_ppt169_20261002/sources',
              'projects/drip-research_ppt169_20261002/svg_output',

@@ -13,11 +13,11 @@ if '<details class="design-details">' not in part:
 subprocess.run(['python',str(ROOT/'scripts/build_portal.py')],check=True)
 html=(OUT/'index.html').read_text(encoding='utf-8')
 page=TMP/'application-platform.html'
-capture='''<script>navigate("diagnosis");const panel=document.querySelector('#diagnosis .grid .panel:nth-child(2)');document.body.replaceChildren(panel);panel.style.cssText='width:480px;border-radius:0;padding:18px;background:white';const style=document.createElement('style');style.textContent='body{width:480px;background:white;font-size:17px;line-height:1.5}h3{font-size:21px}.chip,.fine{font-size:15px}.note{font-size:16px;padding:10px 12px}p{margin:10px 0}';document.head.append(style);</script>'''
+capture='''<script>navigate("diagnosis");const panel=document.querySelector('#diagnosis .grid .panel:nth-child(2)');document.body.replaceChildren(panel);panel.style.cssText='width:520px;border-radius:0;padding:20px;background:white';const style=document.createElement('style');style.textContent='body{width:520px;background:white;font-size:17px;line-height:1.5}h3{font-size:21px}.chip,.fine,label,.workflow-status{font-size:15px}.note{font-size:16px;padding:10px 12px}p{margin:10px 0}.maintenance-details,.workflow-fields,.workflow .actions,.workflow-log{display:none}.workflow{margin-top:12px;padding-top:12px}.workflow h3{font-size:18px}.reading b{font-size:24px}.reading span,.reading small{font-size:15px}.panel>p:not([id]){display:none}';document.head.append(style);</script>'''
 page.write_text(html.replace('<head>','<head><base href="'+OUT.as_uri()+'/">',1).replace('</body>',capture+'</body>'),encoding='utf-8')
 screen=TMP/'application-platform.png'
 screen.unlink(missing_ok=True)
-subprocess.run([r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe','--headless=new','--disable-gpu','--hide-scrollbars','--no-first-run','--user-data-dir='+str(TMP/('platform-'+uuid.uuid4().hex[:10])),'--force-device-scale-factor=2','--window-size=480,460','--virtual-time-budget=1000','--screenshot='+str(screen),page.as_uri()],check=True,capture_output=True,timeout=40,creationflags=subprocess.CREATE_NO_WINDOW)
+subprocess.run([r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe','--headless=new','--disable-gpu','--hide-scrollbars','--no-first-run','--user-data-dir='+str(TMP/('platform-'+uuid.uuid4().hex[:10])),'--force-device-scale-factor=2','--window-size=520,670','--virtual-time-budget=1000','--screenshot='+str(screen),page.as_uri()],check=True,capture_output=True,timeout=40,creationflags=subprocess.CREATE_NO_WINDOW)
 deadline=time.monotonic()+20
 while not screen.exists():
     if time.monotonic()>deadline:raise RuntimeError('Fresh platform capture missing')

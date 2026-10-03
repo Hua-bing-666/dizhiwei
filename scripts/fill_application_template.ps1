@@ -36,7 +36,7 @@ try {
         $cell.Range.ParagraphFormat.LineSpacingRule = 0
         $cell.Range.ParagraphFormat.SpaceAfter = 5
         $cell.Range.ParagraphFormat.SpaceBefore = 0
-        $cell.Range.ParagraphFormat.Alignment = 0
+        $cell.Range.ParagraphFormat.Alignment = 3
         $cell.Range.ParagraphFormat.KeepTogether = -1
         $cell.Range.ParagraphFormat.KeepWithNext = 0
         $cell.Range.Rows.Item(1).HeightRule = 0
@@ -235,7 +235,7 @@ try {
         $target=$holder.Cell(1,1).Range
         $target.Text=$value;$target.Font.Name='Times New Roman';$target.Font.NameFarEast='宋体'
         $target.Font.Size=10.5;$target.Font.Bold=0
-        $target.ParagraphFormat.Alignment=0;$target.ParagraphFormat.SpaceAfter=5
+        $target.ParagraphFormat.Alignment=3;$target.ParagraphFormat.SpaceAfter=5
         $target.ParagraphFormat.SpaceBefore=0;$target.ParagraphFormat.PageBreakBefore=0
         $target.ParagraphFormat.KeepWithNext=0;$target.ParagraphFormat.LineSpacingRule=0
         $split=$value.IndexOf([char]11)
