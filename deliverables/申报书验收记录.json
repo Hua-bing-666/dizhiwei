@@ -71,7 +71,7 @@
     "team coding responsibilities and ability",
     "actual calibration and pump working curve"
   ],
-  "native_pdf_sha256": "517a0c41247c4374d4667afadc726110b19c6ec1dd53ab98eff32a83715ce871",
+  "native_pdf_sha256": "d73fccf86e4b538fb0e11e30fb6099695067d4fe5f5ffb5b51e87c99064b9b22",
   "submission_ready": false,
   "references": {
     "total": 17,
@@ -90,14 +90,23 @@
   },
   "scope_pdf_sha256": "0e00a5dbfb089c8f426df42f35f4f26c0ccfbee78dceb9197e81e67e10e84a1d",
   "geometry_check": {
-    "vertices": 776,
-    "faces": 450,
+    "vertices": 57122,
+    "faces": 60342,
     "indices_valid": true,
     "units": "mm",
     "base_envelope": [
       900,
       520
     ],
-    "manufacturing_or_physical_validation": false
+    "manufacturing_or_physical_validation": false,
+    "step_reopened_valid": true,
+    "valid_solids": 199,
+    "fluid_centre_probes": 96,
+    "blocked_fluid_probes": 0,
+    "free_discharge_gap_mm": 20.0,
+    "glb_header_length_and_metre_Yup_transform": "passed",
+    "limits": "Centre probes are sparse concept checks, not a whole-bore, clearance, pressure or assembly approval.",
+    "source": "application/models/bench_geometry_checks.json",
+    "model_is_vendor_exact": false
   }
 }

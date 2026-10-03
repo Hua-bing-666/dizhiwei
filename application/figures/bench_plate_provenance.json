@@ -1,0 +1,9 @@
+{
+  "source_scene_sha256": "bf8d0bfe7b5ffad9adba4376d0adf8a9bd1000d9b5632aaa89930a9ad507b00e",
+  "source_render_sha256": "57768835c802bd20a085f0d41be883fc6ad993039660537663647c9990132f39",
+  "source_render": "application/figures/bench_isometric.png",
+  "model": "application/models/bench_layout.step",
+  "figure_height": 810,
+  "minimum_text_pt_at_425pt_width": 9.78,
+  "classification": "actual_render_of_unmanufactured_concept_model"
+}

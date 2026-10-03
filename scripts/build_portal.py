@@ -33,6 +33,9 @@ paths+=['docs/申报书黑白流程与模型验收.md','scripts/prepare_applicat
 paths+=['application/references.json','docs/参考文献核验与正文对应.md','docs/中文文献来源核验.json','scripts/verify_literature_sources.py','scripts/integrate_application_references.py']
 paths+=['scripts/validate_application_references.py','scripts/finalize_application_review.py']
 paths+=['scripts/build_application_visuals.py','docs/论文图示借鉴与本轮结构调整.md','application/models/bench_layout.obj','application/models/bench_layout.json']
+paths+=['deliverables/台架三维结构交互模型.html','docs/三维结构模型优化说明.md','scripts/build_bench_cad.py','scripts/build_bench_viewer.py','scripts/bench_viewer.template.html','scripts/capture_bench_views.mjs','scripts/render_bench_plate.py','scripts/validate_bench_model.py','application/figures/bench_plate_provenance.json']
+paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/models').rglob('*')) if p.is_file()]
+paths=list(dict.fromkeys(paths))
 manifest={'date':'2026-10-04','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
 (OUT/'证据清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
 print('Offline portal written. Slides embedded:',len(svgs),'evidence records:',len(paths))

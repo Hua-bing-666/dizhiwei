@@ -17,6 +17,8 @@
 
 - [参考文献核验与正文对应](docs/参考文献核验与正文对应.md)：17篇期刊论文，中文11篇（64.7%）、英文6篇；原英文全部保留，正文逐项引用。
 
+[台架三维交互模型](deliverables/台架三维结构交互模型.html) · [STEP实体](application/models/bench_layout.step) · [彩色GLB](application/models/bench_layout.glb) · [建模取舍与边界](docs/三维结构模型优化说明.md)
+
 [本轮图示取舍与论文依据](docs/论文图示借鉴与本轮结构调整.md) · [三维布置OBJ](application/models/bench_layout.obj) · [本轮验收记录](docs/本轮申报书验收记录.md)
 
 ## 当前范围

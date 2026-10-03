@@ -85,8 +85,8 @@
     },
     {
       "path": "application/正式模板正文.md",
-      "sha256": "319bde132d51361982145d66507d1ce622be7cb6c3edee4c62f4c9b2f824c05e",
-      "bytes": 34627
+      "sha256": "2d1c7cfe591753c072d480951cec40aecf1d1a43c24695ea1379ac23c0482c4f",
+      "bytes": 34667
     },
     {
       "path": "docs/案例对照与老师建议分析.md",
@@ -120,18 +120,18 @@
     },
     {
       "path": "deliverables/大创申报书_模板填写稿.docx",
-      "sha256": "2f976e2bc8a698e595dbd024de62de258d43d460fcada16cf9f4da5300fb809f",
-      "bytes": 2101019
+      "sha256": "0708f8f6a735a306bb43dfa9dc65d0cc0f203ada37193e3d6a5692e5b30ee7ce",
+      "bytes": 2253452
     },
     {
       "path": "deliverables/大创申报书_模板审阅版.pdf",
-      "sha256": "517a0c41247c4374d4667afadc726110b19c6ec1dd53ab98eff32a83715ce871",
-      "bytes": 2136908
+      "sha256": "d73fccf86e4b538fb0e11e30fb6099695067d4fe5f5ffb5b51e87c99064b9b22",
+      "bytes": 2132915
     },
     {
       "path": "deliverables/index.html",
-      "sha256": "13db397941635140dd1369b6a9849e827b2a794f7beab31d63982abdd2ffa888",
-      "bytes": 2019050
+      "sha256": "1a2feddbd158539f205ae3859ee174854da59aeb9312502bf0c2780c7353da44",
+      "bytes": 2019358
     },
     {
       "path": "deliverables/交付检查.json",
@@ -140,13 +140,13 @@
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "50f2f556c556948e007418aebea9ab0c7fb119072498f9e774c2ba7a16a9dc35",
-      "bytes": 3353
+      "sha256": "b66db3550584cb7e1a181187c5d90f3b1ccf73a860f2501b1e3d3f682551ee5c",
+      "bytes": 3586
     },
     {
       "path": "README.md",
-      "sha256": "4f5a0e9d10f31f97abfbffacf1502560c3da7f6e1b4fdc967d92ad0b841f08b8",
-      "bytes": 6140
+      "sha256": "007c9d5b386497887e83e277c3dc607319739f67de71a52866c13c09a88afba7",
+      "bytes": 6391
     },
     {
       "path": "scripts/fill_application_template.ps1",
@@ -254,14 +254,39 @@
       "bytes": 2739
     },
     {
+      "path": "application/figures/bench_front.png",
+      "sha256": "ffe79044a60b24464edf8501e09b2f2d373c8005e061fa08f39a1eda724b5276",
+      "bytes": 121942
+    },
+    {
+      "path": "application/figures/bench_isometric.png",
+      "sha256": "57768835c802bd20a085f0d41be883fc6ad993039660537663647c9990132f39",
+      "bytes": 230152
+    },
+    {
+      "path": "application/figures/bench_leak_detail.png",
+      "sha256": "3709799ffdd1687e9aada49da24084b9bf0ad3356246f2b1f152040c7ae172e3",
+      "bytes": 348464
+    },
+    {
       "path": "application/figures/bench_model.png",
-      "sha256": "ba7264881c657d875a267b406899b039ea414622c60c12094eaa15468b42a25f",
-      "bytes": 433971
+      "sha256": "a97a991b4615481e69d04fe54425264079e0960bf431d1d255305735110052ca",
+      "bytes": 586275
     },
     {
       "path": "application/figures/bench_model.svg",
-      "sha256": "ae1f0330fb480edca00eaed872855fd7819a6cfdf0e1040550d636b5c432a423",
-      "bytes": 66774
+      "sha256": "980333c4956e6d8a1ebc1543267606707d8467b0ca91061cbb96ce9ef4e97080",
+      "bytes": 295728
+    },
+    {
+      "path": "application/figures/bench_pressure_detail.png",
+      "sha256": "2b2a40fffc3db837f1e5554bfda8f7d5f71b550aead40b44e613d273957e97e6",
+      "bytes": 182179
+    },
+    {
+      "path": "application/figures/bench_top.png",
+      "sha256": "c8dfb93a67d91a801f5a0165a3133b7b0c0a857b74e5bf0fe259f8a501857c7d",
+      "bytes": 173296
     },
     {
       "path": "application/figures/communication_tradeoff.png",
@@ -465,18 +490,18 @@
     },
     {
       "path": "docs/本轮申报书验收记录.md",
-      "sha256": "a727e0533b322275dbe39738efb7d2f4b2a07420a7fa77b6e9178e2c3fafd163",
-      "bytes": 3619
+      "sha256": "a3d141c9c9820adf17769d95d97ba411b2616cf0adccc45e0a3a8b25d009a591",
+      "bytes": 4350
     },
     {
       "path": "deliverables/申报书验收记录.json",
-      "sha256": "fba5ea11f82b82f7f3944929ccbbcafd48b168196160cc391b1419603951a245",
-      "bytes": 2701
+      "sha256": "ed9768cb2feb2429668377c28eb32c3e5338ccad66636c74350292ee05fab8ee",
+      "bytes": 3136
     },
     {
       "path": "docs/申报书黑白流程与模型验收.md",
-      "sha256": "b0b45981063aa9a5e1cf36b6a0b126642eef33fa66be46744440d0f00c818012",
-      "bytes": 2611
+      "sha256": "17606c87d8444a111ef21d69ceb3d20b1a624d3b964ff04e23825c7edfc954f9",
+      "bytes": 2733
     },
     {
       "path": "scripts/prepare_application_payload.py",
@@ -485,8 +510,8 @@
     },
     {
       "path": "application/figures/design_provenance.json",
-      "sha256": "e1303d68a4d7ff07d1428bb3d26894ac334e0fd16779df372ec1ba2a224535f5",
-      "bytes": 5394
+      "sha256": "d7b5c06be14ad5163c381ade19485d3e19a481437872ed9adfc4de10fc679054",
+      "bytes": 5402
     },
     {
       "path": "application/references.json",
@@ -520,28 +545,118 @@
     },
     {
       "path": "scripts/finalize_application_review.py",
-      "sha256": "39332d1d6830f654fdbd51d55cc06a9110ac1a7b4a6832c3cefaabd47ffffe12",
-      "bytes": 4438
+      "sha256": "56d1caad4291f453883a1ccaa14707fe50d750a1c27918a435069389fea13f7c",
+      "bytes": 4801
     },
     {
       "path": "scripts/build_application_visuals.py",
-      "sha256": "a007e1e4677b3606e8df4446422907edb01f2d2be8fbcdf4d295d14faa38077f",
-      "bytes": 12949
+      "sha256": "377d7bfbc6251ae3b6ac45de809ff541398c2cbfe1940101f9fa49f90cfdc7fa",
+      "bytes": 8145
     },
     {
       "path": "docs/论文图示借鉴与本轮结构调整.md",
-      "sha256": "1fa2b8e0c8af4d46fc4ab6f5a1ee41669023f32c51dc7bf0978b1e1d5ae030a0",
-      "bytes": 4654
+      "sha256": "e615a9598a185467f41000719516cea54f263450457b737e304f39ae99d8574a",
+      "bytes": 4846
     },
     {
       "path": "application/models/bench_layout.obj",
-      "sha256": "ae511c821ea9ea7fff74900b68f78261892dc4cf4e271364aa308662b01668ae",
-      "bytes": 31601
+      "sha256": "a386acebcb81ca604104e57fbf8e465733a843862f43ecd4efd440e55b653eeb",
+      "bytes": 2986255
     },
     {
       "path": "application/models/bench_layout.json",
-      "sha256": "7c4a9f3724b0f9569c65fbef0abe22c2ddfc7478e3d0008431cd9b3d30b2460f",
-      "bytes": 850
+      "sha256": "a5674df4d74e939bbab251dd354f692c574bfa35873a1595e29f61d58ead6253",
+      "bytes": 122989
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型.html",
+      "sha256": "53dd5a47ec9dbb18a0bf167b52a1ac87134e09b9b2547d3a426e8896ec9a4a7b",
+      "bytes": 2540973
+    },
+    {
+      "path": "docs/三维结构模型优化说明.md",
+      "sha256": "6e7ccef0b6c755218ad8c8605214f7c758ca157358ddbeb17400396abf3264fa",
+      "bytes": 4838
+    },
+    {
+      "path": "scripts/build_bench_cad.py",
+      "sha256": "098bc606bde05a8da05b74b7090f75db643b6b9dc6c7cb27b39f66399b5726ff",
+      "bytes": 18409
+    },
+    {
+      "path": "scripts/build_bench_viewer.py",
+      "sha256": "ec618a71c7e2b62177d041502ca5c53ca891d55bae93569a1aaa3a7945184ca4",
+      "bytes": 1322
+    },
+    {
+      "path": "scripts/bench_viewer.template.html",
+      "sha256": "5e505041c26f7d07b53daa411157f31b1e858e6ee36acd8aecab5e6ca7145fdb",
+      "bytes": 11816
+    },
+    {
+      "path": "scripts/capture_bench_views.mjs",
+      "sha256": "6bcef91f94cf8100ab54f0bb488ffb72e9a885b46f0866a14b3d157cc8724e24",
+      "bytes": 6393
+    },
+    {
+      "path": "scripts/render_bench_plate.py",
+      "sha256": "e002831453945489f79e4afa83328954b5de3c7c3c3abd1587da4c96858a6c2a",
+      "bytes": 3814
+    },
+    {
+      "path": "scripts/validate_bench_model.py",
+      "sha256": "4979bb4dee2414c368c7d0c69a05709040c8a3a1606b9c2b31f363f408782e10",
+      "bytes": 3045
+    },
+    {
+      "path": "application/figures/bench_plate_provenance.json",
+      "sha256": "8df3b0eab3ca2ce7a7606a1ed4d71e26a9a0c0368925759971c6daa1774ee59e",
+      "bytes": 437
+    },
+    {
+      "path": "application/models/bench_geometry_checks.json",
+      "sha256": "43297b710edb49d833d3595829fd3ff21f988788a76eed8abe571470e5a761f7",
+      "bytes": 369
+    },
+    {
+      "path": "application/models/bench_layout.glb",
+      "sha256": "2dff1b731ce74f26ad3fec7cef0e43e68a78611a444cfd0249de9bed18aafb58",
+      "bytes": 1525608
+    },
+    {
+      "path": "application/models/bench_layout.mtl",
+      "sha256": "dcd31a8d29d06c50b1b5409322915e65ee4001563f7828d184e9cdc250b53f73",
+      "bytes": 1383
+    },
+    {
+      "path": "application/models/bench_layout.step",
+      "sha256": "86b85c357542b3bc6ea878c8189b457fb448066a975cc720d70d2ff322e26cc2",
+      "bytes": 2817657
+    },
+    {
+      "path": "application/models/bench_scene.json",
+      "sha256": "bf8d0bfe7b5ffad9adba4376d0adf8a9bd1000d9b5632aaa89930a9ad507b00e",
+      "bytes": 2387145
+    },
+    {
+      "path": "application/models/bench_views.json",
+      "sha256": "b8f5b946e46d5a25a16070f8dbbe003c83bb1d39d2589ae89f088eeb8209e396",
+      "bytes": 5547
+    },
+    {
+      "path": "application/models/vendor/provenance.json",
+      "sha256": "a6c7049cc70962201f99feb18312142fac0ef901e7d445128b605a7d0b679bd0",
+      "bytes": 363
+    },
+    {
+      "path": "application/models/vendor/three.cjs",
+      "sha256": "2980c5831824f46d79a39a93feb70dd851538ce5b5480a6463883b319022c51f",
+      "bytes": 2006834
+    },
+    {
+      "path": "application/models/vendor/three.LICENSE",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
     }
   ]
 }

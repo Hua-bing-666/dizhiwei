@@ -74,6 +74,11 @@ def main():
         'units': model['units'], 'base_envelope': model['base_envelope'],
         'manufacturing_or_physical_validation': False,
     }
+    geometry_record = ROOT / 'application/models/bench_geometry_checks.json'
+    if geometry_record.exists():
+        record['geometry_check'].update(json.loads(geometry_record.read_text(encoding='utf-8')))
+        record['geometry_check']['source'] = geometry_record.relative_to(ROOT).as_posix()
+        record['geometry_check']['model_is_vendor_exact'] = False
     path.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
     print(json.dumps({'application_pages': app_doc.page_count, 'scope_pages': scope_doc.page_count,
                       'current_images_embedded': len(figures), 'bibliography_pages': bibliography_pages,

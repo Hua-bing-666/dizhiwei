@@ -1,0 +1,9 @@
+{
+  "library": "three.js r180",
+  "url": "https://github.com/mrdoob/three.js/tree/r180",
+  "license": "MIT",
+  "source": "https://raw.githubusercontent.com/mrdoob/three.js/r180/build/three.cjs",
+  "sha256": "2980c5831824f46d79a39a93feb70dd851538ce5b5480a6463883b319022c51f",
+  "local_scene": "application/models/bench_scene.json",
+  "physical_validation": false
+}

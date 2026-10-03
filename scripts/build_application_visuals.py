@@ -124,74 +124,11 @@ def sequence():
     d.render()
 
 def bench_model():
-    """Export the actual geometry used by the orthographic SVG to OBJ."""
-    vertices=[];faces=[];objects=[]
-    def add(name,vs,fs,color):
-        offset=len(vertices);vertices.extend(vs)
-        objfaces=[tuple(offset+i for i in f) for f in fs];faces.extend(objfaces)
-        objects.append((name,np.asarray(vs),fs,color))
-    def cuboid(name,origin,size,color):
-        x,y,z=origin;a,b,c=size
-        vs=[(x+i*a,y+j*b,z+k*c) for k in (0,1) for j in (0,1) for i in (0,1)]
-        fs=[(0,1,3,2),(4,6,7,5),(0,4,5,1),(2,3,7,6),(0,2,6,4),(1,5,7,3)]
-        add(name,vs,fs,color)
-    def cylinder(name,p0,p1,r,color,n=16):
-        p0,p1=np.array(p0,dtype=float),np.array(p1,dtype=float)
-        axis=(p1-p0)/np.linalg.norm(p1-p0)
-        helper=np.array([0.,0.,1.]) if abs(axis[2])<.8 else np.array([1.,0.,0.])
-        u=np.cross(axis,helper);u/=np.linalg.norm(u);v=np.cross(axis,u)
-        vs=[tuple(p+r*(math.cos(t)*u+math.sin(t)*v)) for p in (p0,p1) for t in np.arange(n)*2*math.pi/n]
-        fs=[tuple(range(n-1,-1,-1)),tuple(range(n,2*n))]+[(i,(i+1)%n,(i+1)%n+n,i+n) for i in range(n)]
-        add(name,vs,fs,color)
-    def pipe(name,points,color='#567e92'):
-        for k,(a,b) in enumerate(zip(points,points[1:])):cylinder(name+str(k),a,b,7,color)
-    cuboid('base',(0,0,-16),(900,520,16),'#dce2e3')
-    pipe('supply',[(90,350,60),(150,350,60),(150,125,60),(850,125,60)])
-    pipe('B',[(150,250,60),(150,330,60),(850,330,60)])
-    pipe('return',[(850,125,60),(850,410,60),(90,410,60),(90,390,45)])
-    pipe('leak',[(695,125,60),(695,235,60),(780,235,60),(780,235,35)],'#ac7755')
-    cuboid('water_source',(40,350,0),(100,110,95),'#b7cbd5')
-    for name,x,y in [('P0',230,125),('P1',485,125)]:
-        cylinder(name+'_tap',(x,y,60),(x,y,82),9,'#738b95')
-        cylinder(name,(x,y,82),(x,y,134),16,'#9aa5ad')
-    for name,x,y in [('restriction',365,125),('B_valve',365,330),('leak_valve',730,235)]:
-        cuboid(name,(x-18,y-14,49),(36,28,22),'#7e9891')
-        cylinder(name+'_stem',(x,y,70),(x,y,93),5,'#667572')
-        cuboid(name+'_handle',(x-25,y-7,91),(50,14,8),'#44574f')
-    cylinder('Q',(580,125,60),(635,125,60),17,'#546c7c')
-    for name,y in [('A_load',125),('B_load',330)]:cylinder(name,(780,y,60),(810,y,60),14,'#7d9198')
-    cylinder('collection',(780,235,0),(780,235,45),28,'#d8b592')
-    cuboid('dry_node',(435,445,0),(185,65,50),'#657d73')
-    output=ROOT/'application/models';output.mkdir(parents=True,exist_ok=True)
-    lines=['# Proposed bench layout; units mm; primitive envelopes only.']
-    lines += [f'v {x:.4f} {y:.4f} {z:.4f}' for x,y,z in vertices]
-    lines += ['f '+' '.join(str(i+1) for i in f) for f in faces]
-    (output/'bench_layout.obj').write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
-    projected=[]
-    def project(p):
-        x,y,z=p
-        return np.array([220+.72*x-.36*y,85+.20*x+.38*y-.75*z])
-    for name,vs,fs,color in objects:
-        for face in fs:
-            points=vs[list(face)]
-            depth=np.mean(points@np.cross([.72,-.36,0],[.20,.38,-.75]))
-            projected.append((name=='base',depth,[project(p) for p in points],color))
-    d=Drawing('bench_model',660)
-    d.text(25,35,'双支路清水台架 三维布置概念',27,True,anchor='start')
-    # Base is behind every mounted object; a centroid painter otherwise covers
-    # rear pipes with a large top face despite their positive height.
-    for is_base,depth,points,color in sorted(projected,key=lambda f:(not f[0],f[1])):
-        coords=' '.join(f'{x:.2f},{y:.2f}' for x,y in points)
-        d.items.append(f'<polygon points="{coords}" fill="{color}" stroke="#52605c" stroke-width="0.6"/>')
-    labels=[('P0',(230,125,134),(305,72)),('受限阀',(365,125,95),(450,88)),('P1',(485,125,134),(565,88)),('Q',(610,125,80),(695,105)),('A正常负载',(795,125,70),(910,158)),('泄漏计量杯',(780,235,45),(918,285)),('B切换阀',(365,330,95),(320,322)),('B正常负载',(795,330,70),(885,398)),('借用供水接口',(85,405,95),(130,317)),('干区感知节点',(530,477,50),(540,495))]
-    for text,p,(tx,ty) in labels:
-        xy=project(p);end_y=ty+8 if ty<xy[1] else ty-29
-        d.path([tuple(xy),(tx,end_y)],arrow=False)
-        d.text(tx,ty,text,23)
-    d.text(25,555,'底板包络暂设900×520mm；管径、器件外形与接头均为占位参数。',23,anchor='start')
-    d.footer(['用于检查布置、检修空间、干湿分区与独立收集路径；不是样机照片或制造图。', '保存OBJ几何源；实际尺寸、耐压、装配与保护须按采购器件重新核定。'])
-    d.render()
-    (output/'bench_layout.json').write_text(json.dumps({'classification':'parametric_layout_concept_not_manufacturing_model','units':'mm','base_envelope':[900,520],'vertices':len(vertices),'faces':len(faces),'components':[name for name,_,_,_ in objects],'electrical_enclosure_position':'dry_front_zone','leak_collection':'separate_vessel_not_connected_to_normal_return','hydraulic_geometry_calibrated':False},ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
+    # The concept assembly is built and captured by build_bench_cad.py and
+    # capture_bench_views.mjs. Hash checks prevent using stale render geometry.
+    from render_bench_plate import render_plate
+    render_plate()
+
 
 def main():
     records.clear()

@@ -9,3 +9,9 @@
 *.json text eol=lf
 *.csv text eol=lf
 *.obj text eol=lf
+*.mtl text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.step binary
+*.LICENSE text eol=lf
+/.gitattributes text eol=lf
