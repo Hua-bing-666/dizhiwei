@@ -17,7 +17,7 @@ function call(method,params={},sessionId){return new Promise((resolve,reject)=>{
 const {targetId}=await call('Target.createTarget',{url:'about:blank'});const {sessionId}=await call('Target.attachToTarget',{targetId,flatten:true});
 const send=(method,params)=>call(method,params,sessionId);
 async function evaluate(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value}
-const portal=pathToFileURL(path.join(root,'deliverables','index.html')).href;
+const portal=pathToFileURL(path.join(root,'deliverables','研究与答辩资料.html')).href;
 const viewer=pathToFileURL(path.join(root,'deliverables','台架三维结构交互模型.html')).href;
 const report={classification:'offline_software_ui_checks_not_physical_validation',widths:[375,768,1024,1440],navigation_checks:[],maintenance_checks:[],viewer_checks:[],external_requests:[],console_errors:[]};
 ws.addEventListener('message',e=>{const m=JSON.parse(e.data);if(m.sessionId!==sessionId)return;if(m.method==='Runtime.exceptionThrown')report.console_errors.push(m.params.exceptionDetails.text);if(m.method==='Network.requestWillBeSent'&&/^https?:/.test(m.params.request.url))report.external_requests.push(m.params.request.url)});
@@ -38,6 +38,6 @@ try{
  for(const width of report.widths){await send('Emulation.setDeviceMetricsOverride',{width,height:1120,deviceScaleFactor:1,mobile:false});await evaluate('bench.view("iso")');await delay(150);if(await evaluate('document.documentElement.scrollWidth>innerWidth+1'))throw Error('Viewer overflow');report.viewer_checks.push({width,overflow:false});await screen('viewer-'+width)}
  await evaluate(`(()=>{document.getElementById('zoom-in').click();document.getElementById('zoom-out').click();document.getElementById('rotate-left').click();document.getElementById('rotate-right').click();const c=document.getElementById('canvas');c.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft'}));c.dispatchEvent(new KeyboardEvent('keydown',{key:'+'}));document.getElementById('reset').click();if(bench.getState().current!=='iso')throw Error('Reset');if(document.querySelector('[data-view=iso]').getAttribute('aria-pressed')!=='true')throw Error('Pressed state')})()`);report.viewer_checks.push('button_and_keyboard_controls_executed');
  if(report.console_errors.length||report.external_requests.length)throw Error(JSON.stringify(report));
- report.status='passed';await writeFile(path.join(root,'deliverables','界面验收记录.json'),JSON.stringify(report,null,2));
+ report.status='passed';await writeFile(path.join(root,'deliverables','研究资料界面验收记录.json'),JSON.stringify(report,null,2));
  console.log('Offline UI passed: 32 navigation/viewport checks; maintenance gates, reload and actual JSON export; 4 viewer widths, buttons/keyboard; no external requests or JS exceptions.');
 }finally{await call('Browser.close').catch(()=>{});ws.close();child.kill()}

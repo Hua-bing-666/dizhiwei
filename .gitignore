@@ -25,3 +25,4 @@ projects/**/exports/
 Thumbs.db
 Desktop.ini
 *.log
+~$*

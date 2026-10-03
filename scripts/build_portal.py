@@ -17,7 +17,12 @@ for r in references['references']:
     literature+=f'<a href="{escape(r["url"],quote=True)}">[{r["number"]}] {escape(r["title"])} · {r["year"]} · {r["language"]}</a>'
 literature+='</div>'
 html=html.replace('__LITERATURE_LINKS__',literature)
-(OUT/'index.html').write_text(html,encoding='utf-8',newline='\n')
+html=html.replace('<main id="workspace">', '<main id="workspace"><div style="display:flex;flex-wrap:wrap;gap:8px 22px;padding:12px 0;border-bottom:1px solid #dde5e9;font-size:13px"><a href="index.html" style="min-height:44px;display:inline-flex;align-items:center">← 返回运行平台</a><a href="../docs/项目总规划与任务验收台账.md" style="min-height:44px;display:inline-flex;align-items:center">整体规划与当前任务 ↗</a></div>',1)
+(OUT/'研究与答辩资料.html').write_text(html,encoding='utf-8',newline='\n')
+system=(ROOT/'scripts/system_portal.template.html').read_text(encoding='utf-8')
+system=system.replace('__SYSTEM_CSS__',(ROOT/'scripts/system_portal.css').read_text(encoding='utf-8')).replace('__DIAG_DATA__',js(diagnosis)).replace('__SYSTEM_JS__',(ROOT/'scripts/system_portal.js').read_text(encoding='utf-8'))
+assert '__SYSTEM_' not in system
+(OUT/'index.html').write_text(system,encoding='utf-8',newline='\n')
 paths=['application/项目书正文草案.md','application/PPT逐页内容与讲稿.md','application/申报任务体系与立项竞争力.md','docs/三阶段路线与执行定稿.md','simulation/run_simulation.py','simulation/adversarial_audit.py','simulation/communication_feasibility.py','simulation/COMMUNICATION.md','simulation/communication_results/summary.json','simulation/communication_results/trials.csv']
 paths+=['deliverables/'+name for name in ['项目书审阅版.pdf','立项答辩.pptx','立项答辩审阅版.pdf'] if (OUT/name).exists()]
 paths+=['simulation/communication_results/protocol_stress.json','scripts/validate_new_evidence.py','scripts/qa_deliverables.py']
@@ -37,6 +42,10 @@ paths+=['deliverables/台架三维结构交互模型.html','docs/三维结构模
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/models').rglob('*')) if p.is_file()]
 paths+=['docs/系统定位与后续研究路线.md','docs/UI重设计与来源记录.md','deliverables/界面验收记录.json','scripts/portal.template.html','scripts/verify_research_ui.mjs','scripts/refine_system_ui.py']
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'design-system').rglob('*.md'))]
+paths+=['deliverables/研究与答辩资料.html','scripts/system_portal.template.html','scripts/system_portal.css','scripts/system_portal.js','docs/项目总规划与任务验收台账.md','docs/网站功能与验收说明.md']
+paths+=[p for p in ['scripts/verify_operations_ui.mjs','deliverables/研究资料界面验收记录.json'] if (ROOT/p).exists()]
+paths+=['docs/本轮网站与总体规划验收报告.md']
+paths+=['scripts/finalize_operations_review.py']
 paths=list(dict.fromkeys(paths))
 manifest={'date':'2026-10-04','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
 (OUT/'证据清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')

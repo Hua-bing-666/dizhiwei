@@ -80,8 +80,8 @@
     },
     {
       "path": "scripts/qa_deliverables.py",
-      "sha256": "8ce817f38103e5149070be8268b94044f81e21990996d86fab0fdd5060f7ea60",
-      "bytes": 9097
+      "sha256": "2584f4ed0070efdc941b6db0307b8e0309564dbe3463e02c5a3fe7213e970add",
+      "bytes": 9615
     },
     {
       "path": "application/正式模板正文.md",
@@ -130,23 +130,23 @@
     },
     {
       "path": "deliverables/index.html",
-      "sha256": "e355efb51dfe676ccf0d8942e35d0304ebd7e893affec01482e7bf5805c81d2c",
-      "bytes": 2035517
+      "sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4",
+      "bytes": 1865036
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "ec0fb2d00005a7e96a013b5dc574b3f1f4518087814bda7261b5e59146cc4672",
-      "bytes": 508
+      "sha256": "866c9c32835711b41e2a7eadfa4d98eed01fadbf761defce56f2a6f9f714131b",
+      "bytes": 9143
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "fa294f3af0da4a042fbdc7b6e4f764a8c1a8df6fcb69e4b02057fa9c137376c9",
-      "bytes": 4138
+      "sha256": "f2a6ceec33d0637f5284d93e47afc020d5a98d949943bb5e65621ace7a38b517",
+      "bytes": 4616
     },
     {
       "path": "README.md",
-      "sha256": "74fabb1df98c07fbabb0b3714c920b5c95eea8993bd696ca37fb06753665b246",
-      "bytes": 6878
+      "sha256": "7de614536c2cf3723eae8a68e2df4717c09aedbecbb5990ae4ec5549c909e13c",
+      "bytes": 7883
     },
     {
       "path": "scripts/fill_application_template.ps1",
@@ -165,8 +165,8 @@
     },
     {
       "path": "scripts/package_submission.py",
-      "sha256": "6e16b4b98dedfe0bd2fe40af620c1c0b66c362027b7efc7831bd20e47c02b155",
-      "bytes": 1747
+      "sha256": "9af91165dfde5230645343398ad4d0c733d668e496df561b4e38419efddeb1b1",
+      "bytes": 1779
     },
     {
       "path": "附件1：塔里木大学大学生创新训练项目申报书.doc",
@@ -225,8 +225,8 @@
     },
     {
       "path": "scripts/capture_application_platform.py",
-      "sha256": "42ea576d6d416ebdff98456749c2625bc97d2ba7dffa309b95e6b94493d4f563",
-      "bytes": 2718
+      "sha256": "1b818971e990be68c1e71ee814620c027ddc98fc296825128e764eadb3bdfb05",
+      "bytes": 2734
     },
     {
       "path": "application/figures/acquisition_flow.png",
@@ -570,8 +570,8 @@
     },
     {
       "path": "deliverables/台架三维结构交互模型.html",
-      "sha256": "7573c23f95e4f95ac4fd308fcc82f0aa05001c67949ac19451b927c7b435d700",
-      "bytes": 2545285
+      "sha256": "801de70601a0eeb002da1a2e42031b9735c61adc368c0afd243931c3c67df83e",
+      "bytes": 2545282
     },
     {
       "path": "docs/三维结构模型优化说明.md",
@@ -590,8 +590,8 @@
     },
     {
       "path": "scripts/bench_viewer.template.html",
-      "sha256": "7f06c964b1cf7ecb0a257f31a55dc333345be65be84631842d888ecf0f453caf",
-      "bytes": 16128
+      "sha256": "ba30308a052bfa74dd1135d5bb98315643f46f3084e3b407ce2310f53ac4be20",
+      "bytes": 16168
     },
     {
       "path": "scripts/capture_bench_views.mjs",
@@ -665,13 +665,13 @@
     },
     {
       "path": "docs/UI重设计与来源记录.md",
-      "sha256": "e55f1450ecddfb04d9948d9e1d632aef4c9f37f253c2bed725d6cf287b750d8d",
-      "bytes": 3057
+      "sha256": "11b43444011392eecc6ecbf6daa67f760b50656e1ca9bed97ad1b80ee89a5d19",
+      "bytes": 4259
     },
     {
       "path": "deliverables/界面验收记录.json",
-      "sha256": "ece28830c1fca722dc3b6815f820193d77180cbfc87be972504d2fbb85a9d471",
-      "bytes": 3472
+      "sha256": "c53d96d2cacf7b1e29bd944c0b9b77ece9a28be5fdc56a9d6fdd40644d09046f",
+      "bytes": 6827
     },
     {
       "path": "scripts/portal.template.html",
@@ -680,8 +680,8 @@
     },
     {
       "path": "scripts/verify_research_ui.mjs",
-      "sha256": "5cd7cfcdfdce0c0e81bb4e13dd31d64781a0b890dfc32851df05066ad6265b41",
-      "bytes": 9096
+      "sha256": "3eafe8377698cce27448ab8c608d5f0d3314b7538d99207fda15e39c295dea11",
+      "bytes": 9124
     },
     {
       "path": "scripts/refine_system_ui.py",
@@ -694,9 +694,64 @@
       "bytes": 6123
     },
     {
+      "path": "design-system/drip-research-console/pages/operations.md",
+      "sha256": "494eace5a0825ea33bb9a1a26ef6e6400b3de024321e4b51a651aff90fb6c145",
+      "bytes": 1583
+    },
+    {
       "path": "design-system/drip-research-console/pages/research-workspace.md",
       "sha256": "e41b0ff3f2be5c11e31cd0bde9221ec571d87afa26b61d829684610e9a653ac6",
       "bytes": 2341
+    },
+    {
+      "path": "deliverables/研究与答辩资料.html",
+      "sha256": "c48e8e62b2ab11788401648193af702ab48a14d03052f215ca5ba798082506d8",
+      "bytes": 2035905
+    },
+    {
+      "path": "scripts/system_portal.template.html",
+      "sha256": "f54cb1d44aaefd947b5bd67dcd34eb7d5a47411fb4daa61ab92b45d3030c8768",
+      "bytes": 18235
+    },
+    {
+      "path": "scripts/system_portal.css",
+      "sha256": "13444fb576fdb9ac9c2e137575cbeca8b54b564ed7a197d659f7767b4514dcd9",
+      "bytes": 23627
+    },
+    {
+      "path": "scripts/system_portal.js",
+      "sha256": "82fc471e9274db60ef809fc7cb83e42116d64bab79fcf4453179bda5464b9b22",
+      "bytes": 27055
+    },
+    {
+      "path": "docs/项目总规划与任务验收台账.md",
+      "sha256": "54721046ac4b61fd4790a6e1d7991ef8cfd59ffc3ed7e990d9b2722cc4ebfa32",
+      "bytes": 15118
+    },
+    {
+      "path": "docs/网站功能与验收说明.md",
+      "sha256": "837edcca582c577efa3736dcea89fc774ba774294eac2361122a381956f62be3",
+      "bytes": 4400
+    },
+    {
+      "path": "scripts/verify_operations_ui.mjs",
+      "sha256": "b166ace532ee4023bd806f7d195970d657c91b857f34dd36a6d6562e9b50e9ef",
+      "bytes": 19413
+    },
+    {
+      "path": "deliverables/研究资料界面验收记录.json",
+      "sha256": "ece28830c1fca722dc3b6815f820193d77180cbfc87be972504d2fbb85a9d471",
+      "bytes": 3472
+    },
+    {
+      "path": "docs/本轮网站与总体规划验收报告.md",
+      "sha256": "62a6cf00d3a11415c63ec2d4bd1a527e0b537657a74ddca32c9bf2073158f6aa",
+      "bytes": 4283
+    },
+    {
+      "path": "scripts/finalize_operations_review.py",
+      "sha256": "05f312220caca3e2ca13d8103f479f4a2296d2dca75668ab27e85c0499fd7f52",
+      "bytes": 3167
     }
   ]
 }

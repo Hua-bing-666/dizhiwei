@@ -1,5 +1,7 @@
 {
+  "date": "2026-10-04",
   "classification": "offline_software_ui_checks_not_physical_validation",
+  "physical_data": false,
   "widths": [
     375,
     768,
@@ -13,37 +15,27 @@
       "overflow": false
     },
     {
-      "page": "diagnosis",
+      "page": "monitor",
       "width": 375,
       "overflow": false
     },
     {
-      "page": "model",
+      "page": "events",
       "width": 375,
       "overflow": false
     },
     {
-      "page": "evidence",
+      "page": "devices",
       "width": 375,
       "overflow": false
     },
     {
-      "page": "communication",
+      "page": "history",
       "width": 375,
       "overflow": false
     },
     {
-      "page": "routes",
-      "width": 375,
-      "overflow": false
-    },
-    {
-      "page": "slides",
-      "width": 375,
-      "overflow": false
-    },
-    {
-      "page": "files",
+      "page": "settings",
       "width": 375,
       "overflow": false
     },
@@ -53,37 +45,27 @@
       "overflow": false
     },
     {
-      "page": "diagnosis",
+      "page": "monitor",
       "width": 768,
       "overflow": false
     },
     {
-      "page": "model",
+      "page": "events",
       "width": 768,
       "overflow": false
     },
     {
-      "page": "evidence",
+      "page": "devices",
       "width": 768,
       "overflow": false
     },
     {
-      "page": "communication",
+      "page": "history",
       "width": 768,
       "overflow": false
     },
     {
-      "page": "routes",
-      "width": 768,
-      "overflow": false
-    },
-    {
-      "page": "slides",
-      "width": 768,
-      "overflow": false
-    },
-    {
-      "page": "files",
+      "page": "settings",
       "width": 768,
       "overflow": false
     },
@@ -93,37 +75,27 @@
       "overflow": false
     },
     {
-      "page": "diagnosis",
+      "page": "monitor",
       "width": 1024,
       "overflow": false
     },
     {
-      "page": "model",
+      "page": "events",
       "width": 1024,
       "overflow": false
     },
     {
-      "page": "evidence",
+      "page": "devices",
       "width": 1024,
       "overflow": false
     },
     {
-      "page": "communication",
+      "page": "history",
       "width": 1024,
       "overflow": false
     },
     {
-      "page": "routes",
-      "width": 1024,
-      "overflow": false
-    },
-    {
-      "page": "slides",
-      "width": 1024,
-      "overflow": false
-    },
-    {
-      "page": "files",
+      "page": "settings",
       "width": 1024,
       "overflow": false
     },
@@ -133,72 +105,225 @@
       "overflow": false
     },
     {
-      "page": "diagnosis",
+      "page": "monitor",
       "width": 1440,
       "overflow": false
     },
     {
-      "page": "model",
+      "page": "events",
       "width": 1440,
       "overflow": false
     },
     {
-      "page": "evidence",
+      "page": "devices",
       "width": 1440,
       "overflow": false
     },
     {
-      "page": "communication",
+      "page": "history",
       "width": 1440,
       "overflow": false
     },
     {
-      "page": "routes",
-      "width": 1440,
-      "overflow": false
-    },
-    {
-      "page": "slides",
-      "width": 1440,
-      "overflow": false
-    },
-    {
-      "page": "files",
+      "page": "settings",
       "width": 1440,
       "overflow": false
     }
   ],
-  "maintenance_checks": [
-    "review_required",
-    "note_required",
-    "recheck_evidence_required",
-    "manual_archive_marked_demo",
-    "export_clicked",
-    "survives_page_reload",
-    "offline_cannot_archive",
-    "invalid_not_normal",
-    "actual_export_json_verified"
+  "replay_checks": [
+    {
+      "scenario": "normal",
+      "noise": "0.3",
+      "state": "normal"
+    },
+    {
+      "scenario": "normal",
+      "noise": "1.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "normal",
+      "noise": "3.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "normal",
+      "noise": "10.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "0.3",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "1.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "3.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "10.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "leak",
+      "noise": "0.3",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "leak",
+      "noise": "1.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "leak",
+      "noise": "3.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "leak",
+      "noise": "10.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "0.3",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "1.0",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "3.0",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "10.0",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "drift",
+      "noise": "0.3",
+      "state": "normal"
+    },
+    {
+      "scenario": "drift",
+      "noise": "1.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "drift",
+      "noise": "3.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "drift",
+      "noise": "10.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "0.3",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "1.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "3.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "10.0",
+      "state": "leak_pattern"
+    }
   ],
-  "viewer_checks": [
+  "workflow_checks": [
+    "normal_and_reference_do_not_create_fault_events",
+    "quality_gates_hide_current_readings_and_stop_playback",
+    "create_and_deduplicate_continuous_candidate",
+    "review_required_before_saving",
+    "note_and_recheck_evidence_required",
+    "offline_and_invalid_cannot_archive",
+    "pending_and_uncertain_maintenance_remain_open_with_history",
+    "archive_is_manual_does_not_rewrite_diagnosis_or_snapshot",
+    "cross_page_counts_filter_search_and_history",
+    "settings_save_without_rewriting_historical_device_id",
+    "events_and_profile_survive_page_reload",
+    "reading_pagination_follows_selected_cursor",
+    "play_advances_one_second_and_pause_stops",
+    "end_of_replay_stops",
+    "quality_event_snapshot_has_no_current_values",
+    "corrupt_storage_warns_without_overwriting_original"
+  ],
+  "export_checks": [
     {
-      "width": 375,
-      "overflow": false
+      "file": "drip-demo-workspace.json",
+      "events": 1,
+      "history_entries": 5,
+      "physical_data": false
     },
     {
-      "width": 768,
-      "overflow": false
+      "file": "drip-reference-leak-450s.csv",
+      "data_rows": 451,
+      "source_marked": true
     },
     {
-      "width": 1024,
-      "overflow": false
-    },
+      "file": "DEMO-A-001.json",
+      "physical_data": false
+    }
+  ],
+  "accessibility_checks": [
+    "native_modal_escape_closes",
+    "keyboard_skip_link",
+    "aria_navigation_and_filter_states",
+    "reduced_motion_styles_present",
     {
-      "width": 1440,
-      "overflow": false
-    },
-    "button_and_keyboard_controls_executed"
+      "check": "mobile_chart_axis_font_size",
+      "actual_px": 12
+    }
   ],
   "external_requests": [],
   "console_errors": [],
-  "status": "passed"
+  "screenshots": [
+    "overview-375.png",
+    "monitor-375.png",
+    "events-375.png",
+    "devices-375.png",
+    "history-375.png",
+    "settings-375.png",
+    "overview-1440.png",
+    "monitor-1440.png",
+    "events-1440.png",
+    "devices-1440.png",
+    "history-1440.png",
+    "settings-1440.png",
+    "event-dialog-desktop.png",
+    "event-dialog-mobile.png",
+    "maintenance-desktop.png",
+    "events-with-record-desktop.png",
+    "events-with-record-mobile.png",
+    "overview-with-record-desktop.png",
+    "overview-final-desktop.png",
+    "overview-final-mobile.png",
+    "overview-lower-desktop.png"
+  ],
+  "scope": "operations primary site; research and 3D verified separately",
+  "status": "passed",
+  "download_directory": "tmp/operations_ui_review/downloads-480b23d2-4278-4c2d-a763-ccae73635d59",
+  "source_sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4"
 }

@@ -5,7 +5,7 @@ import pymupdf
 from PIL import Image,ImageOps,ImageDraw
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'deliverables'; TMP=ROOT/'tmp/qa';TMP.mkdir(parents=True,exist_ok=True)
 edge=r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
-html=(OUT/'index.html').read_text(encoding='utf-8')
+html=(OUT/'研究与答辩资料.html').read_text(encoding='utf-8')
 scripts=re.findall(r'<script>([\s\S]*?)</script>',html)
 assert len(scripts)==1
 js=TMP/'portal-script.js';js.write_text(scripts[0],encoding='utf-8')
@@ -98,5 +98,8 @@ with zipfile.ZipFile(OUT/'立项答辩.pptx') as z:
     text_count=sum(z.read(p).count(b'<a:t>') for p in pages)
     assert text_count>200 and b'oMath' in z.read('ppt/slides/slide5.xml')
 print('PPTX package: 15 slides, 15 notes,',text_count,'editable text runs and native formula present.')
-report={'date':'2026-10-04','browser':'passed','comparison_selections':24,'diagnosis_selections':24,'slides':15,'notes':15,'pdf_pages':{'project_plan':pymupdf.open(OUT/'项目书审阅版.pdf').page_count,'application':pymupdf.open(OUT/'大创申报书_模板审阅版.pdf').page_count,'deck':15},'validation_scope':'programmatic browser interactions, PDF text bounds, editable package and native PDF rasterization; human visual acceptance recorded separately; not physical validation','ppt_status':'visual revision draft; latest hardware and budget await synchronization'}
+report={'date':'2026-10-04','browser':'passed','browser_artifact':'研究与答辩资料.html','comparison_selections':24,'diagnosis_selections':24,'slides':15,'notes':15,'pdf_pages':{'project_plan':pymupdf.open(OUT/'项目书审阅版.pdf').page_count,'application':pymupdf.open(OUT/'大创申报书_模板审阅版.pdf').page_count,'deck':15},'validation_scope':'programmatic browser interactions, PDF text bounds, editable package and native PDF rasterization; human visual acceptance recorded separately; not physical validation','ppt_status':'visual revision draft; latest hardware and budget await synchronization'}
+operations=json.loads((OUT/'界面验收记录.json').read_text(encoding='utf-8'))
+assert operations['status']=='passed'
+report['operations_site']={'artifact':'index.html','status':operations['status'],'navigation_checks':len(operations['navigation_checks']),'replay_checks':len(operations['replay_checks']),'workflow_checks':len(operations['workflow_checks']),'export_files':len(operations['export_checks']),'source_sha256':operations['source_sha256']}
 (OUT/'交付检查.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')

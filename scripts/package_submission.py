@@ -13,7 +13,7 @@ for base in ['application','docs','simulation','scripts','deliverables','design-
              'projects/drip-research_ppt169_20261002/validation']:
     selected.extend(p for p in (ROOT/base).rglob('*') if p.is_file()
                     and '__pycache__' not in p.parts and p!=target
-                    and p.suffix not in ['.pyc','.log'] and p.name!='.env')
+                    and p.suffix not in ['.pyc','.log'] and p.name!='.env' and not p.name.startswith('~$'))
 selected += [ROOT/'README.md',ROOT/'附件1：塔里木大学大学生创新训练项目申报书.doc']
 selected += list((ROOT/'projects/drip-research_ppt169_20261002').glob('*.md'))
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:

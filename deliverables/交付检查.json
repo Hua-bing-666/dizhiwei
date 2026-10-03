@@ -11,5 +11,319 @@
     "deck": 15
   },
   "validation_scope": "programmatic browser interactions, PDF text bounds, editable package and native PDF rasterization; human visual acceptance recorded separately; not physical validation",
-  "ppt_status": "visual revision draft; latest hardware and budget await synchronization"
+  "ppt_status": "visual revision draft; latest hardware and budget await synchronization",
+  "browser_artifact": "研究与答辩资料.html",
+  "operations_site": {
+    "artifact": "index.html",
+    "status": "passed",
+    "navigation_checks": 24,
+    "replay_checks": 24,
+    "workflow_checks": 16,
+    "export_files": 3,
+    "source_sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4"
+  },
+  "local_link_checks": [
+    {
+      "page": "index.html",
+      "path": "../docs/网站功能与验收说明.md",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "path": "台架三维结构交互模型.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "path": "研究与答辩资料.html",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/PPT逐页内容与讲稿.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/bench_model.png",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/bench_model.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/diagnosis_flow.png",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/diagnosis_flow.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/dual_pressure_layout.png",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/dual_pressure_layout.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/pressure_frontend.png",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/pressure_frontend.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/protocol_sequence.png",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/protocol_sequence.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/sensor_locations.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/system_scope.png",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/figures/system_scope.svg",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/models/bench_layout.glb",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/models/bench_layout.json",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/models/bench_layout.obj",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/models/bench_layout.step",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/references.json",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/对抗性检验.html",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../application/正式模板正文.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/三维结构模型优化说明.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/参考文献核验与正文对应.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/国内硬件选型与可行性核对.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/国家级案例写法拆解与申报书改写.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/对抗性检验报告.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/往期信息院案例与申报启示.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/案例对照与老师建议分析.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/系统定位与后续研究路线.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/论文图示借鉴与本轮结构调整.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/项目总规划与任务验收台账.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../docs/项目范围与三阶段执行方案.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/AUDIT.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/COMMUNICATION.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/DIAGNOSIS.md",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/adversarial_audit.py",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/audit_results/trials.csv",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/communication_feasibility.py",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/communication_results/summary.json",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/communication_results/trials.csv",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/diagnosis_feasibility.py",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/diagnosis_results/summary.json",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/diagnosis_results/trials.csv",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "../simulation/run_simulation.py",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "index.html",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "台架三维结构交互模型.html",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "大创申报书_模板填写稿.docx",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "大创申报书_模板审阅版.pdf",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "立项答辩.pptx",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "立项答辩审阅版.pdf",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "证据清单.json",
+      "exists": true
+    },
+    {
+      "page": "研究与答辩资料.html",
+      "path": "项目书审阅版.pdf",
+      "exists": true
+    }
+  ],
+  "unchanged_materials": [
+    {
+      "path": "大创申报书_模板填写稿.docx",
+      "sha256": "2bc9630d792c835e29651d70f049ee24a45c57d3ee8cb7e2c23c63189dc3c0f9",
+      "unchanged_from_pre_turn_commit": true
+    },
+    {
+      "path": "大创申报书_模板审阅版.pdf",
+      "sha256": "2a12aa6b42a51ee3bc39f5bd78a43a543a205b8a70f0991e627fb8d9ccdce2b0",
+      "unchanged_from_pre_turn_commit": true
+    },
+    {
+      "path": "项目书审阅版.pdf",
+      "sha256": "eed0522bc5557f42167407c7d18a2ee6584b765dfa319fe554f305a31a90312e",
+      "unchanged_from_pre_turn_commit": true
+    },
+    {
+      "path": "立项答辩.pptx",
+      "sha256": "35ad135527ec234aab3ebe91bc33d1817c0855c5af8f1d454869e376e22bbc9f",
+      "unchanged_from_pre_turn_commit": true
+    },
+    {
+      "path": "立项答辩审阅版.pdf",
+      "sha256": "a41b4ee563efcb37648b9e75ad0ffe0e7fdab98b463fee6805fb9de3b795e3e9",
+      "unchanged_from_pre_turn_commit": true
+    }
+  ]
 }
