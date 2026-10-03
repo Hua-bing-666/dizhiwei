@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "browser": "passed",
   "comparison_selections": 24,
   "diagnosis_selections": 24,
@@ -7,9 +7,14 @@
   "notes": 15,
   "pdf_pages": {
     "project_plan": 5,
-    "application": 19,
+    "application": 24,
     "deck": 15
   },
   "validation_scope": "programmatic browser interactions, PDF text bounds, editable package and native PDF rasterization; human visual acceptance recorded separately; not physical validation",
-  "ppt_status": "visual revision draft; latest hardware and budget await synchronization"
+  "ppt_status": "visual revision draft; latest hardware and budget await synchronization",
+  "literature_links": {
+    "original_journal_sources": 17,
+    "all_local_links_and_images_exist": true,
+    "desktop_visual_review": "passed"
+  }
 }

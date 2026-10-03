@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "classification": "uncalibrated_model_and_proposed_work",
   "physical_data": false,
   "entries": [
@@ -55,8 +55,8 @@
     },
     {
       "path": "deliverables/项目书审阅版.pdf",
-      "sha256": "c1cd75c6cada2bb205b527791da6269f6fbb392c3f73e1fb0102e5bb788c9544",
-      "bytes": 675724
+      "sha256": "011354fcb242e2ff98f23697967800d8fbe43797686d23aa86a5b098642a939b",
+      "bytes": 807953
     },
     {
       "path": "deliverables/立项答辩.pptx",
@@ -80,13 +80,13 @@
     },
     {
       "path": "scripts/qa_deliverables.py",
-      "sha256": "d3a03042e160432ac5102ac415bac4348e79d8f7ca5e6ea6929fb2b8ded5d56a",
+      "sha256": "8ce817f38103e5149070be8268b94044f81e21990996d86fab0fdd5060f7ea60",
       "bytes": 9097
     },
     {
       "path": "application/正式模板正文.md",
-      "sha256": "05ca9c9b655458cf48bdc2a8d4efed8ab3dbd46d54a242b4585eb5d15e173b8b",
-      "bytes": 26740
+      "sha256": "02b3ae490501ac3c0c913f59a03e6c9acfac59f46432b5411a712658776dd192",
+      "bytes": 33860
     },
     {
       "path": "docs/案例对照与老师建议分析.md",
@@ -120,38 +120,38 @@
     },
     {
       "path": "deliverables/大创申报书_模板填写稿.docx",
-      "sha256": "1c3b92f4d86e22cf21a5396e13dc28efdffe39e493586819f7be424e2ba80e0b",
-      "bytes": 1946932
+      "sha256": "77e6b35d6f97c1e3d3bc1214a38e7d3ac64d877730ec6cd317dfec052c9bf11e",
+      "bytes": 3319979
     },
     {
       "path": "deliverables/大创申报书_模板审阅版.pdf",
-      "sha256": "e7fd5f62b0a0f87656e696ae9475ff5a032c58f6bdd7fff4b61778825b0e877f",
-      "bytes": 1718441
+      "sha256": "26ee554e8778ccd309cb5bf97c68e554d06b5b4fdf03c13a2d2208826d68094f",
+      "bytes": 3666842
     },
     {
       "path": "deliverables/index.html",
-      "sha256": "1c7eb95e0a74d8a6ed8688ce2b3a0bef8d1699b485dc5845f78a9a99a44f193e",
-      "bytes": 2013704
+      "sha256": "62c622c2cf0f7bc15ff45599b84959fd5a3b67b28064b953066d6f014ffda4a1",
+      "bytes": 2019480
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "e74f74c4ecb5a222572a76fc2320fdd4e1c091bce58d1aa790f0947d8244f0e2",
-      "bytes": 508
+      "sha256": "83a5512ceccc3f91e7d2db7108d4fa90bed273c2690b27cbef749a5cf09ff726",
+      "bytes": 657
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "cc457b90cde6bb0f60b4c2d66c3d63b686f3e21e292faeba9a2366f6efa3fd33",
-      "bytes": 2771
+      "sha256": "226e83cbebca25db9d3e5ae54ade097e6a6ff277e47a359ed29495e9b21be97a",
+      "bytes": 3038
     },
     {
       "path": "README.md",
-      "sha256": "b10e16efe0e92249e674b27af2d8f46438fd99763eb5fa985bef266ca8530a0c",
-      "bytes": 5514
+      "sha256": "4efb7b27edf1c72d211edb1d57528ae6033688561f6907fe70f12e3e72bf2331",
+      "bytes": 5810
     },
     {
       "path": "scripts/fill_application_template.ps1",
-      "sha256": "4c41faf318bce45aa8c6f6e15656139368c9c3048e6a81f9170126746076e7a7",
-      "bytes": 9353
+      "sha256": "f4cafdc1aa09762e57e2754ffaa3963b9db83231116cc8b60339df698d4c4b63",
+      "bytes": 11897
     },
     {
       "path": "scripts/validate_diagnosis_evidence.py",
@@ -210,13 +210,13 @@
     },
     {
       "path": "scripts/build_application_design_figures.py",
-      "sha256": "c3e8f79e8ecd79ce2ec82f14e5bbcc882010bea09865761a676fab6294f60836",
-      "bytes": 3885
+      "sha256": "e516cea49d162498c7807afa98a9f19ef3640a6370087e42f4fc3d3bb5bb751c",
+      "bytes": 20049
     },
     {
       "path": "scripts/redesign_document_figures.py",
-      "sha256": "b2b3e1b8eda16a6830ddac5057fd3f326d990a4a6587203b118ecaf6051a1ce0",
-      "bytes": 5352
+      "sha256": "b94c3fa119fb13edbcb65675e12a886d68f3ac54d69c39cdf01b61338188ec18",
+      "bytes": 2631
     },
     {
       "path": "scripts/save_supplier_illustrations.py",
@@ -227,6 +227,16 @@
       "path": "scripts/capture_application_platform.py",
       "sha256": "40d8474a5bec13c707cda47fd5546f01d4360411d1ddae567ad6c6b5ad7b472b",
       "bytes": 1716
+    },
+    {
+      "path": "application/figures/acquisition_flow.png",
+      "sha256": "b05f4e225980beca2f5fda089a2176742890ff42e21409c269e013837fb85afa",
+      "bytes": 247949
+    },
+    {
+      "path": "application/figures/acquisition_flow.svg",
+      "sha256": "2d35bbdbf1b918bd3da7494a2bd14ea26a80505b01038849fa8cf25a15561d0a",
+      "bytes": 5610
     },
     {
       "path": "application/figures/adversarial_boundaries.png",
@@ -255,23 +265,23 @@
     },
     {
       "path": "application/figures/diagnosis_flow.png",
-      "sha256": "66c21fc5bb16f9a9e16141e0fc15eb720ea89fbeacdc86b1904c913ac9975fdc",
-      "bytes": 176645
+      "sha256": "5cf5e038c71c67281a22cd809c718a6f97e9eeceb2314593be5ee53e938306ed",
+      "bytes": 307548
     },
     {
       "path": "application/figures/diagnosis_flow.svg",
-      "sha256": "784a9b8767650772eee4510a8c0a11685b6eb28646e8ef5e19fb3ee5d625cc92",
-      "bytes": 4831
+      "sha256": "51e7adf57ccf0e0cf8676a469ec47997ff8db765e3ec48b61cbe133622ea7e1d",
+      "bytes": 6596
     },
     {
       "path": "application/figures/dual_pressure_layout.png",
-      "sha256": "cb59b2acc803fde70b6eab32c6b664b57711092af2ce786df9d88a6ac4dc9e9d",
-      "bytes": 83561
+      "sha256": "dd3a7f2d8ea4a7b8460aa18f5d4658dfec35c5a1053c6c71c2dc6d1f1434b2a8",
+      "bytes": 131519
     },
     {
       "path": "application/figures/dual_pressure_layout.svg",
-      "sha256": "175600126ff660ef06623fb6da31348f5f1f7604b776cab326eb830bc01f9c52",
-      "bytes": 3038
+      "sha256": "21a3d1289338b70b48feda800486e1edd4febb19379b999c55cc47ccb1d44e61",
+      "bytes": 4231
     },
     {
       "path": "application/figures/early_diagnosis.png",
@@ -282,6 +292,16 @@
       "path": "application/figures/early_diagnosis.svg",
       "sha256": "ca1db36fb304b7ecb4f5fbaa334949ea884c128d0dabc1c6b278b16cccece106",
       "bytes": 100696
+    },
+    {
+      "path": "application/figures/experiment_flow.png",
+      "sha256": "78c6249ae1f6a56cf9b0c5be81a610cfeb842eab69191c2e40044f43885621a4",
+      "bytes": 375737
+    },
+    {
+      "path": "application/figures/experiment_flow.svg",
+      "sha256": "bc4baf3c8766851d1054f8f025879ceec9c8332dbec28a568d699b4051a0a05b",
+      "bytes": 6541
     },
     {
       "path": "application/figures/field_concept.svg",
@@ -305,13 +325,23 @@
     },
     {
       "path": "application/figures/hardware_node.png",
-      "sha256": "38ffc2138da3385f756a1e85b25eee2a54fd46483a89a74ebfed98e67b4d3123",
-      "bytes": 168755
+      "sha256": "e7dc0658e9943110ca5070e55b6702c8e16178bd0cf022ac2694adb672bef448",
+      "bytes": 230066
     },
     {
       "path": "application/figures/hardware_node.svg",
-      "sha256": "1ba200e7c69d1c8cf72c92ee5db75e9ca2810b0b7ef33687fc8bac096039eee7",
-      "bytes": 4162
+      "sha256": "fa8d5ffc65c86bd46d1568f492cf1aad678bddd36a1b147657d1939d40119390",
+      "bytes": 5689
+    },
+    {
+      "path": "application/figures/hydraulic_model.png",
+      "sha256": "4b7496db03780b44af32d326756329e7a7c7e7c0cb2c5bdea188e2c7c0fc3545",
+      "bytes": 178848
+    },
+    {
+      "path": "application/figures/hydraulic_model.svg",
+      "sha256": "95697b1d5514d8970b891a119e4ee0e1dc5efb34674c17ea1ec3b5d000665d89",
+      "bytes": 4480
     },
     {
       "path": "application/figures/leak.png",
@@ -350,13 +380,13 @@
     },
     {
       "path": "application/figures/protocol_loop.png",
-      "sha256": "cace74c9683a80f5ba42210d0ddfc9c394da2ead00f77455807f20bb6b66eb8a",
-      "bytes": 113638
+      "sha256": "8dabc0badd9bf16777b323aa86401b33b39799dfa1e29f989d5d786a2edec3a9",
+      "bytes": 353000
     },
     {
       "path": "application/figures/protocol_loop.svg",
-      "sha256": "8cdfbe056b55728f0eebe6f470df1b43bfbf07833934c3bf275a3d3b4b237d19",
-      "bytes": 2715
+      "sha256": "ddb788c34bfe790ba674d0670598225d385a058926ebb56d996cd6ba1a451920",
+      "bytes": 7370
     },
     {
       "path": "application/figures/restriction.png",
@@ -375,13 +405,13 @@
     },
     {
       "path": "application/figures/system_scope.png",
-      "sha256": "0a994c42ba5ee2f764ab6f097ab0e32ab49a7162b0047b787f361316054b7c29",
-      "bytes": 136826
+      "sha256": "fe6c7a62f61e058ae216932c124ebf7a53981b4530e7696841a36799bf9d8116",
+      "bytes": 221548
     },
     {
       "path": "application/figures/system_scope.svg",
-      "sha256": "cfc8480d6ff72aaaa033745c59c5d4ee41123a9278c6580d84dbe10070aca207",
-      "bytes": 4339
+      "sha256": "a5ba966d9d526a78d10a7182bee21dd2357159556718e9a21e5b20920195f35a",
+      "bytes": 4830
     },
     {
       "path": "simulation/hardware_results/observability.csv",
@@ -405,13 +435,63 @@
     },
     {
       "path": "docs/本轮申报书验收记录.md",
-      "sha256": "9cb7783c40063246fbaf20f7d7191b63da0fa121b0ef9621a00bed6541786920",
-      "bytes": 3966
+      "sha256": "732fa1d6d56053bc20b7a0f401dcd2ef48e6d7b822129832b65c050e5a7f820c",
+      "bytes": 4744
     },
     {
       "path": "deliverables/申报书验收记录.json",
-      "sha256": "2f92f054543a9766f9244d33e8ca562fbd009538beb9f0700a6ab935edf0a9dc",
-      "bytes": 1220
+      "sha256": "b76b3a73181c297227c4af5de67b96f0d75159cd588992ccef1b3191ed6ce9b0",
+      "bytes": 2133
+    },
+    {
+      "path": "docs/申报书黑白流程与模型验收.md",
+      "sha256": "4c68a9010b449062ea1e07133b3fed53a859cf2c0e8e10d441e354d888bd3a85",
+      "bytes": 4860
+    },
+    {
+      "path": "scripts/prepare_application_payload.py",
+      "sha256": "0060e0451c44c2dd181564782397e01e2ac56edc980c516ec6ddf774e3d021e0",
+      "bytes": 2579
+    },
+    {
+      "path": "application/figures/design_provenance.json",
+      "sha256": "22c4e62d89d8d279f68ae6ca2787ab8c73c75952f9faabe6b0023a83e7107c41",
+      "bytes": 10592
+    },
+    {
+      "path": "application/references.json",
+      "sha256": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb",
+      "bytes": 15554
+    },
+    {
+      "path": "docs/参考文献核验与正文对应.md",
+      "sha256": "b1c18397007fb19c0ef618cfd9ff03db819f8d8264997c497b8b86bd099c0344",
+      "bytes": 7458
+    },
+    {
+      "path": "docs/中文文献来源核验.json",
+      "sha256": "a5a495becfac38b2ed7dcae2ede1ba6936e352425fa8dfe66f00742661aa2ef1",
+      "bytes": 29994
+    },
+    {
+      "path": "scripts/verify_literature_sources.py",
+      "sha256": "8ba7a710a6f1546e7e99a2ba2f3219a07a6b4464e7cd407d7ef1d1e9fc7501de",
+      "bytes": 2407
+    },
+    {
+      "path": "scripts/integrate_application_references.py",
+      "sha256": "b92cf7cf95ae172912c23de15c28b6743c4689f339ecf9551f5820952e327e88",
+      "bytes": 14801
+    },
+    {
+      "path": "scripts/validate_application_references.py",
+      "sha256": "35ba25c440d629dd4f51133ec774beb06422ffe85ab7ebc781123cc797baca71",
+      "bytes": 2718
+    },
+    {
+      "path": "scripts/finalize_application_review.py",
+      "sha256": "7a52087c6ff2dad19575f4f2f6e4cf7bfb7a631dff906a28901179719a2646ab",
+      "bytes": 4195
     }
   ]
 }

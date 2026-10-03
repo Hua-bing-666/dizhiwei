@@ -49,7 +49,11 @@ try {
         foreach ($paragraph in $table.Range.Cells.Item(63+$i).Range.Paragraphs) {
             $line=$paragraph.Range.Text.Trim()
             if ($line -match '^\d+(\.\d+)?\s' -or $line -match '^表\d+\s') {
-                $paragraph.Range.Font.Bold=-1
+                $paragraph.Range.Font.Bold=0
+                $heading=$paragraph.Range.Duplicate
+                $firstLine=($paragraph.Range.Text -split ([string][char]11),2)[0].TrimEnd([char]13,[char]7)
+                $heading.End=$heading.Start+$firstLine.Length
+                $heading.Font.Bold=-1
                 $paragraph.Range.ParagraphFormat.SpaceBefore=7
                 $paragraph.Range.ParagraphFormat.KeepWithNext=-1
             }
@@ -143,6 +147,32 @@ try {
         $native.Borders.Item(-7).LineStyle=0
         $native.Borders.Item(-8).LineStyle=0
     }
+    # An invisible native row for each citation keeps the entire entry together.
+    # WPS ignores paragraph KeepTogether inside the continued school-form cell.
+    if ($payload.references.Count -gt 0) {
+        $anchor=$doc.Content.Duplicate
+        $anchor.Find.ClearFormatting();$anchor.Find.Text='[[BIBLIOGRAPHY]]';$anchor.Find.Wrap=0
+        if (-not $anchor.Find.Execute()) {throw 'Bibliography anchor missing'}
+        $anchor.Text='';$anchor.Collapse(1)
+        $bibliography=$doc.Tables.Add($anchor,$payload.references.Count,1)
+        $bibliography.AllowAutoFit=$false
+        $bibliography.PreferredWidthType=3;$bibliography.PreferredWidth=425
+        $bibliography.Columns.Item(1).Width=425
+        $bibliography.TopPadding=0;$bibliography.BottomPadding=0
+        $bibliography.LeftPadding=0;$bibliography.RightPadding=0
+        $bibliography.Rows.AllowBreakAcrossPages=$false
+        foreach ($border in $bibliography.Borders) {$border.LineStyle=0}
+        for ($i=0;$i -lt $payload.references.Count;$i++) {
+            $entry=$bibliography.Cell($i+1,1)
+            $entry.Range.Text=[string]$payload.references[$i]
+            $entry.Range.Font.Name='Times New Roman';$entry.Range.Font.NameFarEast='宋体'
+            $entry.Range.Font.Size=10.5;$entry.Range.Font.Bold=0
+            $entry.Range.ParagraphFormat.SpaceBefore=0;$entry.Range.ParagraphFormat.SpaceAfter=5
+            $entry.Range.ParagraphFormat.LineSpacingRule=0
+            $entry.Range.ParagraphFormat.KeepTogether=-1;$entry.Range.ParagraphFormat.KeepWithNext=0
+            $entry.Range.ParagraphFormat.PageBreakBefore=0
+        }
+    }
     # Cover fields retain the school's logo and original page design.
     foreach ($p in $doc.Paragraphs) {
         $value = $p.Range.Text.Trim()
@@ -156,6 +186,20 @@ try {
         elseif ($value -match '^所属学院：\s*$') {$p.Range.Text = "所属学院：信息工程学院`r"}
         elseif ($value -match '^起止时间：\s*$') {$p.Range.Text = "起止时间：2027年3月至2028年2月`r"}
         elseif ($value -match '^填\s*写\s*须\s*知$') {$p.Range.ParagraphFormat.PageBreakBefore=-1}
+    }
+    $doc.Repaginate()
+    # Ensure a main section label has at least its first body line on its page.
+    for ($i=0;$i -lt 9;$i++) {
+        $sectionCell=$table.Range.Cells.Item(63+$i)
+        if ($sectionCell.Range.Paragraphs.Count -gt 1) {
+            $heading=$sectionCell.Range.Paragraphs.Item(1).Range.Duplicate
+            $body=$sectionCell.Range.Paragraphs.Item(2).Range.Duplicate
+            $heading.Collapse(1);$body.Collapse(1)
+            if ($heading.Information(3) -ne $body.Information(3)) {
+                $sectionCell.Range.Paragraphs.Item(1).Range.ParagraphFormat.PageBreakBefore=-1
+                $doc.Repaginate()
+            }
+        }
     }
     $target = Join-Path $Workspace 'deliverables\大创申报书_模板填写稿.docx'
     $doc.SaveAs2($target,16)

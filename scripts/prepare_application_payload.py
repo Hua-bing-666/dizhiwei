@@ -3,12 +3,15 @@ from pathlib import Path
 import re,json
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'tmp/reference_review';OUT.mkdir(parents=True,exist_ok=True)
 text=(ROOT/'application/正式模板正文.md').read_text(encoding='utf-8')
-parts=re.split(r'^## ',text,flags=re.M)[1:];sections=[];figures=[];tables=[]
+parts=re.split(r'^## ',text,flags=re.M)[1:];sections=[];figures=[];tables=[];references=[]
 for section_id,part in enumerate(parts):
     lines=part.splitlines();result=[];i=0
     while i<len(lines):
         line=lines[i].strip()
         if not line:i+=1;continue
+        if re.match(r'^\[\d+\]\s',line):
+            if not references:result.append('[[BIBLIOGRAPHY]]')
+            references.append(line);i+=1;continue
         match=re.fullmatch(r'!\[(.+)\]\((figures/[^)]+)\)',line)
         if match:
             marker=f'[[FIGURE{len(figures)+1}]]'
@@ -25,8 +28,15 @@ for section_id,part in enumerate(parts):
             tables.append({'marker':marker,'section':section_id,'caption':caption,'rows':rows})
             result.append(marker);continue
         result.append(re.sub(r'^#{3,4}\s+','',line));i+=1
-    sections.append('\r'.join(result))
-assert len(sections)==9 and len(figures)==9 and len(tables)==4
-payload={'title':text.splitlines()[0][2:],'sections':sections,'figures':figures,'tables':tables}
+    # WPS can ignore KeepWithNext across a continued outer table row.
+    # A soft break keeps each inner heading in the first body paragraph.
+    joined=[];j=0
+    while j<len(result):
+        if re.match(r'^\d+(\.\d+)?\s',result[j]) and j+1<len(result) and not result[j+1].startswith('[[') and not re.match(r'^\d+(\.\d+)?\s',result[j+1]):
+            joined.append(result[j]+'\x0b'+result[j+1]);j+=2
+        else:joined.append(result[j]);j+=1
+    sections.append('\r'.join(joined))
+assert len(sections)==9 and len(figures)==12 and len(tables)==4
+payload={'title':text.splitlines()[0][2:],'sections':sections,'figures':figures,'tables':tables,'references':references}
 (OUT/'application_payload.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
-print('Nine template sections; nine anchored figures; four native table records; abstract',len(parts[0].split('\n\n')[1]),'characters.')
+print('Nine template sections; twelve anchored figures; four native table records; abstract',len(parts[0].split('\n\n')[1]),'characters.')
