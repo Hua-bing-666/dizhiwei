@@ -7,7 +7,7 @@
 ## 最新材料
 
 - [先打开：研究与申报网站](deliverables/index.html)，下载完整仓库后用浏览器打开，保留目录结构。
-- [学校模板填写稿 Word](deliverables/大创申报书_模板填写稿.docx) / [原生审阅 PDF](deliverables/大创申报书_模板审阅版.pdf)：24页，原封面、九节正文、12幅图、4张可编辑数据表、17条完整参考文献及审批栏；图文按论证步骤展开。
+- [学校模板填写稿 Word](deliverables/大创申报书_模板填写稿.docx) / [原生审阅 PDF](deliverables/大创申报书_模板审阅版.pdf)：22页，原封面、九节正文、9幅图、4张可编辑数据表、17条完整参考文献及审批栏；图文按系统、测量、诊断、通信和验证展开；包括三维布局、电气原理、统计图与网站局部截图，仅保留1张核心诊断流程。
 - [项目范围与执行 PDF](deliverables/项目书审阅版.pdf) / [可编辑三阶段方案](docs/项目范围与三阶段执行方案.md)：5页，明确申报、结项、论文的不同标准。
 - [可编辑答辩 PPTX](deliverables/立项答辩.pptx) / [原生审阅 PDF](deliverables/立项答辩审阅版.pdf)：视觉修订草案，12页主讲、3页备用，附15页讲稿；最新硬件及预算尚待同步，后续再完成。
 - [国内硬件选型与淘宝入口](docs/国内硬件选型与可行性核对.md) / [国家级案例写法拆解](docs/国家级案例写法拆解与申报书改写.md)。
@@ -16,6 +16,8 @@
 - [交付检查及范围](deliverables/交付检查.json) / [证据哈希清单](deliverables/证据清单.json)。
 
 - [参考文献核验与正文对应](docs/参考文献核验与正文对应.md)：17篇期刊论文，中文11篇（64.7%）、英文6篇；原英文全部保留，正文逐项引用。
+
+[本轮图示取舍与论文依据](docs/论文图示借鉴与本轮结构调整.md) · [三维布置OBJ](application/models/bench_layout.obj) · [本轮验收记录](docs/本轮申报书验收记录.md)
 
 ## 当前范围
 
@@ -39,7 +41,7 @@
 
 诊断复跑：`python simulation/diagnosis_feasibility.py`；验证：`python scripts/validate_diagnosis_evidence.py`。通信复跑：`python simulation/communication_feasibility.py`；协议及图表验证：`python scripts/validate_new_evidence.py`。参考文献检查：`python scripts/validate_application_references.py`。网站重建：`python scripts/build_portal.py`；交付检查：`python scripts/qa_deliverables.py`。
 
-诊断数据复跑后，应再运行 `scripts/redesign_document_figures.py` 恢复申报版图形；设计图运行 `scripts/build_application_design_figures.py`，硬件核对运行 `simulation/hardware_design_check.py`。PPT新图形源为 `scripts/author_visual_redesign.py`。`rewrite_application_argument.py`、`redesign_visual_plan.py`及`redesign_portal_surface.py`是一次性迁移脚本，不重复覆盖当前材料。
+诊断数据复跑后，应再运行 `scripts/redesign_document_figures.py` 恢复申报版图形；设计图运行 `scripts/build_application_visuals.py`，硬件核对运行 `simulation/hardware_design_check.py`。PPT新图形源为 `scripts/author_visual_redesign.py`。`rewrite_application_argument.py`、`redesign_visual_plan.py`及`redesign_portal_surface.py`是一次性迁移脚本，不重复覆盖当前材料。
 
 图形/PDF脚本依赖NumPy、Matplotlib、ReportLab、PyMuPDF、Pillow；浏览器检查使用Edge，原生审阅导出使用本机WPS。PPT可编辑源码保存在 `projects/drip-research_ppt169_20261002`，生产工作流依赖本机ppt-master技能。`prepare_materials.py`和两个`revise_*.py`是历史/一次性迁移脚本，不要重复运行来覆盖当前内容。
 

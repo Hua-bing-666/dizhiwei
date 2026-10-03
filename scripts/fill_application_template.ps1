@@ -17,7 +17,7 @@ try {
     Set-Cell 6 '2027年3月至2028年2月'
     Set-Cell 13 '待本人填写'; Set-Cell 14 '大二'
     Set-Cell 15 '信息工程学院 通信专业'; Set-Cell 16 '待填写'; Set-Cell 17 '待填写'
-    Set-Cell 19 '尚未提供，由本人据实填写，不能照抄案例经历。'
+    Set-Cell 19 '由负责人据实填写专业学习、实践经历及实际成果。'
     Set-Cell 60 '待指导教师据实填写科研、教学及指导情况。'
     Set-Cell 62 '待教师确认可提供的实验空间、参考仪器、开发及研究指导条件。'
     foreach ($index in @(60,62)) {
@@ -122,11 +122,11 @@ try {
         $native.PreferredWidthType=3;$native.PreferredWidth=425
         $native.Range.Font.NameFarEast='宋体';$native.Range.Font.Name='Times New Roman'
         $native.Range.Font.Size=9.5;$native.Range.Font.Bold=0
-        $native.Range.ParagraphFormat.SpaceBefore=0;$native.Range.ParagraphFormat.SpaceAfter=4
+        $native.Range.ParagraphFormat.SpaceBefore=0;$native.Range.ParagraphFormat.SpaceAfter=2
         $native.Range.ParagraphFormat.LineSpacingRule=0
         $native.Range.ParagraphFormat.KeepWithNext=-1
         $native.Rows.Item($rowCount).Range.ParagraphFormat.KeepWithNext=0
-        $native.TopPadding=5;$native.BottomPadding=5;$native.LeftPadding=5;$native.RightPadding=5
+        $native.TopPadding=3;$native.BottomPadding=3;$native.LeftPadding=5;$native.RightPadding=5
         $native.Rows.AllowBreakAcrossPages=$false
         $native.Rows.Item(1).HeadingFormat=-1
         $widths=if ([string]$record.rows[0][0] -eq '用途') {@(105,60,260)} else {@(85,165,175)}
@@ -188,6 +188,22 @@ try {
         elseif ($value -match '^填\s*写\s*须\s*知$') {$p.Range.ParagraphFormat.PageBreakBefore=-1}
     }
     $doc.Repaginate()
+    # WPS may split even a paragraph containing a soft heading line. Compare
+    # the native pages of that heading and its first body character explicitly.
+    for ($i=0;$i -lt 9;$i++) {
+        foreach ($paragraph in $table.Range.Cells.Item(63+$i).Range.Paragraphs) {
+            $value=$paragraph.Range.Text
+            $split=$value.IndexOf([char]11)
+            if ($split -gt 0 -and $value -match '^\d+(\.\d+)?\s') {
+                $head=$paragraph.Range.Duplicate;$head.Collapse(1)
+                $body=$paragraph.Range.Duplicate;$body.Start=$body.Start+$split+1;$body.Collapse(1)
+                if ($head.Information(3) -ne $body.Information(3)) {
+                    $paragraph.Range.ParagraphFormat.PageBreakBefore=-1
+                    $doc.Repaginate()
+                }
+            }
+        }
+    }
     # Ensure a main section label has at least its first body line on its page.
     for ($i=0;$i -lt 9;$i++) {
         $sectionCell=$table.Range.Cells.Item(63+$i)
@@ -201,6 +217,31 @@ try {
             }
         }
     }
+    # Native non-splittable rows protect the three reviewed text blocks. WPS
+    # ignores paragraph keep/page-break flags within the continued school row.
+    foreach ($prefix in @('4 LoRa可靠告警与通信对照','另检查两故障','已完成1920次公平通信回放')) {
+        $anchor=$doc.Content.Duplicate
+        $anchor.Find.ClearFormatting();$anchor.Find.Text=$prefix;$anchor.Find.Wrap=0
+        if (-not $anchor.Find.Execute()) {throw ('Missing protected paragraph: '+$prefix)}
+        $block=$anchor.Paragraphs.Item(1).Range.Duplicate
+        $value=$block.Text.TrimEnd([char]13,[char]7)
+        $block.End=$block.End-1;$block.Text='';$block.Collapse(1)
+        $holder=$doc.Tables.Add($block,1,1)
+        $holder.AllowAutoFit=$false;$holder.PreferredWidthType=3;$holder.PreferredWidth=455
+        $holder.Columns.Item(1).Width=455
+        $holder.TopPadding=0;$holder.BottomPadding=0;$holder.LeftPadding=0;$holder.RightPadding=0
+        $holder.Rows.AllowBreakAcrossPages=$false
+        foreach ($border in $holder.Borders) {$border.LineStyle=0}
+        $target=$holder.Cell(1,1).Range
+        $target.Text=$value;$target.Font.Name='Times New Roman';$target.Font.NameFarEast='宋体'
+        $target.Font.Size=10.5;$target.Font.Bold=0
+        $target.ParagraphFormat.Alignment=0;$target.ParagraphFormat.SpaceAfter=5
+        $target.ParagraphFormat.SpaceBefore=0;$target.ParagraphFormat.PageBreakBefore=0
+        $target.ParagraphFormat.KeepWithNext=0;$target.ParagraphFormat.LineSpacingRule=0
+        $split=$value.IndexOf([char]11)
+        if ($split -gt 0) {$head=$target.Duplicate;$head.End=$head.Start+$split;$head.Font.Bold=-1}
+    }
+    $doc.Repaginate()
     $target = Join-Path $Workspace 'deliverables\大创申报书_模板填写稿.docx'
     $doc.SaveAs2($target,16)
     $doc.ExportAsFixedFormat((Join-Path $Workspace 'deliverables\大创申报书_模板审阅版.pdf'),17)

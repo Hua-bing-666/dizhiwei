@@ -36,7 +36,7 @@ for section_id,part in enumerate(parts):
             joined.append(result[j]+'\x0b'+result[j+1]);j+=2
         else:joined.append(result[j]);j+=1
     sections.append('\r'.join(joined))
-assert len(sections)==9 and len(figures)==12 and len(tables)==4
+assert len(sections)==9 and len(figures)==9 and len(tables)==4
 payload={'title':text.splitlines()[0][2:],'sections':sections,'figures':figures,'tables':tables,'references':references}
 (OUT/'application_payload.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
-print('Nine template sections; twelve anchored figures; four native table records; abstract',len(parts[0].split('\n\n')[1]),'characters.')
+print('Nine template sections; nine complementary figures; four native table records; abstract',len(parts[0].split('\n\n')[1]),'characters.')

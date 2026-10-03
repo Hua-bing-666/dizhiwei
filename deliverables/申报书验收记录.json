@@ -3,7 +3,7 @@
   "status": "material_review_completed_with_unresolved_submission_and_physical_conditions",
   "physical_validation": false,
   "visual_review": {
-    "application_native_wps_pdf_pages": 24,
+    "application_native_wps_pdf_pages": 22,
     "application_reviewed_pages": [
       1,
       2,
@@ -26,9 +26,7 @@
       19,
       20,
       21,
-      22,
-      23,
-      24
+      22
     ],
     "scope_pdf_pages": 5,
     "scope_reviewed_pages": [
@@ -38,32 +36,27 @@
       4,
       5
     ],
-    "figures": 12,
+    "figures": 9,
     "editable_record_tables": 4,
     "approval_fields_retained": true,
     "ppt": "draft; latest hardware/budget pending",
-    "monochrome_design_figures": 8,
+    "monochrome_design_figures": 3,
     "design_minimum_text_pt": 9.78,
     "browser_box_text_bounds": "passed",
     "rendering": "native WPS PDF and PyMuPDF; packaged renderer unavailable because pdf2image missing",
-    "unchanged_previously_reviewed_raster_pages": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16
-    ]
+    "formal_diagnosis_flowcharts": 1,
+    "color_design_figures": 3,
+    "statistical_figures": 2,
+    "actual_local_demo_screenshot": 1,
+    "acceptance_priority": [
+      "logical_correctness",
+      "completeness_and_relevance",
+      "label_arrow_frame_alignment_and_legibility",
+      "complementary_presentation_forms",
+      "color"
+    ],
+    "review_identity": "Current PDF pages viewed; matching image hashes checked separately.",
+    "all_nine_current_images_embedded_in_docx": true
   },
   "evidence_checks": {
     "candidate_range_grid": 24,
@@ -78,7 +71,7 @@
     "team coding responsibilities and ability",
     "actual calibration and pump working curve"
   ],
-  "native_pdf_sha256": "26ee554e8778ccd309cb5bf97c68e554d06b5b4fdf03c13a2d2208826d68094f",
+  "native_pdf_sha256": "517a0c41247c4374d4667afadc726110b19c6ec1dd53ab98eff32a83715ce871",
   "submission_ready": false,
   "references": {
     "total": 17,
@@ -88,11 +81,23 @@
     "all_cited_in_body": true,
     "all_native_pdf_entries_complete_on_one_page": true,
     "bibliography_pdf_pages": [
-      18,
-      19
+      16,
+      17
     ],
     "journal_metadata_comparisons": 10,
     "journal_browser_verifications": 1,
     "all_full_text_read": false
+  },
+  "scope_pdf_sha256": "0e00a5dbfb089c8f426df42f35f4f26c0ccfbee78dceb9197e81e67e10e84a1d",
+  "geometry_check": {
+    "vertices": 776,
+    "faces": 450,
+    "indices_valid": true,
+    "units": "mm",
+    "base_envelope": [
+      900,
+      520
+    ],
+    "manufacturing_or_physical_validation": false
   }
 }

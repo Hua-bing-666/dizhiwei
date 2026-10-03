@@ -44,17 +44,17 @@ result['flow_accuracy_assumptions']={'reading':'1% of reading','full_scale':'1% 
 result['full_scale_disjoint_intervals']=sum(x['full_scale_intervals_disjoint'] for x in observability)
 result['full_scale_disjoint_by_kind_degree']={kind+'_'+str(degree):sum(x['full_scale_intervals_disjoint'] for x in observability if x['kind']==kind and x['target_degree']==degree) for kind,degree in itertools.product(['leak','restriction'],[.05,.1,.15])}
 (OUT/'summary.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
-fig,axes=plt.subplots(2,1,figsize=(8.5,6.7));fig.subplots_adjust(left=.12,right=.97,top=.91,bottom=.17,hspace=.65)
+fig,axes=plt.subplots(2,1,figsize=(6.3,5.8));fig.subplots_adjust(left=.15,right=.98,top=.92,bottom=.21,hspace=.85)
 q=np.linspace(2,4.5,101);a=axes[0]
 a.plot(q,.8*q*q,color='#164c45',lw=2.5,label='模型健康压降 RQ²（R=0.8）')
 a.axhline(1,color='#426b91',ls='--',lw=2,label='候选双通道仅传感器界限 1kPa')
 a.axhspan(16,32,color='#b4512b',alpha=.13,label='1.6MPa候选双通道界限 16—32kPa')
-a.set(xlabel='A支路流量（L/min）',ylabel='压降或误差界限（kPa）',ylim=(0,34),title='量程选错时，测量误差可能覆盖健康压降');a.grid(alpha=.15);a.legend(fontsize=10,loc='upper left')
+a.set(xlabel='A支路流量（L/min）',ylabel='压降或误差界限（kPa）',ylim=(0,34),title='量程选错，误差可覆盖健康压降');a.grid(alpha=.15);a.legend(fontsize=11,loc='upper left')
 a=axes[1];grid=sorted(set(x['q_a_l_min'] for x in rows));a.scatter(grid,[1]*len(grid),color='#164c45',s=32,label='24组模型边界组合')
 a.axvspan(.3,5,color='#164c45',alpha=.07,label='SEN0549标称流量范围');a.axvline(5,color='#b4512b',ls='--')
 a.set(xlabel='A支路总流量（L/min）',yticks=[],ylim=(.65,1.4),xlim=(0,5.5),title=f'负载调整后，模型边界流量为 {minq:.2f}—{maxq:.2f} L/min')
-a.text(.5,.75,'计数分辨率：1秒窗0.111；10秒窗0.0111 L/min\n10秒窗增加响应延迟，需纳入早期评价',fontsize=11,color='#556762');a.legend(fontsize=10,loc='upper left')
-fig.text(.12,.055,'设计计算，非实测；压力标称界限并非完整采集误差。\n网格：80/120/160kPa × B开/关 × C=0.28/0.37 × R=0.8/8.0。',fontsize=10,color='#556762')
+a.text(.25,.75,'计数分辨率：1秒0.111；10秒0.0111 L/min\n10秒窗延迟须纳入早期评价',fontsize=11,color='#556762');a.legend(fontsize=11,loc='upper left')
+fig.text(.15,.045,'设计计算，非实测；标称界限不含完整采集误差。\n80/120/160kPa × B开/关 × C=0.28/0.37 × R=0.8/8.0。',fontsize=11,color='#556762')
 for ext in ['png','svg']:fig.savefig(ROOT/f'application/figures/hardware_feasibility.{ext}',dpi=200,facecolor='white')
 svg_path=ROOT/'application/figures/hardware_feasibility.svg'
 svg_path.write_text('\n'.join(x.rstrip() for x in svg_path.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8',newline='\n')

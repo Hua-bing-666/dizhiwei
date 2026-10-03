@@ -28,10 +28,10 @@ class Drawing:
         self.items.append(f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{700 if bold else 400}" text-anchor="{anchor}">{escape(value)}</text>')
         self.texts.append({'text': value, 'size_px': size})
 
-    def box(self, x, y, w, h, title, lines=(), dashed=False):
+    def box(self, x, y, w, h, title, lines=(), dashed=False, fill='white', stroke='black'):
         dash = ' stroke-dasharray="7 5"' if dashed else ''
         self.items.append(f'<g data-kind="box" data-x="{x}" data-y="{y}" data-w="{w}" data-h="{h}">')
-        self.items.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="white" stroke="black" stroke-width="2"{dash}/>')
+        self.items.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{fill}" stroke="{stroke}" stroke-width="2"{dash}/>')
         n = len(lines)
         assert h >= 24 + 30*(n+1), (self.name, title, h, n)
         start = y + (h - (n * 30 + 27)) / 2 + 22
@@ -45,9 +45,9 @@ class Drawing:
         for i, line in enumerate(lines):
             self.text(cx, cy + 8 + (i-(len(lines)-1)/2)*29, line)
 
-    def path(self, points, arrow=True, dashed=False):
+    def path(self, points, arrow=True, dashed=False, color='black'):
         d = 'M ' + ' L '.join(f'{x} {y}' for x, y in points)
-        self.items.append(f'<path d="{d}" fill="none" stroke="black" stroke-width="2"'+ (' stroke-dasharray="7 5"' if dashed else '') + (' marker-end="url(#arrow)"' if arrow else '') + '/>')
+        self.items.append(f'<path d="{d}" fill="none" stroke="{color}" stroke-width="2"'+ (' stroke-dasharray="7 5"' if dashed else '') + (' marker-end="url(#arrow)"' if arrow else '') + '/>')
 
     def label(self, x, y, value):
         width = sum(12 if c.isascii() else 23 for c in value) + 10
@@ -302,8 +302,5 @@ def experiment():
 
 
 if __name__ == '__main__':
-    for make in [architecture, water_layout, hardware, hydraulic_model, acquisition, diagnosis, protocol, experiment]:
-        make()
-    (TMP/'design_labels.json').write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
-    (OUT/'design_provenance.json').write_text(json.dumps({'classification':'proposed_design_not_physical_validation','browser_box_text_bounds':'passed','figures':records}, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
-    print('Eight monochrome figures produced; design status only.')
+    from build_application_visuals import main
+    main()

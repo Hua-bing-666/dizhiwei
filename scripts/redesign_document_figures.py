@@ -9,7 +9,7 @@ from author_visual_redesign import G,A,B,M
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'application/figures'
 data=json.loads((ROOT/'simulation/diagnosis_results/summary.json').read_text(encoding='utf-8'))
 plt.rcParams.update({'font.sans-serif':['Microsoft YaHei'],'axes.unicode_minus':False,'font.size':13,'axes.titlesize':14,'axes.labelsize':13,'xtick.labelsize':12,'ytick.labelsize':12,'legend.fontsize':12})
-fig,axes=plt.subplots(2,1,figsize=(8.5,7.6),layout='constrained')
+fig,axes=plt.subplots(2,1,figsize=(6.3,5.8),layout='constrained')
 for kind,label,col in [('leak','等效泄漏',A),('restriction','等效受限',G)]:
     tr=data['traces'][kind+'_0.3'];ax=axes[0]
     ax.plot(tr['t'],np.array(tr['severity'])*100,label=label,color=col,lw=2)
@@ -20,7 +20,7 @@ for kind,label,col in [('leak','等效泄漏',A),('restriction','等效受限',G
     ax.scatter(tc,15,s=60,marker='|',color=col,zorder=5)
 axes[0].axhline(15,color=B,linestyle='--',label='15%演示失效判据')
 axes[0].set(xlim=(330,600),ylim=(0,30),xlabel='模型时间 / s',ylabel='健康流量偏离 / %',title='早期示例：提示在判据前，且无前期误报')
-axes[0].legend(loc='upper left',fontsize=11);axes[0].grid(alpha=.18)
+axes[0].legend(loc='upper left',fontsize=12);axes[0].grid(alpha=.18)
 xx=np.arange(4)
 for kind,label,col,offset in [('leak','等效泄漏',A,-.18),('restriction','等效受限',G,.18)]:
     values=[r['early_trials'] for r in data['summary'] if r['kind']==kind]

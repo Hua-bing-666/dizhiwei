@@ -20,7 +20,7 @@ pdfmetrics.registerFont(TTFont('CJK',r'C:\Windows\Fonts\simhei.ttf'))
 pdfmetrics.registerFontFamily('CJK',normal='CJK',bold='CJK',italic='CJK',boldItalic='CJK')
 g=colors.HexColor('#164c45');ink=colors.HexColor('#20332f');muted=colors.HexColor('#556762')
 styles={
- 'body':ParagraphStyle('body',fontName='CJK',fontSize=10.5,leading=17.5,textColor=ink,spaceAfter=8,wordWrap='CJK'),
+ 'body':ParagraphStyle('body',fontName='CJK',fontSize=10.5,leading=17.5,textColor=ink,spaceAfter=8,wordWrap='CJK',allowWidows=0,allowOrphans=0),
  'h1':ParagraphStyle('h1',fontName='CJK',fontSize=18,leading=27,textColor=colors.black,spaceAfter=16,wordWrap='CJK'),
  'h2':ParagraphStyle('h2',fontName='CJK',fontSize=14,leading=21,textColor=colors.black,spaceBefore=16,spaceAfter=9,keepWithNext=True,wordWrap='CJK'),
  'h3':ParagraphStyle('h3',fontName='CJK',fontSize=11.5,leading=19,textColor=colors.black,spaceBefore=10,spaceAfter=6,keepWithNext=True,wordWrap='CJK'),
@@ -38,7 +38,7 @@ def markup(value):
 
 def page_frame(canvas,doc):
     canvas.saveState();canvas.setStrokeColor(g);canvas.setLineWidth(.7);canvas.line(42,801,553,801)
-    canvas.setFont('CJK',9);canvas.setFillColor(muted);canvas.drawString(42,815,'南疆滴灌支管诊断系统 · 项目范围与执行 / 2026.10.03')
+    canvas.setFont('CJK',9);canvas.setFillColor(muted);canvas.drawString(42,815,'南疆滴灌支管诊断系统 · 项目范围与执行 / 2026.10.04')
     canvas.drawString(42,25,'模型为前期基础；实物与性能为拟开展工作。申报正文见另附学校模板填写稿。')
     canvas.drawRightString(553,25,str(doc.page));canvas.restoreState()
 
@@ -58,7 +58,7 @@ def proposal():
             n=len(block[0]);width=511.28/n
             data=[[Paragraph(markup(c),styles['cell']) for c in row] for row in block]
             table=Table(data,colWidths=[width]*n,repeatRows=1,hAlign='LEFT')
-            table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#eef3ef')),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.7,g),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#c7d2cb')),('LEFTPADDING',(0,0),(-1,-1),7),('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
+            table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#eef3ef')),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.7,g),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#c7d2cb')),('LEFTPADDING',(0,0),(-1,-1),7),('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]))
             story.extend([table,Spacer(1,10)]);continue
         kind='body';value=l
         if l.startswith('# '):kind='h1';value=l[2:]
@@ -67,7 +67,7 @@ def proposal():
         elif l.startswith('#### '):kind='h3';value=l[5:]
         elif l.startswith('- '):value='• '+l[2:]
         para=Paragraph(markup(value).replace('\n','<br/>'),styles[kind])
-        story.append(KeepTogether([para]) if kind=='body' else para);i+=1
+        story.append(para);i+=1
         figures=[('申报名称采用','system_scope.png','系统设计：感知、有限诊断、可靠告警与管理确认；尚无在线实物。'),('必做配置为','dual_pressure_layout.png','布点与台架设计：P0/P1/Q包围目标区段；量程与差压误差仍须参考标定。'),('第2周完成','early_diagnosis.png','未标定合成模型480试次；15%仅为演示失效参照。非实物识别率。')]
         for trigger,name,caption in figures:
             if l.startswith(trigger):

@@ -32,6 +32,7 @@ paths+=['deliverables/申报书验收记录.json']
 paths+=['docs/申报书黑白流程与模型验收.md','scripts/prepare_application_payload.py','application/figures/design_provenance.json']
 paths+=['application/references.json','docs/参考文献核验与正文对应.md','docs/中文文献来源核验.json','scripts/verify_literature_sources.py','scripts/integrate_application_references.py']
 paths+=['scripts/validate_application_references.py','scripts/finalize_application_review.py']
+paths+=['scripts/build_application_visuals.py','docs/论文图示借鉴与本轮结构调整.md','application/models/bench_layout.obj','application/models/bench_layout.json']
 manifest={'date':'2026-10-04','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
 (OUT/'证据清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
 print('Offline portal written. Slides embedded:',len(svgs),'evidence records:',len(paths))
