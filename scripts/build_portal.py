@@ -47,6 +47,7 @@ paths+=[p for p in ['scripts/verify_operations_ui.mjs','deliverables/研究资�
 paths+=['docs/本轮网站与总体规划验收报告.md']
 paths+=['scripts/finalize_operations_review.py']
 paths+=['docs/三阶段分项执行与验收标准.md','docs/三维台架建模论证与本轮验收.md','deliverables/台架三维结构交互模型_收集优化候选版.html','deliverables/分项验收进度.json','deliverables/三维分项验收记录.json','scripts/audit_bench_collection.py','scripts/render_collection_review.py','scripts/finalize_collection_review.py']
+paths+=['scripts/verify_staged_evidence.py']
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures/collection_review').glob('*')) if p.is_file()]
 paths=list(dict.fromkeys(paths))
 manifest={'date':'2026-10-04','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}

@@ -590,8 +590,8 @@
     },
     {
       "path": "scripts/bench_viewer.template.html",
-      "sha256": "ba30308a052bfa74dd1135d5bb98315643f46f3084e3b407ce2310f53ac4be20",
-      "bytes": 16168
+      "sha256": "ca8f28c3142aeb5b90895d6d19e8b2d23e3f58b1268a5b4711d8571bcb885519",
+      "bytes": 16125
     },
     {
       "path": "scripts/capture_bench_views.mjs",
@@ -847,6 +847,11 @@
       "path": "scripts/finalize_collection_review.py",
       "sha256": "7792714ef6f0589965a8c84ed3b36e87d4f7b6f2624adf9dd3891260aa670d87",
       "bytes": 5954
+    },
+    {
+      "path": "scripts/verify_staged_evidence.py",
+      "sha256": "9c9e2f75694e7e61e59c47a5f5cd40ee80765ccb24d0513d1cd799f2d73f69c7",
+      "bytes": 941
     },
     {
       "path": "application/figures/collection_review/bench_front.png",
