@@ -14,13 +14,21 @@
   "ppt_status": "visual revision draft; latest hardware and budget await synchronization",
   "browser_artifact": "研究与答辩资料.html",
   "operations_site": {
+    "status": "passed_offline_software_only",
     "artifact": "index.html",
-    "status": "passed",
+    "source_sha256": "0226a252449d373ada79fe2074769a1b8d310bd4dbe135b526a6caaf3afa17a5",
+    "record": "../simulation/presentation_review/site_checks.json",
+    "widths": [
+      375,
+      768,
+      1024,
+      1440
+    ],
     "navigation_checks": 24,
-    "replay_checks": 24,
-    "workflow_checks": 16,
+    "replay_choices": 24,
+    "workflow_checks": 19,
     "export_files": 3,
-    "source_sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4"
+    "physical_validation": false
   },
   "local_link_checks": [
     {
@@ -361,5 +369,16 @@
     "physical_validation": false,
     "build_released": false,
     "application_integration_complete": false
+  },
+  "staged_presentation_review": {
+    "record": "网站与图文分项验收记录.json",
+    "report": "../docs/网站佐证与申报图表分项验收.md",
+    "review": "申报图文取舍与呈现审阅.html",
+    "status": "passed_selected_software_and_asset_checks_word_pending",
+    "figures_selected": 9,
+    "proofs_viewed": 12,
+    "word_integration_complete": false,
+    "physical_validation": false,
+    "research_page_scope": "historical notice and root overflow at four widths only; original receipt remains historical"
   }
 }

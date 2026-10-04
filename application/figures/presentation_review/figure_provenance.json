@@ -1,0 +1,291 @@
+{
+  "classification": "proposed_system_responsibility_and_workflow_not_implemented_firmware",
+  "physical_data": false,
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "width": 1000,
+      "height": 690,
+      "classification": "candidate_functional_design_not_build_released",
+      "connections": [
+        {
+          "meaning": "LoRa uplink",
+          "points": [
+            [
+              250,
+              204
+            ],
+            [
+              300,
+              204
+            ]
+          ]
+        },
+        {
+          "meaning": "UART uplink",
+          "points": [
+            [
+              460,
+              204
+            ],
+            [
+              510,
+              204
+            ]
+          ]
+        },
+        {
+          "meaning": "读库 uplink",
+          "points": [
+            [
+              720,
+              204
+            ],
+            [
+              775,
+              204
+            ]
+          ]
+        },
+        {
+          "meaning": "commit ACK return",
+          "points": [
+            [
+              510,
+              282
+            ],
+            [
+              460,
+              282
+            ]
+          ]
+        },
+        {
+          "meaning": "commit ACK return",
+          "points": [
+            [
+              300,
+              282
+            ],
+            [
+              250,
+              282
+            ]
+          ]
+        },
+        {
+          "meaning": "manual maintenance write to PC",
+          "points": [
+            [
+              775,
+              282
+            ],
+            [
+              720,
+              282
+            ]
+          ]
+        },
+        {
+          "meaning": "bench to node sampling",
+          "points": [
+            [
+              140,
+              445
+            ],
+            [
+              140,
+              330
+            ]
+          ]
+        },
+        {
+          "meaning": "independent truth to evaluation",
+          "points": [
+            [
+              340,
+              503
+            ],
+            [
+              415,
+              503
+            ]
+          ]
+        },
+        {
+          "meaning": "evaluation logs",
+          "points": [
+            [
+              220,
+              330
+            ],
+            [
+              220,
+              393
+            ],
+            [
+              470,
+              393
+            ],
+            [
+              470,
+              445
+            ]
+          ]
+        },
+        {
+          "meaning": "evaluation logs",
+          "points": [
+            [
+              615,
+              330
+            ],
+            [
+              615,
+              393
+            ],
+            [
+              615,
+              393
+            ],
+            [
+              615,
+              445
+            ]
+          ]
+        },
+        {
+          "meaning": "evaluation logs",
+          "points": [
+            [
+              875,
+              330
+            ],
+            [
+              875,
+              393
+            ],
+            [
+              875,
+              393
+            ],
+            [
+              875,
+              445
+            ]
+          ]
+        }
+      ],
+      "svg_sha256": "0beed22e112214c7dd217bbbb16623345d590edc3c3d02a16771433ce431646f",
+      "minimum_text_px": 23,
+      "minimum_text_pt_at_425pt_width": 9.775
+    },
+    {
+      "name": "diagnosis_proposal",
+      "width": 1000,
+      "height": 850,
+      "classification": "candidate_functional_design_not_build_released",
+      "connections": [
+        {
+          "meaning": "quality check",
+          "points": [
+            [
+              325,
+              213
+            ],
+            [
+              325,
+              235
+            ]
+          ]
+        },
+        {
+          "meaning": "invalid or unknown condition",
+          "points": [
+            [
+              620,
+              285
+            ],
+            [
+              742,
+              285
+            ]
+          ]
+        },
+        {
+          "meaning": "valid computation",
+          "points": [
+            [
+              325,
+              335
+            ],
+            [
+              325,
+              371
+            ]
+          ]
+        },
+        {
+          "meaning": "persistence check",
+          "points": [
+            [
+              325,
+              487
+            ],
+            [
+              325,
+              519
+            ]
+          ]
+        },
+        {
+          "meaning": "no sustained departure",
+          "points": [
+            [
+              620,
+              569
+            ],
+            [
+              742,
+              569
+            ]
+          ]
+        },
+        {
+          "meaning": "candidate output",
+          "points": [
+            [
+              325,
+              619
+            ],
+            [
+              325,
+              655
+            ]
+          ]
+        }
+      ],
+      "svg_sha256": "ef2b40c9d9fc9487c616506300f7950bda6994b2969c258689e0359c1e16117a",
+      "minimum_text_px": 23,
+      "minimum_text_pt_at_425pt_width": 9.775
+    },
+    {
+      "name": "water_layout",
+      "width": 1000,
+      "height": 650,
+      "classification": "proposed_water_relationship",
+      "connections": [],
+      "svg_sha256": "7a171684ae82a78f0e65ddb671a2f3407731ea01e74414ddcaf1c0e1f9471707",
+      "minimum_text_px": 23,
+      "minimum_text_pt_at_425pt_width": 9.775,
+      "copied_source": "application/figures/dual_pressure_layout.svg"
+    }
+  ],
+  "source_sha256": {
+    "scripts/draw_presentation_review.py": "5705993e397977fbe0441cb88ed4ca7ca5d355d2ba4c5ed00ba7b5264ab2290e",
+    "scripts/draw_interface_review.py": "9fb41681b6dc466c110ce349cea9dc7fadc786a65a3f825361de91c0feab163f",
+    "simulation/interface_review/interface_spec.json": "09aa59e383c8a35abbf2963a6552667e4988f38b0e9873b26968f22711c65c37",
+    "simulation/diagnosis_review/protocol.json": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426",
+    "application/figures/dual_pressure_layout.svg": "7a171684ae82a78f0e65ddb671a2f3407731ea01e74414ddcaf1c0e1f9471707"
+  }
+}

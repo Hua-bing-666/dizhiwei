@@ -130,23 +130,23 @@
     },
     {
       "path": "deliverables/index.html",
-      "sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4",
-      "bytes": 1865036
+      "sha256": "0226a252449d373ada79fe2074769a1b8d310bd4dbe135b526a6caaf3afa17a5",
+      "bytes": 1755236
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "937813248f02eb8de8dc1d6766f53805e56e4342e46b12424d366d51334e36f9",
-      "bytes": 10346
+      "sha256": "b913ad5e2ee8e0a71eaa9d8ed489ecaf970f9fffad39a329ca7f6153a3e13f3b",
+      "bytes": 11078
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "458ff538274e362c1f5612606724700a2ffe08b21f88753787948e18a9965fdc",
-      "bytes": 5463
+      "sha256": "ed35ed6c99aecccaf3fa18c28f40c0f1b64b1a0805f41c104c9de965ac9b12c3",
+      "bytes": 5789
     },
     {
       "path": "README.md",
-      "sha256": "abcac9ba6e915a028c0b09e6169f6a2f0225ffe0a831598d993e139eb2ecb460",
-      "bytes": 9410
+      "sha256": "59ff311531684f334ff71bb7cf1e8ae30ee6e6a8b895578372a0a5cefa06fecc",
+      "bytes": 9888
     },
     {
       "path": "scripts/fill_application_template.ps1",
@@ -760,13 +760,13 @@
     },
     {
       "path": "deliverables/研究与答辩资料.html",
-      "sha256": "c48e8e62b2ab11788401648193af702ab48a14d03052f215ca5ba798082506d8",
-      "bytes": 2035905
+      "sha256": "7eaa14f394e45ae5736550be400b0934457bd3a34117a9d9aa51165930cf6688",
+      "bytes": 2036332
     },
     {
       "path": "scripts/system_portal.template.html",
-      "sha256": "f54cb1d44aaefd947b5bd67dcd34eb7d5a47411fb4daa61ab92b45d3030c8768",
-      "bytes": 18235
+      "sha256": "a24edeeae809611bdc59208eb221f0f9ce820240478fccaf7f8cd7e705820939",
+      "bytes": 18336
     },
     {
       "path": "scripts/system_portal.css",
@@ -775,18 +775,18 @@
     },
     {
       "path": "scripts/system_portal.js",
-      "sha256": "82fc471e9274db60ef809fc7cb83e42116d64bab79fcf4453179bda5464b9b22",
-      "bytes": 27055
+      "sha256": "c427e6f248c89103b4248e760cec42d606e06b820fc9d4017c686250350a67c4",
+      "bytes": 27618
     },
     {
       "path": "docs/项目总规划与任务验收台账.md",
-      "sha256": "76813a83b98a192c42fc812d01c812aa55a1273b7e86249d8f83c009642c0f24",
-      "bytes": 15688
+      "sha256": "a45c219b79fa663cdcc7713711011cfb78b11f61c4e208ba0395499e83d9aaeb",
+      "bytes": 15916
     },
     {
       "path": "docs/网站功能与验收说明.md",
-      "sha256": "837edcca582c577efa3736dcea89fc774ba774294eac2361122a381956f62be3",
-      "bytes": 4400
+      "sha256": "d9a64e28ff1bed06daa94010b3a7defeb6cdf67947740982113bf3a4cc54c8af",
+      "bytes": 4827
     },
     {
       "path": "scripts/verify_operations_ui.mjs",
@@ -810,8 +810,8 @@
     },
     {
       "path": "docs/三阶段分项执行与验收标准.md",
-      "sha256": "2fca9ea8ec00ab24e2aca0f7b7a329f74e057511eee617beb1502142958fa67c",
-      "bytes": 24764
+      "sha256": "b526d0de80f123357c2d0636f065a400277d1935f90ef7e14c58ee9dd4e1f3b3",
+      "bytes": 25077
     },
     {
       "path": "docs/三维台架建模论证与本轮验收.md",
@@ -825,8 +825,8 @@
     },
     {
       "path": "deliverables/分项验收进度.json",
-      "sha256": "3f606874d94f476312589045de160aae7f679d84db183008b03fa27bf3436baf",
-      "bytes": 5637
+      "sha256": "b1727d3809a32c1be551851f777e45fa693c12738ad5d385a626ac57161480f6",
+      "bytes": 5809
     },
     {
       "path": "deliverables/三维分项验收记录.json",
@@ -1187,6 +1187,231 @@
       "path": "application/figures/interface_review/power_and_pin_resources.svg",
       "sha256": "53607698969621c2c483d520ca0d3fae0c8abe000a66de0d6df7fca0d7e7ffda",
       "bytes": 6634
+    },
+    {
+      "path": "docs/网站佐证与申报图表分项验收.md",
+      "sha256": "e99fdef8b326cb5a7fcf444cf911801f91e92a9fc1e63343ea3fe2d7587048af",
+      "bytes": 9490
+    },
+    {
+      "path": "deliverables/网站与图文分项验收记录.json",
+      "sha256": "8f20f7d84871e7b0b2ec4b01930f6bb5956382112a33153d9d78727e0bcff978",
+      "bytes": 73916
+    },
+    {
+      "path": "deliverables/申报图文取舍与呈现审阅.html",
+      "sha256": "2b8390829295efe3a71b468fda3d380c8d8fa1ed77d5aa3c2fdbdff981abe5fd",
+      "bytes": 9842
+    },
+    {
+      "path": "deliverables/网站预览.png",
+      "sha256": "9dcf472b9467c5f5b08482bcfc2ba62d46bf3a763fd8887e5c56c2a7c6f18a42",
+      "bytes": 124051
+    },
+    {
+      "path": "scripts/prepare_presentation_review.py",
+      "sha256": "8398122890fb8eb41e5468a3049ff1d6c40208fe5dd151c72d31682b321c0fd5",
+      "bytes": 1837
+    },
+    {
+      "path": "scripts/draw_presentation_review.py",
+      "sha256": "5705993e397977fbe0441cb88ed4ca7ca5d355d2ba4c5ed00ba7b5264ab2290e",
+      "bytes": 5123
+    },
+    {
+      "path": "scripts/plot_presentation_statistics.py",
+      "sha256": "955f77f4833f4795ea582ccc8f8026ab4582f2a848b1ca808f0f7c70ead4d6c0",
+      "bytes": 1585
+    },
+    {
+      "path": "scripts/build_presentation_review.py",
+      "sha256": "7dd04f5fb0842a060e7981ea4bda4164e1567fa8eef8b523b839d32cafa45c26",
+      "bytes": 10978
+    },
+    {
+      "path": "scripts/verify_presentation_site.mjs",
+      "sha256": "0f0a7a056a80c46b9faf9512e76b7903ff0d6ee79a69729bd572514e3df783ff",
+      "bytes": 23173
+    },
+    {
+      "path": "scripts/verify_presentation_diagrams.mjs",
+      "sha256": "92bfb79d4fd572ab3a0bbb5124c4751773f54105aa5d61bd67f4b6fb9c1a1a33",
+      "bytes": 6040
+    },
+    {
+      "path": "scripts/capture_presentation_evidence.mjs",
+      "sha256": "98eaae064a8a6cde9b4486671072e193047228bd19a8063d334a6c1ae0324f1b",
+      "bytes": 7441
+    },
+    {
+      "path": "scripts/verify_presentation_assets.mjs",
+      "sha256": "404a819e83e5e2a062bbe4520f7d2b62041b733f1da437a21c23f3698750a480",
+      "bytes": 8402
+    },
+    {
+      "path": "scripts/finalize_presentation_review.py",
+      "sha256": "96911a88ef73fa2a183055f6dfaeb660740b80d00574249d33b66a801efad3e3",
+      "bytes": 11707
+    },
+    {
+      "path": "simulation/presentation_review/asset_checks.json",
+      "sha256": "8dfadda39503c1e684b2cdfa55b515010c95e91769c52431a0247040c02c5590",
+      "bytes": 51770
+    },
+    {
+      "path": "simulation/presentation_review/capture_checks.json",
+      "sha256": "6cc4f50b27717dc9115635abff541f616294b55064a64bc2e10bfa3c31954283",
+      "bytes": 34137
+    },
+    {
+      "path": "simulation/presentation_review/diagram_layout_checks.json",
+      "sha256": "d99efb9467f7e16239f4b84394e698b61594f0ed7ad7c43233174e8639f647d5",
+      "bytes": 15793
+    },
+    {
+      "path": "simulation/presentation_review/figure_selection.json",
+      "sha256": "a86f3d12ef6236505bdec19fd1d8bb72f7cf3b4479d24dff0829d54894eff909",
+      "bytes": 13416
+    },
+    {
+      "path": "simulation/presentation_review/manual_review.json",
+      "sha256": "91ca8d0eef27a158125929d1689116fffd0170f82dd5d50eacd3cf0bf96f645d",
+      "bytes": 2883
+    },
+    {
+      "path": "simulation/presentation_review/site_checks.json",
+      "sha256": "2a7888cf3e475558fc2ca2211c3239f9268a224445b61d74315d8d6ec5ccdd4c",
+      "bytes": 7063
+    },
+    {
+      "path": "simulation/presentation_review/web_replay.json",
+      "sha256": "8853e8e12de87770558cf3a208aa848bc4566df6b769bc16a9453d46e8cec435",
+      "bytes": 1583931
+    },
+    {
+      "path": "application/figures/presentation_review/diagnosis_proposal.png",
+      "sha256": "4a94945de85d0e3f86dc76bc6ba2f153f194a11fd4e5376778feb08f08d14c09",
+      "bytes": 293113
+    },
+    {
+      "path": "application/figures/presentation_review/diagnosis_proposal.svg",
+      "sha256": "ef2b40c9d9fc9487c616506300f7950bda6994b2969c258689e0359c1e16117a",
+      "bytes": 4886
+    },
+    {
+      "path": "application/figures/presentation_review/figure_provenance.json",
+      "sha256": "afff0e5d87186617ad3d4ef6ee5b60d0dc755dd0b534a424bc546989fe2c8b2b",
+      "bytes": 6158
+    },
+    {
+      "path": "application/figures/presentation_review/noise_outcomes_print.png",
+      "sha256": "e9ba5f9c927e7bd3062bcb2f688e65a82882a6fc9a353e6d803233027af107e0",
+      "bytes": 223466
+    },
+    {
+      "path": "application/figures/presentation_review/noise_outcomes_print.svg",
+      "sha256": "b1aa5547f333f73fd18c5948a3d78dd18b83190503fb9520009e17861ca59cc7",
+      "bytes": 32417
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F01_425pt.png",
+      "sha256": "f4b137934fff2935f574cc3f46254f34ffe1dec0aba3a56e3b19af0c55ed367e",
+      "bytes": 389994
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F02_425pt.png",
+      "sha256": "5a7efe53eb7b94df536f526e02bb15efa4faea3cde46d798085ae44a51c0cc1c",
+      "bytes": 205429
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F02_gray_425pt.png",
+      "sha256": "8dbbbcc17c823705f0eb16664f1e73e9aa7f99a357fc1a0d433b9a41b1550d9d",
+      "bytes": 180959
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F03_425pt.png",
+      "sha256": "80a56c1e81810a75073bde42dbc4dd94a0e9adf9f5b2ba201a406ef9cf3af190",
+      "bytes": 469161
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F04_425pt.png",
+      "sha256": "e6a8d8612d28adb31c590b4aa20af48cbeaeb6d34fd2f603823533c062c108da",
+      "bytes": 361074
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F05_425pt.png",
+      "sha256": "3d051d46ee9711a7e4ef6206a3e610bbf6a0b5c51f0f9d27858bd961c9ff3e50",
+      "bytes": 391865
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F06_425pt.png",
+      "sha256": "8a7223f10d1cbf4434bd792098bf6b12a614972e3c1bfd5848bf71db3dee31d9",
+      "bytes": 347997
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F06_gray_425pt.png",
+      "sha256": "faf59d390814592f0b3258a4cbbd6032fdd5ba37884642ef90afcc6961bb143a",
+      "bytes": 305577
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F07_425pt.png",
+      "sha256": "ceaaa18031dcc224afd8b921c8a8037359b879ea445b6a6cb10561d573b73df7",
+      "bytes": 356972
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F07_gray_425pt.png",
+      "sha256": "01fd3969b5b9ef7a035f4afd6aad347cef3e83d8497fce7986fc761e53ccfb9f",
+      "bytes": 323883
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F08_425pt.png",
+      "sha256": "59456e6078f1363508a9f209d88053d47f1a3f12e85c5a0c7859cbefb465ddc3",
+      "bytes": 353478
+    },
+    {
+      "path": "application/figures/presentation_review/proofs/F09_425pt.png",
+      "sha256": "a7798d38762dedd194d7f62c29571ccd86aad1af3f4c62c2625f951ab9ef1454",
+      "bytes": 298544
+    },
+    {
+      "path": "application/figures/presentation_review/statistics_provenance.json",
+      "sha256": "61ef05fc2e599b889de0b3610110549058f559cd9daf7c67df2cbc6c4a028dc1",
+      "bytes": 7254
+    },
+    {
+      "path": "application/figures/presentation_review/system_responsibilities.png",
+      "sha256": "ae19edc4c27a24c4cdab3e9030f74accb1a25f7b4123d90cac52dafb5b16df54",
+      "bytes": 309781
+    },
+    {
+      "path": "application/figures/presentation_review/system_responsibilities.svg",
+      "sha256": "0beed22e112214c7dd217bbbb16623345d590edc3c3d02a16771433ce431646f",
+      "bytes": 6836
+    },
+    {
+      "path": "application/figures/presentation_review/water_layout.png",
+      "sha256": "3c3e5bd1739a16aed2cdb6c1d971225cb707f25a333ff155b4d455047863e21f",
+      "bytes": 126960
+    },
+    {
+      "path": "application/figures/presentation_review/water_layout.svg",
+      "sha256": "7a171684ae82a78f0e65ddb671a2f3407731ea01e74414ddcaf1c0e1f9471707",
+      "bytes": 4226
+    },
+    {
+      "path": "application/figures/presentation_review/website_diagnosis_panel.png",
+      "sha256": "5ba58045accf1589de4f8ae8efbfee79f6ee8f93641aaa2be25e358fe06a4a49",
+      "bytes": 79818
+    },
+    {
+      "path": "application/figures/presentation_review/website_events_desktop.png",
+      "sha256": "4f66f2e5968eb6b69c59acfb294c86958abeda5fd7d4e8efb3544ae707a0af05",
+      "bytes": 238834
+    },
+    {
+      "path": "application/figures/presentation_review/website_overview_desktop.png",
+      "sha256": "b1e941d6f687bb1c4aae30181e50a070f816356baf93252ddc836e7f7994d42b",
+      "bytes": 400234
     }
   ]
 }

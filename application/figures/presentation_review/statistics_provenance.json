@@ -1,0 +1,322 @@
+{
+  "classification": "print_variant_same_frozen_simulation_counts_and_intervals",
+  "physical_data": false,
+  "style_change": "Q comparator hatched bars and matching legend; no values or intervals changed",
+  "figures": [
+    {
+      "name": "noise_outcomes_print",
+      "question": "不同噪声下有多少试次严格满足早期，是否真比对照好？",
+      "classification": "uncalibrated_simulation_not_physical_test",
+      "figure_width_pt": 612,
+      "minimum_text_pt": 13.5,
+      "minimum_text_pt_at_425pt_width": 9.375,
+      "texts": [
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "1",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "每个压力点的随机噪声σ / kPa",
+          "font_pt": 14.0
+        },
+        {
+          "text": "0.3",
+          "font_pt": 13.5
+        },
+        {
+          "text": "1.0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "3.0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "10.0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "有效早期次数 / 20",
+          "font_pt": 14.0
+        },
+        {
+          "text": "0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "5",
+          "font_pt": 13.5
+        },
+        {
+          "text": "10",
+          "font_pt": 13.5
+        },
+        {
+          "text": "15",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "等效泄漏",
+          "font_pt": 16.0
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "2",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "每个压力点的随机噪声σ / kPa",
+          "font_pt": 14.0
+        },
+        {
+          "text": "0.3",
+          "font_pt": 13.5
+        },
+        {
+          "text": "1.0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "3.0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "10.0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "有效早期次数 / 20",
+          "font_pt": 14.0
+        },
+        {
+          "text": "0",
+          "font_pt": 13.5
+        },
+        {
+          "text": "5",
+          "font_pt": 13.5
+        },
+        {
+          "text": "10",
+          "font_pt": 13.5
+        },
+        {
+          "text": "15",
+          "font_pt": 13.5
+        },
+        {
+          "text": "20",
+          "font_pt": 13.5
+        },
+        {
+          "text": "等效受限",
+          "font_pt": 16.0
+        },
+        {
+          "text": "种子统计：如实保留失败与方法差异",
+          "font_pt": 18.0
+        },
+        {
+          "text": "480个噪声试次；每场景、每σ20个种子，同一试次比较两条固定规则。",
+          "font_pt": 13.5
+        },
+        {
+          "text": "柱为有效早期次数/20；误差线为噪声模型内的Wilson95%区间。\n固定流量规则在高压力噪声下表现更好；本图不证明物理特征规则优越。",
+          "font_pt": 13.5
+        },
+        {
+          "text": "K与R物理特征",
+          "font_pt": 13.5
+        },
+        {
+          "text": "固定Q相对阈值",
+          "font_pt": 13.5
+        }
+      ],
+      "series": [
+        {
+          "kind": "leak",
+          "method": "physical",
+          "sigma": [
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "values": [
+            20,
+            20,
+            20,
+            1
+          ],
+          "ci_low_counts": [
+            16.777496838943613,
+            16.777496838943613,
+            16.777496838943613,
+            0.17762897601590805
+          ],
+          "ci_high_counts": [
+            20.0,
+            20.0,
+            20.0,
+            4.722623868934841
+          ]
+        },
+        {
+          "kind": "leak",
+          "method": "flow_only",
+          "sigma": [
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "values": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "ci_low_counts": [
+            16.777496838943613,
+            16.777496838943613,
+            16.777496838943613,
+            16.777496838943613
+          ],
+          "ci_high_counts": [
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ]
+        },
+        {
+          "kind": "restriction",
+          "method": "physical",
+          "sigma": [
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "values": [
+            20,
+            20,
+            20,
+            2
+          ],
+          "ci_low_counts": [
+            16.777496838943613,
+            16.777496838943613,
+            16.777496838943613,
+            0.5573296242753645
+          ],
+          "ci_high_counts": [
+            20.0,
+            20.0,
+            20.0,
+            6.0206729045697465
+          ]
+        },
+        {
+          "kind": "restriction",
+          "method": "flow_only",
+          "sigma": [
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "values": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "ci_low_counts": [
+            16.777496838943613,
+            16.777496838943613,
+            16.777496838943613,
+            16.777496838943613
+          ],
+          "ci_high_counts": [
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ]
+        }
+      ],
+      "annotations": [],
+      "sha256": {
+        "png": "e9ba5f9c927e7bd3062bcb2f688e65a82882a6fc9a353e6d803233027af107e0",
+        "svg": "b1aa5547f333f73fd18c5948a3d78dd18b83190503fb9520009e17861ca59cc7"
+      }
+    }
+  ],
+  "source_sha256": {
+    "scripts/plot_presentation_statistics.py": "955f77f4833f4795ea582ccc8f8026ab4582f2a848b1ca808f0f7c70ead4d6c0",
+    "scripts/plot_diagnosis_review.py": "33bbc31247d01de7dc33f023ce40b1d3bff5f8778fc36bf352ab8b8023157387",
+    "simulation/diagnosis_review/summary.json": "b06c2843683fabe074cee8c854291052e61a67785852454ea64dab91a0b5d195",
+    "application/figures/diagnosis_review/figure_provenance.json": "669460cee1dce6fff27917b9f93013e60501e391b87086445200328c7842d180"
+  }
+}

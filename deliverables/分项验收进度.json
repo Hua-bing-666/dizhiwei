@@ -1,9 +1,9 @@
 {
   "date": "2026-10-04",
-  "scope": "A05 concept and A06/A07 uncalibrated evidence; A04/A08 partial interface/host checks; application integration pending",
-  "plan_sha256": "2fca9ea8ec00ab24e2aca0f7b7a329f74e057511eee617beb1502142958fa67c",
-  "this_turn": "A04/A08 candidate arithmetic, host bytes/transactions and three figures checked; build/procurement/RF unverified",
-  "next": "A09/A10 current website evidence and selective figure integration planning",
+  "scope": "A09 current synthetic replay and A10 selected figures internally checked; Word and physical integration pending",
+  "plan_sha256": "b526d0de80f123357c2d0636f065a400277d1935f90ef7e14c58ee9dd4e1f3b3",
+  "this_turn": "A09/A10 24 observed traces, 19 workflows, 9 selected figures and 12 manually viewed proofs",
+  "next": "A01/A03/A11 school-template argument, editable tables and native Word/PDF page review",
   "tasks": [
     {
       "id": "A01",
@@ -60,14 +60,16 @@
     {
       "id": "A09",
       "name": "运行网站和界面佐证",
-      "status": "planned_or_existing_to_review",
-      "requirement": "docs/三阶段分项执行与验收标准.md"
+      "status": "candidate_internal_checks_passed_physical_unverified",
+      "requirement": "docs/三阶段分项执行与验收标准.md",
+      "record": "deliverables/网站与图文分项验收记录.json"
     },
     {
       "id": "A10",
       "name": "图表与佐证材料组合",
-      "status": "planned_or_existing_to_review",
-      "requirement": "docs/三阶段分项执行与验收标准.md"
+      "status": "selected_asset_checks_passed_word_integration_pending",
+      "requirement": "docs/三阶段分项执行与验收标准.md",
+      "record": "deliverables/网站与图文分项验收记录.json"
     },
     {
       "id": "A11",
