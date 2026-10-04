@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-04",
+  "status": "passed_host_bytes_and_file_transactions_only",
+  "physical_data": false,
+  "checks": [
+    {
+      "check": "codec_known_crc_and_cobs_boundaries",
+      "status": "passed",
+      "detail": "CRC16 CCITT-FALSE check vector 0x29B1; 27 COBS byte patterns including 254-byte boundaries"
+    },
+    {
+      "check": "serial_fragmentation_and_corruption",
+      "status": "passed",
+      "detail": "43 split points, concatenation, oversized segment recovery and 43 single-bit corruption positions; invalid fields rejected"
+    },
+    {
+      "check": "actual_file_commit_before_ack",
+      "status": "passed",
+      "detail": "separate SQLite connection sees event before ACK is applied; DELETE/EXTRA configured; not power-cut testing"
+    },
+    {
+      "check": "pre_commit_failure",
+      "status": "passed",
+      "detail": "injected exception rolls back; receiver reopened; retry persists then acknowledges"
+    },
+    {
+      "check": "post_commit_restart_and_session_identity",
+      "status": "passed",
+      "detail": "post-commit pre-ACK stop; both host objects reopened; old frame/key retained and new committed boot identity allocated"
+    },
+    {
+      "check": "duplicate_conflict_and_ack_matching",
+      "status": "passed",
+      "detail": "identical duplicate returns identical ACK; wrong session/fingerprint ignored; same event key with changed payload rejected"
+    },
+    {
+      "check": "bounded_attempts_and_late_ack",
+      "status": "passed",
+      "detail": "8 host dispatch attempts at fixed backoff; retained unconfirmed record; later matching stored ACK marked late"
+    },
+    {
+      "check": "retention_deadline",
+      "status": "passed",
+      "detail": "300s expiration stops dispatch and retains expired record; no silent deletion"
+    },
+    {
+      "check": "queue_overflow_accounting",
+      "status": "passed",
+      "detail": "new event rejected when queue full; both old pending records retained; rejection snapshot stored in actual host DB"
+    },
+    {
+      "check": "fifo_delay_counterexample",
+      "status": "passed",
+      "detail": "lost ACKs for head event cause the second event first dispatch at62s, 61s after creation; violates the 20s demonstration deadline"
+    },
+    {
+      "check": "telemetry_separate_from_event_ack",
+      "status": "passed",
+      "detail": "telemetry codec/store works without EVENT ACK; message types have separate sequence namespaces; no periodic driver or Web connection"
+    },
+    {
+      "check": "historical_1920_rows_reproduced",
+      "status": "passed",
+      "detail": "legacy simulation unchanged; reproduction validates arithmetic only, not new wire protocol, current dual-pressure detector or RF"
+    }
+  ],
+  "wire_examples": [
+    {
+      "case": "normal_commit_before_ack",
+      "key": [
+        1,
+        1,
+        1
+      ],
+      "event_wire_hex": "0401011802010101020101010201010104d0dd06020101010201050180e02e0103c02b0103800c0103d44400",
+      "ack_wire_hex": "040102040201010102010101020101010718a2e2a417bd00",
+      "records_after_ack": 1,
+      "state": "acknowledged"
+    }
+  ],
+  "event_bytes": 44,
+  "ack_bytes": 24,
+  "uart_9600_8n1_event_ms": 45.83333333333333,
+  "uart_9600_8n1_ack_ms": 25.0,
+  "legacy_rows_reproduced": 1920,
+  "power_loss_tested": false,
+  "serial_hardware_tested": false,
+  "rf_airtime_measured": false,
+  "website_integrated": false,
+  "limitations": [
+    "exception injection is not an OS/power crash",
+    "SQLite filesystem/controller guarantees still required",
+    "MCU flash/microSD journal and atomic boot allocation not implemented",
+    "host wall-clock deadlines not MCU reboot timekeeping",
+    "UART byte time is not module air time or end-to-end latency",
+    "FIFO head-of-line delay remains a challenge",
+    "CRC/fingerprint do not authenticate sender"
+  ],
+  "source_sha256": {
+    "scripts/check_interface_protocol.py": "727f60fd4b400d81d5d48e45fec903ab87bdcff01a8705a3607672d7fdb5fab2",
+    "simulation/interface_review/event_protocol.py": "655bf896ef6f71f6153b0f05d623d2d8969fd2a59bb0b1b00403315caccd8cf0",
+    "simulation/communication_feasibility.py": "67d3e17987d6a6c3e8308a416a317aeeda9623e4c08dd2fda2e333736d0cd0b6",
+    "simulation/run_simulation.py": "f6ca745c4d6e320bf952e6b24612d9d17959ff4894f28bbddcb5d52f98b50ac7",
+    "simulation/communication_results/trials.csv": "7245a07c2f9a1cbb718d232dc8ef64c22dbc147d6ccba956ff3314b63b7069e6",
+    "simulation/communication_results/summary.json": "0a254e19f2157949dacfbdc398ed0122316b7245b373a54ce826afecf30850bf",
+    "simulation/communication_results/protocol_stress.json": "2e3a072015e933a6c5ab0b2347acc2d79550c9b89b7aa0664730dbe2962a2fcf"
+  }
+}

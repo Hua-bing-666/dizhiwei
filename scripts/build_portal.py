@@ -52,6 +52,9 @@ paths+=['docs/仿真建模与诊断证据分项验收.md','simulation/review_dia
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'simulation/diagnosis_review').glob('*')) if p.is_file()]
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures/diagnosis_review').glob('*')) if p.is_file()]
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures/collection_review').glob('*')) if p.is_file()]
+paths+=['docs/硬件接口与LoRa通信论证分项验收.md','scripts/check_hardware_interfaces.py','scripts/check_interface_protocol.py','scripts/collect_interface_sources.py','scripts/draw_interface_review.py','scripts/verify_interface_figures.mjs','scripts/finalize_interface_review.py','deliverables/接口与通信分项验收记录.json']
+paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'simulation/interface_review').glob('*')) if p.is_file()]
+paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures/interface_review').glob('*')) if p.is_file()]
 paths=list(dict.fromkeys(paths))
 manifest={'date':'2026-10-04','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
 (OUT/'证据清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')

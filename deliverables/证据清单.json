@@ -135,18 +135,18 @@
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "81d5d53e82ed425fa8b025e6574c60a01be77474670415e739d1ba50162939ae",
-      "bytes": 9906
+      "sha256": "937813248f02eb8de8dc1d6766f53805e56e4342e46b12424d366d51334e36f9",
+      "bytes": 10346
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "d5dc8282fc0630545f712fa887182eb22a57070218848f9d8299705db3e2ae55",
-      "bytes": 5284
+      "sha256": "458ff538274e362c1f5612606724700a2ffe08b21f88753787948e18a9965fdc",
+      "bytes": 5463
     },
     {
       "path": "README.md",
-      "sha256": "4f1f589ca8f8170ad17edf501e0f43cb9bb424ed8573ece305a793f8e021ca28",
-      "bytes": 9060
+      "sha256": "abcac9ba6e915a028c0b09e6169f6a2f0225ffe0a831598d993e139eb2ecb460",
+      "bytes": 9410
     },
     {
       "path": "scripts/fill_application_template.ps1",
@@ -810,8 +810,8 @@
     },
     {
       "path": "docs/三阶段分项执行与验收标准.md",
-      "sha256": "0d869ee06fca97c8c1f447068e193b32fd5b312a41209afe328f47fe0cedc2f3",
-      "bytes": 23975
+      "sha256": "2fca9ea8ec00ab24e2aca0f7b7a329f74e057511eee617beb1502142958fa67c",
+      "bytes": 24764
     },
     {
       "path": "docs/三维台架建模论证与本轮验收.md",
@@ -825,8 +825,8 @@
     },
     {
       "path": "deliverables/分项验收进度.json",
-      "sha256": "8f1be12cc5022b21634b1781975853625a36fa8b45fe643ea33e11fda05d3f5f",
-      "bytes": 5400
+      "sha256": "3f606874d94f476312589045de160aae7f679d84db183008b03fa27bf3436baf",
+      "bytes": 5637
     },
     {
       "path": "deliverables/三维分项验收记录.json",
@@ -1072,6 +1072,121 @@
       "path": "application/figures/collection_review/plate_provenance.json",
       "sha256": "b7f1744aa94996d50217193930a5c5cdb8dcf22e5d3819a4d57e22d11c0de6bc",
       "bytes": 4958
+    },
+    {
+      "path": "docs/硬件接口与LoRa通信论证分项验收.md",
+      "sha256": "fd7b72bc4c622e79e5a40ac9acb90b74b439388a3127421923c6e57cefeec194",
+      "bytes": 21586
+    },
+    {
+      "path": "scripts/check_hardware_interfaces.py",
+      "sha256": "d813d8393d96e03802fa934b048d9efa1ad9c68a25214443d91a541d17a968f6",
+      "bytes": 3460
+    },
+    {
+      "path": "scripts/check_interface_protocol.py",
+      "sha256": "727f60fd4b400d81d5d48e45fec903ab87bdcff01a8705a3607672d7fdb5fab2",
+      "bytes": 10276
+    },
+    {
+      "path": "scripts/collect_interface_sources.py",
+      "sha256": "42c7c6a427a739cb4e2ea701ea5769fa0ee691462018410839bec5911a58b00b",
+      "bytes": 3034
+    },
+    {
+      "path": "scripts/draw_interface_review.py",
+      "sha256": "9fb41681b6dc466c110ce349cea9dc7fadc786a65a3f825361de91c0feab163f",
+      "bytes": 9378
+    },
+    {
+      "path": "scripts/verify_interface_figures.mjs",
+      "sha256": "caa2bcf539e15c8fe2c409631218a22cf493ba9c85192e2154f2b9d758249bc2",
+      "bytes": 6023
+    },
+    {
+      "path": "scripts/finalize_interface_review.py",
+      "sha256": "a3677f38b4049775a5cc5c28daac166e80d1fddcf7f01033c61b40035fbe4b34",
+      "bytes": 9545
+    },
+    {
+      "path": "deliverables/接口与通信分项验收记录.json",
+      "sha256": "46c2ea36ed1db9c31d0b12307289fd134a831e0831495fac1d2c98a176ac37d2",
+      "bytes": 24357
+    },
+    {
+      "path": "simulation/interface_review/event_protocol.py",
+      "sha256": "655bf896ef6f71f6153b0f05d623d2d8969fd2a59bb0b1b00403315caccd8cf0",
+      "bytes": 8739
+    },
+    {
+      "path": "simulation/interface_review/figure_layout_checks.json",
+      "sha256": "dd9aa833c8c20bdbfbf0a6fbbd2722277e3359484cd0bf76967688b2c1e90366",
+      "bytes": 19517
+    },
+    {
+      "path": "simulation/interface_review/hardware_checks.json",
+      "sha256": "590728f879db67624b1419ec0a64c538afbd754d0c66e8fe0b4379506737c0c6",
+      "bytes": 2567
+    },
+    {
+      "path": "simulation/interface_review/interface_spec.json",
+      "sha256": "09aa59e383c8a35abbf2963a6552667e4988f38b0e9873b26968f22711c65c37",
+      "bytes": 4823
+    },
+    {
+      "path": "simulation/interface_review/manual_review.json",
+      "sha256": "6fd0b3b8dea3946c69983338e2a5e55c1c66074a170bbfc70d70e9879835eb79",
+      "bytes": 1329
+    },
+    {
+      "path": "simulation/interface_review/market_observations.json",
+      "sha256": "d3a54bf77158b58de511b9f3c3ee6018474d473a537c712ee6df12d1b4775988",
+      "bytes": 2127
+    },
+    {
+      "path": "simulation/interface_review/protocol_checks.json",
+      "sha256": "878da7dafed41da88590287fd863e03e4869590c1a478e5cc4bddb08c34fc2b1",
+      "bytes": 4690
+    },
+    {
+      "path": "simulation/interface_review/source_checks.json",
+      "sha256": "ef0059f7419a6205b5558fe2e2cbce1558016125b0141182e1448d36fad8d363",
+      "bytes": 5601
+    },
+    {
+      "path": "application/figures/interface_review/durable_event_sequence.png",
+      "sha256": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15",
+      "bytes": 260391
+    },
+    {
+      "path": "application/figures/interface_review/durable_event_sequence.svg",
+      "sha256": "ee0ca588b849d959d402f609064b81e5801331e7d1327ee5baab38958760bd00",
+      "bytes": 4683
+    },
+    {
+      "path": "application/figures/interface_review/figure_provenance.json",
+      "sha256": "c9e9608b5721f146bacbe693ff3de641b9e142fea16f3e422ebd12bc17891647",
+      "bytes": 7386
+    },
+    {
+      "path": "application/figures/interface_review/measurement_interfaces.png",
+      "sha256": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e",
+      "bytes": 279026
+    },
+    {
+      "path": "application/figures/interface_review/measurement_interfaces.svg",
+      "sha256": "16be4ba7866efbf57b76794456424a59063b35476a965605d0954de9e2941bb0",
+      "bytes": 8107
+    },
+    {
+      "path": "application/figures/interface_review/power_and_pin_resources.png",
+      "sha256": "63170dbe4036f59ce36f481f1a203248323371eb31bab908a240facdbf68fe85",
+      "bytes": 276350
+    },
+    {
+      "path": "application/figures/interface_review/power_and_pin_resources.svg",
+      "sha256": "53607698969621c2c483d520ca0d3fae0c8abe000a66de0d6df7fca0d7e7ffda",
+      "bytes": 6634
     }
   ]
 }

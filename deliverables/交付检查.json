@@ -347,5 +347,19 @@
     "paired_method_records": 960,
     "physical_validation": false,
     "application_integration_complete": false
+  },
+  "staged_interface_review": {
+    "task_ids": [
+      "A04",
+      "A08"
+    ],
+    "status": "partial_internal_checks_passed_build_release_pending",
+    "record": "接口与通信分项验收记录.json",
+    "report": "../docs/硬件接口与LoRa通信论证分项验收.md",
+    "figures": 3,
+    "host_check_groups": 12,
+    "physical_validation": false,
+    "build_released": false,
+    "application_integration_complete": false
   }
 }

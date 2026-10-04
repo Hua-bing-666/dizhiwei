@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-04",
+  "status": "conditional_arithmetic_passed_build_and_procurement_unverified",
+  "physical_data": false,
+  "pin_assignment_count": 17,
+  "pin_conflicts": [],
+  "normal_shunt_v": [
+    0.6,
+    3.0
+  ],
+  "normal_shunt_dissipation_w": 0.060000000000000005,
+  "shunt_power_factor_at_normal_current": 4.166666666666666,
+  "fault_22ma_shunt_v": 3.3,
+  "fault_22ma_at_adc_supply_rail_requires_protection": true,
+  "adc_lsb_pressure_kpa": 0.010416666666666666,
+  "two_conversion_nominal_ms_excluding_bus_and_oscillator": 15.625,
+  "p0_p1_nominal_midpoint_skew_ms": 7.8125,
+  "flow_max_pulse_hz": 45.0,
+  "flow_min_pulses_per_10s": 27.0,
+  "flow_10s_step_l_min": 0.011111111111111112,
+  "node_3v3_allowance_ma": 360,
+  "node_5v_equivalent_allowance_ma": 489.52941176470586,
+  "node_3v3_with_reserve_ma": 540.0,
+  "node_5v_with_reserve_ma": 734.2941176470588,
+  "budget_cap_cny": 2000,
+  "other_budget_cap_cny": 1320,
+  "pressure_price_sensitivity": [
+    {
+      "hypothetical_unit_price_cny": 300,
+      "total_with_other_cap_cny": 1920,
+      "within_2000": true
+    },
+    {
+      "hypothetical_unit_price_cny": 340,
+      "total_with_other_cap_cny": 2000,
+      "within_2000": true
+    },
+    {
+      "hypothetical_unit_price_cny": 500,
+      "total_with_other_cap_cny": 2320,
+      "within_2000": false
+    },
+    {
+      "hypothetical_unit_price_cny": 800,
+      "total_with_other_cap_cny": 2920,
+      "within_2000": false
+    }
+  ],
+  "uart_one_event_ms": 45.83333333333333,
+  "uart_one_ack_ms": 25.0,
+  "event_fits_candidate_64b_subpacket": true,
+  "unverified_gates": [
+    "A1+200kPa+4—20mA written quote and thread dimensions",
+    "ADC protection and supply-off injection tests",
+    "actual board/SD/USB-TTL logic and power pin inspection",
+    "power-transient check with simultaneous RF and SD write",
+    "module firmware/config readback and real AUX timing",
+    "microSD/Flash recoverable journal and boot ID allocation",
+    "pump curve and independent reference measurement",
+    "RF/serial raw logs and real website ingestion"
+  ],
+  "source_sha256": {
+    "scripts/check_hardware_interfaces.py": "d813d8393d96e03802fa934b048d9efa1ad9c68a25214443d91a541d17a968f6",
+    "simulation/interface_review/interface_spec.json": "09aa59e383c8a35abbf2963a6552667e4988f38b0e9873b26968f22711c65c37",
+    "simulation/diagnosis_review/protocol.json": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426",
+    "simulation/hardware_results/summary.json": "0616fcc5338adf838d869e23973af72e00d78871dc1522dc5b9f754759d6810a"
+  }
+}

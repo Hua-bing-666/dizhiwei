@@ -1,0 +1,592 @@
+{
+  "date": "2026-10-04",
+  "version": "20261004-A04A08-v1",
+  "task_ids": [
+    "A04",
+    "A08"
+  ],
+  "status": "partial_internal_checks_passed_build_release_pending",
+  "physical_validation": false,
+  "application_integration_complete": false,
+  "base_commit_for_preservation": "5fe395e3e40fadaca14c1eea2f8a05a615c78d50",
+  "hardware_checks": {
+    "date": "2026-10-04",
+    "status": "conditional_arithmetic_passed_build_and_procurement_unverified",
+    "physical_data": false,
+    "pin_assignment_count": 17,
+    "pin_conflicts": [],
+    "normal_shunt_v": [
+      0.6,
+      3.0
+    ],
+    "normal_shunt_dissipation_w": 0.060000000000000005,
+    "shunt_power_factor_at_normal_current": 4.166666666666666,
+    "fault_22ma_shunt_v": 3.3,
+    "fault_22ma_at_adc_supply_rail_requires_protection": true,
+    "adc_lsb_pressure_kpa": 0.010416666666666666,
+    "two_conversion_nominal_ms_excluding_bus_and_oscillator": 15.625,
+    "p0_p1_nominal_midpoint_skew_ms": 7.8125,
+    "flow_max_pulse_hz": 45.0,
+    "flow_min_pulses_per_10s": 27.0,
+    "flow_10s_step_l_min": 0.011111111111111112,
+    "node_3v3_allowance_ma": 360,
+    "node_5v_equivalent_allowance_ma": 489.52941176470586,
+    "node_3v3_with_reserve_ma": 540.0,
+    "node_5v_with_reserve_ma": 734.2941176470588,
+    "budget_cap_cny": 2000,
+    "other_budget_cap_cny": 1320,
+    "pressure_price_sensitivity": [
+      {
+        "hypothetical_unit_price_cny": 300,
+        "total_with_other_cap_cny": 1920,
+        "within_2000": true
+      },
+      {
+        "hypothetical_unit_price_cny": 340,
+        "total_with_other_cap_cny": 2000,
+        "within_2000": true
+      },
+      {
+        "hypothetical_unit_price_cny": 500,
+        "total_with_other_cap_cny": 2320,
+        "within_2000": false
+      },
+      {
+        "hypothetical_unit_price_cny": 800,
+        "total_with_other_cap_cny": 2920,
+        "within_2000": false
+      }
+    ],
+    "uart_one_event_ms": 45.83333333333333,
+    "uart_one_ack_ms": 25.0,
+    "event_fits_candidate_64b_subpacket": true,
+    "unverified_gates": [
+      "A1+200kPa+4—20mA written quote and thread dimensions",
+      "ADC protection and supply-off injection tests",
+      "actual board/SD/USB-TTL logic and power pin inspection",
+      "power-transient check with simultaneous RF and SD write",
+      "module firmware/config readback and real AUX timing",
+      "microSD/Flash recoverable journal and boot ID allocation",
+      "pump curve and independent reference measurement",
+      "RF/serial raw logs and real website ingestion"
+    ]
+  },
+  "host_protocol_checks": [
+    {
+      "check": "codec_known_crc_and_cobs_boundaries",
+      "status": "passed",
+      "detail": "CRC16 CCITT-FALSE check vector 0x29B1; 27 COBS byte patterns including 254-byte boundaries"
+    },
+    {
+      "check": "serial_fragmentation_and_corruption",
+      "status": "passed",
+      "detail": "43 split points, concatenation, oversized segment recovery and 43 single-bit corruption positions; invalid fields rejected"
+    },
+    {
+      "check": "actual_file_commit_before_ack",
+      "status": "passed",
+      "detail": "separate SQLite connection sees event before ACK is applied; DELETE/EXTRA configured; not power-cut testing"
+    },
+    {
+      "check": "pre_commit_failure",
+      "status": "passed",
+      "detail": "injected exception rolls back; receiver reopened; retry persists then acknowledges"
+    },
+    {
+      "check": "post_commit_restart_and_session_identity",
+      "status": "passed",
+      "detail": "post-commit pre-ACK stop; both host objects reopened; old frame/key retained and new committed boot identity allocated"
+    },
+    {
+      "check": "duplicate_conflict_and_ack_matching",
+      "status": "passed",
+      "detail": "identical duplicate returns identical ACK; wrong session/fingerprint ignored; same event key with changed payload rejected"
+    },
+    {
+      "check": "bounded_attempts_and_late_ack",
+      "status": "passed",
+      "detail": "8 host dispatch attempts at fixed backoff; retained unconfirmed record; later matching stored ACK marked late"
+    },
+    {
+      "check": "retention_deadline",
+      "status": "passed",
+      "detail": "300s expiration stops dispatch and retains expired record; no silent deletion"
+    },
+    {
+      "check": "queue_overflow_accounting",
+      "status": "passed",
+      "detail": "new event rejected when queue full; both old pending records retained; rejection snapshot stored in actual host DB"
+    },
+    {
+      "check": "fifo_delay_counterexample",
+      "status": "passed",
+      "detail": "lost ACKs for head event cause the second event first dispatch at62s, 61s after creation; violates the 20s demonstration deadline"
+    },
+    {
+      "check": "telemetry_separate_from_event_ack",
+      "status": "passed",
+      "detail": "telemetry codec/store works without EVENT ACK; message types have separate sequence namespaces; no periodic driver or Web connection"
+    },
+    {
+      "check": "historical_1920_rows_reproduced",
+      "status": "passed",
+      "detail": "legacy simulation unchanged; reproduction validates arithmetic only, not new wire protocol, current dual-pressure detector or RF"
+    }
+  ],
+  "figure_checks": [
+    {
+      "name": "measurement_interfaces",
+      "text_count": 34,
+      "outside": [],
+      "overlaps": [],
+      "box_errors": [],
+      "minimum_font_pt_at_425pt": 9.775,
+      "sha256": {
+        "svg": "16be4ba7866efbf57b76794456424a59063b35476a965605d0954de9e2941bb0",
+        "png": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e"
+      }
+    },
+    {
+      "name": "power_and_pin_resources",
+      "text_count": 36,
+      "outside": [],
+      "overlaps": [],
+      "box_errors": [],
+      "minimum_font_pt_at_425pt": 9.775,
+      "sha256": {
+        "svg": "53607698969621c2c483d520ca0d3fae0c8abe000a66de0d6df7fca0d7e7ffda",
+        "png": "63170dbe4036f59ce36f481f1a203248323371eb31bab908a240facdbf68fe85"
+      }
+    },
+    {
+      "name": "durable_event_sequence",
+      "text_count": 18,
+      "outside": [],
+      "overlaps": [],
+      "box_errors": [],
+      "minimum_font_pt_at_425pt": 9.775,
+      "sha256": {
+        "svg": "ee0ca588b849d959d402f609064b81e5801331e7d1327ee5baab38958760bd00",
+        "png": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15"
+      }
+    }
+  ],
+  "connection_coordinates_matched_to_svg": 22,
+  "manual_review": {
+    "date": "2026-10-04",
+    "classification": "agent_visual_review_of_actual_rendered_png_not_external_certification",
+    "independent_external_review": false,
+    "physical_validation": false,
+    "figures": [
+      {
+        "name": "measurement_interfaces",
+        "viewed": true,
+        "png_sha256": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e",
+        "checks": [
+          "two separate low-side current loops and common ground",
+          "AIN labels visible at correct inputs",
+          "5V pulse goes through 3.3V buffer; functional protection not released"
+        ]
+      },
+      {
+        "name": "power_and_pin_resources",
+        "viewed": true,
+        "png_sha256": "63170dbe4036f59ce36f481f1a203248323371eb31bab908a240facdbf68fe85",
+        "checks": [
+          "5V branches and 3.3V buck supply distinguished",
+          "eight grouped pin rows and separate manual B marker",
+          "UART logic and USB power caveats visible"
+        ]
+      },
+      {
+        "name": "durable_event_sequence",
+        "viewed": true,
+        "png_sha256": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15",
+        "checks": [
+          "normal and lost-ACK paths separated",
+          "ACK follows COMMIT and returns to sender lane",
+          "retry uses original identity and duplicate commit; human state separate"
+        ]
+      }
+    ]
+  },
+  "report_relative_links_checked": 12,
+  "market_scope": "public manufacturer display prices and supplier outbound links; no SKU/stock/checkout/pressure quote verification",
+  "corrections": [
+    "sensor 5V pulses require tolerant 3.3V buffer",
+    "module 5V VCC is not 5V UART",
+    "22mA reaches ADC rail; protection values unreleased",
+    "AUX is firmware/config dependent, not persistent delivery ACK",
+    "normal ACK and ACK-loss path explicitly separated",
+    "FIFO lost-ACK counterexample: next event first dispatch delayed 61s"
+  ],
+  "limitations": [
+    "exception injection is not an OS/power crash",
+    "SQLite filesystem/controller guarantees still required",
+    "MCU flash/microSD journal and atomic boot allocation not implemented",
+    "host wall-clock deadlines not MCU reboot timekeeping",
+    "UART byte time is not module air time or end-to-end latency",
+    "FIFO head-of-line delay remains a challenge",
+    "CRC/fingerprint do not authenticate sender",
+    "pressure quotation and source/reference borrowing not secured",
+    "RC/input clamp not build-released",
+    "power allowances not worst-case guarantees or measured consumption",
+    "discrete sampling not merged with diagnosis simulation",
+    "MCU resource usage, flash boot allocation and SD recovery not verified",
+    "old report hashes identify their frozen versions, not amended current plan"
+  ],
+  "original_artifacts_unchanged": [
+    {
+      "path": "application/figures/collection_review/bench_front.png",
+      "sha256": "c6fe5a5d8666cad14b1f85d7646db7f686902ee37d9833f037a33ee45b25bf54"
+    },
+    {
+      "path": "application/figures/collection_review/bench_isometric.png",
+      "sha256": "302ae4d180831f76c388854682d97506b5aac7894e8764667dc61b877d95a1c8"
+    },
+    {
+      "path": "application/figures/collection_review/bench_leak_detail.png",
+      "sha256": "9c20d212a8614ecdd3e2f5e9a79f62982e579519239e5504eb861bd32398519d"
+    },
+    {
+      "path": "application/figures/collection_review/bench_pressure_detail.png",
+      "sha256": "2b2a40fffc3db837f1e5554bfda8f7d5f71b550aead40b44e613d273957e97e6"
+    },
+    {
+      "path": "application/figures/collection_review/bench_top.png",
+      "sha256": "5d900c6724538edffb6ab93c511fb788d23696c560408838e3e54cb318b3bbd0"
+    },
+    {
+      "path": "application/figures/collection_review/collection_installation.png",
+      "sha256": "3b8e840316972ce6bd4bc8898377844d1b5c87f8f8eea02ab533174544a907bc"
+    },
+    {
+      "path": "application/figures/collection_review/collection_installation.svg",
+      "sha256": "ec0b8e7718a7c3ec499cba8901df8a91cff8103ffa1ed959816e769b159fd157"
+    },
+    {
+      "path": "application/figures/collection_review/collection_interfaces.png",
+      "sha256": "4722b690d0a64a83648a90f227be60dbd1c5e0ba24895d70be7c253b16a0eca4"
+    },
+    {
+      "path": "application/figures/collection_review/collection_interfaces.svg",
+      "sha256": "c10f6f898dfca2690c82ebd9d08fc8c4dd34cf924dd45549322a2663c47a9773"
+    },
+    {
+      "path": "application/figures/collection_review/collection_metering.png",
+      "sha256": "d518d8d19e3c24e84a826ef5573ec1719b54b2c909a7aac0cf2ca57d40709e6b"
+    },
+    {
+      "path": "application/figures/collection_review/collection_metering.svg",
+      "sha256": "2c11238824c9b144356d52ea8d881e8d6359b43951f72239a377fafda4f6f91e"
+    },
+    {
+      "path": "application/figures/collection_review/collection_overview.png",
+      "sha256": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b"
+    },
+    {
+      "path": "application/figures/collection_review/collection_overview.svg",
+      "sha256": "9d90408a4759524bae0c285918566ea5db4f3c01a7cf101404fdc1feeb53e6bf"
+    },
+    {
+      "path": "application/figures/collection_review/plate_provenance.json",
+      "sha256": "b7f1744aa94996d50217193930a5c5cdb8dcf22e5d3819a4d57e22d11c0de6bc"
+    },
+    {
+      "path": "application/figures/diagnosis_review/bounded_error_margin.png",
+      "sha256": "cb0d513990dc35d3862b3a77e41cda9090886fa72f9ab0be17e3e3fc4ea2f686"
+    },
+    {
+      "path": "application/figures/diagnosis_review/bounded_error_margin.svg",
+      "sha256": "d1c69f7f0779d1ef4b261cbd598594cc033e6ef80a59b3f61af928c522ef6c2c"
+    },
+    {
+      "path": "application/figures/diagnosis_review/early_reference_example.png",
+      "sha256": "c62a3719c683a1f791e64beb9049b1b2f2d3358ee9419de725f280d89231259e"
+    },
+    {
+      "path": "application/figures/diagnosis_review/early_reference_example.svg",
+      "sha256": "d122748316ede5dc31cb0cf24666f1f40803d57b1d66195001c853b0ebd8c163"
+    },
+    {
+      "path": "application/figures/diagnosis_review/failure_counterexamples.png",
+      "sha256": "4bacd869181649b8e8b6d8b68c3b3d320c3db72d12e6f8e6abb62508b184b88f"
+    },
+    {
+      "path": "application/figures/diagnosis_review/failure_counterexamples.svg",
+      "sha256": "05a8aeafbd7c29ba3a2a9624c2bcf1fed8a22c7319738ff296392c923b2379f9"
+    },
+    {
+      "path": "application/figures/diagnosis_review/figure_provenance.json",
+      "sha256": "669460cee1dce6fff27917b9f93013e60501e391b87086445200328c7842d180"
+    },
+    {
+      "path": "application/figures/diagnosis_review/noise_outcomes.png",
+      "sha256": "005f53b1ca507aed57234617cb0cd94ceeb57f5f8dacd113e958165b023111a4"
+    },
+    {
+      "path": "application/figures/diagnosis_review/noise_outcomes.svg",
+      "sha256": "59ae3ae6b647356b5d9f60e8303b758ad2ba5382e49a1619f1687488cbc94d9b"
+    },
+    {
+      "path": "application/figures/diagnosis_review/range_and_measurement.png",
+      "sha256": "e5a19823221a5fa77cd2503868b34126a9ba5d3f7e8f4ff4a9d115916483d2a8"
+    },
+    {
+      "path": "application/figures/diagnosis_review/range_and_measurement.svg",
+      "sha256": "f81c5db00975ea2845652de1d8e6aea9730d0e8e0d690381d0208a4bf680d405"
+    },
+    {
+      "path": "application/models/bench_geometry_checks.json",
+      "sha256": "43297b710edb49d833d3595829fd3ff21f988788a76eed8abe571470e5a761f7"
+    },
+    {
+      "path": "application/models/bench_layout.glb",
+      "sha256": "2dff1b731ce74f26ad3fec7cef0e43e68a78611a444cfd0249de9bed18aafb58"
+    },
+    {
+      "path": "application/models/bench_layout.json",
+      "sha256": "a5674df4d74e939bbab251dd354f692c574bfa35873a1595e29f61d58ead6253"
+    },
+    {
+      "path": "application/models/bench_layout.mtl",
+      "sha256": "dcd31a8d29d06c50b1b5409322915e65ee4001563f7828d184e9cdc250b53f73"
+    },
+    {
+      "path": "application/models/bench_layout.obj",
+      "sha256": "a386acebcb81ca604104e57fbf8e465733a843862f43ecd4efd440e55b653eeb"
+    },
+    {
+      "path": "application/models/bench_layout.step",
+      "sha256": "86b85c357542b3bc6ea878c8189b457fb448066a975cc720d70d2ff322e26cc2"
+    },
+    {
+      "path": "application/models/bench_scene.json",
+      "sha256": "bf8d0bfe7b5ffad9adba4376d0adf8a9bd1000d9b5632aaa89930a9ad507b00e"
+    },
+    {
+      "path": "application/models/bench_views.json",
+      "sha256": "b8f5b946e46d5a25a16070f8dbbe003c83bb1d39d2589ae89f088eeb8209e396"
+    },
+    {
+      "path": "application/models/collection_review/bench_geometry_checks.json",
+      "sha256": "43297b710edb49d833d3595829fd3ff21f988788a76eed8abe571470e5a761f7"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.glb",
+      "sha256": "f9b353695afc1e62ab318726cad6debd11e92cd2f2b9c8d0429b963364fcac0b"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.json",
+      "sha256": "3f0137c9f9efbc341ddefb4185b5f021398802c5fac19949ee1cc80afc757c99"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.mtl",
+      "sha256": "dcd31a8d29d06c50b1b5409322915e65ee4001563f7828d184e9cdc250b53f73"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.obj",
+      "sha256": "0a28054a2f3d9673b53bfe71ba74985be85db22dd358171cb11fdf01200b0dca"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.step",
+      "sha256": "81db6d8af3766dc7979c839ac730e690ce8b028d49f5107a4116a97b8f246a45"
+    },
+    {
+      "path": "application/models/collection_review/bench_scene.json",
+      "sha256": "4e7348de31fc52816b86d248ed4eb4bcd6287aa462710d1419622f4725445869"
+    },
+    {
+      "path": "application/models/collection_review/bench_views.json",
+      "sha256": "bdb09481cd3cb7680738dba38e5cb3f19c822f5cdf7257a5db4adb68e356f346"
+    },
+    {
+      "path": "application/models/collection_review/collection_feasibility.json",
+      "sha256": "5a7c6711f36994036fc80221292230fb25c222dba0b59a40bc3787965e781df0"
+    },
+    {
+      "path": "application/models/collection_review/collection_intersections.csv",
+      "sha256": "cf17c5e643f1014cbf7de28d578932a2880c42367173812bc4e13bbc73758f9c"
+    },
+    {
+      "path": "application/models/collection_review/plate_layout_checks.json",
+      "sha256": "aff0c0113f60dde60f9e056247d4adf03fd46874277aa6762e4a9b535f7d4a9a"
+    },
+    {
+      "path": "application/models/vendor/provenance.json",
+      "sha256": "a6c7049cc70962201f99feb18312142fac0ef901e7d445128b605a7d0b679bd0"
+    },
+    {
+      "path": "application/models/vendor/three.LICENSE",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "application/models/vendor/three.cjs",
+      "sha256": "2980c5831824f46d79a39a93feb70dd851538ce5b5480a6463883b319022c51f"
+    },
+    {
+      "path": "application/references.json",
+      "sha256": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb"
+    },
+    {
+      "path": "deliverables/index.html",
+      "sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4"
+    },
+    {
+      "path": "deliverables/三维分项验收记录.json",
+      "sha256": "2c9f370b5d85cdb0a6c5712b6b3124249e065cd6f18551c8922ef7656a4aa81c"
+    },
+    {
+      "path": "deliverables/仿真分项验收记录.json",
+      "sha256": "cbaebdfafc1c584d326ae684e0c7f7e1dfd42c101e7243e2533605cb8bd2bb63"
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型.html",
+      "sha256": "801de70601a0eeb002da1a2e42031b9735c61adc368c0afd243931c3c67df83e"
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型_收集优化候选版.html",
+      "sha256": "7f00e535876147df07251315316c3730c1be638410d64185ec0a6bc3ee1089ec"
+    },
+    {
+      "path": "deliverables/大创申报书_模板填写稿.docx",
+      "sha256": "2bc9630d792c835e29651d70f049ee24a45c57d3ee8cb7e2c23c63189dc3c0f9"
+    },
+    {
+      "path": "deliverables/大创申报书_模板审阅版.pdf",
+      "sha256": "2a12aa6b42a51ee3bc39f5bd78a43a543a205b8a70f0991e627fb8d9ccdce2b0"
+    },
+    {
+      "path": "deliverables/研究与答辩资料.html",
+      "sha256": "c48e8e62b2ab11788401648193af702ab48a14d03052f215ca5ba798082506d8"
+    },
+    {
+      "path": "deliverables/立项答辩.pptx",
+      "sha256": "35ad135527ec234aab3ebe91bc33d1817c0855c5af8f1d454869e376e22bbc9f"
+    },
+    {
+      "path": "deliverables/立项答辩审阅版.pdf",
+      "sha256": "a41b4ee563efcb37648b9e75ad0ffe0e7fdab98b463fee6805fb9de3b795e3e9"
+    },
+    {
+      "path": "deliverables/项目书审阅版.pdf",
+      "sha256": "eed0522bc5557f42167407c7d18a2ee6584b765dfa319fe554f305a31a90312e"
+    },
+    {
+      "path": "docs/三维台架建模论证与本轮验收.md",
+      "sha256": "63e9237e2b3923a569039a211361360510c22c53c19425d6f2f3b5e7d22e0e0d"
+    },
+    {
+      "path": "docs/仿真建模与诊断证据分项验收.md",
+      "sha256": "231bb7bedd5351b08826337e2cf04b5a80671b9941573f4e4d2b0780b79fc51c"
+    },
+    {
+      "path": "simulation/communication_feasibility.py",
+      "sha256": "67d3e17987d6a6c3e8308a416a317aeeda9623e4c08dd2fda2e333736d0cd0b6"
+    },
+    {
+      "path": "simulation/communication_results/protocol_stress.json",
+      "sha256": "2e3a072015e933a6c5ab0b2347acc2d79550c9b89b7aa0664730dbe2962a2fcf"
+    },
+    {
+      "path": "simulation/communication_results/summary.json",
+      "sha256": "0a254e19f2157949dacfbdc398ed0122316b7245b373a54ce826afecf30850bf"
+    },
+    {
+      "path": "simulation/communication_results/trials.csv",
+      "sha256": "7245a07c2f9a1cbb718d232dc8ef64c22dbc147d6ccba956ff3314b63b7069e6"
+    },
+    {
+      "path": "simulation/diagnosis_feasibility.py",
+      "sha256": "e427fd9af502a0fe633a117fdce34befbff367c54540fa2e7514824496653656"
+    },
+    {
+      "path": "simulation/diagnosis_results/summary.json",
+      "sha256": "c987a6d513c7a9302f62ab444e78220c3e5ea95a3b8b69a3cdda4c5c855c0e49"
+    },
+    {
+      "path": "simulation/diagnosis_results/trials.csv",
+      "sha256": "7317491630d3a43c87a62e2ce8e8abd19e00da9c537fb012bb2f201e9e3d423d"
+    },
+    {
+      "path": "simulation/diagnosis_review/README.md",
+      "sha256": "43d4b26a7cca14efe4004f48ecb67d422d68f1927fe740ac5f737f0aa1df3477"
+    },
+    {
+      "path": "simulation/diagnosis_review/error_intervals.csv",
+      "sha256": "53916f83979ff1deb75b0f849c16b0f41a45074412fb13e366e8657fe9c1ec9b"
+    },
+    {
+      "path": "simulation/diagnosis_review/figure_layout_checks.json",
+      "sha256": "528998be6246d6795ea97627af77a8c9d6f8d066a80409a7fac131a0556f0746"
+    },
+    {
+      "path": "simulation/diagnosis_review/legacy_audit.json",
+      "sha256": "61fa0a4ba27726c6556f744b14db098cf4b38a845c5032a27c09a35f8fae8d70"
+    },
+    {
+      "path": "simulation/diagnosis_review/method_results.csv",
+      "sha256": "648d6be82e0879b4bb80046627e8d3a777f2e2ad0467f57002781ac901b2667b"
+    },
+    {
+      "path": "simulation/diagnosis_review/model_mismatch_challenges.csv",
+      "sha256": "a32095689e2132983d7bd0b00357880f52749253f8e37830844302be4d90c447"
+    },
+    {
+      "path": "simulation/diagnosis_review/protocol.json",
+      "sha256": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426"
+    },
+    {
+      "path": "simulation/diagnosis_review/raw_trials.npz",
+      "sha256": "3852f834b15fbcea22a24b1b41d2d1b7f4cd9c13bf8b2cf22a4969f0dab4ee38"
+    },
+    {
+      "path": "simulation/diagnosis_review/source_checks.json",
+      "sha256": "8bf2de2973d2810aa9f55bda67ea4cace25143c9f6c77168ac697ede5d1bb851"
+    },
+    {
+      "path": "simulation/diagnosis_review/summary.json",
+      "sha256": "b06c2843683fabe074cee8c854291052e61a67785852454ea64dab91a0b5d195"
+    },
+    {
+      "path": "simulation/diagnosis_review/timing_challenges.csv",
+      "sha256": "6702a212f8663e829891bb3b30859288adabb89c04efb2132135423febec5880"
+    },
+    {
+      "path": "simulation/diagnosis_review/validation.json",
+      "sha256": "67acc626cce5d1f804eae543fea7ffa8c7887d716cb4b2aea057f4d98b0296f8"
+    },
+    {
+      "path": "simulation/hardware_results/observability.csv",
+      "sha256": "85663bd58cd632acc3c28205b0cc62998d246bee00c92e48fb68eade56a8ac69"
+    },
+    {
+      "path": "simulation/hardware_results/range_grid.csv",
+      "sha256": "35d5f07302f4f0f35d8bb47673d4a32078fda9cafe4545a2f94a0eaada59e367"
+    },
+    {
+      "path": "simulation/hardware_results/summary.json",
+      "sha256": "0616fcc5338adf838d869e23973af72e00d78871dc1522dc5b9f754759d6810a"
+    },
+    {
+      "path": "simulation/review_diagnosis.py",
+      "sha256": "c2d0f89bd8c8ec3dd43cc91c3623fd2793132dfece20aa13bfa66842bf286d4f"
+    },
+    {
+      "path": "simulation/run_simulation.py",
+      "sha256": "f6ca745c4d6e320bf952e6b24612d9d17959ff4894f28bbddcb5d52f98b50ac7"
+    }
+  ],
+  "source_sha256": {
+    "scripts/finalize_interface_review.py": "a3677f38b4049775a5cc5c28daac166e80d1fddcf7f01033c61b40035fbe4b34",
+    "docs/硬件接口与LoRa通信论证分项验收.md": "fd7b72bc4c622e79e5a40ac9acb90b74b439388a3127421923c6e57cefeec194",
+    "docs/三阶段分项执行与验收标准.md": "2fca9ea8ec00ab24e2aca0f7b7a329f74e057511eee617beb1502142958fa67c",
+    "simulation/interface_review/hardware_checks.json": "590728f879db67624b1419ec0a64c538afbd754d0c66e8fe0b4379506737c0c6",
+    "simulation/interface_review/protocol_checks.json": "878da7dafed41da88590287fd863e03e4869590c1a478e5cc4bddb08c34fc2b1",
+    "simulation/interface_review/source_checks.json": "ef0059f7419a6205b5558fe2e2cbce1558016125b0141182e1448d36fad8d363",
+    "simulation/interface_review/market_observations.json": "d3a54bf77158b58de511b9f3c3ee6018474d473a537c712ee6df12d1b4775988",
+    "simulation/interface_review/figure_layout_checks.json": "dd9aa833c8c20bdbfbf0a6fbbd2722277e3359484cd0bf76967688b2c1e90366",
+    "simulation/interface_review/manual_review.json": "6fd0b3b8dea3946c69983338e2a5e55c1c66074a170bbfc70d70e9879835eb79",
+    "application/figures/interface_review/figure_provenance.json": "c9e9608b5721f146bacbe693ff3de641b9e142fea16f3e422ebd12bc17891647"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-04",
+  "classification": "primary_source_interface_checks_not_procurement_or_physical_validation",
+  "physical_data": false,
+  "sources": [
+    {
+      "title": "亿佰特 E220-400T22D 官方产品页及厂家商城出口",
+      "url": "https://www.ebyte.com/product/1077.html",
+      "verification": "官方产品页浏览及公开HTML读取，摘要和HTML哈希见market_observations.json",
+      "supports": ["VCC 2.3—5.5V，IO为3.3V", "引脚1至7为M0/M1/RXD/TXD/AUX/VCC/GND", "产品页列发射110mA典型、接收16.8mA典型", "厂家提供两条淘宝购买入口"],
+      "limits": ["未核验所售SKU、固件、价格、库存或实际板卡", "典型参数不作为最坏电流保证", "产品页与当前系列手册参数有差异，采购时必须确认版本"]
+    },
+    {
+      "title": "E220-T 系列用户使用手册，官网1077产品页当前下载文件",
+      "url": "https://www.ebyte.com/downpdf/1077.html",
+      "verification": "实际下载40页PDF、文本检查；Poppler渲染并查看第7、20、30页；第13、28页文本检查。文件不同页页脚包含2022及2026，不能据此认定候选板固件",
+      "pdf_sha256": "16e96063832794158f08ee1396a017051af00b4baedbcc31520d26aaf0ed5a99",
+      "pdf_bytes": 3246393,
+      "supports": ["第7页系列供电下限2.6V，接收电流约8mA，与产品页不同", "第13页M1/M0=00传输，11配置", "第20页默认短包时AUX回高与空中发送完成不同", "第28页AT+UAUX：7463-0-14及以前不支持该命令，7463-0-15及以后默认不指示无线发送", "第30页分包支持200/128/64/32字节，串口接收超时及空闲间隔影响分包"],
+      "limits": ["当前系列手册不证明已购买模块具有同样的AT接口", "须记录固件版本、配置回读及示波器时序", "AUX不代表远端持久化，也不代表人工查看"]
+    },
+    {
+      "title": "DFRobot中国商城SEN0549及DFR0553",
+      "urls": ["https://www.dfrobot.com.cn/goods-3561.html", "https://www.dfrobot.com.cn/goods-1734.html"],
+      "verification": "公开HTML HTTP200，型号/商品标题/展示价及HTML哈希见market_observations.json",
+      "supports": ["查询时SEN0549展示价109元", "查询时DFR0553展示价79元"],
+      "limits": ["未登录、下单或核验库存、运税费", "展示价不等于正式报价；非采购完成证明"]
+    },
+    {
+      "title": "DFRobot SEN0549 官方Wiki",
+      "url": "https://wiki.dfrobot.com/sen0549/",
+      "verification": "沿用A06/A07官方规格核验，记录见../diagnosis_review/source_checks.json",
+      "supports": ["540脉冲/L，0.3—5L/min", "5V供电时高电平>4.7V，必须核对输入电平"],
+      "limits": ["标称1%误差的基准未明确", "实际输出电路、连接器顺序、边沿及供电关闭状态未经验证"]
+    },
+    {
+      "title": "TI SN74LVC1G17 datasheet SCES351Y Rev.Y January 2025",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+      "verification": "TI官方PDF文本表格，推荐电源及输入条件",
+      "supports": ["电源1.65—5.5V，推荐输入0—5.5V", "以3.3V供电作为候选5V容忍施密特缓冲器"],
+      "limits": ["不能推广到普通74HC或未知转换板", "完整接口的掉电注入和传感器波形仍需实测"]
+    },
+    {
+      "title": "ST STM32F103x8/xB DS5319 Rev20及中国开发板供应商页面",
+      "urls": ["https://www.st.com/resource/en/datasheet/stm32f103t8.pdf", "https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8", "https://www.lcdwiki.com/zh/STM32F103C8T6_Minimum_System_Development_Board"],
+      "verification": "ST官方器件规格及LQFP48引脚表，供应商开发板页面",
+      "supports": ["C8按64KB Flash、20KB SRAM设计", "PB6/7 I2C1，PA9/10 USART1，PA4—7 SPI1，PA13/14 SWD；PA0可作为TIM2_CH1候选"],
+      "limits": ["未核验实际板卡芯片、稳压和接口", "不假定廉价兼容板具128KB可用Flash", "FatFS内存、计数配置和资源冲突仍需固件验证"]
+    },
+    {
+      "title": "SQLite Atomic Commit及PRAGMA synchronous官方文档",
+      "urls": ["https://www.sqlite.org/atomiccommit.html", "https://www.sqlite.org/pragma.html#pragma_synchronous"],
+      "verification": "SQLite官方网页，回滚日志事务及DELETE模式EXTRA的目录同步说明",
+      "supports": ["参考实现先COMMIT后构造ACK", "使用journal_mode=DELETE及synchronous=EXTRA，检查实际文件中的提交与重复去重"],
+      "limits": ["仍依赖文件系统/存储控制器正确执行同步", "异常注入和重开对象不等于实际掉电或OS崩溃测试", "MCU Flash/microSD不能直接继承主机SQLite保证"]
+    },
+    {
+      "title": "MPM489及ADS1115既有官方规格证据",
+      "urls": ["https://www.microsensor.cn/products-193", "https://www.ti.com/lit/ds/symlink/ads1115.pdf"],
+      "verification": "沿用A06/A07 source_checks.json；本轮仅追加接口推导，未取得新的压力报价或标定证据",
+      "supports": ["压力A1及200kPa组合为待确认规格", "ADS1115 PGA码宽与输入供电轨限制分别检查"],
+      "limits": ["功能接口图未冻结保护/滤波元件", "22mA经150Ω达到3.3V，容差和掉电故障不能忽略", "名义码宽不代表系统压力精度"]
+    }
+  ],
+  "unresolved_discrepancies": ["E220产品页与当前系列手册的供电下限/接收电流不同", "AUX意义随固件及UAUX配置变化", "候选压力精度、量程、螺纹与340元单价上限未取得组合报价"],
+  "academic_reference_numbers_changed": false
+}
