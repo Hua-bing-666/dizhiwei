@@ -333,5 +333,19 @@
     "status": "passed_with_stated_concept_scope",
     "application_integration_complete": false,
     "physical_validation": false
+  },
+  "staged_diagnosis_review": {
+    "task_ids": [
+      "A06",
+      "A07"
+    ],
+    "status": "passed_with_uncalibrated_model_scope",
+    "record": "仿真分项验收记录.json",
+    "report": "../docs/仿真建模与诊断证据分项验收.md",
+    "figures": 5,
+    "trials": 480,
+    "paired_method_records": 960,
+    "physical_validation": false,
+    "application_integration_complete": false
   }
 }

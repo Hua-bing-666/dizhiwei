@@ -135,18 +135,18 @@
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "1c3a11f881c1c0633faef8298328d5b2598d828100a20e9b0fb5d64af3c330fa",
-      "bytes": 9500
+      "sha256": "81d5d53e82ed425fa8b025e6574c60a01be77474670415e739d1ba50162939ae",
+      "bytes": 9906
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "7282ee68c340782e318577c23c6244f8c49bf1433fb1d7db7e8e23a8c039efba",
-      "bytes": 5096
+      "sha256": "d5dc8282fc0630545f712fa887182eb22a57070218848f9d8299705db3e2ae55",
+      "bytes": 5284
     },
     {
       "path": "README.md",
-      "sha256": "b5464afbdb294e53a821038444aaba5f32c43e7a7ad625cbc8432650387d41b9",
-      "bytes": 8463
+      "sha256": "4f1f589ca8f8170ad17edf501e0f43cb9bb424ed8573ece305a793f8e021ca28",
+      "bytes": 9060
     },
     {
       "path": "scripts/fill_application_template.ps1",
@@ -780,8 +780,8 @@
     },
     {
       "path": "docs/项目总规划与任务验收台账.md",
-      "sha256": "8b252bc617b9293f7514118fb85ce0268a1c1496b7f4452e3d008d44deb5b327",
-      "bytes": 15504
+      "sha256": "76813a83b98a192c42fc812d01c812aa55a1273b7e86249d8f83c009642c0f24",
+      "bytes": 15688
     },
     {
       "path": "docs/网站功能与验收说明.md",
@@ -810,8 +810,8 @@
     },
     {
       "path": "docs/三阶段分项执行与验收标准.md",
-      "sha256": "b6452508b7db7309cc34677f23f6e892737c80ef64358fde69e8d494d97fe93f",
-      "bytes": 23450
+      "sha256": "0d869ee06fca97c8c1f447068e193b32fd5b312a41209afe328f47fe0cedc2f3",
+      "bytes": 23975
     },
     {
       "path": "docs/三维台架建模论证与本轮验收.md",
@@ -825,8 +825,8 @@
     },
     {
       "path": "deliverables/分项验收进度.json",
-      "sha256": "8c70c901a975d5246b10741b0df5f2682e365bd77aef3886af6540633a8db65d",
-      "bytes": 5148
+      "sha256": "8f1be12cc5022b21634b1781975853625a36fa8b45fe643ea33e11fda05d3f5f",
+      "bytes": 5400
     },
     {
       "path": "deliverables/三维分项验收记录.json",
@@ -852,6 +852,156 @@
       "path": "scripts/verify_staged_evidence.py",
       "sha256": "9c9e2f75694e7e61e59c47a5f5cd40ee80765ccb24d0513d1cd799f2d73f69c7",
       "bytes": 941
+    },
+    {
+      "path": "docs/仿真建模与诊断证据分项验收.md",
+      "sha256": "231bb7bedd5351b08826337e2cf04b5a80671b9941573f4e4d2b0780b79fc51c",
+      "bytes": 20964
+    },
+    {
+      "path": "simulation/review_diagnosis.py",
+      "sha256": "c2d0f89bd8c8ec3dd43cc91c3623fd2793132dfece20aa13bfa66842bf286d4f",
+      "bytes": 18110
+    },
+    {
+      "path": "scripts/validate_diagnosis_review.py",
+      "sha256": "d3c382209c62b96b953a9ad695c09e6595c948f4abe404c4eaee65ecec1b310c",
+      "bytes": 15378
+    },
+    {
+      "path": "scripts/plot_diagnosis_review.py",
+      "sha256": "33bbc31247d01de7dc33f023ce40b1d3bff5f8778fc36bf352ab8b8023157387",
+      "bytes": 12339
+    },
+    {
+      "path": "scripts/verify_diagnosis_figures.mjs",
+      "sha256": "a2cb105d3820b68ea66f7605ab0e7052993479c1bef3487dfd6222d713500982",
+      "bytes": 5430
+    },
+    {
+      "path": "scripts/finalize_diagnosis_review.py",
+      "sha256": "95686a0dac172e8b77c745bd8e7baddf7ff47ebbd64d384e4d21340a810d2100",
+      "bytes": 8863
+    },
+    {
+      "path": "deliverables/仿真分项验收记录.json",
+      "sha256": "cbaebdfafc1c584d326ae684e0c7f7e1dfd42c101e7243e2533605cb8bd2bb63",
+      "bytes": 14896
+    },
+    {
+      "path": "simulation/diagnosis_review/error_intervals.csv",
+      "sha256": "53916f83979ff1deb75b0f849c16b0f41a45074412fb13e366e8657fe9c1ec9b",
+      "bytes": 63663
+    },
+    {
+      "path": "simulation/diagnosis_review/figure_layout_checks.json",
+      "sha256": "528998be6246d6795ea97627af77a8c9d6f8d066a80409a7fac131a0556f0746",
+      "bytes": 44991
+    },
+    {
+      "path": "simulation/diagnosis_review/legacy_audit.json",
+      "sha256": "61fa0a4ba27726c6556f744b14db098cf4b38a845c5032a27c09a35f8fae8d70",
+      "bytes": 768
+    },
+    {
+      "path": "simulation/diagnosis_review/method_results.csv",
+      "sha256": "648d6be82e0879b4bb80046627e8d3a777f2e2ad0467f57002781ac901b2667b",
+      "bytes": 93908
+    },
+    {
+      "path": "simulation/diagnosis_review/model_mismatch_challenges.csv",
+      "sha256": "a32095689e2132983d7bd0b00357880f52749253f8e37830844302be4d90c447",
+      "bytes": 1502
+    },
+    {
+      "path": "simulation/diagnosis_review/protocol.json",
+      "sha256": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426",
+      "bytes": 2882
+    },
+    {
+      "path": "simulation/diagnosis_review/raw_trials.npz",
+      "sha256": "3852f834b15fbcea22a24b1b41d2d1b7f4cd9c13bf8b2cf22a4969f0dab4ee38",
+      "bytes": 6424887
+    },
+    {
+      "path": "simulation/diagnosis_review/README.md",
+      "sha256": "43d4b26a7cca14efe4004f48ecb67d422d68f1927fe740ac5f737f0aa1df3477",
+      "bytes": 4790
+    },
+    {
+      "path": "simulation/diagnosis_review/source_checks.json",
+      "sha256": "8bf2de2973d2810aa9f55bda67ea4cace25143c9f6c77168ac697ede5d1bb851",
+      "bytes": 2685
+    },
+    {
+      "path": "simulation/diagnosis_review/summary.json",
+      "sha256": "b06c2843683fabe074cee8c854291052e61a67785852454ea64dab91a0b5d195",
+      "bytes": 6711893
+    },
+    {
+      "path": "simulation/diagnosis_review/timing_challenges.csv",
+      "sha256": "6702a212f8663e829891bb3b30859288adabb89c04efb2132135423febec5880",
+      "bytes": 535
+    },
+    {
+      "path": "simulation/diagnosis_review/validation.json",
+      "sha256": "67acc626cce5d1f804eae543fea7ffa8c7887d716cb4b2aea057f4d98b0296f8",
+      "bytes": 3316
+    },
+    {
+      "path": "application/figures/diagnosis_review/bounded_error_margin.png",
+      "sha256": "cb0d513990dc35d3862b3a77e41cda9090886fa72f9ab0be17e3e3fc4ea2f686",
+      "bytes": 269803
+    },
+    {
+      "path": "application/figures/diagnosis_review/bounded_error_margin.svg",
+      "sha256": "d1c69f7f0779d1ef4b261cbd598594cc033e6ef80a59b3f61af928c522ef6c2c",
+      "bytes": 22383
+    },
+    {
+      "path": "application/figures/diagnosis_review/early_reference_example.png",
+      "sha256": "c62a3719c683a1f791e64beb9049b1b2f2d3358ee9419de725f280d89231259e",
+      "bytes": 252640
+    },
+    {
+      "path": "application/figures/diagnosis_review/early_reference_example.svg",
+      "sha256": "d122748316ede5dc31cb0cf24666f1f40803d57b1d66195001c853b0ebd8c163",
+      "bytes": 24267
+    },
+    {
+      "path": "application/figures/diagnosis_review/failure_counterexamples.png",
+      "sha256": "4bacd869181649b8e8b6d8b68c3b3d320c3db72d12e6f8e6abb62508b184b88f",
+      "bytes": 283016
+    },
+    {
+      "path": "application/figures/diagnosis_review/failure_counterexamples.svg",
+      "sha256": "05a8aeafbd7c29ba3a2a9624c2bcf1fed8a22c7319738ff296392c923b2379f9",
+      "bytes": 34509
+    },
+    {
+      "path": "application/figures/diagnosis_review/figure_provenance.json",
+      "sha256": "669460cee1dce6fff27917b9f93013e60501e391b87086445200328c7842d180",
+      "bytes": 143381
+    },
+    {
+      "path": "application/figures/diagnosis_review/noise_outcomes.png",
+      "sha256": "005f53b1ca507aed57234617cb0cd94ceeb57f5f8dacd113e958165b023111a4",
+      "bytes": 201732
+    },
+    {
+      "path": "application/figures/diagnosis_review/noise_outcomes.svg",
+      "sha256": "59ae3ae6b647356b5d9f60e8303b758ad2ba5382e49a1619f1687488cbc94d9b",
+      "bytes": 30625
+    },
+    {
+      "path": "application/figures/diagnosis_review/range_and_measurement.png",
+      "sha256": "e5a19823221a5fa77cd2503868b34126a9ba5d3f7e8f4ff4a9d115916483d2a8",
+      "bytes": 226780
+    },
+    {
+      "path": "application/figures/diagnosis_review/range_and_measurement.svg",
+      "sha256": "f81c5db00975ea2845652de1d8e6aea9730d0e8e0d690381d0208a4bf680d405",
+      "bytes": 21368
     },
     {
       "path": "application/figures/collection_review/bench_front.png",

@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-04",
+  "status": "passed_with_uncalibrated_model_scope",
+  "task_ids": [
+    "A06",
+    "A07"
+  ],
+  "physical_validation": false,
+  "application_integration_complete": false,
+  "numerical_checks": [
+    {
+      "check": "hydraulic_truth_numerical_supply_balance",
+      "result": "passed",
+      "detail": "3606 kind/time points; healthy references and severity independently recomputed"
+    },
+    {
+      "check": "existing_range_grid",
+      "result": "passed",
+      "detail": "24 rows independently solved, preserving the hardware-design parameters"
+    },
+    {
+      "check": "raw_draws_and_paired_replay",
+      "result": "passed",
+      "detail": "480 saved noise draws; all 960 rule records and 24 selected traces independently checked"
+    },
+    {
+      "check": "group_and_failure_accounting",
+      "result": "passed",
+      "detail": "48 groups, exclusive 20-trial outcomes, success-only medians and Wilson intervals"
+    },
+    {
+      "check": "non_identifiability_counterexample",
+      "result": "passed",
+      "detail": "all 80 paired leak/unknown-normal-load raw observations are exactly equal"
+    },
+    {
+      "check": "future_perturbation",
+      "result": "passed",
+      "detail": "future samples do not affect the independent causal replay or earlier events"
+    },
+    {
+      "check": "bounded_boxes_and_threshold_margins",
+      "result": "passed",
+      "detail": "288 targets; all 4608 healthy/fault box corners and 8 grouped summaries independently checked; per-target feature only"
+    },
+    {
+      "check": "timing_challenges",
+      "result": "passed",
+      "detail": "8 noiseless skew challenges independently replayed; not measured sensor response"
+    },
+    {
+      "check": "healthy_model_mismatch",
+      "result": "passed",
+      "detail": "16 method records independently solved/replayed; pressure exponents remain hypothetical"
+    },
+    {
+      "check": "historical_preservation",
+      "result": "passed",
+      "detail": "legacy reproduction record and its three source hashes checked; historical results not replaced"
+    }
+  ],
+  "figure_checks": [
+    {
+      "name": "range_and_measurement",
+      "text_count": 29,
+      "outside": [],
+      "overlaps": [],
+      "minimum_font_pt_at_425pt": 9.375,
+      "sha256": {
+        "svg": "f81c5db00975ea2845652de1d8e6aea9730d0e8e0d690381d0208a4bf680d405",
+        "png": "e5a19823221a5fa77cd2503868b34126a9ba5d3f7e8f4ff4a9d115916483d2a8"
+      }
+    },
+    {
+      "name": "early_reference_example",
+      "text_count": 34,
+      "outside": [],
+      "overlaps": [],
+      "minimum_font_pt_at_425pt": 9.375,
+      "sha256": {
+        "svg": "d122748316ede5dc31cb0cf24666f1f40803d57b1d66195001c853b0ebd8c163",
+        "png": "c62a3719c683a1f791e64beb9049b1b2f2d3358ee9419de725f280d89231259e"
+      }
+    },
+    {
+      "name": "noise_outcomes",
+      "text_count": 46,
+      "outside": [],
+      "overlaps": [],
+      "minimum_font_pt_at_425pt": 9.375,
+      "sha256": {
+        "svg": "59ae3ae6b647356b5d9f60e8303b758ad2ba5382e49a1619f1687488cbc94d9b",
+        "png": "005f53b1ca507aed57234617cb0cd94ceeb57f5f8dacd113e958165b023111a4"
+      }
+    },
+    {
+      "name": "failure_counterexamples",
+      "text_count": 34,
+      "outside": [],
+      "overlaps": [],
+      "minimum_font_pt_at_425pt": 9.375,
+      "sha256": {
+        "svg": "05a8aeafbd7c29ba3a2a9624c2bcf1fed8a22c7319738ff296392c923b2379f9",
+        "png": "4bacd869181649b8e8b6d8b68c3b3d320c3db72d12e6f8e6abb62508b184b88f"
+      }
+    },
+    {
+      "name": "bounded_error_margin",
+      "text_count": 29,
+      "outside": [],
+      "overlaps": [],
+      "minimum_font_pt_at_425pt": 9.375,
+      "sha256": {
+        "svg": "d1c69f7f0779d1ef4b261cbd598594cc033e6ef80a59b3f61af928c522ef6c2c",
+        "png": "cb0d513990dc35d3862b3a77e41cda9090886fa72f9ab0be17e3e3fc4ea2f686"
+      }
+    }
+  ],
+  "plotted_series_checked": 16,
+  "annotation_coordinates_checked": 4,
+  "manual_png_review": {
+    "all_five_pngs_viewed": true,
+    "independent_external_review": false,
+    "checks": [
+      "axes, units and population definitions",
+      "legend clear of data, titles and count labels",
+      "reference/detection point coordinates and leader endpoints",
+      "true numeric spacing on bounded-error x axis",
+      "caption and x-axis clearance; simulation identity"
+    ],
+    "repairs": [
+      "shared legends outside plotting areas",
+      "counts moved above confidence interval upper ends",
+      "counterexample legend removed from overlapping curves",
+      "bounded-error axis changed from equal-spaced ordinal positions to actual kPa positions",
+      "footer space increased"
+    ]
+  },
+  "limitations": [
+    "uncalibrated concentrated hydraulic model",
+    "20 paired random streams reused across scenario/sigma cells",
+    "Gaussian noise not sensor precision; pulses not dynamically simulated",
+    "static box checks only for target feature, not full classifier",
+    "unknown normal load observationally identical to leak",
+    "fixed thresholds not tuned at equal false-alarm rates",
+    "no measured LoRa, timing or power; two simulations not merged",
+    "Word/PDF/PPT integration pending"
+  ],
+  "original_artifacts_unchanged": [
+    {
+      "path": "application/figures/collection_review/bench_front.png",
+      "sha256": "c6fe5a5d8666cad14b1f85d7646db7f686902ee37d9833f037a33ee45b25bf54"
+    },
+    {
+      "path": "application/figures/collection_review/bench_isometric.png",
+      "sha256": "302ae4d180831f76c388854682d97506b5aac7894e8764667dc61b877d95a1c8"
+    },
+    {
+      "path": "application/figures/collection_review/bench_leak_detail.png",
+      "sha256": "9c20d212a8614ecdd3e2f5e9a79f62982e579519239e5504eb861bd32398519d"
+    },
+    {
+      "path": "application/figures/collection_review/bench_pressure_detail.png",
+      "sha256": "2b2a40fffc3db837f1e5554bfda8f7d5f71b550aead40b44e613d273957e97e6"
+    },
+    {
+      "path": "application/figures/collection_review/bench_top.png",
+      "sha256": "5d900c6724538edffb6ab93c511fb788d23696c560408838e3e54cb318b3bbd0"
+    },
+    {
+      "path": "application/figures/collection_review/collection_installation.png",
+      "sha256": "3b8e840316972ce6bd4bc8898377844d1b5c87f8f8eea02ab533174544a907bc"
+    },
+    {
+      "path": "application/figures/collection_review/collection_installation.svg",
+      "sha256": "ec0b8e7718a7c3ec499cba8901df8a91cff8103ffa1ed959816e769b159fd157"
+    },
+    {
+      "path": "application/figures/collection_review/collection_interfaces.png",
+      "sha256": "4722b690d0a64a83648a90f227be60dbd1c5e0ba24895d70be7c253b16a0eca4"
+    },
+    {
+      "path": "application/figures/collection_review/collection_interfaces.svg",
+      "sha256": "c10f6f898dfca2690c82ebd9d08fc8c4dd34cf924dd45549322a2663c47a9773"
+    },
+    {
+      "path": "application/figures/collection_review/collection_metering.png",
+      "sha256": "d518d8d19e3c24e84a826ef5573ec1719b54b2c909a7aac0cf2ca57d40709e6b"
+    },
+    {
+      "path": "application/figures/collection_review/collection_metering.svg",
+      "sha256": "2c11238824c9b144356d52ea8d881e8d6359b43951f72239a377fafda4f6f91e"
+    },
+    {
+      "path": "application/figures/collection_review/collection_overview.png",
+      "sha256": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b"
+    },
+    {
+      "path": "application/figures/collection_review/collection_overview.svg",
+      "sha256": "9d90408a4759524bae0c285918566ea5db4f3c01a7cf101404fdc1feeb53e6bf"
+    },
+    {
+      "path": "application/figures/collection_review/plate_provenance.json",
+      "sha256": "b7f1744aa94996d50217193930a5c5cdb8dcf22e5d3819a4d57e22d11c0de6bc"
+    },
+    {
+      "path": "application/models/bench_geometry_checks.json",
+      "sha256": "43297b710edb49d833d3595829fd3ff21f988788a76eed8abe571470e5a761f7"
+    },
+    {
+      "path": "application/models/bench_layout.glb",
+      "sha256": "2dff1b731ce74f26ad3fec7cef0e43e68a78611a444cfd0249de9bed18aafb58"
+    },
+    {
+      "path": "application/models/bench_layout.json",
+      "sha256": "a5674df4d74e939bbab251dd354f692c574bfa35873a1595e29f61d58ead6253"
+    },
+    {
+      "path": "application/models/bench_layout.mtl",
+      "sha256": "dcd31a8d29d06c50b1b5409322915e65ee4001563f7828d184e9cdc250b53f73"
+    },
+    {
+      "path": "application/models/bench_layout.obj",
+      "sha256": "a386acebcb81ca604104e57fbf8e465733a843862f43ecd4efd440e55b653eeb"
+    },
+    {
+      "path": "application/models/bench_layout.step",
+      "sha256": "86b85c357542b3bc6ea878c8189b457fb448066a975cc720d70d2ff322e26cc2"
+    },
+    {
+      "path": "application/models/bench_scene.json",
+      "sha256": "bf8d0bfe7b5ffad9adba4376d0adf8a9bd1000d9b5632aaa89930a9ad507b00e"
+    },
+    {
+      "path": "application/models/bench_views.json",
+      "sha256": "b8f5b946e46d5a25a16070f8dbbe003c83bb1d39d2589ae89f088eeb8209e396"
+    },
+    {
+      "path": "application/models/collection_review/bench_geometry_checks.json",
+      "sha256": "43297b710edb49d833d3595829fd3ff21f988788a76eed8abe571470e5a761f7"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.glb",
+      "sha256": "f9b353695afc1e62ab318726cad6debd11e92cd2f2b9c8d0429b963364fcac0b"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.json",
+      "sha256": "3f0137c9f9efbc341ddefb4185b5f021398802c5fac19949ee1cc80afc757c99"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.mtl",
+      "sha256": "dcd31a8d29d06c50b1b5409322915e65ee4001563f7828d184e9cdc250b53f73"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.obj",
+      "sha256": "0a28054a2f3d9673b53bfe71ba74985be85db22dd358171cb11fdf01200b0dca"
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.step",
+      "sha256": "81db6d8af3766dc7979c839ac730e690ce8b028d49f5107a4116a97b8f246a45"
+    },
+    {
+      "path": "application/models/collection_review/bench_scene.json",
+      "sha256": "4e7348de31fc52816b86d248ed4eb4bcd6287aa462710d1419622f4725445869"
+    },
+    {
+      "path": "application/models/collection_review/bench_views.json",
+      "sha256": "bdb09481cd3cb7680738dba38e5cb3f19c822f5cdf7257a5db4adb68e356f346"
+    },
+    {
+      "path": "application/models/collection_review/collection_feasibility.json",
+      "sha256": "5a7c6711f36994036fc80221292230fb25c222dba0b59a40bc3787965e781df0"
+    },
+    {
+      "path": "application/models/collection_review/collection_intersections.csv",
+      "sha256": "cf17c5e643f1014cbf7de28d578932a2880c42367173812bc4e13bbc73758f9c"
+    },
+    {
+      "path": "application/models/collection_review/plate_layout_checks.json",
+      "sha256": "aff0c0113f60dde60f9e056247d4adf03fd46874277aa6762e4a9b535f7d4a9a"
+    },
+    {
+      "path": "application/models/vendor/provenance.json",
+      "sha256": "a6c7049cc70962201f99feb18312142fac0ef901e7d445128b605a7d0b679bd0"
+    },
+    {
+      "path": "application/models/vendor/three.LICENSE",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "application/models/vendor/three.cjs",
+      "sha256": "2980c5831824f46d79a39a93feb70dd851538ce5b5480a6463883b319022c51f"
+    },
+    {
+      "path": "application/references.json",
+      "sha256": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb"
+    },
+    {
+      "path": "deliverables/index.html",
+      "sha256": "322fd8fa848285e13e968e43b7a8284bd04282975a7119696b5ef415013fbcd4"
+    },
+    {
+      "path": "deliverables/三维分项验收记录.json",
+      "sha256": "2c9f370b5d85cdb0a6c5712b6b3124249e065cd6f18551c8922ef7656a4aa81c"
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型.html",
+      "sha256": "801de70601a0eeb002da1a2e42031b9735c61adc368c0afd243931c3c67df83e"
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型_收集优化候选版.html",
+      "sha256": "7f00e535876147df07251315316c3730c1be638410d64185ec0a6bc3ee1089ec"
+    },
+    {
+      "path": "deliverables/大创申报书_模板填写稿.docx",
+      "sha256": "2bc9630d792c835e29651d70f049ee24a45c57d3ee8cb7e2c23c63189dc3c0f9"
+    },
+    {
+      "path": "deliverables/大创申报书_模板审阅版.pdf",
+      "sha256": "2a12aa6b42a51ee3bc39f5bd78a43a543a205b8a70f0991e627fb8d9ccdce2b0"
+    },
+    {
+      "path": "deliverables/研究与答辩资料.html",
+      "sha256": "c48e8e62b2ab11788401648193af702ab48a14d03052f215ca5ba798082506d8"
+    },
+    {
+      "path": "deliverables/立项答辩.pptx",
+      "sha256": "35ad135527ec234aab3ebe91bc33d1817c0855c5af8f1d454869e376e22bbc9f"
+    },
+    {
+      "path": "deliverables/立项答辩审阅版.pdf",
+      "sha256": "a41b4ee563efcb37648b9e75ad0ffe0e7fdab98b463fee6805fb9de3b795e3e9"
+    },
+    {
+      "path": "deliverables/项目书审阅版.pdf",
+      "sha256": "eed0522bc5557f42167407c7d18a2ee6584b765dfa319fe554f305a31a90312e"
+    },
+    {
+      "path": "docs/三维台架建模论证与本轮验收.md",
+      "sha256": "63e9237e2b3923a569039a211361360510c22c53c19425d6f2f3b5e7d22e0e0d"
+    },
+    {
+      "path": "simulation/diagnosis_feasibility.py",
+      "sha256": "e427fd9af502a0fe633a117fdce34befbff367c54540fa2e7514824496653656"
+    },
+    {
+      "path": "simulation/diagnosis_results/summary.json",
+      "sha256": "c987a6d513c7a9302f62ab444e78220c3e5ea95a3b8b69a3cdda4c5c855c0e49"
+    },
+    {
+      "path": "simulation/diagnosis_results/trials.csv",
+      "sha256": "7317491630d3a43c87a62e2ce8e8abd19e00da9c537fb012bb2f201e9e3d423d"
+    },
+    {
+      "path": "simulation/hardware_results/observability.csv",
+      "sha256": "85663bd58cd632acc3c28205b0cc62998d246bee00c92e48fb68eade56a8ac69"
+    },
+    {
+      "path": "simulation/hardware_results/range_grid.csv",
+      "sha256": "35d5f07302f4f0f35d8bb47673d4a32078fda9cafe4545a2f94a0eaada59e367"
+    },
+    {
+      "path": "simulation/hardware_results/summary.json",
+      "sha256": "0616fcc5338adf838d869e23973af72e00d78871dc1522dc5b9f754759d6810a"
+    }
+  ],
+  "source_sha256": {
+    "scripts/finalize_diagnosis_review.py": "95686a0dac172e8b77c745bd8e7baddf7ff47ebbd64d384e4d21340a810d2100",
+    "simulation/diagnosis_review/validation.json": "67acc626cce5d1f804eae543fea7ffa8c7887d716cb4b2aea057f4d98b0296f8",
+    "simulation/diagnosis_review/figure_layout_checks.json": "528998be6246d6795ea97627af77a8c9d6f8d066a80409a7fac131a0556f0746",
+    "simulation/diagnosis_review/source_checks.json": "8bf2de2973d2810aa9f55bda67ea4cace25143c9f6c77168ac697ede5d1bb851",
+    "application/figures/diagnosis_review/figure_provenance.json": "669460cee1dce6fff27917b9f93013e60501e391b87086445200328c7842d180",
+    "docs/仿真建模与诊断证据分项验收.md": "231bb7bedd5351b08826337e2cf04b5a80671b9941573f4e4d2b0780b79fc51c",
+    "docs/三阶段分项执行与验收标准.md": "0d869ee06fca97c8c1f447068e193b32fd5b312a41209afe328f47fe0cedc2f3"
+  }
+}

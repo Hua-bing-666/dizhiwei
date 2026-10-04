@@ -1,0 +1,9 @@
+kind,p1_delay_s,pressure_random_sigma_kpa,false_onsets,max_positive_r_excess,first_event_s,hypothetical_skew_not_measured_hardware
+normal_b_switch,0,0,0,0.0005809564444475557,,True
+normal_b_switch,0.1,0,0,0.014588751316016668,,True
+normal_b_switch,1,0,0,0.1438338300215909,,True
+normal_b_switch,5,0,1,0.6880303391212769,308,True
+normal_supply_step,0,0,0,0.008164115469125988,,True
+normal_supply_step,0.1,0,0,0.06448131029031912,,True
+normal_supply_step,1,0,0,0.6135055137884381,,True
+normal_supply_step,5,0,1,2.58521805510285,306,True

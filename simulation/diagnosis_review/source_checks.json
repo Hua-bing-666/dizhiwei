@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "classification": "primary_source_specification_and_method_checks_not_procurement_or_calibration",
+  "physical_data": false,
+  "sources": [
+    {
+      "title": "MPM489型压力变送器选型资料 V6.0 02/2025",
+      "url": "https://www.microsensor.cn/uploads/files/MPM489%E5%9E%8B%E5%8E%8B%E5%8A%9B%E5%8F%98%E9%80%81%E5%99%A8%E9%80%89%E5%9E%8B%E8%B5%84%E6%96%99.pdf",
+      "verification": "官方域名PDF的搜索解析选型表，第9页；本轮完整PDF打开超时，未完成全页视觉复核",
+      "supports": ["A1/A2/A3精度等级分别为±0.25/0.5/1%FS", "E为4—20mA，V5为11—28V供电"],
+      "limits": ["200kPa量程与A1组合需供应商确认", "通用型号不等于具体采购精度", "未取得报价、实物或检定记录"]
+    },
+    {
+      "title": "DFRobot Gravity Liquid Flow Sensor G1/4 SEN0549 Wiki",
+      "url": "https://wiki.dfrobot.com/sen0549/",
+      "verification": "官方页面规格表文本，范围、脉冲/升、供电和输出电平",
+      "supports": ["标称误差±1%，范围0.3—5L/min，但百分比基准未明确", "540脉冲/L", "5V供电时脉冲高电平>4.7V"],
+      "limits": ["读数1%与上限1%是两种分析假设", "计数步长为公式推导，并非实测准确度", "须核对实际安装、标定和控制器输入接口"]
+    },
+    {
+      "title": "TI ADS111x datasheet SBAS444E Rev.E December 2024",
+      "url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf",
+      "verification": "官方57页PDF文本，电气条件、PGA码宽和复用转换；本轮PDF截图工具报错，未将截图计为通过",
+      "supports": ["±4.096V量程名义码宽125μV", "PGA范围与输入供电轨限制分别处理", "增益失调和转换时序不能由名义码宽替代"],
+      "limits": ["±2.048V等表格测试条件不能无条件套到其他配置", "真实ADS1115模块和调理电路未经标定", "追加误差档位不能代替完整保证界限"]
+    },
+    {
+      "title": "丁法龙等，滴灌管主流道沿程压力分布模型及验证，农业工程学报2019，35(3):117—124",
+      "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/10.11975/j.issn.1002-6819.2019.03.015.pdf",
+      "verification": "期刊官方PDF搜索解析及此前期刊元数据核对；关注滴头C/流态指数、沿程压力与测压测流验证方法",
+      "supports": ["滴头特性和沿程泄流应考虑", "水力模型须通过测压测流校核"],
+      "limits": ["该文分布式模型不等同本项目集中平方律模型", "其图、实验数据和精度不作为本项目已有成果", "本轮未改变原申报参考文献编号"]
+    }
+  ]
+}
