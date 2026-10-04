@@ -1,63 +1,52 @@
-# 滴智卫 · DiZhiWei
+# 滴智卫 DiZhiWei
 
-申报题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
+项目题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
 
-2026年10月5日版本。根据老师建议、学校模板及两份案例，更新为四个工作包，完成学校模板填写稿、独立项目范围文件、答辩材料和离线交互网站。当前基础是文献、未标定模型与合成回放；尚无硬件、真实无线、功耗或田间实验。题目、工作数量和材料不能保证立项级别。
+2026年10月5日。当前交付为25页学校模板申报书格式优化稿、13页实施项目书和六模块离线运行网站。四工作包覆盖测量与建模、故障诊断边界、LoRa可靠告警、集成与独立评价。现有证据为未标定模型、概念几何、候选接口、主机检查和合成回放；没有硬件、射频、功耗或田间实测。
 
-## 最新材料
+## 最新入口
 
-- [学校模板申报书整合与分项验收](docs/学校模板申报书整合与分项验收.md)：24页学校原生稿、9图、4张可编辑表、17条文献；明确研究挑战、四工作包、独立实验、资源门槛和后续路线，逐页视觉检查通过。
+- [学校模板申报书格式优化稿](deliverables/大创申报书_格式优化稿.docx) / [原生审阅PDF](deliverables/大创申报书_格式优化审阅版.pdf)：25页、9图、4张可编辑表、17篇文献，中文11篇、英文6篇；原封面、正文结构及审批区域保留。
+- [实施项目书](deliverables/实施项目书.docx) / [原生审阅PDF](deliverables/实施项目书.pdf)：13页、9章、5图、6张可编辑表；四工作包、实验协议、资源、里程碑、返工与归档。为自主执行稿，正式任务书尚待取得并填写。
+- [全量复核与格式优化验收报告](docs/全量复核与格式优化验收报告.md) / [验收记录](deliverables/格式优化与实施项目书验收记录.json)：具体通过项、源与图像哈希、人工审阅和未完成项。
+- [运行平台](deliverables/index.html)：运行总览、支管监测、异常事件、设备与链路、历史记录、系统设置，共享合成回放与本地人工维护记录。
+- [独立研究与答辩资料](deliverables/研究与答辩资料.html)：文献、历史统计、材料和PPT，旧配置身份已提示；与运行页面分开。
+- [收集优化三维候选模型](deliverables/台架三维结构交互模型_收集优化候选版.html)：离线可旋转、查看；STEP/GLB与几何源在application/models/collection_review。暂定尺寸不用于加工下单。
+- [执行台账](docs/项目总规划与任务验收台账.md) / [三阶段分项标准](docs/三阶段分项执行与验收标准.md) / [本轮Q01—Q07计划](docs/全量复核与格式优化执行计划.md)。
+- [材料与证据包](deliverables/申报材料与证据包.zip) / [使用说明](deliverables/使用说明.md) / [证据哈希清单](deliverables/证据清单.json)。解压后保留目录，打开deliverables/index.html。
 
-- [网站佐证与申报图表验收](docs/网站佐证与申报图表分项验收.md) / [逐图呈现审阅页](deliverables/申报图文取舍与呈现审阅.html)：当前主站接入冻结带噪观测，19项流程检查通过；九张正文候选图和三张灰度检查图完成425pt复核，主要文字≥9.375pt。该选图记录属于A09/A10冻结版本；实际Word插入尺寸与检查以新的整合验收为准。
+## 系统与三阶段约束
 
-- [三阶段分项执行与验收标准](docs/三阶段分项执行与验收标准.md)：申报13项、实施7项、论文5项；A05与A06—A07通过所列内部检查，A04/A08接口部分通过，A09/A10网站与选图通过所列检查，A01/A03/A11已完成学校模板稿内部检查；下一包A12同步PPT，正式提交还须A13。
-- [硬件接口与LoRa通信论证分项验收](docs/硬件接口与LoRa通信论证分项验收.md)：候选接口/供电/17个引脚、三张同源图、44B事件/24B ACK及12组主机检查。保留AUX固件差异、FIFO等待61s反例和预算缺口；保护定值、采购、节点固件及实际接入未通过，已在新版申报稿区分设计、已有证据和待验证事项。
-- [三维台架建模论证及验收](docs/三维台架建模论证与本轮验收.md) / [收集优化候选交互模型](deliverables/台架三维结构交互模型_收集优化候选版.html)：修正容量和支架，新增4张同源论证图、局部干涉与离散取出路径检查。三维总图已进入新版申报稿；长时排水与实物验证待落实。
-- [先打开：支管运行平台](deliverables/index.html)：运行总览、支管监测、异常事件、设备与链路、历史记录、系统设置，共享合成回放和本地维护记录。
-- [项目总规划与任务验收台账](docs/项目总规划与任务验收台账.md)：各模块做什么、三阶段目标、当前状态、工作顺序、依赖与通过条件。后续工作以此作为统一入口。
-- [独立研究与答辩资料](deliverables/研究与答辩资料.html)：文献、模型统计、通信对照、三阶段材料、PPT与讲稿；与运行网站分开。下载完整仓库后用浏览器打开，保留目录结构。
-- [学校模板填写稿 Word](deliverables/大创申报书_模板填写稿.docx) / [原生审阅 PDF](deliverables/大创申报书_模板审阅版.pdf)：24页，原封面、九节正文、9幅图、4张可编辑数据表、17条完整参考文献及审批栏；图文按系统、测量、诊断、通信和验证展开；包括三维布局、电气原理、统计图与网站局部截图，仅保留1张核心诊断流程；补充核查、处置、复测和后续研究路线。
-- [项目范围与执行 PDF](deliverables/项目书审阅版.pdf) / [可编辑三阶段方案](docs/项目范围与三阶段执行方案.md)：6页历史范围草案；最新精细任务、数值和经费以此次学校模板稿为准。
-- [可编辑答辩 PPTX](deliverables/立项答辩.pptx) / [原生审阅 PDF](deliverables/立项答辩审阅版.pdf)：视觉修订草案，12页主讲、3页备用，附15页讲稿；最新硬件及预算尚待同步，后续再完成。
-- [国内硬件选型与淘宝入口](docs/国内硬件选型与可行性核对.md) / [国家级案例写法拆解](docs/国家级案例写法拆解与申报书改写.md)。
-- [案例对照与老师建议分析](docs/案例对照与老师建议分析.md) / [申报九节正文源稿](application/正式模板正文.md)。
-- [打包材料与源文件](deliverables/申报材料与证据包.zip) / [使用说明](deliverables/使用说明.md)。
-- [交付检查及范围](deliverables/交付检查.json) / [证据哈希清单](deliverables/证据清单.json)。
-- [本轮网站与总体规划验收报告](docs/本轮网站与总体规划验收报告.md)：实际通过项、仍未验证的实物任务及下一步顺序。
+拟实施期2027年3月至2028年2月。基础为一个P0/P1/Q双压力流量节点、一个E220接收字节桥、现有PC上的SQLite及本地Web、双支路清水台架。A测量与故障注入，B只作正常共享水源扰动。定位只到监测支管/区段，节流不证明真实滴头堵塞；自动阀控、多节点、太阳能和云端需新资源与验收。
 
-- [参考文献核验与正文对应](docs/参考文献核验与正文对应.md)：17篇期刊论文，中文11篇（64.7%）、英文6篇；原英文全部保留，正文逐项引用。
+约2000元是借用连续水源及参考仪器条件下的启动估算，不是已获经费或报价。真实团队开发能力、导师、场地、借用和压力传感器规格仍待落实。20秒泄漏取样先要求实测安全液位有效容量≥440mL；长时实验另设排水。电气保护定值与实际器件规格确认后才进入上电。
 
-[台架三维交互模型](deliverables/台架三维结构交互模型.html) · [STEP实体](application/models/bench_layout.step) · [彩色GLB](application/models/bench_layout.glb) · [建模取舍与边界](docs/三维结构模型优化说明.md)
+申报负责论证任务和条件；实施负责真实系统和独立实验；论文从实测提炼一项充分贡献。主线为跨供压、跨负载的辨识边界，通信取舍为备选。省级第一完成人4分加符合条件6分论文可按用户今年截图达10分，但未来年度政策、认可成果及截止须确认，不能保证立项级别、发表或加分。
 
-[本轮图示取舍与论文依据](docs/论文图示借鉴与本轮结构调整.md) · [三维布置OBJ](application/models/bench_layout.obj) · [本轮验收记录](docs/本轮申报书验收记录.md)
+## 模型与来源
 
-## 当前范围
+当前诊断版本20261004-A06A07-v1，480个合成试次、960条配对方法结果、288个有界误差组合；20个基础序列复用，不是480次独立实测。高压力噪声劣势、未知健康负载同形、漂移与负载模型失配均保留，见[诊断证据](docs/仿真建模与诊断证据分项验收.md)及[可复现说明](simulation/diagnosis_review/README.md)。
 
-实施期2027年3月至2028年2月。必做配置为一个P0/P1/Q双压力流量节点、一个LoRa接收端、一套可重复双支路清水台架及本地Web管理软件。约2000元以借用参考仪器及可调连续水源为前提，两压力传感器待询价，是启动额度估计，未获得报价或资助；团队、导师支持、场地与仪器仍待落实。
+通信1920条历史回放与12项主机协议检查不等于实际射频或整机能耗。199个有效CAD实体、局部交集与离散姿态不等于全装配或制造验收。新增理想脉冲相位分析20,000组不等于流量计实测，见simulation/quality_review/sampling_checks.json。
 
-四个工作包分别为测量与建模、渐进故障诊断与边界、LoRa可靠告警、系统集成与分层验证。主要研究下游等效泄漏与支管等效受限，评价供压、切换、漂移及未知负载下的误报、漏检和早期提前量。位置只到所监测支管/区段；节流不证明真实滴头堵塞。自动阀控、多节点、太阳能和云端按资源扩展。
+[硬件接口及LoRa论证](docs/硬件接口与LoRa通信论证分项验收.md)、[国内硬件与淘宝入口](docs/国内硬件选型与可行性核对.md)、[参考文献核验](docs/参考文献核验与正文对应.md)、[学校来源记录](application/school_templates/provenance.json)。候选配图不是本项目实物，淘宝入口不保证现货或价格。
 
-论文优先提炼测点与工况信息对渐进故障辨识的作用，可靠通信为备选。需要独立实测、强基线和消融；增加测点或采用LoRa本身不构成创新。参考今年截图，省级第一完成人4分加符合条件的6分论文可达10分；未来规则、认定和成果时间需学院核实，不能保证取得分数。
-
-## 模型与可复现证据
-
-- [当前台架参数的A06—A07证据与验收](docs/仿真建模与诊断证据分项验收.md)：统一参数后的480个场景/噪声试次、960条配对结果、288个有界误差工况和五张论证图；如实保留高压力噪声劣势、未知负载、漂移、错位与负载模型失配。仅为未标定模型证据，已用于运行网站合成回放，已整合新版申报书，合成数据仍非实测。数据字典和复现顺序见[本项说明](simulation/diagnosis_review/README.md)。
-- [双压力诊断协议](simulation/DIAGNOSIS.md)：6场景×4噪声×20种子，共480次合成试验。压力漂移会误报，未知正常负载与等效泄漏可具有相同观测。15%健康流量偏离只是演示失效参照。
-- [公平通信回放协议](simulation/COMMUNICATION.md)：8场景×3丢包条件×20种子×4策略，共1920次回放；四策略同检测、滤波载荷与告警确认，发送帧不等于整机能量。
-- [历史单压力模型审查](docs/对抗性检验报告.md)：反例与960条方法结果，属于旧配置基础。
-
-诊断与通信模型尚未合并成经验证的端到端系统。重复种子主要改变假定噪声与通道，不代表独立物理实验。当前诊断候选的20个基础序列还在不同场景/σ间复用，不能将480记录当作480独立样本。历史方向文件已标记，当前设备、任务、预算以最新范围文件为准。
+官方2026立项及验收要求只作为历史参考。任务书下载返回验证码网页，未取得实际官方DOC；自主实施稿未声称套入官方表。2027规定、正式身份、编号、意见及签字待本人、导师和学院办理。外部案例原件与个人信息未纳入仓库，级别来自用户说明。
 
 ## 修改与复现
 
-申报文字源为 `application/正式模板正文.md`，学校原模板为根目录DOC。先运行 `scripts/prepare_application_payload.py`，再在PowerShell 7运行 `./scripts/fill_application_template.ps1`，使用本机WPS原生填写和导出到 `tmp/application_integration/candidate`。文档工具使用捆绑Python（`C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`）；用捆绑Poppler渲染原生PDF后，运行 `scripts/verify_application_integration.py --render-dir tmp/application_integration/render-accepted`，逐页查看并记录对应文件哈希，再运行 `scripts/finalize_application_integration.py` 发布内部审阅稿。一次性改写、旧分项finalize与旧qa脚本不作为当前发布入口，不重复运行覆盖新版。真实行政资料、意见与签字需要本人及导师补齐。
+当前文字源是application/正式模板正文.md与application/实施项目书.md；发布时冻结到application/quality_release。运行文档工具使用捆绑Python：C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe，浏览器工具使用同目录Node与本机Edge。PDF采用WPS原生导出和捆绑PDFium逐页渲染；每次正文或图片改变都必须重新检查实际版面。
 
-诊断复跑：`python simulation/diagnosis_feasibility.py`；验证：`python scripts/validate_diagnosis_evidence.py`。通信复跑：`python simulation/communication_feasibility.py`；协议及图表验证：`python scripts/validate_new_evidence.py`。参考文献检查：`python scripts/validate_application_references.py`。网站重建：`python scripts/build_portal.py`；交付检查：`python scripts/qa_deliverables.py`。
+申报生成：scripts/prepare_quality_payload.py → PowerShell7运行scripts/fill_quality_application.ps1 → scripts/render_quality_documents.py渲染候选PDF → scripts/verify_quality_application.py --render-dir tmp/quality_application/render-final → 人工逐页查看。原模板必须保留，不能直接修改被冻结版式记录。
 
-诊断数据复跑后，应再运行 `scripts/redesign_document_figures.py` 恢复申报版图形；设计图运行 `scripts/build_application_visuals.py`，硬件核对运行 `simulation/hardware_design_check.py`。PPT新图形源为 `scripts/author_visual_redesign.py`。`rewrite_application_argument.py`、`redesign_visual_plan.py`及`redesign_portal_surface.py`是一次性迁移脚本，不重复覆盖当前材料。
+实施书生成：scripts/build_execution_book.py → PowerShell7运行scripts/export_quality_book.ps1 → scripts/render_quality_documents.py将PDF渲染至tmp/quality_book/render-v4 → scripts/verify_execution_book.py → 人工逐页查看。该校验记录当前已查看的前12页哈希；修改正文后应建立新一轮审阅及记录，不能沿用旧的人工通过状态。
 
-图形/PDF脚本依赖NumPy、Matplotlib、ReportLab、PyMuPDF、Pillow；浏览器检查使用Edge，原生审阅导出使用本机WPS。PPT可编辑源码保存在 `projects/drip-research_ppt169_20261002`，生产工作流依赖本机ppt-master技能。`prepare_materials.py`和两个`revise_*.py`是历史/一次性迁移脚本，不要重复运行来覆盖当前内容。
+本轮模型只读复核：CAD Python环境tmp/cad_runtime运行scripts/quality_recheck.py --cad。图生成scripts/build_quality_figures.py，浏览器图核查scripts/verify_quality_visuals.mjs；网站重建scripts/build_portal.py，运行scripts/verify_quality_site.mjs与scripts/capture_quality_panel.mjs。三维页面运行scripts/build_bench_viewer.py --collection-review，核查scripts/verify_quality_model_viewer.mjs。新文档未发布时可用build_portal.py --pages-only先重建网站；完整清单在发布后刷新。图或网站截图改变后，需要重新生成和检查含该图的文档。
 
-外部案例原件和个人信息未纳入仓库；案例立项级别来自用户说明。材料尚未提交或批准。
+发布前检查scripts/verify_quality_release.py；刷新入口scripts/update_quality_release_content.py，冻结和发布scripts/finalize_quality_release.py要求已经存在的人工审阅记录与机器检查一致，不能代替新人工审阅。重建网站及证据清单后运行scripts/package_submission.py核对压缩包。旧分项finalize、旧qa及一次性迁移脚本保留作历史复现，不作为本轮发布入口。
 
-[系统定位与后续研究路线](docs/系统定位与后续研究路线.md) · [UI重设计与来源](docs/UI重设计与来源记录.md) · [网站功能与验收说明](docs/网站功能与验收说明.md) · [当前运行平台与选图检查](deliverables/网站与图文分项验收记录.json) · [研究资料和三维检查](deliverables/研究资料界面验收记录.json)。维护演示可本地保存及导出，均非实物记录。`refine_system_ui.py`为一次性迁移脚本，不重复运行；重建两网站运行`python scripts/build_portal.py`，当前主站复核运行`node scripts/verify_presentation_site.mjs`，研究资料和三维复核运行`node scripts/verify_research_ui.mjs`。本轮更新学校申报Word/PDF、规划及对应检查；PPT仍待下一包同步。
+## 历史材料
+
+[24页原学校模板稿](deliverables/大创申报书_模板填写稿.docx)及[整合验收](docs/学校模板申报书整合与分项验收.md)是本轮基线，保留原哈希。[6页旧范围草案](deliverables/项目书审阅版.pdf)不替代当前实施书。[15页答辩PPT](deliverables/立项答辩.pptx)及原PDF为历史草案，硬件、预算和最新截图待内容稳定后单独同步；本轮未改PPT。
+
+主站30组页面/视口、24回放、20交互及3实际导出通过所列检查。网站没有接入真实串口、SQLite服务、设备权限或RF；localStorage仅用于当前演示。文件移动、换浏览器或清除站点数据可能丢失记录，演示记录需导出。材料尚未提交或批准。

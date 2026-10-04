@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-05",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "source": "application/figures/presentation_review/system_responsibilities.svg",
+      "source_sha256": "0beed22e112214c7dd217bbbb16623345d590edc3c3d02a16771433ce431646f",
+      "svg": "application/figures/quality_review/system_responsibilities.svg",
+      "svg_sha256": "5f28ef7ecf03af2c93676c4304eea5996ee71b8be297916f9971840f47b865e6",
+      "width": 1000.0,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "water_layout",
+      "source": "application/figures/presentation_review/water_layout.svg",
+      "source_sha256": "7a171684ae82a78f0e65ddb671a2f3407731ea01e74414ddcaf1c0e1f9471707",
+      "svg": "application/figures/quality_review/water_layout.svg",
+      "svg_sha256": "18f9e86d4bf1ddfebfe79bc41ec9e3108e00d74937625dc01e3f95a3cdc8aad0",
+      "width": 1000.0,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "collection_overview",
+      "source": "application/figures/collection_review/collection_overview.svg",
+      "source_sha256": "9d90408a4759524bae0c285918566ea5db4f3c01a7cf101404fdc1feeb53e6bf",
+      "svg": "application/figures/quality_review/collection_overview.svg",
+      "svg_sha256": "8658cce041078eb78140ad0d23c716d8c1d86d4c95accaeb5407b76ee89dc053",
+      "width": 1000.0,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "measurement_interfaces",
+      "source": "application/figures/interface_review/measurement_interfaces.svg",
+      "source_sha256": "16be4ba7866efbf57b76794456424a59063b35476a965605d0954de9e2941bb0",
+      "svg": "application/figures/quality_review/measurement_interfaces.svg",
+      "svg_sha256": "1b893ec3d3769b81f6bccd0f654ddc1b60a1c736791c1bdd2a3ab7da9c01a861",
+      "width": 1000.0,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "diagnosis_proposal",
+      "source": "application/figures/presentation_review/diagnosis_proposal.svg",
+      "source_sha256": "ef2b40c9d9fc9487c616506300f7950bda6994b2969c258689e0359c1e16117a",
+      "svg": "application/figures/quality_review/diagnosis_proposal.svg",
+      "svg_sha256": "f18686952781a2262e0867a8be2901e49c0da941a0606cc07cda885e8ce34a6c",
+      "width": 1000.0,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "durable_event_sequence",
+      "source": "application/figures/interface_review/durable_event_sequence.svg",
+      "source_sha256": "ee0ca588b849d959d402f609064b81e5801331e7d1327ee5baab38958760bd00",
+      "svg": "application/figures/quality_review/durable_event_sequence.svg",
+      "svg_sha256": "f0bb74ed968d3363ba1c6a45559f170b5684c7f5d16e035c065f27e2352ed28b",
+      "width": 1000.0,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "noise_outcomes_print",
+      "source": "application/figures/presentation_review/noise_outcomes_print.svg",
+      "source_sha256": "b1aa5547f333f73fd18c5948a3d78dd18b83190503fb9520009e17861ca59cc7",
+      "svg": "application/figures/quality_review/noise_outcomes_print.svg",
+      "svg_sha256": "5583b55fb5183c712972a4d8757afb337d51885b0af19e8e469f73481e9642cf",
+      "width": 612.0,
+      "major_font_lower_bound_pt_at_420pt": 9.607843137254902,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "failure_counterexamples",
+      "source": "application/figures/diagnosis_review/failure_counterexamples.svg",
+      "source_sha256": "05a8aeafbd7c29ba3a2a9624c2bcf1fed8a22c7319738ff296392c923b2379f9",
+      "svg": "application/figures/quality_review/failure_counterexamples.svg",
+      "svg_sha256": "1b0354a2b57c666bf661b91afa7380b69d2d825b0ae97426226fc77b6a36361d",
+      "width": 612.0,
+      "major_font_lower_bound_pt_at_420pt": 9.607843137254902,
+      "data_modified": false,
+      "geometry_modified": false
+    },
+    {
+      "name": "sampling_window_tradeoff",
+      "source": "simulation/quality_review/sampling_checks.json",
+      "source_sha256": "dd3a8ee53b44d46857d7edaf5df29290366402824073c2511ca2995a10c1a406",
+      "svg": "application/figures/quality_review/sampling_window_tradeoff.svg",
+      "svg_sha256": "90af33562d9f57d080bef1abc5b555691d1f18c0b2cbb7b6a8103910c0e6d6a0",
+      "width": 1000,
+      "major_font_lower_bound_pt_at_420pt": 10.08,
+      "data_modified": false,
+      "geometry_modified": false
+    }
+  ]
+}

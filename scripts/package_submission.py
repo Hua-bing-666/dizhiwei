@@ -14,7 +14,7 @@ for base in ['application','docs','simulation','scripts','deliverables','design-
     selected.extend(p for p in (ROOT/base).rglob('*') if p.is_file()
                     and '__pycache__' not in p.parts and p!=target
                     and p.suffix not in ['.pyc','.log'] and p.name!='.env' and not p.name.startswith('~$'))
-selected += [ROOT/'README.md',ROOT/'附件1：塔里木大学大学生创新训练项目申报书.doc']
+selected += [ROOT/'README.md',ROOT/'.gitattributes',ROOT/'附件1：塔里木大学大学生创新训练项目申报书.doc']
 selected += list((ROOT/'projects/drip-research_ppt169_20261002').glob('*.md'))
 staging=ROOT/'tmp'/('submission-package-'+uuid.uuid4().hex+'.zip')
 staging.parent.mkdir(exist_ok=True)

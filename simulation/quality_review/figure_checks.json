@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-05",
+  "status": "programmatic_bounds_checked_visual_review_pending",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "width": 1000,
+      "height": 690,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 690
+      },
+      "textCount": 33,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "cff97b343170759328495174ca06f0400c0010b0acbae71863ec45f21e4208d8",
+      "svg_sha256": "5f28ef7ecf03af2c93676c4304eea5996ee71b8be297916f9971840f47b865e6"
+    },
+    {
+      "name": "water_layout",
+      "width": 1000,
+      "height": 650,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 650
+      },
+      "textCount": 15,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "fe86f290ea9930b51e145edcbcb9a054d966a8502dc3f8230840d439c4af5e6c",
+      "svg_sha256": "18f9e86d4bf1ddfebfe79bc41ec9e3108e00d74937625dc01e3f95a3cdc8aad0"
+    },
+    {
+      "name": "collection_overview",
+      "width": 1000,
+      "height": 902,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 902
+      },
+      "textCount": 20,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "b89b95c427708c9025604bb160387adebf28af844cb022ac48e50e2bdcb518b0",
+      "svg_sha256": "8658cce041078eb78140ad0d23c716d8c1d86d4c95accaeb5407b76ee89dc053"
+    },
+    {
+      "name": "measurement_interfaces",
+      "width": 1000,
+      "height": 930,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 930
+      },
+      "textCount": 34,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "607e92d9f1a61b8925ccca19ab4cfdc618e2c94951609398bcce456091ec4638",
+      "svg_sha256": "1b893ec3d3769b81f6bccd0f654ddc1b60a1c736791c1bdd2a3ab7da9c01a861"
+    },
+    {
+      "name": "diagnosis_proposal",
+      "width": 1000,
+      "height": 850,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 850
+      },
+      "textCount": 21,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "11bb2165580ddfb6dfbdbb81a578e0dc9c62a80ae9d2cf1682524f25be736ecd",
+      "svg_sha256": "f18686952781a2262e0867a8be2901e49c0da941a0606cc07cda885e8ce34a6c"
+    },
+    {
+      "name": "durable_event_sequence",
+      "width": 1000,
+      "height": 930,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 930
+      },
+      "textCount": 18,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "fa6a168611eedd246aa53af8be889f711510e0bbb79ed2baa9a67255de6d253e",
+      "svg_sha256": "f0bb74ed968d3363ba1c6a45559f170b5684c7f5d16e035c065f27e2352ed28b"
+    },
+    {
+      "name": "noise_outcomes_print",
+      "width": 612,
+      "height": 590.4000244140625,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 964.703125
+      },
+      "textCount": 46,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "png_sha256": "543925384cf0c535f8c6836641ae3228e9ba4ac0a29ed252b0e1bf6ad86799c8",
+      "svg_sha256": "5583b55fb5183c712972a4d8757afb337d51885b0af19e8e469f73481e9642cf"
+    },
+    {
+      "name": "failure_counterexamples",
+      "width": 612,
+      "height": 590.4000244140625,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 964.703125
+      },
+      "textCount": 34,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "png_sha256": "511dfed33e54b09132bbb5b5ab19e9d9590c09790715cb55fcc2b8128b5b4f25",
+      "svg_sha256": "1b0354a2b57c666bf661b91afa7380b69d2d825b0ae97426226fc77b6a36361d"
+    },
+    {
+      "name": "sampling_window_tradeoff",
+      "width": 1000,
+      "height": 690,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 690
+      },
+      "textCount": 28,
+      "minFontPt": 9.66,
+      "outside": [],
+      "png_sha256": "3144c30fb2159df495b181dc337dfe800613ca9708ce489e07dc05f609f2f241",
+      "svg_sha256": "90af33562d9f57d080bef1abc5b555691d1f18c0b2cbb7b6a8103910c0e6d6a0"
+    }
+  ]
+}

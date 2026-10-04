@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_release_consistency_checks",
+  "physical_validation": false,
+  "official_taskbook_template_obtained": false,
+  "published_hash_checks": 21,
+  "historical_files_unchanged": 122,
+  "local_links": [
+    {
+      "path": "deliverables/index.html",
+      "existing_local_links": 5
+    },
+    {
+      "path": "deliverables/研究与答辩资料.html",
+      "existing_local_links": 82
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型_收集优化候选版.html",
+      "existing_local_links": 9
+    }
+  ],
+  "native_document_pages": 38,
+  "current_concept_model_views_and_widths_checked": 20,
+  "source_sha256": "bcc448eb203fecdde4b82dce536d1471ff194df5a9ab82d6e632b2a248beef5b",
+  "package_verification": "Run package_submission.py then this checker --bundle; checks archive entries against embedded evidence manifest without modifying the archive."
+}

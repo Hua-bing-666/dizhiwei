@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-05",
+  "classification": "actual_offline_webgl_concept_viewer_not_manufacturing_validation",
+  "physical_validation": false,
+  "views": [
+    {
+      "width": 375,
+      "view": "iso",
+      "state": {
+        "current": "iso",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 375,
+      "view": "top",
+      "state": {
+        "current": "top",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 375,
+      "view": "front",
+      "state": {
+        "current": "front",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": [
+        [
+          "2",
+          "6"
+        ]
+      ]
+    },
+    {
+      "width": 375,
+      "view": "pressure",
+      "state": {
+        "current": "pressure",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 3,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 375,
+      "view": "leak",
+      "state": {
+        "current": "leak",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 3,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 768,
+      "view": "iso",
+      "state": {
+        "current": "iso",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 768,
+      "view": "top",
+      "state": {
+        "current": "top",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 768,
+      "view": "front",
+      "state": {
+        "current": "front",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 768,
+      "view": "pressure",
+      "state": {
+        "current": "pressure",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 2,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 768,
+      "view": "leak",
+      "state": {
+        "current": "leak",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 1,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1024,
+      "view": "iso",
+      "state": {
+        "current": "iso",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1024,
+      "view": "top",
+      "state": {
+        "current": "top",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1024,
+      "view": "front",
+      "state": {
+        "current": "front",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1024,
+      "view": "pressure",
+      "state": {
+        "current": "pressure",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 2,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1024,
+      "view": "leak",
+      "state": {
+        "current": "leak",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 2,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1440,
+      "view": "iso",
+      "state": {
+        "current": "iso",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1440,
+      "view": "top",
+      "state": {
+        "current": "top",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1440,
+      "view": "front",
+      "state": {
+        "current": "front",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 8,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1440,
+      "view": "pressure",
+      "state": {
+        "current": "pressure",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 2,
+      "outside": [],
+      "overlap": []
+    },
+    {
+      "width": 1440,
+      "view": "leak",
+      "state": {
+        "current": "leak",
+        "showLabels": true,
+        "showCables": false,
+        "lidOpen": false,
+        "meshCount": 199
+      },
+      "label_count": 1,
+      "outside": [],
+      "overlap": []
+    }
+  ],
+  "controls": [
+    "five_view_state_changes",
+    "cable_visibility",
+    "lid_open_close",
+    "label_visibility",
+    "zoom_rotate_buttons",
+    "keyboard_actions",
+    "reset"
+  ],
+  "console_errors": [],
+  "external_requests": [],
+  "screenshots": [
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-iso.png",
+      "sha256": "312945d246fa8fa674074305d24e675e97d7f8d6b19a40aa85275010a198743f"
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-pressure.png",
+      "sha256": "646c5bbf07e4d8850e1daaa02a25e9e9729c345f69fc6b53aecce999fb50276b"
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-leak.png",
+      "sha256": "3a036ecf84d80091c31a28dfe8b98e4ed3c564c66ecb287999ab558b176ca294"
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-iso.png",
+      "sha256": "7ea6e89f6facd42207f31aea90b0388ea3201217858937c5d9bb213495a77ae2"
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-pressure.png",
+      "sha256": "b8a1d9abd4e2f3829b9af47837204e5ad5fb667f7b89b4e7a50e16b5fbb9720c"
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-leak.png",
+      "sha256": "d995879d538285817ab904930a5d1c797532f18c5b55d7c7d0a95081f23b9c46"
+    }
+  ],
+  "status": "needs_visual_layout_repair",
+  "source_sha256": {
+    "deliverables/台架三维结构交互模型_收集优化候选版.html": "7f00e535876147df07251315316c3730c1be638410d64185ec0a6bc3ee1089ec",
+    "scripts/verify_quality_model_viewer.mjs": "e553b26bdcc19d00d0bf8f2145ee51d9b43269d8920686d679deb4d7cccd93cd"
+  }
+}

@@ -6,6 +6,8 @@
 *.py text eol=lf
 *.ps1 text eol=lf
 *.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
 *.svg text eol=lf
 *.json text eol=lf
 *.csv text eol=lf
@@ -19,3 +21,7 @@
 # Preserve indentation in the unmodified upstream renderer and its HTML bundle.
 application/models/vendor/three.cjs whitespace=-space-before-tab
 deliverables/台架三维结构交互模型.html whitespace=-space-before-tab
+# Keep byte-exact native WPS metadata and its matching fill payload.
+application/quality_release/application_native_layout.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+application/quality_release/book_native_layout.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+application/quality_release/application_payload.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,43 @@
+{
+  "retrieval_date": "2026-10-05",
+  "official_sources_only": true,
+  "use": "Historical school template; 2027 batch and awarded project identities remain pending",
+  "notices": [
+    {
+      "year": 2026,
+      "url": "https://jwc.taru.edu.cn/info/1052/4416.htm",
+      "status": "fetched",
+      "content_type": "text/html",
+      "attachments": [
+        {
+          "title": "附件2：塔里木大学大学生创新创业训练项目任务书.doc",
+          "url": "https://jwc.taru.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1699710201&wbfileid=17657785",
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://jwc.taru.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1699710201&wbfileid=17657785",
+          "sha256": "3a20bdec64b702180399f919e9df1df04be50704c99f217350d7547f791c5b78",
+          "status": "not_document",
+          "response_bytes": 3805
+        }
+      ],
+      "sha256": "6fba6748f274c275d035e50b61e68095aaeb41a0be67317b904eb12d6e4f95a4"
+    },
+    {
+      "year": 2025,
+      "url": "https://jwc.taru.edu.cn/info/1052/3886.htm",
+      "status": "fetched",
+      "content_type": "text/html",
+      "attachments": [
+        {
+          "title": "附件2：塔里木大学大学生创新创业训练项目任务书.doc",
+          "url": "https://jwc.taru.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1699710201&wbfileid=12022076",
+          "content_type": "text/html;charset=UTF-8",
+          "final_url": "https://jwc.taru.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1699710201&wbfileid=12022076",
+          "sha256": "ccbe1f9e39a4d0805c9632a2d399e22d54717a8017458dfd8262370c774e1679",
+          "status": "not_document",
+          "response_bytes": 3805
+        }
+      ],
+      "sha256": "4be2e0c47d48b0415facd4a450eef1fb2f8af6806a0108e6e3161f1728f5b248"
+    }
+  ]
+}

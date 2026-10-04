@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_internal_material_and_scoped_software_review",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "official_taskbook_template_obtained": false,
+  "baseline_commit": "d8b22f0cbb0c1d795e57b087864ffbd5fa4609f4",
+  "documents": {
+    "application_pages": 25,
+    "execution_book_pages": 13,
+    "total_individually_reviewed_pages": 38
+  },
+  "artifacts_and_frozen_inputs": [
+    {
+      "origin": "tmp/quality_application/candidate/大创申报书_模板填写稿.docx",
+      "path": "deliverables/大创申报书_格式优化稿.docx",
+      "sha256": "f8507ec81cfcd097486eedd3e0d58d876f977a3732a9f5e5d75ec2792e60f758",
+      "bytes": 3099233
+    },
+    {
+      "origin": "tmp/quality_application/candidate/大创申报书_模板审阅版.pdf",
+      "path": "deliverables/大创申报书_格式优化审阅版.pdf",
+      "sha256": "4f5a5c41b0247cadb96c538e6496797440bdd1497df0d3bd90360ee13876a13c",
+      "bytes": 2833096
+    },
+    {
+      "origin": "tmp/quality_book/实施项目书.docx",
+      "path": "deliverables/实施项目书.docx",
+      "sha256": "de301d24e483ce984f448170428e16795469977a7f9ee85f93ffa1a2c2b52335",
+      "bytes": 1120308
+    },
+    {
+      "origin": "tmp/quality_book/实施项目书.pdf",
+      "path": "deliverables/实施项目书.pdf",
+      "sha256": "dc677dad6ca23b0ac6a5603ba8d049101c145b6752e1204271b4c111dc11f49e",
+      "bytes": 1353075
+    },
+    {
+      "origin": "tmp/quality_application/application_payload.json",
+      "path": "application/quality_release/application_payload.json",
+      "sha256": "11ca4cad5f610f52da07f69220122347384b06061463f88999ac3da4acea97ae",
+      "bytes": 43815
+    },
+    {
+      "origin": "tmp/quality_application/candidate/native_layout.json",
+      "path": "application/quality_release/application_native_layout.json",
+      "sha256": "bfc44d19e26275806800e5825c3c666076a6d4ee3c5072112d64b8d57b513981",
+      "bytes": 2208
+    },
+    {
+      "origin": "tmp/quality_book/native_layout.json",
+      "path": "application/quality_release/book_native_layout.json",
+      "sha256": "56562582b1e13fd4f3375a51705fc842b5d4a58ad046f4dc75d4228ea14b63c4",
+      "bytes": 53590
+    },
+    {
+      "origin": "tmp/quality_book/layout_contract.json",
+      "path": "application/quality_release/book_layout_contract.json",
+      "sha256": "73e76a6a7c05b91b7cc1776bdaecc7df63a589ec5ff4c691ff1acb5872aa24e4",
+      "bytes": 2631
+    },
+    {
+      "origin": "application/正式模板正文.md",
+      "path": "application/quality_release/申报书正文冻结稿.md",
+      "sha256": "dfb68bfa70597902e5db119c1e56abbb72de8ce33603a7c5cfc21063ca3b65dc",
+      "bytes": 38238
+    },
+    {
+      "origin": "application/实施项目书.md",
+      "path": "application/quality_release/实施项目书正文冻结稿.md",
+      "sha256": "7741ea0925e31012225d17b42937db6e142102861965e73ee992c5fb3dd6ec0f",
+      "bytes": 26031
+    }
+  ],
+  "receipts": [
+    {
+      "path": "simulation/quality_review/recheck_cad.json",
+      "sha256": "2b3b68286171b2c6d48d9cd48aa5928e3a2c8fea721dd55bd1160319b6ce607f"
+    },
+    {
+      "path": "simulation/quality_review/sampling_checks.json",
+      "sha256": "dd3a8ee53b44d46857d7edaf5df29290366402824073c2511ca2995a10c1a406"
+    },
+    {
+      "path": "simulation/quality_review/figure_sources.json",
+      "sha256": "11e0b7ed012eb7a66f829bfe9c24955f01071355fe6fce95b6341c4930ea3a7c"
+    },
+    {
+      "path": "simulation/quality_review/figure_checks.json",
+      "sha256": "fb8d80f71d17e9cfae3b9cca95e76eb91d1d3640d4c397527a4584bf5e0160d0"
+    },
+    {
+      "path": "simulation/quality_review/site_checks.json",
+      "sha256": "d0c932a361891840bed9c150c8ef1f7c2754b00162130981de35f7212b55e04f"
+    },
+    {
+      "path": "simulation/quality_review/model_viewer_checks.json",
+      "sha256": "d8fb066bdb7a428d58e0130b67614e061d3e415e2cf4ede9ae33ea94dd95312f"
+    },
+    {
+      "path": "simulation/quality_review/model_viewer_before_fix.json",
+      "sha256": "c39f2f29967b9e49df77ab3c0369b1a93403b98cc133ec381297471e4526ad8c"
+    },
+    {
+      "path": "simulation/quality_review/website_capture_checks.json",
+      "sha256": "050242c96febf8f4cbf0750724803c90c6fa58ab534918d7ce9dd826bbad6e40"
+    },
+    {
+      "path": "simulation/quality_review/document_checks.json",
+      "sha256": "21069f7d22de1cb9b8fcbc2facfb8c7354f58817b70ec004fdc1ed02efbbab12"
+    },
+    {
+      "path": "simulation/quality_review/execution_book_checks.json",
+      "sha256": "3ed68bb13cb2fb19ef9e9f09e1e1c059755823963ff78bcaac47aeff8b77a37d"
+    },
+    {
+      "path": "simulation/quality_review/manual_visual_review.json",
+      "sha256": "ebd3965420d3df997ad6769b196df704a05b1ff7072dad31225e1360e0beddbd"
+    }
+  ],
+  "acceptance_scope": {
+    "Q01_Q06": "passed_in_listed_internal_scope",
+    "Q07": "see_separate_release_checks_and_package_verification",
+    "machine_checks_do_not_replace_manual_review": true
+  },
+  "unresolved": [
+    "2027 batch rules and official taskbook",
+    "real identities and signatures",
+    "approved targets and budget",
+    "reference instruments, continuous water source, field permission and team development capability",
+    "pressure sensor quotations and exact order specifications",
+    "hardware, calibration, firmware, RF, energy and field experiments",
+    "PPT synchronization after stable document approval"
+  ],
+  "historical_evidence_modified": false
+}

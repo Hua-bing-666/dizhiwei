@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_scoped_rechecks",
+  "physical_validation": false,
+  "rechecks": [
+    {
+      "script": "scripts/validate_diagnosis_review.py",
+      "script_sha256": "d3c382209c62b96b953a9ad695c09e6595c948f4abe404c4eaee65ecec1b310c",
+      "status": "passed_in_original_scope",
+      "new_receipts": [
+        "simulation/quality_review/rechecks/simulation/diagnosis_review/validation.json"
+      ]
+    },
+    {
+      "script": "scripts/check_hardware_interfaces.py",
+      "script_sha256": "d813d8393d96e03802fa934b048d9efa1ad9c68a25214443d91a541d17a968f6",
+      "status": "passed_in_original_scope",
+      "new_receipts": [
+        "simulation/quality_review/rechecks/simulation/interface_review/hardware_checks.json"
+      ]
+    },
+    {
+      "script": "scripts/check_interface_protocol.py",
+      "script_sha256": "727f60fd4b400d81d5d48e45fec903ab87bdcff01a8705a3607672d7fdb5fab2",
+      "status": "passed_in_original_scope",
+      "new_receipts": [
+        "simulation/quality_review/rechecks/simulation/interface_review/protocol_checks.json"
+      ]
+    },
+    {
+      "script": "scripts/validate_bench_model.py",
+      "script_sha256": "e6b53959c3ce349f80503a43e73b98c7ae97e3abf5ea50cba8206fd86938989b",
+      "status": "passed_in_original_scope",
+      "new_receipts": [
+        "simulation/quality_review/rechecks/application/models/collection_review/bench_geometry_checks.json"
+      ]
+    },
+    {
+      "script": "scripts/audit_bench_collection.py",
+      "script_sha256": "976cf9adbe5060f366d9b68116ea88fd637c400e253f3d9b2c9f296a8dfb09c1",
+      "status": "passed_in_original_scope",
+      "new_receipts": [
+        "simulation/quality_review/rechecks/application/models/collection_review/collection_feasibility.json",
+        "simulation/quality_review/rechecks/application/models/collection_review/collection_intersections.csv"
+      ]
+    }
+  ],
+  "legacy_outputs_overwritten": false,
+  "source_sha256": "edc3268fd29a5fad609a616467423c9c80dfca0f8b6f55d64e590868a7e3ed73"
+}
