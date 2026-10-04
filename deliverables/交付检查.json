@@ -325,5 +325,13 @@
       "sha256": "a41b4ee563efcb37648b9e75ad0ffe0e7fdab98b463fee6805fb9de3b795e3e9",
       "unchanged_from_pre_turn_commit": true
     }
-  ]
+  ],
+  "staged_collection_review": {
+    "artifact": "台架三维结构交互模型_收集优化候选版.html",
+    "scope": "detailed plan and A05 concept-model evidence only",
+    "record": "三维分项验收记录.json",
+    "status": "passed_with_stated_concept_scope",
+    "application_integration_complete": false,
+    "physical_validation": false
+  }
 }

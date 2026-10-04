@@ -135,18 +135,18 @@
     },
     {
       "path": "deliverables/交付检查.json",
-      "sha256": "866c9c32835711b41e2a7eadfa4d98eed01fadbf761defce56f2a6f9f714131b",
-      "bytes": 9143
+      "sha256": "1c3a11f881c1c0633faef8298328d5b2598d828100a20e9b0fb5d64af3c330fa",
+      "bytes": 9500
     },
     {
       "path": "deliverables/使用说明.md",
-      "sha256": "f2a6ceec33d0637f5284d93e47afc020d5a98d949943bb5e65621ace7a38b517",
-      "bytes": 4616
+      "sha256": "7282ee68c340782e318577c23c6244f8c49bf1433fb1d7db7e8e23a8c039efba",
+      "bytes": 5096
     },
     {
       "path": "README.md",
-      "sha256": "7de614536c2cf3723eae8a68e2df4717c09aedbecbb5990ae4ec5549c909e13c",
-      "bytes": 7883
+      "sha256": "b5464afbdb294e53a821038444aaba5f32c43e7a7ad625cbc8432650387d41b9",
+      "bytes": 8463
     },
     {
       "path": "scripts/fill_application_template.ps1",
@@ -580,13 +580,13 @@
     },
     {
       "path": "scripts/build_bench_cad.py",
-      "sha256": "098bc606bde05a8da05b74b7090f75db643b6b9dc6c7cb27b39f66399b5726ff",
-      "bytes": 18409
+      "sha256": "4f433290585df0b6fd5ae79f611227cdd2dad725f04b39b6c954e0024a474212",
+      "bytes": 19463
     },
     {
       "path": "scripts/build_bench_viewer.py",
-      "sha256": "ec618a71c7e2b62177d041502ca5c53ca891d55bae93569a1aaa3a7945184ca4",
-      "bytes": 1322
+      "sha256": "68d6b8548f705c191d6e4b2b00bc66325be308b31546c321a8a266e31cc0fe72",
+      "bytes": 2996
     },
     {
       "path": "scripts/bench_viewer.template.html",
@@ -595,8 +595,8 @@
     },
     {
       "path": "scripts/capture_bench_views.mjs",
-      "sha256": "6bcef91f94cf8100ab54f0bb488ffb72e9a885b46f0866a14b3d157cc8724e24",
-      "bytes": 6393
+      "sha256": "aafbe61e07bef87f528c7f03310b9631fbe44a2a9d2dc91fba603c1aaea97e84",
+      "bytes": 10245
     },
     {
       "path": "scripts/render_bench_plate.py",
@@ -605,8 +605,8 @@
     },
     {
       "path": "scripts/validate_bench_model.py",
-      "sha256": "4979bb4dee2414c368c7d0c69a05709040c8a3a1606b9c2b31f363f408782e10",
-      "bytes": 3045
+      "sha256": "e6b53959c3ce349f80503a43e73b98c7ae97e3abf5ea50cba8206fd86938989b",
+      "bytes": 3115
     },
     {
       "path": "application/figures/bench_plate_provenance.json",
@@ -642,6 +642,61 @@
       "path": "application/models/bench_views.json",
       "sha256": "b8f5b946e46d5a25a16070f8dbbe003c83bb1d39d2589ae89f088eeb8209e396",
       "bytes": 5547
+    },
+    {
+      "path": "application/models/collection_review/bench_geometry_checks.json",
+      "sha256": "43297b710edb49d833d3595829fd3ff21f988788a76eed8abe571470e5a761f7",
+      "bytes": 369
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.glb",
+      "sha256": "f9b353695afc1e62ab318726cad6debd11e92cd2f2b9c8d0429b963364fcac0b",
+      "bytes": 1525612
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.json",
+      "sha256": "3f0137c9f9efbc341ddefb4185b5f021398802c5fac19949ee1cc80afc757c99",
+      "bytes": 123294
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.mtl",
+      "sha256": "dcd31a8d29d06c50b1b5409322915e65ee4001563f7828d184e9cdc250b53f73",
+      "bytes": 1383
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.obj",
+      "sha256": "0a28054a2f3d9673b53bfe71ba74985be85db22dd358171cb11fdf01200b0dca",
+      "bytes": 2986255
+    },
+    {
+      "path": "application/models/collection_review/bench_layout.step",
+      "sha256": "81db6d8af3766dc7979c839ac730e690ce8b028d49f5107a4116a97b8f246a45",
+      "bytes": 2817657
+    },
+    {
+      "path": "application/models/collection_review/bench_scene.json",
+      "sha256": "4e7348de31fc52816b86d248ed4eb4bcd6287aa462710d1419622f4725445869",
+      "bytes": 2387163
+    },
+    {
+      "path": "application/models/collection_review/bench_views.json",
+      "sha256": "bdb09481cd3cb7680738dba38e5cb3f19c822f5cdf7257a5db4adb68e356f346",
+      "bytes": 16600
+    },
+    {
+      "path": "application/models/collection_review/collection_feasibility.json",
+      "sha256": "970321a8cf01d6b50b84c99627e5cd2e08c9ca6952d9aa18a0a8e3e00ec4f182",
+      "bytes": 7285
+    },
+    {
+      "path": "application/models/collection_review/collection_intersections.csv",
+      "sha256": "113840c882cc7ec7f0feeaa07e4f17fe5900a8b438b65f3255a6020e84324777",
+      "bytes": 87
+    },
+    {
+      "path": "application/models/collection_review/plate_layout_checks.json",
+      "sha256": "aff0c0113f60dde60f9e056247d4adf03fd46874277aa6762e4a9b535f7d4a9a",
+      "bytes": 1620
     },
     {
       "path": "application/models/vendor/provenance.json",
@@ -725,8 +780,8 @@
     },
     {
       "path": "docs/项目总规划与任务验收台账.md",
-      "sha256": "54721046ac4b61fd4790a6e1d7991ef8cfd59ffc3ed7e990d9b2722cc4ebfa32",
-      "bytes": 15118
+      "sha256": "8b252bc617b9293f7514118fb85ce0268a1c1496b7f4452e3d008d44deb5b327",
+      "bytes": 15504
     },
     {
       "path": "docs/网站功能与验收说明.md",
@@ -752,6 +807,116 @@
       "path": "scripts/finalize_operations_review.py",
       "sha256": "05f312220caca3e2ca13d8103f479f4a2296d2dca75668ab27e85c0499fd7f52",
       "bytes": 3167
+    },
+    {
+      "path": "docs/三阶段分项执行与验收标准.md",
+      "sha256": "b6452508b7db7309cc34677f23f6e892737c80ef64358fde69e8d494d97fe93f",
+      "bytes": 23450
+    },
+    {
+      "path": "docs/三维台架建模论证与本轮验收.md",
+      "sha256": "63e9237e2b3923a569039a211361360510c22c53c19425d6f2f3b5e7d22e0e0d",
+      "bytes": 9647
+    },
+    {
+      "path": "deliverables/台架三维结构交互模型_收集优化候选版.html",
+      "sha256": "7f00e535876147df07251315316c3730c1be638410d64185ec0a6bc3ee1089ec",
+      "bytes": 2545891
+    },
+    {
+      "path": "deliverables/分项验收进度.json",
+      "sha256": "8c70c901a975d5246b10741b0df5f2682e365bd77aef3886af6540633a8db65d",
+      "bytes": 5148
+    },
+    {
+      "path": "deliverables/三维分项验收记录.json",
+      "sha256": "2c9f370b5d85cdb0a6c5712b6b3124249e065cd6f18551c8922ef7656a4aa81c",
+      "bytes": 5605
+    },
+    {
+      "path": "scripts/audit_bench_collection.py",
+      "sha256": "c7528eb7f6ffe9d12a97486a0496acfeea55819a4f7763a4be24cdeec9daac9d",
+      "bytes": 8848
+    },
+    {
+      "path": "scripts/render_collection_review.py",
+      "sha256": "e76361d0895a42a4e646c29b7d4aa11eafdea5490c1766cfb3b9ce2588724e1d",
+      "bytes": 8459
+    },
+    {
+      "path": "scripts/finalize_collection_review.py",
+      "sha256": "7792714ef6f0589965a8c84ed3b36e87d4f7b6f2624adf9dd3891260aa670d87",
+      "bytes": 5954
+    },
+    {
+      "path": "application/figures/collection_review/bench_front.png",
+      "sha256": "c6fe5a5d8666cad14b1f85d7646db7f686902ee37d9833f037a33ee45b25bf54",
+      "bytes": 122080
+    },
+    {
+      "path": "application/figures/collection_review/bench_isometric.png",
+      "sha256": "302ae4d180831f76c388854682d97506b5aac7894e8764667dc61b877d95a1c8",
+      "bytes": 232810
+    },
+    {
+      "path": "application/figures/collection_review/bench_leak_detail.png",
+      "sha256": "9c20d212a8614ecdd3e2f5e9a79f62982e579519239e5504eb861bd32398519d",
+      "bytes": 356183
+    },
+    {
+      "path": "application/figures/collection_review/bench_pressure_detail.png",
+      "sha256": "2b2a40fffc3db837f1e5554bfda8f7d5f71b550aead40b44e613d273957e97e6",
+      "bytes": 182179
+    },
+    {
+      "path": "application/figures/collection_review/bench_top.png",
+      "sha256": "5d900c6724538edffb6ab93c511fb788d23696c560408838e3e54cb318b3bbd0",
+      "bytes": 177384
+    },
+    {
+      "path": "application/figures/collection_review/collection_installation.png",
+      "sha256": "3b8e840316972ce6bd4bc8898377844d1b5c87f8f8eea02ab533174544a907bc",
+      "bytes": 340511
+    },
+    {
+      "path": "application/figures/collection_review/collection_installation.svg",
+      "sha256": "ec0b8e7718a7c3ec499cba8901df8a91cff8103ffa1ed959816e769b159fd157",
+      "bytes": 243215
+    },
+    {
+      "path": "application/figures/collection_review/collection_interfaces.png",
+      "sha256": "4722b690d0a64a83648a90f227be60dbd1c5e0ba24895d70be7c253b16a0eca4",
+      "bytes": 350883
+    },
+    {
+      "path": "application/figures/collection_review/collection_interfaces.svg",
+      "sha256": "c10f6f898dfca2690c82ebd9d08fc8c4dd34cf924dd45549322a2663c47a9773",
+      "bytes": 238603
+    },
+    {
+      "path": "application/figures/collection_review/collection_metering.png",
+      "sha256": "d518d8d19e3c24e84a826ef5573ec1719b54b2c909a7aac0cf2ca57d40709e6b",
+      "bytes": 555728
+    },
+    {
+      "path": "application/figures/collection_review/collection_metering.svg",
+      "sha256": "2c11238824c9b144356d52ea8d881e8d6359b43951f72239a377fafda4f6f91e",
+      "bytes": 460896
+    },
+    {
+      "path": "application/figures/collection_review/collection_overview.png",
+      "sha256": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b",
+      "bytes": 612442
+    },
+    {
+      "path": "application/figures/collection_review/collection_overview.svg",
+      "sha256": "9d90408a4759524bae0c285918566ea5db4f3c01a7cf101404fdc1feeb53e6bf",
+      "bytes": 299537
+    },
+    {
+      "path": "application/figures/collection_review/plate_provenance.json",
+      "sha256": "b7f1744aa94996d50217193930a5c5cdb8dcf22e5d3819a4d57e22d11c0de6bc",
+      "bytes": 4958
     }
   ]
 }

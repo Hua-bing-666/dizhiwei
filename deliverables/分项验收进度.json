@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-04",
+  "scope": "detailed plan and A05 concept-model evidence only",
+  "plan_sha256": "b6452508b7db7309cc34677f23f6e892737c80ef64358fde69e8d494d97fe93f",
+  "this_turn": "A05 concept checks and pictures complete; not integrated into application",
+  "next": "A06—A07 simulation and diagnosis evidence review",
+  "tasks": [
+    {
+      "id": "A01",
+      "name": "研究问题与范围",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A02",
+      "name": "文献和技术增量",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A03",
+      "name": "系统架构和职责",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A04",
+      "name": "水路和硬件接口",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A05",
+      "name": "三维模型和建模图片",
+      "status": "candidate_internal_checks_passed_physical_unverified",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A06",
+      "name": "水力建模和量程计算",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A07",
+      "name": "诊断仿真和统计图",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A08",
+      "name": "LoRa协议与通信证据",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A09",
+      "name": "运行网站和界面佐证",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A10",
+      "name": "图表与佐证材料组合",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A11",
+      "name": "学校模板申报书",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A12",
+      "name": "答辩材料",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "A13",
+      "name": "最终提交和行政核对",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B01",
+      "name": "资源落实与台架装配",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B02",
+      "name": "标定和测量进入条件",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B03",
+      "name": "故障实验和独立标签",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B04",
+      "name": "固件与真实可靠告警",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B05",
+      "name": "接收服务与实际维护闭环",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B06",
+      "name": "连续运行和公平比较",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "B07",
+      "name": "结项与成果归档",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "C01",
+      "name": "冻结主问题",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "C02",
+      "name": "冻结数据与方法",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "C03",
+      "name": "对照 消融与不确定性",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "C04",
+      "name": "稿件和可复现材料",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    },
+    {
+      "id": "C05",
+      "name": "投稿与科研分认定",
+      "status": "planned_or_existing_to_review",
+      "requirement": "docs/三阶段分项执行与验收标准.md"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "classification": "browser_text_bounds_and_text_overlap_checks; visual inspection recorded separately",
+  "plates": [
+    {
+      "name": "collection_overview",
+      "width": 1000,
+      "height": 902,
+      "texts": 20,
+      "minimumFontPx": 23,
+      "outside": [],
+      "overlaps": [],
+      "sha256": {
+        "svg": "9d90408a4759524bae0c285918566ea5db4f3c01a7cf101404fdc1feeb53e6bf",
+        "png": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b"
+      }
+    },
+    {
+      "name": "collection_installation",
+      "width": 1000,
+      "height": 890,
+      "texts": 23,
+      "minimumFontPx": 23,
+      "outside": [],
+      "overlaps": [],
+      "sha256": {
+        "svg": "ec0b8e7718a7c3ec499cba8901df8a91cff8103ffa1ed959816e769b159fd157",
+        "png": "3b8e840316972ce6bd4bc8898377844d1b5c87f8f8eea02ab533174544a907bc"
+      }
+    },
+    {
+      "name": "collection_interfaces",
+      "width": 1000,
+      "height": 650,
+      "texts": 13,
+      "minimumFontPx": 23,
+      "outside": [],
+      "overlaps": [],
+      "sha256": {
+        "svg": "c10f6f898dfca2690c82ebd9d08fc8c4dd34cf924dd45549322a2663c47a9773",
+        "png": "4722b690d0a64a83648a90f227be60dbd1c5e0ba24895d70be7c253b16a0eca4"
+      }
+    },
+    {
+      "name": "collection_metering",
+      "width": 1000,
+      "height": 910,
+      "texts": 22,
+      "minimumFontPx": 23,
+      "outside": [],
+      "overlaps": [],
+      "sha256": {
+        "svg": "2c11238824c9b144356d52ea8d881e8d6359b43951f72239a377fafda4f6f91e",
+        "png": "d518d8d19e3c24e84a826ef5573ec1719b54b2c909a7aac0cf2ca57d40709e6b"
+      }
+    }
+  ]
+}

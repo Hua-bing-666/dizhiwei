@@ -22,6 +22,9 @@ from OCP.BRepCheck import BRepCheck_Analyzer
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'application/models'
+COLLECTION_REVIEW = '--collection-review' in sys.argv
+if COLLECTION_REVIEW:
+    OUT = OUT / 'collection_review'
 SKILL = Path.home() / '.codex/skills/solidworks-automation-skill'
 sys.path.insert(0, str(SKILL / 'scripts'))
 from headless_occt_service import build_shape, collect_evidence
@@ -206,11 +209,14 @@ def make_assembly():
     straight('leak_after_valve',(685,337,Z),(685,325,Z),'leak')
     add('leak_down_elbow',elbow((685,325,120),(0,0,1),(1,0,0)),'leak')
     straight('leak_free_outlet',(685,305,120),(685,305,112),'leak')
-    vessel = cut(cylinder((685,305,29),(685,305,92),40),cylinder((685,305,32),(685,305,93),37))
+    vessel_outer, vessel_inner = (63,60) if COLLECTION_REVIEW else (40,37)
+    tray_outer, tray_inner = (146,140) if COLLECTION_REVIEW else (110,104)
+    vessel = cut(cylinder((685,305,29),(685,305,92),vessel_outer),cylinder((685,305,32),(685,305,93),vessel_inner))
     add('open_measuring_vessel',vessel,'vessel','measurement',capacity_not_calibrated=True)
-    tray = cut(box((685,305,31),(110,110,10)),box((685,305,34),(104,104,10)))
+    tray = cut(box((685,305,31),(tray_outer,tray_outer,10)),box((685,305,34),(tray_inner,tray_inner,10)))
     add('removable_catch_tray',tray,'silver','measurement')
-    for i,(x,y) in enumerate([(175,430),(285,430),(515,430),(650,430),(175,250),(450,250),(615,250),(265,140),(570,140),(840,340)]):
+    collection_support_x = 575 if COLLECTION_REVIEW else 615
+    for i,(x,y) in enumerate([(175,430),(285,430),(515,430),(650,430),(175,250),(450,250),(collection_support_x,250),(265,140),(570,140),(840,340)]):
         support('support_'+str(i),x,y)
     # Electronics enclosure with a separate lid, fastening and cable glands.
     shell = cut(box((425,65,66),(230,100,80)),box((425,65,72),(224,94,80)))
@@ -318,11 +324,17 @@ def main():
                 'Valve bores do not model actual spool, throttling or valve coefficient.',
                 'Pipe and fitting sockets may overlap by insertion; no global clearance, pressure, electrical ingress or manufacturing approval.',
                 'STEP mm, OBJ mm; GLB metres with a glTF Y-up transform; geometry does not change hydraulic simulation parameters.']}
+    params['variant']='collection_review' if COLLECTION_REVIEW else 'baseline'
+    params['collection_design']={'inner_radius_mm':60 if COLLECTION_REVIEW else 37,'inner_height_mm':60,'free_discharge_gap_mm':20,'capacity_calibrated':False,'target_sample_seconds':30 if COLLECTION_REVIEW else None,'capacity_margin_factor':1.25 if COLLECTION_REVIEW else None,'continuous_discharge_solution_verified':False}
     (OUT/'bench_layout.json').write_text(json.dumps(params,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
     scene={'palette':PALETTE,'meshes':meshes,'bounds':{'min':[0,0,-14],'max':[900,520,242]},
            'anchors':{'P0':[225,430,239],'R':[350,430,184],'P1':[455,430,239],'Q':[580,430,176],
                       'A':[765,430,182],'B':[350,250,182],'leak':[651,285,60],'node':[425,65,114]},
            'classification':'concept_design_not_physical_validation'}
+    if COLLECTION_REVIEW:
+        scene['anchors'].update({'Q':[580,430,171.5],'A':[765,430,184],'B':[350,250,184],
+                                'leak':[685+63/math.sqrt(2),305-63/math.sqrt(2),70],
+                                'leak_rim':[623.5,305,92]})
     (OUT/'bench_scene.json').write_text(json.dumps(scene,separators=(',',':')),encoding='utf-8',newline='\n')
     print(json.dumps({'parts':len(PARTS),'vertices':offset,'triangles':params['faces'],
                      'step_reopened_valid':reopened['valid'],'solids':reopened['topology']['solids']},ensure_ascii=False))

@@ -13,6 +13,8 @@ from OCP.BRepCheck import BRepCheck_Analyzer
 from OCP.gp import gp_Pnt
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'application/models'
+if '--collection-review' in sys.argv:
+    OUT=OUT/'collection_review'
 params=json.loads((OUT/'bench_layout.json').read_text(encoding='utf-8'))
 reader=STEPControl_Reader()
 assert reader.ReadFile(str(OUT/'bench_layout.step'))==IFSelect_RetDone

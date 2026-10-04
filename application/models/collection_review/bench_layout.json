@@ -1,0 +1,5896 @@
+{
+  "classification": "parametric_concept_assembly_not_manufacturing_model",
+  "units": "mm",
+  "base_envelope": [
+    900,
+    520
+  ],
+  "pipe_centre_height": 140,
+  "provisional_pipe_od_id": [
+    20,
+    16
+  ],
+  "bend_centreline_radius": 20,
+  "vertices": 57122,
+  "faces": 60342,
+  "components": [
+    "rail_front",
+    "rail_rear",
+    "rail_left",
+    "rail_right",
+    "crossbeam",
+    "frame_M6_30_30_shaft",
+    "frame_M6_30_30_head",
+    "foot_30_30",
+    "frame_M6_30_490_shaft",
+    "frame_M6_30_490_head",
+    "foot_30_490",
+    "frame_M6_870_30_shaft",
+    "frame_M6_870_30_head",
+    "foot_870_30",
+    "frame_M6_870_490_shaft",
+    "frame_M6_870_490_head",
+    "foot_870_490",
+    "removable_deck",
+    "supply_in",
+    "supply_port_body",
+    "supply_port_collar-1",
+    "supply_port_collar1",
+    "common_supply_tee",
+    "A_to_P0",
+    "A_to_R",
+    "A_to_P1",
+    "A_to_Q",
+    "A_to_leak",
+    "A_to_A",
+    "A_end",
+    "P0_tap",
+    "P0_adaptor",
+    "P0_hex",
+    "P0_sensor_envelope",
+    "P0_connector",
+    "P1_tap",
+    "P1_adaptor",
+    "P1_hex",
+    "P1_sensor_envelope",
+    "P1_connector",
+    "restriction_body",
+    "restriction_nut-1",
+    "restriction_nut1",
+    "restriction_stem",
+    "restriction_handle",
+    "restriction_pivot",
+    "Q_meter_envelope",
+    "Q_union_546_body",
+    "Q_union_546_collar-1",
+    "Q_union_546_collar1",
+    "Q_union_614_body",
+    "Q_union_614_collar-1",
+    "Q_union_614_collar1",
+    "Q_pulse_cap",
+    "leak_tee",
+    "A_equivalent_load_body",
+    "A_equivalent_load_nut-1",
+    "A_equivalent_load_nut1",
+    "A_equivalent_load_stem",
+    "A_equivalent_load_handle",
+    "A_equivalent_load_pivot",
+    "A_return_elbow",
+    "return_upper",
+    "B_return_tee",
+    "return_lower",
+    "return_lower_elbow",
+    "return_out",
+    "return_port_body",
+    "return_port_collar-1",
+    "return_port_collar1",
+    "B_vertical",
+    "B_supply_elbow",
+    "B_to_switch",
+    "B_to_Bload",
+    "B_end",
+    "B_switch_body",
+    "B_switch_nut-1",
+    "B_switch_nut1",
+    "B_switch_stem",
+    "B_switch_handle",
+    "B_switch_pivot",
+    "B_equivalent_load_body",
+    "B_equivalent_load_nut-1",
+    "B_equivalent_load_nut1",
+    "B_equivalent_load_stem",
+    "B_equivalent_load_handle",
+    "B_equivalent_load_pivot",
+    "leak_before_valve",
+    "leak_control_body",
+    "leak_control_nut-1",
+    "leak_control_nut1",
+    "leak_control_stem",
+    "leak_control_handle",
+    "leak_control_pivot",
+    "leak_after_valve",
+    "leak_down_elbow",
+    "leak_free_outlet",
+    "open_measuring_vessel",
+    "removable_catch_tray",
+    "support_0_M5_-15_shaft",
+    "support_0_M5_-15_head",
+    "support_0_M5_15_shaft",
+    "support_0_M5_15_head",
+    "support_0_foot",
+    "support_0_post",
+    "support_0_clamp",
+    "support_1_M5_-15_shaft",
+    "support_1_M5_-15_head",
+    "support_1_M5_15_shaft",
+    "support_1_M5_15_head",
+    "support_1_foot",
+    "support_1_post",
+    "support_1_clamp",
+    "support_2_M5_-15_shaft",
+    "support_2_M5_-15_head",
+    "support_2_M5_15_shaft",
+    "support_2_M5_15_head",
+    "support_2_foot",
+    "support_2_post",
+    "support_2_clamp",
+    "support_3_M5_-15_shaft",
+    "support_3_M5_-15_head",
+    "support_3_M5_15_shaft",
+    "support_3_M5_15_head",
+    "support_3_foot",
+    "support_3_post",
+    "support_3_clamp",
+    "support_4_M5_-15_shaft",
+    "support_4_M5_-15_head",
+    "support_4_M5_15_shaft",
+    "support_4_M5_15_head",
+    "support_4_foot",
+    "support_4_post",
+    "support_4_clamp",
+    "support_5_M5_-15_shaft",
+    "support_5_M5_-15_head",
+    "support_5_M5_15_shaft",
+    "support_5_M5_15_head",
+    "support_5_foot",
+    "support_5_post",
+    "support_5_clamp",
+    "support_6_M5_-15_shaft",
+    "support_6_M5_-15_head",
+    "support_6_M5_15_shaft",
+    "support_6_M5_15_head",
+    "support_6_foot",
+    "support_6_post",
+    "support_6_clamp",
+    "support_7_M5_-15_shaft",
+    "support_7_M5_-15_head",
+    "support_7_M5_15_shaft",
+    "support_7_M5_15_head",
+    "support_7_foot",
+    "support_7_post",
+    "support_7_clamp",
+    "support_8_M5_-15_shaft",
+    "support_8_M5_-15_head",
+    "support_8_M5_15_shaft",
+    "support_8_M5_15_head",
+    "support_8_foot",
+    "support_8_post",
+    "support_8_clamp",
+    "support_9_M5_-15_shaft",
+    "support_9_M5_-15_head",
+    "support_9_M5_15_shaft",
+    "support_9_M5_15_head",
+    "support_9_foot",
+    "support_9_post",
+    "support_9_clamp",
+    "electronics_shell",
+    "electronics_lid",
+    "lid_M4_321_27_shaft",
+    "lid_M4_321_27_head",
+    "lid_M4_321_103_shaft",
+    "lid_M4_321_103_head",
+    "lid_M4_529_27_shaft",
+    "lid_M4_529_27_head",
+    "lid_M4_529_103_shaft",
+    "lid_M4_529_103_head",
+    "gland_0",
+    "gland_1",
+    "gland_2",
+    "antenna_mount",
+    "LoRa_antenna_envelope",
+    "P0_cable_0",
+    "P0_cable_1",
+    "P0_cable_2",
+    "P0_cable_3",
+    "P0_cable_4",
+    "P1_cable_0",
+    "P1_cable_1",
+    "P1_cable_2",
+    "P1_cable_3",
+    "P1_cable_4",
+    "Q_cable_0",
+    "Q_cable_1",
+    "Q_cable_2",
+    "Q_cable_3",
+    "Q_cable_4"
+  ],
+  "electrical_enclosure_position": "front_zone_separate_from_measured_leak",
+  "leak_collection": "open_vessel_with_20mm_air_gap",
+  "hydraulic_geometry_calibrated": false,
+  "vendor_geometry_verified": false,
+  "manufacturing_release": false,
+  "geometry_backend": "OCCT/OCP 7.9.3.1.1; skill box backend + project tube/tee/quarter-torus extensions",
+  "step_reopen_evidence": {
+    "valid": true,
+    "volume": 5990492.920913924,
+    "bounds": {
+      "min": [
+        -1e-07,
+        -1e-07,
+        -14.0000001
+      ],
+      "max": [
+        900.0000001,
+        520.0000001,
+        242.0000001
+      ]
+    },
+    "topology": {
+      "solids": 199,
+      "faces": 998,
+      "edges": 3574,
+      "vertices": 7148
+    }
+  },
+  "parts": [
+    {
+      "name": "rail_front",
+      "group": "frame",
+      "material": "frame",
+      "evidence": {
+        "valid": true,
+        "volume": 360000.0,
+        "bounds": {
+          "min": [
+            -1e-07,
+            -1e-07,
+            -1e-07
+          ],
+          "max": [
+            900.0000001,
+            20.0000001,
+            20.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "rail_rear",
+      "group": "frame",
+      "material": "frame",
+      "evidence": {
+        "valid": true,
+        "volume": 360000.0,
+        "bounds": {
+          "min": [
+            -1e-07,
+            499.9999999,
+            -1e-07
+          ],
+          "max": [
+            900.0000001,
+            520.0000001,
+            20.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "rail_left",
+      "group": "frame",
+      "material": "frame",
+      "evidence": {
+        "valid": true,
+        "volume": 192000.0,
+        "bounds": {
+          "min": [
+            -1e-07,
+            19.9999999,
+            -1e-07
+          ],
+          "max": [
+            20.0000001,
+            500.0000001,
+            20.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "rail_right",
+      "group": "frame",
+      "material": "frame",
+      "evidence": {
+        "valid": true,
+        "volume": 192000.0,
+        "bounds": {
+          "min": [
+            879.9999999,
+            19.9999999,
+            -1e-07
+          ],
+          "max": [
+            900.0000001,
+            500.0000001,
+            20.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "crossbeam",
+      "group": "frame",
+      "material": "frame",
+      "evidence": {
+        "valid": true,
+        "volume": 343999.99999999994,
+        "bounds": {
+          "min": [
+            19.9999999,
+            249.9999999,
+            -1e-07
+          ],
+          "max": [
+            880.0000001,
+            270.0000001,
+            20.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_30_30_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 311.01767270538943,
+        "bounds": {
+          "min": [
+            26.9999999,
+            26.9999999,
+            15.9999999
+          ],
+          "max": [
+            33.0000001,
+            33.0000001,
+            27.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_30_30_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 202.72788677189908,
+        "bounds": {
+          "min": [
+            24.899999899999997,
+            25.583270340699364,
+            26.9999999
+          ],
+          "max": [
+            35.1000001,
+            34.416729659300636,
+            30.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "foot_30_30",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 8620.530241450395,
+        "bounds": {
+          "min": [
+            15.9999999,
+            15.9999999,
+            -14.0000001
+          ],
+          "max": [
+            44.0000001,
+            44.0000001,
+            1e-07
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_30_490_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 311.0176727053898,
+        "bounds": {
+          "min": [
+            26.9999999,
+            486.9999999,
+            15.9999999
+          ],
+          "max": [
+            33.0000001,
+            493.0000001,
+            27.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_30_490_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 202.72788677189843,
+        "bounds": {
+          "min": [
+            24.899999899999997,
+            485.58327034069936,
+            26.9999999
+          ],
+          "max": [
+            35.1000001,
+            494.41672965930064,
+            30.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "foot_30_490",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 8620.530241450391,
+        "bounds": {
+          "min": [
+            15.9999999,
+            475.9999999,
+            -14.0000001
+          ],
+          "max": [
+            44.0000001,
+            504.0000001,
+            1e-07
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_870_30_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 311.0176727053903,
+        "bounds": {
+          "min": [
+            866.9999999,
+            26.9999999,
+            15.9999999
+          ],
+          "max": [
+            873.0000001,
+            33.0000001,
+            27.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_870_30_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 202.7278867718985,
+        "bounds": {
+          "min": [
+            864.8999999,
+            25.583270340699364,
+            26.9999999
+          ],
+          "max": [
+            875.1000001,
+            34.416729659300636,
+            30.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "foot_870_30",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 8620.530241450395,
+        "bounds": {
+          "min": [
+            855.9999999,
+            15.9999999,
+            -14.0000001
+          ],
+          "max": [
+            884.0000001,
+            44.0000001,
+            1e-07
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_870_490_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 311.0176727053906,
+        "bounds": {
+          "min": [
+            866.9999999,
+            486.9999999,
+            15.9999999
+          ],
+          "max": [
+            873.0000001,
+            493.0000001,
+            27.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "frame_M6_870_490_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 202.7278867718979,
+        "bounds": {
+          "min": [
+            864.8999999,
+            485.58327034069936,
+            26.9999999
+          ],
+          "max": [
+            875.1000001,
+            494.41672965930064,
+            30.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "foot_870_490",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 8620.530241450393,
+        "bounds": {
+          "min": [
+            855.9999999,
+            475.9999999,
+            -14.0000001
+          ],
+          "max": [
+            884.0000001,
+            504.0000001,
+            1e-07
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "removable_deck",
+      "group": "frame",
+      "material": "panel",
+      "evidence": {
+        "valid": true,
+        "volume": 2639178.913344058,
+        "bounds": {
+          "min": [
+            9.9999999,
+            9.9999999,
+            19.9999999
+          ],
+          "max": [
+            890.0000001,
+            510.0000001,
+            26.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 10,
+          "edges": 48,
+          "vertices": 96
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "supply_in",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 6446.54812516626,
+        "bounds": {
+          "min": [
+            39.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            97.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "supply_port_body",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 11611.326447667876,
+        "bounds": {
+          "min": [
+            33.9999999,
+            415.9999999,
+            125.9999999
+          ],
+          "max": [
+            62.0000001,
+            444.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "supply_port_collar-1",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            31.4999999,
+            413.9999999,
+            123.9999999
+          ],
+          "max": [
+            36.5000001,
+            446.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "supply_port_collar1",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            59.4999999,
+            413.9999999,
+            123.9999999
+          ],
+          "max": [
+            64.5000001,
+            446.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "common_supply_tee",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 16441.27243442706,
+        "bounds": {
+          "min": [
+            96.9999999,
+            411.9999999,
+            125.9999999
+          ],
+          "max": [
+            133.0000001,
+            444.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 12,
+          "edges": 56,
+          "vertices": 112
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_to_P0",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 8369.202829163212,
+        "bounds": {
+          "min": [
+            132.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            207.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_to_R",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 8934.68950680938,
+        "bounds": {
+          "min": [
+            242.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            322.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_to_P1",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 6672.742796224728,
+        "bounds": {
+          "min": [
+            377.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            437.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_to_Q",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 8256.10549363398,
+        "bounds": {
+          "min": [
+            472.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            546.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_to_leak",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 5994.15878304933,
+        "bounds": {
+          "min": [
+            613.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            667.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_to_A",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 3845.30940799391,
+        "bounds": {
+          "min": [
+            702.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            737.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_end",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 3053.628059289282,
+        "bounds": {
+          "min": [
+            792.9999999,
+            419.9999999,
+            129.9999999
+          ],
+          "max": [
+            820.0000001,
+            440.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P0_tap",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 16441.272434516133,
+        "bounds": {
+          "min": [
+            206.9999999,
+            415.9999999,
+            125.9999999
+          ],
+          "max": [
+            243.0000001,
+            444.0000001,
+            158.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 11,
+          "edges": 56,
+          "vertices": 112
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P0_adaptor",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 4002.3890406733963,
+        "bounds": {
+          "min": [
+            214.9999999,
+            419.9999999,
+            157.9999999
+          ],
+          "max": [
+            235.0000001,
+            440.0000001,
+            172.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P0_hex",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 5771.383242515311,
+        "bounds": {
+          "min": [
+            210.9999999,
+            417.8756442470178,
+            171.9999999
+          ],
+          "max": [
+            239.0000001,
+            442.1243557529822,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 9,
+          "edges": 42,
+          "vertices": 84
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P0_sensor_envelope",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 15381.23763197563,
+        "bounds": {
+          "min": [
+            212.9999999,
+            417.9999999,
+            183.9999999
+          ],
+          "max": [
+            237.0000001,
+            442.0000001,
+            218.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "P0_connector",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 4222.30052642468,
+        "bounds": {
+          "min": [
+            216.9999999,
+            421.9999999,
+            217.9999999
+          ],
+          "max": [
+            233.0000001,
+            438.0000001,
+            239.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "P1_tap",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 16441.272434513947,
+        "bounds": {
+          "min": [
+            436.9999999,
+            415.9999999,
+            125.9999999
+          ],
+          "max": [
+            473.0000001,
+            444.0000001,
+            158.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 11,
+          "edges": 56,
+          "vertices": 112
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P1_adaptor",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 4002.389040673395,
+        "bounds": {
+          "min": [
+            444.9999999,
+            419.9999999,
+            157.9999999
+          ],
+          "max": [
+            465.0000001,
+            440.0000001,
+            172.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P1_hex",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 5771.3832425153105,
+        "bounds": {
+          "min": [
+            440.9999999,
+            417.8756442470178,
+            171.9999999
+          ],
+          "max": [
+            469.0000001,
+            442.1243557529822,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 9,
+          "edges": 42,
+          "vertices": 84
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "P1_sensor_envelope",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 15381.237631975626,
+        "bounds": {
+          "min": [
+            442.9999999,
+            417.9999999,
+            183.9999999
+          ],
+          "max": [
+            467.0000001,
+            442.0000001,
+            218.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "P1_connector",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 4222.30052642468,
+        "bounds": {
+          "min": [
+            446.9999999,
+            421.9999999,
+            217.9999999
+          ],
+          "max": [
+            463.0000001,
+            438.0000001,
+            239.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "restriction_body",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 39584.067435231394,
+        "bounds": {
+          "min": [
+            321.9999999,
+            412.9999999,
+            122.9999999
+          ],
+          "max": [
+            378.0000001,
+            447.0000001,
+            157.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "restriction_nut-1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849364,
+        "bounds": {
+          "min": [
+            317.9999999,
+            409.9999999,
+            119.9999999
+          ],
+          "max": [
+            326.0000001,
+            450.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "restriction_nut1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849364,
+        "bounds": {
+          "min": [
+            373.9999999,
+            409.9999999,
+            119.9999999
+          ],
+          "max": [
+            382.0000001,
+            450.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "restriction_stem",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 1806.4157758141307,
+        "bounds": {
+          "min": [
+            344.9999999,
+            424.9999999,
+            151.9999999
+          ],
+          "max": [
+            355.0000001,
+            435.0000001,
+            175.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "restriction_handle",
+      "group": "water",
+      "material": "orange",
+      "evidence": {
+        "valid": true,
+        "volume": 4356.0,
+        "bounds": {
+          "min": [
+            333.9999999,
+            424.4999999,
+            174.9999999
+          ],
+          "max": [
+            400.0000001,
+            435.5000001,
+            181.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "restriction_pivot",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 706.8583470577033,
+        "bounds": {
+          "min": [
+            344.9999999,
+            424.9999999,
+            174.9999999
+          ],
+          "max": [
+            355.0000001,
+            435.0000001,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_meter_envelope",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 63447.60523189948,
+        "bounds": {
+          "min": [
+            545.9999999,
+            410.9999999,
+            120.9999999
+          ],
+          "max": [
+            614.0000001,
+            449.0000001,
+            159.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "Q_union_546_body",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 11611.326447667876,
+        "bounds": {
+          "min": [
+            531.9999999,
+            415.9999999,
+            125.9999999
+          ],
+          "max": [
+            560.0000001,
+            444.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_union_546_collar-1",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            529.4999999,
+            413.9999999,
+            123.9999999
+          ],
+          "max": [
+            534.5000001,
+            446.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_union_546_collar1",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            557.4999999,
+            413.9999999,
+            123.9999999
+          ],
+          "max": [
+            562.5000001,
+            446.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_union_614_body",
+      "group": "water",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 11611.326447667876,
+        "bounds": {
+          "min": [
+            599.9999999,
+            415.9999999,
+            125.9999999
+          ],
+          "max": [
+            628.0000001,
+            444.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_union_614_collar-1",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            597.4999999,
+            413.9999999,
+            123.9999999
+          ],
+          "max": [
+            602.5000001,
+            446.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_union_614_collar1",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            625.4999999,
+            413.9999999,
+            123.9999999
+          ],
+          "max": [
+            630.5000001,
+            446.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "Q_pulse_cap",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 9720.0,
+        "bounds": {
+          "min": [
+            566.4999999,
+            417.9999999,
+            156.4999999
+          ],
+          "max": [
+            593.5000001,
+            442.0000001,
+            171.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "leak_tee",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 16441.27243442716,
+        "bounds": {
+          "min": [
+            666.9999999,
+            411.9999999,
+            125.9999999
+          ],
+          "max": [
+            703.0000001,
+            444.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 12,
+          "edges": 56,
+          "vertices": 112
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_equivalent_load_body",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 39584.067435231394,
+        "bounds": {
+          "min": [
+            736.9999999,
+            412.9999999,
+            122.9999999
+          ],
+          "max": [
+            793.0000001,
+            447.0000001,
+            157.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_equivalent_load_nut-1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849364,
+        "bounds": {
+          "min": [
+            732.9999999,
+            409.9999999,
+            119.9999999
+          ],
+          "max": [
+            741.0000001,
+            450.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_equivalent_load_nut1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849364,
+        "bounds": {
+          "min": [
+            788.9999999,
+            409.9999999,
+            119.9999999
+          ],
+          "max": [
+            797.0000001,
+            450.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_equivalent_load_stem",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 1806.4157758141328,
+        "bounds": {
+          "min": [
+            759.9999999,
+            424.9999999,
+            151.9999999
+          ],
+          "max": [
+            770.0000001,
+            435.0000001,
+            175.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_equivalent_load_handle",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 4356.0,
+        "bounds": {
+          "min": [
+            748.9999999,
+            424.4999999,
+            174.9999999
+          ],
+          "max": [
+            815.0000001,
+            435.5000001,
+            181.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_equivalent_load_pivot",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 706.8583470577041,
+        "bounds": {
+          "min": [
+            759.9999999,
+            424.9999999,
+            174.9999999
+          ],
+          "max": [
+            770.0000001,
+            435.0000001,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "A_return_elbow",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 3553.057584392167,
+        "bounds": {
+          "min": [
+            819.9999999,
+            409.9999999,
+            129.9999999
+          ],
+          "max": [
+            852.4717661087718,
+            442.4717661087719,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_upper",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 16059.82164515102,
+        "bounds": {
+          "min": [
+            829.9999999,
+            267.9999999,
+            129.9999999
+          ],
+          "max": [
+            850.0000001,
+            410.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_return_tee",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 16441.27243447231,
+        "bounds": {
+          "min": [
+            821.9999999,
+            231.9999999,
+            125.9999999
+          ],
+          "max": [
+            854.0000001,
+            268.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 12,
+          "edges": 56,
+          "vertices": 112
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_lower",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 8143.008158104742,
+        "bounds": {
+          "min": [
+            829.9999999,
+            159.9999999,
+            129.9999999
+          ],
+          "max": [
+            850.0000001,
+            232.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_lower_elbow",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 3553.057584392167,
+        "bounds": {
+          "min": [
+            819.9999999,
+            127.52823389122818,
+            129.9999999
+          ],
+          "max": [
+            852.4717661087718,
+            160.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_out",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 88215.92171280146,
+        "bounds": {
+          "min": [
+            39.9999999,
+            129.9999999,
+            129.9999999
+          ],
+          "max": [
+            820.0000001,
+            150.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_port_body",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 11611.326447667874,
+        "bounds": {
+          "min": [
+            33.9999999,
+            125.9999999,
+            125.9999999
+          ],
+          "max": [
+            62.0000001,
+            154.0000001,
+            154.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_port_collar-1",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            31.4999999,
+            123.9999999,
+            123.9999999
+          ],
+          "max": [
+            36.5000001,
+            156.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "return_port_collar1",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 3015.9289474462003,
+        "bounds": {
+          "min": [
+            59.4999999,
+            123.9999999,
+            123.9999999
+          ],
+          "max": [
+            64.5000001,
+            156.0000001,
+            156.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_vertical",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 16059.82164515103,
+        "bounds": {
+          "min": [
+            104.9999999,
+            269.9999999,
+            129.9999999
+          ],
+          "max": [
+            125.0000001,
+            412.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_supply_elbow",
+      "group": "water",
+      "material": "supply",
+      "evidence": {
+        "valid": true,
+        "volume": 3553.057584392168,
+        "bounds": {
+          "min": [
+            102.52823389122818,
+            237.52823389122818,
+            129.9999999
+          ],
+          "max": [
+            135.0000001,
+            270.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_to_switch",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 21149.201743966492,
+        "bounds": {
+          "min": [
+            134.9999999,
+            239.9999999,
+            129.9999999
+          ],
+          "max": [
+            322.0000001,
+            260.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_to_Bload",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 40601.94345499452,
+        "bounds": {
+          "min": [
+            377.9999999,
+            239.9999999,
+            129.9999999
+          ],
+          "max": [
+            737.0000001,
+            260.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_end",
+      "group": "water",
+      "material": "normal",
+      "evidence": {
+        "valid": true,
+        "volume": 3279.8227303477465,
+        "bounds": {
+          "min": [
+            792.9999999,
+            239.9999999,
+            129.9999999
+          ],
+          "max": [
+            822.0000001,
+            260.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_switch_body",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 39584.067435231394,
+        "bounds": {
+          "min": [
+            321.9999999,
+            232.9999999,
+            122.9999999
+          ],
+          "max": [
+            378.0000001,
+            267.0000001,
+            157.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_switch_nut-1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849363,
+        "bounds": {
+          "min": [
+            317.9999999,
+            229.9999999,
+            119.9999999
+          ],
+          "max": [
+            326.0000001,
+            270.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_switch_nut1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849363,
+        "bounds": {
+          "min": [
+            373.9999999,
+            229.9999999,
+            119.9999999
+          ],
+          "max": [
+            382.0000001,
+            270.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_switch_stem",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 1806.4157758141314,
+        "bounds": {
+          "min": [
+            344.9999999,
+            244.9999999,
+            151.9999999
+          ],
+          "max": [
+            355.0000001,
+            255.0000001,
+            175.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_switch_handle",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 4356.0,
+        "bounds": {
+          "min": [
+            333.9999999,
+            244.4999999,
+            174.9999999
+          ],
+          "max": [
+            400.0000001,
+            255.5000001,
+            181.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_switch_pivot",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 706.8583470577036,
+        "bounds": {
+          "min": [
+            344.9999999,
+            244.9999999,
+            174.9999999
+          ],
+          "max": [
+            355.0000001,
+            255.0000001,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_equivalent_load_body",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 39584.067435231394,
+        "bounds": {
+          "min": [
+            736.9999999,
+            232.9999999,
+            122.9999999
+          ],
+          "max": [
+            793.0000001,
+            267.0000001,
+            157.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_equivalent_load_nut-1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849363,
+        "bounds": {
+          "min": [
+            732.9999999,
+            229.9999999,
+            119.9999999
+          ],
+          "max": [
+            741.0000001,
+            270.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_equivalent_load_nut1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849363,
+        "bounds": {
+          "min": [
+            788.9999999,
+            229.9999999,
+            119.9999999
+          ],
+          "max": [
+            797.0000001,
+            270.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_equivalent_load_stem",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 1806.4157758141337,
+        "bounds": {
+          "min": [
+            759.9999999,
+            244.9999999,
+            151.9999999
+          ],
+          "max": [
+            770.0000001,
+            255.0000001,
+            175.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_equivalent_load_handle",
+      "group": "water",
+      "material": "blue",
+      "evidence": {
+        "valid": true,
+        "volume": 4356.0,
+        "bounds": {
+          "min": [
+            748.9999999,
+            244.4999999,
+            174.9999999
+          ],
+          "max": [
+            815.0000001,
+            255.5000001,
+            181.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "B_equivalent_load_pivot",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 706.8583470577045,
+        "bounds": {
+          "min": [
+            759.9999999,
+            244.9999999,
+            174.9999999
+          ],
+          "max": [
+            770.0000001,
+            255.0000001,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_before_valve",
+      "group": "water",
+      "material": "leak",
+      "evidence": {
+        "valid": true,
+        "volume": 2148.849375055419,
+        "bounds": {
+          "min": [
+            674.9999999,
+            392.9999999,
+            129.9999999
+          ],
+          "max": [
+            695.0000001,
+            412.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_control_body",
+      "group": "water",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 39584.06743523142,
+        "bounds": {
+          "min": [
+            667.9999999,
+            336.9999999,
+            122.9999999
+          ],
+          "max": [
+            702.0000001,
+            393.0000001,
+            157.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_control_nut-1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849364,
+        "bounds": {
+          "min": [
+            664.9999999,
+            332.9999999,
+            119.9999999
+          ],
+          "max": [
+            705.0000001,
+            341.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_control_nut1",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 8444.601052849364,
+        "bounds": {
+          "min": [
+            664.9999999,
+            388.9999999,
+            119.9999999
+          ],
+          "max": [
+            705.0000001,
+            397.0000001,
+            160.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_control_stem",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 1806.4157758141328,
+        "bounds": {
+          "min": [
+            679.9999999,
+            359.9999999,
+            151.9999999
+          ],
+          "max": [
+            690.0000001,
+            370.0000001,
+            175.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_control_handle",
+      "group": "water",
+      "material": "orange",
+      "evidence": {
+        "valid": true,
+        "volume": 4356.0,
+        "bounds": {
+          "min": [
+            668.9999999,
+            359.4999999,
+            174.9999999
+          ],
+          "max": [
+            735.0000001,
+            370.5000001,
+            181.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_control_pivot",
+      "group": "water",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 706.8583470577041,
+        "bounds": {
+          "min": [
+            679.9999999,
+            359.9999999,
+            174.9999999
+          ],
+          "max": [
+            690.0000001,
+            370.0000001,
+            184.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_after_valve",
+      "group": "water",
+      "material": "leak",
+      "evidence": {
+        "valid": true,
+        "volume": 1357.16802635079,
+        "bounds": {
+          "min": [
+            674.9999999,
+            324.9999999,
+            129.9999999
+          ],
+          "max": [
+            695.0000001,
+            337.0000001,
+            150.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_down_elbow",
+      "group": "water",
+      "material": "leak",
+      "evidence": {
+        "valid": true,
+        "volume": 3553.057584392167,
+        "bounds": {
+          "min": [
+            674.9999999,
+            292.5282338912281,
+            119.9999999
+          ],
+          "max": [
+            695.0000001,
+            325.0000001,
+            152.47176610877182
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "leak_free_outlet",
+      "group": "water",
+      "material": "leak",
+      "evidence": {
+        "valid": true,
+        "volume": 904.7786842338603,
+        "bounds": {
+          "min": [
+            674.9999999,
+            294.9999999,
+            111.9999999
+          ],
+          "max": [
+            695.0000001,
+            315.0000001,
+            120.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "open_measuring_vessel",
+      "group": "measurement",
+      "material": "vessel",
+      "evidence": {
+        "valid": true,
+        "volume": 106961.80507677203,
+        "bounds": {
+          "min": [
+            621.9999999,
+            241.9999999,
+            28.9999999
+          ],
+          "max": [
+            748.0000001,
+            368.0000001,
+            92.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 5,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {
+        "capacity_not_calibrated": true
+      }
+    },
+    {
+      "name": "removable_catch_tray",
+      "group": "measurement",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 75960.00000000004,
+        "bounds": {
+          "min": [
+            611.99999985,
+            231.99999985,
+            25.99999985
+          ],
+          "max": [
+            758.00000015,
+            378.00000015,
+            36.00000015
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 11,
+          "edges": 48,
+          "vertices": 96
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.9844949342987,
+        "bounds": {
+          "min": [
+            157.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            162.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            155.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            164.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.9844949342987,
+        "bounds": {
+          "min": [
+            187.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            192.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            185.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            194.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            152.9999999,
+            412.9999999,
+            25.9999999
+          ],
+          "max": [
+            197.0000001,
+            447.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            168.9999999,
+            423.9999999,
+            33.9999999
+          ],
+          "max": [
+            181.0000001,
+            436.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_0_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961296,
+        "bounds": {
+          "min": [
+            166.9999999,
+            416.4999999,
+            126.4999999
+          ],
+          "max": [
+            183.0000001,
+            443.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429894,
+        "bounds": {
+          "min": [
+            267.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            272.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            265.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            274.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429894,
+        "bounds": {
+          "min": [
+            297.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            302.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            295.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            304.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915633,
+        "bounds": {
+          "min": [
+            262.9999999,
+            412.9999999,
+            25.9999999
+          ],
+          "max": [
+            307.0000001,
+            447.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            278.9999999,
+            423.9999999,
+            33.9999999
+          ],
+          "max": [
+            291.0000001,
+            436.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_1_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961296,
+        "bounds": {
+          "min": [
+            276.9999999,
+            416.4999999,
+            126.4999999
+          ],
+          "max": [
+            293.0000001,
+            443.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429894,
+        "bounds": {
+          "min": [
+            497.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            502.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            495.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            504.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429862,
+        "bounds": {
+          "min": [
+            527.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            532.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            525.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            534.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915633,
+        "bounds": {
+          "min": [
+            492.9999999,
+            412.9999999,
+            25.9999999
+          ],
+          "max": [
+            537.0000001,
+            447.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            508.9999999,
+            423.9999999,
+            33.9999999
+          ],
+          "max": [
+            521.0000001,
+            436.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_2_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961296,
+        "bounds": {
+          "min": [
+            506.9999999,
+            416.4999999,
+            126.4999999
+          ],
+          "max": [
+            523.0000001,
+            443.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429862,
+        "bounds": {
+          "min": [
+            632.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            637.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            630.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            639.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429862,
+        "bounds": {
+          "min": [
+            662.4999999,
+            427.4999999,
+            23.9999999
+          ],
+          "max": [
+            667.5000001,
+            432.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            660.7499999,
+            426.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            669.2500001,
+            433.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            627.9999999,
+            412.9999999,
+            25.9999999
+          ],
+          "max": [
+            672.0000001,
+            447.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            643.9999999,
+            423.9999999,
+            33.9999999
+          ],
+          "max": [
+            656.0000001,
+            436.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_3_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961296,
+        "bounds": {
+          "min": [
+            641.9999999,
+            416.4999999,
+            126.4999999
+          ],
+          "max": [
+            658.0000001,
+            443.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.9844949342982,
+        "bounds": {
+          "min": [
+            157.4999999,
+            247.4999999,
+            23.9999999
+          ],
+          "max": [
+            162.5000001,
+            252.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            155.7499999,
+            246.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            164.2500001,
+            253.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.9844949342982,
+        "bounds": {
+          "min": [
+            187.4999999,
+            247.4999999,
+            23.9999999
+          ],
+          "max": [
+            192.5000001,
+            252.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            185.7499999,
+            246.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            194.2500001,
+            253.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            152.9999999,
+            232.9999999,
+            25.9999999
+          ],
+          "max": [
+            197.0000001,
+            267.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            168.9999999,
+            243.9999999,
+            33.9999999
+          ],
+          "max": [
+            181.0000001,
+            256.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_4_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961264,
+        "bounds": {
+          "min": [
+            166.9999999,
+            236.4999999,
+            126.4999999
+          ],
+          "max": [
+            183.0000001,
+            263.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429845,
+        "bounds": {
+          "min": [
+            432.4999999,
+            247.4999999,
+            23.9999999
+          ],
+          "max": [
+            437.5000001,
+            252.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            430.7499999,
+            246.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            439.2500001,
+            253.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429845,
+        "bounds": {
+          "min": [
+            462.4999999,
+            247.4999999,
+            23.9999999
+          ],
+          "max": [
+            467.5000001,
+            252.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            460.7499999,
+            246.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            469.2500001,
+            253.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915633,
+        "bounds": {
+          "min": [
+            427.9999999,
+            232.9999999,
+            25.9999999
+          ],
+          "max": [
+            472.0000001,
+            267.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            443.9999999,
+            243.9999999,
+            33.9999999
+          ],
+          "max": [
+            456.0000001,
+            256.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_5_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961264,
+        "bounds": {
+          "min": [
+            441.9999999,
+            236.4999999,
+            126.4999999
+          ],
+          "max": [
+            458.0000001,
+            263.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429806,
+        "bounds": {
+          "min": [
+            557.4999999,
+            247.4999999,
+            23.9999999
+          ],
+          "max": [
+            562.5000001,
+            252.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            555.7499999,
+            246.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            564.2500001,
+            253.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429806,
+        "bounds": {
+          "min": [
+            587.4999999,
+            247.4999999,
+            23.9999999
+          ],
+          "max": [
+            592.5000001,
+            252.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            585.7499999,
+            246.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            594.2500001,
+            253.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            552.9999999,
+            232.9999999,
+            25.9999999
+          ],
+          "max": [
+            597.0000001,
+            267.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            568.9999999,
+            243.9999999,
+            33.9999999
+          ],
+          "max": [
+            581.0000001,
+            256.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_6_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961264,
+        "bounds": {
+          "min": [
+            566.9999999,
+            236.4999999,
+            126.4999999
+          ],
+          "max": [
+            583.0000001,
+            263.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.9844949342982,
+        "bounds": {
+          "min": [
+            247.4999999,
+            137.4999999,
+            23.9999999
+          ],
+          "max": [
+            252.5000001,
+            142.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            245.7499999,
+            136.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            254.2500001,
+            143.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429845,
+        "bounds": {
+          "min": [
+            277.4999999,
+            137.4999999,
+            23.9999999
+          ],
+          "max": [
+            282.5000001,
+            142.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            275.7499999,
+            136.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            284.2500001,
+            143.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            242.9999999,
+            122.9999999,
+            25.9999999
+          ],
+          "max": [
+            287.0000001,
+            157.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            258.9999999,
+            133.9999999,
+            33.9999999
+          ],
+          "max": [
+            271.0000001,
+            146.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_7_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961237,
+        "bounds": {
+          "min": [
+            256.9999999,
+            126.4999999,
+            126.4999999
+          ],
+          "max": [
+            273.0000001,
+            153.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429806,
+        "bounds": {
+          "min": [
+            552.4999999,
+            137.4999999,
+            23.9999999
+          ],
+          "max": [
+            557.5000001,
+            142.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            550.7499999,
+            136.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            559.2500001,
+            143.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429806,
+        "bounds": {
+          "min": [
+            582.4999999,
+            137.4999999,
+            23.9999999
+          ],
+          "max": [
+            587.5000001,
+            142.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            580.7499999,
+            136.31939193391614,
+            34.9999999
+          ],
+          "max": [
+            589.2500001,
+            143.68060806608386,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            547.9999999,
+            122.9999999,
+            25.9999999
+          ],
+          "max": [
+            592.0000001,
+            157.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            563.9999999,
+            133.9999999,
+            33.9999999
+          ],
+          "max": [
+            576.0000001,
+            146.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_8_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961237,
+        "bounds": {
+          "min": [
+            561.9999999,
+            126.4999999,
+            126.4999999
+          ],
+          "max": [
+            578.0000001,
+            153.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_M5_-15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429862,
+        "bounds": {
+          "min": [
+            822.4999999,
+            337.4999999,
+            23.9999999
+          ],
+          "max": [
+            827.5000001,
+            342.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_M5_-15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            820.7499999,
+            336.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            829.2500001,
+            343.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_M5_15_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 215.98449493429862,
+        "bounds": {
+          "min": [
+            852.4999999,
+            337.4999999,
+            23.9999999
+          ],
+          "max": [
+            857.5000001,
+            342.5000001,
+            35.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_M5_15_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 140.783254702708,
+        "bounds": {
+          "min": [
+            850.7499999,
+            336.3193919339161,
+            34.9999999
+          ],
+          "max": [
+            859.2500001,
+            343.6806080660839,
+            38.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_foot",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 11587.867288915635,
+        "bounds": {
+          "min": [
+            817.9999999,
+            322.9999999,
+            25.9999999
+          ],
+          "max": [
+            862.0000001,
+            357.0000001,
+            34.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_post",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 13824.0,
+        "bounds": {
+          "min": [
+            833.9999999,
+            333.9999999,
+            33.9999999
+          ],
+          "max": [
+            846.0000001,
+            346.0000001,
+            130.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "support_9_clamp",
+      "group": "frame",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 3931.2633829961296,
+        "bounds": {
+          "min": [
+            831.9999999,
+            326.4999999,
+            126.4999999
+          ],
+          "max": [
+            848.0000001,
+            353.5000001,
+            153.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "electronics_shell",
+      "group": "electronics",
+      "material": "enclosure",
+      "evidence": {
+        "valid": true,
+        "volume": 281855.99999999965,
+        "bounds": {
+          "min": [
+            309.99999985,
+            14.99999985,
+            25.99999985
+          ],
+          "max": [
+            540.00000015,
+            115.00000015,
+            106.00000015
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 11,
+          "edges": 48,
+          "vertices": 96
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "electronics_lid",
+      "group": "electronics",
+      "material": "lid",
+      "evidence": {
+        "valid": true,
+        "volume": 194688.0,
+        "bounds": {
+          "min": [
+            307.9999999,
+            12.9999999,
+            105.9999999
+          ],
+          "max": [
+            542.0000001,
+            117.0000001,
+            114.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 24,
+          "vertices": 48
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "lid_M4_321_27_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 138.23007675795114,
+        "bounds": {
+          "min": [
+            318.9999999,
+            24.9999999,
+            103.9999999
+          ],
+          "max": [
+            323.0000001,
+            29.0000001,
+            115.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_321_27_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 90.10128300973233,
+        "bounds": {
+          "min": [
+            317.5999999,
+            24.05551352713291,
+            114.9999999
+          ],
+          "max": [
+            324.4000001,
+            29.94448647286709,
+            118.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_321_103_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 138.230076757951,
+        "bounds": {
+          "min": [
+            318.9999999,
+            100.9999999,
+            103.9999999
+          ],
+          "max": [
+            323.0000001,
+            105.0000001,
+            115.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_321_103_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 90.10128300973233,
+        "bounds": {
+          "min": [
+            317.5999999,
+            100.05551352713292,
+            114.9999999
+          ],
+          "max": [
+            324.4000001,
+            105.94448647286708,
+            118.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_529_27_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 138.23007675795057,
+        "bounds": {
+          "min": [
+            526.9999999,
+            24.9999999,
+            103.9999999
+          ],
+          "max": [
+            531.0000001,
+            29.0000001,
+            115.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_529_27_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 90.10128300973334,
+        "bounds": {
+          "min": [
+            525.5999999000001,
+            24.05551352713291,
+            114.9999999
+          ],
+          "max": [
+            532.4000000999999,
+            29.94448647286709,
+            118.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_529_103_shaft",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 138.23007675795048,
+        "bounds": {
+          "min": [
+            526.9999999,
+            100.9999999,
+            103.9999999
+          ],
+          "max": [
+            531.0000001,
+            105.0000001,
+            115.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "lid_M4_529_103_head",
+      "group": "frame",
+      "material": "silver",
+      "evidence": {
+        "valid": true,
+        "volume": 90.10128300973332,
+        "bounds": {
+          "min": [
+            525.5999999000001,
+            100.05551352713292,
+            114.9999999
+          ],
+          "max": [
+            532.4000000999999,
+            105.94448647286708,
+            118.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 8,
+          "edges": 36,
+          "vertices": 72
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "gland_0",
+      "group": "electronics",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 4146.902302738524,
+        "bounds": {
+          "min": [
+            336.9999999,
+            110.9999999,
+            76.9999999
+          ],
+          "max": [
+            353.0000001,
+            135.0000001,
+            93.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "gland_1",
+      "group": "electronics",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 4146.902302738524,
+        "bounds": {
+          "min": [
+            368.9999999,
+            110.9999999,
+            76.9999999
+          ],
+          "max": [
+            385.0000001,
+            135.0000001,
+            93.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "gland_2",
+      "group": "electronics",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 4146.902302738524,
+        "bounds": {
+          "min": [
+            400.9999999,
+            110.9999999,
+            76.9999999
+          ],
+          "max": [
+            417.0000001,
+            135.0000001,
+            93.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 4,
+          "edges": 12,
+          "vertices": 24
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "antenna_mount",
+      "group": "electronics",
+      "material": "brass",
+      "evidence": {
+        "valid": true,
+        "volume": 1470.2653618800218,
+        "bounds": {
+          "min": [
+            508.9999999,
+            58.9999999,
+            113.9999999
+          ],
+          "max": [
+            521.0000001,
+            71.0000001,
+            127.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {}
+    },
+    {
+      "name": "LoRa_antenna_envelope",
+      "group": "electronics",
+      "material": "rubber",
+      "evidence": {
+        "valid": true,
+        "volume": 5780.530482605229,
+        "bounds": {
+          "min": [
+            510.9999999,
+            60.9999999,
+            126.9999999
+          ],
+          "max": [
+            519.0000001,
+            69.0000001,
+            242.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "envelope_only": true
+      }
+    },
+    {
+      "name": "P0_cable_0",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 325.1548396465436,
+        "bounds": {
+          "min": [
+            223.4999999,
+            429.9999999,
+            237.4999999
+          ],
+          "max": [
+            226.5000001,
+            476.0000001,
+            240.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P0_cable_1",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 1222.8649404098253,
+        "bounds": {
+          "min": [
+            223.4999999,
+            474.4999999,
+            65.9999999
+          ],
+          "max": [
+            226.5000001,
+            477.5000001,
+            239.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P0_cable_2",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 282.74333882308116,
+        "bounds": {
+          "min": [
+            184.9999999,
+            474.4999999,
+            64.4999999
+          ],
+          "max": [
+            225.0000001,
+            477.5000001,
+            67.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P0_cable_3",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 2516.415715525426,
+        "bounds": {
+          "min": [
+            183.4999999,
+            119.9999999,
+            64.4999999
+          ],
+          "max": [
+            186.5000001,
+            476.0000001,
+            67.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P0_cable_4",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 1138.9196851729482,
+        "bounds": {
+          "min": [
+            184.82311769176874,
+            118.4999999,
+            64.51046551489463
+          ],
+          "max": [
+            345.1768823082313,
+            121.5000001,
+            86.48953448510537
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P1_cable_0",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 325.1548396465431,
+        "bounds": {
+          "min": [
+            453.4999999,
+            429.9999999,
+            237.4999999
+          ],
+          "max": [
+            456.5000001,
+            476.0000001,
+            240.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P1_cable_1",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 1222.8649404098294,
+        "bounds": {
+          "min": [
+            453.4999999,
+            474.4999999,
+            65.9999999
+          ],
+          "max": [
+            456.5000001,
+            477.5000001,
+            239.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P1_cable_2",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 1943.8604544086834,
+        "bounds": {
+          "min": [
+            179.9999999,
+            474.4999999,
+            64.4999999
+          ],
+          "max": [
+            455.0000001,
+            477.5000001,
+            67.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P1_cable_3",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 2516.415715525426,
+        "bounds": {
+          "min": [
+            178.4999999,
+            119.9999999,
+            64.4999999
+          ],
+          "max": [
+            181.5000001,
+            476.0000001,
+            67.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "P1_cable_4",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 1398.972496951877,
+        "bounds": {
+          "min": [
+            179.8559980491056,
+            118.4999999,
+            64.50692807756849
+          ],
+          "max": [
+            377.14400195089445,
+            121.5000001,
+            86.49307192243151
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "Q_cable_0",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 325.1548396465436,
+        "bounds": {
+          "min": [
+            578.4999999,
+            429.9999999,
+            172.4999999
+          ],
+          "max": [
+            581.5000001,
+            476.0000001,
+            175.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "Q_cable_1",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 763.4070148223202,
+        "bounds": {
+          "min": [
+            578.4999999,
+            474.4999999,
+            65.9999999
+          ],
+          "max": [
+            581.5000001,
+            477.5000001,
+            174.0000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "Q_cable_2",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 2862.7763055836967,
+        "bounds": {
+          "min": [
+            174.9999999,
+            474.4999999,
+            64.4999999
+          ],
+          "max": [
+            580.0000001,
+            477.5000001,
+            67.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "Q_cable_3",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 2516.415715525426,
+        "bounds": {
+          "min": [
+            173.4999999,
+            119.9999999,
+            64.4999999
+          ],
+          "max": [
+            176.5000001,
+            476.0000001,
+            67.5000001
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    },
+    {
+      "name": "Q_cable_4",
+      "group": "cables",
+      "material": "cable",
+      "evidence": {
+        "valid": true,
+        "volume": 1659.4920504434908,
+        "bounds": {
+          "min": [
+            174.87860454359705,
+            118.4999999,
+            64.50492024745844
+          ],
+          "max": [
+            409.121395456403,
+            121.5000001,
+            86.49507975254156
+          ]
+        },
+        "topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 6,
+          "vertices": 12
+        }
+      },
+      "limitations": {
+        "routing_envelope_only": true
+      }
+    }
+  ],
+  "modelled_fasteners": {
+    "frame": "M6 envelopes; four 6.6mm deck holes at x30/870,y30/490",
+    "supports": "M5 envelopes; paired 5.5mm foot holes 30mm apart; deck mating holes not released",
+    "lid": "M4 envelopes at x321/529,y27/103; mating threads not released"
+  },
+  "important_limits": [
+    "Sensor, flow meter, fittings, glands and enclosure are dimensioned envelopes, not vendor-certified replicas.",
+    "Valve bores do not model actual spool, throttling or valve coefficient.",
+    "Pipe and fitting sockets may overlap by insertion; no global clearance, pressure, electrical ingress or manufacturing approval.",
+    "STEP mm, OBJ mm; GLB metres with a glTF Y-up transform; geometry does not change hydraulic simulation parameters."
+  ],
+  "variant": "collection_review",
+  "collection_design": {
+    "inner_radius_mm": 60,
+    "inner_height_mm": 60,
+    "free_discharge_gap_mm": 20,
+    "capacity_calibrated": false,
+    "target_sample_seconds": 30,
+    "capacity_margin_factor": 1.25,
+    "continuous_discharge_solution_verified": false
+  }
+}
