@@ -97,6 +97,6 @@ def main():
       'required_follow_up':['Calibrate effective capacity by mass/volume and determine safe filling limit with splash headroom.','Measure actual maximum leakage over the eventual pressure/valve range; resize if it exceeds this assumption.','Before any long run, implement a free discharge collection/return route that does not create downstream head; the short-sampling cup does not satisfy continuous operation.','Confirm purchased dimensions, hose routing, wet/electrical separation and actual assembly.']}
     (OUT/'collection_feasibility.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
     with (OUT/'collection_intersections.csv').open('w',encoding='utf-8',newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=['collection_part','other_part','common_volume_mm3']);writer.writeheader();writer.writerows(tested)
+        writer=csv.DictWriter(f,fieldnames=['collection_part','other_part','common_volume_mm3'],lineterminator='\n');writer.writeheader();writer.writerows(tested)
     print(json.dumps({'capacity_ml':capacity,'required_ml':required,'max_leak_l_min':max_leak,'exact_intersection_pairs':len(tested),'conflicts':len(conflicts),'support_gap_mm':clearance,'counterexample_overlap_mm3':previous_overlap,'physical_validation':False}))
 if __name__=='__main__':main()

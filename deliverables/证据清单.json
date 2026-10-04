@@ -165,8 +165,8 @@
     },
     {
       "path": "scripts/package_submission.py",
-      "sha256": "9af91165dfde5230645343398ad4d0c733d668e496df561b4e38419efddeb1b1",
-      "bytes": 1779
+      "sha256": "04e3ab6e9ce79a2e659fff34142e6775c093f2abe08d51e803553e43192f0800",
+      "bytes": 2056
     },
     {
       "path": "附件1：塔里木大学大学生创新训练项目申报书.doc",
@@ -685,13 +685,13 @@
     },
     {
       "path": "application/models/collection_review/collection_feasibility.json",
-      "sha256": "970321a8cf01d6b50b84c99627e5cd2e08c9ca6952d9aa18a0a8e3e00ec4f182",
+      "sha256": "5a7c6711f36994036fc80221292230fb25c222dba0b59a40bc3787965e781df0",
       "bytes": 7285
     },
     {
       "path": "application/models/collection_review/collection_intersections.csv",
-      "sha256": "113840c882cc7ec7f0feeaa07e4f17fe5900a8b438b65f3255a6020e84324777",
-      "bytes": 87
+      "sha256": "cf17c5e643f1014cbf7de28d578932a2880c42367173812bc4e13bbc73758f9c",
+      "bytes": 85
     },
     {
       "path": "application/models/collection_review/plate_layout_checks.json",
@@ -835,8 +835,8 @@
     },
     {
       "path": "scripts/audit_bench_collection.py",
-      "sha256": "c7528eb7f6ffe9d12a97486a0496acfeea55819a4f7763a4be24cdeec9daac9d",
-      "bytes": 8848
+      "sha256": "976cf9adbe5060f366d9b68116ea88fd637c400e253f3d9b2c9f296a8dfb09c1",
+      "bytes": 8868
     },
     {
       "path": "scripts/render_collection_review.py",

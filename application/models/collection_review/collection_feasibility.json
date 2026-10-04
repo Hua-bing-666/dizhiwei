@@ -5,7 +5,7 @@
     "application/models/collection_review/bench_layout.json": "3f0137c9f9efbc341ddefb4185b5f021398802c5fac19949ee1cc80afc757c99",
     "simulation/hardware_results/range_grid.csv": "35d5f07302f4f0f35d8bb47673d4a32078fda9cafe4545a2f94a0eaada59e367",
     "simulation/hardware_results/summary.json": "0616fcc5338adf838d869e23973af72e00d78871dc1522dc5b9f754759d6810a",
-    "scripts/audit_bench_collection.py": "c7528eb7f6ffe9d12a97486a0496acfeea55819a4f7763a4be24cdeec9daac9d"
+    "scripts/audit_bench_collection.py": "976cf9adbe5060f366d9b68116ea88fd637c400e253f3d9b2c9f296a8dfb09c1"
   },
   "design_calculation": {
     "grid_rows": 24,
