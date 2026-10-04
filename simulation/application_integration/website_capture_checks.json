@@ -1,0 +1,1422 @@
+{
+  "date": "2026-10-05",
+  "classification": "actual_local_browser_captures_of_synthetic_ui_not_hardware",
+  "physical_data": false,
+  "dom_replaced": false,
+  "css_overridden": false,
+  "pixels_postprocessed": false,
+  "screenshots": [
+    {
+      "name": "website_diagnosis_panel",
+      "selector": ".diagnosis-card",
+      "viewport": {
+        "width": 1440,
+        "height": 1120,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 987,
+        "y": 507.9375,
+        "width": 408,
+        "height": 495.625
+      },
+      "texts": [
+        {
+          "text": "当前诊断",
+          "fontPx": 17,
+          "x": 22,
+          "y": 23,
+          "width": 68,
+          "height": 22
+        },
+        {
+          "text": "合成回放 · P0—P1及下游负载",
+          "fontPx": 12,
+          "x": 22,
+          "y": 53.5,
+          "width": 155.5625,
+          "height": 16
+        },
+        {
+          "text": "等效泄漏候选",
+          "fontPx": 15,
+          "x": 48,
+          "y": 104.296875,
+          "width": 90,
+          "height": 20
+        },
+        {
+          "text": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+          "fontPx": 12,
+          "x": 22,
+          "y": 150.046875,
+          "width": 360,
+          "height": 16
+        },
+        {
+          "text": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+          "fontPx": 12,
+          "x": 22,
+          "y": 171.640625,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "负载特征 K",
+          "fontPx": 10,
+          "x": 34,
+          "y": 223.046875,
+          "width": 48.546875,
+          "height": 14
+        },
+        {
+          "text": "0.323",
+          "fontPx": 22,
+          "x": 34,
+          "y": 244.546875,
+          "width": 54.171875,
+          "height": 30
+        },
+        {
+          "text": "(L/min)/√kPa",
+          "fontPx": 10,
+          "x": 34,
+          "y": 281.84375,
+          "width": 57.046875,
+          "height": 14
+        },
+        {
+          "text": "区段阻力 R̂",
+          "fontPx": 10,
+          "x": 221,
+          "y": 223.046875,
+          "width": 48.734375,
+          "height": 14
+        },
+        {
+          "text": "0.78",
+          "fontPx": 22,
+          "x": 221,
+          "y": 244.546875,
+          "width": 41.53125,
+          "height": 30
+        },
+        {
+          "text": "kPa/(L/min)²",
+          "fontPx": 10,
+          "x": 221,
+          "y": 281.84375,
+          "width": 54.21875,
+          "height": 14
+        },
+        {
+          "text": "建议核查",
+          "fontPx": 12,
+          "x": 22,
+          "y": 345.34375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 12,
+          "x": 22,
+          "y": 371.4375,
+          "width": 360,
+          "height": 16
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 12,
+          "x": 22,
+          "y": 393.03125,
+          "width": 84,
+          "height": 16
+        },
+        {
+          "text": "打开异常事件",
+          "fontPx": 12,
+          "x": 156,
+          "y": 442.71875,
+          "width": 72,
+          "height": 16
+        }
+      ],
+      "overlaps": [],
+      "minimumTextPx": 10,
+      "minimumTextPtAt425pt": 10.416666666666666,
+      "sha256": "0687905d135d94de7e51151b958d50e5b05eb2b2eb20033e008b10b6da511bff",
+      "state": {
+        "scenario": "leak",
+        "noise": "0.3",
+        "quality": "replay",
+        "time": 450,
+        "page": "overview",
+        "eventFilter": "all",
+        "eventSearch": "",
+        "historyTab": "readings",
+        "historyPage": 22,
+        "selectedEventId": null
+      },
+      "diagnosis": {
+        "key": "leak_pattern",
+        "label": "等效泄漏候选",
+        "tone": "warning",
+        "reason": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+        "hint": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。"
+      },
+      "displayed": {
+        "k": "0.323",
+        "r": "0.78",
+        "q": "3.39 L/min"
+      }
+    },
+    {
+      "name": "website_overview_desktop",
+      "selector": "body",
+      "viewport": {
+        "width": 1440,
+        "height": 1120,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1120
+      },
+      "texts": [
+        {
+          "text": "滴智卫",
+          "fontPx": 22,
+          "x": 75,
+          "y": 26,
+          "width": 72,
+          "height": 30
+        },
+        {
+          "text": "DRIP OPERATIONS",
+          "fontPx": 10,
+          "x": 75,
+          "y": 63.890625,
+          "width": 106.140625,
+          "height": 14
+        },
+        {
+          "text": "A",
+          "fontPx": 12,
+          "x": 37.625,
+          "y": 136.515625,
+          "width": 7.75,
+          "height": 16
+        },
+        {
+          "text": "支管运行与维护",
+          "fontPx": 12,
+          "x": 64,
+          "y": 124.984375,
+          "width": 84,
+          "height": 16
+        },
+        {
+          "text": "本地原型 · 演示工作区",
+          "fontPx": 10,
+          "x": 64,
+          "y": 149.78125,
+          "width": 97.65625,
+          "height": 14
+        },
+        {
+          "text": "工作区",
+          "fontPx": 11,
+          "x": 28,
+          "y": 205.875,
+          "width": 36,
+          "height": 15
+        },
+        {
+          "text": "运行总览",
+          "fontPx": 13,
+          "x": 60,
+          "y": 246.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "支管监测",
+          "fontPx": 13,
+          "x": 60,
+          "y": 296.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "异常事件",
+          "fontPx": 13,
+          "x": 60,
+          "y": 346.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "0",
+          "fontPx": 11,
+          "x": 179.53125,
+          "y": 346.765625,
+          "width": 5.9375,
+          "height": 15
+        },
+        {
+          "text": "设备与链路",
+          "fontPx": 13,
+          "x": 60,
+          "y": 396.265625,
+          "width": 65,
+          "height": 17
+        },
+        {
+          "text": "历史记录",
+          "fontPx": 13,
+          "x": 60,
+          "y": 446.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "系统设置",
+          "fontPx": 13,
+          "x": 60,
+          "y": 496.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "申报与答辩资料",
+          "fontPx": 12,
+          "x": 55,
+          "y": 1030.59375,
+          "width": 84,
+          "height": 16
+        },
+        {
+          "text": "↗",
+          "fontPx": 12,
+          "x": 186.203125,
+          "y": 1030.59375,
+          "width": 8.796875,
+          "height": 16
+        },
+        {
+          "text": "浏览器本地工作区",
+          "fontPx": 10,
+          "x": 41,
+          "y": 1074.5,
+          "width": 80,
+          "height": 14
+        },
+        {
+          "text": "滴灌运行平台",
+          "fontPx": 12,
+          "x": 254,
+          "y": 27.09375,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "/",
+          "fontPx": 12,
+          "x": 338,
+          "y": 27.09375,
+          "width": 4.6875,
+          "height": 16
+        },
+        {
+          "text": "运行总览",
+          "fontPx": 12,
+          "x": 354.6875,
+          "y": 27.09375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "合成回放",
+          "fontPx": 11,
+          "x": 1242.75,
+          "y": 27.921875,
+          "width": 44,
+          "height": 15
+        },
+        {
+          "text": "LoRa 未接入",
+          "fontPx": 12,
+          "x": 1327.75,
+          "y": 27.09375,
+          "width": 65.25,
+          "height": 16
+        },
+        {
+          "text": "当前使用未标定模型的合成数据，设备尚未接入。查看、处置和复测记录为本地演示，不代表实物维护结果。",
+          "fontPx": 12,
+          "x": 291,
+          "y": 108,
+          "width": 576,
+          "height": 16
+        },
+        {
+          "text": "OVERVIEW",
+          "fontPx": 10,
+          "x": 252,
+          "y": 168.1875,
+          "width": 66.71875,
+          "height": 14
+        },
+        {
+          "text": "运行总览",
+          "fontPx": 29,
+          "x": 252,
+          "y": 190.28125,
+          "width": 114.40625,
+          "height": 38
+        },
+        {
+          "text": "查看支管变化、异常线索与待处理事件。",
+          "fontPx": 13,
+          "x": 252,
+          "y": 238.875,
+          "width": 234,
+          "height": 17
+        },
+        {
+          "text": "数据记录",
+          "fontPx": 12,
+          "x": 1199,
+          "y": 201.34375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "记录当前异常",
+          "fontPx": 12,
+          "x": 1309,
+          "y": 201.34375,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "回放控制",
+          "fontPx": 12,
+          "x": 293,
+          "y": 295.609375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "渐进等效泄漏 · 450 s",
+          "fontPx": 12,
+          "x": 359,
+          "y": 295.609375,
+          "width": 110.203125,
+          "height": 16
+        },
+        {
+          "text": "切换场景与数据质量",
+          "fontPx": 11,
+          "x": 1258,
+          "y": 298.3125,
+          "width": 99,
+          "height": 15
+        },
+        {
+          "text": "监测支管",
+          "fontPx": 12,
+          "x": 272,
+          "y": 372.703125,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "1",
+          "fontPx": 31,
+          "x": 272,
+          "y": 401.5,
+          "width": 25.390625,
+          "height": 41
+        },
+        {
+          "text": "条",
+          "fontPx": 14,
+          "x": 301.390625,
+          "y": 419.5,
+          "width": 13.5,
+          "height": 19
+        },
+        {
+          "text": "配置示意 · 支管 A",
+          "fontPx": 11,
+          "x": 272,
+          "y": 451.796875,
+          "width": 84.53125,
+          "height": 15
+        },
+        {
+          "text": "待处理事件",
+          "fontPx": 12,
+          "x": 561.5,
+          "y": 372.703125,
+          "width": 60,
+          "height": 16
+        },
+        {
+          "text": "0",
+          "fontPx": 31,
+          "x": 561.5,
+          "y": 401.5,
+          "width": 17.34375,
+          "height": 41
+        },
+        {
+          "text": "仅统计已记录的本地演示事件",
+          "fontPx": 11,
+          "x": 561.5,
+          "y": 451.796875,
+          "width": 143,
+          "height": 15
+        },
+        {
+          "text": "当前数据状态",
+          "fontPx": 12,
+          "x": 851,
+          "y": 372.703125,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "回放可用",
+          "fontPx": 22,
+          "x": 851,
+          "y": 407.5,
+          "width": 88,
+          "height": 30
+        },
+        {
+          "text": "合成观测 · 非传感器实测",
+          "fontPx": 11,
+          "x": 851,
+          "y": 448.09375,
+          "width": 118.421875,
+          "height": 15
+        },
+        {
+          "text": "无线接收",
+          "fontPx": 12,
+          "x": 1140.5,
+          "y": 372.703125,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "未接入",
+          "fontPx": 22,
+          "x": 1140.5,
+          "y": 407.5,
+          "width": 66,
+          "height": 30
+        },
+        {
+          "text": "无实际发收、ACK 或功耗记录",
+          "fontPx": 11,
+          "x": 1140.5,
+          "y": 448.09375,
+          "width": 144.09375,
+          "height": 15
+        },
+        {
+          "text": "压力与流量趋势",
+          "fontPx": 17,
+          "x": 274,
+          "y": 530.9375,
+          "width": 119,
+          "height": 22
+        },
+        {
+          "text": "支管 A ·",
+          "fontPx": 12,
+          "x": 274,
+          "y": 561.4375,
+          "width": 44.203125,
+          "height": 16
+        },
+        {
+          "text": "渐进等效泄漏",
+          "fontPx": 12,
+          "x": 318.203125,
+          "y": 561.4375,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "查看支管",
+          "fontPx": 12,
+          "x": 877.640625,
+          "y": 543.03125,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "→",
+          "fontPx": 12,
+          "x": 933.640625,
+          "y": 543.03125,
+          "width": 10.359375,
+          "height": 16
+        },
+        {
+          "text": "P0 入口压力",
+          "fontPx": 11,
+          "x": 298,
+          "y": 598.234375,
+          "width": 59.109375,
+          "height": 15
+        },
+        {
+          "text": "P1 下游压力",
+          "fontPx": 11,
+          "x": 399.109375,
+          "y": 598.234375,
+          "width": 59.109375,
+          "height": 15
+        },
+        {
+          "text": "450 / 600 s",
+          "fontPx": 11,
+          "x": 890.421875,
+          "y": 598.234375,
+          "width": 53.578125,
+          "height": 15
+        },
+        {
+          "text": "kPa",
+          "fontPx": 12,
+          "x": 319,
+          "y": 624.375,
+          "width": 18.390625,
+          "height": 16
+        },
+        {
+          "text": "180",
+          "fontPx": 12,
+          "x": 289.59375,
+          "y": 638.375,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "135",
+          "fontPx": 12,
+          "x": 289.59375,
+          "y": 684.125,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "90",
+          "fontPx": 12,
+          "x": 296.0625,
+          "y": 729.875,
+          "width": 12.9375,
+          "height": 16
+        },
+        {
+          "text": "45",
+          "fontPx": 12,
+          "x": 296.0625,
+          "y": 775.625,
+          "width": 12.9375,
+          "height": 16
+        },
+        {
+          "text": "0",
+          "fontPx": 12,
+          "x": 302.53125,
+          "y": 821.375,
+          "width": 6.46875,
+          "height": 16
+        },
+        {
+          "text": "0",
+          "fontPx": 12,
+          "x": 315.765625,
+          "y": 842.375,
+          "width": 6.46875,
+          "height": 16
+        },
+        {
+          "text": "120",
+          "fontPx": 12,
+          "x": 430.6968688964844,
+          "y": 842.375,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "240",
+          "fontPx": 12,
+          "x": 552.0968627929688,
+          "y": 842.375,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "360",
+          "fontPx": 12,
+          "x": 673.4968872070312,
+          "y": 842.375,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "480",
+          "fontPx": 12,
+          "x": 794.8968505859375,
+          "y": 842.375,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "600",
+          "fontPx": 12,
+          "x": 916.296875,
+          "y": 842.375,
+          "width": 19.40625,
+          "height": 16
+        },
+        {
+          "text": "模型时间 / s",
+          "fontPx": 12,
+          "x": 861.65625,
+          "y": 624.375,
+          "width": 64.34375,
+          "height": 16
+        },
+        {
+          "text": "Q · A 总流量",
+          "fontPx": 11,
+          "x": 274,
+          "y": 903.296875,
+          "width": 59.8125,
+          "height": 15
+        },
+        {
+          "text": "3.39 L/min",
+          "fontPx": 15,
+          "x": 868.515625,
+          "y": 901,
+          "width": 75.484375,
+          "height": 20
+        },
+        {
+          "text": "曲线截至所选回放时刻。数据质量异常时仅保留历史参考，不能据此判断当前水路。",
+          "fontPx": 11,
+          "x": 274,
+          "y": 947.375,
+          "width": 407,
+          "height": 15
+        },
+        {
+          "text": "当前诊断",
+          "fontPx": 17,
+          "x": 1009,
+          "y": 530.9375,
+          "width": 68,
+          "height": 22
+        },
+        {
+          "text": "合成回放 · P0—P1及下游负载",
+          "fontPx": 12,
+          "x": 1009,
+          "y": 561.4375,
+          "width": 155.5625,
+          "height": 16
+        },
+        {
+          "text": "等效泄漏候选",
+          "fontPx": 15,
+          "x": 1035,
+          "y": 612.234375,
+          "width": 90,
+          "height": 20
+        },
+        {
+          "text": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+          "fontPx": 12,
+          "x": 1009,
+          "y": 657.984375,
+          "width": 360,
+          "height": 16
+        },
+        {
+          "text": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+          "fontPx": 12,
+          "x": 1009,
+          "y": 679.578125,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "负载特征 K",
+          "fontPx": 10,
+          "x": 1021,
+          "y": 730.984375,
+          "width": 48.546875,
+          "height": 14
+        },
+        {
+          "text": "0.323",
+          "fontPx": 22,
+          "x": 1021,
+          "y": 752.484375,
+          "width": 54.171875,
+          "height": 30
+        },
+        {
+          "text": "(L/min)/√kPa",
+          "fontPx": 10,
+          "x": 1021,
+          "y": 789.78125,
+          "width": 57.046875,
+          "height": 14
+        },
+        {
+          "text": "区段阻力 R̂",
+          "fontPx": 10,
+          "x": 1208,
+          "y": 730.984375,
+          "width": 48.734375,
+          "height": 14
+        },
+        {
+          "text": "0.78",
+          "fontPx": 22,
+          "x": 1208,
+          "y": 752.484375,
+          "width": 41.53125,
+          "height": 30
+        },
+        {
+          "text": "kPa/(L/min)²",
+          "fontPx": 10,
+          "x": 1208,
+          "y": 789.78125,
+          "width": 54.21875,
+          "height": 14
+        },
+        {
+          "text": "建议核查",
+          "fontPx": 12,
+          "x": 1009,
+          "y": 853.28125,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 12,
+          "x": 1009,
+          "y": 879.375,
+          "width": 360,
+          "height": 16
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 12,
+          "x": 1009,
+          "y": 900.96875,
+          "width": 84,
+          "height": 16
+        },
+        {
+          "text": "打开异常事件",
+          "fontPx": 12,
+          "x": 1143,
+          "y": 950.65625,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "支管与测点",
+          "fontPx": 17,
+          "x": 274,
+          "y": 1047.5625,
+          "width": 85,
+          "height": 22
+        },
+        {
+          "text": "连接关系示意 · 非田间位置图",
+          "fontPx": 12,
+          "x": 274,
+          "y": 1078.0625,
+          "width": 153.1875,
+          "height": 16
+        },
+        {
+          "text": "设备档案 →",
+          "fontPx": 12,
+          "x": 832.390625,
+          "y": 1059.65625,
+          "width": 61.640625,
+          "height": 16
+        },
+        {
+          "text": "最近维护记录",
+          "fontPx": 17,
+          "x": 959.03125,
+          "y": 1047.5625,
+          "width": 102,
+          "height": 22
+        },
+        {
+          "text": "核查、处置与复测分别留痕",
+          "fontPx": 12,
+          "x": 959.03125,
+          "y": 1078.0625,
+          "width": 144,
+          "height": 16
+        },
+        {
+          "text": "全部记录 →",
+          "fontPx": 12,
+          "x": 1311.359375,
+          "y": 1059.65625,
+          "width": 61.640625,
+          "height": 16
+        }
+      ],
+      "overlaps": [],
+      "minimumTextPx": 10,
+      "minimumTextPtAt425pt": 2.951388888888889,
+      "sha256": "4b084d69c40c5e4d880660bb62d3f098f528cbff4e46cd1d296a8ab842c21784",
+      "state": {
+        "scenario": "leak",
+        "noise": "0.3",
+        "quality": "replay",
+        "time": 450,
+        "page": "overview",
+        "eventFilter": "all",
+        "eventSearch": "",
+        "historyTab": "readings",
+        "historyPage": 22,
+        "selectedEventId": null
+      },
+      "diagnosis": {
+        "key": "leak_pattern",
+        "label": "等效泄漏候选",
+        "tone": "warning",
+        "reason": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+        "hint": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。"
+      },
+      "displayed": {
+        "k": "0.323",
+        "r": "0.78",
+        "q": "3.39 L/min"
+      }
+    },
+    {
+      "name": "website_events_desktop",
+      "selector": "body",
+      "viewport": {
+        "width": 1440,
+        "height": 1120,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1120
+      },
+      "texts": [
+        {
+          "text": "滴智卫",
+          "fontPx": 22,
+          "x": 75,
+          "y": 26,
+          "width": 72,
+          "height": 30
+        },
+        {
+          "text": "DRIP OPERATIONS",
+          "fontPx": 10,
+          "x": 75,
+          "y": 63.890625,
+          "width": 106.140625,
+          "height": 14
+        },
+        {
+          "text": "A",
+          "fontPx": 12,
+          "x": 37.625,
+          "y": 136.515625,
+          "width": 7.75,
+          "height": 16
+        },
+        {
+          "text": "支管运行与维护",
+          "fontPx": 12,
+          "x": 64,
+          "y": 124.984375,
+          "width": 84,
+          "height": 16
+        },
+        {
+          "text": "本地原型 · 演示工作区",
+          "fontPx": 10,
+          "x": 64,
+          "y": 149.78125,
+          "width": 97.65625,
+          "height": 14
+        },
+        {
+          "text": "工作区",
+          "fontPx": 11,
+          "x": 28,
+          "y": 205.875,
+          "width": 36,
+          "height": 15
+        },
+        {
+          "text": "运行总览",
+          "fontPx": 13,
+          "x": 60,
+          "y": 246.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "支管监测",
+          "fontPx": 13,
+          "x": 60,
+          "y": 296.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "异常事件",
+          "fontPx": 13,
+          "x": 60,
+          "y": 346.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "1",
+          "fontPx": 11,
+          "x": 179.53125,
+          "y": 346.765625,
+          "width": 5.9375,
+          "height": 15
+        },
+        {
+          "text": "设备与链路",
+          "fontPx": 13,
+          "x": 60,
+          "y": 396.265625,
+          "width": 65,
+          "height": 17
+        },
+        {
+          "text": "历史记录",
+          "fontPx": 13,
+          "x": 60,
+          "y": 446.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "系统设置",
+          "fontPx": 13,
+          "x": 60,
+          "y": 496.265625,
+          "width": 52,
+          "height": 17
+        },
+        {
+          "text": "申报与答辩资料",
+          "fontPx": 12,
+          "x": 55,
+          "y": 1030.59375,
+          "width": 84,
+          "height": 16
+        },
+        {
+          "text": "↗",
+          "fontPx": 12,
+          "x": 186.203125,
+          "y": 1030.59375,
+          "width": 8.796875,
+          "height": 16
+        },
+        {
+          "text": "浏览器本地工作区",
+          "fontPx": 10,
+          "x": 41,
+          "y": 1074.5,
+          "width": 80,
+          "height": 14
+        },
+        {
+          "text": "滴灌运行平台",
+          "fontPx": 12,
+          "x": 254,
+          "y": 27.09375,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "/",
+          "fontPx": 12,
+          "x": 338,
+          "y": 27.09375,
+          "width": 4.6875,
+          "height": 16
+        },
+        {
+          "text": "异常事件",
+          "fontPx": 12,
+          "x": 354.6875,
+          "y": 27.09375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "合成回放",
+          "fontPx": 11,
+          "x": 1257.75,
+          "y": 27.921875,
+          "width": 44,
+          "height": 15
+        },
+        {
+          "text": "LoRa 未接入",
+          "fontPx": 12,
+          "x": 1342.75,
+          "y": 27.09375,
+          "width": 65.25,
+          "height": 16
+        },
+        {
+          "text": "当前使用未标定模型的合成数据，设备尚未接入。查看、处置和复测记录为本地演示，不代表实物维护结果。",
+          "fontPx": 12,
+          "x": 291,
+          "y": 108,
+          "width": 576,
+          "height": 16
+        },
+        {
+          "text": "EVENTS",
+          "fontPx": 10,
+          "x": 252,
+          "y": 168.1875,
+          "width": 48.140625,
+          "height": 14
+        },
+        {
+          "text": "异常事件",
+          "fontPx": 29,
+          "x": 252,
+          "y": 190.28125,
+          "width": 114.40625,
+          "height": 38
+        },
+        {
+          "text": "将候选异常记录下来，逐项核查、处置和复测。",
+          "fontPx": 13,
+          "x": 252,
+          "y": 238.875,
+          "width": 273,
+          "height": 17
+        },
+        {
+          "text": "数据记录",
+          "fontPx": 12,
+          "x": 1214,
+          "y": 201.34375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "记录当前异常",
+          "fontPx": 12,
+          "x": 1324,
+          "y": 201.34375,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "回放控制",
+          "fontPx": 12,
+          "x": 293,
+          "y": 295.609375,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "渐进等效泄漏 · 450 s",
+          "fontPx": 12,
+          "x": 359,
+          "y": 295.609375,
+          "width": 110.203125,
+          "height": 16
+        },
+        {
+          "text": "切换场景与数据质量",
+          "fontPx": 11,
+          "x": 1273,
+          "y": 298.3125,
+          "width": 99,
+          "height": 15
+        },
+        {
+          "text": "全部事件",
+          "fontPx": 12,
+          "x": 267,
+          "y": 366.796875,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "1",
+          "fontPx": 13,
+          "x": 327,
+          "y": 366.984375,
+          "width": 7.484375,
+          "height": 17
+        },
+        {
+          "text": "待处理",
+          "fontPx": 12,
+          "x": 374.484375,
+          "y": 366.796875,
+          "width": 36,
+          "height": 16
+        },
+        {
+          "text": "1",
+          "fontPx": 13,
+          "x": 422.484375,
+          "y": 366.984375,
+          "width": 7.484375,
+          "height": 17
+        },
+        {
+          "text": "已归档",
+          "fontPx": 12,
+          "x": 469.96875,
+          "y": 366.796875,
+          "width": 36,
+          "height": 16
+        },
+        {
+          "text": "0",
+          "fontPx": 13,
+          "x": 517.96875,
+          "y": 366.984375,
+          "width": 7.484375,
+          "height": 17
+        },
+        {
+          "text": "事件工作台",
+          "fontPx": 17,
+          "x": 274,
+          "y": 438.703125,
+          "width": 85,
+          "height": 22
+        },
+        {
+          "text": "本地记录不代表无线告警已送达。",
+          "fontPx": 12,
+          "x": 274,
+          "y": 469.203125,
+          "width": 180,
+          "height": 16
+        },
+        {
+          "text": "事件",
+          "fontPx": 11,
+          "x": 286,
+          "y": 522,
+          "width": 22,
+          "height": 15
+        },
+        {
+          "text": "模型时刻",
+          "fontPx": 11,
+          "x": 510.171875,
+          "y": 522,
+          "width": 44,
+          "height": 15
+        },
+        {
+          "text": "处置阶段",
+          "fontPx": 11,
+          "x": 720.328125,
+          "y": 522,
+          "width": 44,
+          "height": 15
+        },
+        {
+          "text": "来源 / 传输",
+          "fontPx": 11,
+          "x": 886.125,
+          "y": 522,
+          "width": 54.609375,
+          "height": 15
+        },
+        {
+          "text": "操作",
+          "fontPx": 11,
+          "x": 1199.984375,
+          "y": 522,
+          "width": 22,
+          "height": 15
+        },
+        {
+          "text": "等效泄漏候选",
+          "fontPx": 12,
+          "x": 286,
+          "y": 568.171875,
+          "width": 72,
+          "height": 16
+        },
+        {
+          "text": "DEMO-A-001",
+          "fontPx": 11,
+          "x": 286,
+          "y": 591.96875,
+          "width": 65.140625,
+          "height": 15
+        },
+        {
+          "text": "450 s",
+          "fontPx": 12,
+          "x": 510.171875,
+          "y": 568.171875,
+          "width": 27.796875,
+          "height": 16
+        },
+        {
+          "text": "渐进等效泄漏",
+          "fontPx": 11,
+          "x": 510.171875,
+          "y": 591.96875,
+          "width": 66,
+          "height": 15
+        },
+        {
+          "text": "待复测",
+          "fontPx": 11,
+          "x": 727.328125,
+          "y": 580.0625,
+          "width": 33,
+          "height": 15
+        },
+        {
+          "text": "本地演示",
+          "fontPx": 12,
+          "x": 886.125,
+          "y": 568.171875,
+          "width": 48,
+          "height": 16
+        },
+        {
+          "text": "未发送 / 未获无线 ACK",
+          "fontPx": 11,
+          "x": 886.125,
+          "y": 591.96875,
+          "width": 110.40625,
+          "height": 15
+        },
+        {
+          "text": "查看详情 →",
+          "fontPx": 12,
+          "x": 1199.984375,
+          "y": 579.234375,
+          "width": 61.640625,
+          "height": 16
+        },
+        {
+          "text": "滴智卫 · 支管运行与维护原型",
+          "fontPx": 10,
+          "x": 252,
+          "y": 697.140625,
+          "width": 127.65625,
+          "height": 14
+        },
+        {
+          "text": "数据来源：A06/A07 v1 · 合成观测 / seed 10300",
+          "fontPx": 10,
+          "x": 1201.40625,
+          "y": 697.140625,
+          "width": 208.59375,
+          "height": 14
+        }
+      ],
+      "overlaps": [],
+      "minimumTextPx": 10,
+      "minimumTextPtAt425pt": 2.951388888888889,
+      "sha256": "4f66f2e5968eb6b69c59acfb294c86958abeda5fd7d4e8efb3544ae707a0af05",
+      "state": {
+        "scenario": "leak",
+        "noise": "0.3",
+        "quality": "replay",
+        "time": 450,
+        "page": "events",
+        "eventFilter": "all",
+        "eventSearch": "",
+        "historyTab": "readings",
+        "historyPage": 22,
+        "selectedEventId": "DEMO-A-001"
+      },
+      "diagnosis": {
+        "key": "leak_pattern",
+        "label": "等效泄漏候选",
+        "tone": "warning",
+        "reason": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+        "hint": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。"
+      },
+      "displayed": {
+        "k": "0.323",
+        "r": "0.78",
+        "q": "3.39 L/min"
+      }
+    }
+  ],
+  "research_notice_checks": [
+    {
+      "width": 375,
+      "notice_present": true,
+      "root_overflow": false
+    },
+    {
+      "width": 768,
+      "notice_present": true,
+      "root_overflow": false
+    },
+    {
+      "width": 1024,
+      "notice_present": true,
+      "root_overflow": false
+    },
+    {
+      "width": 1440,
+      "notice_present": true,
+      "root_overflow": false
+    }
+  ],
+  "status": "captured",
+  "source_sha256": {
+    "script": "8075713f4bbf0489d965aaf609744a7f37593b1d0636775c4e2f5979383c162f",
+    "site": "0226a252449d373ada79fe2074769a1b8d310bd4dbe135b526a6caaf3afa17a5",
+    "research": "2de079e15ee9b6a0554e30299309173a6b73d43f2798bc3e5e32f80da5978d7c",
+    "replay": "8853e8e12de87770558cf3a208aa848bc4566df6b769bc16a9453d46e8cec435"
+  }
+}

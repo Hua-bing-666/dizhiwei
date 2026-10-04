@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "browser": "passed",
   "comparison_selections": 24,
   "diagnosis_selections": 24,
@@ -7,7 +7,7 @@
   "notes": 15,
   "pdf_pages": {
     "project_plan": 6,
-    "application": 23,
+    "application": 24,
     "deck": 15
   },
   "validation_scope": "programmatic browser interactions, PDF text bounds, editable package and native PDF rasterization; human visual acceptance recorded separately; not physical validation",
@@ -380,5 +380,17 @@
     "word_integration_complete": false,
     "physical_validation": false,
     "research_page_scope": "historical notice and root overflow at four widths only; original receipt remains historical"
-  }
+  },
+  "application_integration": {
+    "status": "passed_internal_draft_checks_administrative_and_resource_confirmation_pending",
+    "record": "申报书整合分项验收记录.json",
+    "physical_validation": false,
+    "pages": 24,
+    "manual_pages_reviewed": 24,
+    "figures": 9,
+    "editable_tables": 4,
+    "references": 17,
+    "source_sha256": "12c619645eb4612794782acc12f533ab48c44ba2da87af2f2aa314def8f1b184"
+  },
+  "legacy_receipts": "Older Word/PPT/research-page receipts refer to their frozen versions; current application acceptance is recorded separately."
 }

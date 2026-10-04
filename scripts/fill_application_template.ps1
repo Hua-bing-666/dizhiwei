@@ -1,8 +1,11 @@
-param([string]$Workspace = 'C:\Users\Lenovo\Desktop\大创想法')
+param([string]$Workspace = 'C:\Users\Lenovo\Desktop\大创想法', [string]$OutputDirectory = 'tmp\application_integration\candidate')
 $ErrorActionPreference = 'Stop'
 $payload = Get-Content -LiteralPath (Join-Path $Workspace 'tmp\reference_review\application_payload.json') -Raw | ConvertFrom-Json
 $app = New-Object -ComObject kwps.Application
-$app.Visible = $false
+$priorDocumentCount=$app.Documents.Count
+$priorVisible=$app.Visible
+$priorAlerts=$app.DisplayAlerts
+if ($priorDocumentCount -eq 0) {$app.Visible = $false}
 $app.DisplayAlerts = 0
 try {
     $doc = $app.Documents.Open((Join-Path $Workspace '附件1：塔里木大学大学生创新训练项目申报书.doc'),$false,$false)
@@ -25,6 +28,8 @@ try {
         $range.Rows.Item(1).HeightRule=0
         $range.Rows.Item(1).AllowBreakAcrossPages=$false
     }
+    $bodyCells=@()
+    for ($i=0;$i -lt 9;$i++) {$bodyCells+=,$table.Range.Cells.Item(63+$i)}
     for ($i=0;$i -lt 9;$i++) {
         $index = 63+$i
         $value = [string]$payload.sections[$i]
@@ -79,7 +84,12 @@ try {
         if (-not $range.Find.Execute()) {throw ('Missing figure anchor: '+$figure.marker)}
         $range.Text='';$range.Collapse(1)
         $shape = $doc.InlineShapes.AddPicture((Join-Path $Workspace ([string]$figure.path)),$false,$true,$range)
-        $shape.LockAspectRatio = -1; $shape.Width = 425
+        # WPS may leave Height unchanged when assigning Width despite the lock.
+        # Set both dimensions from source pixels; verify saved VML in QA.
+        $shape.LockAspectRatio = 0
+        $shape.Width = [double]$figure.width_pt
+        $shape.Height = [double]$figure.height_pt
+        $shape.LockAspectRatio = -1
         $shape.Range.ParagraphFormat.Alignment = 1
         $shape.Range.ParagraphFormat.KeepTogether = -1
         $shape.Range.ParagraphFormat.KeepWithNext = 0
@@ -129,7 +139,7 @@ try {
         $native.TopPadding=3;$native.BottomPadding=3;$native.LeftPadding=5;$native.RightPadding=5
         $native.Rows.AllowBreakAcrossPages=$false
         $native.Rows.Item(1).HeadingFormat=-1
-        $widths=if ([string]$record.rows[0][0] -eq '用途') {@(105,60,260)} else {@(85,165,175)}
+        $widths=@($record.column_widths_pt)
         for ($r=1;$r -le $rowCount;$r++) {
             for ($c=1;$c -le $columnCount;$c++) {
                 $targetCell=$native.Cell($r,$c)
@@ -219,11 +229,15 @@ try {
     }
     # Native non-splittable rows protect the three reviewed text blocks. WPS
     # ignores paragraph keep/page-break flags within the continued school row.
-    foreach ($prefix in @('4 LoRa可靠告警与通信对照','另检查两故障','已完成1920次公平通信回放')) {
-        $anchor=$doc.Content.Duplicate
-        $anchor.Find.ClearFormatting();$anchor.Find.Text=$prefix;$anchor.Find.Wrap=0
-        if (-not $anchor.Find.Execute()) {throw ('Missing protected paragraph: '+$prefix)}
-        $block=$anchor.Paragraphs.Item(1).Range.Duplicate
+    $protectedParagraphs=@()
+    foreach ($paragraph in $doc.Paragraphs) {
+        $value=$paragraph.Range.Text
+        if (($value -match '^\d+(\.\d+)?\s' -and $value.Contains([char]11)) -or $value -match '^(有效早期要求|已形成17篇|图9展示|对288个静态有界误差组合|已核对17个候选引脚)') {
+            $protectedParagraphs+=@{start=$paragraph.Range.Start;end=$paragraph.Range.End}
+        }
+    }
+    foreach ($position in ($protectedParagraphs | Sort-Object start -Descending)) {
+        $block=$doc.Range($position.start,$position.end)
         $value=$block.Text.TrimEnd([char]13,[char]7)
         $block.End=$block.End-1;$block.Text='';$block.Collapse(1)
         $holder=$doc.Tables.Add($block,1,1)
@@ -239,12 +253,90 @@ try {
         $target.ParagraphFormat.SpaceBefore=0;$target.ParagraphFormat.PageBreakBefore=0
         $target.ParagraphFormat.KeepWithNext=0;$target.ParagraphFormat.LineSpacingRule=0
         $split=$value.IndexOf([char]11)
-        if ($split -gt 0) {$head=$target.Duplicate;$head.End=$head.Start+$split;$head.Font.Bold=-1}
+        if ($split -gt 0) {
+            $offset=0
+            foreach ($line in ($value -split ([string][char]11))) {
+                if ($line -match '^\d+(\.\d+)?\s') {$head=$target.Duplicate;$head.Start=$target.Start+$offset;$head.End=$head.Start+$line.Length;$head.Font.Bold=-1}
+                $offset+=$line.Length+1
+            }
+        }
+    }
+    foreach ($prefix in @('学院意见：','学校意见：')) {
+        $anchor=$doc.Content.Duplicate
+        $anchor.Find.ClearFormatting();$anchor.Find.Text=$prefix;$anchor.Find.Wrap=0
+        if (-not $anchor.Find.Execute()) {throw 'School approval label missing'}
+        $cell=$anchor.Cells.Item(1)
+        $cell.Range.Rows.AllowBreakAcrossPages=$false
+        if ($prefix -eq '学院意见：') {
+            $cell.Range.ParagraphFormat.KeepWithNext=-1
+            $cell.Range.Paragraphs.Item(1).Range.ParagraphFormat.PageBreakBefore=-1
+        }
+    }
+    # Nested pagination rows leave empty delimiter paragraphs. Keep their
+    # required OOXML presence, while preventing extra full-size blank lines.
+    foreach ($bodyCell in $bodyCells) {
+        foreach ($paragraph in $bodyCell.Range.Paragraphs) {
+            $value=$paragraph.Range.Text.Trim([char]13,[char]7,[char]11,[char]32)
+            if ($value.Length -eq 0 -and $paragraph.Range.InlineShapes.Count -eq 0) {
+                $paragraph.Range.Font.Size=1
+                $paragraph.Range.ParagraphFormat.SpaceBefore=0
+                $paragraph.Range.ParagraphFormat.SpaceAfter=0
+                $paragraph.Range.ParagraphFormat.LineSpacingRule=4
+                $paragraph.Range.ParagraphFormat.LineSpacing=1
+                try {$paragraph.Range.ParagraphFormat.LineUnitBefore=0;$paragraph.Range.ParagraphFormat.LineUnitAfter=0} catch {}
+            }
+        }
     }
     $doc.Repaginate()
-    $target = Join-Path $Workspace 'deliverables\大创申报书_模板填写稿.docx'
+    # Keep the school-level innovation label with its first protected body row.
+    # WPS ignores KeepWithNext between the outer paragraph and nested table.
+    $label=$doc.Content.Duplicate
+    $label.Find.ClearFormatting();$label.Find.Text='五、项目的特色与创新点';$label.Find.Wrap=0
+    $first=$doc.Content.Duplicate
+    $first.Find.ClearFormatting();$first.Find.Text='1 面向支管巡检的完整证据链';$first.Find.Wrap=0
+    if (-not $label.Find.Execute() -or -not $first.Find.Execute()) {throw 'Innovation section anchors missing'}
+    if ($label.Information(3) -ne $first.Information(3)) {
+        $labelText=$label.Text
+        $label.Text=''
+        $label.ParagraphFormat.SpaceBefore=0;$label.ParagraphFormat.SpaceAfter=0
+        $label.ParagraphFormat.LineSpacingRule=4;$label.ParagraphFormat.LineSpacing=1
+        $label.Font.Size=1
+        $first.Collapse(1)
+        $first.InsertBefore($labelText+"`r")
+        $restored=$doc.Content.Duplicate
+        $restored.Find.ClearFormatting();$restored.Find.Text=$labelText;$restored.Find.Wrap=0
+        if (-not $restored.Find.Execute()) {throw 'Innovation label recovery failed'}
+        $restored.Font.Bold=-1;$restored.Font.Size=10.5
+        $restored.ParagraphFormat.SpaceBefore=0;$restored.ParagraphFormat.SpaceAfter=7
+        $doc.Repaginate()
+    }
+    $candidateDirectory=Join-Path $Workspace $OutputDirectory
+    New-Item -ItemType Directory -Path $candidateDirectory -Force | Out-Null
+    $target = Join-Path $candidateDirectory '大创申报书_模板填写稿.docx'
     $doc.SaveAs2($target,16)
-    $doc.ExportAsFixedFormat((Join-Path $Workspace 'deliverables\大创申报书_模板审阅版.pdf'),17)
+    $doc.ExportAsFixedFormat((Join-Path $candidateDirectory '大创申报书_模板审阅版.pdf'),17)
+    $imagePages=@()
+    foreach ($figure in $payload.figures) {
+        $caption=$doc.Content.Duplicate
+        $caption.Find.ClearFormatting();$caption.Find.Text=[string]$figure.caption;$caption.Find.Wrap=0
+        if (-not $caption.Find.Execute()) {throw 'Native caption audit failed'}
+        $paragraph=$caption.Paragraphs.Item(1).Range
+        $start=$paragraph.Duplicate;$start.Collapse(1)
+        $end=$caption.Duplicate;$end.Collapse(0)
+        $imagePages+=@{caption=[string]$figure.caption;start_page=$start.Information(3);end_page=$end.Information(3);width_pt=[double]$figure.width_pt}
+    }
+    $tablePages=@()
+    foreach ($record in $payload.tables) {
+        $caption=$doc.Content.Duplicate
+        $caption.Find.ClearFormatting();$caption.Find.Text=[string]$record.caption;$caption.Find.Wrap=0
+        if (-not $caption.Find.Execute()) {throw 'Native table audit failed'}
+        $tablePages+=@{caption=[string]$record.caption;page=$caption.Information(3);columns=$record.rows[0].Count;rows=$record.rows.Count}
+    }
+    @{pages=$doc.ComputeStatistics(2);figures=$imagePages;tables=$tablePages;source='WPS native ranges';physical_validation=$false} | ConvertTo-Json -Depth 7 | Set-Content -LiteralPath (Join-Path $candidateDirectory 'native_layout.json') -Encoding utf8NoBOM
     Write-Output ('Native template edited; pages='+$doc.ComputeStatistics(2))
     $doc.Close(0)
-} finally {try {$app.Quit()} catch {Write-Output 'Native automation session closed'}}
+} finally {
+    if ($null -ne $doc) {try {$doc.Close(0)} catch {}}
+    if ($priorDocumentCount -eq 0) {try {$app.Quit()} catch {Write-Output 'Native automation session closed'}}
+    else {$app.Visible=$priorVisible;$app.DisplayAlerts=$priorAlerts}
+}

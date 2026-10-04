@@ -1,0 +1,563 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_programmatic_native_draft_checks_visual_review_pending",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "native_pdf_pages": 24,
+  "figures": [
+    {
+      "caption": "图1 系统职责与独立评价关系 拟实施方案",
+      "source": "application/figures/presentation_review/system_responsibilities.png",
+      "sha256": "ae19edc4c27a24c4cdab3e9030f74accb1a25f7b4123d90cac52dafb5b16df54",
+      "width_pt": 410.0,
+      "height_pt": 282.9,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 5,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图2 双支路清水台架与故障注入位置 原理关系示意",
+      "source": "application/figures/presentation_review/water_layout.png",
+      "sha256": "3c3e5bd1739a16aed2cdb6c1d971225cb707f25a333ff155b4d455047863e21f",
+      "width_pt": 410.0,
+      "height_pt": 266.5,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 6,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图3 台架装配及独立收集布局 未制造概念模型",
+      "source": "application/figures/collection_review/collection_overview.png",
+      "sha256": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b",
+      "width_pt": 410.0,
+      "height_pt": 369.8,
+      "relative_aspect_error": 5.40803634200282e-05,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 7,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图4 双压力与流量采集接口 功能设计 保护定值待验证",
+      "source": "application/figures/interface_review/measurement_interfaces.png",
+      "sha256": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e",
+      "width_pt": 410.0,
+      "height_pt": 381.3,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 8,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图5 质量与工况辅助诊断流程 拟实施 门控尚未实现",
+      "source": "application/figures/presentation_review/diagnosis_proposal.png",
+      "sha256": "4a94945de85d0e3f86dc76bc6ba2f153f194a11fd4e5376778feb08f08d14c09",
+      "width_pt": 410.0,
+      "height_pt": 348.5,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 10,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图6 持久化确认与丢ACK重试关系 候选协议 非真实射频",
+      "source": "application/figures/interface_review/durable_event_sequence.png",
+      "sha256": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15",
+      "width_pt": 410.0,
+      "height_pt": 381.3,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 12,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图7 当前离线Web诊断卡片 原生截图 合成观测 未接实物",
+      "source": "application/figures/application_integration/website_diagnosis_panel.png",
+      "sha256": "0687905d135d94de7e51151b958d50e5b05eb2b2eb20033e008b10b6da511bff",
+      "width_pt": 380.0,
+      "height_pt": 461.05,
+      "relative_aspect_error": 4.4657097288736125e-05,
+      "minimum_major_font_pt": 9.313725490196079,
+      "native_page": 13,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图8 不同压力噪声下的有效早期计数 同源合成统计 非实测",
+      "source": "application/figures/presentation_review/noise_outcomes_print.png",
+      "sha256": "e9ba5f9c927e7bd3062bcb2f688e65a82882a6fc9a353e6d803233027af107e0",
+      "width_pt": 410.0,
+      "height_pt": 395.3,
+      "relative_aspect_error": 2.976234765417196e-05,
+      "minimum_major_font_pt": 9.044117647058824,
+      "native_page": 20,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图9 未知负载 漂移与模型失配反例 合成证据",
+      "source": "application/figures/diagnosis_review/failure_counterexamples.png",
+      "sha256": "4bacd869181649b8e8b6d8b68c3b3d320c3db72d12e6f8e6abb62508b184b88f",
+      "width_pt": 410.0,
+      "height_pt": 395.3,
+      "relative_aspect_error": 2.976234765417196e-05,
+      "minimum_major_font_pt": 9.044117647058824,
+      "native_page": 21,
+      "image_and_caption_same_page": true
+    }
+  ],
+  "editable_tables": [
+    {
+      "caption": "表1 四工作包与验证交付",
+      "rows": 5,
+      "columns": 4,
+      "widths_pt": [
+        55.0,
+        105.0,
+        155.0,
+        110.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 14
+    },
+    {
+      "caption": "表2 独立实验与对照安排",
+      "rows": 7,
+      "columns": 3,
+      "widths_pt": [
+        85.0,
+        140.0,
+        200.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 14
+    },
+    {
+      "caption": "表3 三阶段与实施里程碑",
+      "rows": 9,
+      "columns": 3,
+      "widths_pt": [
+        90.0,
+        150.0,
+        185.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 19
+    },
+    {
+      "caption": "表4 候选资源与条件预算",
+      "rows": 10,
+      "columns": 3,
+      "widths_pt": [
+        110.0,
+        55.0,
+        260.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 22
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "page": 16
+    },
+    {
+      "number": 2,
+      "page": 16
+    },
+    {
+      "number": 3,
+      "page": 16
+    },
+    {
+      "number": 4,
+      "page": 16
+    },
+    {
+      "number": 5,
+      "page": 16
+    },
+    {
+      "number": 6,
+      "page": 16
+    },
+    {
+      "number": 7,
+      "page": 17
+    },
+    {
+      "number": 8,
+      "page": 17
+    },
+    {
+      "number": 9,
+      "page": 17
+    },
+    {
+      "number": 10,
+      "page": 17
+    },
+    {
+      "number": 11,
+      "page": 17
+    },
+    {
+      "number": 12,
+      "page": 17
+    },
+    {
+      "number": 13,
+      "page": 17
+    },
+    {
+      "number": 14,
+      "page": 17
+    },
+    {
+      "number": 15,
+      "page": 17
+    },
+    {
+      "number": 16,
+      "page": 17
+    },
+    {
+      "number": 17,
+      "page": 17
+    }
+  ],
+  "chinese_references": 11,
+  "english_references": 6,
+  "pdf_character_bounds": [
+    {
+      "page": 1,
+      "characters": 152,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 2,
+      "characters": 447,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 3,
+      "characters": 391,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 4,
+      "characters": 1367,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 5,
+      "characters": 332,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 6,
+      "characters": 324,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 7,
+      "characters": 745,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 8,
+      "characters": 708,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 9,
+      "characters": 983,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 10,
+      "characters": 471,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 11,
+      "characters": 860,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 12,
+      "characters": 192,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 13,
+      "characters": 464,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 14,
+      "characters": 1070,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 15,
+      "characters": 1274,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 16,
+      "characters": 1507,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 17,
+      "characters": 2056,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 18,
+      "characters": 1004,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 19,
+      "characters": 1020,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 20,
+      "characters": 502,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 21,
+      "characters": 450,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 22,
+      "characters": 906,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 23,
+      "characters": 37,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 24,
+      "characters": 64,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    }
+  ],
+  "outside_page_characters": [],
+  "rendered_pages": [
+    {
+      "page": 1,
+      "path": "tmp/application_integration/render-accepted/page-01.png",
+      "sha256": "90d85c3871047f6150fd98fb3b6e1d4cfeeb7e9f5dcff4085e8cc9c4128ebb15"
+    },
+    {
+      "page": 2,
+      "path": "tmp/application_integration/render-accepted/page-02.png",
+      "sha256": "5c4004b4baf392a98fc89211bd6fe60feaecc4098fed7929167a04eb95aa5729"
+    },
+    {
+      "page": 3,
+      "path": "tmp/application_integration/render-accepted/page-03.png",
+      "sha256": "9b8fdb302b8375416be887418400911bc8a0356f311f1ab93d403295c71e4f14"
+    },
+    {
+      "page": 4,
+      "path": "tmp/application_integration/render-accepted/page-04.png",
+      "sha256": "5b5db6f00b0385499d3292a3a200f6ff036fa621f041b1675e71098dc68fbe70"
+    },
+    {
+      "page": 5,
+      "path": "tmp/application_integration/render-accepted/page-05.png",
+      "sha256": "df231b6e8c6db7d73d060bf54a30ea3e906b0158003a81f1700047afb2ff324b"
+    },
+    {
+      "page": 6,
+      "path": "tmp/application_integration/render-accepted/page-06.png",
+      "sha256": "2d3db33c5cfe25ecd896e2b26492f6bb66f2673e833e5771a5e0c77f4cdd8e2d"
+    },
+    {
+      "page": 7,
+      "path": "tmp/application_integration/render-accepted/page-07.png",
+      "sha256": "8ebbd8ce5d58767d9fa217c12c4aeda9cbd07053b0482a8d46a494d6f01aaf42"
+    },
+    {
+      "page": 8,
+      "path": "tmp/application_integration/render-accepted/page-08.png",
+      "sha256": "9e0cbb3325795fce1172a2d45ca1ece6dc366eada58a1e6a2c1a0159e4c71ef2"
+    },
+    {
+      "page": 9,
+      "path": "tmp/application_integration/render-accepted/page-09.png",
+      "sha256": "67e19edccce7304d1bff94beb324ffee1a9b2c806f954fbb027dd000f5f8c945"
+    },
+    {
+      "page": 10,
+      "path": "tmp/application_integration/render-accepted/page-10.png",
+      "sha256": "d78b8bc02661ac96051d51c9404fb434abdf507d3bf1161f100319568a1242c2"
+    },
+    {
+      "page": 11,
+      "path": "tmp/application_integration/render-accepted/page-11.png",
+      "sha256": "24ff94e61b6309c443e29dcea8b86e5cb3a4d9d355ab9874ac11674cb9812ca9"
+    },
+    {
+      "page": 12,
+      "path": "tmp/application_integration/render-accepted/page-12.png",
+      "sha256": "ab4905d64e65f72ba32274c7fc521485bbebc8ae0f6dc83e692a48c7f247817c"
+    },
+    {
+      "page": 13,
+      "path": "tmp/application_integration/render-accepted/page-13.png",
+      "sha256": "2207eb39559a2b6f17444634f1a00a55ec213376319065e89edc340d7f896b71"
+    },
+    {
+      "page": 14,
+      "path": "tmp/application_integration/render-accepted/page-14.png",
+      "sha256": "43bd753735128338b874c827191e5dac89069014e334eaa019b375bce9a8a9de"
+    },
+    {
+      "page": 15,
+      "path": "tmp/application_integration/render-accepted/page-15.png",
+      "sha256": "8a5bf7e15872c6a51c89f6daae3d6ffa98cc53e7a50177235876ff33609d9f7e"
+    },
+    {
+      "page": 16,
+      "path": "tmp/application_integration/render-accepted/page-16.png",
+      "sha256": "daec1e7f4b9cda12b86cc2c8c9586d6593b494efc82a1601a32e1243793798cc"
+    },
+    {
+      "page": 17,
+      "path": "tmp/application_integration/render-accepted/page-17.png",
+      "sha256": "8ab8feef42747c3eee2a467aac45fac27a2fa6d5c557a6177ae8eaade650d95f"
+    },
+    {
+      "page": 18,
+      "path": "tmp/application_integration/render-accepted/page-18.png",
+      "sha256": "10e6dad718815b55bcc2b26a59e9d4af377a30f2af79e8d768b34ebeba727ab7"
+    },
+    {
+      "page": 19,
+      "path": "tmp/application_integration/render-accepted/page-19.png",
+      "sha256": "c1e50d92a08cfb7f2baa5b812ead84c063784d133b9a51a24d2caadd33a1ebbf"
+    },
+    {
+      "page": 20,
+      "path": "tmp/application_integration/render-accepted/page-20.png",
+      "sha256": "30c09d0cbaf8fbc2a7d8d1da458aa9bab89ced66714af72301f47648d57f6277"
+    },
+    {
+      "page": 21,
+      "path": "tmp/application_integration/render-accepted/page-21.png",
+      "sha256": "f911bd1ed82daaf3ad07209287e500411eda47ad2de81a45c1b5bdc15c6a24d4"
+    },
+    {
+      "page": 22,
+      "path": "tmp/application_integration/render-accepted/page-22.png",
+      "sha256": "024b19e9dd6029782b8224852373af665555f48c8d5eab1a70e3a8d2186f244e"
+    },
+    {
+      "page": 23,
+      "path": "tmp/application_integration/render-accepted/page-23.png",
+      "sha256": "b27624fb632a3861de401ccc2c6fd291ae9c6d7c6749e11101f42d820824410c"
+    },
+    {
+      "page": 24,
+      "path": "tmp/application_integration/render-accepted/page-24.png",
+      "sha256": "0052c20071c87ce15485468ecb3799dfa8fe35bdd73d7c086b86e80f632901a2"
+    }
+  ],
+  "source_sha256": {
+    "scripts/verify_application_integration.py": "6887265c0628eb46b5696d6deea867dda6ac3de11480215c2ef4562c24404fed",
+    "application/正式模板正文.md": "429dfccaf6334d1c49827d81f48882826710de80f97b4e31e194aa64920cdc7f",
+    "scripts/prepare_application_payload.py": "0df0ed58733f57c0672c5f01064c0fa588ac656dc9e823927c9eca3623cfe40f",
+    "scripts/fill_application_template.ps1": "22b138661d43db38fb410bdcc5a149ae095950a42a70495fde08c3aef286bea7",
+    "application/references.json": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb",
+    "tmp/application_integration/candidate/大创申报书_模板审阅版.pdf": "2c709efcc6131268041b72c9457f4d88964cafb225868873578799f9a1d10075",
+    "tmp/application_integration/candidate/大创申报书_模板填写稿.docx": "12c619645eb4612794782acc12f533ab48c44ba2da87af2f2aa314def8f1b184",
+    "tmp/application_integration/candidate/native_layout.json": "ce18f7d69a5d5d536307efd3e76964528a85ad9371c3564940627c60e7afbadb",
+    "tmp/reference_review/application_payload.json": "5136fb388bd39b68beaa992e58a2bff0d166a94e0ac5594237d1f3d2d842c801",
+    "simulation/application_integration/website_capture_checks.json": "bd58a6927581761a90c8a6486c57d85535676b2ed95eff7f77f685400379390a"
+  },
+  "school_section_headings": [
+    {
+      "heading": "一、项目简介（300字左右）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "二、申请理由（包括自身/团队具备的知识条件、特长、兴趣等）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "三、项目方案（项目内容、项目目标、技术路线、实验方案、要解决的主要问题）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "四、国、内外研究现状和发展动态",
+      "page": 15,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "五、项目的特色与创新点",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "六、项目预期成果",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "七、项目年度目标和工作内容（按年度写）",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "八、已有基础",
+      "page": 19,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "九、项目经费使用计划",
+      "page": 22,
+      "first_body_on_same_page": true
+    }
+  ]
+}

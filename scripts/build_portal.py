@@ -18,7 +18,7 @@ for r in references['references']:
 literature+='</div>'
 html=html.replace('__LITERATURE_LINKS__',literature)
 html=html.replace('<main id="workspace">', '<main id="workspace"><div style="display:flex;flex-wrap:wrap;gap:8px 22px;padding:12px 0;border-bottom:1px solid #dde5e9;font-size:13px"><a href="index.html" style="min-height:44px;display:inline-flex;align-items:center">← 返回运行平台</a><a href="../docs/项目总规划与任务验收台账.md" style="min-height:44px;display:inline-flex;align-items:center">整体规划与当前任务 ↗</a></div>',1)
-html=html.replace('<main id="workspace">','<main id="workspace"><div class="note" id="historical-config-note" style="margin-top:16px">本页的诊断统计、通信回放及答辩草案保留历史配置；最新A06/A07候选与接口论证分别见<a href="../docs/仿真建模与诊断证据分项验收.md">仿真验收</a>、<a href="../docs/硬件接口与LoRa通信论证分项验收.md">接口验收</a>。当前运行主站使用20261004-A06A07-v1；文档及PPT尚待整合。</div>',1)
+html=html.replace('<main id="workspace">','<main id="workspace"><div class="note" id="historical-config-note" style="margin-top:16px">本页的诊断统计、通信回放及答辩草案保留历史配置；最新A06/A07候选与接口论证分别见<a href="../docs/仿真建模与诊断证据分项验收.md">仿真验收</a>、<a href="../docs/硬件接口与LoRa通信论证分项验收.md">接口验收</a>。当前运行主站使用20261004-A06A07-v1；学校申报书已完成24页内部审阅稿，见<a href="大创申报书_模板审阅版.pdf">最新申报PDF</a>及<a href="../docs/学校模板申报书整合与分项验收.md">整合验收</a>；PPT待同步。</div>',1)
 (OUT/'研究与答辩资料.html').write_text(html,encoding='utf-8',newline='\n')
 system=(ROOT/'scripts/system_portal.template.html').read_text(encoding='utf-8')
 operations_replay=json.loads((ROOT/'simulation/presentation_review/web_replay.json').read_text(encoding='utf-8'))
@@ -61,7 +61,10 @@ paths+=['docs/网站佐证与申报图表分项验收.md','deliverables/网站�
 paths+=['scripts/'+name for name in ['prepare_presentation_review.py','draw_presentation_review.py','plot_presentation_statistics.py','build_presentation_review.py','verify_presentation_site.mjs','verify_presentation_diagrams.mjs','capture_presentation_evidence.mjs','verify_presentation_assets.mjs','finalize_presentation_review.py']]
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'simulation/presentation_review').glob('*')) if p.is_file()]
 paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'application/figures/presentation_review').rglob('*')) if p.is_file()]
+paths+=['docs/学校模板申报书整合与分项验收.md','deliverables/申报书整合分项验收记录.json','scripts/capture_application_panel.mjs','scripts/verify_application_integration.py','scripts/finalize_application_integration.py']
+for directory in ['application/application_integration','application/figures/application_integration','simulation/application_integration']:
+    paths+=[p.relative_to(ROOT).as_posix() for p in sorted((ROOT/directory).rglob('*')) if p.is_file()]
 paths=list(dict.fromkeys(paths))
-manifest={'date':'2026-10-04','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
+manifest={'date':'2026-10-05','classification':'uncalibrated_model_and_proposed_work','physical_data':False,'entries':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),'bytes':(ROOT/p).stat().st_size} for p in paths]}
 (OUT/'证据清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
 print('Offline portal written. Slides embedded:',len(svgs),'evidence records:',len(paths))
