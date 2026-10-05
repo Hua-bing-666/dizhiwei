@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "45f97ebdf6cc48a3f8895d54c86942b8b4b5e23570f5d8f387891921409f7dd3",
+  "validator_sha256": "a01f1913ae64b975662611729c8d8a00099e0631e2d60fd8fda6826ee628c4e9",
+  "checks": [
+    "source_idempotence_and_conflict",
+    "undispatched_frame_cannot_prove_link",
+    "wrong_fingerprint_cannot_reactivate",
+    "wrong_device_and_sequence_rejected",
+    "probe_preserves_old_acquisition_time",
+    "timely_ack_reactivates_without_oracle",
+    "original_identity_and_bytes_unchanged",
+    "receiver_deduplicates_original_event",
+    "duplicate_historical_ack_cannot_reactivate",
+    "ack_older_than_eight_seconds_not_link_proof",
+    "owner_fencing_and_new_session",
+    "restart_preserves_old_identity_and_budget",
+    "restart_does_not_repackage_old_snapshot",
+    "host_clock_regression_rolls_back",
+    "snapshot_order_and_timestamp_regression_rejected",
+    "never_dispatched_expired_frame_cannot_be_acknowledged",
+    "late_expired_ack_records_receipt_without_reactivation"
+  ],
+  "actual_sqlite_files": true,
+  "power_loss_tested": false
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "cd01f502fedb48119ef0276f31a5b20e25c73f8a71df24a13308cd4593b5752e",
+  "validator_sha256": "9ba9dd1287c01a98432168021caf56b6dd235f71a759ee36f21f104239ffd7aa",
+  "checks": [
+    "all_648_records_reproduced",
+    "252_previous_candidate_rows_match",
+    "576_initial_continuous_probe_records_reproduced_from_archived_source",
+    "identity_body_and_acquisition_time_checked",
+    "finite_dispatch_budget_checked_each_frame",
+    "probes_included_in_byte_cost",
+    "storage_limits_checked_during_replay"
+  ],
+  "records": 648,
+  "previous_baseline_records": 252,
+  "initial_continuous_probe_records": 576,
+  "datasets": {
+    "paired_results.csv": {
+      "rows": 432,
+      "sha256": "23577a70667e691984cb92ddd6073fe8aec2a16d491d74bb9b8ae3dd89129755"
+    },
+    "boundary_results.csv": {
+      "rows": 72,
+      "sha256": "98183e5f10d9c9f9d1b8600f2d2efd0036d440fbc6f83cf3c629686c301bb735"
+    },
+    "new_seed_results.csv": {
+      "rows": 72,
+      "sha256": "2912d51e45d950ea7a1b561569e3d39bd2948cc33c96c40ed2148ddd33cc9a86"
+    },
+    "holdout_results.csv": {
+      "rows": 72,
+      "sha256": "11852a31335aa35626c27bf655f43731bc20bade188e452b69c6cd58fadb4b72"
+    }
+  },
+  "scope": "Synthetic host-byte experiments, not guaranteed physical delivery"
+}
