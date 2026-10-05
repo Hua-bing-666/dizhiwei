@@ -1,0 +1,309 @@
+{
+  "config": {
+    "version": "20261006-compact-session-v2",
+    "frame_version": 2,
+    "limit_bytes": 64,
+    "policies": [
+      "rapid8",
+      "burst_backoff"
+    ],
+    "burst_backoff_delays_ms": [
+      2000,
+      2000,
+      2000,
+      20000,
+      20000,
+      20000,
+      20000,
+      20000
+    ],
+    "status_interval_s": 60,
+    "retry_ms": 2000,
+    "capacity": 16,
+    "max_attempts": 8,
+    "retention_ms": 300000,
+    "pressure_age_limit_ms": 30,
+    "counter_latch_tolerance_ms": 1,
+    "scenes": [
+      "normal",
+      "pulse8",
+      "restriction_r90",
+      "nan_pressure",
+      "counter_reset",
+      "drift_p0"
+    ],
+    "seeds": [
+      46000,
+      46001,
+      46002,
+      46003
+    ],
+    "sigmas": [
+      0.3,
+      3.0,
+      10.0
+    ],
+    "link_modes": [
+      "clean",
+      "loss",
+      "outage"
+    ],
+    "data_loss": 0.2,
+    "ack_loss": 0.25,
+    "outage": [
+      350,
+      410
+    ],
+    "flush_s": 120,
+    "physical_data": false,
+    "energy_measured": false,
+    "boundary_scenes": [
+      "pulse8",
+      "nan_pressure",
+      "restriction_r90"
+    ],
+    "boundary_sigmas": [
+      0.3,
+      10.0
+    ],
+    "boundary_seeds": [
+      47000,
+      47001
+    ],
+    "boundary_outage_seconds": [
+      20,
+      120,
+      360
+    ]
+  },
+  "baseline": {
+    "config": {
+      "version": "20261006-integrated-v1",
+      "cases": [
+        [
+          "normal",
+          false
+        ],
+        [
+          "supply_step",
+          false
+        ],
+        [
+          "leak_r90",
+          false
+        ],
+        [
+          "restriction_r90",
+          false
+        ],
+        [
+          "pulse8",
+          false
+        ],
+        [
+          "fast_leak_switch",
+          false
+        ],
+        [
+          "nan_pressure",
+          true
+        ],
+        [
+          "spike_range",
+          true
+        ],
+        [
+          "counter_reset",
+          true
+        ],
+        [
+          "bad_calibration",
+          true
+        ],
+        [
+          "fault_initial",
+          true
+        ],
+        [
+          "drift_p0",
+          true
+        ]
+      ],
+      "seeds": [
+        45000,
+        45001,
+        45002,
+        45003
+      ],
+      "sigmas": [
+        0.3,
+        3.0,
+        10.0
+      ],
+      "pressure_period_s": 1,
+      "main_method": "guarded_fast",
+      "rapid_window_s": 3,
+      "status_interval_s": 60,
+      "retry_interval_s": 2,
+      "max_sample_age_s": 65,
+      "link_modes": [
+        "clean",
+        "loss",
+        "outage"
+      ],
+      "outage": [
+        350,
+        410
+      ],
+      "data_loss": 0.2,
+      "ack_loss": 0.25,
+      "link_seed_offset": 10000,
+      "flush_s": 120,
+      "healthy_approval": "explicit experiment assumption; absent for initial-fault case",
+      "physical_data": false,
+      "energy_measured": false,
+      "radio_timing_modelled": false
+    },
+    "baseline": {
+      "config": {
+        "version": "20261006-quality-interval-v1",
+        "training_seeds": [
+          40000,
+          40001,
+          40002,
+          40003,
+          40004,
+          40005,
+          40006,
+          40007,
+          40008,
+          40009,
+          40010,
+          40011
+        ],
+        "test_seeds": [
+          41000,
+          41001,
+          41002,
+          41003,
+          41004,
+          41005,
+          41006,
+          41007,
+          41008,
+          41009,
+          41010,
+          41011,
+          41012,
+          41013,
+          41014,
+          41015
+        ],
+        "pressure_sigmas": [
+          0.3,
+          3.0,
+          10.0
+        ],
+        "periods_s": [
+          1,
+          2,
+          5
+        ],
+        "all_integer_phases": true,
+        "quality_modes": [
+          "finite",
+          "range"
+        ],
+        "pressure_range_assumption_kpa": [
+          0,
+          200
+        ],
+        "model_exponent": 0.5,
+        "pressure_window_actual_points": 10,
+        "pulse_window_bins": 10,
+        "pulses_per_litre_assumption": 540,
+        "continuous_one_second_counter_snapshots": true,
+        "confirmation_points": 5,
+        "high_hold_observations": 30,
+        "initial_calibration": [
+          20,
+          120
+        ],
+        "monitor_start": 130,
+        "healthy_peak_margin": 1.1,
+        "fast_scale_multiplier": 6,
+        "online_drift_recalibration": false,
+        "physical_data": false,
+        "energy_measured": false,
+        "input_to_runtime": [
+          "timestamp",
+          "cumulative_counter",
+          "requested_pressure_read"
+        ],
+        "excluded_runtime_inputs": [
+          "scenario",
+          "fault_time",
+          "fault_duration",
+          "true_severity",
+          "unread_pressure",
+          "future"
+        ]
+      },
+      "reference": {
+        "n_fitted": 0.5006660685225397,
+        "a_l_min": 2.800581837156769,
+        "p1_min_kpa": 65.55171902093646,
+        "p1_max_kpa": 146.30931204545425,
+        "healthy_points": 120,
+        "synthetic_calibration": true
+      },
+      "limits": {
+        "1": [
+          90.40939794543239,
+          107.32965504041577
+        ],
+        "2": [
+          68.7530549678843,
+          90.04361971994825
+        ],
+        "5": [
+          68.7530549678843,
+          89.85599456953919
+        ]
+      },
+      "sources": {
+        "simulation/review_quality_intervals.py": "fa85a25601b08e9eb5069a2ba4877d2c97edc17d94469e22754cc253ca4db569",
+        "simulation/sampling_quality_runtime.py": "fefc111d7feabff645a1e1af7510ea5423e423017c82d500759e616508cf5917",
+        "simulation/hybrid_sampling_review/frozen_parameters.json": "6c4743a9c4fdab057ad9c08b94a10b34c987c282c8ee8bb90a501e86a8bd0314",
+        "simulation/review_hybrid_sampling.py": "58be71a46e9eba21f13d1ecc7006d8e8ce0ee15a7845d4b2534be32bf2a33437",
+        "simulation/review_operating_reference.py": "c817861ffd41f573deb5888ab517f300b0b0e33a39cf1ed18a655638e5dc0ae0"
+      },
+      "training_sha256": "9b7e37dd0408acac45d157df549236698076e8bb6ff2ba3753a7f8760c13ba97",
+      "selection": "Healthy maxima including long-normal and every integer phase. No test faults."
+    },
+    "sources": {
+      "simulation/review_integrated_monitor.py": "fa504b2f4040831f507fb52ba3708668e2d74e924ca3e7c3cf00fe3bb097acf3",
+      "simulation/streaming_rapid_runtime.py": "544f9d6be5df66f451f35fcf7e32a3a157b3e58d4eb255027177ded047178327",
+      "prototype/integrated_monitor.py": "daf6c1275a8f11977da2865c894ba3eeff47f968a807ba8a16a660e19c707fb8",
+      "prototype/reliable_outbox.py": "980fe227826e4912ada85894785b8d1c3b8a71030a0b453d4dd904b03d7a1e9e",
+      "simulation/rapid_review_runtime.py": "02f5fde63d938e937615753c9cc1edca6b76cc2138cb17b09c88b258124b9948",
+      "simulation/sampling_quality_runtime.py": "fefc111d7feabff645a1e1af7510ea5423e423017c82d500759e616508cf5917",
+      "simulation/review_quality_intervals.py": "fa85a25601b08e9eb5069a2ba4877d2c97edc17d94469e22754cc253ca4db569",
+      "simulation/review_hybrid_sampling.py": "58be71a46e9eba21f13d1ecc7006d8e8ce0ee15a7845d4b2534be32bf2a33437",
+      "simulation/review_operating_reference.py": "c817861ffd41f573deb5888ab517f300b0b0e33a39cf1ed18a655638e5dc0ae0",
+      "simulation/quality_interval_review/frozen_parameters.json": "bfd515ff7031d0c26f281a562418b89beb5ba96cd351c4bf2f20785c64b7f52e"
+    }
+  },
+  "sources": {
+    "simulation/review_protocol_session.py": "eb0d2feb4617aba915fd0654c1b5c5b6ad62c10cbace5ad82a7691e430afd97c",
+    "prototype/compact_protocol.py": "5ca0629f236c9b8b5e800c428e0d23b4e1738af3914237555a996ea1069a8e98",
+    "prototype/session_transport.py": "0062a590fd67d4be223c5be5d7323246aa3cf4ec4a281a7c31f52b66ae8c0d1e",
+    "simulation/acquisition_timing.py": "ba46bfee64fa2fc5c5ef1c128832fbccb019257ae22ee2003fdaaffc14ea9195",
+    "simulation/timed_monitor.py": "87d115d72a9f9989c5679c1b98040c9ee0c354aa364264ba9fafea7e11b42319",
+    "firmware/protocol_v2_codec.c": "0f0b558e9412131d8f726529fed26849bb04a94422410251d575b24c425cce8d",
+    "scripts/validate_protocol_session.py": "1ee86215d4870aef16f960609c923b962f4101f7a05f031f20da9bfd50ff07cf",
+    "simulation/interface_review/event_protocol.py": "655bf896ef6f71f6153b0f05d623d2d8969fd2a59bb0b1b00403315caccd8cf0",
+    "simulation/integrated_monitor_review/frozen_parameters.json": "477507d97d04bd1cedb21b880eba6be0038c5f39042445faf5bfd77b78d78c30",
+    "simulation/integrated_monitor_review/examples.json": "6a81b69a1ee9ef46d3b98668eef73796928c4b260a663acb3f418f600c5c36b2"
+  }
+}

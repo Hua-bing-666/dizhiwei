@@ -1,0 +1,1160 @@
+{
+  "records": [
+    {
+      "t_s": 350,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.38969675999721,
+        108.89036977845251
+      ],
+      "cumulative_pulses": 9095,
+      "flow_q10_l_min": 2.9444444444444446,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 351,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.95863015328081,
+        109.65061707621824
+      ],
+      "cumulative_pulses": 9121,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 352,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.61556955344996,
+        109.85790565483323
+      ],
+      "cumulative_pulses": 9148,
+      "flow_q10_l_min": 2.9444444444444446,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 353,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        117.04771192511645,
+        109.73482365390451
+      ],
+      "cumulative_pulses": 9174,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 354,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.16437106873246,
+        109.5448595995478
+      ],
+      "cumulative_pulses": 9201,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 355,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.56622499129818,
+        109.717585581739
+      ],
+      "cumulative_pulses": 9227,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 356,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.34882476275503,
+        109.73451034683146
+      ],
+      "cumulative_pulses": 9253,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 357,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.84669968404019,
+        109.77879041641604
+      ],
+      "cumulative_pulses": 9279,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 358,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.04217853179334,
+        109.64410216990719
+      ],
+      "cumulative_pulses": 9306,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 359,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        117.1106844722269,
+        109.37551260637011
+      ],
+      "cumulative_pulses": 9332,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 360,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        null,
+        null
+      ],
+      "cumulative_pulses": 9359,
+      "flow_q10_l_min": null,
+      "measurement_status": "pressure_quality",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": false,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 361,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.6323043144973,
+        109.791492924254
+      ],
+      "cumulative_pulses": 9385,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": false,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 362,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.55636692743093,
+        109.90948089349298
+      ],
+      "cumulative_pulses": 9411,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": false,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 363,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.18088621731052,
+        109.27126388823504
+      ],
+      "cumulative_pulses": 9438,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": false,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 364,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.55537517164677,
+        109.67433109067758
+      ],
+      "cumulative_pulses": 9464,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 365,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.77037157927846,
+        109.65021563388457
+      ],
+      "cumulative_pulses": 9491,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 366,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.57063151261059,
+        109.60549916813848
+      ],
+      "cumulative_pulses": 9517,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 367,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        115.54621850727997,
+        110.1934742107974
+      ],
+      "cumulative_pulses": 9543,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 368,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.58291754260358,
+        109.17525825954361
+      ],
+      "cumulative_pulses": 9569,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 369,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.70777163374613,
+        109.73330410530025
+      ],
+      "cumulative_pulses": 9596,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 370,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        117.13372210228289,
+        109.7986555631812
+      ],
+      "cumulative_pulses": 9622,
+      "flow_q10_l_min": null,
+      "measurement_status": "window_incomplete",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "unavailable",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 371,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.27513277117932,
+        109.71065372560119
+      ],
+      "cumulative_pulses": 9649,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 372,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        117.07906526516594,
+        109.78250949831201
+      ],
+      "cumulative_pulses": 9675,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 373,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        115.92860532209106,
+        109.58388018113642
+      ],
+      "cumulative_pulses": 9702,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 374,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.62696659212878,
+        109.5232623546054
+      ],
+      "cumulative_pulses": 9728,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 375,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.3203273281404,
+        109.87131594384397
+      ],
+      "cumulative_pulses": 9754,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 376,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.29575229083243,
+        109.84668375696154
+      ],
+      "cumulative_pulses": 9780,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 377,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.45625596208953,
+        109.60470705559088
+      ],
+      "cumulative_pulses": 9807,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 378,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.94351363606664,
+        109.75414864456977
+      ],
+      "cumulative_pulses": 9833,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 379,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.89386295165944,
+        109.60302971832378
+      ],
+      "cumulative_pulses": 9859,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 380,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.65607850991199,
+        109.28976343748539
+      ],
+      "cumulative_pulses": 9886,
+      "flow_q10_l_min": 2.933333333333333,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 381,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.06487062906214,
+        109.92086052215032
+      ],
+      "cumulative_pulses": 9912,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 382,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.90356539978737,
+        109.97993311879748
+      ],
+      "cumulative_pulses": 9938,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 383,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.87537115435065,
+        109.62794255488232
+      ],
+      "cumulative_pulses": 9965,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 384,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        116.5425047140027,
+        109.62642823268652
+      ],
+      "cumulative_pulses": 9991,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    },
+    {
+      "t_s": 385,
+      "run_id": "timing-check",
+      "pressure_kpa": [
+        115.81407045234046,
+        110.6412078839105
+      ],
+      "cumulative_pulses": 10017,
+      "flow_q10_l_min": 2.922222222222222,
+      "measurement_status": "valid",
+      "numeric_baseline_available": true,
+      "healthy_reference_approved": true,
+      "rapid_window_valid": true,
+      "rapid_attention_active": false,
+      "diagnostic_pattern": "no_current_evidence",
+      "physical_valve_verified": false
+    }
+  ],
+  "timing": [
+    {
+      "endpoint_ms": 351000,
+      "pressure_kpa": [
+        116.38969675999721,
+        108.89036977845251
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 350
+    },
+    {
+      "endpoint_ms": 352000,
+      "pressure_kpa": [
+        116.95863015328081,
+        109.65061707621824
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 351
+    },
+    {
+      "endpoint_ms": 353000,
+      "pressure_kpa": [
+        116.61556955344996,
+        109.85790565483323
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 352
+    },
+    {
+      "endpoint_ms": 354000,
+      "pressure_kpa": [
+        117.04771192511645,
+        109.73482365390451
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 353
+    },
+    {
+      "endpoint_ms": 355000,
+      "pressure_kpa": [
+        116.16437106873246,
+        109.5448595995478
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 354
+    },
+    {
+      "endpoint_ms": 356000,
+      "pressure_kpa": [
+        116.56622499129818,
+        109.717585581739
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 355
+    },
+    {
+      "endpoint_ms": 357000,
+      "pressure_kpa": [
+        116.34882476275503,
+        109.73451034683146
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 356
+    },
+    {
+      "endpoint_ms": 358000,
+      "pressure_kpa": [
+        116.84669968404019,
+        109.77879041641604
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 357
+    },
+    {
+      "endpoint_ms": 359000,
+      "pressure_kpa": [
+        116.04217853179334,
+        109.64410216990719
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 358
+    },
+    {
+      "endpoint_ms": 360000,
+      "pressure_kpa": [
+        117.1106844722269,
+        109.37551260637011
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 359
+    },
+    {
+      "endpoint_ms": 361000,
+      "pressure_kpa": [
+        null,
+        null
+      ],
+      "ages_ms": [
+        255,
+        255
+      ],
+      "timing_valid": false,
+      "reasons": [
+        "late_counter_latch"
+      ],
+      "sample_index": 360
+    },
+    {
+      "endpoint_ms": 362000,
+      "pressure_kpa": [
+        116.6323043144973,
+        109.791492924254
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 361
+    },
+    {
+      "endpoint_ms": 363000,
+      "pressure_kpa": [
+        116.55636692743093,
+        109.90948089349298
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 362
+    },
+    {
+      "endpoint_ms": 364000,
+      "pressure_kpa": [
+        116.18088621731052,
+        109.27126388823504
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 363
+    },
+    {
+      "endpoint_ms": 365000,
+      "pressure_kpa": [
+        116.55537517164677,
+        109.67433109067758
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 364
+    },
+    {
+      "endpoint_ms": 366000,
+      "pressure_kpa": [
+        116.77037157927846,
+        109.65021563388457
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 365
+    },
+    {
+      "endpoint_ms": 367000,
+      "pressure_kpa": [
+        116.57063151261059,
+        109.60549916813848
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 366
+    },
+    {
+      "endpoint_ms": 368000,
+      "pressure_kpa": [
+        115.54621850727997,
+        110.1934742107974
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 367
+    },
+    {
+      "endpoint_ms": 369000,
+      "pressure_kpa": [
+        116.58291754260358,
+        109.17525825954361
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 368
+    },
+    {
+      "endpoint_ms": 370000,
+      "pressure_kpa": [
+        116.70777163374613,
+        109.73330410530025
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 369
+    },
+    {
+      "endpoint_ms": 371000,
+      "pressure_kpa": [
+        117.13372210228289,
+        109.7986555631812
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 370
+    },
+    {
+      "endpoint_ms": 372000,
+      "pressure_kpa": [
+        116.27513277117932,
+        109.71065372560119
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 371
+    },
+    {
+      "endpoint_ms": 373000,
+      "pressure_kpa": [
+        117.07906526516594,
+        109.78250949831201
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 372
+    },
+    {
+      "endpoint_ms": 374000,
+      "pressure_kpa": [
+        115.92860532209106,
+        109.58388018113642
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 373
+    },
+    {
+      "endpoint_ms": 375000,
+      "pressure_kpa": [
+        116.62696659212878,
+        109.5232623546054
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 374
+    },
+    {
+      "endpoint_ms": 376000,
+      "pressure_kpa": [
+        116.3203273281404,
+        109.87131594384397
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 375
+    },
+    {
+      "endpoint_ms": 377000,
+      "pressure_kpa": [
+        116.29575229083243,
+        109.84668375696154
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 376
+    },
+    {
+      "endpoint_ms": 378000,
+      "pressure_kpa": [
+        116.45625596208953,
+        109.60470705559088
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 377
+    },
+    {
+      "endpoint_ms": 379000,
+      "pressure_kpa": [
+        116.94351363606664,
+        109.75414864456977
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 378
+    },
+    {
+      "endpoint_ms": 380000,
+      "pressure_kpa": [
+        116.89386295165944,
+        109.60302971832378
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 379
+    },
+    {
+      "endpoint_ms": 381000,
+      "pressure_kpa": [
+        116.65607850991199,
+        109.28976343748539
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 380
+    },
+    {
+      "endpoint_ms": 382000,
+      "pressure_kpa": [
+        116.06487062906214,
+        109.92086052215032
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 381
+    },
+    {
+      "endpoint_ms": 383000,
+      "pressure_kpa": [
+        116.90356539978737,
+        109.97993311879748
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 382
+    },
+    {
+      "endpoint_ms": 384000,
+      "pressure_kpa": [
+        116.87537115435065,
+        109.62794255488232
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 383
+    },
+    {
+      "endpoint_ms": 385000,
+      "pressure_kpa": [
+        116.5425047140027,
+        109.62642823268652
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 384
+    },
+    {
+      "endpoint_ms": 386000,
+      "pressure_kpa": [
+        115.81407045234046,
+        110.6412078839105
+      ],
+      "ages_ms": [
+        21,
+        12
+      ],
+      "timing_valid": true,
+      "reasons": [],
+      "sample_index": 385
+    }
+  ],
+  "events": [
+    {
+      "event_id": "timing-check:130:0:quality_transition",
+      "t_s": 130,
+      "kind": "quality_transition",
+      "previous": null,
+      "current": "valid"
+    },
+    {
+      "event_id": "timing-check:360:0:quality_transition",
+      "t_s": 360,
+      "kind": "quality_transition",
+      "previous": "valid",
+      "current": "pressure_quality"
+    },
+    {
+      "event_id": "timing-check:360:1:measurement_quality",
+      "t_s": 360,
+      "kind": "measurement_quality",
+      "reason": "timing_fault"
+    },
+    {
+      "event_id": "timing-check:361:0:quality_transition",
+      "t_s": 361,
+      "kind": "quality_transition",
+      "previous": "pressure_quality",
+      "current": "window_incomplete"
+    },
+    {
+      "event_id": "timing-check:371:0:quality_transition",
+      "t_s": 371,
+      "kind": "quality_transition",
+      "previous": "window_incomplete",
+      "current": "valid"
+    }
+  ]
+}

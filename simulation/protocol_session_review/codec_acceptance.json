@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+  "validator_sha256": "1ee86215d4870aef16f960609c923b962f4101f7a05f031f20da9bfd50ff07cf",
+  "stage": "7A",
+  "records": 1429,
+  "fragment_boundaries": 133,
+  "all_single_bit_corruptions": 456,
+  "illegal_semantic_frames": 12,
+  "c_python_commands": 3344,
+  "portable_c_compilation": "gcc -std=c99 -Wall -Wextra -Werror -O2",
+  "source_c_sha256": "0f0b558e9412131d8f726529fed26849bb04a94422410251d575b24c425cce8d",
+  "pressure_max_error_kpa": 0.004994613189907682,
+  "flow_max_error_l_min": 0.00044444444444469156,
+  "event_bytes": 57,
+  "telemetry_bytes": 55,
+  "ack_bytes": 24,
+  "additional_state_and_uint_boundary_vectors": 6,
+  "results_sha256": "788f1877f1159e5b41df40e4c8b51050760e518da60cdcdcca5a63eeba002e1c",
+  "exclusions": [
+    "STM32 compilation/execution",
+    "quantized input diagnosis equivalence",
+    "RF"
+  ]
+}
