@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-06",
+  "status": "passed_for_standalone_figures",
+  "method": "Opened all three PNGs locally. Plot code checks canvas bounds, minimum font size and pairwise text collisions.",
+  "resolved": [
+    "Used native math subscripts instead of unavailable Unicode pressure glyphs.",
+    "Explicit pressure ticks remove a label outside the figure canvas.",
+    "Added cell borders so zero-valued white cells have clear boundaries.",
+    "Separated lower axis labels from the figure note.",
+    "Kept timing legends outside axes and away from detection lines."
+  ],
+  "figures": [
+    "01_健康参照与模型失配",
+    "02_六方法检出与误报",
+    "03_过渡暂停的快速故障反例"
+  ],
+  "grayscale": "Curves use distinct line styles and markers. Matrix values are explicit numbers. Transition interval uses hatching.",
+  "data_identity": "Synthetic data only; timing example is fixed first seed 25000, not selected for success.",
+  "not_verified": ["future resizing and pagination in Word", "physical printer output", "real sensor and hydraulic behaviour"],
+  "file_digests": "See figure_checks.json."
+}
