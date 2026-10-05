@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "reproduced_paired_results": 2880,
+  "new_noise_seeds_only": true,
+  "no_fault_outcomes_used_in_limit_fitting": true,
+  "parameter_lock_and_source_hashes": true,
+  "manual_recurrence": true,
+  "future_invariance": true,
+  "invalid_resets": true,
+  "unknown_load_ambiguity": true,
+  "grouped_counts_recomputed": true,
+  "stress_records": 36,
+  "long_healthy_records": 480,
+  "inference_limits": "No acceptance, publication, field accuracy or energy conclusion.",
+  "source_hashes": {
+    "validator": "846a68831aa9419d1ba86f771781f5bbc042d5497776fbecdaa16dae52de72e5",
+    "summary": "a844619b828c3c1895af28289f5983c574d68f9d38438f04f9dc1b4413239e7b"
+  }
+}

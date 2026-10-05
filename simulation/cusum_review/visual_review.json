@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-06",
+  "status": "passed_for_standalone_figures",
+  "review_method": "Local PNGs opened and visually inspected; text bounds and pairwise text collisions checked by plotting script.",
+  "figures": [
+    {
+      "name": "01_故障检出与提前量",
+      "checked": ["axes and units", "40-seed denominator", "conditional median labeling", "legend", "bottom margin"],
+      "resolved": "Increased lower figure margin to separate the axis labels from the note."
+    },
+    {
+      "name": "02_正常工况与长时误报",
+      "checked": ["actual elapsed horizons 470s and 3470s", "false-alarm trial counts", "no cropping", "seed reuse note"],
+      "resolved": "Distinguished elapsed time from inclusive observation count."
+    },
+    {
+      "name": "03_同观测检出时刻",
+      "checked": ["fixed example seed 22000", "confirmation times from CSV", "reference times", "marker placement", "legend separation"],
+      "resolved": "Moved each legend outside the axes so detection-time lines cannot cross legend text."
+    }
+  ],
+  "grayscale_readability": "Methods have distinct dotted/dashed/solid lines and square/circle/triangle markers. Color is supplementary.",
+  "identical_value_overlap": "Coincident data at low noise are intentional; counts remain explicit in the report table.",
+  "not_verified": ["resized layout in a future Word insertion", "physical printer output", "hardware measurements"],
+  "final_file_digests": "See figure_checks.json; inspected figures are linked to the frozen summary hash."
+}
