@@ -2,13 +2,13 @@
 
 项目题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
 
-2026年10月5日。当前交付为24页学校模板申报书表格与文献修订稿、13页实施项目书和六模块离线运行网站。申报精选文献为5篇中文、3篇英文。四工作包覆盖测量与建模、故障诊断边界、LoRa可靠告警、集成与独立评价。现有证据为未标定模型、概念几何、候选接口、主机检查和合成回放；没有硬件、射频、功耗或田间实测。
+2026年10月5日。当前交付为20页学校模板申报书紧凑排版稿、13页实施项目书和六模块离线运行网站。申报精选文献为5篇中文、3篇英文。四工作包覆盖测量与建模、故障诊断边界、LoRa可靠告警、集成与独立评价。现有证据为未标定模型、概念几何、候选接口、主机检查和合成回放；没有硬件、射频、功耗或田间实测。
 
 ## 最新入口
 
-- [学校模板申报书表格与文献修订稿](deliverables/大创申报书_表格与文献修订稿.docx) / [原生审阅PDF](deliverables/大创申报书_表格与文献修订审阅版.pdf)：24页、9图、4张可编辑表、8篇文献，中文5篇、英文3篇；四表与表题、表头居中，原封面、九节正文及审批区域保留。
+- [学校模板申报书紧凑排版稿](deliverables/大创申报书_紧凑排版稿.docx) / [原生审阅PDF](deliverables/大创申报书_紧凑排版审阅版.pdf)：20页、9图、4张完整可编辑表、8篇文献，中文5篇、英文3篇；正文文字和字号保留，减少页尾留白，图2按原字号重新排布。
 - [实施项目书](deliverables/实施项目书.docx) / [原生审阅PDF](deliverables/实施项目书.pdf)：13页、9章、5图、6张可编辑表；四工作包、实验协议、资源、里程碑、返工与归档。为自主执行稿，正式任务书尚待取得并填写。
-- [本次表格文献与职责修订验收](docs/表格文献与材料职责修订验收.md) / [修订记录](deliverables/表格文献与职责修订验收记录.json)：本次24页逐页审阅、实际表格中心核对、八篇文献及网站检查。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)明确申报、实施、仿真、模型、网站和PPT分别负责的内容。
+- [本次分页与图片复核](docs/申报书分页与图片复核.md) / [当前验收记录](deliverables/申报书紧凑排版验收记录.json)：20页逐页审阅、图片标注间距、完整表格及页尾留白核对。[上一轮表格文献与职责修订](docs/表格文献与材料职责修订验收.md)保留24页及网站检查依据。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)划分申报、实施、仿真、模型、网站和PPT的职责。
 - [运行平台](deliverables/index.html)：运行总览、支管监测、异常事件、设备与链路、历史记录、系统设置，共享合成回放与本地人工维护记录。
 - [历史研究与答辩资料](deliverables/研究与答辩资料.html)：原研究文献库、历史统计、旧材料和草案PPT；由文件目录单独打开，不进入运行网站导航，也不作为最新申报书入口。
 - [收集优化三维候选模型](deliverables/台架三维结构交互模型_收集优化候选版.html)：离线可旋转、查看；STEP/GLB与几何源在application/models/collection_review。暂定尺寸不用于加工下单。
@@ -34,6 +34,8 @@
 官方2026立项及验收要求只作为历史参考。任务书下载返回验证码网页，未取得实际官方DOC；自主实施稿未声称套入官方表。2027规定、正式身份、编号、意见及签字待本人、导师和学院办理。外部案例原件与个人信息未纳入仓库，级别来自用户说明。
 
 ## 修改与复现
+
+当前分页稿另存于deliverables/大创申报书_紧凑排版稿.docx，固定版面PDF为大创申报书_紧凑排版审阅版.pdf；验收见docs/申报书分页与图片复核.md。正文文字和字号保持，图2按同字号重新排布，9图、4张完整居中表、8篇文献保留；正文页尾留白超过25%的页数从7页减至0页。复现使用build_compact_water_figure.py、verify_compact_water_figure.mjs、compact_application_layout.py、export_compact_application.ps1、verify_compact_application.py和measure_application_page_gaps.py；记录在simulation/compact_layout_review与application/compact_layout_revision。24页表格与文献修订稿作为本轮输入保留。修改后应重新渲染和人工检查，不得沿用旧人工记录。
 
 当前文字源是application/正式模板正文.md与application/实施项目书.md。本次申报快照在application/table_reference_revision，application/quality_release保留上一轮版本。运行文档工具使用捆绑Python：C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe，浏览器工具使用同目录Node与本机Edge。PDF采用WPS原生导出和捆绑PDFium逐页渲染；每次正文或图片改变都必须重新检查实际版面。
 
