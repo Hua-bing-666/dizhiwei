@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "scope": "current_application_only",
+  "scope": "language_scope_revision_application",
   "chinese": 5,
   "english": 3,
   "references": [
@@ -60,21 +60,20 @@
     },
     {
       "language": "中文",
-      "authors": "龚骏, 税爱社, 包建明, 等",
-      "title": "多工况下基于RBF神经网络的管道泄漏检测",
-      "journal": "油气储运",
-      "year": 2015,
-      "volume": "34",
-      "issue": "7",
-      "pages": "759-763",
-      "doi": "10.6047/j.issn.1000-8241.2015.07.017",
-      "url": "https://yqcy.pipechina.com.cn/cn/article/id/20150717",
-      "support": "正常工况调节与泄漏需要区分",
-      "limit": "研究对象和算法条件不同，不引用其识别率作为本项目目标依据",
-      "verification": "期刊元数据与摘要；页面迁移日期不当作发表年",
+      "authors": "张晔",
+      "title": "棉花膜下“一管四行”滴灌工程设计探讨",
+      "journal": "水资源开发与管理",
+      "year": 2019,
+      "volume": "",
+      "issue": "2",
+      "pages": "16-19",
+      "doi": "10.16616/j.cnki.10-1326/TV.2019.02.04",
+      "url": "https://szy.sljsygl.com/UpFiles/2019-07-31/637001611926562500.pdf",
+      "support": "新疆规模化棉田膜下滴灌的支管、辅管、毛管层级及轮灌实例",
+      "limit": "昌吉工程实例，不作为南疆统一布置或本原型效益的证明",
+      "verification": "期刊原文PDF及搜索可读元数据，核对作者、页码、DOI与管网章节",
       "number": 4,
-      "citation": "[4] 龚骏, 税爱社, 包建明, 等. 多工况下基于RBF神经网络的管道泄漏检测[J]. 油气储运, 2015, 34(7): 759-763. DOI:10.6047/j.issn.1000-8241.2015.07.017.",
-      "library_number": 8
+      "citation": "[4] 张晔. 棉花膜下“一管四行”滴灌工程设计探讨[J]. 水资源开发与管理, 2019(2): 16-19. DOI:10.16616/j.cnki.10-1326/TV.2019.02.04."
     },
     {
       "language": "中文",

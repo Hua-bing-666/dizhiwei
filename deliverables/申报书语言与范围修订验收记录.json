@@ -1,0 +1,33 @@
+{
+  "status": "document_review_pass_with_documented_pagination_exceptions",
+  "date": "2026-10-05",
+  "scope": "Application prose, research scope and rendered layout",
+  "pages": 20,
+  "illustrations": 9,
+  "editable_tables": 4,
+  "blank_field_cells": 42,
+  "references": {
+    "chinese": 5,
+    "english": 3
+  },
+  "input_preserved": true,
+  "physical_validation": false,
+  "pagination_exceptions": [
+    8,
+    12,
+    18
+  ],
+  "checks": "simulation/language_scope_review/document_checks.json",
+  "visual_review": "simulation/language_scope_review/visual_review.json",
+  "artifact_sha256": {
+    "deliverables/大创申报书_语言与范围修订稿.docx": "3b0e557bd6fbd0a660ab7012215a25b4b60bf9dc6498e3b84ed1232ddbd97e44",
+    "deliverables/大创申报书_语言与范围修订审阅版.pdf": "17223c9f95086c23991b2eaf7e7258bc523392407d9a285c8744ecb40abe95a4",
+    "application/正式模板正文.md": "7518bb5d8b572ef193c351d15838c1e136fbddd7d7971eefd70e0d7d71185eb8",
+    "application/申报精选参考文献.json": "00f605f6377f516341cc90226cd6b244eafba36e065e67c2d9ceb985435b90f1",
+    "deliverables/index.html": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f"
+  },
+  "review_record_sha256": {
+    "simulation/language_scope_review/document_checks.json": "85f97ab11267e016e1cf50f49e7172a513d632b8824306b90503ab8110f487ed",
+    "simulation/language_scope_review/visual_review.json": "71d06f128b3d7719de9ef070996c32f81f6f18c4de9b2cffdda67dbc8322590e"
+  }
+}
