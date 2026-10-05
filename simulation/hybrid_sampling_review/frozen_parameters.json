@@ -1,0 +1,265 @@
+{
+  "config": {
+    "version": "20261006-hybrid-v1",
+    "training_seeds": [
+      26000,
+      26001,
+      26002,
+      26003,
+      26004,
+      26005,
+      26006,
+      26007,
+      26008,
+      26009,
+      26010,
+      26011
+    ],
+    "test_seeds": [
+      27000,
+      27001,
+      27002,
+      27003,
+      27004,
+      27005,
+      27006,
+      27007,
+      27008,
+      27009,
+      27010,
+      27011,
+      27012,
+      27013,
+      27014,
+      27015,
+      27016,
+      27017,
+      27018,
+      27019
+    ],
+    "sensor_test_seeds": [
+      28000,
+      28001,
+      28002,
+      28003,
+      28004,
+      28005,
+      28006,
+      28007,
+      28008,
+      28009,
+      28010,
+      28011
+    ],
+    "bounded_window_s": 60,
+    "cusum_k": 0.5,
+    "fast_scale_multiplier": 6,
+    "thresholds": [
+      0.06,
+      0.6
+    ],
+    "healthy_peak_margin": 1.1,
+    "pressure_window_s": 10,
+    "pulses_per_litre_assumption": 540,
+    "flow_count_continuous": true,
+    "pulse_window_bins": 10,
+    "flow_reaveraged": false,
+    "monitor_period_s": 5,
+    "high_hold_observations": 30,
+    "trigger_scale_multiplier": 3,
+    "trigger_floor": [
+      0.03,
+      0.3
+    ],
+    "pressure_change_floor": 0.05,
+    "diagnostic_min_consecutive_pressure_points": 10,
+    "confirmation_samples": 5,
+    "normal_send_interval_s": 60,
+    "high_send_interval_s": 10,
+    "sensor_exponents": [
+      0.5
+    ],
+    "diagnosis_during_missing_pressure_window": "insufficient_data",
+    "statistic_reset_on_gap": true,
+    "parameters_tuned_on_test": false,
+    "energy_estimated": false
+  },
+  "baseline": {
+    "config": {
+      "version": "20261006-reference-v1",
+      "monitor_start": 130,
+      "calibration_start": 20,
+      "calibration_end": 120,
+      "dt_s": 1,
+      "mean_samples": 10,
+      "confirm_samples": 5,
+      "q_relative_threshold": 0.06,
+      "r_absolute_threshold": 0.6,
+      "cusum_k": 0.5,
+      "ewma_lambda": 0.2,
+      "relative_scale_floor": 0.003,
+      "r_scale_floor": 0.03,
+      "healthy_peak_margin": 1.1,
+      "gate_relative_pressure_change": 0.1,
+      "gate_lag_s": 10,
+      "gate_duration_s": 20,
+      "gate_rearm_s": 40,
+      "calibration_supplies_kpa": [
+        80,
+        100,
+        120,
+        140,
+        160
+      ],
+      "calibration_pressure_sigma_kpa": 0.3,
+      "calibration_flow_sigma_l_min": 0.02,
+      "reference_seeds": [
+        23000,
+        23001,
+        23002,
+        23003,
+        23004,
+        23005,
+        23006,
+        23007,
+        23008,
+        23009,
+        23010,
+        23011
+      ],
+      "limit_seeds": [
+        24000,
+        24001,
+        24002,
+        24003,
+        24004,
+        24005,
+        24006,
+        24007,
+        24008,
+        24009,
+        24010,
+        24011
+      ],
+      "test_seeds": [
+        25000,
+        25001,
+        25002,
+        25003,
+        25004,
+        25005,
+        25006,
+        25007,
+        25008,
+        25009,
+        25010,
+        25011,
+        25012,
+        25013,
+        25014,
+        25015,
+        25016,
+        25017,
+        25018,
+        25019
+      ],
+      "exponents": [
+        0.0,
+        0.3,
+        0.5,
+        0.8
+      ],
+      "pressure_sigmas_kpa": [
+        0.3,
+        3.0,
+        10.0
+      ],
+      "fixed_acquisition": true,
+      "online_rebaseline": false,
+      "energy_measured": false,
+      "allowed_online_inputs": [
+        "P0",
+        "P1",
+        "Q",
+        "fixed_branch_reference"
+      ],
+      "denied_online_inputs": [
+        "true_fault_start",
+        "true_severity",
+        "true_load_exponent",
+        "B_valve_state",
+        "future_samples"
+      ]
+    },
+    "references": {
+      "n0": {
+        "n_fitted": 0.0008376127100556896,
+        "a_l_min": 2.8005206585901843,
+        "p1_min_kpa": 61.320273547213176,
+        "p1_max_kpa": 150.659720936943,
+        "healthy_points": 120,
+        "synthetic_calibration": true
+      },
+      "n0.3": {
+        "n_fitted": 0.3007363716931402,
+        "a_l_min": 2.8005541530817926,
+        "p1_min_kpa": 64.16169704265852,
+        "p1_max_kpa": 148.16031098331968,
+        "healthy_points": 120,
+        "synthetic_calibration": true
+      },
+      "n0.5": {
+        "n_fitted": 0.5006660685225397,
+        "a_l_min": 2.800581837156769,
+        "p1_min_kpa": 65.55171902093646,
+        "p1_max_kpa": 146.30931204545425,
+        "healthy_points": 120,
+        "synthetic_calibration": true
+      },
+      "n0.8": {
+        "n_fitted": 0.800558878109942,
+        "a_l_min": 2.800627786684501,
+        "p1_min_kpa": 67.18465554689048,
+        "p1_max_kpa": 143.34259601402647,
+        "healthy_points": 120,
+        "synthetic_calibration": true
+      }
+    },
+    "h_cusum": [
+      237.7229399511823,
+      258.6584425319034
+    ],
+    "h_ewma": [
+      0.13578095051586192,
+      3.2114595469752376
+    ],
+    "selection": "Health-only full trajectory maxima with 10% margin; no fault or test outcomes.",
+    "sources": {
+      "simulation/review_operating_reference.py": "c817861ffd41f573deb5888ab517f300b0b0e33a39cf1ed18a655638e5dc0ae0",
+      "simulation/review_diagnosis.py": "c2d0f89bd8c8ec3dd43cc91c3623fd2793132dfece20aa13bfa66842bf286d4f",
+      "simulation/diagnosis_review/protocol.json": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426"
+    }
+  },
+  "h_bounded_gaussian": [
+    104.91364356821842,
+    131.51614305624304
+  ],
+  "h_bounded_sensor": {
+    "fixed": [
+      103.84484518485883,
+      96.90414648103703
+    ],
+    "adaptive": [
+      103.84484518485884,
+      96.904146481037
+    ]
+  },
+  "training": "Healthy-only maxima. No fault/test metrics. Sensor profiles calibrated separately.",
+  "sources": {
+    "simulation/review_hybrid_sampling.py": "58be71a46e9eba21f13d1ecc7006d8e8ce0ee15a7845d4b2534be32bf2a33437",
+    "simulation/operating_reference_review/frozen_parameters.json": "6822c273ae635f59d67e15bf577a6e07271944299b87bb93a8121b0e2d8ccab1",
+    "simulation/review_operating_reference.py": "c817861ffd41f573deb5888ab517f300b0b0e33a39cf1ed18a655638e5dc0ae0",
+    "simulation/review_diagnosis.py": "c2d0f89bd8c8ec3dd43cc91c3623fd2793132dfece20aa13bfa66842bf286d4f",
+    "simulation/diagnosis_review/protocol.json": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426"
+  }
+}
