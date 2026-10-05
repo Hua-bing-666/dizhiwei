@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-05",
+  "classification": "ideal_periodic_monitoring_phase_analysis",
+  "physical_validation": false,
+  "diagnosis_accuracy_evaluated": false,
+  "energy_evaluated": false,
+  "random_data": false,
+  "phase_quadrature_points_per_period": 1200,
+  "source_sha256": "770591be867909674a9756e1bf0d8594f64a7ea651529a6e3a90b4f8975f3de6",
+  "assumptions": [
+    "threshold crossing is immediately detectable if observed",
+    "event start phase is uniform within a monitoring period",
+    "monitoring instants are fixed and do not use reference event knowledge",
+    "persistent change remains detectable; finite transient returns to baseline",
+    "processing, confirmation, sensor settling, noise, rolling flow window and radio delay omitted"
+  ],
+  "interpretation": [
+    "mean monitoring wait is T/2; supremum is T",
+    "finite transient seen probability is min(1, duration/T) under these ideal assumptions",
+    "persistent change observed within L seconds has probability min(1, L/T)",
+    "a missed transient is not equivalent to an eventually observed persistent leak",
+    "these results do not measure field faults or prove a particular adaptive strategy is superior"
+  ],
+  "formula_agreement_check": "passed",
+  "rows": [
+    {
+      "monitor_period_s": 1,
+      "mean_poll_wait_s": 0.5,
+      "maximum_sampled_wait_s": 0.9995833333333334,
+      "worst_case_wait_supremum_s": 1,
+      "ideal_transient_seen_fraction_duration_1s": 1.0,
+      "ideal_transient_seen_fraction_duration_5s": 1.0,
+      "ideal_transient_seen_fraction_duration_20s": 1.0,
+      "ideal_transient_seen_fraction_duration_60s": 1.0,
+      "ideal_persistent_seen_by_30s_fraction": 1.0,
+      "ideal_persistent_seen_by_60s_fraction": 1.0
+    },
+    {
+      "monitor_period_s": 5,
+      "mean_poll_wait_s": 2.5,
+      "maximum_sampled_wait_s": 4.997916666666667,
+      "worst_case_wait_supremum_s": 5,
+      "ideal_transient_seen_fraction_duration_1s": 0.2,
+      "ideal_transient_seen_fraction_duration_5s": 1.0,
+      "ideal_transient_seen_fraction_duration_20s": 1.0,
+      "ideal_transient_seen_fraction_duration_60s": 1.0,
+      "ideal_persistent_seen_by_30s_fraction": 1.0,
+      "ideal_persistent_seen_by_60s_fraction": 1.0
+    },
+    {
+      "monitor_period_s": 10,
+      "mean_poll_wait_s": 5.0,
+      "maximum_sampled_wait_s": 9.995833333333334,
+      "worst_case_wait_supremum_s": 10,
+      "ideal_transient_seen_fraction_duration_1s": 0.1,
+      "ideal_transient_seen_fraction_duration_5s": 0.5,
+      "ideal_transient_seen_fraction_duration_20s": 1.0,
+      "ideal_transient_seen_fraction_duration_60s": 1.0,
+      "ideal_persistent_seen_by_30s_fraction": 1.0,
+      "ideal_persistent_seen_by_60s_fraction": 1.0
+    },
+    {
+      "monitor_period_s": 30,
+      "mean_poll_wait_s": 15.0,
+      "maximum_sampled_wait_s": 29.9875,
+      "worst_case_wait_supremum_s": 30,
+      "ideal_transient_seen_fraction_duration_1s": 0.03333333333333333,
+      "ideal_transient_seen_fraction_duration_5s": 0.16666666666666666,
+      "ideal_transient_seen_fraction_duration_20s": 0.6666666666666666,
+      "ideal_transient_seen_fraction_duration_60s": 1.0,
+      "ideal_persistent_seen_by_30s_fraction": 1.0,
+      "ideal_persistent_seen_by_60s_fraction": 1.0
+    },
+    {
+      "monitor_period_s": 60,
+      "mean_poll_wait_s": 30.0,
+      "maximum_sampled_wait_s": 59.975,
+      "worst_case_wait_supremum_s": 60,
+      "ideal_transient_seen_fraction_duration_1s": 0.016666666666666666,
+      "ideal_transient_seen_fraction_duration_5s": 0.08333333333333333,
+      "ideal_transient_seen_fraction_duration_20s": 0.3333333333333333,
+      "ideal_transient_seen_fraction_duration_60s": 1.0,
+      "ideal_persistent_seen_by_30s_fraction": 0.5,
+      "ideal_persistent_seen_by_60s_fraction": 1.0
+    },
+    {
+      "monitor_period_s": 600,
+      "mean_poll_wait_s": 300.0,
+      "maximum_sampled_wait_s": 599.75,
+      "worst_case_wait_supremum_s": 600,
+      "ideal_transient_seen_fraction_duration_1s": 0.0016666666666666668,
+      "ideal_transient_seen_fraction_duration_5s": 0.008333333333333333,
+      "ideal_transient_seen_fraction_duration_20s": 0.03333333333333333,
+      "ideal_transient_seen_fraction_duration_60s": 0.1,
+      "ideal_persistent_seen_by_30s_fraction": 0.05,
+      "ideal_persistent_seen_by_60s_fraction": 0.1
+    }
+  ]
+}

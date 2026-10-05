@@ -1,0 +1,7 @@
+﻿monitor_period_s,mean_poll_wait_s,maximum_sampled_wait_s,worst_case_wait_supremum_s,ideal_transient_seen_fraction_duration_1s,ideal_transient_seen_fraction_duration_5s,ideal_transient_seen_fraction_duration_20s,ideal_transient_seen_fraction_duration_60s,ideal_persistent_seen_by_30s_fraction,ideal_persistent_seen_by_60s_fraction
+1,0.5,0.9995833333333334,1,1.0,1.0,1.0,1.0,1.0,1.0
+5,2.5,4.997916666666667,5,0.2,1.0,1.0,1.0,1.0,1.0
+10,5.0,9.995833333333334,10,0.1,0.5,1.0,1.0,1.0,1.0
+30,15.0,29.9875,30,0.03333333333333333,0.16666666666666666,0.6666666666666666,1.0,1.0,1.0
+60,30.0,59.975,60,0.016666666666666666,0.08333333333333333,0.3333333333333333,1.0,0.5,1.0
+600,300.0,599.75,600,0.0016666666666666668,0.008333333333333333,0.03333333333333333,0.1,0.05,0.1

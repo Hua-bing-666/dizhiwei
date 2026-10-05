@@ -1,0 +1,23 @@
+{
+  "version": "candidate-20261005-v1",
+  "classification": "offline_replay_not_hardware",
+  "monitor_period_s": 5,
+  "high_period_s": 1,
+  "low_period_s": 60,
+  "normal_report_period_s": 60,
+  "high_report_period_s": 10,
+  "warmup_end_s": 129,
+  "mean_window_s": 10,
+  "confirm_elapsed_s": 5,
+  "high_hold_s": 30,
+  "trigger_k_relative": 0.03,
+  "trigger_r_absolute": 0.3,
+  "trigger_p1_relative": 0.05,
+  "energy_estimated": false,
+  "initial_monitor_phase_s": 0,
+  "flow_count_continuous": true,
+  "guard_reads_all_three_channels": true,
+  "comparison": "Same calibration, feature rules, causal 10s window, 5s and >=2 observed confirmations.",
+  "seed_correlation": "20 base noise sequences reused across scenarios and levels; not 480 independent physical trials.",
+  "parameters_tuned_on_this_batch": false
+}

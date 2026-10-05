@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-05",
+  "status": "programmatic_bounds_checked_visual_review_pending",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "collection_overview",
+      "width": 1000,
+      "height": 820,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 820
+      },
+      "textCount": 18,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 0,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "c070fe52743f49df600838a5dd92c0cbcea3e39191bed7d53bcdb0ef77ca872a",
+      "svg_sha256": "1f46ac07144a40d16d96b5552cc669aa93967ea9d3e5b5d96f787830eafc6340"
+    },
+    {
+      "name": "measurement_interfaces",
+      "width": 1000,
+      "height": 818,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 818
+      },
+      "textCount": 31,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 7,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "e3d2cdc652d77ad6eb689301928830cbce6201e44b51bac37a729c4cf7dca3d0",
+      "svg_sha256": "d4e56c7e77807b8dced4e5ea6a83a1cf259b065b334ffe73082e38665e28015b"
+    },
+    {
+      "name": "diagnosis_proposal",
+      "width": 1000,
+      "height": 670,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 670
+      },
+      "textCount": 17,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 5,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "2365c072e1698c8f2e21b767beee53347c13450ab9cfb707e9a6e7161cdeb5a6",
+      "svg_sha256": "3ca54463bd2e5e5d2fbb10628fe82f7a74c9024e5ac42d7fae7c7ce0956d6317"
+    },
+    {
+      "name": "durable_event_sequence",
+      "width": 1000,
+      "height": 820,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 820
+      },
+      "textCount": 16,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 3,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "5be16faf750c941fb1d2a314e1875ec3f9c1e26fae78bb91e4783dc56dbb9364",
+      "svg_sha256": "a47b2147aa9871b00321fe6061366b9cdf6ecc20d7be4a3d168791fd7056a66a"
+    },
+    {
+      "name": "noise_outcomes_print",
+      "width": 612,
+      "height": 496.79998779296875,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 811.75
+      },
+      "textCount": 43,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "boxCount": 0,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "e9b33ceeecd56e0601dcebd78cb6e0f1c6d59197bfcdf6e600740e856fabf39c",
+      "svg_sha256": "57e689f3885b9162e3693144fd475ec5643f92cce664073a07235baddb56593a"
+    },
+    {
+      "name": "failure_counterexamples",
+      "width": 612,
+      "height": 496.79998779296875,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 811.75
+      },
+      "textCount": 30,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "boxCount": 0,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "14f423058d5499cf9e2605631af048db4858663c2c42c8e049a8017ea9349565",
+      "svg_sha256": "fc56e25e307cdefb10d7bbef48cab05f5de937339a2d836c744b3ec9ae353b06"
+    },
+    {
+      "name": "system_responsibilities",
+      "width": 1000,
+      "height": 660,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 660
+      },
+      "textCount": 34,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 7,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "f808ea9e0d2272e3314fda00f5f8f06720b34acd1e4c8efba3de5bef6b66fed6",
+      "svg_sha256": "7471302866ef7f02693d7e8fb0dd5341e215e2a1b46a14230263610cf5608e76"
+    },
+    {
+      "name": "event_sampling_strategy",
+      "width": 1000,
+      "height": 880,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 880
+      },
+      "textCount": 26,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 5,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "d5dc22aabc6d49e6f75b9b7d04c3529fcbc88906d7d3c7c25ab96d834b0bac82",
+      "svg_sha256": "221772f02f125e69fc70092fd7674b123c9f638b00ab9a5c1819ee9f812df7b8"
+    },
+    {
+      "name": "water_layout",
+      "width": 1000,
+      "height": 570,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 570
+      },
+      "textCount": 15,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 8,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "6d84d4c9fd5108e4e0f9e700680e96cfacd4ac467ffc18a9b6f4de80a900c8fb",
+      "svg_sha256": "91bbb1c7fa18f7b5c8553b836f177a01cb2935c2261b94134f34f150cfc5e548"
+    }
+  ]
+}
