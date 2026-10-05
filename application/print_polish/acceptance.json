@@ -2,8 +2,8 @@
   "date": "2026-10-06",
   "scope": "application language, figures, OOXML and local WPS print layout",
   "status": "automated_checks_and_visual_review_passed_with_stated_scope",
-  "output": "deliverables/大创申报书_图文与引文修订稿.docx",
-  "output_sha256": "9692420653ed15313e8da84f3c91b8dc95678d8dfa8238ddce86f2448ea01874",
+  "output": "deliverables/大创申报书_版式修订稿.docx",
+  "output_sha256": "f241eaaa05129764de3679d8a108ecf0db66466f8a839dde21218e71f2e7aab5",
   "pages": 20,
   "native_math_count": 27,
   "superscript_citation_count": 11,
@@ -125,6 +125,7 @@
     }
   ],
   "website_scripts_and_data_unchanged": true,
+  "protocol_section_is_ordinary_prose": true,
   "physical_validation": false,
   "energy_claim": null,
   "page_receipts": [
@@ -211,7 +212,7 @@
     {
       "page": 17,
       "file": "tmp/print_polish_document/final_pages/page-17.png",
-      "sha256": "eb561c8a4e938d8e82f1f47ab48f1533bacfada1724e89f2ecfa0232dad9b227"
+      "sha256": "cc99942a64de42c2f110bfe169ae70d90610329eed42fe658f8c3730baf9ff3b"
     },
     {
       "page": 18,

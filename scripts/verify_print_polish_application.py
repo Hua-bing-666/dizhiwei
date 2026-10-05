@@ -38,6 +38,9 @@ for row in rows[16:25]:
             b=t.getparent().find(W+'rPr/'+W+'b')
             assert b is not None and b.get(W+'val')!='0',t.text
 assert len([t for t in headings if re.match(r'^[一二三四五六七八九]、',t)])==9
+protocol_heading=next(t for t in rows[23].xpath('.//w:r/w:t',namespaces=NS) if t.text=='3 协议与平台软件')
+assert next(a for a in protocol_heading.iterancestors() if a.tag==W+'tbl') is root.find(W+'body/'+W+'tbl')
+assert len(rows[23].xpath('.//w:tbl',namespaces=NS))==4
 refs=[tx(p) for p in rows[19].xpath('.//w:p',namespaces=NS) if re.match(r'^\[\d\]',tx(p))]
 assert refs==record['references'] and len(refs)==8
 assert all(re.search('[\u4e00-\u9fff]',r) for r in refs[:5])
@@ -132,7 +135,8 @@ result={'date':'2026-10-06','scope':'application language, figures, OOXML and lo
         'pages':20,'native_math_count':27,'superscript_citation_count':11,'references':{'Chinese':5,'English':3},
         'headings':headings,'figure_count':10,'figure_pages':figure_pages,'table_captions':table_captions,
         'centered_body_tables':3,'figure_width_pt':420,'pdf_images':pdf_images,
-        'website_scripts_and_data_unchanged':True,'physical_validation':False,'energy_claim':None,'page_receipts':pages}
+        'website_scripts_and_data_unchanged':True,'protocol_section_is_ordinary_prose':True,
+        'physical_validation':False,'energy_claim':None,'page_receipts':pages}
 visual_path=DATA/'visual_review.json'
 if visual_path.exists():
     visual=load(visual_path)

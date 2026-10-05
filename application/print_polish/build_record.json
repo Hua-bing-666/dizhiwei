@@ -2,8 +2,8 @@
   "date": "2026-10-06",
   "source": "deliverables/大创申报书_系统方案完善稿.docx",
   "source_sha256": "e33c6265dc2a00d75bf3cf679758753d7a4ad9eec05f82e474bfa0e1f4930af1",
-  "output": "deliverables/大创申报书_图文与引文修订稿.docx",
-  "output_sha256": "9692420653ed15313e8da84f3c91b8dc95678d8dfa8238ddce86f2448ea01874",
+  "output": "deliverables/大创申报书_版式修订稿.docx",
+  "output_sha256": "f241eaaa05129764de3679d8a108ecf0db66466f8a839dde21218e71f2e7aab5",
   "figures": [
     {
       "figure": 1,
@@ -208,6 +208,9 @@
       "before": "控制方面已完成12项主机模拟检查，覆盖正常及证据不足不自动请求、命令去重、内容冲突、支管身份核对、接收与演示输出区分及人工复位。当前程序只验证主机模拟状态，不涉及真实STM32固件、IO输出或阀门动作；节点控制与页面接入将在原型联调中实现。采集回放和控制检查分别保存参数、结果及程序版本，作为实施前的逻辑验证依据。",
       "after": "控制方面已完成12项主机模拟检查，覆盖正常运行及证据不足时不生成自动请求、命令去重、内容冲突、支管身份核对、接收与演示输出区分及人工复位。当前程序仅验证主机端的模拟状态，不涉及真实STM32固件、IO输出或阀门动作；节点控制与页面接入将在原型联调中实现。采集回放和控制检查分别保存参数、结果及程序版本，作为实施前的逻辑验证依据。"
     }
+  ],
+  "format_changes": [
+    "Removed the single-cell nested table and its top/bottom rules around subsection3; retained the bold heading and unchanged prose."
   ],
   "physical_validation": false,
   "data_changed": false

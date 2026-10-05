@@ -7,7 +7,7 @@ from PIL import Image
 import hashlib, json, re
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/'deliverables/大创申报书_系统方案完善稿.docx'
-OUT=ROOT/'deliverables/大创申报书_图文与引文修订稿.docx'
+OUT=ROOT/'deliverables/大创申报书_版式修订稿.docx'
 DATA=ROOT/'application/print_polish';DATA.mkdir(parents=True,exist_ok=True)
 TMP=ROOT/'tmp/print_polish_document';TMP.mkdir(parents=True,exist_ok=True)
 original=SRC.read_bytes();sha=lambda b:hashlib.sha256(b).hexdigest()
@@ -89,6 +89,22 @@ bold=heading.getparent().find(W+'rPr/'+W+'b')
 assert bold is not None
 bold.set(W+'val','1')
 
+# A one-cell table around this prose introduced two unintended horizontal rules.
+# Keep the school form and figure wrappers, but restore this block to normal prose.
+prose_table=next(a for a in heading.iterancestors() if a.tag==W+'tbl')
+assert len(prose_table.findall(W+'tr'))==1
+prose_cells=prose_table.xpath('./w:tr/w:tc',namespaces=NS)
+assert len(prose_cells)==1
+assert not prose_table.xpath('.//v:imagedata',namespaces=NS)
+parent=prose_table.getparent();position=parent.index(prose_table)
+section_text=tx(rows[23])
+prose_paragraphs=prose_cells[0].findall(W+'p')
+assert len(prose_paragraphs)==1 and tx(prose_paragraphs[0]).startswith('3 协议与平台软件')
+for paragraph in prose_paragraphs:
+ parent.insert(position,paragraph);position+=1
+parent.remove(prose_table)
+assert tx(rows[23])==section_text
+
 # Keep operational details in prose, rather than as footers inside each diagram.
 p=next(p for p in rows[18].xpath('.//w:p',namespaces=NS) if tx(p).startswith('图7展示'))
 texts=p.xpath('./w:r/w:t',namespaces=NS);assert len(texts)==1
@@ -124,7 +140,8 @@ assert SRC.read_bytes()==original
 record={'date':'2026-10-06','source':SRC.relative_to(ROOT).as_posix(),'source_sha256':sha(original),
  'output':OUT.relative_to(ROOT).as_posix(),'output_sha256':sha(OUT.read_bytes()),'figures':figure_records,
  'citations':citations,'superscript_citation_count':len(citations),'references':refs_before,'native_math_count':27,
- 'language_changes':changes,'physical_validation':False,'data_changed':False}
+ 'language_changes':changes,'format_changes':['Removed the single-cell nested table and its top/bottom rules around subsection3; retained the bold heading and unchanged prose.'],
+ 'physical_validation':False,'data_changed':False}
 (DATA/'build_record.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 (DATA/'body.txt').write_text('\n\n'.join(tx(p) for row in rows[16:25] for p in row.xpath('.//w:p',namespaces=NS) if tx(p))+'\n',encoding='utf-8',newline='\n')
 (TMP/'artifact.md').write_text('Source: accepted school-template application. Preserve personal/budget blanks, approval rows, references and27 OMML objects. Refine natural prose/captions, superscript reference citations and ten proportionate print figures. All-page native export and grayscale QA required.\n',encoding='utf-8')

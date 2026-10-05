@@ -2,7 +2,7 @@
   "date": "2026-10-06",
   "reviewer": "Codex visual inspection of individually rendered pages and native figure images",
   "status": "accepted_for_application_local_print_layout",
-  "output_sha256": "9692420653ed15313e8da84f3c91b8dc95678d8dfa8238ddce86f2448ea01874",
+  "output_sha256": "f241eaaa05129764de3679d8a108ecf0db66466f8a839dde21218e71f2e7aab5",
   "reviewed_pages": [
     1,
     2,
@@ -98,8 +98,8 @@
     {
       "page": 17,
       "file": "tmp/print_polish_document/grayscale/page-17.png",
-      "source_sha256": "eb561c8a4e938d8e82f1f47ab48f1533bacfada1724e89f2ecfa0232dad9b227",
-      "sha256": "7a13c09e2a3ac6ca3e015fc88cd2309999eefe9c2f747afb62fc5da2fee5ff47"
+      "source_sha256": "cc99942a64de42c2f110bfe169ae70d90610329eed42fe658f8c3730baf9ff3b",
+      "sha256": "e2bf751f58d042f749f2d586ff8ab6c55c9c4970ec2a354dea450e01b0f5d2cf"
     }
   ],
   "figure_reviews": [
@@ -248,7 +248,7 @@
     {
       "page": 17,
       "file": "tmp/print_polish_document/final_pages/page-17.png",
-      "sha256": "eb561c8a4e938d8e82f1f47ab48f1533bacfada1724e89f2ecfa0232dad9b227"
+      "sha256": "cc99942a64de42c2f110bfe169ae70d90610329eed42fe658f8c3730baf9ff3b"
     },
     {
       "page": 18,
@@ -275,5 +275,30 @@
   "physical_validation": false,
   "institutional_approval": false,
   "technical_readability_review": "Ten figures cross-checked with the accompanying prose; common-ground/interface signal flow and quality/operating-state criteria supplemented in prose.",
-  "water_layout_padding": "Return line40 units beyond the load boxes;50 units to the canvas right edge; primary type approximately10pt at420pt figure width."
+  "water_layout_padding": "Return line40 units beyond the load boxes;50 units to the canvas right edge; primary type approximately10pt at420pt figure width.",
+  "latest_revision_changed_pages_reinspected": [
+    17
+  ],
+  "latest_revision_unchanged_pages_verified_by_png_sha256": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20
+  ],
+  "protocol_prose_review": "Subsection3 no longer has a one-cell table wrapper or top/bottom rules; bold heading matches1 and2. Text,27 equations and all images unchanged."
 }

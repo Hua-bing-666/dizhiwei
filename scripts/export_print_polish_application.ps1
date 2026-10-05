@@ -5,7 +5,7 @@ $priorCount=$app.Documents.Count;$priorVisible=$app.Visible;$priorAlerts=$app.Di
 if ($priorCount -eq 0){$app.Visible=$false};$app.DisplayAlerts=0
 $doc=$null
 try {
-    $doc=$app.Documents.Open((Join-Path $Workspace 'deliverables\大创申报书_图文与引文修订稿.docx'),$false,$true)
+    $doc=$app.Documents.Open((Join-Path $Workspace 'deliverables\大创申报书_版式修订稿.docx'),$false,$true)
     $doc.Fields.Update() | Out-Null
     $doc.Repaginate()
     $nativeEquations=$null;$mathApiDiagnostic=$null
