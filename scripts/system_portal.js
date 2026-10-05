@@ -8,7 +8,7 @@ const defaults=()=>({schema:1,classification,physical_data:false,profile:{worksp
 let store=defaults(),storageOK=true,storageWarning='';
 try {const saved=localStorage.getItem(storageKey);if(saved){const parsed=JSON.parse(saved);if(parsed.schema!==1||parsed.classification!==classification||!Array.isArray(parsed.events)||!parsed.profile||parsed.events.some(e=>!Array.isArray(e.history)||!e.id||!e.snapshot))throw Error('schema');store=parsed;}}
 catch{storageWarning='本地记录不可读；当前使用空白演示工作区。原数据不会自动覆盖。';storageOK=false;}
-const pages={overview:['OVERVIEW','运行总览','查看支管变化、异常线索与待处理事件。'],monitor:['MONITORING','支管监测','结合压力、流量和操作条件核查本支管的变化。'],events:['EVENTS','异常事件','将候选异常记录下来，逐项核查、处置和复测。'],devices:['DEVICES','设备与链路','区分计划配置、当前软件功能和待接入的实物链路。'],history:['RECORDS','历史记录','按模型时刻查看参考数据，按操作时间追溯维护记录。'],settings:['SETTINGS','系统设置','维护本地显示档案，查看当前诊断与保存规则。']};
+const pages={overview:['OVERVIEW','运行总览','查看支管变化、异常线索与待处理事件。'],monitor:['MONITORING','支管监测','结合压力、流量和操作条件核查本支管的变化。'],events:['EVENTS','异常事件','将候选异常记录下来，逐项核查、处置和复测。'],devices:['DEVICES','设备与链路','查看节点配置、采集通道和无线接入状态。'],history:['RECORDS','历史记录','查看压力、流量记录，追溯核查与维护操作。'],settings:['SETTINGS','系统设置','维护本地显示档案，查看当前诊断与保存规则。']};
 const scenarios={normal:'正常支路切换',supply:'允许供压下降',leak:'渐进等效泄漏',restriction:'渐进等效受限',drift:'入口压力漂移',load_unknown:'未知正常负载变化'};
 const state={scenario:'leak',noise:'0.3',quality:'replay',time:450,page:'overview',eventFilter:'all',eventSearch:'',historyTab:'readings',historyPage:22,selectedEventId:null};
 let playback=null,toastTimer=null;
@@ -65,7 +65,7 @@ function render(){
  $('diagnosis-badge').className='diagnosis-badge '+s.tone;$('diagnosis-badge').textContent=s.label;$('diagnosis-reason').textContent=s.reason;$('inspection-hint').textContent=s.hint;document.querySelectorAll('.branch-state').forEach(n=>{n.className='status-badge branch-state '+s.tone;n.textContent=s.label;});$('feature-k').textContent=valid&&state.time>=130?fmt(r.k,3):'—';$('feature-r').textContent=valid&&state.time>=130?fmt(r.r,2):'—';
  renderCharts();$('overview-q').textContent=valid?fmt(r.q)+' L/min':'— L/min';
  $('monitor-readings').innerHTML=[['P0 · 入口压力',r.p0,'kPa'],['P1 · 下游压力',r.p1,'kPa'],['Q · A 总流量',r.q,'L/min']].map(([label,v,unit])=>`<article class="reading-card card"><span>${label}</span><div class="reading-value">${valid?fmt(v):'—'}<small>${unit}</small></div><p>${valid?'所选时刻的带噪合成观测':'当前无有效读数'}</p></article>`).join('');
- $('valve-context').textContent=state.scenario==='normal'?'B操作仅由合成场景提供；当前规则未做切换门控':state.scenario==='load_unknown'?'负载变化未提供给诊断（反例）':'场景操作为模型标签，非实际阀位测量';$('record-event').disabled=['normal','reference'].includes(s.key);$('record-event').title=$('record-event').disabled?'当前不生成候选异常事件':'';$('play-toggle').disabled=!valid;
+ $('valve-context').textContent=state.scenario==='normal'?'演示B支路切换，切换后需人工核查':state.scenario==='load_unknown'?'正常负载未知，不能据此确认泄漏':'演示场景条件 · 阀位尚未接入';$('record-event').disabled=['normal','reference'].includes(s.key);$('record-event').title=$('record-event').disabled?'当前不生成候选异常事件':'';$('play-toggle').disabled=!valid;
  document.querySelector('.workspace-label b').textContent=store.profile.workspaceName;$('device-name').textContent=store.profile.nodeName;
  renderEvents();renderReadings();
 }

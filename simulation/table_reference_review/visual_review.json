@@ -1,0 +1,285 @@
+{
+  "date": "2026-10-05",
+  "basis": "pages and screenshots actually viewed in this revision",
+  "document_pages": [
+    {
+      "page": 1,
+      "image_path": "tmp/table_reference_review/final_pages/page-01.png",
+      "sha256": "bfbfed516c3617642394f277619a3cd7ecf0934238aa2eb231c6400459498055",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "校徽、封面及身份留空区域完整",
+      "layout_pass": true
+    },
+    {
+      "page": 2,
+      "image_path": "tmp/table_reference_review/final_pages/page-02.png",
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "学校填写须知保留",
+      "layout_pass": true
+    },
+    {
+      "page": 3,
+      "image_path": "tmp/table_reference_review/final_pages/page-03.png",
+      "sha256": "b334746e03eddb48e4e6b82085251fb8052c52a4339c5339c55676f78f09e633",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "原登记表边框与空白字段保留",
+      "layout_pass": true
+    },
+    {
+      "page": 4,
+      "image_path": "tmp/table_reference_review/final_pages/page-04.png",
+      "sha256": "edd842c1ab486a8605bc40941a364d0eff1c10d1e3b53031264ba6820e73693d",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "简介、申请理由和系统目标无裁切",
+      "layout_pass": true
+    },
+    {
+      "page": 5,
+      "image_path": "tmp/table_reference_review/final_pages/page-05.png",
+      "sha256": "48123793a41e8a45aeacb9c795a4fd25ce1bf2e336b2b3c5e42cdfaf2e6fc9f8",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "系统职责图与图题同页",
+      "layout_pass": true
+    },
+    {
+      "page": 6,
+      "image_path": "tmp/table_reference_review/final_pages/page-06.png",
+      "sha256": "a8a09d2d1e3d03a5ad440b4fd71ad9e4fa7715f7490b6c5d43b78e0dec90a714",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "双支路原理图、取压与分流标注完整",
+      "layout_pass": true
+    },
+    {
+      "page": 7,
+      "image_path": "tmp/table_reference_review/final_pages/page-07.png",
+      "sha256": "29f3dbc118608c7700f461a353847a76bfbcd94191622463bf9d8e1714da8e5a",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "三维布局图标注与计量条件说明清晰",
+      "layout_pass": true
+    },
+    {
+      "page": 8,
+      "image_path": "tmp/table_reference_review/final_pages/page-08.png",
+      "sha256": "f7447759fd8aa4150e22c51d43894486aa1bcf5bc236c8f7b525b3d8896360ec",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "压力回路与流量接口图无裁切",
+      "layout_pass": true
+    },
+    {
+      "page": 9,
+      "image_path": "tmp/table_reference_review/final_pages/page-09.png",
+      "sha256": "75e064a21f0053dee22205063ea0bb5e5fd4da90d523ebb9e34d8c37fa7c7f14",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "3.3小标题恢复加粗，引用编号已调整",
+      "layout_pass": true
+    },
+    {
+      "page": 10,
+      "image_path": "tmp/table_reference_review/final_pages/page-10.png",
+      "sha256": "7487da64b075d2e98fdc0fe2bff251423e7c2c11cc7657ffae844db2caf6aa89",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "诊断流程图与已有及拟实施边界完整",
+      "layout_pass": true
+    },
+    {
+      "page": 11,
+      "image_path": "tmp/table_reference_review/final_pages/page-11.png",
+      "sha256": "010394701d910c9a8b1f28586f8ae1ef238f04672389f179f966f879b5ba8911",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "研究目标与无线方案无溢出",
+      "layout_pass": true
+    },
+    {
+      "page": 12,
+      "image_path": "tmp/table_reference_review/final_pages/page-12.png",
+      "sha256": "9ca3d47e14bd99171db5933ef25b8bd4fbc171a29d48211a5543a5b01a631000",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "确认重试时序图与图题同页",
+      "layout_pass": true
+    },
+    {
+      "page": 13,
+      "image_path": "tmp/table_reference_review/final_pages/page-13.png",
+      "sha256": "9507b147a24124d59a93ca3a27fb2bdb2849f4c223390bee30270eb7669ef4e6",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "网站原生局部截图与图题同页",
+      "layout_pass": true
+    },
+    {
+      "page": 14,
+      "image_path": "tmp/table_reference_review/final_pages/page-14.png",
+      "sha256": "ea688278c86855281724519ff7763ac7b0a23a4bf3f8a2971f86487f30c42f3a",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "四工作包表、表题及表头居中",
+      "layout_pass": true
+    },
+    {
+      "page": 15,
+      "image_path": "tmp/table_reference_review/final_pages/page-15.png",
+      "sha256": "5d5113b7d6a56973438ce0dc5d9b22cacb96d7ade4f3df7167d0b24555bd058b",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "实验计划表居中；后续研究段落无孤行",
+      "layout_pass": true
+    },
+    {
+      "page": 16,
+      "image_path": "tmp/table_reference_review/final_pages/page-16.png",
+      "sha256": "b075d9c8f0361d9b89d78f993f4fb1e5cb2945d3a0bc8c95205546f9db8ca4de",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "研究现状标题与首段同页；文献1完整",
+      "layout_pass": true
+    },
+    {
+      "page": 17,
+      "image_path": "tmp/table_reference_review/final_pages/page-17.png",
+      "sha256": "52406b489d9577a4860aa574bc4bb79a637d618b6ea237b6d001555c3702df96",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "文献2至8各自完整，来源与制度依据保留",
+      "layout_pass": true
+    },
+    {
+      "page": 18,
+      "image_path": "tmp/table_reference_review/final_pages/page-18.png",
+      "sha256": "a0afadd872d484b4903b010401ae5ee59b5e2e310cfa11dd81bfbee1ccabfb57",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "创新点及预期成果标题各带正文",
+      "layout_pass": true
+    },
+    {
+      "page": 19,
+      "image_path": "tmp/table_reference_review/final_pages/page-19.png",
+      "sha256": "170729db4937ed70970ea39adc93b80a8171892289ec3c9863597e651e430919",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "里程碑表居中；已有基础标题与首段同页",
+      "layout_pass": true
+    },
+    {
+      "page": 20,
+      "image_path": "tmp/table_reference_review/final_pages/page-20.png",
+      "sha256": "0885484fc945a7bb33264aa9ca75ac689f638e66cd19c0733aafda839fed9f62",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "噪声统计及图题同页，计数与限制说明保留",
+      "layout_pass": true
+    },
+    {
+      "page": 21,
+      "image_path": "tmp/table_reference_review/final_pages/page-21.png",
+      "sha256": "299f01ff459903909ef7513d62e4fa1d1941cdbae079e1803c52c494654d002c",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "反例图与图题同页；软件成果用具体功能描述",
+      "layout_pass": true
+    },
+    {
+      "page": 22,
+      "image_path": "tmp/table_reference_review/final_pages/page-22.png",
+      "sha256": "9a803d830f8bd4db2afcf6a49d06dab4f619b8569125352a27d82b7c600fc011",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "预算表、表题和表头居中，金额列居中",
+      "layout_pass": true
+    },
+    {
+      "page": 23,
+      "image_path": "tmp/table_reference_review/final_pages/page-23.png",
+      "sha256": "a4d7573d6985816c1ee14664fbf45175a4b909917837c45fbfeb39ae123e416f",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "签字及指导教师意见区域完整",
+      "layout_pass": true
+    },
+    {
+      "page": 24,
+      "image_path": "tmp/table_reference_review/final_pages/page-24.png",
+      "sha256": "6b1ec4589f2423e973be86f284592f797081611ffae26262dc24f1f7d31c7892",
+      "review": "viewed_individually_in_this_revision",
+      "finding": "学院及学校审批区域完整",
+      "layout_pass": true
+    }
+  ],
+  "website_views": [
+    {
+      "path": "tmp/table_reference_site_review/settings-1440.png",
+      "sha256": "ade476b236f576a0bda62a80edd0e5fd0431e32c49aecc1d3a9d1efedc91dc04",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/settings-375.png",
+      "sha256": "79c9cd625d3ceaeab869a1dd7a30d237171c9d6f5b7a2770fa03b87afa348a3f",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/overview-final-desktop.png",
+      "sha256": "a11fae0ca344dbe6aaa1d4ecc7f84a0b6dcc908016a5b2c717ba04688cd5bf42",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/overview-final-mobile.png",
+      "sha256": "2ec612576315452da91c518246d1241c7c289e85167cc9af4ae9037299e72c62",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/monitor-1440.png",
+      "sha256": "872c8f81d24955082ce006c80ce18510b9ef41843f2aa933761ab17a4c70e06c",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/monitor-375.png",
+      "sha256": "18018dd54366d9942e245b72cd34e63f93922ff117291e2b7ee9c5299c198c77",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/devices-1440.png",
+      "sha256": "95a46707f0760a8bda3821dfd5ef70572092492d3205da051b5aba4348a1017e",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/devices-375.png",
+      "sha256": "c626bf9643ae0f733fb239d422722c5b12a14b56a6be71f8ce9a7b0360fe1bc1",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/events-with-record-desktop.png",
+      "sha256": "9ee2b37549d611fc102b5aad2837283b6b333f9fc27a8e83ca86776a260ca64b",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/events-with-record-mobile.png",
+      "sha256": "7e55f283266b0e418d44192908d4236ca626ec46a3d677aa586cdf652590aa5a",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/history-1440.png",
+      "sha256": "fa2c02b66039b36976d26aa34c69a503ea4839e6af0cdca6b73f9626f30a4782",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/history-375.png",
+      "sha256": "f3d1340d9d5f195c38b250e9f5ffd343973b5fe769d220ac5c206760b14d1003",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/event-dialog-desktop.png",
+      "sha256": "74159dd1455461d59ff69a36ac1875e6a7f245dc4bacc3cc9a7c532e977a8a38",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    },
+    {
+      "path": "tmp/table_reference_site_review/event-dialog-mobile.png",
+      "sha256": "7bcc586d85585d3e7df1b8909f2c339781713489b3863cd5f52880ad5b129920",
+      "viewed": true,
+      "finding": "所查看视图未见组件遮挡或错位；窄屏表格与导航允许组件内横向滚动"
+    }
+  ],
+  "scope": "当前文档版面及所列浏览器视图；不构成实物、研究性能或全装配验收"
+}

@@ -4,7 +4,16 @@ from html import escape
 ROOT=Path(__file__).resolve().parents[1]
 PROJ=ROOT/'projects'/'drip-research_ppt169_20261002'; OUT=ROOT/'deliverables'
 parser=argparse.ArgumentParser();parser.add_argument('--pages-only',action='store_true',help='Rebuild website pages before publishing documents; leave evidence manifest intact.')
+parser.add_argument('--operations-only',action='store_true',help='Rebuild the operations UI without touching documents, research pages or historical receipts.')
 args=parser.parse_args()
+if args.operations_only:
+    system=(ROOT/'scripts/system_portal.template.html').read_text(encoding='utf-8')
+    replay=json.loads((ROOT/'simulation/presentation_review/web_replay.json').read_text(encoding='utf-8'))
+    system=system.replace('__SYSTEM_CSS__',(ROOT/'scripts/system_portal.css').read_text(encoding='utf-8')).replace('__DIAG_DATA__',json.dumps(replay,ensure_ascii=False).replace('</',r'<\/')).replace('__SYSTEM_JS__',(ROOT/'scripts/system_portal.js').read_text(encoding='utf-8'))
+    assert '__SYSTEM_' not in system
+    (OUT/'index.html').write_text(system,encoding='utf-8',newline='\n')
+    print('Operations UI rebuilt independently; research and document artifacts preserved.')
+    raise SystemExit(0)
 summary=json.loads((ROOT/'simulation/communication_results/summary.json').read_text(encoding='utf-8'))
 diagnosis=json.loads((ROOT/'simulation/diagnosis_results/summary.json').read_text(encoding='utf-8'))
 deck=json.loads((PROJ/'analysis/deck_content.json').read_text(encoding='utf-8'))

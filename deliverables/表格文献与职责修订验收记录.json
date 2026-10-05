@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_scoped_document_and_operations_review",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "pages": 24,
+  "figures": 9,
+  "data_tables": 4,
+  "chinese_references": 5,
+  "english_references": 3,
+  "original_user_file_preserved": true,
+  "input_sha256": "d65a0dab0364ec7037b0d227781b69f83b227a63dd47708be2ecdf28c346fddb",
+  "scope": "申报表格与文献修订、页面职责分离；未改实物、射频、CAD模型或PPT",
+  "checks": [
+    "simulation/table_reference_review/document_checks.json",
+    "simulation/table_reference_review/site_checks.json",
+    "simulation/table_reference_review/visual_review.json"
+  ],
+  "historical_release_preserved": "上一轮25页/17篇文献记录保留，不用于验证本修订稿",
+  "files": [
+    {
+      "path": "deliverables/大创申报书_表格与文献修订稿.docx",
+      "sha256": "31a70caea9c29ec1609585228dca0fb1c1bbffdb84d1bcd94163553d7a030f54"
+    },
+    {
+      "path": "deliverables/大创申报书_表格与文献修订审阅版.pdf",
+      "sha256": "deb0ae174af315f2a525fb40bdba2203f3a3921fd922ff8d3d232c92677cf537"
+    },
+    {
+      "path": "deliverables/index.html",
+      "sha256": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f"
+    },
+    {
+      "path": "application/正式模板正文.md",
+      "sha256": "7c0334746d19ac3834f81024d42c4859d07cf6b1103494eed6da81c73c676ce0"
+    },
+    {
+      "path": "application/申报精选参考文献.json",
+      "sha256": "51e8d3e83da87d0bee2852d1fbb6bcc9cd5b92009a3fc7745514ca0aa5d8ebe9"
+    },
+    {
+      "path": "application/table_reference_revision/original_body.md",
+      "sha256": "dfb68bfa70597902e5db119c1e56abbb72de8ce33603a7c5cfc21063ca3b65dc"
+    },
+    {
+      "path": "application/table_reference_revision/revised_body.md",
+      "sha256": "7c0334746d19ac3834f81024d42c4859d07cf6b1103494eed6da81c73c676ce0"
+    },
+    {
+      "path": "application/table_reference_revision/native_layout.json",
+      "sha256": "7f15e59d58fc2039cde431973716ee088d47ecc9a70acedc5ad369dac2771250"
+    },
+    {
+      "path": "docs/材料职责与本轮修订标准.md",
+      "sha256": "4dacbada1a42e34960d2c86094c6d57f3d7f81de4cb56129e2802c1ed1b4e2fe"
+    },
+    {
+      "path": "docs/表格文献与材料职责修订验收.md",
+      "sha256": "dbf45f2d7881de96744bdb3ee2399322365530ff2bf4920eb65eadbc13626436"
+    },
+    {
+      "path": "scripts/build_portal.py",
+      "sha256": "dccd94ea9b07d05ca8bdf3a1c8ca486271e59a1e1f7ffad519f97420d1379e27"
+    },
+    {
+      "path": "scripts/system_portal.js",
+      "sha256": "cab55cc41dcece9e5b5581f8370b82ccb5ab33e56684fdd9d9a519f125f3d5c0"
+    },
+    {
+      "path": "scripts/system_portal.template.html",
+      "sha256": "56323f34554c163b133c9dbbd0f0309eb8bbc788385d9f459284a441e06f9d98"
+    },
+    {
+      "path": "scripts/revise_application_tables_references.py",
+      "sha256": "ab2c13b6f88da3b2dc32d39742ebe65cab735f6383593f6488966ec4c5cb3a88"
+    },
+    {
+      "path": "scripts/export_revised_application.ps1",
+      "sha256": "ba9f9da8dffc5ed80606f593c82470db3ba387a404a580524256eaa0ace2534d"
+    },
+    {
+      "path": "scripts/verify_revised_application.py",
+      "sha256": "bfe833dc713cb21c0f1cb925f0f2245e37045a822ac2dcc2861bad7645af4bbc"
+    },
+    {
+      "path": "scripts/verify_revised_site.mjs",
+      "sha256": "7780711f423ceca5e7725fff0e20262785e0755e1a0df3b59471fb5661d9b083"
+    },
+    {
+      "path": "scripts/finalize_table_reference_revision.py",
+      "sha256": "4ac63ab8e0b1d61f3b6dd500eabbda881a008ef2e799ce3939d3e262b0b0272a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "08b15e002e8b015dc5491c656f05eaf458f4c7e3e30e04421f9facf75be833d4"
+    },
+    {
+      "path": "deliverables/使用说明.md",
+      "sha256": "29d2e5d1288abab21195f0f2c3773c8ec6a74832db96e5b00e1ad30693afe829"
+    },
+    {
+      "path": "simulation/table_reference_review/document_checks.json",
+      "sha256": "92f125c8857a344e2c7ea9067e3d34adb57526f78bdfd0cd9d559d0cab27a407"
+    },
+    {
+      "path": "simulation/table_reference_review/site_checks.json",
+      "sha256": "4fd41289cd39bcd8f5e57e3c5008949dff39ac8d2106be7b9a047ca746de6612"
+    },
+    {
+      "path": "simulation/table_reference_review/visual_review.json",
+      "sha256": "3124d0302ac4781bb230762a1c68cddf694d5d237338187a56e70d38c41ead10"
+    }
+  ]
+}
