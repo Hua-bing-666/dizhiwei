@@ -2,13 +2,13 @@
 
 项目题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
 
-2026年10月5日。当前申报入口为20页学校模板申报书语言与范围修订稿，面向南疆规模化棉田膜下滴灌的轮灌支管巡检。申报精选文献为5篇中文、3篇英文。四工作包覆盖测量与建模、故障诊断边界、LoRa可靠告警、集成与独立评价。现有证据为未标定模型、概念几何、候选接口、主机检查和合成回放；没有硬件、射频、功耗或田间实测。13页实施项目书仍为此前执行参考稿，六模块网站独立承担运行展示。
+2026年10月5日。当前申报入口为20页学校模板申报书公式与插图修订稿，面向南疆规模化棉田膜下滴灌的轮灌支管巡检。核心公式采用可编辑原生公式，八幅插图优化标注，申报精选文献为5篇中文、3篇英文。四工作包覆盖测量与建模、故障诊断边界、LoRa可靠告警、集成与独立评价。现有证据为未标定模型、概念几何、功能接口、主机检查和合成回放；没有硬件、射频、功耗或田间实测。13页实施项目书仍为此前执行参考稿，六模块网站独立承担运行展示。
 
 ## 最新入口
 
-- [学校模板申报书语言与范围修订稿](deliverables/大创申报书_语言与范围修订稿.docx)：20页、9图、4张完整居中可编辑表、8篇文献，中文5篇、英文3篇；重写研究论证与实验评价，明确棉田支管范围、已有证据和后续发展。封面及登记信息留空。
+- [学校模板申报书公式与插图修订稿](deliverables/大创申报书_公式与插图修订稿.docx)：20页、9图、4张完整居中可编辑表、8篇文献，中文5篇、英文3篇；四条核心公式及相关变量采用原生公式，八幅图简化设计标注，删除未落实器件系列及暂定结构尺寸。封面及登记信息留空。[前一版语言与范围稿](deliverables/大创申报书_语言与范围修订稿.docx)保留。
 - [实施项目书](deliverables/实施项目书.docx) / [原生审阅PDF](deliverables/实施项目书.pdf)：13页、9章、5图、6张可编辑表；四工作包、实验协议、资源、里程碑、返工与归档。为自主执行稿，正式任务书尚待取得并填写。
-- [本次语言与研究范围验收](docs/申报书语言与研究范围修订验收.md) / [当前验收记录](deliverables/申报书语言与范围修订验收记录.json)：20页实际图像复核、四表居中及完整性、全部图注同页、原稿保护；三处必要分页留白列明。[上一轮分页检查](docs/申报书分页与图片复核.md)及[表格文献与职责修订](docs/表格文献与材料职责修订验收.md)作为历史依据保留。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)划分申报、实施、仿真、模型、网站和PPT的职责。
+- [本次公式与插图验收](docs/申报书公式与插图修订验收.md) / [当前验收记录](deliverables/申报书公式与插图修订验收记录.json)：27个原生数学对象由WPS识别，重新保存后核对公式含义，20页实际图像和八幅新图复核；四表居中完整、图注同页、原稿保护；三处必要分页留白列明。[前一轮语言与范围验收](docs/申报书语言与研究范围修订验收.md)、[分页检查](docs/申报书分页与图片复核.md)及[表格文献与职责修订](docs/表格文献与材料职责修订验收.md)作为历史依据保留。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)划分各项职责。
 - [运行平台](deliverables/index.html)：运行总览、支管监测、异常事件、设备与链路、历史记录、系统设置，共享合成回放与本地人工维护记录。
 - [历史研究与答辩资料](deliverables/研究与答辩资料.html)：原研究文献库、历史统计、旧材料和草案PPT；由文件目录单独打开，不进入运行网站导航，也不作为最新申报书入口。
 - [收集优化三维候选模型](deliverables/台架三维结构交互模型_收集优化候选版.html)：离线可旋转、查看；STEP/GLB与几何源在application/models/collection_review。暂定尺寸不用于加工下单。
@@ -35,11 +35,13 @@
 
 ## 修改与复现
 
-当前正文修订稿另存于deliverables/大创申报书_语言与范围修订稿.docx，内部版面核对PDF为大创申报书_语言与范围修订审阅版.pdf。复现依次使用scripts/rewrite_application_language.py、scripts/export_language_application.ps1、scripts/verify_language_application.py；实际查看全部页面后才记录scripts/finalize_language_scope_revision.py。当前为20页，9图打印尺寸及原字号保留，4表完整同页且居中；第8、12、18页保留有理由的页尾留白。记录在simulation/language_scope_review与application/language_scope_revision。人工记录仅对当前哈希有效，后续修改不得沿用。
+当前稿另存于deliverables/大创申报书_公式与插图修订稿.docx，内部PDF为大创申报书_公式与插图审阅版.pdf。复现依次使用scripts/prepare_equation_figure_revision.py、scripts/render_equation_figures.mjs、scripts/revise_native_equations.py、scripts/export_equation_application.ps1、scripts/render_quality_documents.py及scripts/verify_equation_application.py；实际查看页面及新图后记录scripts/finalize_equation_revision.py。当前为20页，9图打印尺寸及正文字号保留，4表完整同页且居中；第8、12、18页保留有理由的页尾留白。记录在simulation/equation_figure_review与application/equation_figure_revision。人工记录仅对当前哈希有效，后续修改不得沿用。
+
+此前语言与范围稿使用scripts/rewrite_application_language.py、scripts/export_language_application.ps1、scripts/verify_language_application.py及scripts/finalize_language_scope_revision.py，记录在simulation/language_scope_review与application/language_scope_revision，保留为本次原始输入及历史依据。
 
 前一轮紧凑排版稿及其PDF作为历史版本保留，原验收见docs/申报书分页与图片复核.md。其正文未改的20页排版检查不能用于证明当前重写稿的页尾留白或内容状态。此前生成脚本与simulation/compact_layout_review、application/compact_layout_revision供历史复现。
 
-当前申报文字源是application/正式模板正文.md，本次快照在application/language_scope_revision。实施项目书源为application/实施项目书.md，尚未随本轮研究范围细化重写。application/table_reference_revision与application/quality_release保留历史版本。运行文档工具使用捆绑Python：C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe，浏览器工具使用同目录Node与本机Edge。PDF采用WPS原生导出和捆绑PDFium逐页渲染；每次正文或图片改变都必须重新检查实际版面。
+当前申报文字源是application/正式模板正文.md，本次快照在application/equation_figure_revision，新图在application/figures/equation_revision。实施项目书源为application/实施项目书.md，尚未随前一轮研究范围细化重写。application/language_scope_revision、application/table_reference_revision与application/quality_release保留历史版本。运行文档工具使用捆绑Python：C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe，浏览器工具使用同目录Node与本机Edge。PDF采用WPS原生导出和捆绑PDFium逐页渲染；每次正文或图片改变都必须重新检查实际版面。
 
 此前24页表格与文献修订使用scripts/revise_application_tables_references.py、scripts/export_revised_application.ps1和scripts/verify_revised_application.py。渲染使用scripts/render_quality_documents.py，24页人工查看记录在simulation/table_reference_review/visual_review.json。scripts/finalize_table_reference_revision.py只允许已记录的相同图像通过，不能替代新的人工审阅。prepare_quality_payload、fill_quality_application和verify_quality_application依赖17篇历史正文，不用于当前修订稿。
 
@@ -47,7 +49,7 @@
 
 本次网站独立重建使用scripts/build_portal.py --operations-only，检查使用scripts/verify_revised_site.mjs，不修改文档、独立研究页或历史记录。模型原数据及实体本次未改。后续模型只读核对可用CAD环境tmp/cad_runtime运行scripts/quality_recheck.py --cad；图生成和浏览器图检查使用scripts/build_quality_figures.py与scripts/verify_quality_visuals.mjs。三维页面使用scripts/build_bench_viewer.py --collection-review与scripts/verify_quality_model_viewer.mjs。图像改变后须重新检查包含该图的文档，不沿用旧人工通过状态。
 
-当前修订的机器检查、人工记录和文件哈希保存于simulation/language_scope_review及deliverables/申报书语言与范围修订验收记录.json。simulation/table_reference_review及deliverables/表格文献与职责修订验收记录.json对应此前24页稿。verify_quality_release、update_quality_release_content、finalize_quality_release和旧材料包针对上一轮25页/17篇文件，不作为本次入口，也不能覆盖本次正文。一次性迁移脚本保留作来源说明。
+当前修订的机器检查、人工记录和文件哈希保存于simulation/equation_figure_review及deliverables/申报书公式与插图修订验收记录.json。simulation/language_scope_review及对应记录为前一版；simulation/table_reference_review及deliverables/表格文献与职责修订验收记录.json对应此前24页稿。verify_quality_release、update_quality_release_content、finalize_quality_release和旧材料包针对上一轮25页/17篇文件，不作为本次入口，也不能覆盖本次正文。一次性迁移脚本保留作来源说明。
 
 ## 历史材料
 

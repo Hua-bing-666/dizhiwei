@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-05",
+  "status": "programmatic_bounds_checked_visual_review_pending",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "width": 1000,
+      "height": 690,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 690
+      },
+      "textCount": 33,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "9437427a152fa0e8975630405dbd346b6e62a9c3005d2cffd5eaec6fe1768bc5",
+      "svg_sha256": "3f6abf01d71e63ca4bc67644343637bd22c351688176bb12a6fdd3c6a8873ee7"
+    },
+    {
+      "name": "water_layout",
+      "width": 1000,
+      "height": 650,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 650
+      },
+      "textCount": 15,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "8033e86765751f11554836dbf2b7161d0393f525bab48519712130582b6e77d7",
+      "svg_sha256": "7250e793b13d4ebc4de6bcb4db6163dd40a1260a062501d0ba92ff9182f11fcc"
+    },
+    {
+      "name": "collection_overview",
+      "width": 1000,
+      "height": 902,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 902
+      },
+      "textCount": 20,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "22c34808b58fe2b3a96e3801b680f69c52315e6943074e01d9901ca757d07de5",
+      "svg_sha256": "aee6410ef9cf61473d4f457a9fc9db4b296bd29e448b566e0f01d554b4058fc1"
+    },
+    {
+      "name": "measurement_interfaces",
+      "width": 1000,
+      "height": 930,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 930
+      },
+      "textCount": 34,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "1930eef5bca0bae1658ddd8f550261af957e2896e9295b81884d2b4d092bf661",
+      "svg_sha256": "bf933ef950b5c3b36247af6086e5ddd8444036d802cb63dcf2f6f2e072ff777e"
+    },
+    {
+      "name": "diagnosis_proposal",
+      "width": 1000,
+      "height": 850,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 850
+      },
+      "textCount": 21,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "5f081bfd49595ef3e36e01d85743a2b12036b9b49c3bb309637535dd18f4456f",
+      "svg_sha256": "7a9bcf03e7c5d2151d17920add600ed8005cb03ee7e39aa10eeff56c4e849b67"
+    },
+    {
+      "name": "durable_event_sequence",
+      "width": 1000,
+      "height": 930,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 930
+      },
+      "textCount": 18,
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "1d8770fb6171b95435d0efcb702581976388a5b2a23ad0fa4967f7340930ba1b",
+      "svg_sha256": "6a7f564c04f6545949fbd830cad464dc8e9730ed4fc091fcbf9ac1c78e5a58b5"
+    },
+    {
+      "name": "noise_outcomes_print",
+      "width": 612,
+      "height": 590.4000244140625,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 964.703125
+      },
+      "textCount": 46,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "png_sha256": "0c9f0b4dcd0383d1b6f71dab57bad0f5e33972ea55ead618873ae8460f493e1a",
+      "svg_sha256": "f0b72f06d20526f8aa9c721fc0d502e4e9d7fb6406f0b86cfbd7ce543c7c332f"
+    },
+    {
+      "name": "failure_counterexamples",
+      "width": 612,
+      "height": 590.4000244140625,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 964.703125
+      },
+      "textCount": 34,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "png_sha256": "55bc6981618102920dac9ca028e0638f87e740f4ebb9fb40c437bc8042b60d42",
+      "svg_sha256": "67ed5b383c2a3e68001311043c090d82d493cfad8581afd2239127529c256657"
+    }
+  ]
+}
