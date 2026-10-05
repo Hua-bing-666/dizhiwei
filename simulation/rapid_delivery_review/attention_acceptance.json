@@ -1,0 +1,15 @@
+{
+  "status": "passed_synthetic_attention",
+  "physical_data": false,
+  "rows_reproduced": 2496,
+  "window_and_confirmation_cases": 20,
+  "future_invariance_cases": 20,
+  "parameters_sha256": "69edda1ddc0d67f0b6a4976e5ba9d263696ba361182f10412ca32c642f3c00c3",
+  "validator_sha256": "97f82a32be90985226ac1082cad708b023407333befc323536293ba6b5ad855c",
+  "exclusions": [
+    "confirmed fault identity",
+    "real sensor timing",
+    "field accuracy",
+    "energy"
+  ]
+}

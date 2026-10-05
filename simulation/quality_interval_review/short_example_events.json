@@ -1,0 +1,34 @@
+{
+  "seed": 41000,
+  "scene": "pulse8",
+  "sigma": 0.3,
+  "examples": [
+    {
+      "period": 1,
+      "events": [
+        {
+          "t_s": 367,
+          "pattern": "leak_pattern"
+        }
+      ]
+    },
+    {
+      "period": 2,
+      "events": [
+        {
+          "t_s": 375,
+          "pattern": "leak_pattern"
+        }
+      ]
+    },
+    {
+      "period": 5,
+      "events": [
+        {
+          "t_s": 377,
+          "pattern": "leak_pattern"
+        }
+      ]
+    }
+  ]
+}

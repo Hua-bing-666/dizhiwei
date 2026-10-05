@@ -1,0 +1,33 @@
+{
+  "status": "passed_standalone_images",
+  "physical_data": false,
+  "method": "Actual final PNG inspection plus text bounds and collision checks",
+  "figures": [
+    {
+      "name": "01_短窗提示收益与代价",
+      "file_sha256": {
+        "png": "86a2b74a6a9f1b5bd202150a46635d3497b1a09926c61e66ebf908425837ebeb",
+        "svg": "073508655e5862bdf5e7a06eed89af21766db1f5a50aae694080db83aaf1fc0f"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    },
+    {
+      "name": "02_上报次数与入库延迟",
+      "file_sha256": {
+        "png": "391570da00aebcf28924dc44bee354c3cab13c70501e364d9b38602e041fa2f1",
+        "svg": "25e5acdd86c1307eed1e70ea66b5807a35dcbb23b6d386cb30841226ee339288"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    }
+  ],
+  "figure_checks_sha256": "b1e02bbeeb1c55881cfce6fd5c340dabef6630a3e1130c43d41364a1b649738c",
+  "report_sha256": "f2d23da32a3349c34b3a5fc90d87a55c9de0e32187d0c6e4082f6fb1b13c3d21",
+  "exclusions": [
+    "Word layout",
+    "Physical link timing",
+    "Sensor accuracy",
+    "Energy"
+  ]
+}

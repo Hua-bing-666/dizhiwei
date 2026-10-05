@@ -1,0 +1,44 @@
+{
+  "status": "passed_standalone_images",
+  "physical_data": false,
+  "method": "Actual final PNG inspection plus text bounds and collision checks",
+  "figures": [
+    {
+      "name": "01_质量检查收益与边界",
+      "file_sha256": {
+        "png": "5ad59a1dce302fd8a08a8e982d26ed61db50e84d4d376aea44ec3719acc61c0f",
+        "svg": "fa3e1cf10725dd91d394183bde599ac5badd5daa25aa4e41a1a3813c5da9665c"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    },
+    {
+      "name": "02_采样间隔与故障时间尺度",
+      "file_sha256": {
+        "png": "6a5c55ebde0ca9bd3d6f469036b3d74ce9aad2d9aea8ff3ef758fc5757241d7f",
+        "svg": "dc930019956b335e687665615a0cabb23a5f6c08d6f759bcef9306bc4c26c2a6"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    },
+    {
+      "name": "03_八秒故障实采与迟报",
+      "file_sha256": {
+        "png": "9dd278d36111774b5f8f97d9d41d240ffcffd5615bb4d7158d5244663ca37b0a",
+        "svg": "471d0d5db0ec2baa3d76bce26979337002b9138c50ca6a72d48bc9e3dc3555aa"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    }
+  ],
+  "corrections": [
+    "Removed legend entry for a pattern absent from the selected example"
+  ],
+  "figure_checks_sha256": "3a6d73ab94fca3a8f2ffdbdf179ca6a2cc5cf75d6dcc2a435028872a0f7c851c",
+  "report_sha256": "c209f100b6d59dd9477cb9dd5cbf9854c25a12d249be0057eb4ff9197aa13c5f",
+  "exclusions": [
+    "Word page layout",
+    "Physical sensor accuracy",
+    "Hardware or energy measurements"
+  ]
+}
