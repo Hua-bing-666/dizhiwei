@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261",
+  "validator_sha256": "168fa8c12e83ba94a4c01fd46b18d6ccf87429445b181c430f222a1776ba2146",
+  "checks": [
+    "eight_initial_plus_four_recovery_cap",
+    "repeated_restoration_cannot_reset_budget",
+    "reopen_cannot_reset_recovery_budget",
+    "aux_not_ready_consumes_no_attempt",
+    "one_dispatch_per_second_enforced",
+    "parked_records_count_toward_capacity",
+    "reserved_probe_available_when_full",
+    "expiry_frees_capacity_without_claiming_delivery",
+    "rejected_source_recorded_without_issued_identity",
+    "no_unresolved_message_no_probe",
+    "evicting_rejections_does_not_forbid_later_admission",
+    "clean_confirmed_stream_does_not_probe_while_idle",
+    "one_thousand_records_bounded_history",
+    "evicted_source_watermark_prevents_reenqueue",
+    "retained_recent_source_stays_idempotent",
+    "database_enrolment_cannot_change_device",
+    "sequence_exhaustion_rejected",
+    "session_exhaustion_rejected_and_handle_closed",
+    "exact_ttl_boundary_never_dispatches_expired_message"
+  ],
+  "inherited_validator_sha256": "9ba9dd1287c01a98432168021caf56b6dd235f71a759ee36f21f104239ffd7aa",
+  "stress_records": 1000,
+  "stress_storage": {
+    "rows": {
+      "recovery_meta": 1,
+      "recovery_live": 0,
+      "recovery_probe": 0,
+      "recovery_audit": 64,
+      "admission_policy": 1
+    },
+    "retained_wire_bytes": 3591,
+    "snapshot_bytes": 0,
+    "last_telemetry_wire_bytes": 0
+  },
+  "observed_host_database_bytes": 40960,
+  "peak_stress_wire_bytes": 3648,
+  "scope": "Logical rows and bounded blobs; not a Flash or SQLite file-size limit"
+}

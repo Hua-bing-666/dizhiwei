@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261",
+  "validator_sha256": "168fa8c12e83ba94a4c01fd46b18d6ccf87429445b181c430f222a1776ba2146",
+  "checks": [
+    "744_results_reproduced",
+    "324_previous_candidate_records_unchanged",
+    "paired_input_hashes_and_generated_counts_equal",
+    "original_body_and_dispatch_budget_checked_by_reference_runner",
+    "probe_bytes_included",
+    "telemetry_dispositions_and_event_expiry_separate"
+  ],
+  "records": 744,
+  "previous_candidate_records": 324,
+  "datasets": {
+    "paired_results.csv": {
+      "rows": 648,
+      "sha256": "6a0f3eefb8dfe186735d02f38596bc97f8ff6e7b6fb880337bfdaa5bf968cc9e"
+    },
+    "holdout_results.csv": {
+      "rows": 96,
+      "sha256": "46cf06d930c863e79b84e3f8bee78880a1ab7f84ff932e5ddf5b05abf802c382"
+    }
+  }
+}

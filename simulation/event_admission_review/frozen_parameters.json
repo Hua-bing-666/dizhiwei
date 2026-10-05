@@ -1,0 +1,132 @@
+{
+  "config": {
+    "version": "20261006-event-admission-v1",
+    "physical_data": false,
+    "policies": [
+      "bounded_recovery",
+      "event_priority"
+    ],
+    "business_capacity": 16,
+    "history_capacity": 64,
+    "telemetry_limit": 1,
+    "initial_attempts": 8,
+    "recovery_attempts": 4,
+    "retention_ms": 300000,
+    "new_seeds": [
+      50000,
+      50001
+    ],
+    "new_scenes": [
+      "pulse8",
+      "nan_pressure",
+      "restriction_r90"
+    ],
+    "new_sigmas": [
+      0.3,
+      10.0
+    ],
+    "new_modes": [
+      "loss",
+      "double_outage",
+      "ack_blackout",
+      "dead"
+    ],
+    "previous_datasets": [
+      "paired_results.csv",
+      "boundary_results.csv",
+      "new_seed_results.csv",
+      "holdout_results.csv"
+    ]
+  },
+  "previous_config": {
+    "version": "20261006-bounded-recovery-v2",
+    "physical_data": false,
+    "initial_attempts": 8,
+    "recovery_attempts": 4,
+    "business_capacity": 16,
+    "history_capacity": 64,
+    "retention_ms": 300000,
+    "probe_interval_ms": 30000,
+    "ack_proof_limit_ms": 8000,
+    "dispatch_interval_ms": 1000,
+    "flush_s": 310,
+    "policies": [
+      "burst_backoff",
+      "bounded_recovery"
+    ],
+    "scenes": [
+      "normal",
+      "pulse8",
+      "restriction_r90",
+      "nan_pressure",
+      "counter_reset",
+      "drift_p0"
+    ],
+    "sigmas": [
+      0.3,
+      3.0,
+      10.0
+    ],
+    "seeds": [
+      46000,
+      46001,
+      46002,
+      46003
+    ],
+    "modes": [
+      "clean",
+      "loss",
+      "outage"
+    ],
+    "boundary_scenes": [
+      "pulse8",
+      "nan_pressure",
+      "restriction_r90"
+    ],
+    "boundary_sigmas": [
+      0.3,
+      10.0
+    ],
+    "boundary_seeds": [
+      47000,
+      47001
+    ],
+    "boundary_outage_seconds": [
+      20,
+      120,
+      360
+    ],
+    "new_seeds": [
+      48000,
+      48001
+    ],
+    "new_modes": [
+      "double_outage",
+      "ack_blackout",
+      "dead"
+    ],
+    "probe_condition": "dispatched unresolved message waiting >=8s AND no ACK within 8s",
+    "holdout_seeds": [
+      49000,
+      49001
+    ],
+    "holdout_modes": [
+      "loss",
+      "double_outage",
+      "ack_blackout"
+    ]
+  },
+  "sources": {
+    "simulation/review_event_admission.py": "e3022352cf410052ae145bfe3d400c6b9497c79c8e559d72a8d60505841e0863",
+    "prototype/admission_transport.py": "f11698b1a0a194d4327e9c301fea6a1b378c29555af9a355085a141efcddff50",
+    "scripts/validate_event_admission.py": "168fa8c12e83ba94a4c01fd46b18d6ccf87429445b181c430f222a1776ba2146",
+    "prototype/recovery_transport.py": "b4358a1351438cd5ec3981f566aa985030059991e3fc59968d4d94b06a429f8d",
+    "scripts/validate_bounded_recovery.py": "9ba9dd1287c01a98432168021caf56b6dd235f71a759ee36f21f104239ffd7aa",
+    "simulation/review_bounded_recovery.py": "e9808ece3eed8b3f8e51d50a726684f69319c063d3011d34e7a8fe53dcff7d62",
+    "simulation/bounded_recovery_review/frozen_parameters.json": "cd01f502fedb48119ef0276f31a5b20e25c73f8a71df24a13308cd4593b5752e",
+    "simulation/bounded_recovery_review/paired_results.csv": "23577a70667e691984cb92ddd6073fe8aec2a16d491d74bb9b8ae3dd89129755",
+    "simulation/bounded_recovery_review/boundary_results.csv": "98183e5f10d9c9f9d1b8600f2d2efd0036d440fbc6f83cf3c629686c301bb735",
+    "simulation/bounded_recovery_review/new_seed_results.csv": "2912d51e45d950ea7a1b561569e3d39bd2948cc33c96c40ed2148ddd33cc9a86",
+    "simulation/bounded_recovery_review/holdout_results.csv": "11852a31335aa35626c27bf655f43731bc20bade188e452b69c6cd58fadb4b72"
+  }
+}

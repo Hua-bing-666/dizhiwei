@@ -1,0 +1,84 @@
+{
+  "capacity": 4,
+  "steps": [
+    {
+      "step": 1,
+      "source_seq": 1,
+      "kind": 3,
+      "accepted": true,
+      "events": 0,
+      "telemetry": 1
+    },
+    {
+      "step": 2,
+      "source_seq": 2,
+      "kind": 1,
+      "accepted": true,
+      "events": 1,
+      "telemetry": 1
+    },
+    {
+      "step": 3,
+      "source_seq": 3,
+      "kind": 1,
+      "accepted": true,
+      "events": 2,
+      "telemetry": 1
+    },
+    {
+      "step": 4,
+      "source_seq": 4,
+      "kind": 1,
+      "accepted": true,
+      "events": 3,
+      "telemetry": 1
+    },
+    {
+      "step": 5,
+      "source_seq": 5,
+      "kind": 1,
+      "accepted": true,
+      "events": 4,
+      "telemetry": 0
+    },
+    {
+      "step": 6,
+      "source_seq": 6,
+      "kind": 3,
+      "accepted": false,
+      "events": 4,
+      "telemetry": 0
+    },
+    {
+      "step": 7,
+      "source_seq": 7,
+      "kind": 1,
+      "accepted": false,
+      "events": 4,
+      "telemetry": 0
+    }
+  ],
+  "metrics": {
+    "accepted": 5,
+    "accepted_events": 4,
+    "accepted_telemetry": 1,
+    "ack_business": 0,
+    "expired_business": 0,
+    "expired_events": 0,
+    "expired_telemetry": 0,
+    "history_evicted": 0,
+    "initial_dispatch": 0,
+    "late_retired_telemetry_ack": 0,
+    "probe_dispatch": 0,
+    "reactivated": 0,
+    "recovery_dispatch": 0,
+    "recovery_observations": 0,
+    "rejected_capacity": 2,
+    "rejected_events_capacity": 1,
+    "rejected_old_source": 0,
+    "rejected_telemetry_capacity": 1,
+    "telemetry_evicted_for_event": 1,
+    "telemetry_superseded": 0
+  },
+  "physical_data": false
+}
