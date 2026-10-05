@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "477507d97d04bd1cedb21b880eba6be0038c5f39042445faf5bfd77b78d78c30",
+  "validator_sha256": "6bd3dd92dd9fbc63cfdc5d7af0e120be10d05ef6b4256a77258e9ff2a244061e",
+  "stage": "6A",
+  "trajectories": 144,
+  "reference_records_compared": 62892,
+  "reference_events_compared": 130,
+  "independent_window_cases": 5,
+  "future_invariance_cases": 5
+}

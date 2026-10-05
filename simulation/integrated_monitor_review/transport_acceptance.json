@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "477507d97d04bd1cedb21b880eba6be0038c5f39042445faf5bfd77b78d78c30",
+  "validator_sha256": "6bd3dd92dd9fbc63cfdc5d7af0e120be10d05ef6b4256a77258e9ff2a244061e",
+  "stage": "6C",
+  "records_reproduced": 432,
+  "acquisition_trajectories": 144,
+  "network_causal_prefix_check": true,
+  "acquisition_age_checked_all_views": true,
+  "results_sha256": "e18ef4a103599759b5c04fe6200e21af315e8571a7720ccb52eabf29c18e9e4f",
+  "examples_sha256": "6a81b69a1ee9ef46d3b98668eef73796928c4b260a663acb3f418f600c5c36b2",
+  "exclusions": [
+    "real radio timing",
+    "frame sizing",
+    "multiple sender namespaces",
+    "energy",
+    "unbounded outage recovery"
+  ]
+}
