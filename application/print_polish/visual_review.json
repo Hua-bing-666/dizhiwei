@@ -1,0 +1,279 @@
+{
+  "date": "2026-10-06",
+  "reviewer": "Codex visual inspection of individually rendered pages and native figure images",
+  "status": "accepted_for_application_local_print_layout",
+  "output_sha256": "9692420653ed15313e8da84f3c91b8dc95678d8dfa8238ddce86f2448ea01874",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "first_pass_changed_pages_reinspected": [
+    5,
+    7,
+    8,
+    9,
+    13,
+    17
+  ],
+  "unchanged_first_pass_pages_verified_by_png_sha256": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20
+  ],
+  "grayscale_reviewed_pages": [
+    5,
+    6,
+    8,
+    10,
+    11,
+    16,
+    17
+  ],
+  "grayscale_receipts": [
+    {
+      "page": 5,
+      "file": "tmp/print_polish_document/grayscale/page-05.png",
+      "source_sha256": "109ad910b319bfdac6ca5e077865b7c5422c1446a2ebfb47a979179448558c10",
+      "sha256": "a998cf15a1a023061c7c5f3edd9ace70ee4312c2981fbc51c4a38de3070a16e9"
+    },
+    {
+      "page": 6,
+      "file": "tmp/print_polish_document/grayscale/page-06.png",
+      "source_sha256": "b46b4086238a7b641c139ea8acee0e54662398575fb3a2d215a0648b38a8ac57",
+      "sha256": "0c0c9fa5e6946ecce9178f529cd48dbb1bbcd001338817f22c179b2de1b6d398"
+    },
+    {
+      "page": 8,
+      "file": "tmp/print_polish_document/grayscale/page-08.png",
+      "source_sha256": "275f548735558bd0fe8a68516dd1e1ad1434cce53ab467c755b1b594c05c7b31",
+      "sha256": "33a93241c10bbd5299765a7aba233dd6b6cd2a9096d35e4b0e30ba17d74076f1"
+    },
+    {
+      "page": 10,
+      "file": "tmp/print_polish_document/grayscale/page-10.png",
+      "source_sha256": "7ba8fbd40a42cd0eaa69b9bb1d2ab0a5727c7387dcb736016348859378bdf6d0",
+      "sha256": "34937192edaa4a4c4d9373a44558e5f7dae765a81f4b6eb1c81a3df849e72874"
+    },
+    {
+      "page": 11,
+      "file": "tmp/print_polish_document/grayscale/page-11.png",
+      "source_sha256": "dc5212a46e0eb2eb7370b1ca02b2858c4586c08b0570c5f84cf750990c38c732",
+      "sha256": "d9959c8163638754c04e400c9f0aa5c75598bf0890823f8116546ab2c022ff3a"
+    },
+    {
+      "page": 16,
+      "file": "tmp/print_polish_document/grayscale/page-16.png",
+      "source_sha256": "cc33efb936d333a968a232152d55ff7582a298bf504d8d2b1925d1adcfb39638",
+      "sha256": "4459209b58871f26fa9d86d84e6a113492fecb3d19d19a44de050f6cbbed6ff7"
+    },
+    {
+      "page": 17,
+      "file": "tmp/print_polish_document/grayscale/page-17.png",
+      "source_sha256": "eb561c8a4e938d8e82f1f47ab48f1533bacfada1724e89f2ecfa0232dad9b227",
+      "sha256": "7a13c09e2a3ac6ca3e015fc88cd2309999eefe9c2f747afb62fc5da2fee5ff47"
+    }
+  ],
+  "figure_reviews": [
+    {
+      "figure": 1,
+      "name": "system_responsibilities",
+      "png_sha256": "6c8125dd2f842596422b86b0524dae32d43d643450dae78ad23696376feb09d2",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 2,
+      "name": "water_layout",
+      "png_sha256": "86b73fc68306ef80c27d255d21ad9db8d677a926ee12d53989f185676c83668f",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 3,
+      "name": "collection_overview",
+      "png_sha256": "a4f0c66d26bc9eb0f2f28fb08d009a344107051eed4f9908df5bad9759df2bb7",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 4,
+      "name": "measurement_interfaces",
+      "png_sha256": "124dc83f1879536865169e059e2a21b305d7faede2e6949942eac743a0638750",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 5,
+      "name": "event_sampling_strategy",
+      "png_sha256": "8410a6b243b799efa5722df5712c176ac01f174d1f70a3d75154d294b194aac9",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 6,
+      "name": "diagnosis_proposal",
+      "png_sha256": "f5bfb8e3f2d292a6f392689033353ea8b4177c2ff95d3ce7282723185b82753b",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 7,
+      "name": "durable_event_sequence",
+      "png_sha256": "5b0ea87d8dbdd4e6a82bfc122f9d29562cce94bbde61faf39a298f46d1acafa0",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 8,
+      "name": "website_diagnosis_panel",
+      "png_sha256": "c435815fd27cbae5db43f5ad0dd04d3a0f09145b9c4f51cc9b0158235e53c707",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 9,
+      "name": "noise_outcomes_print",
+      "png_sha256": "04e80e37f6219c13eb710a792c9841c7a9bf3a6c7cff2c5c64b12ee301b4af49",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    },
+    {
+      "figure": 10,
+      "name": "failure_counterexamples",
+      "png_sha256": "a99ab9d6c86f98f47c9eccc1cb17468c3b4a577f47e3accef5b7a74a79b34565",
+      "result": "reviewed_no_visible_clipping_or_misaligned_labels"
+    }
+  ],
+  "page_receipts": [
+    {
+      "page": 1,
+      "file": "tmp/print_polish_document/final_pages/page-01.png",
+      "sha256": "2a5f802471d9825d1d1044137b080d3616a79956292248d5d09a6d9c616050d7"
+    },
+    {
+      "page": 2,
+      "file": "tmp/print_polish_document/final_pages/page-02.png",
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4"
+    },
+    {
+      "page": 3,
+      "file": "tmp/print_polish_document/final_pages/page-03.png",
+      "sha256": "7e6555fd8e3f535b7bcf22539af8ad776279e72436881103069f98a6fc9d0b7e"
+    },
+    {
+      "page": 4,
+      "file": "tmp/print_polish_document/final_pages/page-04.png",
+      "sha256": "9176794252039ed3108930da062b5e4db8a9957b3a6c914016119d744b2ee747"
+    },
+    {
+      "page": 5,
+      "file": "tmp/print_polish_document/final_pages/page-05.png",
+      "sha256": "109ad910b319bfdac6ca5e077865b7c5422c1446a2ebfb47a979179448558c10"
+    },
+    {
+      "page": 6,
+      "file": "tmp/print_polish_document/final_pages/page-06.png",
+      "sha256": "b46b4086238a7b641c139ea8acee0e54662398575fb3a2d215a0648b38a8ac57"
+    },
+    {
+      "page": 7,
+      "file": "tmp/print_polish_document/final_pages/page-07.png",
+      "sha256": "3d6594d3f2dbd91cf672b5df5908e9933cc62abf28386dacd5645ec894f7ad52"
+    },
+    {
+      "page": 8,
+      "file": "tmp/print_polish_document/final_pages/page-08.png",
+      "sha256": "275f548735558bd0fe8a68516dd1e1ad1434cce53ab467c755b1b594c05c7b31"
+    },
+    {
+      "page": 9,
+      "file": "tmp/print_polish_document/final_pages/page-09.png",
+      "sha256": "98f67fc3047935e1bb684993fb4330f4e2f6e2faa1ef6a26a1b190b41f213ffb"
+    },
+    {
+      "page": 10,
+      "file": "tmp/print_polish_document/final_pages/page-10.png",
+      "sha256": "7ba8fbd40a42cd0eaa69b9bb1d2ab0a5727c7387dcb736016348859378bdf6d0"
+    },
+    {
+      "page": 11,
+      "file": "tmp/print_polish_document/final_pages/page-11.png",
+      "sha256": "dc5212a46e0eb2eb7370b1ca02b2858c4586c08b0570c5f84cf750990c38c732"
+    },
+    {
+      "page": 12,
+      "file": "tmp/print_polish_document/final_pages/page-12.png",
+      "sha256": "24345769d56f04bf827ce600fa6973fab955f994f4a26d5b297a34e845317502"
+    },
+    {
+      "page": 13,
+      "file": "tmp/print_polish_document/final_pages/page-13.png",
+      "sha256": "264ce99335123cb8e7d293a73c6807d78fb4ad06491594f3118601a14b70eb4a"
+    },
+    {
+      "page": 14,
+      "file": "tmp/print_polish_document/final_pages/page-14.png",
+      "sha256": "1347b63801827c131a469fe44ff98019931717f6d08b330f714ba36fd17f08ce"
+    },
+    {
+      "page": 15,
+      "file": "tmp/print_polish_document/final_pages/page-15.png",
+      "sha256": "cf43ca9e28f34a219cf2eb45ba5217cb4503a8428742375578c4d8f48b717db2"
+    },
+    {
+      "page": 16,
+      "file": "tmp/print_polish_document/final_pages/page-16.png",
+      "sha256": "cc33efb936d333a968a232152d55ff7582a298bf504d8d2b1925d1adcfb39638"
+    },
+    {
+      "page": 17,
+      "file": "tmp/print_polish_document/final_pages/page-17.png",
+      "sha256": "eb561c8a4e938d8e82f1f47ab48f1533bacfada1724e89f2ecfa0232dad9b227"
+    },
+    {
+      "page": 18,
+      "file": "tmp/print_polish_document/final_pages/page-18.png",
+      "sha256": "4c4e3a47a8bbc454b4aba37e6b51a134303889dfa4e6eda4821d6b4ead411f07"
+    },
+    {
+      "page": 19,
+      "file": "tmp/print_polish_document/final_pages/page-19.png",
+      "sha256": "3f723735c011473b9e9cb262606aae5c2e36281aed5593a5e666784e97d60667"
+    },
+    {
+      "page": 20,
+      "file": "tmp/print_polish_document/final_pages/page-20.png",
+      "sha256": "fed0075492021c113837f4398b29f6f216044537f9225396d778e9a7ffd4e4fb"
+    }
+  ],
+  "layout_notes": [
+    "Page12 has remaining space because the next experimental table is kept intact.",
+    "Cover, instructions, budget placeholder and approvals retain template whitespace.",
+    "Diagram labels, arrows, axes and legends remain; duplicated titles and explanatory footer sentences removed.",
+    "MathML subscript/fraction text is intentionally smaller than primary diagram text and was visually checked."
+  ],
+  "physical_validation": false,
+  "institutional_approval": false,
+  "technical_readability_review": "Ten figures cross-checked with the accompanying prose; common-ground/interface signal flow and quality/operating-state criteria supplemented in prose.",
+  "water_layout_padding": "Return line40 units beyond the load boxes;50 units to the canvas right edge; primary type approximately10pt at420pt figure width."
+}

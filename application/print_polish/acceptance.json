@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-06",
+  "scope": "application language, figures, OOXML and local WPS print layout",
+  "status": "automated_checks_and_visual_review_passed_with_stated_scope",
+  "output": "deliverables/大创申报书_图文与引文修订稿.docx",
+  "output_sha256": "9692420653ed15313e8da84f3c91b8dc95678d8dfa8238ddce86f2448ea01874",
+  "pages": 20,
+  "native_math_count": 27,
+  "superscript_citation_count": 11,
+  "references": {
+    "Chinese": 5,
+    "English": 3
+  },
+  "headings": [
+    "一、项目简介（300字左右）",
+    "二、申请理由（包括自身/团队具备的知识条件、特长、兴趣等）",
+    "三、项目方案（项目内容、项目目标、技术路线、实验方案、要解决的主要问题）",
+    "1 研究对象与总体设计",
+    "2 可控水路与台架结构",
+    "3 感知节点与水力模型",
+    "4 渐进故障诊断与工况判别",
+    "5 LoRa事件传输与可靠接收",
+    "6 巡检平台与系统联调",
+    "7 实验安排与研究拓展",
+    "四、国内外研究现状与发展动态",
+    "五、项目的特色与创新点",
+    "六、项目预期成果",
+    "七、项目年度目标和工作内容（按年度写）",
+    "八、已有基础",
+    "1 水路设计与模型分析",
+    "2 诊断边界与方法准备",
+    "3 协议与平台软件",
+    "九、项目经费使用计划"
+  ],
+  "figure_count": 10,
+  "figure_pages": {
+    "1": 5,
+    "2": 5,
+    "3": 6,
+    "4": 7,
+    "5": 8,
+    "6": 9,
+    "7": 10,
+    "8": 11,
+    "9": 16,
+    "10": 17
+  },
+  "table_captions": [
+    "表1 系统研制工作包与验收要求",
+    "表2 独立实验与对照安排",
+    "表3 项目实施进度与阶段验收"
+  ],
+  "centered_body_tables": 3,
+  "figure_width_pt": 420,
+  "pdf_images": [
+    {
+      "page": 5,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 76.08000000000004,
+      "bottom": 300.84000000000003
+    },
+    {
+      "page": 5,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 428.03999999999996,
+      "bottom": 653.16
+    },
+    {
+      "page": 6,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 293.5200000000001,
+      "bottom": 606.48
+    },
+    {
+      "page": 7,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 194.88,
+      "bottom": 509.88
+    },
+    {
+      "page": 8,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 307.19999999999993,
+      "bottom": 592.8
+    },
+    {
+      "page": 9,
+      "x0": 88.68,
+      "x1": 508.68,
+      "top": 337.32000000000005,
+      "bottom": 625.08
+    },
+    {
+      "page": 10,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 242.39999999999998,
+      "bottom": 509.16
+    },
+    {
+      "page": 11,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 77.7600000000001,
+      "bottom": 283.56000000000006
+    },
+    {
+      "page": 16,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 287.7600000000001,
+      "bottom": 535.08
+    },
+    {
+      "page": 17,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 154.56000000000006,
+      "bottom": 495.6
+    }
+  ],
+  "website_scripts_and_data_unchanged": true,
+  "physical_validation": false,
+  "energy_claim": null,
+  "page_receipts": [
+    {
+      "page": 1,
+      "file": "tmp/print_polish_document/final_pages/page-01.png",
+      "sha256": "2a5f802471d9825d1d1044137b080d3616a79956292248d5d09a6d9c616050d7"
+    },
+    {
+      "page": 2,
+      "file": "tmp/print_polish_document/final_pages/page-02.png",
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4"
+    },
+    {
+      "page": 3,
+      "file": "tmp/print_polish_document/final_pages/page-03.png",
+      "sha256": "7e6555fd8e3f535b7bcf22539af8ad776279e72436881103069f98a6fc9d0b7e"
+    },
+    {
+      "page": 4,
+      "file": "tmp/print_polish_document/final_pages/page-04.png",
+      "sha256": "9176794252039ed3108930da062b5e4db8a9957b3a6c914016119d744b2ee747"
+    },
+    {
+      "page": 5,
+      "file": "tmp/print_polish_document/final_pages/page-05.png",
+      "sha256": "109ad910b319bfdac6ca5e077865b7c5422c1446a2ebfb47a979179448558c10"
+    },
+    {
+      "page": 6,
+      "file": "tmp/print_polish_document/final_pages/page-06.png",
+      "sha256": "b46b4086238a7b641c139ea8acee0e54662398575fb3a2d215a0648b38a8ac57"
+    },
+    {
+      "page": 7,
+      "file": "tmp/print_polish_document/final_pages/page-07.png",
+      "sha256": "3d6594d3f2dbd91cf672b5df5908e9933cc62abf28386dacd5645ec894f7ad52"
+    },
+    {
+      "page": 8,
+      "file": "tmp/print_polish_document/final_pages/page-08.png",
+      "sha256": "275f548735558bd0fe8a68516dd1e1ad1434cce53ab467c755b1b594c05c7b31"
+    },
+    {
+      "page": 9,
+      "file": "tmp/print_polish_document/final_pages/page-09.png",
+      "sha256": "98f67fc3047935e1bb684993fb4330f4e2f6e2faa1ef6a26a1b190b41f213ffb"
+    },
+    {
+      "page": 10,
+      "file": "tmp/print_polish_document/final_pages/page-10.png",
+      "sha256": "7ba8fbd40a42cd0eaa69b9bb1d2ab0a5727c7387dcb736016348859378bdf6d0"
+    },
+    {
+      "page": 11,
+      "file": "tmp/print_polish_document/final_pages/page-11.png",
+      "sha256": "dc5212a46e0eb2eb7370b1ca02b2858c4586c08b0570c5f84cf750990c38c732"
+    },
+    {
+      "page": 12,
+      "file": "tmp/print_polish_document/final_pages/page-12.png",
+      "sha256": "24345769d56f04bf827ce600fa6973fab955f994f4a26d5b297a34e845317502"
+    },
+    {
+      "page": 13,
+      "file": "tmp/print_polish_document/final_pages/page-13.png",
+      "sha256": "264ce99335123cb8e7d293a73c6807d78fb4ad06491594f3118601a14b70eb4a"
+    },
+    {
+      "page": 14,
+      "file": "tmp/print_polish_document/final_pages/page-14.png",
+      "sha256": "1347b63801827c131a469fe44ff98019931717f6d08b330f714ba36fd17f08ce"
+    },
+    {
+      "page": 15,
+      "file": "tmp/print_polish_document/final_pages/page-15.png",
+      "sha256": "cf43ca9e28f34a219cf2eb45ba5217cb4503a8428742375578c4d8f48b717db2"
+    },
+    {
+      "page": 16,
+      "file": "tmp/print_polish_document/final_pages/page-16.png",
+      "sha256": "cc33efb936d333a968a232152d55ff7582a298bf504d8d2b1925d1adcfb39638"
+    },
+    {
+      "page": 17,
+      "file": "tmp/print_polish_document/final_pages/page-17.png",
+      "sha256": "eb561c8a4e938d8e82f1f47ab48f1533bacfada1724e89f2ecfa0232dad9b227"
+    },
+    {
+      "page": 18,
+      "file": "tmp/print_polish_document/final_pages/page-18.png",
+      "sha256": "4c4e3a47a8bbc454b4aba37e6b51a134303889dfa4e6eda4821d6b4ead411f07"
+    },
+    {
+      "page": 19,
+      "file": "tmp/print_polish_document/final_pages/page-19.png",
+      "sha256": "3f723735c011473b9e9cb262606aae5c2e36281aed5593a5e666784e97d60667"
+    },
+    {
+      "page": 20,
+      "file": "tmp/print_polish_document/final_pages/page-20.png",
+      "sha256": "fed0075492021c113837f4398b29f6f216044537f9225396d778e9a7ffd4e4fb"
+    }
+  ],
+  "visual_review": "application/print_polish/visual_review.json"
+}
