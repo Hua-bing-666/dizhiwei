@@ -1,0 +1,12 @@
+{
+  "zip_sha256": "b823a9ac3106d720c4347efe0165764a30448ccdc447ead05665213b5b8894b1",
+  "files": 109,
+  "bytes": 6818535,
+  "manifest_verified": true,
+  "extracted_runtime_smoke": true,
+  "physical_data": false,
+  "runtime_json_dependencies": [
+    "simulation/diagnosis_review/protocol.json",
+    "simulation/quality_interval_review/frozen_parameters.json"
+  ]
+}

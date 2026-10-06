@@ -1,0 +1,96 @@
+[
+  {
+    "exponent": 0.3,
+    "scene": "normal",
+    "trials": 8,
+    "false_onsets": 11,
+    "early_valid": 0,
+    "outcomes": {
+      "control": 8
+    }
+  },
+  {
+    "exponent": 0.3,
+    "scene": "leak",
+    "trials": 8,
+    "false_onsets": 11,
+    "early_valid": 0,
+    "outcomes": {
+      "late": 4,
+      "prior_false_alarm": 4
+    }
+  },
+  {
+    "exponent": 0.3,
+    "scene": "restriction",
+    "trials": 8,
+    "false_onsets": 11,
+    "early_valid": 0,
+    "outcomes": {
+      "late": 4,
+      "prior_false_alarm": 4
+    }
+  },
+  {
+    "exponent": 0.5,
+    "scene": "normal",
+    "trials": 8,
+    "false_onsets": 0,
+    "early_valid": 0,
+    "outcomes": {
+      "control": 8
+    }
+  },
+  {
+    "exponent": 0.5,
+    "scene": "leak",
+    "trials": 8,
+    "false_onsets": 0,
+    "early_valid": 8,
+    "outcomes": {
+      "early": 8
+    }
+  },
+  {
+    "exponent": 0.5,
+    "scene": "restriction",
+    "trials": 8,
+    "false_onsets": 0,
+    "early_valid": 8,
+    "outcomes": {
+      "early": 8
+    }
+  },
+  {
+    "exponent": 0.8,
+    "scene": "normal",
+    "trials": 8,
+    "false_onsets": 20,
+    "early_valid": 0,
+    "outcomes": {
+      "control": 8
+    }
+  },
+  {
+    "exponent": 0.8,
+    "scene": "leak",
+    "trials": 8,
+    "false_onsets": 20,
+    "early_valid": 4,
+    "outcomes": {
+      "early": 4,
+      "prior_false_alarm": 4
+    }
+  },
+  {
+    "exponent": 0.8,
+    "scene": "restriction",
+    "trials": 8,
+    "false_onsets": 20,
+    "early_valid": 4,
+    "outcomes": {
+      "early": 4,
+      "prior_false_alarm": 4
+    }
+  }
+]

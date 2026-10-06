@@ -7,6 +7,11 @@ parser=argparse.ArgumentParser();parser.add_argument('--pages-only',action='stor
 parser.add_argument('--operations-only',action='store_true',help='Rebuild the operations UI without touching documents, research pages or historical receipts.')
 args=parser.parse_args()
 if args.operations_only:
+    if (ROOT/'simulation/platform_upgrade/web_data.json').exists():
+        from build_system_upgrade import publish
+        publish()
+        print('Current C/SQLite operations UI rebuilt; historical evidence and documents preserved.')
+        raise SystemExit(0)
     system=(ROOT/'scripts/system_portal.template.html').read_text(encoding='utf-8')
     replay=json.loads((ROOT/'simulation/presentation_review/web_replay.json').read_text(encoding='utf-8'))
     system=system.replace('__SYSTEM_CSS__',(ROOT/'scripts/system_portal.css').read_text(encoding='utf-8')).replace('__DIAG_DATA__',json.dumps(replay,ensure_ascii=False).replace('</',r'<\/')).replace('__SYSTEM_JS__',(ROOT/'scripts/system_portal.js').read_text(encoding='utf-8'))

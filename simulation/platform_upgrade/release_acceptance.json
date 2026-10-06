@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-07",
+  "application_version": "V1.1",
+  "classification": "host_software_replay_and_parametric_concept_model",
+  "physical_data": false,
+  "rf_verified": false,
+  "energy_measured": false,
+  "physical_valve_verified": false,
+  "service_checks": 30,
+  "browser_checks": 45,
+  "offline_C_traces": 27,
+  "sampling_combinations": 432,
+  "cross_operating_combinations": 72,
+  "model_solids": 207,
+  "package": {
+    "zip_sha256": "b823a9ac3106d720c4347efe0165764a30448ccdc447ead05665213b5b8894b1",
+    "files": 109,
+    "bytes": 6818535,
+    "manifest_verified": true,
+    "extracted_runtime_smoke": true,
+    "physical_data": false,
+    "runtime_json_dependencies": [
+      "simulation/diagnosis_review/protocol.json",
+      "simulation/quality_interval_review/frozen_parameters.json"
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "deliverables/软件升级验收预览/backend-calibration-desktop.png",
+      "sha256": "4887f63493b130c5358457ae06ef40a7a4f3dc8622750e86ec4182a00deda64f"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/backend-control-desktop.png",
+      "sha256": "6f6972d88d2ff46cec7e18a9a67bc027425fef75b4d68910c7a1c8c885d202e5"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/backend-monitor-desktop.png",
+      "sha256": "c01072a04d8132650bcfa6a3a62220175de749295b23fdc64013380c5625ebe0"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/contact-sheet.png",
+      "sha256": "3bf7c55262cce0b987eb42425172a9cb5d084e9d36a1c0f233bd15817fab3259"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/devices-1440.png",
+      "sha256": "b7809c5cb7fb4ce060e42f7797edd7d8c0d81609a8d3311fbaa38a6557994235"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/devices-375.png",
+      "sha256": "fe1898f1191b7d1b15b1dc7d625c95b7252ddad78232736dc640f9a93ea44141"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/event-dialog-desktop.png",
+      "sha256": "b2c21b9d517767fa2ccfb9e5b2da6b0ae75fe3630927dd6b5c42f9d48628d2a9"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/events-1440.png",
+      "sha256": "2e8474984d1da8d0eb5516cfdea7dda48e3b07733ccddd586d85e2dd8b56cf5b"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/events-375.png",
+      "sha256": "99c6897eca10c2918afa268ec206d7bcdf36ca5d0f564ec6ac22e9c040c78e8d"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/history-1440.png",
+      "sha256": "488628cc5abb1abd5052bd078daf3d8fdc846d1d5a35621158df12932127ce67"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/history-375.png",
+      "sha256": "aebef68cf067dc546c1694b014672167adb8ce0a2ec6bc975b77ce08b0e4c7f0"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/model-electronics.png",
+      "sha256": "7901d35c75f1c04a291e0291dd23aed8b35f3e106a3ce9240d44cf181e7db110"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/model-iso.png",
+      "sha256": "04cf6f39bf2e18a737a7c1c7af22b8d92f216ef656b368a79209db1e5b739d83"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/model-leak.png",
+      "sha256": "e5da6db87544e141e8cdfa246bd263da35dd47ca3cc8d9f5e02b8d4f58ee8045"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/model-mobile.png",
+      "sha256": "fa920c7f2ab103d3591b62cecfa0b6064b0d66fb2ecde4fa2ea90731c31dca35"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/model-pressure.png",
+      "sha256": "9dc6c65f9699812809bc423b22d0a5170b98ee2ad1987e29dced0c6f6edab2f6"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/model-top.png",
+      "sha256": "fc08dbc98a9375ec1d2beb633974d03059fc4bbfadae03dc65dfe0bf4f78e7b0"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/monitor-1440.png",
+      "sha256": "969a587345314b37237617becfebe7b8e891a3f64f217ebea6198386558628e7"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/monitor-375.png",
+      "sha256": "a6db4e6a865e76c55afb394a8ef187dd948948539a48635190cea53d45657f66"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/overview-1440.png",
+      "sha256": "fd9bf80b07b36fa100760f820320cd083dfd91f1afa0156bce7b828eb7db283e"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/overview-375.png",
+      "sha256": "94bc4cdb2c78b3d08d341ea0d0118fe503dc2f128eb5d77195ab4dfbf97c5047"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/research-desktop.png",
+      "sha256": "bdcd44e585561f7cccb1542f621b760efd349e2d4aa7349b082cb902d66907c1"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/settings-1440.png",
+      "sha256": "40af7027bbb273720a59c51f5a6c491aa5eccb54ec4ee636ff3cbeb75663c71c"
+    },
+    {
+      "path": "deliverables/软件升级验收预览/settings-375.png",
+      "sha256": "07b486bf29213b8eb4e877106a6b65549f9da4684730675b27ab519a5b8bc04a"
+    }
+  ],
+  "visual_review": {
+    "all_screenshots_reviewed_as_contact_sheet": true,
+    "full_size_focus": [
+      "overview-1440",
+      "monitor-375",
+      "events-1440",
+      "event-dialog-desktop",
+      "history-1440",
+      "backend-calibration-desktop",
+      "research-desktop",
+      "model-iso",
+      "model-top",
+      "model-pressure",
+      "model-leak",
+      "model-electronics",
+      "model-mobile"
+    ],
+    "limits": "Review of declared viewports and CAD views, not a universal certification of all states or hardware."
+  },
+  "files": [
+    {
+      "path": "deliverables/index.html",
+      "sha256": "0457cb6309e209df8fb1aae9ad2ce0f5adee9325ee94584c6763342677c5582f"
+    },
+    {
+      "path": "deliverables/清水试验台架_V1.1.html",
+      "sha256": "f16f13d0fe1bdef7aecf74bcddb64dbb4004e4258d543385ac20556dd2f88bca"
+    },
+    {
+      "path": "scripts/platform_upgrade.js",
+      "sha256": "4ba38685820f992215f432018e4124905fc140c1db76321cd6a60239d7e8c9cc"
+    },
+    {
+      "path": "scripts/platform_upgrade.css",
+      "sha256": "50bda7d6f9eba0b27ca7932ed3086ec4188520f292d29beb0045bd01454a504f"
+    },
+    {
+      "path": "prototype/platform_service.py",
+      "sha256": "e0538250a6b51ad261316b19d26227eb1a4e318c112fe8f40655a38c5967fd47"
+    },
+    {
+      "path": "prototype/reference_calibration.py",
+      "sha256": "45e488de546caaf9a5a14ebea00d61722c7f1b1d42a45e0914aa232917dc01cc"
+    },
+    {
+      "path": "scripts/run_platform.py",
+      "sha256": "41fea42299c202a93d970c31b83d8efd6e9884015595724491e1509fee0e991e"
+    }
+  ]
+}

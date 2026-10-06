@@ -1,0 +1,821 @@
+{
+  "classification": "CAD_guard_only_interference_check",
+  "physical_data": false,
+  "checks": [
+    {
+      "part": "rail_front",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "rail_rear",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "rail_left",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "rail_right",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "crossbeam",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_30_30_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_30_30_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "foot_30_30",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_30_490_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_30_490_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "foot_30_490",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_870_30_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_870_30_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "foot_870_30",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_870_490_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "frame_M6_870_490_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "foot_870_490",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "removable_deck",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "supply_in",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "supply_port_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "supply_port_collar-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "supply_port_collar1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "common_supply_tee",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_to_P0",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_to_R",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_to_P1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_to_Q",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_to_leak",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_to_A",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_end",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_tap",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_adaptor",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_hex",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_sensor_envelope",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_connector",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_tap",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_adaptor",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_hex",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_sensor_envelope",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_connector",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "restriction_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "restriction_nut-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "restriction_nut1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "restriction_stem",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "restriction_handle",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "restriction_pivot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_meter_envelope",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_union_546_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_union_546_collar-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_union_546_collar1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_union_614_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_union_614_collar-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_union_614_collar1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_pulse_cap",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_tee",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_equivalent_load_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_equivalent_load_nut-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_equivalent_load_nut1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_equivalent_load_stem",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_equivalent_load_handle",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_equivalent_load_pivot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "A_return_elbow",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_upper",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_return_tee",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_lower",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_lower_elbow",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_out",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_port_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_port_collar-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "return_port_collar1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_vertical",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_supply_elbow",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_to_switch",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_to_Bload",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_end",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_switch_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_switch_nut-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_switch_nut1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_switch_stem",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_switch_handle",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_switch_pivot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_equivalent_load_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_equivalent_load_nut-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_equivalent_load_nut1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_equivalent_load_stem",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_equivalent_load_handle",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "B_equivalent_load_pivot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_before_valve",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_control_body",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_control_nut-1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_control_nut1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_control_stem",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_control_handle",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_control_pivot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_after_valve",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_down_elbow",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "leak_free_outlet",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "open_measuring_vessel",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "removable_catch_tray",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_0_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_1_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_2_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_3_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_4_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_5_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_6_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_7_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_8_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_M5_-15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_M5_-15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_M5_15_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_M5_15_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_foot",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_post",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "support_9_clamp",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "electronics_shell",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "electronics_lid",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_321_27_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_321_27_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_321_103_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_321_103_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_529_27_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_529_27_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_529_103_shaft",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "lid_M4_529_103_head",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "gland_0",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "gland_1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "gland_2",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "antenna_mount",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "LoRa_antenna_envelope",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_cable_0",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_cable_1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_cable_2",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_cable_3",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_cable_0",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_cable_1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_cable_2",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_cable_3",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_cable_0",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_cable_1",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_cable_2",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_cable_3",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_cable_4",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P0_cable_5",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_cable_4",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "P1_cable_5",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_cable_4",
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "part": "Q_cable_5",
+      "overlap_volume_mm3": 0.0
+    }
+  ],
+  "guard_to_lid_gap_mm": 3,
+  "guard_to_return_pipe_gap_mm": 8,
+  "gland_holes_mm": [
+    20,
+    22
+  ],
+  "limits": "Checks do not certify global clearances, assembly tolerances, cable bend radius or ingress protection."
+}

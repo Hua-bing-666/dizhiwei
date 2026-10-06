@@ -4,6 +4,17 @@
 
 2026年10月6日。当前申报入口为20页学校模板申报表达修订稿。对照用户提供的国家级案例，正文围绕巡检问题、系统目标、研究内容、创新点、实施安排及成果重新表达，减少论文推导与工程调试细节。10幅图片及打印几何保留，3张居中数据表完整同页，保留5中文＋3英文参考文献和必要原生公式。最终页面已逐项查看，信息、预算与审批空位保留。固定1Hz仍为当前软件基线，事件触发采集为后续独立对照任务；现有证据为设计、模型与主机软件。
 
+## 当前运行平台 V1.1
+
+2026年10月7日：网站已接入编译后的 C 诊断结果，提供离线回放与本地 HTTP / SQLite 两种模式。增加健康参照拟合、事件核查、软件控制请求演示、跨工况与采样策略实验工具；三维台架增加防溅板、过线开口及配套安装孔。此阶段仍是主机软件、未标定模型及概念 CAD，真实串口、LoRa 射频、能耗和阀门尚未验证，申报书本轮未修改。
+
+- [运行平台](deliverables/index.html)：六个运行模块，合成来源和候选、短窗提示、质量状态分开呈现。
+- [清水试验台架 V1.1](deliverables/清水试验台架_V1.1.html)：207个概念构件，实体 STEP 与实际网格一致。
+- [软件包](deliverables/滴智卫_算法与软件升级包.zip)、[使用说明](docs/软件升级包使用说明.md)、[分项计划](docs/软件算法与三维升级执行计划.md)、[验收记录](docs/软件算法与三维升级验收记录.md)。
+- 启动：PowerShell 运行 `scripts/启动运行平台.ps1`，通过 `http://127.0.0.1:8765` 打开网页，再连接本地后端。数据库保留在 `tmp/platform_runtime/operations.sqlite`。
+
+网页重建入口为 `scripts/build_portal.py --operations-only`，当前会复用 `simulation/platform_upgrade/web_data.json`。新实验依次运行 `simulation/extend_platform_reference.py`、`scripts/build_system_upgrade.py`；软件验收使用 `scripts/verify_platform_upgrade.py` 与 `scripts/verify_platform_browser.mjs`。下文旧版本记录保留作历史来源，不替代 V1.1 的验收。
+
 ## 最新入口
 
 - [学校模板申报书申报表达修订稿](deliverables/大创申报书_申报表达修订稿.docx)：当前交付，20页、10幅保留图片、3张完整数据表、8篇参考文献。[表达修订与可行性判断](docs/申报表达修订与可行性判断.md)、[精确文件检查](application/proposal_revision/acceptance.json)、[最终页面审阅记录](application/proposal_revision/visual_review.json)。本版不新增硬件或算法成果。
