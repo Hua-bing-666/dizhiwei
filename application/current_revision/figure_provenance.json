@@ -1,0 +1,28 @@
+{
+  "classification": "actual_browser_renders_of_synthetic_C_replay_and_concept_CAD_not_physical_evidence",
+  "platform_capture": {
+    "module": "deliverables/index.html",
+    "module_sha256": "bcf1a425cd4e177f4d7efd693943be8cdca46761d4960ad75829226254238068",
+    "scene": "leak",
+    "sigma_kpa": 0.3,
+    "cursor_s": 450,
+    "raw_capture_sha256": "f42c467044e1daecf40a6626bc96cd8b7a7761c3925efd9d28d354853b7d0523",
+    "published_sha256": "5f8a6feabf617804d7252d7979b13bb1d943f130454f027119127f45701cca7f",
+    "publication_styling_only": true
+  },
+  "model_capture": {
+    "module": "deliverables/清水试验台架_V1.2.html",
+    "module_sha256": "d5802f3e665d4b074962e9c81e6cb0368f85c88f87651d7ec212db60432697f3",
+    "view": "iso",
+    "source_scene_sha256": "a4e0347a9e39f1dec4bb3d253b62392281a58657eb8a0f231b8aa821f2f451d6",
+    "raw_capture_sha256": "6d8fa48c32902cfc0e1938171b55f3cd7a96e394d0bd0548171fcce3163ee1e6",
+    "anchors_sha256": "a5559ce696d95abeeec3041f08d40beaca478b98540214398156ef05e689d377",
+    "published_sha256": "4f28cd5d8f1c8415e425be5c10094609b6caeca0adca6309eaecda618f4803d4",
+    "annotation_method": "nine numbers anchored at bench.project(current_scene.anchors); no overlapping numbered circles; legend outside mesh; grayscale"
+  },
+  "renderer_scripts": [
+    "scripts/capture_application_current.mjs",
+    "scripts/update_application_current.py",
+    "scripts/verify_application_current.py"
+  ]
+}
