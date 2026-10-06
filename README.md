@@ -2,10 +2,11 @@
 
 项目题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
 
-2026年10月6日。当前申报入口为20页学校模板研究方案收敛稿，以用户最新111.docx另存，保留原十张图、信息与预算空位、5中文＋3英文文献；原生公式共29个。采集适配层故障注入、C诊断快照映射和主机通信联调已分项验收，固定1Hz为当前基线，事件触发分级采集为独立研究任务。现有证据仍为设计、模型和主机软件，未完成实物、RF、电流或棉田测量。网站、三维、PPT及此前13页实施书本轮不改；历史版本的通过状态不作为当前交付证明。
+2026年10月6日。当前申报入口为21页学校模板方法与图文完善稿，在研究方案收敛稿上补齐健康参照、稳健门限、双时间窗及便携C实现路线，更新诊断流程与候选方法对照图。包含10图、3张完整居中数据表、26个原生公式、5中文＋3英文文献，信息、预算及审批空位保留。全部最终页面和十幅嵌入图片的灰度版本已逐项查看，验收仅对记录中的文件指纹有效。固定1Hz为当前软件基线，事件触发分级采集为独立研究任务。现有证据仍为设计、模型和主机软件，未完成实物、RF、电流或棉田测量。网站、三维、PPT及此前13页实施书本轮不改。
 
 ## 最新入口
 
+- [学校模板申报书方法与图文完善稿](deliverables/大创申报书_方法与图文完善稿.docx)：当前交付。双时间窗流程区分短窗待复核与主窗候选；算法对照使用黑白纹理，324条冻结记录逐组核对；前期K/R界面与模型反例保留并注明阶段。[本版验收](docs/申报书方法与图文完善验收.md)、[精确文件检查](application/method_revision/acceptance.json)、[最终逐页及灰度图审阅记录](application/method_revision/visual_review.json)。
 - [学校模板申报书研究方案收敛稿](deliverables/大创申报书_研究方案收敛稿.docx)：20页、10图、3张完整居中数据表、8篇文献、29个原生公式，全部最终页面已查看。[本版图文验收](docs/研究方案收敛稿_图文验收.md)、[软件收尾报告](deliverables/软件链路收尾验证.md)、[最终方法与三阶段安排](docs/算法与软件最终方案.md)。信息、预算及审批区域保持用户源稿空白。
 - [实施项目书](deliverables/实施项目书.docx) / [原生审阅PDF](deliverables/实施项目书.pdf)：13页、9章、5图、6张可编辑表；四工作包、实验协议、资源、里程碑、返工与归档。为自主执行稿，正式任务书尚待取得并填写。
 - [本次公式与插图验收](docs/申报书公式与插图修订验收.md) / [当前验收记录](deliverables/申报书公式与插图修订验收记录.json)：27个原生数学对象由WPS识别，重新保存后核对公式含义，20页实际图像和八幅新图复核；四表居中完整、图注同页、原稿保护；三处必要分页留白列明。[前一轮语言与范围验收](docs/申报书语言与研究范围修订验收.md)、[分页检查](docs/申报书分页与图片复核.md)及[表格文献与职责修订](docs/表格文献与材料职责修订验收.md)作为历史依据保留。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)划分各项职责。
@@ -34,6 +35,8 @@
 官方2026立项及验收要求只作为历史参考。任务书下载返回验证码网页，未取得实际官方DOC；自主实施稿未声称套入官方表。2027规定、正式身份、编号、意见及签字待本人、导师和学院办理。外部案例原件与个人信息未纳入仓库，级别来自用户说明。
 
 ## 修改与复现
+
+本轮方法与图文修订依次使用scripts/prepare_method_application_figures.py、scripts/render_method_application_figures.mjs、scripts/update_method_application.py、scripts/export_method_application.ps1和scripts/render_quality_documents.py；逐页查看最终页面并逐张查看实际嵌入图片的灰度版本后，保存application/method_revision/visual_review.json，再运行scripts/verify_method_application.py。源稿为上列研究方案收敛稿；修改图文后必须重新渲染、查看并更新对应指纹，不能直接沿用人工记录。本轮不修改冻结算法及其既有结果。
 
 本次软件收尾依次运行scripts/validate_acquisition_pipeline.py A、B，simulation/review_acquisition_pipeline.py完整回放，再运行validate_acquisition_pipeline.py C与plot_acquisition_closeout.py。先检查已冻结指纹，不以重新冻结掩盖来源变化。Word本版使用scripts/update_submission_closeout.py、export_submission_closeout.ps1、render_quality_documents.py及verify_submission_closeout.py；逐页查看记录位于application/software_closeout。用户源111.docx不随仓库上传，因此改稿复现需要本机保留源文件；当前最终DOCX及验收指纹已纳入仓库。下文为历史流程，不能覆盖最新用户稿或挪用历史验收。
 

@@ -1,0 +1,234 @@
+{
+  "physical_validation": false,
+  "source": "simulation/hybrid_sampling_review/sensor_results.csv",
+  "source_sha256": "66af907904b33d83c102b4db9b2196d5cb4368906075af61c2b87fdecc6a17dc",
+  "previous_acceptance_sha256": "567203d0260b9d67c4d5020c0da007b20e111b442b6a1d80f44cdcf1afde5298",
+  "parameters_sha256": "6c4743a9c4fdab057ad9c08b94a10b34c987c282c8ee8bb90a501e86a8bd0314",
+  "selection": "All three noise levels; both gradual faults and long-normal controls; fixed acquisition; all 12 frozen seeds; no new tuning.",
+  "groups": [
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "method": "threshold",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "method": "hybrid",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "method": "threshold",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "method": "hybrid",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "method": "threshold",
+      "n": 12,
+      "early": 1,
+      "false_trials": 11
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "method": "hybrid",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "method": "threshold",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "method": "hybrid",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "method": "threshold",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "method": "hybrid",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "method": "threshold",
+      "n": 12,
+      "early": 1,
+      "false_trials": 11
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "method": "hybrid",
+      "n": 12,
+      "early": 12,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 0.3,
+      "method": "threshold",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 0.3,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 0.3,
+      "method": "hybrid",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 3.0,
+      "method": "threshold",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 3.0,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 3.0,
+      "method": "hybrid",
+      "n": 12,
+      "early": 0,
+      "false_trials": 1
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 10.0,
+      "method": "threshold",
+      "n": 12,
+      "early": 0,
+      "false_trials": 12
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 10.0,
+      "method": "guarded_fast",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    },
+    {
+      "scene": "long_normal",
+      "sigma": 10.0,
+      "method": "hybrid",
+      "n": 12,
+      "early": 0,
+      "false_trials": 0
+    }
+  ],
+  "all_trial_identifiers_retained": true,
+  "interpretation": "Candidate-stage synthetic pulse frontend; not current integrated hardware performance or independent physical repeats.",
+  "figures": [
+    {
+      "name": "dual_window_diagnosis",
+      "svg": "application/figures/method_revision/dual_window_diagnosis.svg"
+    }
+  ]
+}

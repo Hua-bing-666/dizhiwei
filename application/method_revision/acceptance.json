@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "scope": "Edited school application, source-backed synthetic evidence, exact final WPS rendering; no physical performance validation.",
+  "output_sha256": "a5f476387e6553c4cafe459c51e31a97b81330080f839e60a8887e906b601c37",
+  "source_sha256": "73f3096aa54c02db380ed5c5d3fcd1469abc9649938c6fce7d87db59a521ba1a",
+  "pages": 21,
+  "native_math": 26,
+  "figures": [
+    {
+      "caption": "图1 系统总体结构",
+      "part": "word/media/image2.png",
+      "px": [
+        2000,
+        1070
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "6c8125dd2f842596422b86b0524dae32d43d643450dae78ad23696376feb09d2",
+      "preserved": true
+    },
+    {
+      "caption": "图2 双支路台架水路与测点布置",
+      "part": "word/media/image3.png",
+      "px": [
+        2000,
+        1072
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "86b73fc68306ef80c27d255d21ad9db8d677a926ee12d53989f185676c83668f",
+      "preserved": true
+    },
+    {
+      "caption": "图3 验证台架三维布局设计",
+      "part": "word/media/image4.png",
+      "px": [
+        2000,
+        1490
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "a4f0c66d26bc9eb0f2f28fb08d009a344107051eed4f9908df5bad9759df2bb7",
+      "preserved": true
+    },
+    {
+      "caption": "图4 压力与流量采集接口",
+      "part": "word/media/image5.png",
+      "px": [
+        2000,
+        1500
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "124dc83f1879536865169e059e2a21b305d7faede2e6949942eac743a0638750",
+      "preserved": true
+    },
+    {
+      "caption": "图5 拟研究的事件触发采集与模拟控制流程",
+      "part": "word/media/image6.png",
+      "px": [
+        2000,
+        1360
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "8410a6b243b799efa5722df5712c176ac01f174d1f70a3d75154d294b194aac9",
+      "preserved": true
+    },
+    {
+      "caption": "图6 固定1Hz基线的双时间窗诊断流程",
+      "part": "word/media/image7.png",
+      "px": [
+        2000,
+        1420
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "6cd1b5604616276ef2221f700c1925c0c670eeb8dcea8a2143917f95ebb87c74",
+      "preserved": false
+    },
+    {
+      "caption": "图7 事件接收确认与重传时序",
+      "part": "word/media/image8.png",
+      "px": [
+        2000,
+        1270
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "5b0ea87d8dbdd4e6a82bfc122f9d29562cce94bbde61faf39a298f46d1acafa0",
+      "preserved": true
+    },
+    {
+      "caption": "图8 前期巡检界面（K/R合成数据回放）",
+      "part": "word/media/image9.png",
+      "px": [
+        2000,
+        980
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "c435815fd27cbae5db43f5ad0dd04d3a0f09145b9c4f51cc9b0158235e53c707",
+      "preserved": true
+    },
+    {
+      "caption": "图9 候选判据的有效早期与正常误报对照（合成回放）",
+      "part": "word/media/image10.png",
+      "px": [
+        2000,
+        1800
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "e365b8dbd947d6b0f2cb9b59af9af7a8e4af34999c206afa4bef6d1f0c7e9c18",
+      "preserved": false
+    },
+    {
+      "caption": "图10 初始K/R判据的负载歧义与压力漂移反例（仿真）",
+      "part": "word/media/image11.png",
+      "px": [
+        2000,
+        1624
+      ],
+      "print_width_pt": 420.0,
+      "dpi": 342.85714285714283,
+      "sha256": "a99ab9d6c86f98f47c9eccc1cb17468c3b4a577f47e3accef5b7a74a79b34565",
+      "preserved": true
+    }
+  ],
+  "tables": [
+    {
+      "header": "工作包主要交付评价及验收要求验证依据",
+      "rows": 5
+    },
+    {
+      "header": "层次计划规模对照与判定",
+      "rows": 9
+    },
+    {
+      "header": "时段工作与交付阶段验收要求",
+      "rows": 7
+    }
+  ],
+  "information_budget_approvals_preserved": true,
+  "references": {
+    "Chinese": 5,
+    "English": 3
+  },
+  "superscript_citation_runs": 11,
+  "same_page_figure_caption_paragraphs": true,
+  "figure9_independently_counted_records": 324,
+  "visual_review_sha256": "c80341a95f385e22afd88b3e75ac9ad26cb4a99116c9a925392220f58fa139f3",
+  "pdf_sha256": "34e9f3c9c47237cf2afd7595c5b32835b8f470d07b262d04761f9691732a90ed",
+  "renderer": "Bundled renderer attempted; LibreOffice unavailable; WPS read-only native export and bundled PDFium",
+  "limitations": [
+    "synthetic candidate comparison has shared seeds and fixed model assumptions",
+    "MCU, RF, physical measurement, energy and valve actuation still require independent implementation verification"
+  ]
+}
