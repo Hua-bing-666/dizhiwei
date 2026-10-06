@@ -135,12 +135,30 @@ class Platform:
             row=self.db.execute('SELECT MAX(session) FROM platform_runs').fetchone();session=row[0]
         if session is None:return []
         return [display_snapshot(Snapshot.unpack(body)) for body, in self.db.execute('SELECT body FROM samples WHERE device=1 AND session=? ORDER BY sample_seq',(session,))]
-    def events(self):
+    def history(self,session=None):
+        runs=self.runs()
+        if session is None:session=runs[0]['session'] if runs else None
+        run=next((r for r in runs if r['session']==session),None)
+        if session is not None and run is None:raise ValueError('历史会话不存在')
+        return dict(run={k:v for k,v in run.items() if k!='profile'} if run else None,
+                    samples=self.samples(session) if run else [],events=self.events(session) if run else [],
+                    physical_data=False,classification='synthetic_host_history_not_live')
+    def events(self,session=None):
         result=[]
-        for d,s,q,body,received in self.db.execute('SELECT device,session,seq,body,received_ms FROM frames ORDER BY session DESC,seq DESC'):
+        query='SELECT device,session,seq,body,received_ms FROM frames'
+        args=()
+        if session is not None:query+=' WHERE session=?';args=(session,)
+        query+=' ORDER BY session DESC,seq DESC'
+        note_query='SELECT device,session,seq,stage,note,created_ms FROM platform_notes'
+        if session is not None:note_query+=' WHERE session=?'
+        note_query+=' ORDER BY id'
+        annotations={}
+        for d,s,q,st,no,ms in self.db.execute(note_query,args):
+            annotations.setdefault((d,s,q),[]).append(dict(stage=st,note=no,created_ms=ms))
+        for d,s,q,body,received in self.db.execute(query,args):
             if body[1]!=EVENT:continue
             f=Frame(EVENT,d,s,q,body[16:]);snap=Snapshot.unpack(f.payload[:SAMPLE.size]);code,detail=f.payload[SAMPLE.size:]
-            notes=[dict(stage=st,note=no,created_ms=ms) for st,no,ms in self.db.execute('SELECT stage,note,created_ms FROM platform_notes WHERE device=? AND session=? AND seq=? ORDER BY id',(d,s,q))]
+            notes=annotations.get((d,s,q),[])
             result.append(dict(id=f'{d}:{s}:{q}',session=s,code=code,label=EVENT_LABELS[code],detail=detail,
                                snapshot=display_snapshot(snap),transport='SQLite committed; host ACK, not RF receipt',notes=notes,
                                stage=notes[-1]['stage'] if notes else 'open'))
@@ -169,10 +187,15 @@ class Platform:
         else:raise ValueError('未知演示指令')
         with self.db:self.db.execute('INSERT OR REPLACE INTO platform_commands VALUES(?,?)',(c.command_id,dump(asdict(c))))
         return asdict(c)
-    def state(self):
+    def export(self):
+        state=self.state(with_samples=True);samples=state.pop('samples')
+        return dict(state=state,samples=samples,classification='synthetic_host_software_not_physical')
+    def state(self,with_samples=False):
         runs=self.runs();run=self.run or (runs[0] if runs else None);samples=self.samples(run['session'] if run else None)
-        return dict(version=VERSION,physical_data=False,rf_connected=False,mode='host_replay',active=bool(self.pipeline and not self.pipeline.halted),
+        result=dict(version=VERSION,physical_data=False,rf_connected=False,mode='host_replay',active=bool(self.pipeline and not self.pipeline.halted),
                     run={k:v for k,v in run.items() if k!='profile'} if run else None,current=samples[-1] if samples else None,
                     freshness='replay_cursor_not_live' if self.pipeline else 'history_not_live',count=len(samples),
                     configuration=run.get('profile') if run else None,
                     events=self.events(),commands=[asdict(c) for c in self.control.commands.values()],runs=[{k:v for k,v in r.items() if k!='profile'} for r in runs])
+        if with_samples:result['samples']=samples
+        return result

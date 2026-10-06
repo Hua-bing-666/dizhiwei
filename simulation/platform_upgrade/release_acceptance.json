@@ -1,21 +1,15 @@
 {
   "date": "2026-10-07",
-  "application_version": "V1.1",
-  "classification": "host_software_replay_and_parametric_concept_model",
+  "app_version": "V1.2",
+  "classification": "host_software_and_concept_CAD_not_physical",
   "physical_data": false,
-  "rf_verified": false,
-  "energy_measured": false,
-  "physical_valve_verified": false,
-  "service_checks": 30,
-  "browser_checks": 45,
-  "offline_C_traces": 27,
-  "sampling_combinations": 432,
-  "cross_operating_combinations": 72,
-  "model_solids": 207,
+  "backend_checks": 34,
+  "browser_checks": 72,
+  "screenshots": 31,
   "package": {
-    "zip_sha256": "b823a9ac3106d720c4347efe0165764a30448ccdc447ead05665213b5b8894b1",
-    "files": 109,
-    "bytes": 6818535,
+    "zip_sha256": "b56127c1b6127f4afabcdad59327cbde78429b8f47d7195cdaa38efac57d6874",
+    "files": 127,
+    "bytes": 8253637,
     "manifest_verified": true,
     "extracted_runtime_smoke": true,
     "physical_data": false,
@@ -24,151 +18,171 @@
       "simulation/quality_interval_review/frozen_parameters.json"
     ]
   },
-  "screenshots": [
-    {
-      "path": "deliverables/软件升级验收预览/backend-calibration-desktop.png",
-      "sha256": "4887f63493b130c5358457ae06ef40a7a4f3dc8622750e86ec4182a00deda64f"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/backend-control-desktop.png",
-      "sha256": "6f6972d88d2ff46cec7e18a9a67bc027425fef75b4d68910c7a1c8c885d202e5"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/backend-monitor-desktop.png",
-      "sha256": "c01072a04d8132650bcfa6a3a62220175de749295b23fdc64013380c5625ebe0"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/contact-sheet.png",
-      "sha256": "3bf7c55262cce0b987eb42425172a9cb5d084e9d36a1c0f233bd15817fab3259"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/devices-1440.png",
-      "sha256": "b7809c5cb7fb4ce060e42f7797edd7d8c0d81609a8d3311fbaa38a6557994235"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/devices-375.png",
-      "sha256": "fe1898f1191b7d1b15b1dc7d625c95b7252ddad78232736dc640f9a93ea44141"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/event-dialog-desktop.png",
-      "sha256": "b2c21b9d517767fa2ccfb9e5b2da6b0ae75fe3630927dd6b5c42f9d48628d2a9"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/events-1440.png",
-      "sha256": "2e8474984d1da8d0eb5516cfdea7dda48e3b07733ccddd586d85e2dd8b56cf5b"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/events-375.png",
-      "sha256": "99c6897eca10c2918afa268ec206d7bcdf36ca5d0f564ec6ac22e9c040c78e8d"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/history-1440.png",
-      "sha256": "488628cc5abb1abd5052bd078daf3d8fdc846d1d5a35621158df12932127ce67"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/history-375.png",
-      "sha256": "aebef68cf067dc546c1694b014672167adb8ce0a2ec6bc975b77ce08b0e4c7f0"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/model-electronics.png",
-      "sha256": "7901d35c75f1c04a291e0291dd23aed8b35f3e106a3ce9240d44cf181e7db110"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/model-iso.png",
-      "sha256": "04cf6f39bf2e18a737a7c1c7af22b8d92f216ef656b368a79209db1e5b739d83"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/model-leak.png",
-      "sha256": "e5da6db87544e141e8cdfa246bd263da35dd47ca3cc8d9f5e02b8d4f58ee8045"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/model-mobile.png",
-      "sha256": "fa920c7f2ab103d3591b62cecfa0b6064b0d66fb2ecde4fa2ea90731c31dca35"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/model-pressure.png",
-      "sha256": "9dc6c65f9699812809bc423b22d0a5170b98ee2ad1987e29dced0c6f6edab2f6"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/model-top.png",
-      "sha256": "fc08dbc98a9375ec1d2beb633974d03059fc4bbfadae03dc65dfe0bf4f78e7b0"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/monitor-1440.png",
-      "sha256": "969a587345314b37237617becfebe7b8e891a3f64f217ebea6198386558628e7"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/monitor-375.png",
-      "sha256": "a6db4e6a865e76c55afb394a8ef187dd948948539a48635190cea53d45657f66"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/overview-1440.png",
-      "sha256": "fd9bf80b07b36fa100760f820320cd083dfd91f1afa0156bce7b828eb7db283e"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/overview-375.png",
-      "sha256": "94bc4cdb2c78b3d08d341ea0d0118fe503dc2f128eb5d77195ab4dfbf97c5047"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/research-desktop.png",
-      "sha256": "bdcd44e585561f7cccb1542f621b760efd349e2d4aa7349b082cb902d66907c1"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/settings-1440.png",
-      "sha256": "40af7027bbb273720a59c51f5a6c491aa5eccb54ec4ee636ff3cbeb75663c71c"
-    },
-    {
-      "path": "deliverables/软件升级验收预览/settings-375.png",
-      "sha256": "07b486bf29213b8eb4e877106a6b65549f9da4684730675b27ab519a5b8bc04a"
-    }
-  ],
-  "visual_review": {
-    "all_screenshots_reviewed_as_contact_sheet": true,
-    "full_size_focus": [
-      "overview-1440",
-      "monitor-375",
-      "events-1440",
-      "event-dialog-desktop",
-      "history-1440",
-      "backend-calibration-desktop",
-      "research-desktop",
-      "model-iso",
-      "model-top",
-      "model-pressure",
-      "model-leak",
-      "model-electronics",
-      "model-mobile"
-    ],
-    "limits": "Review of declared viewports and CAD views, not a universal certification of all states or hardware."
+  "frozen_artifacts_unchanged": {
+    "simulation/platform_upgrade/web_data.json": true,
+    "application/models/system_upgrade/bench_scene.json": true
   },
+  "manual_visual_review": "All screenshot contact sheet reviewed; full-size review of overview, monitoring, events, experiments, mobile bench, model iso/top/pressure/leak/electronics, part inspection and embedded control. Limited to these view states, not all arbitrary camera positions.",
   "files": [
     {
       "path": "deliverables/index.html",
-      "sha256": "0457cb6309e209df8fb1aae9ad2ce0f5adee9325ee94584c6763342677c5582f"
+      "sha256": "bcf1a425cd4e177f4d7efd693943be8cdca46761d4960ad75829226254238068"
     },
     {
-      "path": "deliverables/清水试验台架_V1.1.html",
-      "sha256": "f16f13d0fe1bdef7aecf74bcddb64dbb4004e4258d543385ac20556dd2f88bca"
+      "path": "deliverables/清水试验台架_V1.2.html",
+      "sha256": "d5802f3e665d4b074962e9c81e6cb0368f85c88f87651d7ec212db60432697f3"
     },
     {
-      "path": "scripts/platform_upgrade.js",
-      "sha256": "4ba38685820f992215f432018e4124905fc140c1db76321cd6a60239d7e8c9cc"
-    },
-    {
-      "path": "scripts/platform_upgrade.css",
-      "sha256": "50bda7d6f9eba0b27ca7932ed3086ec4188520f292d29beb0045bd01454a504f"
+      "path": "application/config/workspace.json",
+      "sha256": "347d528dcf09967f38b8f9d7f188559c0ddfeb0a03fe9478a4178a3e9a4ac005"
     },
     {
       "path": "prototype/platform_service.py",
-      "sha256": "e0538250a6b51ad261316b19d26227eb1a4e318c112fe8f40655a38c5967fd47"
+      "sha256": "b795e18bd160fae9d7902ff905f7c323156c9c935bf7035a2e558687a2b851f5"
     },
     {
-      "path": "prototype/reference_calibration.py",
-      "sha256": "45e488de546caaf9a5a14ebea00d61722c7f1b1d42a45e0914aa232917dc01cc"
+      "path": "scripts/workspace_views.js",
+      "sha256": "523a270ba2ed5b669fc4da17387337d489366be670ea5215e0e57d0664156361"
     },
     {
-      "path": "scripts/run_platform.py",
-      "sha256": "41fea42299c202a93d970c31b83d8efd6e9884015595724491e1509fee0e991e"
+      "path": "scripts/bench_workspace.js",
+      "sha256": "d2b40d9ef7abd86663ff973e4b9875f79c782c3269f1f68fce2ac4aeff6e0847"
+    },
+    {
+      "path": "scripts/workspace.css",
+      "sha256": "e0c34ab997b6611d6b823cc5c4a4ffbc5fd71349cb7004f01960740ac0298208"
+    },
+    {
+      "path": "scripts/bench_workspace.css",
+      "sha256": "809bfbd5eabe9207a884de73ad35dd44fae4230dccce61057b6ba1898941f2d5"
+    },
+    {
+      "path": "docs/运行平台V1.2验收记录.md",
+      "sha256": "e56e047b5bfb056bf8aa4da3035c59ab07ed6bf7ac615c43673369ab889aa450"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/backend-calibration-desktop.png",
+      "sha256": "4639e88b66afad19b67da4c6e8a7fb5c65e3fde0a58b46c53cc5e449558b4377"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/backend-control-desktop.png",
+      "sha256": "c660218b336970cab67f53a0f372ba331fe76d0ef445aab6678d916771c31730"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/backend-history-session.png",
+      "sha256": "153355e85385ae9c6cd58f57612ae9bafb986a91440562eb667d6683b4d7bf6e"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/backend-monitor-desktop.png",
+      "sha256": "deb495f0210a7226961d62afabc40e8ba2fc93ff72f1397062d737aaca681d8b"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/bench-1440.png",
+      "sha256": "c603f2c089de2f6492530096547430427d6af70683ba590e139e7f3cc6eba16d"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/bench-375.png",
+      "sha256": "fe5de665593ec1720eea36e2627320f9e37d55a534fc2d8d1562a6c76d1415f5"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/bench-embedded-model.png",
+      "sha256": "9670707b34241ac929f85bafaadb22f297a5e71e2076272a258020b05f2a2528"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/devices-1440.png",
+      "sha256": "7088946ef1b70d0c630715444e9f376994944530f03475215a6c15e0358382e6"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/devices-375.png",
+      "sha256": "7b945156c8f054e61c120545e6ad62c097b55e48664621a4925db7233fc4c8db"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/event-dialog-desktop.png",
+      "sha256": "bb836fe19d43c6d8a23544c2803b5a98b640290792b8f36571207e286f53b299"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/events-1440.png",
+      "sha256": "2b4deecddd05ccfe38366ccae2a3d3ef01a287a24d0bb2569787d477d6d9902d"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/events-375.png",
+      "sha256": "ee22918ad31b9b76618843980f5ec8ff0f357d5e425df3b04815b3447de76639"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/experiments-1440.png",
+      "sha256": "38390746adad25daece6ab3ed2165d2446ad7527dff8e98f023724efca86d390"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/experiments-375.png",
+      "sha256": "953a4d57554abccc24e815c70350561d93181e9e15917304a107930b31bb794c"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/history-1440.png",
+      "sha256": "90f87205230873782bfcadc2a63907653c82f5cbf77213e3058bc70382ec0e81"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/history-375.png",
+      "sha256": "63c7fa1a09b485a9ff3efb18f3183877cbf9aac7c162a2e130146d28a07d1c9e"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-electronics.png",
+      "sha256": "f85b738c7cee313972db172af386799ec35456ed22b0bbf67d3c679c57b14f56"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-iso.png",
+      "sha256": "d04d746d0fbfbff2b9acd492297fd9ac30ad746c8f7be818526810cfab15e07c"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-leak-procedure.png",
+      "sha256": "8bd26c53457e9bd6855d30a4bc50c283413bfa323f94269e0178426284757ef8"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-leak.png",
+      "sha256": "1338afda2382f0dc147f55e196078a134462d5f4c52678dbe149d1f458a1e6d8"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-mobile.png",
+      "sha256": "5744763407838bf2a1fc64b778d23c691701ad60b64c8381a0890146956b3a80"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-part-inspection.png",
+      "sha256": "477aeeae3d0bbf09a2b0548152c79938cec7401fac45a017e1009bbe18742cd6"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-pressure.png",
+      "sha256": "5d2fa017bc3c65cb8bde889ed2b96d0646fdd72432c5edbd1b2a495f90d18854"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/model-top.png",
+      "sha256": "cc6e5c74fe95e381c20f6cc14fd7e1f9d836a6aa78153163ac993a7f7c4d5557"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/monitor-1440.png",
+      "sha256": "82958b9a394297d8782afc1faf6fea7c0dac1a1d46a9eef249aa8b66d28e157f"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/monitor-375.png",
+      "sha256": "2968c91ede40e20a18791480b5e3dfe2d87138ac1e8c47ee5c0d00b70fe87fc4"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/overview-1440.png",
+      "sha256": "46a7551e5e6fbe239f34919881411205150c3ab97d01f35add95c30c53bd9fca"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/overview-375.png",
+      "sha256": "b796d8c376c0183fa6201caf1c06d41b687c9b43f426d661a21aa5502fea9bb2"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/research-desktop.png",
+      "sha256": "8243f59a8b370b8d2e251b12e1fb35e7afd34768737eb4e126adda8ebcb396fa"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/settings-1440.png",
+      "sha256": "62ba461b3f81d605b1a17d8c73c5c955dc62f54ccc0f6f96c29aae4b103e51a7"
+    },
+    {
+      "path": "deliverables/运行平台V1.2验收预览/settings-375.png",
+      "sha256": "1d44ace94f768ce96bd9caa88c27894be57911fb812ea9fb936c5f14e4684cd9"
     }
   ]
 }

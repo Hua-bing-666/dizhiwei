@@ -4,7 +4,7 @@ import path from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
 import crypto from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const scratch=path.join(root,'tmp','platform-browser-'+crypto.randomUUID()),out=path.join(root,'deliverables','软件升级验收预览');await mkdir(scratch,{recursive:true});await mkdir(out,{recursive:true});
+const scratch=path.join(root,'tmp','platform-browser-'+crypto.randomUUID()),out=path.join(root,'deliverables','运行平台V1.2验收预览');await mkdir(scratch,{recursive:true});await mkdir(out,{recursive:true});
 const profile=path.join(scratch,'edge'),downloads=path.join(scratch,'downloads');await mkdir(downloads);
 const python=path.join(root,'tmp/cad_runtime/Scripts/python.exe'),port=18765;
 const service=spawn(python,[path.join(root,'scripts/run_platform.py'),'--port',String(port),'--db',path.join(scratch,'test.sqlite')],{windowsHide:true,stdio:'pipe'});
@@ -29,8 +29,21 @@ try{
  await ready(pathToFileURL(path.join(root,'deliverables/index.html')).href,'platformReady');
  const source=JSON.parse(await readFile(path.join(root,'simulation/platform_upgrade/web_data.json'),'utf8'));
  await check('all_27_offline_traces_match_saved_C_outputs',`(()=>{const data=${JSON.stringify(source.traces)};for(const [k,v] of Object.entries(data)){if(JSON.stringify(PLATFORM_DATA.traces[k].samples)!==JSON.stringify(v.samples))return false;}return Object.keys(data).length===27;})()`);
- for(const width of [375,768,1024,1440]){await send('Emulation.setDeviceMetricsOverride',{width,height:1050,deviceScaleFactor:1,mobile:false});for(const page of ['overview','monitor','events','devices','history','settings']){await check(`page_${page}_${width}_no_root_overflow`,`(()=>{platform.navigate('${page}');return document.documentElement.scrollWidth<=innerWidth+1&&document.querySelector('nav [data-page="${page}"]').getAttribute('aria-current')==='page';})()`);if(width===375||width===1440)await screen(`${page}-${width}`);}}
+ for(const width of [375,768,1024,1440]){await send('Emulation.setDeviceMetricsOverride',{width,height:1050,deviceScaleFactor:1,mobile:false});for(const page of ['overview','monitor','events','devices','history','experiments','bench','settings']){await check(`page_${page}_${width}_no_root_overflow`,`(()=>{platform.navigate('${page}');return document.documentElement.scrollWidth<=innerWidth+1&&document.querySelector('nav [data-page="${page}"]').getAttribute('aria-current')==='page';})()`);if(width===375||width===1440)await screen(`${page}-${width}`);}}
  await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1050,deviceScaleFactor:1,mobile:false});
+
+ await check('eight_page_contract_has_distinct_owners',`WORKSPACE_CONTRACT.pages.length===8&&new Set(WORKSPACE_CONTRACT.pages.map(p=>p.owner)).size===8`);
+ await check('pages_have_unique_primary_function',`(()=>{const tests={overview:()=>!document.querySelector('.chart')&&!document.querySelector('table'),monitor:()=>!!document.querySelector('.chart')&&!document.querySelector('#research-scene')&&!document.querySelector('#model-load'),events:()=>!!document.querySelector('[data-filter]')&&!document.querySelector('.chart'),devices:()=>document.querySelector('[data-owner="connectivity"]')&&!document.querySelector('#commands'),experiments:()=>!!document.querySelector('#research-scene')&&!!document.querySelector('#calibration-csv')&&!document.querySelector('#model-load'),bench:()=>!!document.querySelector('#model-load')&&!!document.querySelector('#commands')&&!document.querySelector('.chart'),history:()=>!!document.querySelector('#export-csv')&&!document.querySelector('#event-form').closest('#page-body'),settings:()=>!!document.querySelector('[data-owner="configuration"]')&&!document.querySelector('#calibration-csv')&&!document.querySelector('#commands')};return Object.entries(tests).every(([p,f])=>{platform.navigate(p);return !!f()&&document.querySelectorAll('#page-body [data-owner]').length>0;});})()`);
+ await check('single_shared_replay_controller',`document.querySelectorAll('#replay-panel').length===1&&document.querySelectorAll('#scene').length===1`);
+ await send('Emulation.setDeviceMetricsOverride',{width:375,height:720,deviceScaleFactor:1,mobile:false});
+ await evaluate("platform.navigate('experiments');window.scrollTo(0,0)");await delay(150);
+ await check('scroll_reveal_static_content_initially_pending',`document.querySelectorAll('[data-reveal].reveal-ready:not(.is-visible)').length>0`);
+ await evaluate("document.querySelector('[data-reveal]').scrollIntoView({block:'center'})");await delay(500);
+ await check('scroll_reveal_displays_content_when_visible',`document.querySelector('[data-reveal]').classList.contains('is-visible')&&getComputedStyle(document.querySelector('[data-reveal]')).opacity==='1'`);
+ await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
+ await check('reduced_motion_keeps_content_visible',`[...document.querySelectorAll('.reveal-ready')].every(x=>getComputedStyle(x).opacity==='1'&&getComputedStyle(x).transform==='none')`);
+ await send('Emulation.setEmulatedMedia',{features:[]});
+ await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1050,deviceScaleFactor:1,mobile:false});await evaluate('window.scrollTo(0,0)');
  await check('missing_reading_null_not_zero_and_chart_break',`(()=>{platform.setReplay({scene:'missing',cursor:362});platform.navigate('monitor');return platform.current().p1===null&&platform.current().status===3&&document.getElementById('page-body').textContent.includes('暂停原因判断')&&document.querySelector('#pressure-chart path').getAttribute('d').includes('M');})()`);
  await check('offline_archive_requires_view',`(()=>{platform.setReplay({scene:'leak',cursor:450});const e=platform.events().find(e=>e.code>=4);platform.openEvent(e.id);document.getElementById('event-stage').value='archived';document.getElementById('event-note').value='test';document.getElementById('event-form').requestSubmit();return document.getElementById('event-message').textContent.includes('先记录');})()`);
  const frozen=await evaluate('JSON.stringify(platform.events().find(e=>e.code>=4).snapshot)');
@@ -47,20 +60,52 @@ try{
  await ready(http,'platformReady');await evaluate('platform.connect()');await evaluate("platform.mutate('/api/replay/start',{scene:'leak',sigma:.3})");
  for(let i=0;i<15;i++)await evaluate("platform.mutate('/api/replay/step',{n:30})");
  await check('HTTP_C_SQLite_UI_snapshot_equal',`(async()=>{const r=await(await fetch('/api/state')).json();return JSON.stringify(r.current)===JSON.stringify(platform.current())&&r.count===450&&r.rf_connected===false;})()`);
+ await check('shared_contract_exactly_matches_server',`(async()=>JSON.stringify(await(await fetch('/api/workspace')).json())===JSON.stringify(WORKSPACE_CONTRACT))()`);
+ const oldSnapshot=await evaluate('JSON.stringify(platform.current())');
+ const archived=await(await fetch(http+'/api/history?session=1')).json();if(archived.samples.length!==450||archived.run.session!==1)throw Error('History bundle');
+ const unknown=await fetch(http+'/api/history?session=999');if(unknown.status!==404)throw Error('Unknown history');report.checks.push('historical_session_bundle_and_unknown_session_rejection');
+ await evaluate("platform.mutate('/api/replay/start',{scene:'normal',sigma:.3});");await evaluate("platform.mutate('/api/replay/step',{n:10});");
+ await evaluate("platform.navigate('history');document.getElementById('history-session').value='1';document.getElementById('history-session').dispatchEvent(new Event('change'));");
+ for(let i=0;i<100;i++){if(await evaluate('platform.getState().historyArchive?.run?.session===1'))break;await delay(50);}
+ await check('history_selection_does_not_switch_active_session',`platform.getState().historyArchive.run.session===1&&platform.getState().server.run.session===2&&platform.samples().length===10&&document.getElementById('page-body').textContent.includes('第 1 / 18 页')`);
+ await screen('backend-history-session');
+ await evaluate("platform.exportWorkspace(platform.getState().historyArchive)");await delay(300);
+ const past=JSON.parse(await readFile(path.join(downloads,'drip-records.json'),'utf8'));if(past.run.session!==1||past.samples.length!==450||past.scene!=='leak')throw Error('Selected archive export');report.checks.push('selected_history_export_preserves_selected_run');
  await evaluate("platform.navigate('monitor')");await screen('backend-monitor-desktop');
- await evaluate("platform.navigate('settings');platform.mutate('/api/control',{action:'request',id:'browser-demo'})");await evaluate("platform.mutate('/api/control',{action:'receive',id:'browser-demo'})");await evaluate("platform.mutate('/api/control',{action:'execute',id:'browser-demo'})");
+ await evaluate("platform.navigate('bench');platform.mutate('/api/control',{action:'request',id:'browser-demo'})");await evaluate("platform.mutate('/api/control',{action:'receive',id:'browser-demo'})");await evaluate("platform.mutate('/api/control',{action:'execute',id:'browser-demo'})");
  await check('control_request_receipt_simulation_separate',`platform.getState().server.commands[0].status==='demo_confirmed'&&platform.getState().server.commands[0].physical_verified===false&&document.getElementById('commands').textContent.includes('软件 LED 指示开启')`);
  await screen('backend-control-desktop');
+ await evaluate("platform.navigate('experiments')");
  await check('candidate_calibration_tool_keeps_runtime_reference',`(async()=>{const before=JSON.stringify(platform.getState().server.configuration);document.getElementById('calibration-example').click();document.getElementById('calibration-fit').click();for(let i=0;i<100;i++){await new Promise(r=>setTimeout(r,50));if(document.getElementById('calibration-result').textContent.includes('Q ='))break;}return document.getElementById('calibration-result').textContent.includes('0.5000')&&before===JSON.stringify(platform.getState().server.configuration);})()`);
  await evaluate("document.getElementById('calibration-csv').scrollIntoView({block:'center'});");await screen('backend-calibration-desktop');await evaluate('window.scrollTo(0,0)');
- await evaluate("platform.navigate('monitor');document.querySelectorAll('details').forEach(x=>x.open=true);document.getElementById('research-scene').scrollIntoView({block:'center'});");await screen('research-desktop');
+ await evaluate("platform.navigate('experiments');document.querySelectorAll('details').forEach(x=>x.open=true);document.getElementById('research-scene').scrollIntoView({block:'center'});");await screen('research-desktop');
  await evaluate("document.getElementById('research-scene').value='drift';document.getElementById('research-scene').dispatchEvent(new Event('change'));");
  await check('research_failures_and_denominators_retained',`document.getElementById('research-scene').checkVisibility()&&document.getElementById('research-results').textContent.includes('不作早期判据')&&document.getElementById('page-body').textContent.includes('72 个新种子组合')`);
- await ready(http+'/清水试验台架_V1.1.html','benchReady');
+
+ await evaluate("platform.navigate('monitor');platform.navigate('events');history.back()");await delay(100);
+ await check('browser_back_restores_previous_page',`platform.getState().page==='monitor'&&location.hash==='#monitor'&&document.querySelector('nav [data-page="monitor"]').getAttribute('aria-current')==='page'`);
+ await evaluate('history.forward()');await delay(100);await check('browser_forward_restores_page',`platform.getState().page==='events'&&location.hash==='#events'`);
+ await send('Emulation.setDeviceMetricsOverride',{width:844,height:390,deviceScaleFactor:1,mobile:false});await evaluate("platform.navigate('monitor')");
+ await check('landscape_layout_without_root_overflow',`document.documentElement.scrollWidth<=innerWidth+1`);
+ await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1050,deviceScaleFactor:1,mobile:false});await evaluate("platform.navigate('bench');document.getElementById('model-load').click()");
+ await check('model_is_loaded_on_demand_in_only_bench_page',`document.querySelectorAll('#page-body iframe').length===1&&document.querySelector('#model-slot iframe').getAttribute('src').includes('V1.2')`);
+ const frameId=await evaluate("document.querySelector('#model-slot iframe').dataset.identity='retained'");
+ await evaluate("platform.mutate('/api/control',{action:'request',id:'retained-model'})");
+ await check('control_updates_preserve_model_element',`document.querySelector('#model-slot iframe').dataset.identity==='retained'`);
+ await evaluate("document.getElementById('control-request').focus()");await check('keyboard_focus_ring_on_operable_button',`document.activeElement.id==='control-request'&&getComputedStyle(document.activeElement).outlineStyle!=='none'`);
+ await screen('bench-embedded-model');
+ await ready(http+'/清水试验台架_V1.2.html','benchToolsReady');
  await check('CAD_title_is_objective_without_release_marketing',`document.querySelector('h1').textContent==='双支路清水试验台架'&&!document.body.innerText.includes('升级版')`);
  for(const view of ['iso','top','pressure','leak','electronics']){await evaluate(`bench.view('${view}')`);await check('CAD_'+view+'_labels_within_stage_no_rect_overlap',`(()=>{const svg=document.getElementById('overlay'),rects=[...svg.querySelectorAll('rect')].map(x=>({x:+x.getAttribute('x'),y:+x.getAttribute('y'),w:+x.getAttribute('width'),h:+x.getAttribute('height')})),stage=document.getElementById('stage');return rects.every(a=>a.x>=0&&a.y>=0&&a.x+a.w<=stage.clientWidth&&a.y+a.h<=stage.clientHeight)&&rects.every((a,i)=>rects.slice(i+1).every(b=>!(a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y)));})()`);await screen('model-'+view);}
  await check('CAD_actual_new_geometry_loaded',`bench.getData().meshes.some(m=>m.name==='perforated_splash_guard')&&bench.getState().meshCount===207`);
+
+ await check('CAD_inspection_selects_actual_part_bounds',`(()=>{benchInspection.setGroup('electronics');benchInspection.setPart('perforated_splash_guard');return benchInspection.getState().part==='perforated_splash_guard'&&document.getElementById('part-detail').textContent.includes('262.0 × 26.0 × 134.0')&&document.getElementById('part-detail').textContent.includes('mm');})()`);
+ await screen('model-part-inspection');
+ await check('CAD_phase_does_not_move_meshes',`(()=>{const before=JSON.stringify(bench.getData().meshes);benchInspection.phase('leak');return benchInspection.getState().group==='water'&&JSON.stringify(bench.getData().meshes)===before&&document.getElementById('phase-detail').textContent.includes('Q 测量');})()`);
+ await screen('model-leak-procedure');await evaluate("benchInspection.setGroup('all')");
  await send('Emulation.setDeviceMetricsOverride',{width:375,height:1050,deviceScaleFactor:1,mobile:false});await evaluate("bench.view('iso')");await screen('model-mobile');await check('CAD_mobile_no_root_overflow',`document.documentElement.scrollWidth<=innerWidth+1`);
+
+ await check('CAD_mobile_number_labels_inside_stage_nonoverlap',`(()=>{const stage=document.getElementById('stage'),cc=[...document.querySelectorAll('#overlay circle')].filter(c=>+c.getAttribute('r')===12).map(c=>({x:+c.getAttribute('cx'),y:+c.getAttribute('cy')}));return cc.length>=3&&cc.every(c=>c.x>=12&&c.y>=12&&c.x+12<=stage.clientWidth&&c.y+12<=stage.clientHeight)&&cc.every((a,i)=>cc.slice(i+1).every(b=>Math.abs(a.x-b.x)>=24||Math.abs(a.y-b.y)>=24));})()`);
  if(report.console_errors.length)throw Error('Browser errors '+JSON.stringify(report.console_errors));report.checks.push('no_uncaught_browser_exceptions');
  await writeFile(path.join(root,'simulation/platform_upgrade/browser_acceptance.json'),JSON.stringify(report,null,2)+'\n');console.log(report.checks.length+' browser checks passed; '+report.screenshots.length+' screenshots');
  await call('Browser.close');

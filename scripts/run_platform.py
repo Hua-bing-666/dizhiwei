@@ -23,10 +23,14 @@ def serve(port, db):
             url=urlsplit(self.path)
             try:
                 if url.path=='/api/state':return self.reply(platform.state())
+                if url.path=='/api/workspace':return self.reply(json.loads((ROOT/'application/config/workspace.json').read_text(encoding='utf-8')))
+                if url.path=='/api/history':
+                    value=parse_qs(url.query).get('session',[None])[0]
+                    return self.reply(platform.history(int(value) if value is not None else None))
                 if url.path=='/api/samples':
                     value=parse_qs(url.query).get('session',[None])[0]
                     return self.reply(platform.samples(int(value) if value is not None else None))
-                if url.path=='/api/export':return self.reply(dict(state=platform.state(),samples=platform.samples(),classification='synthetic_host_software_not_physical'))
+                if url.path=='/api/export':return self.reply(platform.export())
                 # Only published website assets and CAD meshes, no repository
                 # files, runtime databases, credentials, or proposal documents.
                 relative=unquote(url.path).lstrip('/') or 'index.html'

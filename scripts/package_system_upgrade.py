@@ -19,6 +19,9 @@ for folder in ('prototype','simulation'):paths.update((ROOT/folder).rglob('*.py'
 for name in ('integer_diagnosis.c','integer_diagnosis.h','acquisition_bridge.c'):paths.add(ROOT/'firmware'/name)
 for name in ('run_platform.py','启动运行平台.ps1','build_system_upgrade.py','build_upgrade_bench.py','build_bench_cad.py','platform_upgrade.css','platform_upgrade.js','platform_upgrade.template.html','verify_platform_upgrade.py','verify_platform_browser.mjs','package_system_upgrade.py'):
     paths.add(ROOT/'scripts'/name)
+for name in ('workspace.template.html','workspace.css','workspace_views.js','bench_workspace.css','bench_workspace.js','build_bench_workspace.py'):
+    paths.add(ROOT/'scripts'/name)
+paths.add(ROOT/'application/config/workspace.json')
 paths.update((ROOT/'simulation/platform_upgrade').glob('*'))
 paths.update((ROOT/'application/models/system_upgrade').glob('*'))
 paths.update((ROOT/'application/models/vendor').glob('*'))
@@ -26,22 +29,25 @@ paths.add(ROOT/'scripts/bench_viewer.template.html')
 paths.add(ROOT/'simulation/extend_platform_reference.py')
 paths.add(ROOT/'requirements-platform.txt')
 paths.add(ROOT/'deliverables/index.html')
-paths.update((ROOT/'deliverables/软件升级验收预览').glob('*.png'))
+paths.update((ROOT/'deliverables/运行平台V1.2验收预览').glob('*.png'))
 paths.add(ROOT/'deliverables/清水试验台架_V1.1.html')
+paths.add(ROOT/'deliverables/清水试验台架_V1.2.html')
+for name in ('运行平台结构与交互实施计划.md','运行平台UI参考与采用说明.md','运行平台V1.2验收记录.md'):
+    paths.add(ROOT/'docs'/name)
 paths.add(ROOT/'docs/软件升级包使用说明.md')
 paths.add(ROOT/'docs/软件算法与三维升级执行计划.md')
 paths.add(ROOT/'docs/软件算法与三维升级验收记录.md')
 paths.add(ROOT/'tmp/platform_runtime/acquisition_bridge.exe')
 paths.add(ROOT/'tmp/platform_runtime/acquisition_bridge.sha256')
 paths={p for p in paths if p.is_file() and p.name not in ('package_acceptance.json','release_acceptance.json')}
-manifest=dict(version='20261007-platform-c-v1',classification='host_software_and_concept_CAD',physical_data=False,
+manifest=dict(version='20261007-platform-c-v1',app_version='V1.2',classification='host_software_and_concept_CAD',physical_data=False,
               runtime='Python 3.10 + requirements-platform.txt; included Windows host C bridge, not MCU firmware',
               runtime_json_dependencies=sorted(p.relative_to(ROOT).as_posix() for p in reads),
               files=[dict(path=p.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size) for p in sorted(paths)])
-target=ROOT/'deliverables/滴智卫_算法与软件升级包.zip'
+target=ROOT/'deliverables/滴智卫_运行平台_V1.2.zip'
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
     for p in sorted(paths):z.write(p,p.relative_to(ROOT).as_posix())
-    z.writestr('UPGRADE_README.txt','先读 docs/软件升级包使用说明.md。\n离线网页：deliverables/index.html\n主机模式：安装 requirements-platform.txt，运行 scripts/启动运行平台.ps1 或 python scripts/run_platform.py。\n模型：deliverables/清水试验台架_V1.1.html\n附带的 EXE 是 Windows 主机 C 诊断程序，不是 STM32 固件。\n无射频、实际串口、能耗或阀门控制验证。\n')
+    z.writestr('README_PLATFORM.txt','先读 docs/软件升级包使用说明.md。\n离线网页：deliverables/index.html\n主机模式：安装 requirements-platform.txt，运行 scripts/启动运行平台.ps1 或 python scripts/run_platform.py。\n模型：deliverables/清水试验台架_V1.2.html\n附带的 EXE 是 Windows 主机 C 诊断程序，不是 STM32 固件。\n无射频、实际串口、能耗或阀门控制验证。\n')
     z.writestr('upgrade_manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))
 scratch=(ROOT/'tmp/package_verification'/uuid.uuid4().hex).resolve();scratch.mkdir(parents=True)
 with zipfile.ZipFile(target) as z:

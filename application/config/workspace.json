@@ -1,0 +1,14 @@
+{
+  "version": "V1.2",
+  "groups": [{"id":"operation","label":"运行与核查"},{"id":"equipment","label":"设备与实验"},{"id":"records","label":"记录与配置"}],
+  "pages": [
+    {"id":"overview","group":"operation","label":"运行总览","eyebrow":"WORKSPACE","description":"从当前状态出发，安排支管核查与下一步工作。","icon":"overview","owner":"summary"},
+    {"id":"monitor","group":"operation","label":"支管监测","eyebrow":"MONITORING","description":"结合压力、流量与窗口特征，分析持续偏离的候选模式。","icon":"monitor","owner":"telemetry"},
+    {"id":"events","group":"operation","label":"异常事件","eyebrow":"EVENT REVIEW","description":"逐项核查算法线索，独立记录查看、处置与复测。","icon":"events","owner":"workflow"},
+    {"id":"devices","group":"equipment","label":"设备与链路","eyebrow":"DEVICE STATUS","description":"核对感知通道、主机接收与通信状态。","icon":"devices","owner":"connectivity"},
+    {"id":"experiments","group":"equipment","label":"策略实验","eyebrow":"METHOD EXPLORATION","description":"比较采集策略与跨工况表现，拟合独立的健康候选参照。","icon":"experiments","owner":"research"},
+    {"id":"bench","group":"equipment","label":"试验台架","eyebrow":"EXPERIMENTAL BENCH","description":"检查测点与器件布置，准备可重复的故障注入实验。","icon":"bench","owner":"model"},
+    {"id":"history","group":"records","label":"历史记录","eyebrow":"DATA ARCHIVE","description":"按会话追溯保存的采样快照与人工核查记录。","icon":"history","owner":"archive"},
+    {"id":"settings","group":"records","label":"系统设置","eyebrow":"CONFIGURATION","description":"核对当前诊断配置、参照来源与应用版本。","icon":"settings","owner":"configuration"}
+  ]
+}

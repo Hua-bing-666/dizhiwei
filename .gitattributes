@@ -24,6 +24,7 @@
 application/models/vendor/three.cjs whitespace=-space-before-tab
 deliverables/台架三维结构交互模型.html whitespace=-space-before-tab
 deliverables/清水试验台架_V1.1.html whitespace=-space-before-tab
+deliverables/清水试验台架_V1.2.html whitespace=-space-before-tab
 # Keep byte-exact native WPS metadata and its matching fill payload.
 application/quality_release/application_native_layout.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 application/quality_release/book_native_layout.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
