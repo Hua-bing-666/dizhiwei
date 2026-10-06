@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "scope": "School-template DOCX and its final WPS rendering, not physical validation",
+  "source_preserved": true,
+  "source_sha256": "876b4e57bb04d48d742c5d31ce8c4c202ad85a6c5a64c29569200d36f5684d48",
+  "output_sha256": "73f3096aa54c02db380ed5c5d3fcd1469abc9649938c6fce7d87db59a521ba1a",
+  "pages": 20,
+  "native_equations": 29,
+  "original_native_equations_preserved": 27,
+  "original_images_preserved": true,
+  "original_information_budget_approval_rows_preserved": true,
+  "references": {
+    "Chinese": 5,
+    "English": 3
+  },
+  "citation_runs_superscript": 11,
+  "tables": [
+    {
+      "header": "工作包主要交付评价及验收要求验证依据",
+      "rows": 5
+    },
+    {
+      "header": "层次计划规模对照与判定",
+      "rows": 9
+    },
+    {
+      "header": "时段工作与交付阶段验收要求",
+      "rows": 7
+    }
+  ],
+  "all_figure_caption_paragraphs_same_page": true,
+  "visual_review_sha256": "718c9eb22c09cea3ee7bf9575c374b9158090ca8acaccca18c193520bd879fa8",
+  "pdf_sha256": "fb52ae01419ef70f4d65c597f80b5aa5086c72f3e82fb2ca93fc7a5eeb24764f",
+  "renderer": "Bundled render_docx.py attempted; unavailable LibreOffice; WPS native read-only PDF then bundled PDFium",
+  "justified_blank_areas": [
+    {
+      "page": 12,
+      "reason": "Following experiment table kept complete on page 13; remaining area cannot fit whole table"
+    },
+    {
+      "page": 18,
+      "reason": "End of body and blank budget; signatures begin on a separate template page"
+    },
+    {
+      "pages": [
+        1,
+        2,
+        19,
+        20
+      ],
+      "reason": "Original cover, notice and blank approval template retained"
+    }
+  ]
+}

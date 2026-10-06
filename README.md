@@ -2,11 +2,11 @@
 
 项目题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
 
-2026年10月5日。当前申报入口为20页学校模板申报书公式与插图修订稿，面向南疆规模化棉田膜下滴灌的轮灌支管巡检。核心公式采用可编辑原生公式，八幅插图优化标注，申报精选文献为5篇中文、3篇英文。四工作包覆盖测量与建模、故障诊断边界、LoRa可靠告警、集成与独立评价。现有证据为未标定模型、概念几何、功能接口、主机检查和合成回放；没有硬件、射频、功耗或田间实测。13页实施项目书仍为此前执行参考稿，六模块网站独立承担运行展示。
+2026年10月6日。当前申报入口为20页学校模板研究方案收敛稿，以用户最新111.docx另存，保留原十张图、信息与预算空位、5中文＋3英文文献；原生公式共29个。采集适配层故障注入、C诊断快照映射和主机通信联调已分项验收，固定1Hz为当前基线，事件触发分级采集为独立研究任务。现有证据仍为设计、模型和主机软件，未完成实物、RF、电流或棉田测量。网站、三维、PPT及此前13页实施书本轮不改；历史版本的通过状态不作为当前交付证明。
 
 ## 最新入口
 
-- [学校模板申报书公式与插图修订稿](deliverables/大创申报书_公式与插图修订稿.docx)：20页、9图、4张完整居中可编辑表、8篇文献，中文5篇、英文3篇；四条核心公式及相关变量采用原生公式，八幅图简化设计标注，删除未落实器件系列及暂定结构尺寸。封面及登记信息留空。[前一版语言与范围稿](deliverables/大创申报书_语言与范围修订稿.docx)保留。
+- [学校模板申报书研究方案收敛稿](deliverables/大创申报书_研究方案收敛稿.docx)：20页、10图、3张完整居中数据表、8篇文献、29个原生公式，全部最终页面已查看。[本版图文验收](docs/研究方案收敛稿_图文验收.md)、[软件收尾报告](deliverables/软件链路收尾验证.md)、[最终方法与三阶段安排](docs/算法与软件最终方案.md)。信息、预算及审批区域保持用户源稿空白。
 - [实施项目书](deliverables/实施项目书.docx) / [原生审阅PDF](deliverables/实施项目书.pdf)：13页、9章、5图、6张可编辑表；四工作包、实验协议、资源、里程碑、返工与归档。为自主执行稿，正式任务书尚待取得并填写。
 - [本次公式与插图验收](docs/申报书公式与插图修订验收.md) / [当前验收记录](deliverables/申报书公式与插图修订验收记录.json)：27个原生数学对象由WPS识别，重新保存后核对公式含义，20页实际图像和八幅新图复核；四表居中完整、图注同页、原稿保护；三处必要分页留白列明。[前一轮语言与范围验收](docs/申报书语言与研究范围修订验收.md)、[分页检查](docs/申报书分页与图片复核.md)及[表格文献与职责修订](docs/表格文献与材料职责修订验收.md)作为历史依据保留。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)划分各项职责。
 - [运行平台](deliverables/index.html)：运行总览、支管监测、异常事件、设备与链路、历史记录、系统设置，共享合成回放与本地人工维护记录。
@@ -34,6 +34,8 @@
 官方2026立项及验收要求只作为历史参考。任务书下载返回验证码网页，未取得实际官方DOC；自主实施稿未声称套入官方表。2027规定、正式身份、编号、意见及签字待本人、导师和学院办理。外部案例原件与个人信息未纳入仓库，级别来自用户说明。
 
 ## 修改与复现
+
+本次软件收尾依次运行scripts/validate_acquisition_pipeline.py A、B，simulation/review_acquisition_pipeline.py完整回放，再运行validate_acquisition_pipeline.py C与plot_acquisition_closeout.py。先检查已冻结指纹，不以重新冻结掩盖来源变化。Word本版使用scripts/update_submission_closeout.py、export_submission_closeout.ps1、render_quality_documents.py及verify_submission_closeout.py；逐页查看记录位于application/software_closeout。用户源111.docx不随仓库上传，因此改稿复现需要本机保留源文件；当前最终DOCX及验收指纹已纳入仓库。下文为历史流程，不能覆盖最新用户稿或挪用历史验收。
 
 当前稿另存于deliverables/大创申报书_公式与插图修订稿.docx，内部PDF为大创申报书_公式与插图审阅版.pdf。复现依次使用scripts/prepare_equation_figure_revision.py、scripts/render_equation_figures.mjs、scripts/revise_native_equations.py、scripts/export_equation_application.ps1、scripts/render_quality_documents.py及scripts/verify_equation_application.py；实际查看页面及新图后记录scripts/finalize_equation_revision.py。当前为20页，9图打印尺寸及正文字号保留，4表完整同页且居中；第8、12、18页保留有理由的页尾留白。记录在simulation/equation_figure_review与application/equation_figure_revision。人工记录仅对当前哈希有效，后续修改不得沿用。
 
