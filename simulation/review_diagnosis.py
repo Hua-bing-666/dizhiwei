@@ -5,11 +5,11 @@ Two rules see each same trial. Bounded intervals and timing challenges are
 separate calculations; do not combine their counts into a success rate.
 """
 from pathlib import Path
-import csv,hashlib,itertools,json,math
+import csv,hashlib,itertools,json,math,sys
 import numpy as np
 from diagnosis_feasibility import run as legacy_run
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(sys._MEIPASS) if getattr(sys,'frozen',False) else Path(__file__).resolve().parents[1]
 OUT=ROOT/'simulation/diagnosis_review'
 CONFIG=json.loads((OUT/'protocol.json').read_text(encoding='utf-8'))
 KINDS=CONFIG['random_trials']['kinds']

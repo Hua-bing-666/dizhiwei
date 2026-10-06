@@ -1,0 +1,4 @@
+pywebview==6.1
+pyinstaller==6.16.0
+numpy==2.2.6
+matplotlib==3.10.9

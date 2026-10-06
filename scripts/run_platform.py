@@ -3,12 +3,13 @@ from pathlib import Path
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlsplit, parse_qs, unquote
 import argparse, json, mimetypes, sys
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(sys._MEIPASS) if getattr(sys,'frozen',False) else Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'prototype'))
 from platform_service import Platform, pressure_reads, dump
 from reference_calibration import fit_reference
 
-def serve(port, db):
+def create_server(port, db):
+    """Create on the serving thread: SQLite retains its thread affinity."""
     platform=Platform(db)
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,*args):pass
@@ -16,7 +17,7 @@ def serve(port, db):
             data=dump(obj).encode();self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.send_header('Cache-Control','no-store');self.end_headers();self.wfile.write(data)
         def allowed(self):
             host=self.headers.get('Host','');origin=self.headers.get('Origin')
-            valid={f'127.0.0.1:{port}',f'localhost:{port}'}
+            valid={f'127.0.0.1:{self.server.server_port}',f'localhost:{self.server.server_port}'}
             return host in valid and (origin is None or origin in {f'http://{h}' for h in valid})
         def do_GET(self):
             if not self.allowed():return self.reply({'error':'仅允许本机同源访问'},403)
@@ -60,10 +61,16 @@ def serve(port, db):
                 self.reply(result)
             except (ValueError,KeyError,TypeError,OverflowError) as e:self.reply({'error':str(e)},400)
             except Exception as e:self.reply({'error':f'服务异常：{type(e).__name__}；请保留会话并检查服务端日志'},500);print(repr(e),flush=True)
-    http=HTTPServer(('127.0.0.1',port),Handler)
-    print(f'运行平台：http://127.0.0.1:{port}  SQLite：{db}',flush=True)
+    try:http=HTTPServer(('127.0.0.1',port),Handler)
+    except Exception:platform.close();raise
+    http.platform=platform
+    return http
+
+def serve(port, db):
+    http=create_server(port,db)
+    print(f'运行平台：http://127.0.0.1:{http.server_port}  SQLite：{db}',flush=True)
     try:http.serve_forever()
-    finally:http.server_close();platform.close()
+    finally:http.server_close();http.platform.close()
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=8765);p.add_argument('--db',default=str(ROOT/'tmp/platform_runtime/operations.sqlite'));args=p.parse_args()

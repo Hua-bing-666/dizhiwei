@@ -26,3 +26,8 @@ Thumbs.db
 Desktop.ini
 *.log
 ~$*
+
+# Portable desktop binaries are delivered locally; source/spec stay tracked.
+desktop/bin/
+deliverables/滴智卫_桌面版_V1.2/
+deliverables/滴智卫_桌面版_V1.2.zip

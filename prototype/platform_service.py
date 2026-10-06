@@ -6,7 +6,7 @@ are durable before ACK. Synthetic cursor time is deliberately not wall time.
 from pathlib import Path
 import hashlib, json, math, shutil, subprocess, sys, time, uuid
 from dataclasses import asdict
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(sys._MEIPASS) if getattr(sys,'frozen',False) else Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'simulation'))
 sys.path.insert(0, str(ROOT/'prototype'))
 from acquisition_pipeline import AcquisitionPipeline
@@ -33,6 +33,15 @@ def clean(value):
 def dump(value): return json.dumps(clean(value), ensure_ascii=False, allow_nan=False, separators=(',',':'))
 
 def compile_bridge():
+    if getattr(sys,'frozen',False):
+        bundle=ROOT/'desktop/bin'
+        exe=bundle/'acquisition_bridge.exe'
+        manifest=json.loads((bundle/'bridge.json').read_text(encoding='utf-8'))
+        sources=[ROOT/'firmware'/name for name in ('integer_diagnosis.c','integer_diagnosis.h','acquisition_bridge.c')]
+        digest=hashlib.sha256(b''.join(p.read_bytes() for p in sources)).hexdigest()
+        if digest!=manifest['source_sha256'] or hashlib.sha256(exe.read_bytes()).hexdigest()!=manifest['binary_sha256']:
+            raise RuntimeError('诊断程序文件校验失败，请重新解压完整的桌面版。')
+        return exe,digest
     exe = ROOT/'tmp/platform_runtime/acquisition_bridge.exe'
     exe.parent.mkdir(parents=True, exist_ok=True)
     sources = [ROOT/'firmware/integer_diagnosis.c', ROOT/'firmware/integer_diagnosis.h', ROOT/'firmware/acquisition_bridge.c']
@@ -51,7 +60,7 @@ def reference_profile(sigma=.3):
     """Independent healthy trace only; no monitored fault used for calibration."""
     from review_quality_intervals import inputs
     from integrated_monitor import Monitor
-    from review_integer_diagnosis import profile
+    from integer_profile import profile
     baseline=json.loads((ROOT/'simulation/quality_interval_review/frozen_parameters.json').read_text(encoding='utf-8'))
     _, obs, counts = inputs('normal', sigma, 69001)
     m=Monitor(baseline['reference'], baseline['limits']['1'], 'independent-health-69001', healthy_reference_approved=True)

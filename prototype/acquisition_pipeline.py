@@ -12,14 +12,15 @@ class SessionResetRequired(ValueError):pass
 
 class AcquisitionPipeline:
     def __init__(self,profile,executable,config_id=11,reference_id=1,synthetic=True):
-        from review_integer_diagnosis import config_command
+        from integer_profile import config_command
         self.profile=deepcopy(profile);self.config_id=config_id
         self.reference_id=reference_id if profile['numeric'] else 0;self.synthetic=synthetic
         self.guard=TimingGuard();self.clock=-1;self.halted=False;self.records=[];self.events=[];self.faults=[]
         Snapshot(1000,1,self.config_id,self.reference_id,0,MISSING,MISSING,MISSING,4,
                  int(profile['numeric'])+2*int(profile['approved'])+(128 if synthetic else 0),4,255,255).validate()
         self.worker=subprocess.Popen([str(executable)],stdin=subprocess.PIPE,stdout=subprocess.PIPE,
-                                     stderr=subprocess.PIPE,text=True,bufsize=1)
+                                     stderr=subprocess.PIPE,text=True,bufsize=1,
+                                     creationflags=subprocess.CREATE_NO_WINDOW if sys.platform=='win32' else 0)
         try:
             if self.command(config_command(self.profile))!='OK':raise ValueError('Invalid registered profile')
         except Exception:self.close();raise
