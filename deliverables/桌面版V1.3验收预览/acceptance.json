@@ -30,7 +30,7 @@
     "invalid_export_name_rejected_without_dialog",
     "native_preferences_saved_separately_from_diagnosis",
     "invalid_preferences_rejected",
-    "native_close_stops_EXE_and_loopback_service_33772",
+    "native_close_stops_EXE_and_loopback_service_31196",
     "desktop_bridge_only_exposes_export_and_preferences",
     "restart_restores_theme_and_chart_range",
     "restart_restores_samples_events_and_notes_exactly",
@@ -41,7 +41,7 @@
     "automatic_replay_does_not_spam_save_notifications",
     "native_automatic_C_replay_can_pause_without_advancing",
     "native_auto_replay_keeps_sequential_C_samples",
-    "native_close_stops_EXE_and_loopback_service_34908",
+    "native_close_stops_EXE_and_loopback_service_21272",
     "no_WebView_console_errors"
   ],
   "screenshots": [

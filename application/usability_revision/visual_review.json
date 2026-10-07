@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-07",
+  "kind": "manual visual review plus structural checks",
+  "documents": {
+    "submission": {
+      "output": "deliverables\\大创申报书_图文精修稿.docx",
+      "sha256": "adf2aba0e598759d5c785dac645a742790fe6db45c086cb84455ff41801c8f1b",
+      "pages_individually_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "page_images": [
+        {
+          "page": 1,
+          "file": "tmp/usability_submission/submission/pages/page-01.png",
+          "sha256": "2a5f802471d9825d1d1044137b080d3616a79956292248d5d09a6d9c616050d7"
+        },
+        {
+          "page": 2,
+          "file": "tmp/usability_submission/submission/pages/page-02.png",
+          "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4"
+        },
+        {
+          "page": 3,
+          "file": "tmp/usability_submission/submission/pages/page-03.png",
+          "sha256": "e9aa7475802fe3eb0c879b83039344aa1d4552154a6b553a59cf8e0314457a5b"
+        },
+        {
+          "page": 4,
+          "file": "tmp/usability_submission/submission/pages/page-04.png",
+          "sha256": "48c0e99c7fc0ce2113b0fa6f72834e0eafa3110337fe51669757c09185b2280d"
+        },
+        {
+          "page": 5,
+          "file": "tmp/usability_submission/submission/pages/page-05.png",
+          "sha256": "56dda0996819b963a96e74d7923b3607063107e3d10076ad80814570a4b85b5b"
+        },
+        {
+          "page": 6,
+          "file": "tmp/usability_submission/submission/pages/page-06.png",
+          "sha256": "45d2b36ab9aa125d29b0d958f5980ef6569216e743f06240f54680cb0af02b6e"
+        },
+        {
+          "page": 7,
+          "file": "tmp/usability_submission/submission/pages/page-07.png",
+          "sha256": "369e41392cc728c0d66f47071f04e10e4cfa9c77233c1829eb088887988b6a0b"
+        },
+        {
+          "page": 8,
+          "file": "tmp/usability_submission/submission/pages/page-08.png",
+          "sha256": "8f6b3b1efd3432773be5d3f9d7f1577d48e225aee59022b6c13228f899ffe02d"
+        },
+        {
+          "page": 9,
+          "file": "tmp/usability_submission/submission/pages/page-09.png",
+          "sha256": "3b2b3b71d27513c19d5ef840f36435f43320187a1fed4cee923ec874bfbdcf78"
+        },
+        {
+          "page": 10,
+          "file": "tmp/usability_submission/submission/pages/page-10.png",
+          "sha256": "632713ba9a7cfd92ccd6acbb0bb910ed81648df4724cafa19551688c0a0fe551"
+        },
+        {
+          "page": 11,
+          "file": "tmp/usability_submission/submission/pages/page-11.png",
+          "sha256": "e1efcbb4dc668e5013811eb43a4df2c8ac1ebaae4c18c1fdd82b878ad72e53c3"
+        },
+        {
+          "page": 12,
+          "file": "tmp/usability_submission/submission/pages/page-12.png",
+          "sha256": "2dd5a1cbeda711d94d247f3a2061728420518839a91176df37e6a50176438386"
+        },
+        {
+          "page": 13,
+          "file": "tmp/usability_submission/submission/pages/page-13.png",
+          "sha256": "7c6618438c1b250674575b62d06af72e520653f5cc80024582ab0a233737ec9a"
+        },
+        {
+          "page": 14,
+          "file": "tmp/usability_submission/submission/pages/page-14.png",
+          "sha256": "b1924dd4d2f7875e7acdbf707be97cc6a4107560145d9eedfd9453982f16baf0"
+        },
+        {
+          "page": 15,
+          "file": "tmp/usability_submission/submission/pages/page-15.png",
+          "sha256": "06068c3338378f6f9011b2ed26cfcc13b05e52eebaf966548f930515f616b069"
+        },
+        {
+          "page": 16,
+          "file": "tmp/usability_submission/submission/pages/page-16.png",
+          "sha256": "03feb8a8067b77ff8df2dc455e5836c8eec3da8395871f6d530d4e0d0bafbbf4"
+        },
+        {
+          "page": 17,
+          "file": "tmp/usability_submission/submission/pages/page-17.png",
+          "sha256": "035c9366508f5b4707547ad40b5f4899dcdcb8a411babc45681fcc4c4b4661e5"
+        },
+        {
+          "page": 18,
+          "file": "tmp/usability_submission/submission/pages/page-18.png",
+          "sha256": "44a3584852116bac48aa5d1189c4aa385886b06f8cd773a9db02a9c7cc250791"
+        }
+      ],
+      "pdf_sha256": "d9c0b38776a7d1a6b36edcdf7cb62d62e35ac70dcf53fe366b5c720e2dd3bd3c"
+    },
+    "execution": {
+      "output": "deliverables\\实施项目书_现阶段更新稿.docx",
+      "sha256": "89056af5d23837779dc8c4b8efb2132655928020e46b4b9f3ad031b853552116",
+      "pages_individually_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "page_images": [
+        {
+          "page": 1,
+          "file": "tmp/usability_submission/execution/pages/page-01.png",
+          "sha256": "ece3e8b3ec5f228022be1b49935440d6de85a367002b23c711381752cfe69cf3"
+        },
+        {
+          "page": 2,
+          "file": "tmp/usability_submission/execution/pages/page-02.png",
+          "sha256": "b5ed13a93b1a3aa7d9aca724db27008c9959e7868208de4ed1ae45a3f182e186"
+        },
+        {
+          "page": 3,
+          "file": "tmp/usability_submission/execution/pages/page-03.png",
+          "sha256": "d886cf29c774e05a6d7fc41900b5f38089690da569af4f9f8a0d9721dde00ac2"
+        },
+        {
+          "page": 4,
+          "file": "tmp/usability_submission/execution/pages/page-04.png",
+          "sha256": "08a1ff2e388b9bc4f23b8e7ce6e1fbe352cd49600ef5821d05c7cdaec253e778"
+        },
+        {
+          "page": 5,
+          "file": "tmp/usability_submission/execution/pages/page-05.png",
+          "sha256": "1e5a82242e245afd714c73c5e61c810e4473d406ad58cf8f1d5e01591db3f359"
+        },
+        {
+          "page": 6,
+          "file": "tmp/usability_submission/execution/pages/page-06.png",
+          "sha256": "aac1133727215dd60986687d133fea8dee918f81cf6febcb359db267fbb29be3"
+        },
+        {
+          "page": 7,
+          "file": "tmp/usability_submission/execution/pages/page-07.png",
+          "sha256": "d53403db5ea51653758cab855e2dc4fc6fe65d5d2fca804bf50615c66a8e1538"
+        },
+        {
+          "page": 8,
+          "file": "tmp/usability_submission/execution/pages/page-08.png",
+          "sha256": "dd61bef557d26ec938137648408b2b8015008e55ea0c044ddd36a421e47e1e9d"
+        },
+        {
+          "page": 9,
+          "file": "tmp/usability_submission/execution/pages/page-09.png",
+          "sha256": "8564a3997fbf8a07578eb6d2c8676b4e46474d2397ea4bc2a619708e5740574e"
+        },
+        {
+          "page": 10,
+          "file": "tmp/usability_submission/execution/pages/page-10.png",
+          "sha256": "7ef396520218ba0aeae65c9fa76952631f6beb1605fbd7ca5ab270123a1a3988"
+        },
+        {
+          "page": 11,
+          "file": "tmp/usability_submission/execution/pages/page-11.png",
+          "sha256": "88e73aef66685e08cc34f3630a25b4a2f25e30be899cb7b4175fb5d3be73c664"
+        },
+        {
+          "page": 12,
+          "file": "tmp/usability_submission/execution/pages/page-12.png",
+          "sha256": "51e0ded56b7cd69fecf915af3452e324eefa07edc458cd9308895657af50932c"
+        }
+      ],
+      "pdf_sha256": "af5d1dfe0e137dd3005d8862763750ed325b113bf9aafa23d69836e2085c2d7c"
+    }
+  },
+  "desktop_screens_reviewed": [
+    "overview-light",
+    "monitor-light",
+    "events-light",
+    "devices-light",
+    "history-light",
+    "experiments-light",
+    "bench-model",
+    "settings-light",
+    "monitor-dark",
+    "model-focus-P1_sensor_envelope"
+  ],
+  "findings_corrected": [
+    "pressure measurement points drawn as side taps",
+    "reference evaluation arrows terminate inside the correct block",
+    "leak collection separated from normal return",
+    "model callouts tied to projected CAD anchors",
+    "model legend avoids unsupported subscript glyphs",
+    "redundant subsection removed to prevent a stranded title",
+    "execution book redundant final-page version paragraph removed"
+  ],
+  "retained_whitespace": "School cover, instructions, blank personnel/budget/signature areas; occasional figure-related page endings. No cropped or stretched images identified.",
+  "physical_data": false,
+  "desktop_release_sha256": "a571385a52a2ff0c89915f27a36cfdc1002cb71a56dc974a343d9973ea278085",
+  "zip_manifest_files_verified": 512
+}

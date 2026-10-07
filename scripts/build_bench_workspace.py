@@ -4,6 +4,9 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def publish():
     text=(ROOT/'deliverables/清水试验台架_V1.1.html').read_text(encoding='utf-8')
+    begin=text.rindex('function labels(){')
+    end=text.index('function update()',begin)
+    text=text[:begin]+(ROOT/'scripts/bench_annotation.js').read_text(encoding='utf-8')+'\n'+text[end:]
     css=(ROOT/'scripts/bench_workspace.css').read_text(encoding='utf-8')
     js=(ROOT/'scripts/bench_workspace.js').read_text(encoding='utf-8')
     text=text.replace('</style>',css+'\n</style>',1).replace('EXPERIMENTAL BENCH · V1.1','EXPERIMENTAL BENCH · V1.2')

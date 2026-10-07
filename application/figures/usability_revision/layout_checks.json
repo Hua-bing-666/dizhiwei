@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "name": "system",
+      "result": "passed"
+    },
+    {
+      "name": "water",
+      "result": "passed"
+    },
+    {
+      "name": "acquisition",
+      "result": "passed"
+    },
+    {
+      "name": "sampling",
+      "result": "passed"
+    },
+    {
+      "name": "diagnosis",
+      "result": "passed"
+    },
+    {
+      "name": "protocol",
+      "result": "passed"
+    }
+  ],
+  "classification": "diagram_geometry_not_hardware_validation"
+}

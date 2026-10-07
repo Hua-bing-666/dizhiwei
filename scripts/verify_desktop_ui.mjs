@@ -25,6 +25,8 @@ try{
    if(width===1440)await screen(name+'-light');
   }
  }
+ await page.evaluate(()=>platform.navigate('overview'));
+ check('overview_has_no_decorative_pipe_diagram',await evaluate(()=>!document.querySelector('.hero-art')&&document.body.innerText.includes('待核查事件')));
  await page.evaluate(()=>platform.navigate('monitor'));
  check('monitor_default_view_is_operations_not_protocol_report',await evaluate(()=>!document.querySelector('.feature-details').open&&!document.body.innerText.includes('事务保存后 ACK')&&!document.body.innerText.includes('C 核心输出是判定依据')));
  check('chart_units_pressure_and_flow_separate',await evaluate(()=>platform.chartSummary('pressure-chart').series.length===2&&platform.chartSummary('flow-chart').series.length===1));
@@ -57,6 +59,7 @@ try{
  check('model_shares_current_snapshot_and_labels_synthetic',reading.p0===snapshot.p0&&reading.p1===snapshot.p1&&reading.q===snapshot.q&&reading.physical_data===false&&await model.locator('.stage-tag').innerText().then(t=>t.includes('合成回放')));
  check('model_has_207_unchanged_components',await model.evaluate(()=>modelData.meshes.length===207));
  await screen('bench-model');
+ check('model_leaders_attach_to_label_edges',await model.evaluate(()=>[...document.querySelectorAll('#overlay g[data-annotation]')].every(g=>{const r=g.querySelector('rect'),p=g.querySelector('path'),a=p.getAttribute('d').match(/L([\d.-]+),([\d.-]+)/);if(!a)return false;const [x,y]=a.slice(1).map(Number),rx=+r.getAttribute('x'),ry=+r.getAttribute('y'),rw=+r.getAttribute('width'),rh=+r.getAttribute('height');return x>=rx-.01&&x<=rx+rw+.01&&y>=ry-.01&&y<=ry+rh+.01&&[Math.abs(x-rx),Math.abs(x-rx-rw),Math.abs(y-ry),Math.abs(y-ry-rh)].some(v=>v<.01);})));
  for(const name of ['P0_sensor_envelope','P1_sensor_envelope','Q_meter_envelope']){
   await page.locator('[data-bench-point="'+name+'"]').click();await delay(200);
   check('model_focus_'+name,await model.evaluate(n=>benchInspection.getState().part===n,name));

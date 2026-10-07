@@ -30,7 +30,7 @@
     "invalid_export_name_rejected_without_dialog",
     "native_preferences_saved_separately_from_diagnosis",
     "invalid_preferences_rejected",
-    "native_close_stops_EXE_and_loopback_service_6068",
+    "native_close_stops_EXE_and_loopback_service_8720",
     "desktop_bridge_only_exposes_export_and_preferences",
     "restart_restores_theme_and_chart_range",
     "restart_restores_samples_events_and_notes_exactly",
@@ -41,7 +41,7 @@
     "automatic_replay_does_not_spam_save_notifications",
     "native_automatic_C_replay_can_pause_without_advancing",
     "native_auto_replay_keeps_sequential_C_samples",
-    "native_close_stops_EXE_and_loopback_service_32676",
+    "native_close_stops_EXE_and_loopback_service_8112",
     "no_WebView_console_errors"
   ],
   "screenshots": [
@@ -59,5 +59,5 @@
   "console_errors": [],
   "passed": 40,
   "result": "passed",
-  "tested_exe_sha256": "757ccd9f73b69150297cb0520118e524e1cd4040d21a92ddf4b17e860385a07f"
+  "tested_exe_sha256": "5a3e9da3d3788e4180ddc5980891613ec8a0c6113ec96c072b89690bb0274346"
 }

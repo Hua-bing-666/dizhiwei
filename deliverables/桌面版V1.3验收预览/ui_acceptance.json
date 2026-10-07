@@ -26,6 +26,7 @@
     "page_experiments_1440_fits",
     "page_bench_1440_fits",
     "page_settings_1440_fits",
+    "overview_has_no_decorative_pipe_diagram",
     "monitor_default_view_is_operations_not_protocol_report",
     "chart_units_pressure_and_flow_separate",
     "chart_uses_same_current_C_snapshots",
@@ -40,6 +41,7 @@
     "replay_end_stops_automatically",
     "model_shares_current_snapshot_and_labels_synthetic",
     "model_has_207_unchanged_components",
+    "model_leaders_attach_to_label_edges",
     "model_focus_P0_sensor_envelope",
     "model_focus_labels_fit_P0_sensor_envelope",
     "model_focus_P1_sensor_envelope",
@@ -69,5 +71,5 @@
   ],
   "console_errors": [],
   "result": "passed",
-  "passed": 48
+  "passed": 50
 }
