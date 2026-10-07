@@ -29,12 +29,17 @@ def copy_licenses(folder):
     if python_license.is_file():
         (folder/'licenses/Python').mkdir(parents=True,exist_ok=True)
         shutil.copy2(python_license,folder/'licenses/Python/LICENSE.txt')
+    for name in ('LICENSE','NOTICE','provenance.json'):
+        destination=folder/'licenses/ECharts'/name
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(ROOT/'scripts/vendor/echarts'/name,destination)
 
 
 def main():
     if sys.platform != 'win32':
         raise SystemExit('请在 Windows x64 上构建桌面版。')
     subprocess.run([sys.executable,str(ROOT/'scripts/build_portal.py'),'--operations-only'],check=True,cwd=ROOT)
+    subprocess.run([sys.executable,str(ROOT/'scripts/build_bench_workspace.py')],check=True,cwd=ROOT)
     exe,digest = compile_bridge()
     target = ROOT/'desktop/bin'
     target.mkdir(parents=True,exist_ok=True)
@@ -52,12 +57,14 @@ def main():
     draw.ellipse((113,132,147,166),fill='#13584f')
     draw.line((130,163,151,184),fill='#13584f',width=10)
     image.save(ROOT/'desktop/app.ico',sizes=[(16,16),(24,24),(32,32),(48,48),(64,64),(128,128),(256,256)])
+    copy_licenses(ROOT/'desktop')
     subprocess.run([sys.executable,'-m','PyInstaller','--noconfirm',
         '--distpath',str(ROOT/'tmp/desktop_distribution'),'--workpath',str(ROOT/'tmp/desktop_build'),
         str(ROOT/'desktop/dizhiwei.spec')],check=True,cwd=ROOT)
-    folder=ROOT/'deliverables/滴智卫_桌面版_V1.2'
+    folder=ROOT/'deliverables/滴智卫_桌面版_V1.3'
     # Merge only program files; a user's data/ is never part of the build.
-    shutil.copytree(ROOT/'tmp/desktop_distribution/滴智卫_桌面版_V1.2',folder,dirs_exist_ok=True)
+    shutil.copytree(ROOT/'tmp/desktop_distribution/滴智卫_桌面版_V1.3',folder,dirs_exist_ok=True)
+    shutil.copy2(ROOT/'tmp/desktop_distribution/滴智卫_V1.3.exe',ROOT/'deliverables/滴智卫_V1.3.exe')
     shutil.copy2(ROOT/'docs/桌面版使用说明.md',folder/'使用说明.md')
     copy_licenses(folder)
     subprocess.run([sys.executable,'-m','pip','freeze'],check=True,stdout=(ROOT/'desktop/build-lock.txt').open('w',encoding='utf-8'))

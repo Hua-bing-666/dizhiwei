@@ -1,5 +1,5 @@
 {
-  "version": "V1.2",
+  "version": "V1.3",
   "groups": [{"id":"operation","label":"运行与核查"},{"id":"equipment","label":"设备与实验"},{"id":"records","label":"记录与配置"}],
   "pages": [
     {"id":"overview","group":"operation","label":"运行总览","eyebrow":"WORKSPACE","description":"从当前状态出发，安排支管核查与下一步工作。","icon":"overview","owner":"summary"},

@@ -16,10 +16,14 @@ def publish(manifest=None):
     if manifest is None:manifest=json.loads((OUT/'web_data.json').read_text(encoding='utf-8'))
     template=(ROOT/'scripts/workspace.template.html').read_text(encoding='utf-8')
     template=template.replace('__WORKSPACE_CONTRACT__',(ROOT/'application/config/workspace.json').read_text(encoding='utf-8'))
-    css=(ROOT/'scripts/platform_upgrade.css').read_text(encoding='utf-8')+'\n'+(ROOT/'scripts/workspace.css').read_text(encoding='utf-8')
+    css=(ROOT/'scripts/platform_upgrade.css').read_text(encoding='utf-8')+'\n'+(ROOT/'scripts/workspace.css').read_text(encoding='utf-8')+'\n'+(ROOT/'scripts/desktop_experience.css').read_text(encoding='utf-8')
     js=(ROOT/'scripts/platform_upgrade.js').read_text(encoding='utf-8').replace('/* WORKSPACE_VIEWS */',(ROOT/'scripts/workspace_views.js').read_text(encoding='utf-8'))
-    html=template.replace('__PLATFORM_DATA__',dump(manifest).replace('</','<\\/')).replace('__PLATFORM_CSS__',css).replace('__PLATFORM_JS__',js)
-    (ROOT/'deliverables/index.html').write_text(html,encoding='utf-8',newline='\n')
+    js=js.replace('/* DESKTOP_EXPERIENCE */',(ROOT/'scripts/desktop_experience.js').read_text(encoding='utf-8'))
+    html=template.replace('__CHART_LIBRARY__',(ROOT/'scripts/vendor/echarts/echarts.min.js').read_text(encoding='utf-8')).replace('__PLATFORM_DATA__',dump(manifest).replace('</','<\\/')).replace('__PLATFORM_CSS__',css).replace('__PLATFORM_JS__',js)
+    import os
+    pending=ROOT/'deliverables/index.pending.html'
+    pending.write_text(html,encoding='utf-8',newline='\n')
+    os.replace(pending,ROOT/'deliverables/index.html')
 
 def main():
     exe,digest=compile_bridge();traces={};checks=[]

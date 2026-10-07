@@ -57,6 +57,10 @@ elif action=='save':
     user.SendMessageW(edit['hwnd'],0xC,0,ctypes.cast(name,ctypes.c_void_p).value)
     user.PostMessageW(dialog['hwnd'],0x111,1,0)
     print('Save confirmed')
+elif action=='cancel':
+    dialog=next(r for r in rows if r['cls']=='#32770')
+    user.PostMessageW(dialog['hwnd'],0x111,2,0)
+    print('Cancel posted')
 elif action=='screen':
     from PIL import ImageGrab
     main=next(r for r in rows if r['title'].startswith('滴智卫 ·'))

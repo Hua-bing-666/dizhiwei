@@ -12,7 +12,7 @@ import tempfile
 
 ROOT = Path(sys._MEIPASS) if getattr(sys, 'frozen', False) else Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT/'scripts'), str(ROOT/'prototype'), str(ROOT/'simulation')]
-TITLE = '滴智卫 · 支管巡检平台 V1.2'
+TITLE = '滴智卫 · 支管巡检平台 V1.3'
 
 
 def message(text, error=False):
@@ -67,7 +67,7 @@ class LocalService:
             self.http = create_server(0, self.folder/'operations.sqlite')
             self.url = f'http://127.0.0.1:{self.http.server_port}'
             (self.folder/'runtime.json').write_text(json.dumps(dict(
-                pid=os.getpid(), url=self.url, version='1.2.0', database=str(self.folder/'operations.sqlite')
+                pid=os.getpid(), url=self.url, version='1.3.0', database=str(self.folder/'operations.sqlite')
             ), ensure_ascii=False), encoding='utf-8')
             logging.info('Service ready: %s', self.url)
             self.ready.set()
@@ -100,8 +100,38 @@ class LocalService:
 
 
 class DesktopAPI:
-    def __init__(self):
+    def __init__(self, folder):
         self._window = None
+        self._folder = folder
+        self._preferences_lock = threading.Lock()
+
+    def read_preferences(self):
+        with self._preferences_lock:
+            return self._read_preferences()
+
+    def _read_preferences(self):
+        result=dict(theme='light',chart_range=180)
+        try:
+            stored=json.loads((self._folder/'preferences.json').read_text(encoding='utf-8'))
+            if stored.get('theme') in ('light','dark'):result['theme']=stored['theme']
+            if type(stored.get('chart_range')) is int and stored['chart_range'] in (0,180,600):result['chart_range']=stored['chart_range']
+        except (OSError,ValueError,AttributeError):pass
+        return result
+
+    def save_preferences(self, values):
+        if not isinstance(values,dict) or set(values)-{'theme','chart_range'}:
+            raise ValueError('偏好参数无效。')
+        if 'theme' in values and values['theme'] not in ('light','dark'):
+            raise ValueError('配色参数无效。')
+        if 'chart_range' in values and (type(values['chart_range']) is not int or values['chart_range'] not in (0,180,600)):
+            raise ValueError('曲线范围无效。')
+        with self._preferences_lock:
+            result={**self._read_preferences(),**values}
+            target=self._folder/'preferences.json'
+            temporary=target.with_suffix('.tmp')
+            temporary.write_text(json.dumps(result,ensure_ascii=False),encoding='utf-8')
+            os.replace(temporary,target)
+        return result
 
     def save_export(self, name, text):
         """Native save dialog: consecutive exports are not browser downloads."""
@@ -141,10 +171,13 @@ def main():
         user.FindWindowW.argtypes = [wintypes.LPCWSTR, wintypes.LPCWSTR]
         user.FindWindowW.restype = wintypes.HWND
         user.ShowWindow.argtypes = [wintypes.HWND, ctypes.c_int]
+        user.IsIconic.argtypes = [wintypes.HWND]
+        user.IsIconic.restype = wintypes.BOOL
         user.SetForegroundWindow.argtypes = [wintypes.HWND]
         handle = user.FindWindowW(None, TITLE)
         if handle:
-            user.ShowWindow(handle, 9)
+            if user.IsIconic(handle):
+                user.ShowWindow(handle, 9)
             user.SetForegroundWindow(handle)
         instance.close()
         return
@@ -154,12 +187,12 @@ def main():
                         format='%(asctime)s %(levelname)s %(message)s')
     service = LocalService(folder)
     try:
-        logging.info('Desktop 1.2.0 starting; data=%s', folder)
+        logging.info('Desktop 1.3.0 starting; data=%s', folder)
         service.start()
         import webview
         from webview.menu import Menu, MenuAction, MenuSeparator
         webview.settings['OPEN_DEVTOOLS_IN_DEBUG'] = False
-        api=DesktopAPI()
+        api=DesktopAPI(folder)
         window = webview.create_window(TITLE, service.url+'/?desktop=1',
                                        width=1100, height=740, min_size=(760, 520),
                                        maximized=True, js_api=api,
@@ -169,7 +202,7 @@ def main():
             MenuAction('打开数据文件夹', lambda: os.startfile(str(folder))),
             MenuSeparator(), MenuAction('退出', window.destroy)
         ]), Menu('帮助', [MenuAction('关于滴智卫', lambda: message(
-            '滴智卫 · 支管巡检平台\n版本 1.2.0\n\n'
+            '滴智卫 · 支管巡检平台\n版本 1.3.0\n\n'
             'C 诊断核心 / 本地 SQLite / 清水试验台架模型\n'
             '当前使用合成数据与软件回放，未接入实物传感器或无线设备。\n\n'
             f'数据目录：{folder}\n关闭程序后，记录仍保留在本机。'

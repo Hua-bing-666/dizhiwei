@@ -4,7 +4,7 @@ import path from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
 import crypto from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const scratch=path.join(root,'tmp','platform-browser-'+crypto.randomUUID()),out=path.join(root,'deliverables','运行平台V1.2验收预览');await mkdir(scratch,{recursive:true});await mkdir(out,{recursive:true});
+const scratch=path.join(root,'tmp','platform-browser-'+crypto.randomUUID()),out=path.join(root,'deliverables','运行平台V1.3验收预览');await mkdir(scratch,{recursive:true});await mkdir(out,{recursive:true});
 const profile=path.join(scratch,'edge'),downloads=path.join(scratch,'downloads');await mkdir(downloads);
 const python=path.join(root,'tmp/cad_runtime/Scripts/python.exe'),port=18765;
 const service=spawn(python,[path.join(root,'scripts/run_platform.py'),'--port',String(port),'--db',path.join(scratch,'test.sqlite')],{windowsHide:true,stdio:'pipe'});
@@ -36,7 +36,7 @@ try{
  await check('pages_have_unique_primary_function',`(()=>{const tests={overview:()=>!document.querySelector('.chart')&&!document.querySelector('table'),monitor:()=>!!document.querySelector('.chart')&&!document.querySelector('#research-scene')&&!document.querySelector('#model-load'),events:()=>!!document.querySelector('[data-filter]')&&!document.querySelector('.chart'),devices:()=>document.querySelector('[data-owner="connectivity"]')&&!document.querySelector('#commands'),experiments:()=>!!document.querySelector('#research-scene')&&!!document.querySelector('#calibration-csv')&&!document.querySelector('#model-load'),bench:()=>!!document.querySelector('#model-load')&&!!document.querySelector('#commands')&&!document.querySelector('.chart'),history:()=>!!document.querySelector('#export-csv')&&!document.querySelector('#event-form').closest('#page-body'),settings:()=>!!document.querySelector('[data-owner="configuration"]')&&!document.querySelector('#calibration-csv')&&!document.querySelector('#commands')};return Object.entries(tests).every(([p,f])=>{platform.navigate(p);return !!f()&&document.querySelectorAll('#page-body [data-owner]').length>0;});})()`);
  await check('single_shared_replay_controller',`document.querySelectorAll('#replay-panel').length===1&&document.querySelectorAll('#scene').length===1`);
  await send('Emulation.setDeviceMetricsOverride',{width:375,height:720,deviceScaleFactor:1,mobile:false});
- await evaluate("platform.navigate('experiments');window.scrollTo(0,0)");await delay(150);
+ await send('Page.navigate',{url:'about:blank'});await delay(100);await ready(pathToFileURL(path.join(root,'deliverables/index.html')).href+'#experiments','platformReady');await evaluate('window.scrollTo(0,0)');await delay(150);
  await check('scroll_reveal_static_content_initially_pending',`document.querySelectorAll('[data-reveal].reveal-ready:not(.is-visible)').length>0`);
  await evaluate("document.querySelector('[data-reveal]').scrollIntoView({block:'center'})");await delay(500);
  await check('scroll_reveal_displays_content_when_visible',`document.querySelector('[data-reveal]').classList.contains('is-visible')&&getComputedStyle(document.querySelector('[data-reveal]')).opacity==='1'`);
@@ -44,7 +44,7 @@ try{
  await check('reduced_motion_keeps_content_visible',`[...document.querySelectorAll('.reveal-ready')].every(x=>getComputedStyle(x).opacity==='1'&&getComputedStyle(x).transform==='none')`);
  await send('Emulation.setEmulatedMedia',{features:[]});
  await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1050,deviceScaleFactor:1,mobile:false});await evaluate('window.scrollTo(0,0)');
- await check('missing_reading_null_not_zero_and_chart_break',`(()=>{platform.setReplay({scene:'missing',cursor:362});platform.navigate('monitor');return platform.current().p1===null&&platform.current().status===3&&document.getElementById('page-body').textContent.includes('暂停原因判断')&&document.querySelector('#pressure-chart path').getAttribute('d').includes('M');})()`);
+ await check('missing_reading_null_not_zero_and_chart_break',`(()=>{platform.setReplay({scene:'missing',cursor:362});platform.navigate('monitor');return platform.current().p1===null&&platform.current().status===3&&document.getElementById('page-body').textContent.includes('暂停原因判断')&&platform.chartSummary('pressure-chart').series.every(s=>s.connectNulls===false&&s.data.some(([t,v])=>t===362&&v===null));})()`);
  await check('offline_archive_requires_view',`(()=>{platform.setReplay({scene:'leak',cursor:450});const e=platform.events().find(e=>e.code>=4);platform.openEvent(e.id);document.getElementById('event-stage').value='archived';document.getElementById('event-note').value='test';document.getElementById('event-form').requestSubmit();return document.getElementById('event-message').textContent.includes('先记录');})()`);
  const frozen=await evaluate('JSON.stringify(platform.events().find(e=>e.code>=4).snapshot)');
  await evaluate(`document.getElementById('event-stage').value='viewed';document.getElementById('event-note').value='<img src=x onerror=alert(1)> fixture';document.getElementById('event-form').requestSubmit();`);
