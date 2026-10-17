@@ -4,13 +4,13 @@ No MCU, serial driver, RF, or physical valve success is claimed. Receiver frames
 are durable before ACK. Synthetic cursor time is deliberately not wall time.
 """
 from pathlib import Path
-import hashlib, json, math, shutil, subprocess, sys, time, uuid
+import csv, hashlib, io, json, math, shutil, subprocess, sys, time, uuid
 from dataclasses import asdict
 ROOT = Path(sys._MEIPASS) if getattr(sys,'frozen',False) else Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'simulation'))
 sys.path.insert(0, str(ROOT/'prototype'))
 from acquisition_pipeline import AcquisitionPipeline
-from acquisition_timing import PressureRead
+from acquisition_timing import PressureRead, nominal_schedule
 from compact_protocol import Frame, Snapshot, SAMPLE, EVENT, TELEMETRY, MISSING, decode
 from session_transport import SessionReceiver
 from control_simulation import DemoController, Command
@@ -172,8 +172,83 @@ class Platform:
                                snapshot=display_snapshot(snap),transport='SQLite committed; host ACK, not RF receipt',notes=notes,
                                stage=notes[-1]['stage'] if notes else 'open'))
         return result
-    def annotate(self,event_id,stage,note,proof=''):
-        if stage not in ('viewed','pending_recheck','needs_check','archived'):raise ValueError('未知核查状态')
+    def import_sdcard(self, csv_text, label='SD card import'):
+        """把节点 SD 卡 CSV 导入本地平台，生成一个可查看的会话。
+
+        当前实现：
+        - 用默认合成健康参照作为候选配置（approved=0，须独立标定后才能当真）；
+        - 从 q_milli 反推近似累计脉冲，逐秒送入 C 诊断桥；
+        - 质量非 OK 的行以 NaN 压力传入，标记为测量异常。
+        """
+        if not isinstance(csv_text, str) or not csv_text.strip():
+            raise ValueError('CSV 内容为空')
+        reader = csv.DictReader(io.StringIO(csv_text.strip()))
+        required = ['seq','unix_ms','p0_centi','p1_centi','dp_centi','q_milli','count10','quality']
+        if not reader.fieldnames or any(k not in reader.fieldnames for k in required):
+            raise ValueError('表头须包含 ' + ','.join(required))
+        int_fields = {'seq','unix_ms','p0_centi','p1_centi','dp_centi','q_milli','count10','quality','zq_milli','zr_milli','sq_milli','alarm'}
+        rows = []
+        for lineno, r in enumerate(reader, 2):
+            try:
+                rows.append({k: int(r[k]) if k in int_fields and r[k].strip() else r[k] for k in reader.fieldnames})
+            except (ValueError, KeyError) as e:
+                raise ValueError(f'第 {lineno} 行解析失败：{e}')
+        if len(rows) < 10:
+            raise ValueError('至少需要 10 行数据')
+        rows.sort(key=lambda r: r['seq'])
+
+        # 候选配置：未经验证的健康参照
+        profile = reference_profile(.3)
+        profile['approved'] = 0
+        if self.pipeline:
+            self.pipeline.close()
+
+        session = self.db.execute('SELECT COALESCE(MAX(session),0)+1 FROM platform_runs').fetchone()[0]
+        now_ms = int(time.time() * 1000)
+        manifest = dict(version=VERSION, scene='sdcard_import', sigma=.3,
+                        synthetic=False, physical_data=True,
+                        c_sha256=self.digest, profile=profile,
+                        healthy_reference_approved=False,
+                        approval_evidence='SD card CSV imported into host pipeline for inspection only; healthy reference not independently approved',
+                        clock='unix_ms_from_sdcard_with_host_import_uncertainty',
+                        transport='sdcard_csv_import', label=label,
+                        imported_rows=len(rows), created_ms=now_ms)
+        self.receiver.register(1, session, 1, dict(synthetic=False, healthy_reference_approved=False, profile=profile))
+        self.receiver.register_time_mapping(1, session, now_ms - rows[-1]['unix_ms'], 1000,
+                                            'SD card unix_ms mapped to host received_ms; ~1 s digitisation uncertainty')
+        with self.db:
+            self.db.execute('INSERT INTO platform_runs VALUES(?,?)', (session, dump(manifest)))
+        self.run = dict(session=session, **manifest)
+        self.trace = (None, None)
+        self.seq = 0
+        self.pipeline = AcquisitionPipeline(profile, self.exe, config_id=session, reference_id=1, synthetic=False)
+
+        cumulative = 0
+        for r in rows:
+            seq = r['seq']
+            endpoint = (seq + 1) * 1000
+            q_lpm = r['q_milli'] / 1000.0
+            # 由 10 s 平均流量反推每秒脉冲，再累加为累计脉冲
+            per_sec = q_lpm / 60.0 * 540
+            cumulative += per_sec
+            count = int(round(cumulative))
+            if r['quality'] == 0:
+                reads = [PressureRead(endpoint - 30, endpoint - 20, r['p0_centi'] / 100.0),
+                         PressureRead(endpoint - 18, endpoint - 8, r['p1_centi'] / 100.0)]
+            else:
+                reads = [PressureRead(endpoint - 30, endpoint - 20, float('nan')),
+                         PressureRead(endpoint - 18, endpoint - 8, float('nan'))]
+            self.ingest_raw(seq, count, endpoint, reads)
+
+        # 刷新 manifest，写入实际处理信息
+        manifest['processed_samples'] = self.pipeline.clock + 1 if self.pipeline else 0
+        manifest['events_count'] = len(self.events(session))
+        with self.db:
+            self.db.execute('UPDATE platform_runs SET manifest=? WHERE session=?', (dump(manifest), session))
+        self.run = dict(session=session, **manifest)
+        return self.state()
+
+    def annotate(self, event_id, stage, note, proof=''):
         note=note.strip()
         if not note or len(note)>2000:raise ValueError('填写 1—2000 字核查依据')
         event=next((e for e in self.events() if e['id']==event_id),None)

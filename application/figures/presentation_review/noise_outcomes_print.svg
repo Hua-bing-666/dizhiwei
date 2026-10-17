@@ -679,7 +679,7 @@ L 593.64 457.56
    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei', sans-serif; text-anchor: start" x="24.48" y="36.82395" transform="rotate(-0 24.48 36.82395)">种子统计：如实保留失败与方法差异</text>
   </g>
   <g id="text_42">
-   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', sans-serif; text-anchor: start; fill: #59666c" x="24.48" y="61.565963" transform="rotate(-0 24.48 61.565963)">480个噪声试次；每场景、每σ20个种子，同一试次比较两条固定规则。</text>
+   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', sans-serif; text-anchor: start; fill: #59666c" x="24.48" y="61.565963" transform="rotate(-0 24.48 61.565963)">每场景、每 σ 20 个种子</text>
   </g>
   <g id="text_43">
    <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', sans-serif; fill: #59666c" transform="translate(24.48 540.932625)">柱为有效早期次数/20；误差线为噪声模型内的Wilson95%区间。</text>

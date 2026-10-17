@@ -15,14 +15,16 @@
     },
     {
       "name": "water_layout",
-      "source": "application/figures/presentation_review/water_layout.svg",
-      "source_sha256": "7a171684ae82a78f0e65ddb671a2f3407731ea01e74414ddcaf1c0e1f9471707",
+      "source": "application/figures/compact_layout/water_layout.svg",
+      "source_sha256": "ac66cf7ee8b3475ea53ee0efe9597010ee8216a11c1b9ee0ec9860cadbbd8423",
       "svg": "application/figures/quality_review/water_layout.svg",
-      "svg_sha256": "18f9e86d4bf1ddfebfe79bc41ec9e3108e00d74937625dc01e3f95a3cdc8aad0",
+      "svg_sha256": "ac66cf7ee8b3475ea53ee0efe9597010ee8216a11c1b9ee0ec9860cadbbd8423",
       "width": 1000.0,
       "major_font_lower_bound_pt_at_420pt": 10.08,
       "data_modified": false,
-      "geometry_modified": false
+      "geometry_modified": false,
+      "date_note": "2026-10-17 水路顺序修正：流量计移至最上游（冻结契约）",
+      "note": "2026-10-17 水路顺序修正：流量计移至最上游（冻结契约）"
     },
     {
       "name": "collection_overview",

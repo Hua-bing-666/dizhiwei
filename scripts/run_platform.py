@@ -44,14 +44,17 @@ def create_server(port, db):
             if not self.allowed():return self.reply({'error':'拒绝跨来源写入'},403)
             try:
                 size=int(self.headers.get('Content-Length','0'))
-                if not 0<size<=16384:raise ValueError('请求体大小无效')
-                obj=json.loads(self.rfile.read(size));route=urlsplit(self.path).path
+                route=urlsplit(self.path).path
+                max_size=2*1024*1024 if route=='/api/sdcard/import' else 16384
+                if not 0<size<=max_size:raise ValueError('请求体大小无效')
+                obj=json.loads(self.rfile.read(size))
                 if not isinstance(obj,dict):raise ValueError('请求必须是 JSON 对象')
                 if route=='/api/replay/start':result=platform.start(obj.get('scene','leak'),obj.get('sigma',.3))
                 elif route=='/api/replay/step':result=platform.step(obj.get('n',1))
                 elif route=='/api/events/note':result=platform.annotate(obj['id'],obj['stage'],obj['note'],obj.get('proof',''))
                 elif route=='/api/control':result=platform.command(obj['action'],obj.get('id'))
                 elif route=='/api/reference/fit':result=fit_reference(obj['csv'])
+                elif route=='/api/sdcard/import':result=platform.import_sdcard(obj.get('csv',''),obj.get('label','SD card import'))
                 elif route=='/api/wire':
                     ack=platform.ingest_wire(bytes.fromhex(obj['hex']),obj['now_ms']);result=dict(ack_hex=ack.hex(),committed=True,rf_verified=False)
                 elif route=='/api/raw':

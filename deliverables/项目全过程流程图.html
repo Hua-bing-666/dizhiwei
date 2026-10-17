@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>滴智卫 · 项目全过程流程图</title>
+<style>
+  :root{
+    --ink:#1f2937; --muted:#6b7280; --line:#d1d5db;
+    --blue:#1d4ed8; --blue-bg:#eff6ff; --blue-line:#93c5fd;
+    --green:#047857; --green-bg:#ecfdf5; --green-line:#6ee7b7;
+    --amber:#b45309; --amber-bg:#fffbeb; --amber-line:#fcd34d;
+    --red:#b91c1c; --red-bg:#fef2f2; --red-line:#fca5a5;
+    --purple:#6d28d9; --purple-bg:#f5f3ff; --purple-line:#c4b5fd;
+    --gray-bg:#f3f4f6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif;
+    color:var(--ink); background:#f8fafc; line-height:1.55;
+    padding:32px 24px 64px;
+  }
+  .page{max-width:1180px; margin:0 auto;}
+  header{ text-align:center; margin-bottom:28px;}
+  header h1{font-size:26px; letter-spacing:1px;}
+  header h1 span{color:var(--blue);}
+  header .sub{color:var(--muted); font-size:13px; margin-top:6px;}
+  header .meta{display:inline-flex; gap:16px; margin-top:10px; font-size:12px; color:var(--muted);
+    background:#fff; border:1px solid var(--line); border-radius:20px; padding:5px 18px;}
+
+  section{ background:#fff; border:1px solid var(--line); border-radius:12px;
+    padding:22px 24px; margin-bottom:26px; box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  section > h2{ font-size:17px; display:flex; align-items:center; gap:10px; margin-bottom:4px;}
+  section > h2 .no{ background:var(--blue); color:#fff; border-radius:6px; font-size:13px;
+    padding:2px 9px; font-weight:600;}
+  section > .desc{ color:var(--muted); font-size:12.5px; margin-bottom:16px; padding-left:2px;}
+
+  /* ---------- 通用流程节点 ---------- */
+  .flow{ display:flex; flex-direction:column; align-items:center; }
+  .frow{ display:flex; align-items:stretch; gap:10px; justify-content:center; flex-wrap:wrap;}
+  .step{ border:1.5px solid var(--blue-line); background:var(--blue-bg); color:var(--blue);
+    border-radius:8px; padding:8px 12px; font-size:13px; font-weight:600; text-align:center;
+    min-width:120px; display:flex; flex-direction:column; justify-content:center;}
+  .step small{ font-weight:400; font-size:11px; color:var(--muted); margin-top:2px;}
+  .step.g{ border-color:var(--green-line); background:var(--green-bg); color:var(--green);}
+  .step.a{ border-color:var(--amber-line); background:var(--amber-bg); color:var(--amber);}
+  .step.r{ border-color:var(--red-line); background:var(--red-bg); color:var(--red);}
+  .step.p{ border-color:var(--purple-line); background:var(--purple-bg); color:var(--purple);}
+  .step.gray{ border-color:var(--line); background:var(--gray-bg); color:var(--ink);}
+  .step.start{ border-radius:24px;}
+  .step.end{ border-radius:8px; border-width:2.5px;}
+  .gate{ background:#fff; border:2px solid var(--amber); color:var(--amber); border-radius:10px;
+    padding:10px 16px; font-size:13px; font-weight:700; text-align:center; min-width:180px;}
+  .gate small{ display:block; font-weight:400; font-size:11px; color:var(--muted); margin-top:3px;}
+  .arrow{ color:#94a3b8; font-size:18px; line-height:1; display:flex; align-items:center; justify-content:center;
+    padding:4px 0;}
+  .arrow.h{ padding:0 2px;}
+  .arrow .lbl{ font-size:11px; color:var(--muted); margin-right:4px;}
+
+  /* ---------- 泳道总览 ---------- */
+  .lanes{ overflow-x:auto; border:1px solid var(--line); border-radius:10px;}
+  .lane-grid{ display:grid; grid-template-columns:130px repeat(5,1fr); min-width:980px;}
+  .lane-grid > div{ border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:7px 8px; font-size:12px; position:relative;}
+  .lane-grid > div:nth-child(6n){ border-right:none;}
+  .lane-head{ background:var(--gray-bg); font-weight:700; font-size:12.5px;
+    display:flex; align-items:center;}
+  .time-head{ background:#eef2ff; color:var(--blue); font-weight:700; text-align:center; font-size:12px;}
+  .time-head small{ display:block; font-weight:400; color:var(--muted);}
+  .cell b{ display:block; font-size:12.5px;}
+  .cell i{ font-style:normal; color:var(--muted); font-size:11px;}
+  .cell{ background:#fff;}
+  .cell.hl{ background:var(--blue-bg);}
+  .cell.hl-g{ background:var(--green-bg);}
+  .cell.hl-a{ background:var(--amber-bg);}
+  .cell.hl-r{ background:var(--red-bg);}
+
+  /* ---------- 阶段头带 ---------- */
+  .phase-bar{ display:flex; align-items:center; gap:12px; margin:6px 0 14px;}
+  .phase-bar .tag{ background:var(--blue); color:#fff; border-radius:6px; padding:3px 12px;
+    font-size:13px; font-weight:700; white-space:nowrap;}
+  .phase-bar .tag.g{background:var(--green);} .phase-bar .tag.a{background:var(--amber);}
+  .phase-bar .tag.r{background:var(--red);} .phase-bar .tag.p{background:var(--purple);}
+  .phase-bar .time{ color:var(--muted); font-size:12px; white-space:nowrap;}
+  .phase-bar .rule{ flex:1; border-top:1.5px dashed var(--line);}
+
+  /* ---------- 两栏布局 ---------- */
+  .cols{ display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap;}
+  .col{ flex:1; min-width:300px;}
+  .col h3{ font-size:13.5px; margin-bottom:10px; padding-left:9px; border-left:4px solid var(--blue);}
+  .col h3.g{border-color:var(--green);} .col h3.a{border-color:var(--amber);}
+  .col h3.r{border-color:var(--red);} .col h3.p{border-color:var(--purple);}
+
+  .list{ list-style:none;}
+  .list li{ font-size:12.5px; padding:5px 0 5px 24px; position:relative; border-bottom:1px dashed #e5e7eb;}
+  .list li:last-child{border-bottom:none;}
+  .list li::before{ content:"▸"; position:absolute; left:8px; color:var(--blue);}
+  .list.done li::before{ content:"✓"; color:var(--green); font-weight:700;}
+  .list.todo li::before{ content:"□"; color:var(--amber); font-weight:700;}
+  .list li b{ font-weight:700;}
+
+  /* ---------- 表格 ---------- */
+  table{ width:100%; border-collapse:collapse; font-size:12.5px;}
+  th{ background:var(--gray-bg); font-weight:700; padding:7px 9px; border:1px solid var(--line); text-align:left;}
+  td{ padding:6px 9px; border:1px solid var(--line); vertical-align:top;}
+  td.c, th.c{text-align:center;}
+  .ok{ color:var(--green); font-weight:700;}
+  .warn{ color:var(--amber); font-weight:700;}
+  .bad{ color:var(--red); font-weight:700;}
+
+  /* ---------- 算法流水线 ---------- */
+  .pipe{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center;}
+  .pipe .step{ min-width:104px; font-size:12.5px;}
+
+  /* ---------- 图例 ---------- */
+  .legend{ display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--muted);
+    padding:10px 2px 0;}
+  .legend span{ display:inline-flex; align-items:center; gap:5px;}
+  .dot{ width:12px; height:12px; border-radius:3px; display:inline-block; border:1.5px solid;}
+
+  footer{ text-align:center; color:var(--muted); font-size:12px; margin-top:8px;}
+  @media print{
+    body{background:#fff; padding:0;}
+    section{ box-shadow:none; break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>滴智卫 · <span>基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统</span></h1>
+  <div class="sub">项目全过程流程图 —— 从申报筹备到结项归档的全链路视图</div>
+  <div class="meta">
+    <span>项目周期：2026.10 — 2028.2</span>
+    <span>阶段门槛体系：G1–G4</span>
+    <span>依据：申报书正式稿4 · 汇报提纲 · 仓库验收记录</span>
+    <span>版本：v1.0 · 2026-10-14</span>
+  </div>
+</header>
+
+<!-- ══════════════ ① 总览泳道 ══════════════ -->
+<section>
+  <h2><span class="no">①</span>全过程总览：三线并行 × 五个时段</h2>
+  <div class="desc">科研管理、技术实现、实验验证三条主线并行推进；每个时段结束时按对应门槛核验，不达标即触发预案（见⑧）。</div>
+  <div class="lanes">
+    <div class="lane-grid">
+      <div class="lane-head">时段</div>
+      <div class="time-head">筹备与学习<small>2026.10 – 2027.2</small></div>
+      <div class="time-head">G1 测量可行<small>2027.3 – 4</small></div>
+      <div class="time-head">G2 独立诊断<small>2027.5 – 6</small></div>
+      <div class="time-head">G3 无线与联调<small>2027.7 – 8</small></div>
+      <div class="time-head">G4 论文与结项<small>2027.9 – 2028.2</small></div>
+
+      <div class="lane-head">科研管理线</div>
+      <div class="cell hl"><b>申报书定稿</b><i>导师拍板 3 件事：故障定义 / 早期判据 / 论文方向 A·B</i></div>
+      <div class="cell"><b>立项答辩</b><i>国家级 / 省级口径确认</i></div>
+      <div class="cell"><b>开题归档</b><i>操作标签规范确立</i></div>
+      <div class="cell"><b>中期检查</b><i>G1–G2 证据自查</i></div>
+      <div class="cell"><b>结项答辩</b><i>原型+数据+报告，不押论文</i></div>
+
+      <div class="lane-head">技术实现线</div>
+      <div class="cell hl-a"><b>C / STM32 突击</b><i>定时器·ADC·脉冲计数·低功耗（已有整数 C 内核 216 轨迹验证）</i></div>
+      <div class="cell"><b>器件选型采购</b><i>焊接待测节点 + 有线采集固件</i></div>
+      <div class="cell"><b>诊断移植上机</b><i>10s 主窗×5 次确认 / 3s 短窗×2 次提示</i></div>
+      <div class="cell"><b>真实射频联调</b><i>57B 事件 / 55B 遥测 / 24B ACK + 整机电流实测</i></div>
+      <div class="cell"><b>版本冻结</b><i>八页面平台封版 → 软著材料</i></div>
+
+      <div class="lane-head">实验验证线</div>
+      <div class="cell hl-g"><b>台架加工</b><i>207 构件概念模型 → 实体搭建</i></div>
+      <div class="cell hl-g"><b>独立参考标定</b><i>差压不确定度 = 第一道生死关</i></div>
+      <div class="cell"><b>故障注入矩阵</b><i>54 主故障 + 18 正常干扰 + 12 切换期</i></div>
+      <div class="cell"><b>扰动三组对照</b><i>上游瞬态 / B 端堵塞 / 首部干管参照</i></div>
+      <div class="cell"><b>留出批次验证</b><i>边界补实验 → 论文数据包</i></div>
+    </div>
+  </div>
+  <div class="legend">
+    <span><span class="dot" style="border-color:var(--blue-line);background:var(--blue-bg)"></span>当前时段重点</span>
+    <span><span class="dot" style="border-color:var(--amber-line);background:var(--amber-bg)"></span>能力建设</span>
+    <span><span class="dot" style="border-color:var(--green-line);background:var(--green-bg)"></span>实物验证</span>
+    <span><span class="dot" style="border-color:var(--red-line);background:var(--red-bg)"></span>风险高发</span>
+  </div>
+</section>
+
+<!-- ══════════════ ② 申报阶段 ══════════════ -->
+<section>
+  <h2><span class="no">②</span>阶段〇：申报筹备（现在 → 2027.2 立项）</h2>
+  <div class="desc">目标：把「设计文件 + 仿真 + 软件演示」的现有基础转化为立项资格，同时补齐能力短板。</div>
+
+  <div class="phase-bar"><span class="tag a">学习窗口</span><span class="time">2026.11 – 2027.2（唯一完整学习期，错过即压缩 G1）</span><div class="rule"></div></div>
+  <div class="flow">
+    <div class="frow">
+      <div class="step a">C 语言强化<small>指针 / 定点运算</small></div>
+      <div class="arrow h">→</div>
+      <div class="step a">STM32 外设<small>定时器 / ADC / 脉冲计数</small></div>
+      <div class="arrow h">→</div>
+      <div class="step a">I²C·SPI·USART<small>ADS1115 / microSD / E220</small></div>
+      <div class="arrow h">→</div>
+      <div class="step a">低功耗与看门狗<small>掉电恢复 / 日志缓存</small></div>
+      <div class="arrow h">→</div>
+      <div class="step gray">里程碑：2027.2 末<br>独立写出有线采集程序</div>
+    </div>
+  </div>
+  <div class="arrow">↓ 不达标 → 请老师加嵌入式队友 / 树莓派过渡</div>
+
+  <div class="cols" style="margin-top:14px">
+    <div class="col">
+      <h3>已完成基础（可展示证据）</h3>
+      <ul class="list done">
+        <li><b>20 页申报书</b>：10 图、3 表、8 文献、11 原生公式</li>
+        <li><b>整数诊断 C 内核</b>：216 条轨迹、130,896 次更新与浮点参考零差异</li>
+        <li><b>通信协议</b>：1,429 条编解码记录、456 次单比特破坏全检出</li>
+        <li><b>桌面 V1.3 EXE + 八页面平台</b>：离线回放可演示、重启恢复</li>
+        <li><b>三维台架</b>：207 概念构件、A 支路 1.85–4.34 L/min 量程分析</li>
+        <li><b>仿真体系</b>：480 合成试次 + 432 组分级采集 + 72 组未见工况</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3 class="a">待办（按优先级）</h3>
+      <ul class="list todo">
+        <li><b>导师汇报</b>：故障定义、"早期"判据、论文 A/B 方向三件事拍板</li>
+        <li><b>口径确认</b>：国家级 vs 省级；12000 元预算依据；推免加分认定</li>
+        <li><b>资源落实</b>：水路场地、参考仪表（高一级精度）、田块联系人</li>
+        <li><b>行政字段</b>：成员分工表（≤5 人）、导师信息、起止时间</li>
+        <li><b>表述校准</b>：申报书"已系统学习 STM32"改为"正在系统学习"，与汇报诚实口径一致</li>
+        <li><b>团队补齐</b>：视 11 月学习进度决定是否引入嵌入式队友</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ③ G1 ══════════════ -->
+<section>
+  <h2><span class="no">③</span>阶段 G1：测量可行（2027.3 – 4）——第一道生死关</h2>
+  <div class="desc">核心问题：两只 ±0.25%FS 传感器（单路 ±0.5 kPa、差压最不利 ±1 kPa）到底测不测得出 5% 故障信号？此关不过，后面全部免谈。</div>
+
+  <div class="flow">
+    <div class="frow">
+      <div class="step start">器件到货验收</div>
+      <div class="arrow h">→</div>
+      <div class="step">单体通电测试<small>压力 / 流量各自检查</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">独立参考标定<small>借高一级精度标准表</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">有线采集日志<small>microSD + 串口双通道</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">差压不确定度计算<small>重复批次统计</small></div>
+      <div class="arrow h">→</div>
+      <div class="gate">不确定度<br>vs 5% 故障信号
+        <small>判定准则见下分支</small></div>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="frow">
+      <div class="col" style="min-width:260px">
+        <div class="step g end" style="width:100%">✓ 测得出 → 维持 5% / 10% / 15% 三档目标，进入 G2</div>
+      </div>
+      <div class="col" style="min-width:420px">
+        <div class="step r end" style="width:100%">✗ 测不出 → 三选一预案：
+          <small>① 故障目标从 5% 退到 10%（零成本）；② 换 ±0.1%FS 传感器（预算 +400 元）；③ 改测点布点 / 更大管径支管</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table style="margin-top:14px">
+    <tr><th style="width:30%">G1 阶段验收标准</th><td>原始读数完整、量程与误差明确、目标故障幅值可测且可重复；标定曲线 + 不确定度报告归档</td></tr>
+    <tr><th>硬门槛</th><td>差压不确定度必须 < 目标故障信号，<span class="bad">绝不硬上</span>——达不到就启用右侧预案，不允许带着测不准的传感器进入 G2</td></tr>
+  </table>
+</section>
+
+<!-- ══════════════ ④ G2 ══════════════ -->
+<section>
+  <h2><span class="no">④</span>阶段 G2：独立诊断（2027.5 – 6）——判据从这里冻结</h2>
+  <div class="desc">在 A/B 双支路台架上完成主故障矩阵 + 正常干扰对照，操作标签独立记录；本阶段结束判据版本冻结，G3/G4 只做验证不再改判据。</div>
+
+  <div class="flow">
+    <div class="frow">
+      <div class="step start">健康基线采集<small>第 20–119 s 中位数标定 Q_ref、R₀，之后冻结</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">故障注入<small>旁路放水 = 等效泄漏；节流阀 = 等效受限</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">对照干扰<small>B 支路开关 / 供压调整 / 负载变化</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">独立评价<small>操作标签与参考测量一一对应</small></div>
+      <div class="arrow h">→</div>
+      <div class="gate">简单阈值<br>是否已经够好？</div>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="frow">
+      <div class="col" style="min-width:300px">
+        <div class="step g end" style="width:100%">否 → 论文主线维持 A（诊断边界）：画出"双测点何时赢单流量"的适用边界曲线</div>
+      </div>
+      <div class="col" style="min-width:300px">
+        <div class="step a end" style="width:100%">是 → 论文方向切换 B（通信取舍）：把创新点压到事件触发与告警权衡上</div>
+      </div>
+    </div>
+  </div>
+
+  <table style="margin-top:14px">
+    <tr><th>实验矩阵</th><th>构成</th><th class="c">次数</th></tr>
+    <tr><td>主要故障</td><td>泄漏 + 受限 × 3 档供压 × 3 档程度（5%/10%/15%）× ≥3 次独立操作</td><td class="c"><b>54</b></td></tr>
+    <tr><td>正常干扰对照</td><td>供压调整 / B 支路开关 / 未知负载增大（防"正常被误判"）</td><td class="c"><b>18</b></td></tr>
+    <tr><td>切换期故障</td><td>轮灌切换 1–5 分钟窗口内注入故障（专测"暂停分类"的代价）</td><td class="c"><b>12</b></td></tr>
+  </table>
+  <table style="margin-top:8px">
+    <tr><th style="width:34%">G2 量化指标（标定范围内）</th><td>10% 与 15% 故障组首次持续候选正确率 <b>≥ 90%</b>；正常确认误报 <b>≤ 1 次/小时</b>；统计到达 15% 参照前的有效提示比例</td></tr>
+    <tr><th>必须保留的反例</th><td>σ=10 kPa 高噪声下 K/R 泄漏仅 1/20、未知负载与泄漏同观、P₀ 零点漂移误判受限——<b>如实报告，作为适用边界写入论文</b></td></tr>
+  </table>
+</section>
+
+<!-- ══════════════ ⑤ G3 ══════════════ -->
+<section>
+  <h2><span class="no">⑤</span>阶段 G3：无线与联调（2027.7 – 8）——从仿真走向真实射频</h2>
+  <div class="desc">此前所有通信结论都来自链路回放；本阶段用真实 LoRa 射频 + 实测整机电流回答"事件触发到底值不值"。</div>
+
+  <div class="cols">
+    <div class="col">
+      <h3>无线链路验证</h3>
+      <div class="flow">
+        <div class="step start" style="width:100%">E220 真实射频环境搭建</div>
+        <div class="arrow">↓</div>
+        <div class="step" style="width:100%">四种上报策略同轨对比<small>快周期 / 慢周期 / 原始事件 / 滤波限频事件</small></div>
+        <div class="arrow">↓</div>
+        <div class="step" style="width:100%">指标采集<small>告警延迟 P50/P95 · 送达率 · 重传率 · 缓存溢出缺口</small></div>
+        <div class="arrow">↓</div>
+        <div class="step" style="width:100%">8 小时连续记录 + 3 次重启恢复测试</div>
+        <div class="arrow">↓</div>
+        <div class="gate" style="width:100%">事件策略省电吗？<small>不省 → 如实报告适用范围，不硬编"省电 X%"</small></div>
+      </div>
+    </div>
+    <div class="col">
+      <h3 class="p">扰动特征库三组对照（本阶段新搭建装置）</h3>
+      <ul class="list">
+        <li><b>上游瞬态扰动注入</b>：可调压力扰动阀复现供压波动 / 水锤，检验判据在瞬态下的稳健性</li>
+        <li><b>B 末端可调堵塞</b>：模拟下游毛管堵塞引起的背压抬升，与真实泄漏对照</li>
+        <li><b>首部 / 干管参照测点</b>：区分"共同供压扰动"与"单支管局部异常"——多节点分区监测的判据基础</li>
+      </ul>
+      <table style="margin-top:6px">
+        <tr><th>装置预算</th><td>扰动阀 + 堵塞元件 + 压力调节器 + 额外测点 ≈ <b>1500 元</b>（材料费内列支）</td></tr>
+        <tr><th>⚠ 计划风险</th><td class="bad">三组装置尚未搭建、无死线约束——建议绑定本阶段验收，避免拖入 G4 变暗坑</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ⑥ G4 ══════════════ -->
+<section>
+  <h2><span class="no">⑥</span>阶段 G4：论文与结项（2027.9 – 2028.2）</h2>
+  <div class="desc">结项逻辑：原型 + 数据集 + 研究报告为根基，论文投稿据实登记，绝不把结项押在审稿周期上。</div>
+
+  <div class="flow">
+    <div class="frow">
+      <div class="step start">方法与数据版本冻结</div>
+      <div class="arrow h">→</div>
+      <div class="step">留出批次验证<small>训练/评价数据彻底分离</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">基线与测点对照<small>单流量 vs 双测点 · 边界补实验</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">论文初稿<small>方向 A 主线 / B 备选 · Sensors 或 CEA</small></div>
+      <div class="arrow h">→</div>
+      <div class="step">软著材料<small>按实际开发内容整理</small></div>
+      <div class="arrow h">→</div>
+      <div class="step g end">结项答辩<small>原型+数据+报告+实物</small></div>
+    </div>
+  </div>
+
+  <table style="margin-top:14px">
+    <tr><th style="width:26%">时间细分</th><td>2027.9–10 留出批次与补实验 → 11–12 原型完善与研究报告 → 2028.1–2 补验证、成果归档、结项</td></tr>
+    <tr><th>兜底原则</th><td class="warn">论文未录用不影响结项；录用函 / 在投状态一律据实登记，不提前承诺</td></tr>
+    <tr><th>田间数据</th><td>若田块联系未落实：结论明确写"台架验证、田间外推受限"，<b>不硬凑田间数据</b></td></tr>
+  </table>
+</section>
+
+<!-- ══════════════ ⑦ 节点内流水线 ══════════════ -->
+<section>
+  <h2><span class="no">⑦</span>节点内诊断流水线（每 1 秒循环）——技术主线的"心跳"</h2>
+  <div class="desc">版本 20261004-A06A07-v1；C 整数内核已在主机端完成 216 轨迹验证，G1–G3 的任务就是让它在真实硬件上复现同样表现。</div>
+
+  <div class="pipe">
+    <div class="step gray">采样 P₀/P₁/Q<small>1 Hz · ADS1115 + 脉冲计数</small></div>
+    <div class="arrow h">→</div>
+    <div class="step gray">质量检查<small>缺测 / 越量程剔除</small></div>
+    <div class="arrow h">→</div>
+    <div class="step p">10 点因果滑动平均</div>
+    <div class="arrow h">→</div>
+    <div class="step p">健康参照<small>Q_ref = a·(P₁/100)ⁿ<br>R₀ = median((P₀−P₁)/Q²)</small></div>
+    <div class="arrow h">→</div>
+    <div class="step p">增益校正 + 残差<small>e_Q = Q/(gain·Q_ref)−1<br>e_R = (P₀−P₁)/Q² − R₀</small></div>
+    <div class="arrow h">→</div>
+    <div class="step a">双时间窗判决<small>e_Q&gt;0.06 泄漏候选 · e_R&gt;0.6 受限候选</small></div>
+    <div class="arrow h">→</div>
+    <div class="step g">连续确认<small>10s 主窗×5 次 → 确认事件<br>3s 短窗×2 次 → 待复核提示</small></div>
+    <div class="arrow h">→</div>
+    <div class="step g">57B 事件帧<small>LoRa 上报</small></div>
+    <div class="arrow h">→</div>
+    <div class="step gray">24B ACK<small>未确认 → 有界重传</small></div>
+  </div>
+
+  <div class="cols" style="margin-top:16px">
+    <div class="col">
+      <h3>巡检闭环（人机协同）</h3>
+      <div class="frow">
+        <div class="step start">节点提示<small>支管编号-测点区段-建议检查部位</small></div>
+        <div class="arrow h">→</div>
+        <div class="step">平台呈现<small>八页面 · 总览/监测/核查/设备/历史/实验/台架/设置</small></div>
+        <div class="arrow h">→</div>
+        <div class="step">人工下田核查</div>
+        <div class="arrow h">→</div>
+        <div class="step">现场处置</div>
+        <div class="arrow h">→</div>
+        <div class="step end">同工况复测归档<small>证据回流平台，闭环完成</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ⑧ 风险预案 ══════════════ -->
+<section>
+  <h2><span class="no">⑧</span>风险预案：六条分支路径（老师问风险时照此答）</h2>
+  <div class="desc">每条风险都有触发信号与预案，核心原则：不硬上、不硬凑、不硬编。</div>
+  <table>
+    <tr><th style="width:22%">风险</th><th style="width:24%">触发信号</th><th>分支预案</th></tr>
+    <tr>
+      <td class="bad">差压测不出 5% 变化</td>
+      <td>G1 标定发现不确定度 ≥ 故障信号</td>
+      <td>目标退到 <b>10%</b>（首选）→ 换 ±0.1%FS 传感器（+400 元）→ 改测更大管径支管</td>
+    </tr>
+    <tr>
+      <td class="bad">田块联系不上</td>
+      <td>2027.3 仍未拿到部署许可</td>
+      <td>不硬凑田间数据，结论写明"台架验证、田间外推受限"，论文照发</td>
+    </tr>
+    <tr>
+      <td class="bad">固件写不出来</td>
+      <td>2027.3 末有线采集未跑通</td>
+      <td>请老师加嵌入式队友 → 或树莓派 / Pico 过渡，先完成研究问题，STM32 低功耗作为后续</td>
+    </tr>
+    <tr>
+      <td class="warn">论文赶不上见刊</td>
+      <td>审稿周期超预期</td>
+      <td>结项不押论文；以原型 + 数据集 + 报告结项，在投状态据实登记</td>
+    </tr>
+    <tr>
+      <td class="warn">高噪声下双测点反而更差</td>
+      <td>G2 复现 σ=10 kPa 反例</td>
+      <td><b>如实写进论文作为适用边界</b>——"什么时候别用我们的方法"本身是贡献</td>
+    </tr>
+    <tr>
+      <td class="warn">事件触发并不省电</td>
+      <td>实测电流与周期上报拉不开差距</td>
+      <td>报告适用范围（何种告警延迟容忍度下值得用），不硬报节电比例</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ══════════════ ⑨ 交付物对照 ══════════════ -->
+<section>
+  <h2><span class="no">⑨</span>交付物清单 × 阶段对照（结项自查表）</h2>
+  <div class="desc">对应申报书"预期成果"五类，标注当前状态与负责阶段。</div>
+  <table>
+    <tr><th>交付物</th><th class="c" style="width:12%">现状</th><th class="c" style="width:14%">产出阶段</th><th>验收要点</th></tr>
+    <tr><td><b>① 原型系统</b>：节点 + 接收端 + A/B 台架 + 八页面桌面软件</td><td class="c warn">设计稿完成</td><td class="c">G1–G3</td><td>稳定采集 · 异常提示 · 可靠接收 · 核查复测 · 模拟控制全流程可演示</td></tr>
+    <tr><td><b>② 方法与判据</b>：联合判断 + 稳健门限 + 扰动特征库 + 可靠告警流程</td><td class="c warn">合成验证完成</td><td class="c">G2–G3</td><td>源码 + 接口设计 + 使用说明一并交付，判据版本冻结可复核</td></tr>
+    <tr><td><b>③ 数据与实验</b>：标定 / 主故障 / 干扰 / 链路 / 连续运行五类记录</td><td class="c bad">未开始</td><td class="c">G1–G4</td><td>54+18+12 矩阵完整 · 10%/15% 组 ≥90% · 误报 ≤1 次/h · 附标定曲线</td></tr>
+    <tr><td><b>④ 学术成果</b>：论文 1 篇稿 + 软著申请材料</td><td class="c bad">0 篇投稿</td><td class="c">G4</td><td>围绕边界辨识或事件策略组织对照试验，录用结果据实登记</td></tr>
+    <tr><td><b>⑤ 结项材料</b>：结题报告 + 成果归档</td><td class="c bad">未开始</td><td class="c">G4</td><td>2028.2 前提交原型、数据、程序及报告</td></tr>
+  </table>
+</section>
+
+<footer>
+  滴智卫 · 项目全过程流程图 v1.0 · 2026-10-14 生成 · 事实来源：申报书正式稿4 / 给老师汇报提纲 / 仓库验收记录 · 本图为辅助材料，不修改既有交付物
+</footer>
+
+</div>
+</body>
+</html>

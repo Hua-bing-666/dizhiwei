@@ -1008,7 +1008,7 @@ L 127.89 395.047911
    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei', sans-serif; text-anchor: start" x="24.48" y="36.82395" transform="rotate(-0 24.48 36.82395)">失败反例：变化模式不能直接等同故障原因</text>
   </g>
   <g id="text_29">
-   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', sans-serif; text-anchor: start; fill: #59666c" x="24.48" y="61.565963" transform="rotate(-0 24.48 61.565963)">两例均为seed=10300、σ=0.3kPa；对应原始三通道和同一因果滤波。</text>
+   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', sans-serif; text-anchor: start; fill: #59666c" x="24.48" y="61.565963" transform="rotate(-0 24.48 61.565963)">seed=10300，σ=0.3 kPa</text>
   </g>
   <g id="text_30">
    <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', sans-serif; fill: #59666c" transform="translate(24.48 540.932625)">未知正常负载与泄漏可产生完全相同观测；入口压力漂移也会触发受限模式。</text>

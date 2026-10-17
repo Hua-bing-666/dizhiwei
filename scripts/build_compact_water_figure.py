@@ -6,7 +6,7 @@ import json,hashlib
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'application/figures/compact_layout'; OUT.mkdir(parents=True,exist_ok=True)
-parts=['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L7 4 L0 8 Z" fill="black"/></marker></defs><rect width="1000" height="470" fill="white"/><g font-family="Microsoft YaHei, SimSun, sans-serif" fill="black">']
+parts=['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="510" viewBox="0 0 1000 510"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L7 4 L0 8 Z" fill="black"/></marker></defs><rect width="1000" height="510" fill="white"/><g font-family="Microsoft YaHei, SimSun, sans-serif" fill="black">']
 def label(x,y,s,size=25,bold=False,anchor='middle'):
     parts.append(f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{700 if bold else 400}" text-anchor="{anchor}">{s}</text>')
 def line(points,color='black',arrow=False):
@@ -23,30 +23,32 @@ blue='#42657b'; brown='#a26437'
 # Shared source, monitored A path, and a distinct healthy B disturbance path.
 line([(175,145),(215,145),(215,130),(875,130)],blue)
 line([(215,145),(215,297),(875,297)],blue)
-line([(285,130),(285,88)]); line([(555,130),(555,88)])
-line([(720,130),(720,202)],brown)
+line([(330,130),(330,88)]); line([(600,130),(600,88)])
+line([(690,130),(690,202)],brown)
 line([(765,228),(790,228)],arrow=True)
 line([(975,130),(995,130),(995,400),(285,400)],arrow=True)
 line([(975,297),(995,297)])
-box(25,105,150,80,['可调供水','工作点待核'],'#eaf2f8',blue)
-circle(285,60,'P0');circle(555,60,'P1')
-box(350,104,140,52,['受限阀 R'],'#fbf1db','#826521')
-circle(660,130,'Q')
-box(815,104,160,52,['A负载 Cₙ'],'#edf4ed','#526b54')
-box(615,202,150,52,['泄漏阀 Cₗ'],'#faede2',brown)
+box(25,105,150,80,['可调供水','工作点待核'],'#eaf2f8')
+circle(330,60,'P0');circle(600,60,'P1')
+box(390,104,140,52,['区段R'],'#fbf1db')
+circle(255,130,'Q')
+label(255,96,'流量计',24)
+box(815,104,160,52,['A负载 Cₙ'],'#edf4ed')
+box(615,202,150,52,['泄漏球阀'],'#faede2')
 box(790,202,185,52,['独立收集计时'],'#faede2',brown)
 box(350,271,140,52,['B切换阀'])
-box(815,271,160,52,['B正常负载'],'#edf4ed','#526b54')
+box(815,271,160,52,['B正常负载'],'#edf4ed')
 box(25,373,260,54,['正常回水至水源'])
 label(570,352,'B仅模拟正常负载切换',24)
 label(305,386,'Q计入A正常负载与泄漏总量',24,anchor='start')
-label(24,458,'P0/P1采用侧向测压；Q位于分流前。泄漏先独立计量，再人工回水。',24,anchor='start')
+label(24,456,'安装顺序：流量计 → 取压嘴A → 区段R → 取压嘴B → 泄漏球阀，不可调换。',24,anchor='start')
+label(24,492,'两个取压嘴都在流量计下游；泄漏先独立计量，再人工回水。',24,anchor='start')
 parts.append('</g></svg>')
 svg=''.join(parts); dest=OUT/'water_layout.svg';dest.write_text(svg,encoding='utf-8',newline='\n')
 ns={'s':'http://www.w3.org/2000/svg'}
-old=ROOT/'application/figures/quality_review/water_layout.svg'
+expect={'可调供水','工作点待核','P0','P1','Q','流量计','区段R','A负载 Cₙ','泄漏球阀','独立收集计时','B切换阀','B正常负载','正常回水至水源','B仅模拟正常负载切换','Q计入A正常负载与泄漏总量','安装顺序：流量计 → 取压嘴A → 区段R → 取压嘴B → 泄漏球阀，不可调换。','两个取压嘴都在流量计下游；泄漏先独立计量，再人工回水。'}
 texts=lambda p:Counter(ET.parse(str(p)).xpath('//s:text/text()',namespaces=ns))
-assert texts(old)==texts(dest),'A diagram label changed'
+assert texts(dest)==Counter(expect),'A diagram label changed'
 # Use the established browser capture/checker with isolated input/output paths.
 scratch=ROOT/'tmp/compact_layout_review';scratch.mkdir(parents=True,exist_ok=True)
 record={'figures':[{'name':'water_layout','svg':dest.relative_to(ROOT).as_posix()}]}

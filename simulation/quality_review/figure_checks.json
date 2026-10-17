@@ -13,11 +13,11 @@
         "width": 1000,
         "height": 690
       },
-      "textCount": 33,
+      "textCount": 32,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "cff97b343170759328495174ca06f0400c0010b0acbae71863ec45f21e4208d8",
-      "svg_sha256": "5f28ef7ecf03af2c93676c4304eea5996ee71b8be297916f9971840f47b865e6"
+      "png_sha256": "4d0d436ba1acc7175925f5ea8a63f4b199c81cd5826249d6e46ed524879bba66",
+      "svg_sha256": "3b82883fad932e753d8c98ad38ba4d5d9c8a5924a4c46cbcb497010c2ea21596"
     },
     {
       "name": "water_layout",
@@ -30,10 +30,10 @@
         "height": 650
       },
       "textCount": 15,
-      "minFontPt": 10.08,
+      "minFontPt": 9.66,
       "outside": [],
-      "png_sha256": "fe86f290ea9930b51e145edcbcb9a054d966a8502dc3f8230840d439c4af5e6c",
-      "svg_sha256": "18f9e86d4bf1ddfebfe79bc41ec9e3108e00d74937625dc01e3f95a3cdc8aad0"
+      "png_sha256": "5900a453766dcbd7bd421e9a11b98854a512adb68521a3b66cd55c69b054c892",
+      "svg_sha256": "db3c6596980bf2122a7cb3d8bf9a4189bf25a77d6bfeca5548bc26b8f8c574b5"
     },
     {
       "name": "collection_overview",
@@ -48,8 +48,8 @@
       "textCount": 20,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "b89b95c427708c9025604bb160387adebf28af844cb022ac48e50e2bdcb518b0",
-      "svg_sha256": "8658cce041078eb78140ad0d23c716d8c1d86d4c95accaeb5407b76ee89dc053"
+      "png_sha256": "39cad95314df30ad6d1ad8d04ed33f3f889ae7c921ba94cfc38375a941988db0",
+      "svg_sha256": "69a54faccbc6b2ae75f0a318545740f21acba1f5fe90a1620b5ded81bdbdcb41"
     },
     {
       "name": "measurement_interfaces",
@@ -64,8 +64,8 @@
       "textCount": 34,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "607e92d9f1a61b8925ccca19ab4cfdc618e2c94951609398bcce456091ec4638",
-      "svg_sha256": "1b893ec3d3769b81f6bccd0f654ddc1b60a1c736791c1bdd2a3ab7da9c01a861"
+      "png_sha256": "deefad4032ca06640d75df18409e190016830d2ad4707d076dfd78425ce4c228",
+      "svg_sha256": "7912164f61f75143009305aebb4e90f1139653524ebb268b36736e3f21b0783d"
     },
     {
       "name": "diagnosis_proposal",
@@ -77,11 +77,11 @@
         "width": 1000,
         "height": 850
       },
-      "textCount": 21,
+      "textCount": 20,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "11bb2165580ddfb6dfbdbb81a578e0dc9c62a80ae9d2cf1682524f25be736ecd",
-      "svg_sha256": "f18686952781a2262e0867a8be2901e49c0da941a0606cc07cda885e8ce34a6c"
+      "png_sha256": "c4d727b9aeb9659cc62389bd9ae8ccbe8156888a9a1ae5fa7bd1dfb0423c1305",
+      "svg_sha256": "6f34481763c7b5c581f2e064d4aeb361108d403a7ca87e6eb72dfb13991268ca"
     },
     {
       "name": "durable_event_sequence",
@@ -93,11 +93,11 @@
         "width": 1000,
         "height": 930
       },
-      "textCount": 18,
+      "textCount": 17,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "fa6a168611eedd246aa53af8be889f711510e0bbb79ed2baa9a67255de6d253e",
-      "svg_sha256": "f0bb74ed968d3363ba1c6a45559f170b5684c7f5d16e035c065f27e2352ed28b"
+      "png_sha256": "054b2ffa55df6c8e435c1791955f9a4f8c36dec32a9abc62f7feb8a51693f306",
+      "svg_sha256": "b67cf6a4aa71d1ea87c76d48cef1ad15a88316b1d19e54010a71e6e391e0e49f"
     },
     {
       "name": "noise_outcomes_print",
@@ -112,8 +112,8 @@
       "textCount": 46,
       "minFontPt": 9.607843137254902,
       "outside": [],
-      "png_sha256": "543925384cf0c535f8c6836641ae3228e9ba4ac0a29ed252b0e1bf6ad86799c8",
-      "svg_sha256": "5583b55fb5183c712972a4d8757afb337d51885b0af19e8e469f73481e9642cf"
+      "png_sha256": "2a8cf010c5f6a1e7d91cac62b123c484ee49b9ae332e401e7951c9e862431d48",
+      "svg_sha256": "aa1351b4fc3ba4812db8ceedf967d9a072fb247b3c34a8588151e021bdbdd2e1"
     },
     {
       "name": "failure_counterexamples",
@@ -128,8 +128,8 @@
       "textCount": 34,
       "minFontPt": 9.607843137254902,
       "outside": [],
-      "png_sha256": "511dfed33e54b09132bbb5b5ab19e9d9590c09790715cb55fcc2b8128b5b4f25",
-      "svg_sha256": "1b0354a2b57c666bf661b91afa7380b69d2d825b0ae97426226fc77b6a36361d"
+      "png_sha256": "e798ebbda06faa85ff09fd7c962d6ed857b21dd52755bf06f67769e4ef3453f2",
+      "svg_sha256": "d86b22fe9cf997649ccf2463485ee48daa87bb58ce823eeaf6c823786dec44ed"
     },
     {
       "name": "sampling_window_tradeoff",
@@ -144,8 +144,8 @@
       "textCount": 28,
       "minFontPt": 9.66,
       "outside": [],
-      "png_sha256": "3144c30fb2159df495b181dc337dfe800613ca9708ce489e07dc05f609f2f241",
-      "svg_sha256": "90af33562d9f57d080bef1abc5b555691d1f18c0b2cbb7b6a8103910c0e6d6a0"
+      "png_sha256": "1970ed12f844563dc0463e546a133c5c00fe43cc4cfc4b610e6aa7de68724702",
+      "svg_sha256": "c843c4e0f3ce78ca3f2356121c39ccad51d40e01464696398a56ec300e78e6af"
     }
   ]
 }

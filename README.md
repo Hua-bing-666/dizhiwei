@@ -2,84 +2,256 @@
 
 项目题目：**基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统**。
 
-当前交付（2026年10月7日）：[学校模板申报书图文精修稿](deliverables/大创申报书_图文精修稿.docx)，18页、10图、3张完整居中数据表、11处原生公式和5中文＋3英文文献；[实施项目书现阶段更新稿](deliverables/实施项目书_现阶段更新稿.docx)，12页、5图、6表。保留信息和经费空位，更新软件基础、研究任务与三阶段执行安排。桌面V1.3删除装饰框图并重排模型标注，引线接在标签边缘。两种EXE各40项检查、界面50项、浏览器72项通过；压缩包512个文件摘要校验通过。参见[本轮验收](docs/图文与桌面体验精修验收.md)。以下版本说明为历史记录。
+拟实施期：**2027 年 3 月 — 2028 年 2 月**。当前阶段：**立项/申报**。
 
-2026 年 10 月 7 日：桌面版 V1.3 参考用户提供的桌面程序组织方式，统一会话读数、图表与台架测点，增加本地交互图表、可暂停回放、测点聚焦、浅深色偏好及单文件 EXE。默认页面精简说明，协议和配置按需展开；自动回放不连续弹出保存提示。文件夹版和单文件版各通过 40 项实际桌面检查，界面与模型 48 项、浏览器 72 项、后台 34 项检查通过。申报书与诊断算法本轮未修改。入口见 [桌面使用说明](docs/桌面版使用说明.md)、[参考与执行计划](docs/桌面版V1.3参考分析与执行计划.md)和 [V1.3 验收记录](docs/桌面版V1.3验收记录.md)。二进制留在本机交付目录，源码与验收资料进入仓库。
+---
 
-2026年10月6日。当前申报入口为20页学校模板申报表达修订稿。对照用户提供的国家级案例，正文围绕巡检问题、系统目标、研究内容、创新点、实施安排及成果重新表达，减少论文推导与工程调试细节。10幅图片及打印几何保留，3张居中数据表完整同页，保留5中文＋3英文参考文献和必要原生公式。最终页面已逐项查看，信息、预算与审批空位保留。固定1Hz仍为当前软件基线，事件触发采集为后续独立对照任务；现有证据为设计、模型与主机软件。
+## 一、当前状态（2026-10-17）
 
-## 当前运行平台 V1.2
+立项阶段**除实物样机外**的工作已完成：申报书正文修定、建模与仿真（含判据修正与边界重扫）、
+硬件选型与 BOM v2.2 冻结、软硬件匹配度审查、固件最小链路跑通、田间落地方案。
 
-桌面入口：本地 `deliverables/滴智卫_桌面版_V1.2/滴智卫.exe`。整包解压后双击即可自动连接内置后台，无需安装 Python 或 GCC；记录保存在独立的 `data` 目录。桌面版沿用八个运行模块，增加 Windows 保存窗口、重复启动保护和退出清理。[桌面使用说明](docs/桌面版使用说明.md)与[桌面验收记录](docs/桌面版V1.2验收记录.md)列明运行环境与实际检查结果。构建源代码在 `desktop/`，二进制在本机交付目录，不进入源码仓库。
+**数值口径唯一真源**：[docs/数值口径统一清单.md](docs/数值口径统一清单.md)
+（由 `scripts/audit_numeric_consistency.py` 自动生成，README 与所有 docs 均须与其一致）。
 
-2026年10月7日：网站已接入编译后的 C 诊断结果，提供离线回放与本地 HTTP / SQLite 两种模式。增加健康参照拟合、事件核查、软件控制请求演示、跨工况与采样策略实验工具；三维台架增加防溅板、过线开口及配套安装孔。此阶段仍是主机软件、未标定模型及概念 CAD，真实串口、LoRa 射频、能耗和阀门尚未验证，申报书本轮未修改。
+**当前权威申报稿**：[大创申报书_正式稿6.docx](大创申报书_正式稿6.docx)
+（备份：`大创申报书_正式稿6_修改前备份.docx`）
 
-本轮先明确八页职责与共享结构，移出总览中的重复趋势，独立策略实验与试验台架。增加只读历史会话查询、静态模块滚动渐显与减少动态效果支持。台架使用同一207构件几何，增加实际网格包络查看与实验路径。后台复用状态快照和批量核查记录读取。
+| 项 | 状态 |
+|---|---|
+| 结构完好性 | 表格 2 / 图片 16 / 公式 4 / 无杂散符号 |
+| 数据有据 | 三处来源不明数字已清除；12 项已核实数据写入正文 |
+| 政策引用 | 十五五规划「加强新疆优质棉花生产」「推进人工智能运用和智慧农业发展」 |
+| 预算合规 | 专用材料费 6300 / 印刷费 5200 / 其他 500 = 12000；参考仪表改为借调或委托校准 |
+| 竞赛任务 | 已补入预期成果与年度计划（校方结项必要条件） |
+| 格式与口径 | 3.4.3 编号无重复；全文压力通道口径统一为差压 + 干管参照 |
 
-[本轮结构计划](docs/运行平台结构与交互实施计划.md)、[UI参考](docs/运行平台UI参考与采用说明.md)、[V1.2验收](docs/运行平台V1.2验收记录.md)。
+**总验收**：[立项阶段总验收记录.md](docs/立项阶段总验收记录.md)　**申报书专项验收**：[申报书修改验收记录.md](docs/申报书修改验收记录.md)
 
-- [运行平台](deliverables/index.html)：八个职责明确的运行模块，合成来源和候选、短窗提示、质量状态分开呈现。
-- [清水试验台架 V1.2](deliverables/清水试验台架_V1.2.html)：207个概念构件，实体 STEP 与实际网格一致。
-- [软件包](deliverables/滴智卫_运行平台_V1.2.zip)、[使用说明](docs/软件升级包使用说明.md)、[分项计划](docs/软件算法与三维升级执行计划.md)、[验收记录](docs/软件算法与三维升级验收记录.md)。
-- 启动：PowerShell 运行 `scripts/启动运行平台.ps1`，通过 `http://127.0.0.1:8765` 打开网页，展开“回放控制”，再连接本地后端。数据库保留在 `tmp/platform_runtime/operations.sqlite`。
+---
 
-网页重建入口为 `scripts/build_portal.py --operations-only`，当前会复用 `simulation/platform_upgrade/web_data.json`。新实验依次运行 `simulation/extend_platform_reference.py`、`scripts/build_system_upgrade.py`；软件验收使用 `scripts/verify_platform_upgrade.py` 与 `scripts/verify_platform_browser.mjs`。下文旧版本记录保留作历史来源，不替代当前 V1.2 的验收。
+## 二、技术路线（六环节递进）
 
-## 最新入口
+| 环节 | 回答的问题 | 关键结论 |
+|---|---|---|
+| 一 现场与场景 | 这件事发生在哪、为谁做 | 2025 年新疆棉花总产 **616.5 万吨、占全国 92.8%**；阿拉尔一师 **25 万亩**自动化灌溉；单支管一次灌水 **0.4—1.8 小时**；**72 小时**一轮全覆盖 |
+| 二 测量与采集 | 用什么测、测得准不准 | 改**单只差压变送器（35—40 kPa 档 / ±0.5%FS）+ 干管参照**；量程比由 20—40 倍降到 4—8 倍，U 由 ~1 kPa 降到 ≤0.20 kPa |
+| 三 建模与标定 | 健康基准怎么定 | 健康参照指数 **单工况内不可辨识**（P1 仅波动 0.34%），故**固定 n=0.5**；跨 ≥20% 供压跨度才可拟合 |
+| 四 判据与验证 | 怎么判、判得准不准 | **10 s 不重叠块 CUSUM**，k=0.5，**h\*=26**（目标 FAR≤1%，实测 0.00%，ARL0>6.2 h @95%） |
+| 五 通信与平台 | 数据怎么传、怎么给人看 | 事件帧 57 B ≤ 64 B 分包；**发射功率 ≤10 dBm**（433 MHz 免执照限值 10 mW e.r.p.） |
+| 六 实验与成果 | 做几次、最后交出什么 | 台架为主；保底档即可结项。**实物门限须在台架实测噪声上重标** |
 
-- [学校模板申报书申报表达修订稿](deliverables/大创申报书_申报表达修订稿.docx)：当前交付，20页、10幅保留图片、3张完整数据表、8篇参考文献。[表达修订与可行性判断](docs/申报表达修订与可行性判断.md)、[精确文件检查](application/proposal_revision/acceptance.json)、[最终页面审阅记录](application/proposal_revision/visual_review.json)。本版不新增硬件或算法成果。
-- [学校模板申报书方法与图文完善稿](deliverables/大创申报书_方法与图文完善稿.docx)：上一版历史稿。双时间窗流程区分短窗待复核与主窗候选；算法对照使用黑白纹理，324条冻结记录逐组核对；前期K/R界面与模型反例保留并注明阶段。[本版验收](docs/申报书方法与图文完善验收.md)、[精确文件检查](application/method_revision/acceptance.json)、[最终逐页及灰度图审阅记录](application/method_revision/visual_review.json)。
-- [学校模板申报书研究方案收敛稿](deliverables/大创申报书_研究方案收敛稿.docx)：20页、10图、3张完整居中数据表、8篇文献、29个原生公式，全部最终页面已查看。[本版图文验收](docs/研究方案收敛稿_图文验收.md)、[软件收尾报告](deliverables/软件链路收尾验证.md)、[最终方法与三阶段安排](docs/算法与软件最终方案.md)。信息、预算及审批区域保持用户源稿空白。
-- [实施项目书](deliverables/实施项目书.docx) / [原生审阅PDF](deliverables/实施项目书.pdf)：13页、9章、5图、6张可编辑表；四工作包、实验协议、资源、里程碑、返工与归档。为自主执行稿，正式任务书尚待取得并填写。
-- [本次公式与插图验收](docs/申报书公式与插图修订验收.md) / [当前验收记录](deliverables/申报书公式与插图修订验收记录.json)：27个原生数学对象由WPS识别，重新保存后核对公式含义，20页实际图像和八幅新图复核；四表居中完整、图注同页、原稿保护；三处必要分页留白列明。[前一轮语言与范围验收](docs/申报书语言与研究范围修订验收.md)、[分页检查](docs/申报书分页与图片复核.md)及[表格文献与职责修订](docs/表格文献与材料职责修订验收.md)作为历史依据保留。[材料职责与分项标准](docs/材料职责与本轮修订标准.md)划分各项职责。
-- [运行平台](deliverables/index.html)：运行总览、支管监测、异常事件、设备与链路、历史记录、系统设置，共享合成回放与本地人工维护记录。
-- [历史研究与答辩资料](deliverables/研究与答辩资料.html)：原研究文献库、历史统计、旧材料和草案PPT；由文件目录单独打开，不进入运行网站导航，也不作为最新申报书入口。
-- [收集优化三维候选模型](deliverables/台架三维结构交互模型_收集优化候选版.html)：离线可旋转、查看；STEP/GLB与几何源在application/models/collection_review。暂定尺寸不用于加工下单。
-- [执行台账](docs/项目总规划与任务验收台账.md) / [三阶段分项标准](docs/三阶段分项执行与验收标准.md) / [本轮Q01—Q07计划](docs/全量复核与格式优化执行计划.md)。
-- [使用说明](deliverables/使用说明.md)。此前[材料包](deliverables/申报材料与证据包.zip)及[哈希清单](deliverables/证据清单.json)保留上一轮25页、17篇文献的历史版本，本次修订直接使用上列最新文件与修订记录，不挪用旧包的验收状态。
+**完整文档**：[技术路线（申报书版）](docs/技术路线_申报书版.md)　**逐块详解**：[技术路线_分块详解与可行性验证.md](docs/技术路线_分块详解与可行性验证.md)
 
-## 系统与三阶段约束
+### 已验证的可检边界（本项目**合成仿真**，非实测）
 
-拟实施期2027年3月至2028年2月。原型方案为一个P0/P1/Q双压力流量节点、一个E220接收字节桥、现有PC上的SQLite及本地Web、双支路清水台架。A测量与故障注入，B只作正常共享水源扰动。定位只到监测支管/区段，节流不证明真实滴头堵塞。后续先研究跨负载、供压和日期的健康参照更新，再增加节点开展同步支管关联和巡检价值评价。台架流量计不能直接套用大田支管量程，迁移需重新选型标定；自动阀控、多节点、太阳能和云端需新资源与验收。
+口径来源：`E9_block_threshold.py`（门限重定 + 边界重扫）、`E10_robustness.py`（真实性缺口补齐）。
 
-约2000元是借用连续水源及参考仪器条件下的启动估算，不是已获经费或报价。真实团队开发能力、导师、场地、借用和压力传感器规格仍待落实。20秒泄漏取样先要求实测安全液位有效容量≥440mL；长时实验另设排水。电气保护定值与实际器件规格确认后才进入上电。
+| 项 | 结论 |
+|---|---|
+| 判据 | 10 s **不重叠**块 + 块内算术平均 + CUSUM，k=0.5，n=0.50 |
+| 门限 | **h\*=26**（目标 FAR≤1%；6720 块观测零越限，实测 FAR 0.00%，Rule-of-Three 95% 下界 ARL0>6.2 h） |
+| 泄漏最小可检幅度 | **+2%**（80 s 注入窗，40/40）；+5% 需 20 s；+10% 需 10 s |
+| 受限最小可检幅度 | **+50%**（80 s 窗，40/40）；**+30% 需 ≥5 min 累积**（80 s 仅 32/40） |
+| 压力不确定度需求 | 在 +2% 边界幅度下 **U ≤ 2.0 kPa 仍达标**；设计工况 0.175 kPa，余量 11 倍 |
+| 门限能否直接上实物 | **不能**。既有数据未建模各通道**独立**传感器噪声与噪声时间常数 τ；τ=120 s 时需 h≈377（14.5 倍）。台架必测 σ_gp/σ_dp/σ_q 与 τ，**τ≤10 s 才可直接用块判据** |
+| 原理性根本边界 | 「等效泄漏」与「下游负载自身变化」在 (P0,P1,Q) 三测点下**严格不可区分**（三通道响应完全一致） |
 
-申报负责论证任务和条件；实施负责真实系统和独立实验；论文从实测提炼一项充分贡献。主线为跨供压、跨负载的辨识边界，通信取舍为备选。省级第一完成人4分加符合条件6分论文可按用户今年截图达10分，但未来年度政策、认可成果及截止须确认，不能保证立项级别、发表或加分。
+**图**：[技术路线图](simulation/project_review/figures/roadmap.png)、
+[判据样本独立性修正与门限重定](simulation/project_review/figures/threshold_separation.png)、
+[最小可检幅度与持续时长的二维边界](simulation/project_review/figures/detection_boundary.png)
+（均于 2026-10-17 按 E9 现行口径重绘，复核记录见 `simulation/project_review/figures/复核记录_20261017.md`）
 
-## 模型与来源
+---
 
-当前诊断版本20261004-A06A07-v1，480个合成试次、960条配对方法结果、288个有界误差组合；20个基础序列复用，不是480次独立实测。高压力噪声劣势、未知健康负载同形、漂移与负载模型失配均保留，见[诊断证据](docs/仿真建模与诊断证据分项验收.md)及[可复现说明](simulation/diagnosis_review/README.md)。
+## 三、文档索引（docs/，现行 19 份）
 
-通信1920条历史回放与12项主机协议检查不等于实际射频或整机能耗。199个有效CAD实体、局部交集与离散姿态不等于全装配或制造验收。新增理想脉冲相位分析20,000组不等于流量计实测，见simulation/quality_review/sampling_checks.json。
+### 规划与场景
+- [项目场景与边界_大创版.md](docs/项目场景与边界_大创版.md) —— 场景落到一根支管、必做/争取/不做边界、三个研究问题
+- [基于场景与政策的项目任务规划.md](docs/基于场景与政策的项目任务规划.md) —— 政策依据、校方规则、六阶段任务
+- [项目实施详细步骤与技术路线总纲.md](docs/项目实施详细步骤与技术路线总纲.md) —— 全流程步骤总纲
 
-[硬件接口及LoRa论证](docs/硬件接口与LoRa通信论证分项验收.md)、[国内硬件与淘宝入口](docs/国内硬件选型与可行性核对.md)、[参考文献核验](docs/参考文献核验与正文对应.md)、[学校来源记录](application/school_templates/provenance.json)。候选配图不是本项目实物，淘宝入口不保证现货或价格。
+### 技术路线
+- [技术路线_分块版_申报书用.md](docs/技术路线_分块版_申报书用.md) —— **阶段二 B1 交付**：六环节逐块五段式（问题/做法/结论/证据/验收判据）+ 图表索引 + 复现命令
+- [技术路线_申报书版.md](docs/技术路线_申报书版.md) —— 主文档，六环节 + 五重整体检验
+- [技术路线_分块详解与可行性验证.md](docs/技术路线_分块详解与可行性验证.md) —— 十块，每块含证据与兜底
+- [技术路线与验证方案_立项完成稿.md](docs/技术路线与验证方案_立项完成稿.md)
+- [文献定位与技术路线新意评估.md](docs/文献定位与技术路线新意评估.md) —— 多模态过程监控定位、三处新意、可行性评估
 
-官方2026立项及验收要求只作为历史参考。任务书下载返回验证码网页，未取得实际官方DOC；自主实施稿未声称套入官方表。2027规定、正式身份、编号、意见及签字待本人、导师和学院办理。外部案例原件与个人信息未纳入仓库，级别来自用户说明。
+### 硬件与算法
+- [硬件选型与BOM冻结.md](docs/硬件选型与BOM冻结.md) —— 冻结选型、18 项 BOM、询价函、4 条备选路线
+- [方案最优性评估_多维.md](docs/方案最优性评估_多维.md) —— **六维度最优解对比、5 处优化建议与预算校核**
+- [软硬件落地实施方案_成本与可实现性.md](docs/软硬件落地实施方案_成本与可实现性.md)
+- [最优替代方案与可行性验证.md](docs/最优替代方案与可行性验证.md) —— 原方案根因诊断与替代方案
+- [诊断算法客观评价.md](docs/诊断算法客观评价.md)
 
-## 修改与复现
+### 检索与核对
+- [检索信息清单与项目内容核对.md](docs/检索信息清单与项目内容核对.md) —— 六类 60 项检索信息、逐项核对
+- [检索结果汇总与项目执行规划.md](docs/检索结果汇总与项目执行规划.md) —— S1—S9 逐项检索结果
+- [未确认项处置与执行计划_技术路线详解.md](docs/未确认项处置与执行计划_技术路线详解.md) —— 七项未确认项的分级处置
 
-本轮方法与图文修订依次使用scripts/prepare_method_application_figures.py、scripts/render_method_application_figures.mjs、scripts/update_method_application.py、scripts/export_method_application.ps1和scripts/render_quality_documents.py；逐页查看最终页面并逐张查看实际嵌入图片的灰度版本后，保存application/method_revision/visual_review.json，再运行scripts/verify_method_application.py。源稿为上列研究方案收敛稿；修改图文后必须重新渲染、查看并更新对应指纹，不能直接沿用人工记录。本轮不修改冻结算法及其既有结果。
+### 审查与验收
+- [第三部分对抗性审查与优化计划.md](docs/第三部分对抗性审查与优化计划.md)
+- [第三部分修改与项目执行计划_可验收版.md](docs/第三部分修改与项目执行计划_可验收版.md)
+- [可视化规范与配图方案.md](docs/可视化规范与配图方案.md) —— 评审视角的绘图规范、11 张新增图方案
+- [申报书修改验收记录.md](docs/申报书修改验收记录.md)
+- [立项阶段总验收记录.md](docs/立项阶段总验收记录.md)
 
-本次软件收尾依次运行scripts/validate_acquisition_pipeline.py A、B，simulation/review_acquisition_pipeline.py完整回放，再运行validate_acquisition_pipeline.py C与plot_acquisition_closeout.py。先检查已冻结指纹，不以重新冻结掩盖来源变化。Word本版使用scripts/update_submission_closeout.py、export_submission_closeout.ps1、render_quality_documents.py及verify_submission_closeout.py；逐页查看记录位于application/software_closeout。用户源111.docx不随仓库上传，因此改稿复现需要本机保留源文件；当前最终DOCX及验收指纹已纳入仓库。下文为历史流程，不能覆盖最新用户稿或挪用历史验收。
+---
 
-当前稿另存于deliverables/大创申报书_公式与插图修订稿.docx，内部PDF为大创申报书_公式与插图审阅版.pdf。复现依次使用scripts/prepare_equation_figure_revision.py、scripts/render_equation_figures.mjs、scripts/revise_native_equations.py、scripts/export_equation_application.ps1、scripts/render_quality_documents.py及scripts/verify_equation_application.py；实际查看页面及新图后记录scripts/finalize_equation_revision.py。当前为20页，9图打印尺寸及正文字号保留，4表完整同页且居中；第8、12、18页保留有理由的页尾留白。记录在simulation/equation_figure_review与application/equation_figure_revision。人工记录仅对当前哈希有效，后续修改不得沿用。
+## 四、仿真与代码
 
-此前语言与范围稿使用scripts/rewrite_application_language.py、scripts/export_language_application.ps1、scripts/verify_language_application.py及scripts/finalize_language_scope_revision.py，记录在simulation/language_scope_review与application/language_scope_revision，保留为本次原始输入及历史依据。
+**代码**：`simulation/project_review/`
 
-前一轮紧凑排版稿及其PDF作为历史版本保留，原验收见docs/申报书分页与图片复核.md。其正文未改的20页排版检查不能用于证明当前重写稿的页尾留白或内容状态。此前生成脚本与simulation/compact_layout_review、application/compact_layout_revision供历史复现。
+| 文件 | 作用 |
+|---|---|
+| `run_all.py` | **统一入口**，七步（可辨识性 / 门限重定 / 边界重扫 / 鲁棒性 / 图件 / 全量校验），约 12.6 s 全绿 |
+| `lib_block.py` | **现行**块判据库：10 s 不重叠块、CUSUM、传感器噪声/漂移/故障注入 |
+| `E9_block_threshold.py` | 判据样本独立性修正 + ARL0 重定门限 + 可检边界重扫（**现行边界以此为准**） |
+| `E10_robustness.py` | 真实性缺口补齐：独立传感器噪声/τ、C_eff 漂移、增益漂移、强基线对照 |
+| `E4_v2.py` | 供压切换敏感性（h\*=26 下 18 组合净误报 0/12） |
+| `ident.py` | 可辨识性与三个技术瓶颈 |
+| `make_figures.py` / `check_figures.py` | 三张关键图生成与结构校验 |
+| `E3_corrected.py` / `E6_E7_v2.py` / `F1_F2.py` | **定量结论已作废**（产自重叠窗 + 错误门限 h=61），仅作方法学对照 |
+| `legacy/` | 已隔离的废版与诊断脚本（含一处已知 bug 的早期版，**勿使用**） |
 
-当前申报文字源是application/正式模板正文.md，本次快照在application/equation_figure_revision，新图在application/figures/equation_revision。实施项目书源为application/实施项目书.md，尚未随前一轮研究范围细化重写。application/language_scope_revision、application/table_reference_revision与application/quality_release保留历史版本。运行文档工具使用捆绑Python：C:/Users/Lenovo/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe，浏览器工具使用同目录Node与本机Edge。PDF采用WPS原生导出和捆绑PDFium逐页渲染；每次正文或图片改变都必须重新检查实际版面。
+**结果**：`results/`（14 个 txt/json）　**图**：`figures/`（3 图 × PNG+SVG）
 
-此前24页表格与文献修订使用scripts/revise_application_tables_references.py、scripts/export_revised_application.ps1和scripts/verify_revised_application.py。渲染使用scripts/render_quality_documents.py，24页人工查看记录在simulation/table_reference_review/visual_review.json。scripts/finalize_table_reference_revision.py只允许已记录的相同图像通过，不能替代新的人工审阅。prepare_quality_payload、fill_quality_application和verify_quality_application依赖17篇历史正文，不用于当前修订稿。
+**数据基础**：`simulation/cusum_review/heldout_observations.npz`（960 条合成轨迹，20 个基础序列复用）。
+经反推核实模型参数与设计值一致：R=0.7928、C=0.2799、n=0.4914（设计值 0.8 / 0.28 / 0.5）。
 
-实施书生成：scripts/build_execution_book.py → PowerShell7运行scripts/export_quality_book.ps1 → scripts/render_quality_documents.py将PDF渲染至tmp/quality_book/render-v4 → scripts/verify_execution_book.py → 人工逐页查看。该校验记录当前已查看的前12页哈希；修改正文后应建立新一轮审阅及记录，不能沿用旧的人工通过状态。
+### 复现命令
 
-本次网站独立重建使用scripts/build_portal.py --operations-only，检查使用scripts/verify_revised_site.mjs，不修改文档、独立研究页或历史记录。模型原数据及实体本次未改。后续模型只读核对可用CAD环境tmp/cad_runtime运行scripts/quality_recheck.py --cad；图生成和浏览器图检查使用scripts/build_quality_figures.py与scripts/verify_quality_visuals.mjs。三维页面使用scripts/build_bench_viewer.py --collection-review与scripts/verify_quality_model_viewer.mjs。图像改变后须重新检查包含该图的文档，不沿用旧人工通过状态。
+```
+cd simulation/project_review
+python run_all.py            # 统一入口，七步全量复现（推荐，约 12.6 s）
+```
 
-当前修订的机器检查、人工记录和文件哈希保存于simulation/equation_figure_review及deliverables/申报书公式与插图修订验收记录.json。simulation/language_scope_review及对应记录为前一版；simulation/table_reference_review及deliverables/表格文献与职责修订验收记录.json对应此前24页稿。verify_quality_release、update_quality_release_content、finalize_quality_release和旧材料包针对上一轮25页/17篇文件，不作为本次入口，也不能覆盖本次正文。一次性迁移脚本保留作来源说明。
+单步（仅调试用）：`python E9_block_threshold.py`、`python E10_robustness.py`、
+`python ident.py`、`python make_figures.py`。
 
-## 历史材料
+依赖：Python 3.10 + numpy + matplotlib（Microsoft YaHei 字体，用于中文标签）。
 
-[上一轮25页申报PDF](deliverables/大创申报书_格式优化审阅版.pdf)及[全量验收](docs/全量复核与格式优化验收报告.md)保留为历史记录。[24页原学校模板稿](deliverables/大创申报书_模板填写稿.docx)及[整合验收](docs/学校模板申报书整合与分项验收.md)为更早基线。[6页旧范围草案](deliverables/项目书审阅版.pdf)不替代当前实施书。[15页答辩PPT](deliverables/立项答辩.pptx)及原PDF为历史草案，硬件、预算和最新截图待内容稳定后单独同步；本次未改PPT。
+### 关于测量精度的结论（已修正）
 
-主站30组页面/视口、24回放、21项交互及3项实际导出通过本次检查。运行界面只保留业务功能，不链接申报、项目书、模型或验收报告。网站没有接入真实串口、SQLite服务、设备权限或RF；localStorage仅用于当前演示。文件移动、换浏览器或清除站点数据可能丢失记录，演示记录需导出。材料尚未提交或批准。
+旧结论「U 到 5 kPa 仍 10/10，瓶颈不在传感器精度」是**假象**——它全程只在一个门限
+（h=61）下跑，且注入幅度取 +10%，对 U 没有区分度。
+
+重扫后（`E9` §8，取贴近可检边界的 +2% 幅度）：**U ≤ 2.0 kPa 保持「≥95% 检出 + 零误报」，
+U=5 kPa 掉到 15/40**。设计工况 U≈0.175 kPa（差压 35 kPa×0.5%FS）在此范围内，余量 11 倍。
+⇒ 正确表述是「**在可检边界附近，传感器精度才成为约束**」，而非"完全不是瓶颈"。
+
+---
+
+## 五、硬件与三阶段约束
+
+**冻结硬件**（BOM v2.2）：差压变送器 **35—40 kPa 档 / ±0.5%FS**（厂家最小标准档，以书面报价为准）
++ 0—200 kPa 干管参照表压、**GD32F103CBT6**（128 KB Flash）、
+**SGM58031**、SEN0549 流量计、E220-400T22D ×2（**功率设 ≤10 dBm**）、
+XL4015 + MP2359 供电 + XL6009 高边开关（24 V 仅供两线制变送器）。
+
+**成本**：**2409—5018 元**（v2.2，含天线/RTC/防反接/高边开关/PCB/孔板/电平整形等八项漏项）；
+专项额度 6300 元，余量 ≥20%（下限情形）。旧口径 1980—4510 元已作废。
+
+**系统边界**：原型为一个差压—流量节点、一个 E220 接收字节桥、现有 PC 上的 SQLite 与本地 Web、
+双支路清水台架。A 支路测量与故障注入，B 支路只作正常共享水源扰动。定位只到监测支管/区段，
+**节流不证明真实滴头堵塞**。自动阀控、多节点、太阳能与云端需新资源与验收。
+
+**后续研究方向**：先研究跨负载、供压与日期的健康参照更新，再增加节点开展同步支管关联与巡检价值评价。
+台架流量计不能直接套用大田支管量程，迁移需重新选型标定。
+
+**样本量口径**：现有 480 个合成试次、960 条配对方法结果、288 个有界误差组合，
+**20 个基础序列复用，不是 480 次独立实测**。通信回放不等于实际射频或整机能耗。
+
+---
+
+## 六、校方规则（必须遵守）
+
+依据塔里木大学教务处 **教函发〔2026〕1号**：
+
+1. **必须参加竞赛**：项目期内须报名参加「中国国际大学生创新大赛」「挑战杯」等，**列为结项必要条件之一**
+2. **经费科目**：印刷费 / 差旅费（≤30%）/ **专用材料费** / 测试化验加工费（委托业务费）
+3. **禁购清单**：不得购买电脑、照相机、摄影机、打印机、移动硬盘等设备 ⇒ 参考仪表改借调或委托校准
+4. **结项门槛**：国家级需**论文 或 专利 或 省部级及以上竞赛奖** 任一
+
+---
+
+## 七、已知限制与待办
+
+### 待渠道确认（不阻塞）
+| # | 事项 | 途径 |
+|---|---|---|
+| 1 | 差压变送器 **35—40 kPa 档**的准确标价、交期、精度档（±0.5%FS 是否有更优档） | 向麦克/熙正/三丰/天康询价，须书面回复 |
+| 2 | 流量计自身压损曲线 + **长期稳定性与温漂指标**（Q 通道容限全程仅 0.10%） | 台架标定阶段实测 + 索厂家指标 |
+| 3 | 支管间距/长度/控制面积、灌水定额 | 图书馆 CNKI + 现场调研 |
+| 4 | 阀态信号可得性（用于区分泄漏与负载变化） | 现场问合作团场 |
+| 5 | 学院 2027 年经费实际额度 | 学院教务 |
+| 6 | **变送器上电建立时间 T_set**（决定续航 5.5—10.2 天） | 台架实测 |
+
+### 必须做规避论证
+专利 **CN122546648A**（2026-08-11 公开，上海华维节水灌溉）已用到「轮灌切换扰动段」与
+「泵站压力—支管流量—末端压力」关系。本项目在**目的（检测非控制）、方法（参数漂移+累积和）、
+输出（提示非指令）、场景、贡献**五项均不同，须在申报书与论文中明确写出区别。
+
+### 未知项如实说明
+- **三张关键图已按现行口径更新并复核**：2026-10-17 用 `E9_block_threshold.json` 重新生成 `roadmap / threshold_separation / detection_boundary`，并完成了目视复核。图 B 显示重叠版峰值跨 265 倍、块版门限 h\*=26；图 C 显示泄漏 +2%（80 s）与受限 +50%（80 s）边界。旧图（h=61、5% 不可检/8% 可检）已覆盖，不可再用。版式上另修掉三处错位/重叠（图B 线性轴截断、图B 图例与结论文本框重叠、图C 边界说明压在色块数字上），`make_figures.py` 现每次生成都跑 `verify_layout()`（不越界、不重叠）。
+- **干管参照收益为负结果**：现有仿真数据上改善不显著（−12%~+20%）；且已证明 ΔP 只含本区段 R ⇒
+  供压/邻支路扰动对 K/R̂ **严格不可见**（正面结论）。**真实收益须由台架实测判定**，未写成「必然有效」。
+- **h\*=26 是仿真条件下的相对基准**：既有数据未建模各通道独立传感器噪声与噪声时间常数 τ，
+  **不得直接写入实物指标**；实物门限须在台架实测噪声上重标。
+- **原理性根本边界**：「等效泄漏」与「下游负载自身变化」在 (P0,P1,Q) 三测点下响应完全一致，
+  **严格不可区分**，已写入边界章节，不是调参问题。
+
+---
+
+## 八、归档与历史材料
+
+为保持口径统一，历史材料已归档，**未删除，可恢复**：
+
+| 位置 | 内容 |
+|---|---|
+| `archive/docs_历史/` | 68 份历史文档（2026-10-07 及以前 + 已合并的旧验收记录） |
+| `archive/docs_改前备/` | 口径统一前的文档副本 |
+| `archive/申报书旧稿/` | 申报书旧稿（正式稿1、v4）与学校空白模板 |
+| `archive/交付区旧版/` | 交付区早期实验版申报书 |
+| `simulation/project_review/legacy/` | 已隔离的废版脚本与诊断脚本（含一处已知 bug 的早期版） |
+| `deliverables/` | 桌面版 V1.3、运行平台 V1.2/V1.3、三维台架、答辩 PPT 等交付物 |
+
+**仓库备份**：`C:\Users\Lenovo\Desktop\滴智卫_git备份_20261016.bundle`（293 MB，含全部 refs，已验证）。
+
+README 中此前的「最新入口」指向的若干交付文件在归档前已不存在（非本次操作所致），本次重写已一并清理。
+
+---
+
+## 九、修改与复现
+
+**申报书正文**：不在本目录生成，权威稿为 `大创申报书_正式稿6.docx`；
+修改前备份为 `大创申报书_正式稿6_修改前备份.docx`。修改纪律为唯一锚点替换、
+保存前断言关键字段、保存后复核结构（表格/图片/公式/杂散符号数不变）。
+
+**仿真复现**：
+
+```
+cd simulation/project_review
+python run_all.py            # 统一入口：七步全量复现，约 12.6 s
+```
+
+**SD 卡 CSV 导入桌面端**：
+
+```
+python scripts/import_sdcard_csv.py firmware/build/out_leak.csv --db tmp/desktop_runtime/operations.sqlite --label "田间 1# 节点"
+```
+
+导入后启动 `python scripts/run_platform.py` 或桌面 EXE 即可在历史会话中查看。详见 `docs/SD卡CSV导入链路.md`。
+
+**数值口径自检**（改任何数值后必跑）：
+
+```
+python scripts/audit_numeric_consistency.py      # 扫描 docs/README/申报书，输出冲突清单
+```
+
+依赖：Python 3.10 + numpy + matplotlib（Microsoft YaHei 字体，用于中文标签）。
+
+---
+
+*最后更新：2026-10-17*

@@ -80,9 +80,15 @@ class Drawing:
             if time.monotonic()>deadline:
                 raise RuntimeError('Fresh diagram not produced: '+str(dest))
             time.sleep(.2)
-        import pymupdf
-        receipt = ''.join(p.get_text() for p in pymupdf.open(proof))
-        assert 'DIAGRAM_LAYOUT_PASS' in receipt and 'DIAGRAM_LAYOUT_FAIL' not in receipt, receipt[-1200:]
+        import importlib.util
+        if importlib.util.find_spec('pymupdf') is None:
+            # PDF 回执校验依赖 pymupdf；缺失时跳过该项（SVG/PNG 已生成），
+            # 版式校验由 scripts/verify_figure_layout.mjs 统一负责。
+            print('warning: pymupdf 缺失，跳过 PDF 版式回执校验', flush=True)
+        else:
+            import pymupdf
+            receipt = ''.join(p.get_text() for p in pymupdf.open(proof))
+            assert 'DIAGRAM_LAYOUT_PASS' in receipt and 'DIAGRAM_LAYOUT_FAIL' not in receipt, receipt[-1200:]
         records.append({'name': self.name, 'width': 1000, 'height': self.height, 'classification': 'proposed_design_not_physical_validation', 'minimum_text_px': min(t['size_px'] for t in self.texts), 'minimum_text_pt_at_425pt_width': round(min(t['size_px'] for t in self.texts)*425/1000, 2), 'labels': [t['text'] for t in self.texts]})
         print(self.name, 'rendered', flush=True)
 
@@ -111,13 +117,13 @@ def water_layout():
     d.box(20, 90, 155, 100, '可调供水', ['工作点待核定'])
     d.path([(175, 140), (220, 140), (220, 106), (915, 106)], arrow=False)
     d.path([(220, 140), (220, 300), (915, 300)], arrow=False)
-    for x, label, note in [(290, 'P0', '区段入口'), (570, 'P1', '受限下游'), (700, 'Q', 'A总流量')]:
+    for x, label, note in [(240, 'Q', '流量计'), (350, 'P0', '取压嘴A'), (620, 'P1', '取压嘴B')]:
         d.sensor(x, 106, label)
         d.text(x, 53, note)
-    d.box(362, 79, 145, 54, '受限元件')
+    d.box(400, 79, 145, 54, '区段R')
     d.box(815, 79, 145, 54, 'A正常负载')
-    d.path([(768, 106), (768, 205), (970, 205)], arrow=False)
-    d.box(815, 178, 145, 54, '泄漏调节阀')
+    d.path([(690, 106), (690, 205), (970, 205)], arrow=False)
+    d.box(815, 178, 145, 54, '泄漏球阀')
     d.text(817, 269, '独立收集量与计时')
     d.box(362, 273, 145, 54, 'B切换阀')
     d.box(815, 273, 145, 54, 'B正常负载')
@@ -126,7 +132,8 @@ def water_layout():
     d.path([(960, 300), (980, 300)], arrow=False)
     d.box(70, 430, 350, 90, '回水或收集装置', ['泄漏支路收集后另行回水'])
     d.path([(70, 461), (12, 461), (12, 140), (20, 140)], dashed=True)
-    d.footer(['布点与水路结构示意；接头、稳压、排气和防溅措施须在装配前核定。'])
+    d.footer(['安装顺序：流量计 → 取压嘴A → 区段R → 取压嘴B → 泄漏球阀，不可调换。',
+              '两个取压嘴都在流量计下游；接头、稳压、排气和防溅措施须在装配前核定。'])
     d.render()
 
 
