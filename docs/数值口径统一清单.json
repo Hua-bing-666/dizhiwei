@@ -97,11 +97,11 @@
       "deprecated": "把 480 试次写成独立实测"
     }
   ],
-  "files_scanned": 54,
-  "files_with_hits": 41,
+  "files_scanned": 55,
+  "files_with_hits": 42,
   "block_total": 121,
   "block_in_current_docs": 0,
-  "ref_total": 150,
+  "ref_total": 152,
   "todo_total": 53,
   "current_docs_with_hits": [],
   "docx_with_hits": [
@@ -2429,6 +2429,24 @@
         "line": 204,
         "snippet": "STM32F103C8T6",
         "context": "- 锁定 **STM32F103C8T6**（GD32 作国产化复验，不阻塞主线）"
+      }
+    ],
+    "docs/项目实施方案_分块版_申报书用.md": [
+      {
+        "rule": "N01",
+        "level": "REF",
+        "desc": "差压量程写成 0—20 kPa（厂家无此档）",
+        "line": 124,
+        "snippet": "0—20 kPa",
+        "context": "精度链推导：可检边界故障幅度 +2% 对应 U 需求 ≤ 2.0 kPa；设计工况（0—40 kPa 档 × ±0.5%FS）U ≈ 0.20 kPa，**余量 10 倍**。量程取 40 kPa 是厂家最小标准档（订货号 K040）；厂家无 0—20 kPa 档，更高精度档（±0.25%/±0.1%）在该量程段亦无货。定量上限的取舍如实写明：受限故障的定量"
+      },
+      {
+        "rule": "N10",
+        "level": "REF",
+        "desc": "LoRa 功率写成 22 dBm 或未写合规限值",
+        "line": 146,
+        "snippet": "22 dBm",
+        "context": "| LoRa 模块 | 亿佰特 **E220-400T22D**（LLCC68） | **410—493 MHz**（覆盖 433 MHz） | 接收 16.8 mA；发射 110 mA（@22 dBm，**实际设 ≤10 dBm**） | **USART1：PA9(TX)/PA10(RX)**；M0/M1 接地固定透明模式 | ≤10 dBm 满足 433"
       }
     ],
     "docs/项目实施详细步骤与技术路线总纲.md": [

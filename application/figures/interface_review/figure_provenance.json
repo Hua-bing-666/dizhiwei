@@ -5,36 +5,23 @@
     {
       "name": "measurement_interfaces",
       "width": 1000,
-      "height": 930,
+      "height": 950,
       "classification": "candidate_functional_design_not_build_released",
       "connections": [
         {
-          "meaning": "24V to P0变送器",
+          "meaning": "differential current loop and ADC sense tap",
           "points": [
             [
-              132,
-              148
+              260,
+              287
             ],
             [
-              132,
-              180
-            ]
-          ]
-        },
-        {
-          "meaning": "P0变送器 current loop and ADC sense tap",
-          "points": [
-            [
-              235,
-              226
-            ],
-            [
-              310,
-              226
+              300,
+              287
             ],
             [
               425,
-              226
+              287
             ]
           ]
         },
@@ -43,41 +30,28 @@
           "points": [
             [
               655,
-              226
+              287
             ],
             [
               740,
-              226
+              287
             ]
           ]
         },
         {
-          "meaning": "24V to P1变送器",
+          "meaning": "reference current loop and ADC sense tap",
           "points": [
             [
-              132,
-              378
+              260,
+              447
             ],
             [
-              132,
-              410
-            ]
-          ]
-        },
-        {
-          "meaning": "P1变送器 current loop and ADC sense tap",
-          "points": [
-            [
-              235,
-              456
-            ],
-            [
-              310,
-              456
+              300,
+              447
             ],
             [
               425,
-              456
+              447
             ]
           ]
         },
@@ -86,68 +60,81 @@
           "points": [
             [
               655,
-              456
+              447
             ],
             [
               740,
-              456
+              447
             ]
           ]
         },
         {
-          "meaning": "ADC I2C PB7/SDA",
+          "meaning": "+3.3V to ADC",
+          "points": [
+            [
+              855,
+              211
+            ],
+            [
+              855,
+              225
+            ]
+          ]
+        },
+        {
+          "meaning": "I2C1 remap PB8 SDA",
           "points": [
             [
               790,
-              590
+              500
             ],
             [
               790,
-              615
+              620
             ]
           ]
         },
         {
-          "meaning": "ADC I2C PB6/SCL",
+          "meaning": "I2C1 remap PB9 SCL",
           "points": [
             [
-              920,
-              590
+              880,
+              500
             ],
             [
-              920,
-              615
+              880,
+              620
             ]
           ]
         },
         {
-          "meaning": "5V pulse to tolerant buffer input",
+          "meaning": "5V pulse to divider input",
           "points": [
             [
               235,
-              777
+              752
             ],
             [
               395,
-              777
+              752
             ]
           ]
         },
         {
-          "meaning": "3.3V buffered pulse to PA0",
+          "meaning": "3.3V shaped pulse to PB6",
           "points": [
             [
               655,
-              777
+              752
             ],
             [
               805,
-              777
+              752
             ]
           ]
         }
       ],
-      "svg_sha256": "16be4ba7866efbf57b76794456424a59063b35476a965605d0954de9e2941bb0",
+      "svg_sha256": "c884fe6e7687e1c990dacaeac374b28048bc9c4e808b5a1730e01b82d2f8f12b",
       "minimum_text_px": 23,
       "minimum_text_pt_at_425pt_width": 9.775
     },
@@ -230,7 +217,7 @@
           ]
         }
       ],
-      "svg_sha256": "53607698969621c2c483d520ca0d3fae0c8abe000a66de0d6df7fca0d7e7ffda",
+      "svg_sha256": "993f6cea1c3815e60872549f0c3d602e9633e83ac96c5e394a66fe4ae76713d7",
       "minimum_text_px": 23,
       "minimum_text_pt_at_425pt_width": 9.775
     },
@@ -351,7 +338,7 @@
     }
   ],
   "source_sha256": {
-    "scripts/draw_interface_review.py": "9fb41681b6dc466c110ce349cea9dc7fadc786a65a3f825361de91c0feab163f",
+    "scripts/draw_interface_review.py": "230771974bc00f3adf2d18b525832becf5352d5ee8878d4a7a5dd9808af7d3d2",
     "simulation/interface_review/interface_spec.json": "09aa59e383c8a35abbf2963a6552667e4988f38b0e9873b26968f22711c65c37",
     "simulation/interface_review/hardware_checks.json": "590728f879db67624b1419ec0a64c538afbd754d0c66e8fe0b4379506737c0c6",
     "simulation/interface_review/protocol_checks.json": "878da7dafed41da88590287fd863e03e4869590c1a478e5cc4bddb08c34fc2b1"

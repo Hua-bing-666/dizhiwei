@@ -26,25 +26,34 @@ class Figure:
         records.append({'name':self.name,'width':1000,'height':self.height,'classification':'candidate_functional_design_not_build_released','connections':self.connections,'svg_sha256':hashlib.sha256(svg.encode()).hexdigest(),'minimum_text_px':23,'minimum_text_pt_at_425pt_width':23*425/1000})
 
 def frontend():
-    f=Figure('measurement_interfaces',930,'感知节点：双压力与流量采集接口','候选功能原理；压力采用两路4—20mA，流量脉冲转换为3.3V。')
-    for y,label,ain in [(180,'P0变送器','AIN0'),(410,'P1变送器','AIN1')]:
-        cy=y+46;f.box(30,y,205,92,[label,'两线4—20mA']);f.line([(132,y-32),(132,y)],label='24V to '+label);f.text(132,y-45,'+24V',anchor='middle')
-        f.line([(235,cy),(310,cy),(425,cy)],label=label+' current loop and ADC sense tap');f.dot(310,cy)
-        f.line([(310,cy),(310,cy+43)]);f.items.append(f'<rect x="300" y="{cy+43}" width="20" height="48" fill="white" stroke="#172b30" stroke-width="2"/>');f.text(285,cy+72,'150Ω',anchor='end');f.line([(310,cy+91),(310,cy+115)]);f.ground(310,cy+115)
-        f.box(425,y,230,92,['输入保护与滤波','具体定值待验证'],dash=True);f.line([(655,cy),(740,cy)],label=ain+' protected normal 0.6—3.0V')
-    f.items.append('<rect x="740" y="160" width="230" height="430" rx="3" fill="white" stroke="#172b30" stroke-width="2"/>')
-    # Input labels must be painted after the housing, rather than hidden by it.
-    f.text(750,234,'AIN0');f.text(750,464,'AIN1')
-    f.text(855,321,'ADS1115',27,True,'middle');f.text(855,358,'VDD 3.3V',anchor='middle');f.text(855,395,'PGA ±4.096V',anchor='middle')
-    f.line([(855,133),(855,160)]);f.text(855,121,'+3.3V / 去耦',anchor='middle')
-    for x,value in [(790,'PB7/SDA'),(920,'PB6/SCL')]:f.line([(x,590),(x,615)],label='ADC I2C '+value);f.text(x,642,value,anchor='middle')
-    f.line([(855,590),(855,605)]);f.ground(855,605)
-    f.text(28,682,'正常量程0.6—3.0V；20mA耗散0.06W；22mA已达3.3V。')
-    f.box(30,725,205,104,['SEN0549','5V供电']);f.box(395,715,260,124,['SN74LVC1G17','VCC 3.3V','输入允许至5.5V']);f.box(805,725,165,104,['TIM2_CH1','PA0计数'])
-    f.line([(235,777),(395,777)],arrow=True,label='5V pulse to tolerant buffer input');f.text(315,755,'5V脉冲',anchor='middle')
-    f.line([(655,777),(805,777)],arrow=True,label='3.3V buffered pulse to PA0');f.text(730,755,'3.3V',anchor='middle')
-    f.text(28,881,'台架共地；24V不进ADC。保护、掉电注入、实际引脚与标定尚待验证。')
-    f.text(28,915,'候选功能图，非可投板原理图或接线完成证明。',color='#52636a');f.save()
+    f=Figure('measurement_interfaces',950,'感知节点：差压/参照/流量采集接口','单只差压变送器测区段压降 + 干管参照表压；流量脉冲整形成 3.3 V。')
+    # 供电通栏：24 V 只供两线制变送器，高边开关间歇供电（v2.2 契约 H3/H10）
+    f.box(30,115,940,96,['24 V 升压 XL6009：电池 12—16.8 V → 24 V','EN 受 PB0 控制（高边开关）；采样窗内上电、读完即断电','断电期间 ADC 停止采样'],fill='#eef5f2')
+    # 差压支路（区段 R 两端取压）
+    f.box(30,225,230,124,['差压变送器 MDM490','+24 V 间歇供电','0—40 kPa · 跨区段R'])
+    f.line([(260,287),(300,287),(425,287)],label='differential current loop and ADC sense tap');f.dot(300,287)
+    f.line([(300,287),(300,330)]);f.items.append(f'<rect x="290" y="330" width="20" height="48" fill="white" stroke="#172b30" stroke-width="2"/>');f.text(315,359,'150Ω',anchor='start');f.line([(300,378),(300,402)]);f.ground(300,402)
+    f.box(425,225,230,124,['输入保护与滤波','BAT54S 钳位 + TVS','具体定值待验证'],dash=True);f.line([(655,287),(740,287)],label='AIN0 protected normal 0.6—3.0V')
+    # 干管参照支路
+    f.box(30,425,230,124,['干管参照表压','+24 V 间歇供电','0—200 kPa'])
+    f.line([(260,447),(300,447),(425,447)],label='reference current loop and ADC sense tap');f.dot(300,447)
+    f.line([(300,447),(300,490)]);f.items.append(f'<rect x="290" y="490" width="20" height="48" fill="white" stroke="#172b30" stroke-width="2"/>');f.text(315,519,'150Ω',anchor='start');f.line([(300,538),(300,562)]);f.ground(300,562)
+    f.box(425,425,230,124,['输入保护与滤波','BAT54S 钳位 + TVS','具体定值待验证'],dash=True);f.line([(655,447),(740,447)],label='AIN1 protected normal 0.6—3.0V')
+    # ADC（SGM58031，I²C1 重映射 PB8/PB9，总线上另挂 DS3231）
+    f.items.append('<rect x="740" y="225" width="230" height="275" rx="3" fill="white" stroke="#172b30" stroke-width="2"/>')
+    f.text(750,249,'AIN0');f.text(750,449,'AIN1')
+    f.text(855,321,'SGM58031',27,True,'middle');f.text(855,358,'VDD 3.3V',anchor='middle');f.text(855,395,'PGA ±4.096V',anchor='middle');f.text(855,470,'GND',anchor='middle')
+    f.line([(855,211),(855,225)],label='+3.3V to ADC');f.text(865,238,'+3.3V',anchor='start')
+    f.line([(790,500),(790,620)],label='I2C1 remap PB8 SDA');f.text(775,560,'PB8/SDA',anchor='end')
+    f.line([(880,500),(880,620)],label='I2C1 remap PB9 SCL');f.text(895,560,'PB9/SCL',anchor='start')
+    f.box(740,620,180,64,['DS3231 RTC','I²C 总线上挂载'])
+    # 脉冲链路：5 V 脉冲 → 分压 + 施密特整形 → PB6/TIM4_CH1
+    f.box(30,700,205,104,['SEN0549','5V供电']);f.box(395,690,260,124,['SN74LVC1G17','VCC 3.3V','10k+20k 分压输入']);f.box(805,700,165,104,['TIM4_CH1','PB6 计数'])
+    f.line([(235,752),(395,752)],arrow=True,label='5V pulse to divider input');f.text(315,730,'5V脉冲',anchor='middle')
+    f.line([(655,752),(805,752)],arrow=True,label='3.3V shaped pulse to PB6');f.text(730,730,'3.3V',anchor='middle')
+    f.text(28,850,'量程 0.6—3.0V；20mA耗散0.06W；30mA故障电流由钳位管旁路。')
+    f.text(28,884,'台架共地；24V不进ADC；保护、掉电注入、实际引脚与标定尚待验证。')
+    f.text(28,918,'候选功能图，非可投板原理图或接线完成证明。',color='#52636a');f.save()
 
 def resources():
     f=Figure('power_and_pin_resources',785,'电源与引脚：一节点的资源分配','电流为设计预留，非实测功耗；主控、ADC与存储使用独立3.3V稳压。')
@@ -55,12 +64,12 @@ def resources():
     f.line([(460,232),(487,232),(487,518),(245,518),(245,555)],arrow=True,label='3.3V to MCU ADC and SD');f.text(255,547,'3.3V',color='#3c6284')
     f.box(30,555,430,105,['主控 + ADC + microSD','360mA预留，未测瞬态电流'],fill='#eaf1f7')
     f.text(747,144,'候选引脚表',26,True,'middle');f.items.append('<rect x="530" y="173" width="440" height="482" fill="#fafbfb" stroke="#ccd5d8"/>')
-    rows=[('ADC / I²C','PB6 / PB7'),('流量计数','PA0'),('LoRa / UART','PA9 / PA10'),('microSD / SPI','PA4—PA7'),('AUX 输入','PB0'),('M0 / M1','PB10 / PB11'),('SWD 保留','PA13 / PA14'),('调试串口','PA2 / PA3')]
+    rows=[('SGM58031 / DS3231 / I²C','PB8 / PB9'),('流量计数','PB6 / TIM4_CH1'),('LoRa / UART','PA9 / PA10'),('microSD / SPI','PA4—PA7'),('24V 高边开关','PB0'),('SWD 保留','PA13 / PA14'),('调试串口','PA2 / PA3')]
     for i,(label,pin) in enumerate(rows):
         y=208+i*57;f.text(546,y,label);f.text(774,y,pin)
         if i<len(rows)-1:f.line([(542,y+18),(958,y+18)],color='#d5dddf')
     f.text(530,695,'PB1为人工B状态标记，非阀位实测。')
-    f.text(28,738,'24V另供两压力回路；接收端5V供电、USB-TTL须为3.3V通信电平。')
+    f.text(28,738,'24 V 经高边开关间歇供电，仅两线制变送器使用；接收端5V供电、USB-TTL须为3.3V通信电平。')
     f.text(28,771,'接线前核对板上稳压/上拉，避免USB与外部电源互相回灌。',color='#52636a');f.save()
 
 def sequence():

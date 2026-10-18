@@ -17,23 +17,23 @@
       "minFontPt": 10.08,
       "outside": [],
       "png_sha256": "4d0d436ba1acc7175925f5ea8a63f4b199c81cd5826249d6e46ed524879bba66",
-      "svg_sha256": "3b82883fad932e753d8c98ad38ba4d5d9c8a5924a4c46cbcb497010c2ea21596"
+      "svg_sha256": "befe2dcdcde6493459f5b4d42a21901dafa2547d70f046bf49ac0d0532c8c5a3"
     },
     {
       "name": "water_layout",
       "width": 1000,
-      "height": 650,
+      "height": 510,
       "clip": {
         "x": 0,
         "y": 0,
         "width": 1000,
-        "height": 650
+        "height": 510
       },
-      "textCount": 15,
-      "minFontPt": 9.66,
+      "textCount": 17,
+      "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "5900a453766dcbd7bd421e9a11b98854a512adb68521a3b66cd55c69b054c892",
-      "svg_sha256": "db3c6596980bf2122a7cb3d8bf9a4189bf25a77d6bfeca5548bc26b8f8c574b5"
+      "png_sha256": "c1ccfc8af6a12e4e61642b495c9b49030db5cb48e8e2d832101c02b42502185d",
+      "svg_sha256": "ac66cf7ee8b3475ea53ee0efe9597010ee8216a11c1b9ee0ec9860cadbbd8423"
     },
     {
       "name": "collection_overview",
@@ -49,23 +49,23 @@
       "minFontPt": 10.08,
       "outside": [],
       "png_sha256": "39cad95314df30ad6d1ad8d04ed33f3f889ae7c921ba94cfc38375a941988db0",
-      "svg_sha256": "69a54faccbc6b2ae75f0a318545740f21acba1f5fe90a1620b5ded81bdbdcb41"
+      "svg_sha256": "e31966d7cda72454c698f98ae9bea1ebe583bb8aa2e5982129672c793b41aaa4"
     },
     {
       "name": "measurement_interfaces",
       "width": 1000,
-      "height": 930,
+      "height": 950,
       "clip": {
         "x": 0,
         "y": 0,
         "width": 1000,
-        "height": 930
+        "height": 950
       },
-      "textCount": 34,
+      "textCount": 42,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "deefad4032ca06640d75df18409e190016830d2ad4707d076dfd78425ce4c228",
-      "svg_sha256": "7912164f61f75143009305aebb4e90f1139653524ebb268b36736e3f21b0783d"
+      "png_sha256": "ac68bd437199770a83ab6bcdabd55069b615ea05fa8e644b80962f2cf4bd14e8",
+      "svg_sha256": "45633ff5251ba6f0661f0dae8595a919d12f8aca640a9709bc176a0e79465405"
     },
     {
       "name": "diagnosis_proposal",
@@ -81,7 +81,7 @@
       "minFontPt": 10.08,
       "outside": [],
       "png_sha256": "c4d727b9aeb9659cc62389bd9ae8ccbe8156888a9a1ae5fa7bd1dfb0423c1305",
-      "svg_sha256": "6f34481763c7b5c581f2e064d4aeb361108d403a7ca87e6eb72dfb13991268ca"
+      "svg_sha256": "03053e02298c5a277a0d6e6edd9fbdb9267587abb16e3f59d6e181cd255f9224"
     },
     {
       "name": "durable_event_sequence",
@@ -93,11 +93,11 @@
         "width": 1000,
         "height": 930
       },
-      "textCount": 17,
+      "textCount": 18,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "054b2ffa55df6c8e435c1791955f9a4f8c36dec32a9abc62f7feb8a51693f306",
-      "svg_sha256": "b67cf6a4aa71d1ea87c76d48cef1ad15a88316b1d19e54010a71e6e391e0e49f"
+      "png_sha256": "fa6a168611eedd246aa53af8be889f711510e0bbb79ed2baa9a67255de6d253e",
+      "svg_sha256": "f0bb74ed968d3363ba1c6a45559f170b5684c7f5d16e035c065f27e2352ed28b"
     },
     {
       "name": "noise_outcomes_print",
@@ -113,7 +113,7 @@
       "minFontPt": 9.607843137254902,
       "outside": [],
       "png_sha256": "2a8cf010c5f6a1e7d91cac62b123c484ee49b9ae332e401e7951c9e862431d48",
-      "svg_sha256": "aa1351b4fc3ba4812db8ceedf967d9a072fb247b3c34a8588151e021bdbdd2e1"
+      "svg_sha256": "fc6dafe984137d6d448c8731f690ea865e309d5b72f1abfbc6e141f3d0ea83f5"
     },
     {
       "name": "failure_counterexamples",
@@ -129,7 +129,7 @@
       "minFontPt": 9.607843137254902,
       "outside": [],
       "png_sha256": "e798ebbda06faa85ff09fd7c962d6ed857b21dd52755bf06f67769e4ef3453f2",
-      "svg_sha256": "d86b22fe9cf997649ccf2463485ee48daa87bb58ce823eeaf6c823786dec44ed"
+      "svg_sha256": "738acd578d1495db8a401118f41472c7337d40f9dae6b5c858c44f092121ae8f"
     },
     {
       "name": "sampling_window_tradeoff",
@@ -144,8 +144,8 @@
       "textCount": 28,
       "minFontPt": 9.66,
       "outside": [],
-      "png_sha256": "1970ed12f844563dc0463e546a133c5c00fe43cc4cfc4b610e6aa7de68724702",
-      "svg_sha256": "c843c4e0f3ce78ca3f2356121c39ccad51d40e01464696398a56ec300e78e6af"
+      "png_sha256": "3144c30fb2159df495b181dc337dfe800613ca9708ce489e07dc05f609f2f241",
+      "svg_sha256": "90af33562d9f57d080bef1abc5b555691d1f18c0b2cbb7b6a8103910c0e6d6a0"
     }
   ]
 }
