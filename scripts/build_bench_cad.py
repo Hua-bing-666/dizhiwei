@@ -174,20 +174,20 @@ def make_assembly():
     straight('supply_in',(40,430,Z),(97,430,Z))
     union('supply_port',(48,430,Z))
     tee('common_supply_tee',(115,430,Z),(0,-1,0))
-    main = [('P0',225,18),('R',350,28),('P1',455,18),('Q',580,34),('leak',685,18),('A',765,28)]
+    main = [('Q',180,34),('P0',270,18),('R',360,28),('P1',455,18),('leak',620,18),('A',765,28)]
     segments('A',430,133,820,main,'supply')
-    for name,x in [('P0',225),('P1',455)]:
+    for name,x in [('P0',270),('P1',455)]:
         tee(name+'_tap',(x,430,Z),(0,0,1))
         add(name+'_adaptor',tube((x,430,158),(x,430,172),10,3),'brass')
         boss = cut(hexagon((x,430,172),14,12),cylinder((x,430,171),(x,430,185),3))
         add(name+'_hex',boss,'silver')
         add(name+'_sensor_envelope',cylinder((x,430,184),(x,430,218),12),'silver',envelope_only=True)
         add(name+'_connector',cylinder((x,430,218),(x,430,239),8),'rubber',envelope_only=True)
-    inline_valve('restriction',350,430,handle='orange')
-    add('Q_meter_envelope',tube((546,430,Z),(614,430,Z),19,8),'rubber',envelope_only=True)
-    for x in (546,614):union('Q_union_'+str(x),(x,430,Z))
-    add('Q_pulse_cap',box((580,430,164),(27,24,15)),'blue',envelope_only=True)
-    tee('leak_tee',(685,430,Z),(0,-1,0),'brass')
+    inline_valve('restriction',360,430,handle='orange')
+    add('Q_meter_envelope',tube((146,430,Z),(214,430,Z),19,8),'rubber',envelope_only=True)
+    for x in (146,214):union('Q_union_'+str(x),(x,430,Z))
+    add('Q_pulse_cap',box((180,430,164),(27,24,15)),'blue',envelope_only=True)
+    tee('leak_tee',(620,430,Z),(0,-1,0),'brass')
     inline_valve('A_equivalent_load',765,430,handle='blue')
     # Common normal return. Both normal loads discharge here, not into the cup.
     add('A_return_elbow',elbow((820,410,Z),(0,1,0),(0,0,-1)), 'normal')
@@ -204,16 +204,16 @@ def make_assembly():
     inline_valve('B_switch',350,250,handle='blue')
     inline_valve('B_equivalent_load',765,250,handle='blue')
     # Measured leak ends above an open vessel, separated from normal return.
-    straight('leak_before_valve',(685,412,Z),(685,393,Z),'leak')
-    inline_valve('leak_control',685,365,direction=(0,1,0),handle='orange')
-    straight('leak_after_valve',(685,337,Z),(685,325,Z),'leak')
-    add('leak_down_elbow',elbow((685,325,120),(0,0,1),(1,0,0)),'leak')
-    straight('leak_free_outlet',(685,305,120),(685,305,112),'leak')
+    straight('leak_before_valve',(620,412,Z),(620,393,Z),'leak')
+    inline_valve('leak_control',620,365,direction=(0,1,0),handle='orange')
+    straight('leak_after_valve',(620,337,Z),(620,325,Z),'leak')
+    add('leak_down_elbow',elbow((620,325,120),(0,0,1),(1,0,0)),'leak')
+    straight('leak_free_outlet',(620,305,120),(620,305,112),'leak')
     vessel_outer, vessel_inner = (63,60) if COLLECTION_REVIEW else (40,37)
     tray_outer, tray_inner = (146,140) if COLLECTION_REVIEW else (110,104)
-    vessel = cut(cylinder((685,305,29),(685,305,92),vessel_outer),cylinder((685,305,32),(685,305,93),vessel_inner))
+    vessel = cut(cylinder((620,305,29),(620,305,92),vessel_outer),cylinder((620,305,32),(620,305,93),vessel_inner))
     add('open_measuring_vessel',vessel,'vessel','measurement',capacity_not_calibrated=True)
-    tray = cut(box((685,305,31),(tray_outer,tray_outer,10)),box((685,305,34),(tray_inner,tray_inner,10)))
+    tray = cut(box((620,305,31),(tray_outer,tray_outer,10)),box((620,305,34),(tray_inner,tray_inner,10)))
     add('removable_catch_tray',tray,'silver','measurement')
     collection_support_x = 575 if COLLECTION_REVIEW else 615
     for i,(x,y) in enumerate([(175,430),(285,430),(515,430),(650,430),(175,250),(450,250),(collection_support_x,250),(265,140),(570,140),(840,340)]):
@@ -229,7 +229,7 @@ def make_assembly():
     add('antenna_mount',cylinder((515,65,114),(515,65,127),6),'brass','electronics')
     add('LoRa_antenna_envelope',cylinder((515,65,127),(515,65,242),4),'rubber','electronics',envelope_only=True)
     # Optional route envelopes, shown only on request in the model viewer.
-    for name,x,z,index in [('P0',225,239,0),('P1',455,239,1),('Q',580,174,2)]:
+    for name,x,z,index in [('P0',270,239,0),('P1',455,239,1),('Q',180,174,2)]:
         points=[(x,430,z),(x,476,z),(x,476,66),(185-index*5,476,66),
                 (185-index*5,120,66),(345+index*32,120,85)]
         for j,(a,b) in enumerate(zip(points,points[1:])):
@@ -328,13 +328,13 @@ def main():
     params['collection_design']={'inner_radius_mm':60 if COLLECTION_REVIEW else 37,'inner_height_mm':60,'free_discharge_gap_mm':20,'capacity_calibrated':False,'target_sample_seconds':30 if COLLECTION_REVIEW else None,'capacity_margin_factor':1.25 if COLLECTION_REVIEW else None,'continuous_discharge_solution_verified':False}
     (OUT/'bench_layout.json').write_text(json.dumps(params,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
     scene={'palette':PALETTE,'meshes':meshes,'bounds':{'min':[0,0,-14],'max':[900,520,242]},
-           'anchors':{'P0':[225,430,239],'R':[350,430,184],'P1':[455,430,239],'Q':[580,430,176],
-                      'A':[765,430,182],'B':[350,250,182],'leak':[651,285,60],'node':[425,65,114]},
+           'anchors':{'P0':[270,430,239],'R':[360,430,184],'P1':[455,430,239],'Q':[180,430,176],
+                      'A':[765,430,182],'B':[350,250,182],'leak':[586,285,60],'node':[425,65,114]},
            'classification':'concept_design_not_physical_validation'}
     if COLLECTION_REVIEW:
-        scene['anchors'].update({'Q':[580,430,171.5],'A':[765,430,184],'B':[350,250,184],
-                                'leak':[685+63/math.sqrt(2),305-63/math.sqrt(2),70],
-                                'leak_rim':[623.5,305,92]})
+        scene['anchors'].update({'Q':[180,430,171.5],'A':[765,430,184],'B':[350,250,184],
+                                'leak':[620+63/math.sqrt(2),305-63/math.sqrt(2),70],
+                                'leak_rim':[558.5,305,92]})
     (OUT/'bench_scene.json').write_text(json.dumps(scene,separators=(',',':')),encoding='utf-8',newline='\n')
     print(json.dumps({'parts':len(PARTS),'vertices':offset,'triangles':params['faces'],
                      'step_reopened_valid':reopened['valid'],'solids':reopened['topology']['solids']},ensure_ascii=False))

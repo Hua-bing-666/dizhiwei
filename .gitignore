@@ -8,6 +8,7 @@ credentials*.json
 # Scratch files and generated artifacts
 tmp/
 output/
+.workbuddy/
 __pycache__/
 *.py[cod]
 .venv/

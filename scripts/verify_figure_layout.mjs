@@ -178,6 +178,9 @@ extra.push({name:'durable_event_sequence',svg:'application/figures/quality_revie
 extra.push({name:'network_topology',svg:'application/figures/network_topology.svg',strict:true});
 extra.push({name:'power_and_pin_resources',svg:'application/figures/interface_review/power_and_pin_resources.svg',strict:true});
 extra.push({name:'系统总体结构_单色学术版',svg:'deliverables/系统总体结构_单色学术版.svg',strict:true});
+extra.push({name:'图3-2_GD32F103CBT6最小系统原理图',svg:'deliverables/图3-2_GD32F103CBT6最小系统原理图.svg',strict:true});
+extra.push({name:'图3-8_双支路台架三维布局',svg:'deliverables/图3-8_双支路台架三维布局.svg',strict:true});
+extra.push({name:'图3-1_系统总体结构',svg:'deliverables/图3-1_系统总体结构.svg',strict:true});
 const figures=[...sources.figures,...extra];
 const report={date:new Date().toISOString().slice(0,10),mode:'check_only_no_png_written',figures:[]};
 let bad=0;
