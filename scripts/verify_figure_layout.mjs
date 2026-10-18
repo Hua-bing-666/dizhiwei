@@ -169,6 +169,11 @@ for(const name of ['roadmap','threshold_separation','detection_boundary']){
 extra.push({name:'技术路线图_单色学术版',svg:'deliverables/技术路线图_单色学术版.svg',strict:true});
 extra.push({name:'tech_roadmap_staircase',svg:'application/figures/tech_roadmap_staircase.svg',strict:true});
 extra.push({name:'diagnosis_closed_loop',svg:'application/figures/diagnosis_closed_loop.svg',strict:true});
+extra.push({name:'system_responsibilities',svg:'application/figures/quality_review/system_responsibilities.svg',strict:true});
+extra.push({name:'measurement_interfaces',svg:'application/figures/quality_review/measurement_interfaces.svg',strict:true});
+extra.push({name:'water_layout',svg:'application/figures/quality_review/water_layout.svg',strict:true});
+extra.push({name:'durable_event_sequence',svg:'application/figures/quality_review/durable_event_sequence.svg',strict:true});
+extra.push({name:'network_topology',svg:'application/figures/network_topology.svg',strict:true});
 const figures=[...sources.figures,...extra];
 const report={date:new Date().toISOString().slice(0,10),mode:'check_only_no_png_written',figures:[]};
 let bad=0;

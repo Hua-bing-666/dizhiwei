@@ -1,0 +1,371 @@
+{
+  "project": "滴智卫 DiZhiWei — 基于 LoRa 的南疆滴灌支管道早期故障诊断物联网原型系统",
+  "library": "vendor_hardware/（application/figures/vendor_hardware/）",
+  "generated": "2026-10-18",
+  "discipline": "本目录只放官方一手资料与本项目自绘图/脚本；爬取中间产物已于 2026-10-18 清除；新增文件须同步登记 SOURCES.md 与本文件",
+  "source_levels": {
+    "A 原厂": "厂商官网/原厂数据手册/原厂选型资料",
+    "B 代理/商城": "授权代理商或电商平台页面（仅作实物图、丝印核对）",
+    "C 本项目": "本项目自绘电路图/脚本/整理稿"
+  },
+  "devices": {
+    "E220-400T22D": {
+      "name": "E220-400T22D LoRa 模块",
+      "role": "无线通信（功率设定 ≤10 dBm）",
+      "source_level": "A 原厂",
+      "urls": [
+        "https://www.ebyte.com/product/1077.html"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "系列手册覆盖 T22S 18 脚邮票孔封装，引脚定义以产品页 7 脚直插为准"
+    },
+    "GD32F103CBT6": {
+      "name": "GD32F103CBT6 MCU",
+      "role": "主控（Cortex-M3，最高 108 MHz，128 KB Flash）",
+      "source_level": "A 原厂",
+      "urls": [],
+      "fetched": "2026-10-18",
+      "notes": "GD32F103xx Datasheet Rev 3.1 (2024-12)；外设命名官方 USART0/SPI0/TIMER3_CH0 = 本项目 USART1/SPI1/TIM4_CH1"
+    },
+    "MDM490": {
+      "name": "MDM490 差压变送器",
+      "role": "支管—干管差压测量（0—40 kPa 档，±0.5%FS）",
+      "source_level": "A 原厂",
+      "urls": [
+        "http://www.microsensor.cn"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "选型资料 V6.0 02/2025 存于 application/figures/web_ref/；量程 0—40 kPa（K040/m400）为原厂最小标准档，渠道 35 kPa 系误植"
+    },
+    "MP2359": {
+      "name": "MP2359 Buck",
+      "role": "5 V→3.3 V 降压",
+      "source_level": "A 原厂",
+      "urls": [
+        "https://www.monolithicpower.com"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "Rev 1.21 (2011-07-18)；NRND（新设计不推荐），替代 MP2331HGTL-Z；立创 C14259 抓取时现货 0"
+    },
+    "SEN0549": {
+      "name": "SEN0549 脉冲流量计",
+      "role": "支管脉冲流量测量（540 脉冲/L）",
+      "source_level": "A 原厂",
+      "urls": [
+        "https://wiki.dfrobot.com.cn/SKU_SEN0549_Gravity_Water_Flow_Sensor_G1_4",
+        "https://dfrobot.com.cn/goods-3561.html"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "中文 Wiki 与商城页两处规格核对一致"
+    },
+    "SGM58031": {
+      "name": "SGM58031 ADC",
+      "role": "16 位 ADC（P2P 替代 ADS1115）",
+      "source_level": "A 原厂",
+      "urls": [
+        "https://www.sg-micro.com"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "Datasheet MAY 2023 REV A.3"
+    },
+    "XL4015": {
+      "name": "XL4015 Buck",
+      "role": "电池→5 V 降压（连续负载）",
+      "source_level": "A 原厂",
+      "urls": [
+        "https://www.xlsemi.com/datasheet/XL4015-EN.pdf"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "Rev 2.0"
+    },
+    "XL6009": {
+      "name": "XL6009 Boost",
+      "role": "5 V→24 V 升压（仅供两线制变送器，高边开关）",
+      "source_level": "A 原厂",
+      "urls": [
+        "https://www.xlsemi.com"
+      ],
+      "fetched": "2026-10-18",
+      "notes": "Rev 1.1；官网 datasheet 已 404，取自原厂排版镜像；「升级 XL6019E1」为代理商说法非原厂公告；实物照缺口，暂以官方 Figure 1 封装外形图代替，到货后补拍"
+    }
+  },
+  "file_count": 46,
+  "files": {
+    "E220-400T22D/E220-400T22D_UserManual_CN_亿佰特官方.pdf": {
+      "device": "E220-400T22D",
+      "bytes": 3246393,
+      "sha256": "16e96063832794158f08ee1396a017051af00b4baedbcc31520d26aaf0ed5a99",
+      "source_level": "A 原厂"
+    },
+    "E220-400T22D/E220-400T22D_与MCU连接示意.png": {
+      "device": "E220-400T22D",
+      "bytes": 98054,
+      "sha256": "30f4ddfa0259856dbcc3a9687d4fe840a52338842bc7de9db529fa33b765c4b9",
+      "source_level": "C 本项目"
+    },
+    "E220-400T22D/E220-400T22D_实物_亿佰特官网.jpg": {
+      "device": "E220-400T22D",
+      "bytes": 74283,
+      "sha256": "426099e594fde58e7e4c1b921a915cd6570db4b6e17394a298fd353834f2a791",
+      "source_level": "A 原厂"
+    },
+    "E220-400T22D/E220-400T22D_引脚图.png": {
+      "device": "E220-400T22D",
+      "bytes": 81119,
+      "sha256": "eeb35c0e3c11a4f88750147219816834203387a86c23405d119331f9296e1305",
+      "source_level": "C 本项目"
+    },
+    "E220-400T22D/E220-400T22D_引脚定义与关键参数.md": {
+      "device": "E220-400T22D",
+      "bytes": 3536,
+      "sha256": "8991f0bee9bf1b45407c41ef722db1e3304d5d5041560d3fc980729fe25b7146",
+      "source_level": "C 本项目"
+    },
+    "E220-400T22D/draw_e220.py": {
+      "device": "E220-400T22D",
+      "bytes": 4659,
+      "sha256": "85a070a2de9adc5e5fd9a9f1cf3cf0e5b8456b86c5a54cab1324a66a390782b3",
+      "source_level": "C 本项目"
+    },
+    "GD32F103CBT6/GD32F103CBT6_LQFP48_引脚图.png": {
+      "device": "GD32F103CBT6",
+      "bytes": 127023,
+      "sha256": "fe08773f768035ecbe04e5df0ec34045e852c3bd52bc43ebb941ec8971b46868",
+      "source_level": "A 原厂"
+    },
+    "GD32F103CBT6/GD32F103CBT6_典型外围电路_官方推荐.png": {
+      "device": "GD32F103CBT6",
+      "bytes": 123619,
+      "sha256": "87240a6de5b41cdab1bb8705af77dd7a968b3dd1c746ec0761f65ae3a02c45a8",
+      "source_level": "A 原厂"
+    },
+    "GD32F103CBT6/GD32F103CBT6_实物_LQFP48_立创商城.jpg": {
+      "device": "GD32F103CBT6",
+      "bytes": 122690,
+      "sha256": "0b5a5aff6f658c1fcb9170e34be4c7d8fa0f7c66d5038e1ab9182100425050d9",
+      "source_level": "B 代理/商城"
+    },
+    "GD32F103CBT6/GD32F103CBT6_引脚定义与关键参数.md": {
+      "device": "GD32F103CBT6",
+      "bytes": 8160,
+      "sha256": "b6c6d2f446b550ba0b38e1d22ca5516b8eaa19a6c658609d10a5c4eebd0d3f20",
+      "source_level": "C 本项目"
+    },
+    "GD32F103CBT6/GD32F103xx_Datasheet_官方.pdf": {
+      "device": "GD32F103CBT6",
+      "bytes": 1747108,
+      "sha256": "53da1a17a1523e835383d83fa4b20b4f17fa706e20e8ae8645ef212499366c1a",
+      "source_level": "A 原厂"
+    },
+    "MDM490/MDM490_产品概述与性能指标_官方.png": {
+      "device": "MDM490",
+      "bytes": 368724,
+      "sha256": "f8ba6d398f2485c32a3c9d8b458f2e434a974806dd49d9794bc53741050a164a",
+      "source_level": "A 原厂"
+    },
+    "MDM490/MDM490_外形结构与输出参数_官方.png": {
+      "device": "MDM490",
+      "bytes": 147551,
+      "sha256": "3deba1f4ed981dcd79056ebab1c4a71563e46d873333da4c2a1f27ddc124ea99",
+      "source_level": "A 原厂"
+    },
+    "MDM490/MDM490_差压变送器实物_麦克官方资料.png": {
+      "device": "MDM490",
+      "bytes": 58917,
+      "sha256": "bd5f53aae1d7a5b1dc9c2fd068b1429a54b5c8062149b53495a31d38538a4774",
+      "source_level": "A 原厂"
+    },
+    "MDM490/MDM490_引脚定义与关键参数.md": {
+      "device": "MDM490",
+      "bytes": 4746,
+      "sha256": "da94470ca3597841d27d56931dd39b89d927cd3111c1f707f0b88d3d9b630fa0",
+      "source_level": "C 本项目"
+    },
+    "MDM490/MDM490_电气连接定义_官方.png": {
+      "device": "MDM490",
+      "bytes": 165840,
+      "sha256": "97e37b11aae73c923918987deaa709b822bee9e92ce4a748ae3fba69888d1e2d",
+      "source_level": "A 原厂"
+    },
+    "MDM490/MDM490_量程档位表_官方.png": {
+      "device": "MDM490",
+      "bytes": 201105,
+      "sha256": "f0cd355368b39633b44b43af12695670e594ff0d030181826049f1e27a9f4fe5",
+      "source_level": "A 原厂"
+    },
+    "MP2359/MP2359_Datasheet_MPS官方Rev1.21.pdf": {
+      "device": "MP2359",
+      "bytes": 423844,
+      "sha256": "d06660ac39c597789926adb63bce25815ed6adfe535e5c46f0ba84f6f2d6367b",
+      "source_level": "A 原厂"
+    },
+    "MP2359/MP2359_典型应用电路_5V转3.3V_重绘.png": {
+      "device": "MP2359",
+      "bytes": 90822,
+      "sha256": "abe8e186a12544b8bf3f86dfabb19d83aba60e430bdd8e72afaa96fc8bcf04a5",
+      "source_level": "C 本项目"
+    },
+    "MP2359/MP2359_实物_TSOT23-6_立创商城.jpg": {
+      "device": "MP2359",
+      "bytes": 20931,
+      "sha256": "16bc40c1f53552a7796a1067f76710a203cea9ad1c3aed9a66fb428ef64f9501",
+      "source_level": "B 代理/商城"
+    },
+    "MP2359/MP2359_实物尺寸_格尺参照_立创商城.jpg": {
+      "device": "MP2359",
+      "bytes": 58841,
+      "sha256": "b392735e5a4e2c678f85639f93ee934afaf6e4b91fe01d58c8eb9035d99f78e5",
+      "source_level": "B 代理/商城"
+    },
+    "MP2359/MP2359_引脚图_重绘.png": {
+      "device": "MP2359",
+      "bytes": 44218,
+      "sha256": "4839f536fe173b31caab07099bb9b6c74b1f775828be97c975ba087264af0e72",
+      "source_level": "C 本项目"
+    },
+    "MP2359/MP2359_引脚定义与关键参数.md": {
+      "device": "MP2359",
+      "bytes": 5486,
+      "sha256": "785d4a12756e351300408a435f2e9af5db88a3e2ac34a8e468ea9c98bde87b83",
+      "source_level": "C 本项目"
+    },
+    "MP2359/draw_mp2359.py": {
+      "device": "MP2359",
+      "bytes": 6754,
+      "sha256": "47fe66f3c1bb76113e095898f915b5e196b4ef774a2e2cca56da9fbbf1a0f7e0",
+      "source_level": "C 本项目"
+    },
+    "SEN0549/SEN0549_外形尺寸图_DFRobot官方.jpg": {
+      "device": "SEN0549",
+      "bytes": 40278,
+      "sha256": "9a090a139c0576578d25ff9b9051e86b7bee9b25a7ff9b9e8e396568d198d790",
+      "source_level": "A 原厂"
+    },
+    "SEN0549/SEN0549_引脚与线色_DFRobot官方.png": {
+      "device": "SEN0549",
+      "bytes": 33664,
+      "sha256": "931d16c2cb68ef59a1a23852366b4078fb7aca3d7382fa32ed859a38220aaff5",
+      "source_level": "A 原厂"
+    },
+    "SEN0549/SEN0549_引脚定义与关键参数.md": {
+      "device": "SEN0549",
+      "bytes": 3075,
+      "sha256": "4d6a7ca04651a7e85b339d135d7b106186054a2fbcbd21843bf5d9251642ae72",
+      "source_level": "C 本项目"
+    },
+    "SEN0549/SEN0549_接口电路_5V转3.3V分压.png": {
+      "device": "SEN0549",
+      "bytes": 100256,
+      "sha256": "571932ec73f1e2ae9fcb94e8ebea62ca80e1d7af56fb1fc0333c75dcd24ea539",
+      "source_level": "C 本项目"
+    },
+    "SEN0549/SEN0549_流量计实物_DFRobot官网.jpg": {
+      "device": "SEN0549",
+      "bytes": 193143,
+      "sha256": "9dea4480cc59b805574afa9dd53b743fbfedb1105c159c82138beea992ff60b9",
+      "source_level": "A 原厂"
+    },
+    "SEN0549/draw_sen0549.py": {
+      "device": "SEN0549",
+      "bytes": 3656,
+      "sha256": "b2e6ffff3c218468d33f4a6211cc48fa5b4d053788d29600448f3c2b728990e5",
+      "source_level": "C 本项目"
+    },
+    "SGM58031/SGM58031_Datasheet_官方.pdf": {
+      "device": "SGM58031",
+      "bytes": 956118,
+      "sha256": "a2252fc0344b48df176986b8fa5097c403407f9315b634077daf57a7844457da",
+      "source_level": "A 原厂"
+    },
+    "SGM58031/SGM58031_典型应用电路_基础硬件连接.png": {
+      "device": "SGM58031",
+      "bytes": 71110,
+      "sha256": "2fbf278526058641812e028901bb2ed949bf80ad2a46c1bf8b70ceee053ea346",
+      "source_level": "A 原厂"
+    },
+    "SGM58031/SGM58031_实物_MSOP10_立创商城.jpg": {
+      "device": "SGM58031",
+      "bytes": 150908,
+      "sha256": "d54f4031369f4130590d023f20f7a468f2057d4dc062d4a0cf532b4967c1de61",
+      "source_level": "B 代理/商城"
+    },
+    "SGM58031/SGM58031_引脚图_MSOP10_TDFN.png": {
+      "device": "SGM58031",
+      "bytes": 100432,
+      "sha256": "63e5ed4cb9c6ee1709ef122dedc5c27b7526517cd9d1dec4a0220400a2cddd6d",
+      "source_level": "A 原厂"
+    },
+    "SGM58031/SGM58031_引脚定义与关键参数.md": {
+      "device": "SGM58031",
+      "bytes": 4508,
+      "sha256": "fd689b88214897db3a3c41b9a4627a96acab1bae75828928071bb34ef72248dd",
+      "source_level": "C 本项目"
+    },
+    "XL4015/XL4015_Datasheet_官方_CN.pdf": {
+      "device": "XL4015",
+      "bytes": 398894,
+      "sha256": "ac03e116d8df29b208cd5bc7bd22bda99704fd21e67511fefa519557f10258ce",
+      "source_level": "A 原厂"
+    },
+    "XL4015/XL4015_Datasheet_官方_EN.pdf": {
+      "device": "XL4015",
+      "bytes": 345005,
+      "sha256": "3c15d21803d947670d6e39e58462d2cd368d52a54e782f8c9f84c6a8d66174d7",
+      "source_level": "A 原厂"
+    },
+    "XL4015/XL4015_典型应用电路_8-36V转5V5A.png": {
+      "device": "XL4015",
+      "bytes": 128982,
+      "sha256": "edd5494b767ca6713c717c8ac289f128300ecf1359159046b8e6be18a36a4d10",
+      "source_level": "A 原厂"
+    },
+    "XL4015/XL4015_实物_TO263-5L_立创商城.jpg": {
+      "device": "XL4015",
+      "bytes": 103386,
+      "sha256": "9580e25428e8096b578c58c04bc74921f16e2a66e7e958d5bd0407142e4951e0",
+      "source_level": "B 代理/商城"
+    },
+    "XL4015/XL4015_引脚图_TO263-5L.png": {
+      "device": "XL4015",
+      "bytes": 40779,
+      "sha256": "eaf3a706eb84d4220df7a9f7b719c316ef34aea1818ce018bf12a119f9af2af3",
+      "source_level": "A 原厂"
+    },
+    "XL4015/XL4015_引脚定义与关键参数.md": {
+      "device": "XL4015",
+      "bytes": 2746,
+      "sha256": "ee351df0bb45b1bea1c5172fb0f0020c499dfe4dd19d4f252da8e68fa11e8066",
+      "source_level": "C 本项目"
+    },
+    "XL6009/XL6009_Datasheet_Rev1.1.pdf": {
+      "device": "XL6009",
+      "bytes": 256213,
+      "sha256": "db90e1bc6cd515ebbee278aefea1afc5fef738c52a778a826d4fb68169c0f16d",
+      "source_level": "A 原厂"
+    },
+    "XL6009/XL6009_典型应用电路_升压.png": {
+      "device": "XL6009",
+      "bytes": 137341,
+      "sha256": "abc0f64899aeee8bd65448c397aeb7e448d12bdbf5e9e077fe22d454a838d94e",
+      "source_level": "A 原厂"
+    },
+    "XL6009/XL6009_封装外形图_官方Figure1.png": {
+      "device": "XL6009",
+      "bytes": 26414,
+      "sha256": "93e02b6546647729f0c6e772d85ac01493d4f9ba16fa4db6979ecc7b1ddb847a",
+      "source_level": "A 原厂"
+    },
+    "XL6009/XL6009_引脚图_TO263-5L.png": {
+      "device": "XL6009",
+      "bytes": 52675,
+      "sha256": "f7756a048ef6622dae9828377937cbcf5b37c9871b48277a04edc91b396d4e51",
+      "source_level": "A 原厂"
+    },
+    "XL6009/XL6009_引脚定义与关键参数.md": {
+      "device": "XL6009",
+      "bytes": 4262,
+      "sha256": "82a1f6984e7e6c6cfc63ff106073bbaa25f8cc1592f0a51cbcf4441b19774350",
+      "source_level": "C 本项目"
+    }
+  }
+}
