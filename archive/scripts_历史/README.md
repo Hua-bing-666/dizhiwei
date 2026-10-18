@@ -1,6 +1,6 @@
 # scripts_历史 — 已归档死亡脚本说明
 
-归档时间：2026-10-18（P4-5 图库整改主体 17 个；P4-6 引用复查追加 2 个，合计 19 个）。
+归档时间：2026-10-18（P4-5 图库整改主体 17 个；P4-6 引用复查追加 7 个，合计 24 个）。
 归档判定准则（两条同时满足才归档）：
 1. **产出全灭**——脚本输出的图/校验对象均已在 P4-1/P4-2 图库整改中删除，或其输入文件已被删除导致脚本必然报错；
 2. **无存活引用**——scripts/、simulation/、application/、docs/、README.md 中无任何存活文件 import、调用或以复现命令形式引用它
@@ -35,6 +35,11 @@
 | finalize_compact_layout.py | 冻结 compact_layout 发布（断言 application/figures/compact_layout/water_layout.png 哈希） | 断言对象已删，脚本必失败；属紧凑排版集群的收尾脚本，随图形部分一并归档 |
 | author_visual_redesign.py | application/figures/svg_output/ 28 页 SVG + field_concept.svg | 输出全家已于 P4-1 删除（PPT 图形源，旧版概念图）；P4-5 漏网，P4-6 引用复查补归；全库无存活引用 |
 | sync_application_delivery.py | 一次性迁移：把 README「图形/PDF脚本依赖」段替换为新文案 | 一次性迁移脚本（任务早已执行完毕）；输入 deliverables/大创申报书_模板审阅版.pdf 已不存在，必报错；零调用 |
+| build_bench_viewer.py | deliverables/台架三维结构交互模型.html 与 _收集优化候选版.html（OCCT 场景 + three.js 离线查看器） | 两个产物均已删（主版 39de404、候选版 P4-1）；现行三维交付物为 build_bench_workspace.py 构建的 清水试验台架_V1.2.html，技术路线总纲仅引后者；零活调用（仅 build_portal 清单登记与 update_quality_release_content 第 120 行陈旧文本提及） |
+| capture_bench_views.mjs | 台架三维结构交互模型*.html 的 Edge 截图（bench_* 五视角 PNG） | 截取对象两个 HTML 均已删，脚本无输入可拍；输出 PNG 亦已于 P4-1 删除；零活调用 |
+| verify_quality_model_viewer.mjs | 校验 台架三维结构交互模型_收集优化候选版.html 的字节哈希 | 第 17 行硬编码被删文件、第 33 行 readFile 必崩；仅剩 simulation/quality_review/model_viewer_checks.json 等历史校验记录提及；零活调用 |
+| build_print_polish_application.py | deliverables/大创申报书_版式修订稿.docx | 产出 docx 已于 39de404 删除；输入 application/figures/print_polish/ 整目录已于 P4-1 删除；零调用 |
+| build_submission_upgrade.py | deliverables/大创申报书_系统方案完善稿.docx | 产出 docx 已于 39de404 删除；关联 submission_upgrade 图目录已于 P4-1 删除；零调用 |
 
 ## 曾经误归档、已撤回的两个脚本（P4-6 复查翻案，记录在案）
 
@@ -48,6 +53,15 @@ P4-6 初版曾把 `build_portal.py` 与 `verify_staged_evidence.py` 一并归档
   若该脚本不在 scripts/，默认模式永远修不好。
 
 教训：判死必须查**调用方**（subprocess/文档命令表），不能只看脚本自身的输出文件在不在。
+
+## 补充清查（P4-6 第二轮）：收集优化候选版 / 旧申报稿退役簇
+
+引用复查又牵出一簇「产物已删、零活调用」的退役脚本（build_bench_viewer、capture_bench_views、
+verify_quality_model_viewer、build_print_polish_application、build_submission_upgrade），逐个证据见上表，
+已并入归档。注意 `scripts/update_quality_release_content.py` 第 120 行的发布流文本仍写着
+「三维页面运行 scripts/build_bench_viewer.py --collection-review」——该文本是 2026-10-05 轮次的
+历史描述，两个脚本均已归档，**下一轮发布前须同步改写该段**（现行三维页面为
+`deliverables/清水试验台架_V1.2.html`，构建链为 `scripts/build_bench_workspace.py`）。
 
 ## 发布流水线现状（P4-6 复查结论，供下一轮发布前修复）
 
@@ -63,11 +77,13 @@ P4-6 初版曾把 `build_portal.py` 与 `verify_staged_evidence.py` 一并归档
 | verify_quality_release.py | 活但当前必失败：读 证据清单.json 与 申报材料与证据包.zip（均不存在） |
 
 **下一轮发布（预计 P5 申报书装配后）的修复顺序**：
-① 逐条核对 build_portal.py 第 47—90 行 paths（现存 105 条 / 缺失 40 条已全量列出于
+① 逐条核对 build_portal.py 第 47—90 行 paths（现存 102 条 / 缺失 43 条，逐条清单见
 `docs/图库整改验收记录_P4_20261018.md` §六），把缺失条目改指现行文件或删除；② 默认模式重跑生成
 index.html 与 证据清单.json；③ verify_staged_evidence.py 核对 git 字节；④ package_submission.py 打包；
 ⑤ verify_quality_release.py 发布前审计。
 注意：`--operations-only` 模式不碰清单，运行平台日常重建不受上述破损影响。
+另：`update_quality_release_content.py` 第 120 行文本中的 build_bench_viewer.py --collection-review
+已随该脚本退役，改写时一并处理（见上「补充清查」节）。
 
 ## 未归档的相邻脚本（有意保留在 scripts/）
 
