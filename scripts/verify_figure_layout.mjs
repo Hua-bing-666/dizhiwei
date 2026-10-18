@@ -1,8 +1,10 @@
 // Check-only layout verifier: no PNG is written, no source hash is touched.
 // Checks, for every figure: text outside the canvas, type below 9.5 pt at 420 pt
 // width, label/label overlap, labels escaping their own box, and guide labels
-// sitting on top of a box. Mirrors the checks in verify_compact_water_figure.mjs
-// but applies them to the whole figure library.
+// sitting on top of a box. Originally mirrored the checks in
+// verify_compact_water_figure.mjs (archived 2026-10-18 to archive/scripts_历史/
+// together with its now-deleted subject); those checks are now inherited here
+// for the whole figure library.
 import {spawn} from 'node:child_process';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import path from 'node:path';
@@ -174,6 +176,8 @@ extra.push({name:'measurement_interfaces',svg:'application/figures/quality_revie
 extra.push({name:'water_layout',svg:'application/figures/quality_review/water_layout.svg',strict:true});
 extra.push({name:'durable_event_sequence',svg:'application/figures/quality_review/durable_event_sequence.svg',strict:true});
 extra.push({name:'network_topology',svg:'application/figures/network_topology.svg',strict:true});
+extra.push({name:'power_and_pin_resources',svg:'application/figures/interface_review/power_and_pin_resources.svg',strict:true});
+extra.push({name:'系统总体结构_单色学术版',svg:'deliverables/系统总体结构_单色学术版.svg',strict:true});
 const figures=[...sources.figures,...extra];
 const report={date:new Date().toISOString().slice(0,10),mode:'check_only_no_png_written',figures:[]};
 let bad=0;

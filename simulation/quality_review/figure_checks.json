@@ -61,11 +61,11 @@
         "width": 1000,
         "height": 950
       },
-      "textCount": 42,
+      "textCount": 45,
       "minFontPt": 10.08,
       "outside": [],
-      "png_sha256": "ac68bd437199770a83ab6bcdabd55069b615ea05fa8e644b80962f2cf4bd14e8",
-      "svg_sha256": "45633ff5251ba6f0661f0dae8595a919d12f8aca640a9709bc176a0e79465405"
+      "png_sha256": "84316734446a3f4fc2778d210f2f334eb14c111985f56adf445c1ed182aab3db",
+      "svg_sha256": "928c7cd74dbeb99c7869db5e5856ce01f55f352c793ae1499841b377c1ceacf3"
     },
     {
       "name": "diagnosis_proposal",

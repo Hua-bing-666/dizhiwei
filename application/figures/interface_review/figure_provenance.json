@@ -69,7 +69,7 @@
           ]
         },
         {
-          "meaning": "+3.3V to ADC",
+          "meaning": "+3.3V to MCU",
           "points": [
             [
               855,
@@ -90,7 +90,7 @@
             ],
             [
               790,
-              620
+              560
             ]
           ]
         },
@@ -103,7 +103,7 @@
             ],
             [
               880,
-              620
+              560
             ]
           ]
         },
@@ -134,7 +134,7 @@
           ]
         }
       ],
-      "svg_sha256": "c884fe6e7687e1c990dacaeac374b28048bc9c4e808b5a1730e01b82d2f8f12b",
+      "svg_sha256": "656feb4a4fd81fbf7f3ad1a47074fb569410c9b0b7deb04376451afd864aca97",
       "minimum_text_px": 23,
       "minimum_text_pt_at_425pt_width": 9.775
     },
@@ -217,7 +217,7 @@
           ]
         }
       ],
-      "svg_sha256": "993f6cea1c3815e60872549f0c3d602e9633e83ac96c5e394a66fe4ae76713d7",
+      "svg_sha256": "52037d3666485ae5bc7638f0ad6dc7c95d5ccded7c345ced1fe2fa8172cda4fc",
       "minimum_text_px": 23,
       "minimum_text_pt_at_425pt_width": 9.775
     },
@@ -338,7 +338,7 @@
     }
   ],
   "source_sha256": {
-    "scripts/draw_interface_review.py": "230771974bc00f3adf2d18b525832becf5352d5ee8878d4a7a5dd9808af7d3d2",
+    "scripts/draw_interface_review.py": "11646d4d7b4235ed8549b3483d7a4d2cfb1d640354cb8c05221e7ffe6be7fbac",
     "simulation/interface_review/interface_spec.json": "09aa59e383c8a35abbf2963a6552667e4988f38b0e9873b26968f22711c65c37",
     "simulation/interface_review/hardware_checks.json": "590728f879db67624b1419ec0a64c538afbd754d0c66e8fe0b4379506737c0c6",
     "simulation/interface_review/protocol_checks.json": "878da7dafed41da88590287fd863e03e4869590c1a478e5cc4bddb08c34fc2b1"

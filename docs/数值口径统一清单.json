@@ -97,7 +97,7 @@
       "deprecated": "把 480 试次写成独立实测"
     }
   ],
-  "files_scanned": 55,
+  "files_scanned": 56,
   "files_with_hits": 42,
   "block_total": 121,
   "block_in_current_docs": 0,
@@ -114,7 +114,7 @@
         "rule": "N03",
         "level": "REF",
         "desc": "门限写成 h=61 / h=5（已废止）",
-        "line": 115,
+        "line": 143,
         "snippet": "门限 h=61",
         "context": "| `E3_corrected.py` / `E6_E7_v2.py` / `F1_F2.py` | **定量结论已作废**（产自重叠窗 + 错误门限 h=61），仅作方法学对照 |"
       },
@@ -122,7 +122,7 @@
         "rule": "N16",
         "level": "REF",
         "desc": "480 试次/960 轨迹表述（须注明为合成复用）",
-        "line": 120,
+        "line": 148,
         "snippet": "960 条",
         "context": "**数据基础**：`simulation/cusum_review/heldout_observations.npz`（960 条合成轨迹，20 个基础序列复用）。"
       },
@@ -130,7 +130,7 @@
         "rule": "N06",
         "level": "REF",
         "desc": "不确定度结论写成 U 到 5 kPa 仍全检出",
-        "line": 137,
+        "line": 165,
         "snippet": "U 到 5 kPa",
         "context": "旧结论「U 到 5 kPa 仍 10/10，瓶颈不在传感器精度」是**假象**——它全程只在一个门限"
       },
@@ -138,7 +138,7 @@
         "rule": "N03",
         "level": "REF",
         "desc": "门限写成 h=61 / h=5（已废止）",
-        "line": 138,
+        "line": 166,
         "snippet": "h=61",
         "context": "（h=61）下跑，且注入幅度取 +10%，对 U 没有区分度。"
       },
@@ -146,7 +146,7 @@
         "rule": "N09",
         "level": "REF",
         "desc": "BOM 写成 v1 口径 1980—4510 / 1050—2460 / 930—2050",
-        "line": 154,
+        "line": 182,
         "snippet": "1980—4510",
         "context": "专项额度 6300 元，余量 ≥20%（下限情形）。旧口径 1980—4510 元已作废。"
       },
@@ -154,7 +154,7 @@
         "rule": "N16",
         "level": "REF",
         "desc": "480 试次/960 轨迹表述（须注明为合成复用）",
-        "line": 163,
+        "line": 191,
         "snippet": "480 个合成试次",
         "context": "**样本量口径**：现有 480 个合成试次、960 条配对方法结果、288 个有界误差组合，"
       },
@@ -162,7 +162,7 @@
         "rule": "N16",
         "level": "REF",
         "desc": "480 试次/960 轨迹表述（须注明为合成复用）",
-        "line": 163,
+        "line": 191,
         "snippet": "960 条",
         "context": "**样本量口径**：现有 480 个合成试次、960 条配对方法结果、288 个有界误差组合，"
       },
@@ -170,7 +170,7 @@
         "rule": "N03",
         "level": "REF",
         "desc": "门限写成 h=61 / h=5（已废止）",
-        "line": 197,
+        "line": 225,
         "snippet": "h=61",
         "context": "- **三张关键图已按现行口径更新并复核**：2026-10-17 用 `E9_block_threshold.json` 重新生成 `roadmap / threshold_separation / detection_boundary`，并完成了目视复核。图 B 显示重叠版峰值跨 265 倍、块版门限 h\\*=26；图 C 显示泄漏 +2%（80 s）与"
       },
@@ -178,7 +178,7 @@
         "rule": "N04",
         "level": "REF",
         "desc": "泄漏边界写成 5% 不可检 / 8% 可检",
-        "line": 197,
+        "line": 225,
         "snippet": "5% 不可检",
         "context": "- **三张关键图已按现行口径更新并复核**：2026-10-17 用 `E9_block_threshold.json` 重新生成 `roadmap / threshold_separation / detection_boundary`，并完成了目视复核。图 B 显示重叠版峰值跨 265 倍、块版门限 h\\*=26；图 C 显示泄漏 +2%（80 s）与"
       },
@@ -186,7 +186,7 @@
         "rule": "N04",
         "level": "REF",
         "desc": "泄漏边界写成 5% 不可检 / 8% 可检",
-        "line": 197,
+        "line": 225,
         "snippet": "8% 可检",
         "context": "- **三张关键图已按现行口径更新并复核**：2026-10-17 用 `E9_block_threshold.json` 重新生成 `roadmap / threshold_separation / detection_boundary`，并完成了目视复核。图 B 显示重叠版峰值跨 265 倍、块版门限 h\\*=26；图 C 显示泄漏 +2%（80 s）与"
       }
@@ -338,7 +338,7 @@
         "rule": "N03",
         "level": "BLOCK",
         "desc": "门限写成 h=61 / h=5（已废止）",
-        "line": 223,
+        "line": 232,
         "snippet": "门限（h=61",
         "context": "- **需更新**：注入样本量（54→54—72）、三类扰动、判据门限（h=61）"
       },
@@ -346,7 +346,7 @@
         "rule": "N03",
         "level": "BLOCK",
         "desc": "门限写成 h=61 / h=5（已废止）",
-        "line": 268,
+        "line": 277,
         "snippet": "h=61",
         "context": "- **数据（本次仿真，h=61）**："
       },
@@ -354,7 +354,7 @@
         "rule": "N04",
         "level": "BLOCK",
         "desc": "泄漏边界写成 5% 不可检 / 8% 可检",
-        "line": 278,
+        "line": 287,
         "snippet": "5% 不可检",
         "context": "- **结构**：热力图（检出率 0—100%）+ 等值线（50%、90% 边界）；标注\"5% 不可检、10% 需 ≥20 秒\""
       }
@@ -2436,7 +2436,7 @@
         "rule": "N01",
         "level": "REF",
         "desc": "差压量程写成 0—20 kPa（厂家无此档）",
-        "line": 124,
+        "line": 125,
         "snippet": "0—20 kPa",
         "context": "精度链推导：可检边界故障幅度 +2% 对应 U 需求 ≤ 2.0 kPa；设计工况（0—40 kPa 档 × ±0.5%FS）U ≈ 0.20 kPa，**余量 10 倍**。量程取 40 kPa 是厂家最小标准档（订货号 K040）；厂家无 0—20 kPa 档，更高精度档（±0.25%/±0.1%）在该量程段亦无货。定量上限的取舍如实写明：受限故障的定量"
       },
@@ -2444,7 +2444,7 @@
         "rule": "N10",
         "level": "REF",
         "desc": "LoRa 功率写成 22 dBm 或未写合规限值",
-        "line": 146,
+        "line": 147,
         "snippet": "22 dBm",
         "context": "| LoRa 模块 | 亿佰特 **E220-400T22D**（LLCC68） | **410—493 MHz**（覆盖 433 MHz） | 接收 16.8 mA；发射 110 mA（@22 dBm，**实际设 ≤10 dBm**） | **USART1：PA9(TX)/PA10(RX)**；M0/M1 接地固定透明模式 | ≤10 dBm 满足 433"
       }

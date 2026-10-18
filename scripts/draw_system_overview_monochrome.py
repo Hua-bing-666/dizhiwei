@@ -1,70 +1,86 @@
-"""滴智卫 · 系统总体结构单色学术图（原生 SVG，黑白，可直接插入 Word）。
+"""滴智卫 · 系统总体结构单色学术图（原生 SVG + PNG，黑白，可直接插入 Word）。
 
-风格遵循仓库既有约定（scripts/draw_event_system_diagrams.py）：
-- 纯黑白：#1a1a1a 描边、白色填充、无底色
-- 实线 = 数据/业务流；虚线 = 人工流程、参照测点或预留接口
-- 字体 Microsoft YaHei / SimSun；canvas 宽 1240
-输出：deliverables/系统总体结构_单色学术版.svg
+口径：v2.2 冻结契约（2026-10-18）——
+- 测压：单只差压变送器 MDM490（0—40 kPa，跨区段 R）+ 干管参照表压（0—200 kPa）
+- 主控：GD32F103CBT6，ADC 主路径为内置 12 位（PA0/PA1），SGM58031 仅可选升级
+- 流量：SEN0549 脉冲（540 脉冲/L），PB6/TIM4_CH1 连续计数
+- 判据：1 s 提交 + 10 s 不重叠块 CUSUM（k=0.5，h*=26，仿真基准）
+- 通信：E220-400T22D（≤10 dBm），遥测 55 B / 事件 57 B / ACK 24 B
+- 供电：XL6009 升 24 V，PB0 高边开关间歇供电，仅供两线制变送器
+- 巡检平台：Web V1.3 八页面（总览/支管监测/异常事件/设备链路/历史记录/设置/策略实验/试验台架）
+
+版式：canvas 宽 1000，全文最小字号 24px。
+- 放置宽度 420 pt 时最小字号 10.08 pt，但高度 697 pt≈24.6 cm 已顶满 A4 纵版心；
+  文档放置请用 **400 pt**（高 664 pt≈23.4 cm，最小字号 9.6 pt，仍 ≥9.5 pt）。
+- 机器校验：scripts/verify_figure_layout.mjs 已登记（strict 单色通道）。
+输出：deliverables/系统总体结构_单色学术版.svg / .png（PNG 由 Edge 无头截图 ×2 渲染）。
 """
 from pathlib import Path
+import subprocess, uuid, time
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "deliverables" / "系统总体结构_单色学术版.svg"
+OUT = ROOT / "deliverables"
+EDGE = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
 
-W, H = 1390, 1470
+W, H = 1000, 1660
 FONT = "Microsoft YaHei, SimSun, sans-serif"
 INK = "#1a1a1a"
 GRAY = "#555555"
 
+
 def esc(t: str) -> str:
     return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-def badge(cx, cy, num):
-    """主流程步骤编号：白底黑圈数字。"""
-    return (f'<circle cx="{cx}" cy="{cy}" r="13" fill="white" stroke="{INK}" '
-            f'stroke-width="2"/>' +
-            text(cx, cy + 5, num, 14, bold=True))
 
-def text(x, y, t, size=18, bold=False, anchor="middle", fill=INK):
+def text(x, y, t, size=24, bold=False, anchor="middle", fill=INK):
     w = "700" if bold else "400"
     return (f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" '
             f'font-weight="{w}" text-anchor="{anchor}" fill="{fill}">{esc(t)}</text>')
 
-def box(x, y, w, h, lines, dashed=False, fs=18, title_bold=True, gap=None):
+
+def box(x, y, w, h, lines, dashed=False, fs=24, gap=None):
+    """带 data-kind="box" 标注的文本框；行距 fs+10（24px 字号下 bbox 高约 31.3px，
+    34px 行距才能过 0.5px 重叠阈值）。框高须 ≥ (n-1)*gap+36。"""
     dash = ' stroke-dasharray="8 5"' if dashed else ""
     gap = gap or (fs + 10)
     first = y + h / 2 - ((len(lines) - 1) * gap) / 2 + fs * 0.36
-    s = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="3" fill="white" '
-         f'stroke="{INK}" stroke-width="2"{dash}/>')
+    s = (f'<g data-kind="box"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="3" '
+         f'fill="white" stroke="{INK}" stroke-width="2"{dash}/>')
     for i, ln in enumerate(lines):
-        s += text(x + w / 2, first + i * gap, ln, fs, bold=(i == 0 and title_bold))
+        s += text(x + w / 2, first + i * gap, ln, fs, bold=(i == 0))
+    s += '</g>'
     return s
 
-def arrow(points, dashed=False, w=1.8):
+
+def arrow(points, dashed=False, w=2.0):
     dash = ' stroke-dasharray="7 5"' if dashed else ""
     d = "M " + " L ".join(f"{px} {py}" for px, py in points)
     return (f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{w}"{dash} '
             f'marker-end="url(#ar)"/>')
 
-def plain_line(points, dashed=False, w=1.6):
+
+def plain_line(points, dashed=False, w=1.8):
     dash = ' stroke-dasharray="7 5"' if dashed else ""
     d = "M " + " L ".join(f"{px} {py}" for px, py in points)
     return f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{w}"{dash}/>'
 
+
 def container(x, y, w, h, label):
     s = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="4" fill="white" '
          f'stroke="{INK}" stroke-width="1.6" stroke-dasharray="10 6"/>')
-    s += text(x + 12, y + 26, label, 19, bold=True, anchor="start")
+    s += text(x + 12, y + 32, label, 26, bold=True, anchor="start")
     return s
+
 
 def waves(cx, cy, direction):
     """三道电波弧线；direction=+1 向下张开, -1 向上张开。"""
     s = ""
-    for i, r in enumerate((10, 20, 30)):
+    for r in (8, 16, 24):
         dy = r * 0.62 * direction
         s += (f'<path d="M {cx-r} {cy} Q {cx} {cy+dy} {cx+r} {cy}" fill="none" '
               f'stroke="{INK}" stroke-width="1.6"/>')
     return s
+
 
 S = []
 S.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
@@ -75,177 +91,140 @@ S.append('<defs>'
          '</defs>')
 S.append(f'<rect width="{W}" height="{H}" fill="white"/>')
 
-# ───────────────────────── 左侧主流程阶段轴（测量→判断→传输→展示与核查） ─────────────────────────
-stages = [
-    (263, "测  量"),      # 台架 + 传感：y 46..525
-    (625, "判  断"),      # 感知诊断节点：y 455..840
-    (905, "传  输"),      # LoRa + 接收端：y 850..1005
-    (1154, "展示与核查"),  # PC + 平台 + 人工闭环：y 1010..1342
-]
-for i, (y, name) in enumerate(stages):
-    S.append(box(30, y, 110, 44, [name], fs=17))
-for (y0, y1) in ((307, 625), (669, 905), (949, 1154)):
-    S.append(arrow([(85, y0), (85, y1)], w=2.2))
-S.append(text(85, 240, "技术主线", 15, fill=GRAY))
-S.append(text(85, 1380, "（申报书 3.3）", 14, fill=GRAY))
-
-# ───────────────────────── 正文（右移 150） ─────────────────────────
-S.append('<g transform="translate(150,0)">')
-
-# ───────────────────────── 图例（右上） ─────────────────────────
-S.append(box(940, 60, 270, 118, [], dashed=True, fs=16))
-S.append(text(1075, 88, "图  例", 17, bold=True))
-S.append(plain_line([(960, 112), (1030, 112)]))
-S.append(text(1042, 117, "数据 / 业务流", 15, anchor="start"))
-S.append(plain_line([(960, 142), (1030, 112 + 30)], dashed=True))
-S.append(text(1042, 147, "人工 / 参照 / 预留", 15, anchor="start"))
+# ───────────────────────── 标题与图例 ─────────────────────────
+S.append(text(28, 48, "滴智卫 · 系统总体结构", 32, bold=True, anchor="start"))
+S.append(text(28, 88, "单色学术版 · 申报书用 · 选型与口径 v2.2（2026-10-18）", 24, fill=GRAY, anchor="start"))
+S.append(text(28, 124, "图例：实线=数据/业务流，虚线=人工/参照/预留。", 24, fill=GRAY, anchor="start"))
 
 # ───────────────────────── ① 双支路清水台架 ─────────────────────────
-S.append(container(20, 46, 850, 394, "双支路清水台架（实验室验证平台）"))
-
-# A 支路主链
-S.append(text(40, 96, "A 支路（被测支管）", 16, anchor="start", fill=GRAY))
-S.append(box(40, 106, 105, 62, ["供水首部", "（压力可调）"], fs=16))
-S.append(box(165, 106, 62, 62, ["P₀", "取压"], fs=17))
-S.append(box(247, 106, 88, 62, ["受限段 R", "（可调节流）"], fs=16))
-S.append(box(355, 106, 62, 62, ["P₁", "取压"], fs=17))
-S.append(box(433, 106, 86, 62, ["流量计 Q", "（SEN0549）"], fs=16))
-S.append(box(543, 72, 108, 56, ["正常负载", "（滴头模拟）"], fs=16))
-S.append(box(543, 144, 108, 56, ["泄漏旁路", "（可调阀门）"], fs=16))
-S.append(box(669, 92, 180, 88, ["独立收集与计量", "（参考流量）"], fs=16))
-for a, b in ((145, 165), (227, 247), (335, 355), (417, 433)):
-    S.append(arrow([(a, 137), (b, 137)]))
-S.append(arrow([(519, 137), (531, 137), (531, 100), (543, 100)]))
-S.append(arrow([(519, 137), (531, 137), (531, 172), (543, 172)]))
-S.append(arrow([(651, 100), (662, 100), (662, 120), (669, 120)]))
-S.append(arrow([(651, 172), (662, 172), (662, 152), (669, 152)]))
-
-# 压力变送器（台架现场仪表）
-S.append(box(130, 196, 160, 64, ["压力变送器 ×2", "4–20 mA·0–200 kPa"], fs=15))
-S.append(arrow([(196, 168), (196, 196)], dashed=True, w=1.4))
-S.append(arrow([(386, 168), (386, 181), (240, 181), (240, 196)], dashed=True, w=1.4))
-
-# B 支路（扰动模拟）
-S.append(text(520, 282, "B 支路：模拟邻支路轮灌扰动", 16, anchor="start", fill=GRAY))
-S.append(box(520, 290, 70, 58, ["B 支路", "供水"], fs=15))
-S.append(box(604, 290, 130, 58, ["开关阀", "（模拟轮灌切换）"], fs=15))
-S.append(box(748, 290, 101, 58, ["末端可调堵塞", "（背压抬升）"], fs=14))
-for a, b in ((590, 604), (734, 748)):
-    S.append(arrow([(a, 319), (b, 319)]))
-
-# 扰动特征库设施（虚线）
-S.append(box(40, 290, 140, 58, ["上游扰动注入", "（可调扰动阀）"], dashed=True, fs=14))
-S.append(box(250, 290, 210, 58, ["首部 / 干管参照测点", "（共同扰动参照）"], dashed=True, fs=14))
-
-# Q 脉冲长线（流量计 → 主控 TIM2）
-S.append(plain_line([(476, 168), (476, 556)]))
-S.append(text(484, 530, "脉冲输出 → TIM2", 15, anchor="start", fill=GRAY))
+S.append(container(20, 138, 960, 470, "双支路清水台架（实验室验证平台）"))
+S.append(text(40, 204, "A 支路（被测支管）", 24, anchor="start", fill=GRAY))
+S.append(box(40, 216, 150, 76, ["供水首部", "压力可调"]))
+S.append(box(220, 216, 140, 76, ["流量计 Q", "SEN0549"]))
+S.append(box(390, 216, 150, 76, ["区段 R", "孔板+针阀"]))
+S.append(arrow([(190, 254), (220, 254)]))
+S.append(arrow([(360, 254), (390, 254)]))
+# 分流：正常负载 / 泄漏旁路 → 独立收集与计量
+S.append(box(570, 204, 150, 76, ["正常负载", "滴头模拟"]))
+S.append(box(570, 296, 150, 76, ["泄漏旁路", "可调球阀"]))
+S.append(box(760, 250, 190, 76, ["独立收集与计量", "参考流量"]))
+S.append(arrow([(540, 254), (560, 254), (560, 242), (570, 242)]))
+S.append(arrow([(540, 254), (560, 254), (560, 334), (570, 334)]))
+S.append(arrow([(720, 242), (748, 242), (748, 288), (760, 288)]))
+S.append(arrow([(720, 334), (748, 334), (748, 288), (760, 288)]))
+# 传感行：干管参照 + 差压变送器（虚线=取压/参照）
+S.append(box(40, 384, 220, 76, ["干管参照表压", "0—200 kPa"]))
+S.append(box(300, 384, 300, 76, ["差压变送器 MDM490", "0—40 kPa · 跨区段 R"]))
+S.append(arrow([(115, 292), (115, 322), (150, 322), (150, 382)], dashed=True, w=1.5))
+S.append(arrow([(430, 292), (430, 382)], dashed=True, w=1.5))
+S.append(arrow([(500, 292), (500, 382)], dashed=True, w=1.5))
+S.append(text(438, 322, "A", 24, anchor="start", fill=GRAY))
+S.append(text(492, 322, "B", 24, anchor="end", fill=GRAY))
+# B 支路：模拟邻支路轮灌扰动
+S.append(text(40, 498, "B 支路（模拟邻支路轮灌扰动）", 24, anchor="start", fill=GRAY))
+S.append(box(40, 510, 150, 76, ["B 支路", "供水"]))
+S.append(box(220, 510, 170, 76, ["开关阀", "模拟轮灌切换"]))
+S.append(box(420, 510, 200, 76, ["末端可调堵塞", "背压抬升"]))
+S.append(arrow([(190, 548), (220, 548)]))
+S.append(arrow([(390, 548), (420, 548)]))
+S.append(text(650, 556, "扰动以干管参照识别", 24, anchor="start", fill=GRAY))
 
 # ───────────────────────── ② 感知诊断节点 ─────────────────────────
-S.append(container(20, 455, 850, 385, "感知诊断节点（现场侧）"))
-
-S.append(box(150, 490, 190, 64, ["ADS1115 16 位 ADC", "（I²C 总线）"], fs=16))
-S.append(arrow([(210, 260), (210, 490)], w=2.6))
-S.append(badge(210, 368, "1"))
-S.append(text(228, 373, "采集", 15, anchor="start", bold=True))
-S.append(text(220, 412, "两路 4–20 mA", 15, anchor="start", fill=GRAY))
-
-S.append(box(300, 580, 380, 150,
-             ["STM32F103C8T6 主控",
-              "采集 · 本地诊断 · 日志缓存（1 Hz 采样）",
-              "10 点滑动平均 → 健康参照 Q_ref / R₀",
-              "残差 e_Q / e_R → 双时间窗判决",
-              "3s×2 待复核提示 / 10s×5 事件确认"],
-             fs=16, gap=29))
-S.append(arrow([(245, 554), (245, 600), (300, 600)], w=2.6))
-S.append(text(262, 592, "I²C1", 14, anchor="start", fill=GRAY))
-S.append(arrow([(476, 556), (476, 580)], w=1.5))
-
-S.append(box(300, 772, 170, 56, ["microSD 日志", "（SPI1）"], fs=16))
-S.append(arrow([(385, 730), (385, 772)]))
-S.append(box(510, 772, 190, 56, ["LED / 蜂鸣器", "（演示接口，预留）"], dashed=True, fs=15))
-S.append(arrow([(605, 730), (605, 772)], dashed=True))
-
-S.append(box(740, 590, 110, 90, ["E220", "LoRa 模块", "（USART1）"], fs=15))
-S.append(arrow([(680, 620), (740, 620)], w=2.6))
-S.append(badge(710, 620, "2"))
-S.append(text(710, 578, "本地诊断", 15, bold=True))
+S.append(container(20, 628, 960, 340, "感知诊断节点（现场侧）"))
+S.append(box(290, 673, 360, 216,
+             ["GD32F103CBT6 主控",
+              "1 s 提交 · 10 s 不重叠块",
+              "K=Q/√P₁ · Rh=ΔP/Q²",
+              "块 CUSUM k=0.5 · h*=26",
+              "microSD 日志 · SPI1",
+              "脉冲 PB6/TIM4_CH1"]))
+S.append(box(30, 738, 200, 112, ["SGM58031", "可选升级", "16 位 I²C"], dashed=True))
+S.append(plain_line([(230, 794), (290, 794)], dashed=True))
+S.append(text(260, 786, "I²C1", 24, fill=GRAY))
+S.append(box(720, 673, 220, 112, ["E220-400T22D", "LoRa ≤10 dBm", "USART1 PA9/10"]))
+S.append(arrow([(650, 729), (720, 729)]))
+# 24 V 高边开关供电注记
+S.append(text(40, 919, "24 V 经 XL6009 升压、PB0 高边开关间歇供电，仅两线制变送器使用", 24, anchor="start", fill=GRAY))
 
 # ───────────────────────── ③ LoRa 无线链路 ─────────────────────────
-S.append(arrow([(760, 680), (760, 900)], w=2.6))
-S.append(arrow([(830, 900), (830, 680)], dashed=True))
-S.append(badge(760, 795, "3"))
-S.append(text(742, 792, "事件上报", 15, anchor="end", bold=True))
-S.append(waves(795, 745, 1))
-S.append(waves(795, 835, -1))
-S.append(text(848, 728, "LoRa 433 MHz 无线链路", 15, anchor="start"))
-S.append(text(848, 750, "事件帧 57 B / 遥测帧 55 B / 应答帧 24 B", 14, anchor="start", fill=GRAY))
-S.append(text(848, 772, "未确认 → 有界重传", 14, anchor="start", fill=GRAY))
-S.append(text(742, 830, "事件上行", 13, anchor="end", fill=GRAY))
-S.append(text(842, 830, "ACK", 13, fill=GRAY))
+S.append(container(20, 988, 960, 160, "LoRa 无线链路"))
+S.append(text(40, 1056, "LoRa 433 MHz · 发射 ≤10 dBm", 24, anchor="start"))
+S.append(text(40, 1092, "遥测 55 B · 事件 57 B · ACK 24 B", 24, anchor="start", fill=GRAY))
+S.append(text(40, 1128, "未确认 → 有界重传", 24, anchor="start", fill=GRAY))
+S.append(waves(860, 1056, -1))
 
-# ───────────────────────── ④ 接收端与 PC 侧 ─────────────────────────
-S.append(box(700, 900, 190, 70, ["E220 接收模块", "USB-TTL（3.3 V）串口桥接"], fs=15))
-S.append(box(300, 1030, 380, 112,
-             ["PC 接收服务",
-              "帧校验（CRC）/ 去重",
-              "SQLite 事务写入",
-              "提交后回复 ACK"],
-             fs=16, gap=26))
-S.append(arrow([(795, 970), (795, 1000), (490, 1000), (490, 1030)], w=2.4))
-S.append(badge(640, 1000, "4"))
-S.append(text(640, 988, "校验入库", 15, bold=True))
-S.append(text(700, 1024, "串口", 14, fill=GRAY))
-S.append(arrow([(680, 1086), (705, 1086), (705, 935), (700, 935)], dashed=True))
-S.append(text(712, 1020, "ACK 下行", 13, anchor="start", fill=GRAY))
+# ───────────────────────── ④ 接收端与本地巡检平台 ─────────────────────────
+S.append(container(20, 1168, 960, 355, "接收端与本地巡检平台"))
+S.append(box(40, 1218, 240, 90, ["E220 接收模块", "USB-TTL 串口桥"]))
+S.append(box(380, 1218, 360, 148,
+             ["PC 接收服务", "CRC 校验 · 去重", "SQLite 事务写入", "提交后回复 ACK"]))
+S.append(arrow([(280, 1263), (380, 1263)]))
+S.append(box(300, 1388, 420, 116,
+             ["本地巡检平台（八页面）", "总览 · 监测 · 事件 · 设备 · 历史", "设置 · 策略实验 · 试验台架"]))
+S.append(box(755, 1388, 210, 116,
+             ["巡检闭环（人工）", "核查→处置→复测", "结果回写平台"], dashed=True))
+S.append(arrow([(560, 1366), (560, 1386)]))
+S.append(arrow([(720, 1442), (755, 1442)], dashed=True))
+S.append(arrow([(755, 1458), (720, 1458)], dashed=True))
 
-S.append(box(240, 1190, 560, 152,
-             ["本地巡检平台（八页面）",
-              "总览 · 支管监测 · 异常事件 · 设备链路",
-              "历史记录 · 实验管理 · 台架管理 · 设置",
-              "状态与趋势呈现 ｜ 人工核查与复测记录 ｜ 模拟控制请求"],
-             fs=16, gap=31))
-S.append(arrow([(490, 1142), (490, 1190)], w=2.6))
-S.append(badge(490, 1166, "5"))
-S.append(text(512, 1172, "事件 / 读库", 14, anchor="start", fill=GRAY))
-
-# ───────────────────────── ⑤ 巡检闭环（人工） ─────────────────────────
-S.append(container(900, 980, 320, 362, "巡检闭环（人工流程）"))
-steps = [
-    (1016, ["① 接收提示", "支管编号-测点区段-建议检查部位"]),
-    (1082, ["② 下田核查", "接头 / 管段 / 下游配水单元"]),
-    (1148, ["③ 现场处置", "关阀 / 更换 / 紧固"]),
-    (1214, ["④ 同工况复测", "确认处理效果"]),
-    (1280, ["⑤ 记录归档", "复测结果回写平台"]),
-]
-for y, lines in steps:
-    S.append(box(920, y, 280, 52, lines, dashed=True, fs=14))
-for i in range(len(steps) - 1):
-    y0 = steps[i][0] + 52
-    y1 = steps[i + 1][0]
-    S.append(arrow([(1060, y0), (1060, y1)], dashed=True))
-# 平台 → ① 接收提示
-S.append(arrow([(800, 1245), (880, 1245), (880, 1042), (920, 1042)], dashed=True, w=2.2))
-S.append(badge(880, 1120, "6"))
-S.append(text(868, 1104, "核查处置", 14, anchor="end", bold=True))
-# ⑤ → 平台（回写）
-S.append(arrow([(920, 1306), (868, 1306), (868, 1238), (800, 1238)], dashed=True, w=2.2))
-S.append(badge(868, 1272, "7"))
-S.append(text(856, 1290, "复测归档", 14, anchor="end", bold=True))
-
-S.append("</g>")
+# 事件上行（节点 → 接收端）与 ACK 下行（接收端 → 节点）
+S.append(arrow([(830, 785), (830, 1158), (160, 1158), (160, 1216)], w=2.4))
+S.append(arrow([(740, 1293), (890, 1293), (890, 785)], dashed=True, w=2.0))
 
 # ───────────────────────── 脚注 ─────────────────────────
-S.append(text(20, 1400,
-              "主流程：1 采集（P₀/P₁/Q）→ 2 本地诊断 → 3 事件上报（LoRa）→ 4 接收校验入库 → 5 平台呈现 → 6 人工核查处置 → 7 复测归档（回写平台）。",
-              14, anchor="start", fill=GRAY))
-S.append(text(20, 1424,
-              "注：实线为数据 / 业务流，虚线为人工流程、参照测点或预留接口；P₀/P₁ 为监测区段上下游压力，Q 为分流前总流量。",
-              14, anchor="start", fill=GRAY))
-S.append(text(20, 1448,
-              "A 支路为被测支管，B 支路模拟邻支路轮灌扰动；台架侧操作标签与参考计量独立于诊断结果记录，用于独立实验评价。",
-              14, anchor="start", fill=GRAY))
+S.append(text(28, 1565,
+              "主流程：采集 → 本地诊断 → 事件上报 → 平台入库 → 核查处置 → 复测归档。",
+              24, anchor="start", fill=GRAY))
+S.append(text(28, 1599,
+              "ΔP 0—40 kPa · 干管参照 0—200 kPa · Q 540 脉冲/L · K=Q/√P₁ · Rh=ΔP/Q²。",
+              24, anchor="start", fill=GRAY))
+S.append(text(28, 1633,
+              "实物门限由台架实测重标；h*=26 为仿真基准；候选设计，非投板证明。",
+              24, anchor="start", fill=GRAY))
 
 S.append("</svg>")
-OUT.write_text("\n".join(S), encoding="utf-8")
-print(f"written: {OUT} ({OUT.stat().st_size} bytes)")
+svg = "\n".join(S)
+OUT.mkdir(parents=True, exist_ok=True)
+(OUT / "系统总体结构_单色学术版.svg").write_text(svg, encoding="utf-8", newline="\n")
+
+
+def render_png():
+    """SVG → PNG（Edge 无头截图 ×2 缩放 + 裁白边）。"""
+    html = ('<!doctype html><meta charset="utf-8">'
+            '<style>html,body{margin:0;background:white}svg{display:block}</style>' + svg)
+    tmp = ROOT / 'tmp' / 'overview_render'
+    tmp.mkdir(parents=True, exist_ok=True)
+    hp = tmp / 'overview.html'
+    hp.write_text(html, encoding='utf-8')
+    png = tmp / 'overview.png'
+    png.unlink(missing_ok=True)
+    prof = tmp / ('p-' + uuid.uuid4().hex[:8])
+    kw = {'creationflags': subprocess.CREATE_NO_WINDOW} if hasattr(subprocess, 'CREATE_NO_WINDOW') else {}
+    subprocess.run([EDGE, '--headless=new', '--disable-gpu', '--no-first-run', '--hide-scrollbars',
+                    '--force-device-scale-factor=2', f'--window-size={W},{H}',
+                    f'--user-data-dir={prof}', f'--screenshot={png}', hp.as_uri()],
+                   capture_output=True, timeout=120, **kw)
+    deadline = time.monotonic() + 30
+    while not png.exists() or png.stat().st_size < 2000:
+        if time.monotonic() > deadline:
+            raise RuntimeError('png 未生成')
+        time.sleep(0.2)
+    dest = OUT / '系统总体结构_单色学术版.png'
+    try:
+        from PIL import Image
+        import numpy as np
+        im = Image.open(png).convert('RGB')
+        a = np.array(im.convert('L'))
+        rows = np.where((a < 250).any(axis=1))[0]
+        cols = np.where((a < 250).any(axis=0))[0]
+        pad = 16
+        im = im.crop((max(0, cols[0] - pad), max(0, rows[0] - pad),
+                      min(im.width, cols[-1] + pad), min(im.height, rows[-1] + pad)))
+        im.save(dest)
+    except ImportError:
+        dest.write_bytes(png.read_bytes())
+    print(f'written: {OUT / "系统总体结构_单色学术版.svg"} 与 .png（1000×{H}，最小字号 24px；'
+          f'文档放置宽度 400 pt ⇒ 最小字号 9.6 pt，高 23.4 cm）')
+
+
+render_png()
