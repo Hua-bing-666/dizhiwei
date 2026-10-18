@@ -320,7 +320,7 @@ BARS = [
     ('M4 通信集成', 9, 11, '#8a8a8a'),
     ('M5 成果固化', 11, 17, '#a8a8a8'),
 ]
-GATES = [(7, 'G1 测量不确定度'), (9, 'G2 可检边界'), (11, 'G3 连续运行'), (17, 'G4 留出复现')]
+GATES = [(7, 'G1 测量不确定度'), (8, 'G2 四项入档'), (9, 'G3 可检边界'), (11, 'G4 连续运行'), (17, 'G5 留出复现')]
 
 
 def fig_gantt():
@@ -367,11 +367,11 @@ def fig_gantt():
     for k, (m, txt) in enumerate(GATES):
         left = m / n * 100
         align = 'translateX(-100%)' if m >= n - 1 else 'translateX(-50%)'
-        top = 0 if k % 2 == 0 else 30
+        top = [0, 32, 64][k % 3]   # 三行错位：G1/G4 上行、G2/G5 中行、G3 下行
         lane.append(f'<div class="gatetxt" style="left:{left:.3f}%;top:{top}px;transform:{align}">'
                     f'<span class="gatetag">{txt}</span></div>')
         lane.append(f'<div class="gateline" data-line="1" style="left:{left:.3f}%"></div>')
-    parts.append('<div class="gatewrap"><div></div><div class="gatelane" style="height:62px">'
+    parts.append('<div class="gatewrap"><div></div><div class="gatelane" style="height:96px">'
                  + ''.join(lane) + '</div></div>')
     parts.append('</div>')
     parts.append(

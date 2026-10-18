@@ -73,7 +73,7 @@ def fig_signal_chain():
 
     # 输入层
     parts.append('<div class="lay"><div class="ltag">输入层</div><div class="nodes"><div class="nrow">')
-    parts.append(node('差压 ΔP', '单只差压变送器<br>35—40 kPa · ±0.5%FS', 'U ≤ 0.20 kPa'))
+    parts.append(node('差压 ΔP', '单只差压变送器<br>0—40 kPa · ±0.5%FS', 'U ≤ 0.20 kPa'))
     parts.append(harr())
     parts.append(node('干管参照 P₁', '干管取压 · 健康参照指数', '跨度 ≥ 20% 才拟合 n'))
     parts.append(harr())
