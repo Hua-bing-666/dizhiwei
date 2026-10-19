@@ -181,6 +181,10 @@ extra.push({name:'系统总体结构_单色学术版',svg:'deliverables/系统�
 extra.push({name:'图3-2_GD32F103CBT6最小系统原理图',svg:'deliverables/图3-2_GD32F103CBT6最小系统原理图.svg',strict:true});
 extra.push({name:'图3-8_双支路台架三维布局',svg:'deliverables/图3-8_双支路台架三维布局.svg',strict:true});
 extra.push({name:'图3-1_系统总体结构',svg:'deliverables/图3-1_系统总体结构.svg',strict:true});
+// P6 答辩页补齐图（1000px 画布，支持辅助图 ≤6 色）
+for(const n of ['system_scope','dual_pressure_layout','pressure_frontend','diagnosis_flow','protocol_sequence','normal','bench_isometric']){
+  extra.push({name:n,svg:'application/figures/'+n+'.svg',strict:false});
+}
 const figures=[...sources.figures,...extra];
 const report={date:new Date().toISOString().slice(0,10),mode:'check_only_no_png_written',figures:[]};
 let bad=0;
