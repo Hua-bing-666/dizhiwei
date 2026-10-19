@@ -2442,7 +2442,7 @@
         "rule": "N10",
         "level": "REF",
         "desc": "LoRa 功率写成 22 dBm 或未写合规限值",
-        "line": 147,
+        "line": 165,
         "snippet": "22 dBm",
         "context": "| LoRa 模块 | 亿佰特 **E220-400T22D**（LLCC68） | **410—493 MHz**（覆盖 433 MHz） | 接收 16.8 mA；发射 110 mA（@22 dBm，**实际设 ≤10 dBm**） | **USART1：PA9(TX)/PA10(RX)**；M0/M1 接地固定透明模式 | ≤10 dBm 满足 433"
       }

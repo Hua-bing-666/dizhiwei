@@ -61,7 +61,7 @@ def build():
     ax = fig.add_axes([.045, .065, .915, .84])
     ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
 
-    fig.text(.045, .968, "图D　项目技术路线（单色学术版）",
+    fig.text(.045, .968, "项目技术路线（单色学术版）",
              fontsize=F_TITLE, weight='bold', va='top', color=INK)
     fig.text(.045, .925,
              "六环节递进：上一环节的产出即下一环节的输入",

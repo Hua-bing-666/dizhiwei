@@ -329,7 +329,7 @@ def fig_gantt():
 .g { position: relative; }
 .ghead { display: grid; grid-template-columns: 260px 1fr; margin-bottom: 6px; }
 .gmonths { display: grid; grid-template-columns: repeat({{n}}, 1fr); }
-.gmonths div { font-size: 18px; color: {{mute}}; text-align: center; }
+.gmonths div { font-size: 17px; letter-spacing: -0.2px; color: {{mute}}; text-align: center; white-space: nowrap; }
 .grow { display: grid; grid-template-columns: 260px 1fr; align-items: center; margin-bottom: 10px; }
 .glabel { font-size: 31px; font-weight: 700; padding-right: 10px; }
 .gtrack { position: relative; height: 28px; background: #fafafa; border: 1px solid {{line}}; }
@@ -343,11 +343,11 @@ def fig_gantt():
   border: 1.5px solid {{edge}}; color: {{ink}};
 }
 .gateline { position: absolute; top: -4px; bottom: -4px; width: 0; border-left: 3px dashed {{black}}; }
-.gatetag { font-size: 20px; color: {{black}}; font-weight: 600; background: #fff; padding: 0 3px; }
+.gatetag { font-size: 24px; color: {{black}}; font-weight: 600; background: #fff; padding: 0 3px; }
 .gatewrap { display: grid; grid-template-columns: 260px 1fr; }
 .gatelane { position: relative; height: 62px; }
 .gatetxt { position: absolute; white-space: nowrap; }
-.legend { margin-top: 8px; display: flex; gap: 22px; font-size: 20px; color: {{mute}}; align-items: center; }
+.legend { margin-top: 8px; display: flex; gap: 22px; font-size: 24px; color: {{mute}}; align-items: center; }
 .legend .sw { display: inline-block; width: 28px; height: 14px; margin-right: 6px; vertical-align: -2px; }
 """)
 
@@ -367,11 +367,11 @@ def fig_gantt():
     for k, (m, txt) in enumerate(GATES):
         left = m / n * 100
         align = 'translateX(-100%)' if m >= n - 1 else 'translateX(-50%)'
-        top = [0, 32, 64][k % 3]   # 三行错位：G1/G4 上行、G2/G5 中行、G3 下行
+        top = [0, 44, 88][k % 3]   # 三行错位：G1/G4 上行、G2/G5 中行、G3 下行
+        lane.append(f'<div class="gateline" data-line="1" style="left:{left:.3f}%"></div>')
         lane.append(f'<div class="gatetxt" style="left:{left:.3f}%;top:{top}px;transform:{align}">'
                     f'<span class="gatetag">{txt}</span></div>')
-        lane.append(f'<div class="gateline" data-line="1" style="left:{left:.3f}%"></div>')
-    parts.append('<div class="gatewrap"><div></div><div class="gatelane" style="height:96px">'
+    parts.append('<div class="gatewrap"><div></div><div class="gatelane" style="height:132px">'
                  + ''.join(lane) + '</div></div>')
     parts.append('</div>')
     parts.append(
@@ -386,6 +386,6 @@ def fig_gantt():
 if __name__ == '__main__':
     for fn, maker, w in [('route_risk_chain', fig_route_chain, 1300),
                          ('route_decision_fork', fig_decision_fork, 1060),
-                         ('route_gantt', fig_gantt, 1060)]:
+                         ('route_gantt', fig_gantt, 1180)]:
         d, size = render(fn, maker(), w=w)
         print(f'{d.name}  {size[0]}x{size[1]}')

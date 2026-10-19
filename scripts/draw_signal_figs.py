@@ -169,6 +169,10 @@ def fig_fault_mechanism():
 .dashednote { margin-top: 18px; border: 1.5px dashed {{faint}}; background: #fff;
   padding: 12px 16px; font-size: 22px; color: {{mute}}; }
 .dashednote b { color: {{ink}}; font-weight: 600; }
+.legend { display: flex; gap: 34px; margin-top: 20px; font-size: 22px; color: {{mute}};
+  align-items: center; justify-content: center; }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.legend i { display: inline-block; }
 """)
 
     leak_panel = f"""
@@ -208,13 +212,13 @@ def fig_fault_mechanism():
   </div>
 </div>"""
 
-    html = (leak_panel + restr_panel +
-            f'<div class="legend" style="margin-top:20px">'
-            f'<span><i style="border-top:3px solid {EDGE_C};height:0;width:34px;background:none"></i>管段与流向</span>'
-            f'<span><i style="width:20px;height:20px;border:2px solid {EDGE_C};border-radius:50%;background:#fff"></i>测点</span>'
-            f'<span><i style="background:{FACE2};border:1.5px solid {EDGE_C};width:34px"></i>泄漏阀 / 孔板</span>'
-            '</div>')
-    return dict(html=f'<div class="fm">{html}</div>', css=css)
+    html = (leak_panel + restr_panel)
+    legend = (f'<div class="legend" style="margin-top:20px; justify-content:center">'
+              f'<span><i style="border-top:3px solid {EDGE_C};height:0;width:34px;background:none"></i>管段与流向</span>'
+              f'<span><i style="width:20px;height:20px;border:2px solid {EDGE_C};border-radius:50%;background:#fff"></i>测点</span>'
+              f'<span><i style="background:{FACE2};border:1.5px solid {EDGE_C};width:34px;height:14px"></i>泄漏阀 / 孔板</span>'
+              '</div>')
+    return dict(html=f'<div class="fm">{html}</div>{legend}', css=css)
 
 
 if __name__ == '__main__':

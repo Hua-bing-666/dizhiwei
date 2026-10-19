@@ -112,7 +112,7 @@ def save(fig, name):
 # =====================================================================
 def fig_roadmap():
     fig = plt.figure(figsize=(7.6, 12.0))
-    fig.text(.045, .978, "图A　项目技术路线", fontsize=18, weight='bold', va='top')
+    fig.text(.045, .978, "项目技术路线", fontsize=18, weight='bold', va='top')
     fig.text(.045, .948,
              "四阶段递进：上一阶段的产出即下一阶段的输入，形成闭合逻辑链",
              fontsize=13.5, va='top', color=M)
@@ -186,7 +186,7 @@ def fig_threshold():
     e9 = json.load(open(os.path.join(RES, "E9_block_threshold.json"), encoding="utf-8"))
 
     fig, axes = plt.subplots(2, 1, figsize=(7.6, 9.8))
-    fig.text(.035, .988, "图B　判据样本独立性修正与门限重定",
+    fig.text(.035, .988, "判据样本独立性修正与门限重定",
              fontsize=18, weight='bold', va='top')
     fig.text(.035, .950,
              "上：健康段累积和峰值（对数纵轴）；下：块版门限扫描",
@@ -267,7 +267,7 @@ def fig_boundary():
     restr_amp, restr_dur, Z_restr = parse_grid(e9["grid_restriction"])
 
     fig, axes = plt.subplots(2, 1, figsize=(7.6, 10.0))
-    fig.text(.035, .988, "图C　最小可检幅度与持续时长的二维边界",
+    fig.text(.035, .988, "最小可检幅度与持续时长的二维边界",
              fontsize=18, weight='bold', va='top')
     fig.text(.035, .950,
              "色块内数字 = 检出数 / 40 轨迹",
@@ -275,11 +275,12 @@ def fig_boundary():
 
     def draw_heatmap(ax, amps, durs, Z, title, ylabel, boundary_index=None):
         im = ax.imshow(Z, cmap="YlGn", vmin=0, vmax=100, aspect="auto", origin="lower")
-        ax.set_xticks(range(len(durs)), [str(d) for d in durs])
+        # durs 为 10 s 块数；横轴须显示真实时长（秒），与"+2% 为 80 s"自洽
+        ax.set_xticks(range(len(durs)), [str(int(d) * 10) for d in durs])
         ax.set_yticks(range(len(amps)), ["%.0f%%" % (a * 100) for a in amps])
         # 边界说明写进标题，不压在色块上
         ax.set(xlabel="故障持续时长（秒）", ylabel=ylabel, title=title)
-        ax.xaxis.set_label_coords(.5, -.11)
+        ax.xaxis.set_label_coords(.5, -.16)
         ax.title.set_linespacing(1.5)
         for i in range(len(amps)):
             for j in range(len(durs)):
@@ -306,7 +307,7 @@ def fig_boundary():
                  ylabel="受限幅度（相对健康阻力）",
                  boundary_index=restr_amp.index(0.50))
 
-    fig.subplots_adjust(left=.17, right=.87, top=.855, bottom=.10, hspace=.48)
+    fig.subplots_adjust(left=.17, right=.87, top=.855, bottom=.12, hspace=.55)
     fig.text(.035, .015,
              "数据：E9_block_threshold.json；门限 h*=26",
              fontsize=13, va='bottom', color=M)
