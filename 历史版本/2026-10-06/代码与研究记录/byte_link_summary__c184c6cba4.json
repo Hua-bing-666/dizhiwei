@@ -1,0 +1,10 @@
+{
+  "rows": 432,
+  "source_trajectories": 72,
+  "physical_data": false,
+  "parameters_sha256": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+  "results_sha256": "0f165cd504216138ded383ea8b6f74130fe241b165dd41cbfa09d6c45d2a7de9",
+  "boundary_rows": 72,
+  "boundary_sha256": "25d541f57cbded340b4aafdf4da111a6f0ac0f5116ad6fd36d60a5a97c84aeea",
+  "dependence": "Paired scenarios and network modes reuse seeds. These are host byte replays, not RF trials."
+}

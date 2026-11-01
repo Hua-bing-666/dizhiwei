@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "checks": [
+    "strict_threshold_equality_and_one_unit_either_side",
+    "missing_raw_range_and_timing_quality_rebuild_both_windows",
+    "downstream_pressure_strict_domain_boundary",
+    "flow_below_half_litre_domain_is_not_normal_evidence",
+    "missing_health_permission_or_numeric_configuration_suppresses_diagnostic_events",
+    "rapid_attention_precedes_main_confirmation_without_becoming_fault_label",
+    "extreme_valid_products_and_maximum_rate_execute_without_overflow_trap"
+  ],
+  "parameters_sha256": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+  "validator_sha256": "4e7e6fa8846e4e8991de6f54f0777b23745c9313540a5370159538bf56db0033",
+  "exact_comparator_vectors": 24,
+  "scope": "Portable host C against independent Fraction oracle; no target execution"
+}

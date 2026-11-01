@@ -1,0 +1,19 @@
+{
+  "scene": "fast_leak_switch",
+  "sigma": 0.3,
+  "seed": 43000,
+  "events": [
+    {
+      "event_id": "rapid3:192",
+      "t_s": 192,
+      "kind": "rapid_review"
+    },
+    {
+      "event_id": "guard:197",
+      "t_s": 197,
+      "kind": "leak_pattern"
+    }
+  ],
+  "last": 600,
+  "parameters_sha256": "69edda1ddc0d67f0b6a4976e5ba9d263696ba361182f10412ca32c642f3c00c3"
+}

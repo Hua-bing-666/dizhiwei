@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261",
+  "validator_sha256": "168fa8c12e83ba94a4c01fd46b18d6ccf87429445b181c430f222a1776ba2146",
+  "checks": [
+    "same_latest_telemetry_preserves_identity_and_budget",
+    "new_source_gets_new_immutable_frame",
+    "supersession_is_not_acknowledgement",
+    "old_ack_only_marks_old_retired_frame_once",
+    "conflicting_or_older_telemetry_does_not_replace_queue",
+    "sequence_failure_rolls_back_supersession_and_metrics",
+    "full_queue_event_retires_telemetry_only",
+    "evicted_telemetry_ack_cannot_confirm_events",
+    "all_event_queue_rejects_new_event_and_telemetry",
+    "reserved_probe_does_not_evict_events",
+    "reopen_preserves_events_and_clears_new_session_telemetry_identity",
+    "event_insert_failure_rolls_back_telemetry_eviction",
+    "database_policy_and_capacity_cannot_silently_change",
+    "four_slot_illustration_matches_actual_admission_states"
+  ],
+  "inherited_identity_checks": 17,
+  "actual_sqlite_files": true,
+  "power_loss_tested": false
+}

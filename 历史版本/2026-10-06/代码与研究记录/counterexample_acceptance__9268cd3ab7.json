@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "strict_universal_float_equivalence": false,
+  "parameters_sha256": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+  "counterexample_parameters_sha256": "37cd156b2252fdcd0a127c3a48ed9047104d6d8fbe723294734cdd9f6ab6378c",
+  "script_sha256": "be19d35196f78c3c91b2b045a44cc937618a58281860e126ea47c4c47f0beea7",
+  "cases": [
+    {
+      "case": "pressure_rounding_near_threshold",
+      "raw_pressure_kpa": 119.999,
+      "pressure_sum_integer": 36000,
+      "window": 3,
+      "float_raw_decision": 1,
+      "float_quantized_decision": 0,
+      "integer_decision": 0,
+      "meaning": "leak comparison; scalar predicate, not a confirmed event"
+    },
+    {
+      "case": "interpolation_near_threshold",
+      "raw_pressure_kpa": 120.25,
+      "pressure_sum_integer": 36075,
+      "window": 3,
+      "float_raw_decision": 0,
+      "float_quantized_decision": 0,
+      "integer_decision": 1,
+      "threshold_original": 0.19875194974032762,
+      "threshold_micro": 198752,
+      "meaning": "interpolation shifts scalar decision even with quantized threshold in floating comparator"
+    },
+    {
+      "case": "strict_operating_domain_after_rounding",
+      "raw_pressure_kpa": 10.004,
+      "pressure_integer": 1000,
+      "float_raw_domain_valid": true,
+      "float_quantized_domain_valid": false,
+      "integer_status": 5,
+      "meaning": "domain availability only; output 5 means operating_domain, not fault"
+    }
+  ],
+  "additional_checks": [
+    "calibration_profile_independent_of_modified_future_measurements",
+    "millisecond_horizon_rejected_without_state_mutation"
+  ],
+  "scope": "Three constructed boundary cases; no change to trajectory parameters or thresholds"
+}

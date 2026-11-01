@@ -1,0 +1,8 @@
+{
+  "physical_data": false,
+  "records": 108,
+  "parameters_sha256": "69edda1ddc0d67f0b6a4976e5ba9d263696ba361182f10412ca32c642f3c00c3",
+  "source_events_sha256": "bcc9b9f404a7de44f14ad7326c0be285a566706ba5d574af50a99202b2b87d5c",
+  "results_sha256": "0be7e244434c76b4e28d65f85c288c5943106bfbe73ae33d46b690b97b94003d",
+  "dependence": "One fixed event stream; common random draws across strategies. Not independent physical link trials."
+}

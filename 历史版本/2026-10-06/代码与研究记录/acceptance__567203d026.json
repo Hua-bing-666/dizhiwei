@@ -1,0 +1,25 @@
+{
+  "status": "passed_for_synthetic_replay",
+  "physical_validation": false,
+  "fusion_records_reproduced": 20160,
+  "sensor_records_reproduced": 2592,
+  "phase_records_reproduced": 540,
+  "fusion_healthy_training_rows_reproduced": 576,
+  "sensor_healthy_training_rows_reproduced": 288,
+  "randomized_bounded_oracle_updates": 2000,
+  "causal_and_unread_pressure_cases": 6,
+  "pulse_window_checked": true,
+  "pressure_windows_and_confirmation_independently_checked": true,
+  "unknown_load_ambiguity_preserved": true,
+  "coverage_rows": 864,
+  "coverage_sha256": "a58df0a45323c364d1e64f39494a991c8652c2d1bbabef19470060ad66bd6d30",
+  "source_parameters_sha256": "6c4743a9c4fdab057ad9c08b94a10b34c987c282c8ee8bb90a501e86a8bd0314",
+  "validator_sha256": "308b9af05697b5e87ae03dbbc935fc1b3c2bd027e17d557f6dbec54c72494623",
+  "exclusions": [
+    "hardware timing",
+    "energy consumption",
+    "real field accuracy",
+    "firmware deployment",
+    "valve control"
+  ]
+}
