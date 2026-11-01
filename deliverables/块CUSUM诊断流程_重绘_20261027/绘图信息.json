@@ -1,0 +1,139 @@
+{
+  "width": 1160,
+  "height": 1460,
+  "nodes": [
+    {
+      "name": "start",
+      "x": 525,
+      "y": 24,
+      "w": 150,
+      "h": 48,
+      "kind": "rect"
+    },
+    {
+      "name": "init",
+      "x": 350,
+      "y": 103,
+      "w": 500,
+      "h": 66,
+      "kind": "rect"
+    },
+    {
+      "name": "sample",
+      "x": 350,
+      "y": 202,
+      "w": 500,
+      "h": 82,
+      "kind": "rect"
+    },
+    {
+      "name": "block",
+      "x": 350,
+      "y": 315,
+      "w": 500,
+      "h": 78,
+      "kind": "rect"
+    },
+    {
+      "name": "valid",
+      "x": 410.0,
+      "y": 421.0,
+      "w": 380,
+      "h": 140,
+      "kind": "diamond"
+    },
+    {
+      "name": "invalid",
+      "x": 900,
+      "y": 448,
+      "w": 225,
+      "h": 86,
+      "kind": "rect"
+    },
+    {
+      "name": "features",
+      "x": 350,
+      "y": 594,
+      "w": 500,
+      "h": 90,
+      "kind": "rect"
+    },
+    {
+      "name": "independent_data",
+      "x": 35,
+      "y": 202,
+      "w": 250,
+      "h": 82,
+      "kind": "rect"
+    },
+    {
+      "name": "calibration",
+      "x": 35,
+      "y": 315,
+      "w": 250,
+      "h": 150,
+      "kind": "rect"
+    },
+    {
+      "name": "residual",
+      "x": 350,
+      "y": 720,
+      "w": 500,
+      "h": 110,
+      "kind": "rect"
+    },
+    {
+      "name": "cusum",
+      "x": 350,
+      "y": 865,
+      "w": 500,
+      "h": 102,
+      "kind": "rect"
+    },
+    {
+      "name": "threshold",
+      "x": 410.0,
+      "y": 1000.0,
+      "w": 380,
+      "h": 114,
+      "kind": "diamond"
+    },
+    {
+      "name": "leak",
+      "x": 35,
+      "y": 1190,
+      "w": 310,
+      "h": 88,
+      "kind": "rect"
+    },
+    {
+      "name": "restriction",
+      "x": 425,
+      "y": 1190,
+      "w": 310,
+      "h": 88,
+      "kind": "rect"
+    },
+    {
+      "name": "both",
+      "x": 815,
+      "y": 1190,
+      "w": 310,
+      "h": 88,
+      "kind": "rect"
+    },
+    {
+      "name": "event",
+      "x": 300,
+      "y": 1340,
+      "w": 600,
+      "h": 88,
+      "kind": "rect"
+    }
+  ],
+  "sources": [
+    "docs/技术路线_分块版_申报书用.md §3.2、§4.2",
+    "simulation/project_review/lib_block.py blocks/calib/resid_blocks/cusum_run"
+  ],
+  "scope": "诊断方法设计图；不表示固件与平台已完成集成"
+}

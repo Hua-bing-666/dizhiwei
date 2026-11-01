@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155mm" height="129.1667mm" viewBox="0 0 1800 1500" data-print-width-mm="155" role="img" aria-labelledby="title desc">
+<title id="title">系统总体设计</title>
+<desc id="desc">方案组成图，依据总体设计正文中的两路表压测量配置绘制，不表示硬件已搭建。双支路清水台架中A支路提供P0、P1及Q观测量，B支路用于负载扰动，独立收集装置用于计量。两路4–20mA压力经电阻取样、输入保护及ADS1115转换，以I²C连接STM32F103C8T6；SEN0549流量脉冲经电平整形后计数。主控进行特征计算、异常判断和事件触发采样，SPI连接microSD日志，UART连接节点E220。两只E220通过LoRa传递事件和确认；接收端经3.3V逻辑USB–TTL转换器连接本地计算机。接收服务进行校验、去重及持久化，写入成功才回复确认，平台供用户查看状态、记录处置和复测。图中连线表示功能连接，不是可直接施工的电气原理图。</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#435a69"/></marker><style>
+text{font-family:SimSun,"Times New Roman",serif;font-size:40px;fill:#243847;text-anchor:middle;dominant-baseline:central}
+.heading{font-size:44px;font-weight:700;text-anchor:start}.strong{font-size:42px;font-weight:700}
+.card{fill:#fff;stroke:#79909c;stroke-width:1.8}.core{fill:#e7f0f5;stroke:#38657d;stroke-width:2.6}
+.link{fill:none;stroke:#435a69;stroke-width:2;stroke-linejoin:round;marker-end:url(#arrow)}
+.radio{stroke-width:2.6}.ack{stroke-dasharray:9 7;stroke-width:1.8}
+.interface{fill:#405b6c}.muted{fill:#536776}
+</style></defs><rect width="1800" height="1500" fill="#fff"/>
+<rect x="40" y="40" width="1720" height="270" rx="18" fill="#faf8f3" stroke="#af9b76" stroke-width="1.5"/><rect x="72" y="72" width="8" height="42" rx="4" fill="#af9b76"/>
+<text x="98" y="95" class="heading">双支路清水台架</text>
+<rect x="40" y="400" width="1080" height="1060" rx="18" fill="#f5f8fb" stroke="#52768c" stroke-width="1.5"/><rect x="72" y="432" width="8" height="42" rx="4" fill="#52768c"/>
+<text x="98" y="455" class="heading">感知诊断节点</text>
+<rect x="1220" y="400" width="540" height="460" rx="18" fill="#f4f8f8" stroke="#5d8989" stroke-width="1.5"/><rect x="1252" y="432" width="8" height="42" rx="4" fill="#5d8989"/>
+<text x="1278" y="455" class="heading">LoRa 接收端</text>
+<rect x="1220" y="920" width="540" height="540" rx="18" fill="#f5f8f4" stroke="#789477" stroke-width="1.5"/><rect x="1252" y="952" width="8" height="42" rx="4" fill="#789477"/>
+<text x="1278" y="975" class="heading">本地巡检平台</text>
+<g id="branch-a" data-box="branch-a" data-x="80" data-y="145" data-w="760" data-h="140"><rect class="card" x="80" y="145" width="760" height="140" rx="10"/>
+<text x="460" y="188" class="strong">A 支路：受测区段</text>
+<text x="460" y="242">压力 P0、P1 与流量 Q</text>
+</g>
+<g id="branch-b" data-box="branch-b" data-x="900" data-y="145" data-w="370" data-h="140"><rect class="card" x="900" y="145" width="370" height="140" rx="10"/>
+<text x="1085" y="188" class="strong">B 支路</text>
+<text x="1085" y="242">负载扰动</text>
+</g>
+<g id="collection" data-box="collection" data-x="1330" data-y="145" data-w="390" data-h="140"><rect class="card" x="1330" y="145" width="390" height="140" rx="10"/>
+<text x="1525" y="188" class="strong">独立收集装置</text>
+<text x="1525" y="242">计量与操作记录</text>
+</g>
+<g id="pressure" data-box="pressure" data-x="80" data-y="540" data-w="440" data-h="140"><rect class="card" x="80" y="540" width="440" height="140" rx="10"/>
+<text x="300" y="583" class="strong">压力变送器 P0、P1</text>
+<text x="300" y="637">两路 4–20 mA</text>
+</g>
+<g id="conditioning" data-box="conditioning" data-x="80" data-y="760" data-w="440" data-h="140"><rect class="card" x="80" y="760" width="440" height="140" rx="10"/>
+<text x="300" y="803" class="strong">采样电阻与输入保护</text>
+<text x="300" y="857">电流信号转电压</text>
+</g>
+<g id="adc" data-box="adc" data-x="80" data-y="1020" data-w="440" data-h="140"><rect class="card" x="80" y="1020" width="440" height="140" rx="10"/>
+<text x="300" y="1063" class="strong">ADS1115 采集模块</text>
+<text x="300" y="1117">双通道电压采集</text>
+</g>
+<g id="flow" data-box="flow" data-x="700" data-y="770" data-w="360" data-h="140"><rect class="card" x="700" y="770" width="360" height="140" rx="10"/>
+<text x="880" y="813" class="strong">SEN0549 流量计</text>
+<text x="880" y="867">脉冲整形与计数</text>
+</g>
+<g id="mcu" data-box="mcu" data-x="700" data-y="950" data-w="360" data-h="230"><rect class="card core" x="700" y="950" width="360" height="230" rx="10"/>
+<text x="880" y="1011" class="strong">STM32F103C8T6</text>
+<text x="880" y="1065">特征计算与判断</text>
+<text x="880" y="1119">事件触发采样</text>
+</g>
+<g id="node-radio" data-box="node-radio" data-x="700" data-y="540" data-w="360" data-h="140"><rect class="card" x="700" y="540" width="360" height="140" rx="10"/>
+<text x="880" y="583" class="strong">E220-400T22D</text>
+<text x="880" y="637">节点无线模块</text>
+</g>
+<g id="sd" data-box="sd" data-x="700" data-y="1290" data-w="360" data-h="140"><rect class="card" x="700" y="1290" width="360" height="140" rx="10"/>
+<text x="880" y="1333" class="strong">microSD 日志</text>
+<text x="880" y="1387">本地记录</text>
+</g>
+<g id="receiver-radio" data-box="receiver-radio" data-x="1260" data-y="540" data-w="460" data-h="140"><rect class="card" x="1260" y="540" width="460" height="140" rx="10"/>
+<text x="1490" y="583" class="strong">E220-400T22D</text>
+<text x="1490" y="637">接收端无线模块</text>
+</g>
+<g id="usb" data-box="usb" data-x="1260" data-y="730" data-w="460" data-h="90"><rect class="card" x="1260" y="730" width="460" height="90" rx="10"/>
+<text x="1490" y="775" class="strong">3.3 V 逻辑 USB–TTL</text>
+</g>
+<g id="server" data-box="server" data-x="1260" data-y="1060" data-w="460" data-h="190"><rect class="card" x="1260" y="1060" width="460" height="190" rx="10"/>
+<text x="1490" y="1101" class="strong">接收服务与数据库</text>
+<text x="1490" y="1155">校验、去重、持久化</text>
+<text x="1490" y="1209">写入成功后回复确认</text>
+</g>
+<g id="web" data-box="web" data-x="1260" data-y="1290" data-w="460" data-h="140"><rect class="card" x="1260" y="1290" width="460" height="140" rx="10"/>
+<text x="1490" y="1333" class="strong">状态展示与巡检记录</text>
+<text x="1490" y="1387">查看 · 处置 · 复测</text>
+</g>
+<path class="link " data-from="branch-a" data-to="pressure" d="M600,285 V510 H300 V540"/>
+<path class="link " data-from="branch-a" data-to="flow" d="M780,285 V340 H650 V830 H700"/>
+<path class="link " data-from="pressure" data-to="conditioning" d="M300,680 V760"/>
+<path class="link " data-from="conditioning" data-to="adc" d="M300,900 V1020"/>
+<path class="link " data-from="adc" data-to="mcu" d="M520,1080 H700"/>
+<text x="610" y="1032" class="interface">I²C</text>
+<path class="link " data-from="flow" data-to="mcu" d="M880,910 V950"/>
+<path class="link " data-from="mcu" data-to="node-radio" d="M1000,950 V920 H1085 V690 H1000 V680"/>
+<text x="1015" y="718" class="interface">UART</text>
+<path d="M994,938 L1000,950 L1006,938 Z" fill="#435a69"/>
+<path class="link " data-from="mcu" data-to="sd" d="M880,1180 V1290"/>
+<text x="960" y="1234" class="interface">SPI</text>
+<path class="link radio" data-from="node-radio" data-to="receiver-radio" d="M1060,585 H1260"/>
+<text x="1160" y="538" class="interface">LoRa</text>
+<path class="link ack" data-from="receiver-radio" data-to="node-radio" d="M1260,635 H1060"/>
+<text x="1160" y="687" class="interface">ACK</text>
+<path class="link " data-from="receiver-radio" data-to="usb" d="M1460,680 V730"/>
+<path class="link ack" data-from="usb" data-to="receiver-radio" d="M1540,730 V680"/>
+<path class="link " data-from="usb" data-to="server" d="M1660,820 V1060"/>
+<path class="link ack" data-from="server" data-to="usb" d="M1600,1060 V820"/>
+<text x="1480" y="893" class="interface">USB</text>
+<path class="link " data-from="server" data-to="web" d="M1490,1250 V1290"/>
+</svg>

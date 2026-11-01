@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1730" viewBox="0 0 1800 1730" role="img" aria-labelledby="title desc">
+<title id="title">南疆棉田滴灌支管异常识别研究技术路线</title>
+<desc id="desc">研究问题是供压与支路切换扰动下识别支管持续异常。路线依次为：水力建模、测量标定与健康参照；参照残差、不重叠块特征与CUSUM判断；固定采样与事件触发策略对照及可靠告警；冻结参照门限策略后，在双支路台架使用独立批次和独立计量开展故障与正常扰动对照，评价可检边界、策略权衡与适用条件。图示拟研究的方法和验证关系，不表示实测性能已完成。</desc>
+<defs><marker id="arrow" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L14,6 L0,12 Z" fill="#30363b"/></marker>
+<style>
+text{font-family:SimSun,"Times New Roman",serif;font-size:42px;fill:#171b1e;text-anchor:middle;dominant-baseline:central}
+.heading{font-size:44px;font-weight:700}.question{font-size:44px;font-weight:700}
+.label{fill:#eef0f2;stroke:#a6adb3;stroke-width:1.5}.panel{fill:#fff;stroke:#7a838a;stroke-width:1.7}
+.link{fill:none;stroke:#30363b;stroke-width:2.3;stroke-linejoin:round;marker-end:url(#arrow)}
+.divider{stroke:#bdc3c8;stroke-width:1.5}
+</style></defs><rect width="1800" height="1730" fill="#fff"/>
+<g id="question-label" data-box="question-label" data-x="40" data-y="40" data-w="260" data-h="150">
+<rect class="label" x="40" y="40" width="260" height="150"/>
+<text x="170" y="115" class="heading">研究问题</text>
+</g>
+<g id="question" data-box="question" data-x="350" data-y="40" data-w="1410" data-h="150">
+<rect class="panel" x="350" y="40" width="1410" height="150"/>
+<text x="1055" y="85" class="question">供压与支路切换扰动下，如何识别支管持续异常？</text>
+<text x="1055" y="145">南疆棉田膜下滴灌 · 支管等效泄漏与区段受限</text>
+</g>
+<g id="mechanism-label" data-box="mechanism-label" data-x="40" data-y="280" data-w="260" data-h="200">
+<rect class="label" x="40" y="280" width="260" height="200"/>
+<text x="170" y="380" class="heading">机理与观测</text>
+</g>
+<g id="mechanism" data-box="mechanism" data-x="350" data-y="280" data-w="1410" data-h="200">
+<rect class="panel" x="350" y="280" width="1410" height="200"/>
+<text x="1055" y="325" class="heading">故障—扰动水力建模 → 测量标定与误差分析 → 健康参照建立</text>
+<text x="1055" y="380">压力、压差与流量观测；分析供压及负载变化的影响</text>
+<text x="1055" y="430">界定故障与正常负载变化可能混淆的条件</text>
+</g>
+<path class="link" data-from="question" data-to="mechanism" d="M1055,190 V280"/>
+<g id="diagnosis-label" data-box="diagnosis-label" data-x="40" data-y="590" data-w="260" data-h="200">
+<rect class="label" x="40" y="590" width="260" height="200"/>
+<text x="170" y="690" class="heading">特征与判据</text>
+</g>
+<g id="diagnosis" data-box="diagnosis" data-x="350" data-y="590" data-w="1410" data-h="200">
+<rect class="panel" x="350" y="590" width="1410" height="200"/>
+<text x="1055" y="635" class="heading">参照残差 → 不重叠块特征 → CUSUM累积判断</text>
+<text x="1055" y="690">持续偏离形成异常候选，结合切换工况挂起与复判</text>
+<text x="1055" y="740">同等误报条件下与单阈值基线比较</text>
+</g>
+<path class="link" data-from="mechanism" data-to="diagnosis" d="M1055,480 V590"/>
+<text x="1330" y="535">健康参照与测量数据</text>
+<g id="strategy-label" data-box="strategy-label" data-x="40" data-y="900" data-w="260" data-h="220">
+<rect class="label" x="40" y="900" width="260" height="220"/>
+<text x="170" y="1010" class="heading">采集与告警</text>
+</g>
+<g id="strategy" data-box="strategy" data-x="350" data-y="900" data-w="1410" data-h="220">
+<rect class="panel" x="350" y="900" width="1410" height="220"/>
+<text x="700" y="950" class="heading">固定采样基线</text>
+<text x="1055" y="950">对照</text>
+<text x="1410" y="950" class="heading">事件触发策略</text>
+<text x="1055" y="1010">比较识别时延、漏检情况及采集通信开销</text>
+<text x="1055" y="1070">LoRa可靠上报 → 落库确认 → 人工核查与复测</text>
+</g>
+<path class="link" data-from="diagnosis" data-to="strategy" d="M1055,790 V900"/>
+<text x="1330" y="845">固定采样判据作为基线</text>
+<g id="validation-label" data-box="validation-label" data-x="40" data-y="1230" data-w="260" data-h="260">
+<rect class="label" x="40" y="1230" width="260" height="260"/>
+<text x="170" y="1360" class="heading">对照与评价</text>
+</g>
+<g id="validation" data-box="validation" data-x="350" data-y="1230" data-w="1410" data-h="260">
+<rect class="panel" x="350" y="1230" width="1410" height="260"/>
+<text x="1055" y="1275" class="heading">双支路对照 · 独立计量 · 留出验证</text>
+<text x="700" y="1330">等效泄漏、区段受限</text>
+<text x="1410" y="1330">供压扰动、B支路切换</text>
+<line class="divider" x1="1055" y1="1305" x2="1055" y2="1355"/>
+<text x="1055" y="1390">基线与策略对照：检出、误报、时延、送达与开销</text>
+<text x="1055" y="1445">冻结参照、门限与策略后，用独立数据批次评价</text>
+</g>
+<path class="link" data-from="strategy" data-to="validation" d="M1055,1120 V1230"/>
+<text x="1330" y="1175">冻结参照、门限与策略</text>
+<g id="outcome" data-box="outcome" data-x="350" data-y="1600" data-w="1410" data-h="90">
+<line class="divider" x1="350" y1="1600" x2="1760" y2="1600"/>
+<text x="1055" y="1645" class="heading">可检幅度与持续时间 · 采集告警权衡 · 适用条件</text>
+</g>
+<path class="link" data-from="validation" data-to="outcome" d="M1055,1490 V1600"/>
+<text x="1250" y="1545">独立对照评价</text>
+</svg>

@@ -36,3 +36,11 @@ deliverables/滴智卫_桌面版_V1.3/
 deliverables/滴智卫_桌面版_V1.3.zip
 deliverables/滴智卫_V1.3.exe
 desktop/licenses/
+
+# Runtime state and local build products
+deliverables/data/
+firmware/build/
+__img_tmp*/
+tmp_patch_math.py
+*.sqlite
+*.sqlite-*

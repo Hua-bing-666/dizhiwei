@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2320" viewBox="0 0 1800 2320" role="img" aria-labelledby="title desc">
+<title id="title">南疆棉田滴灌支管异常识别研究技术路线</title>
+<desc id="desc">拟开展的方法研究与验证路线。故障和正常扰动的水力建模提供响应特征，独立健康工况的测量标定提供健康参照，二者支撑参照残差、不重叠块特征及CUSUM判断。采用统一判据研究固定采样与事件触发的时延、漏检和开销，同时研究候选事件与测量快照绑定，形成可靠上报、落库确认及人工复测。调参并冻结参数后，采用独立计量与操作记录开展台架留出验证，并与单阈值和固定采样基线对照，评价检出误报、时延、送达恢复及可检边界与策略权衡。本图为研究路线，不表示实测性能已经完成。</desc>
+<defs><marker id="arrow" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4.5 L0,9 Z" fill="#222"/></marker>
+<style>
+text{font-family:SimSun,"Times New Roman",serif;font-size:42px;fill:#111;text-anchor:middle;dominant-baseline:central}
+.box{fill:#fff;stroke:#222;stroke-width:1.8}
+.link{fill:none;stroke:#222;stroke-width:1.7;stroke-linejoin:round;marker-end:url(#arrow)}
+</style></defs><rect width="1800" height="2320" fill="#fff"/>
+<g id="goal" data-box="goal" data-x="480" data-y="40" data-w="840" data-h="100"><rect class="box" x="480" y="40" width="840" height="100"/>
+<text x="900" y="90">南疆棉田支管异常识别与可靠预警</text>
+</g>
+<g id="fault-input" data-box="fault-input" data-x="60" data-y="220" data-w="440" data-h="100"><rect class="box" x="60" y="220" width="440" height="100"/>
+<text x="280" y="270">等效泄漏与区段受限</text>
+</g>
+<g id="normal-input" data-box="normal-input" data-x="680" data-y="220" data-w="440" data-h="100"><rect class="box" x="680" y="220" width="440" height="100"/>
+<text x="900" y="270">供压变化与支路切换</text>
+</g>
+<g id="healthy-input" data-box="healthy-input" data-x="1300" data-y="220" data-w="440" data-h="100"><rect class="box" x="1300" y="220" width="440" height="100"/>
+<text x="1520" y="270">独立健康工况采集</text>
+</g>
+<path class="link" data-from="goal" data-to="fault-input" d="M900,140 V180 H280 V220"/>
+<path class="link" data-from="goal" data-to="normal-input" d="M900,140 V220"/>
+<path class="link" data-from="goal" data-to="healthy-input" d="M900,140 V180 H1520 V220"/>
+<g id="physical-model" data-box="physical-model" data-x="340" data-y="400" data-w="500" data-h="140"><rect class="box" x="340" y="400" width="500" height="140"/>
+<text x="590" y="445">故障与扰动水力建模</text>
+<text x="590" y="500">提取水力响应特征</text>
+</g>
+<g id="healthy-reference" data-box="healthy-reference" data-x="1300" data-y="400" data-w="440" data-h="140"><rect class="box" x="1300" y="400" width="440" height="140"/>
+<text x="1520" y="445">测量标定与误差分析</text>
+<text x="1520" y="500">健康数据建立参照</text>
+</g>
+<path class="link" data-from="fault-input" data-to="physical-model" d="M280,320 V360 H490 V400"/>
+<path class="link" data-from="normal-input" data-to="physical-model" d="M900,320 V360 H690 V400"/>
+<path class="link" data-from="healthy-input" data-to="healthy-reference" d="M1520,320 V400"/>
+<g id="features" data-box="features" data-x="580" data-y="620" data-w="640" data-h="110"><rect class="box" x="580" y="620" width="640" height="110"/>
+<text x="900" y="675">参照残差与不重叠块特征</text>
+</g>
+<path class="link" data-from="physical-model" data-to="features" d="M590,540 V580 H760 V620"/>
+<path class="link" data-from="healthy-reference" data-to="features" d="M1520,540 V580 H1040 V620"/>
+<g id="diagnosis" data-box="diagnosis" data-x="570" data-y="810" data-w="660" data-h="110"><rect class="box" x="570" y="810" width="660" height="110"/>
+<text x="900" y="865">CUSUM累积判断与切换复判</text>
+</g>
+<path class="link" data-from="features" data-to="diagnosis" d="M900,730 V810"/>
+<g id="candidate" data-box="candidate" data-x="160" data-y="1000" data-w="520" data-h="110"><rect class="box" x="160" y="1000" width="520" height="110"/>
+<text x="420" y="1055">异常候选生成</text>
+</g>
+<g id="sampling" data-box="sampling" data-x="1120" data-y="1000" data-w="520" data-h="110"><rect class="box" x="1120" y="1000" width="520" height="110"/>
+<text x="1380" y="1055">固定采样与事件触发对照</text>
+</g>
+<path class="link" data-from="diagnosis" data-to="candidate" d="M900,920 V960 H420 V1000"/>
+<path class="link" data-from="diagnosis" data-to="sampling" d="M900,920 V960 H1380 V1000"/>
+<g id="snapshot" data-box="snapshot" data-x="160" data-y="1190" data-w="520" data-h="110"><rect class="box" x="160" y="1190" width="520" height="110"/>
+<text x="420" y="1245">候选事件与测量快照绑定</text>
+</g>
+<g id="sampling-analysis" data-box="sampling-analysis" data-x="1120" data-y="1190" data-w="520" data-h="110"><rect class="box" x="1120" y="1190" width="520" height="110"/>
+<text x="1380" y="1245">时延、漏检与开销分析</text>
+</g>
+<path class="link" data-from="candidate" data-to="snapshot" d="M420,1110 V1190"/>
+<path class="link" data-from="sampling" data-to="sampling-analysis" d="M1380,1110 V1190"/>
+<g id="reliable-warning" data-box="reliable-warning" data-x="540" data-y="1380" data-w="720" data-h="140"><rect class="box" x="540" y="1380" width="720" height="140"/>
+<text x="900" y="1425">LoRa可靠上报与落库确认</text>
+<text x="900" y="1480">人工核查与同工况复测</text>
+</g>
+<path class="link" data-from="snapshot" data-to="reliable-warning" d="M420,1300 V1340 H760 V1380"/>
+<path class="link" data-from="sampling-analysis" data-to="reliable-warning" d="M1380,1300 V1340 H1040 V1380"/>
+<g id="parameter-freeze" data-box="parameter-freeze" data-x="570" data-y="1600" data-w="660" data-h="110"><rect class="box" x="570" y="1600" width="660" height="110"/>
+<text x="900" y="1655">调参试验与参数冻结</text>
+</g>
+<path class="link" data-from="reliable-warning" data-to="parameter-freeze" d="M900,1520 V1600"/>
+<g id="bench-validation" data-box="bench-validation" data-x="570" data-y="1790" data-w="660" data-h="110"><rect class="box" x="570" y="1790" width="660" height="110"/>
+<text x="900" y="1845">独立批次验证</text>
+</g>
+<g id="bench-conditions" data-box="bench-conditions" data-x="40" data-y="1790" data-w="420" data-h="110"><rect class="box" x="40" y="1790" width="420" height="110"/>
+<text x="250" y="1845">双支路台架对照</text>
+</g>
+<g id="truth-records" data-box="truth-records" data-x="1340" data-y="1790" data-w="420" data-h="110"><rect class="box" x="1340" y="1790" width="420" height="110"/>
+<text x="1550" y="1845">独立计量与操作记录</text>
+</g>
+<path class="link" data-from="parameter-freeze" data-to="bench-validation" d="M900,1710 V1790"/>
+<path class="link" data-from="bench-conditions" data-to="bench-validation" d="M460,1845 H570"/>
+<path class="link" data-from="truth-records" data-to="bench-validation" d="M1340,1845 H1230"/>
+<g id="comparison" data-box="comparison" data-x="570" data-y="1980" data-w="660" data-h="110"><rect class="box" x="570" y="1980" width="660" height="110"/>
+<text x="900" y="2035">基线与策略对照评价</text>
+</g>
+<g id="threshold-baseline" data-box="threshold-baseline" data-x="40" data-y="1980" data-w="420" data-h="110"><rect class="box" x="40" y="1980" width="420" height="110"/>
+<text x="250" y="2035">单阈值基线</text>
+</g>
+<g id="sampling-baseline" data-box="sampling-baseline" data-x="1340" data-y="1980" data-w="420" data-h="110"><rect class="box" x="1340" y="1980" width="420" height="110"/>
+<text x="1550" y="2035">固定采样基线</text>
+</g>
+<path class="link" data-from="bench-validation" data-to="comparison" d="M900,1900 V1980"/>
+<path class="link" data-from="threshold-baseline" data-to="comparison" d="M460,2035 H570"/>
+<path class="link" data-from="sampling-baseline" data-to="comparison" d="M1340,2035 H1230"/>
+<g id="diagnostic-evidence" data-box="diagnostic-evidence" data-x="60" data-y="2170" data-w="440" data-h="110"><rect class="box" x="60" y="2170" width="440" height="110"/>
+<text x="280" y="2225">检出、误报与时延</text>
+</g>
+<g id="communication-evidence" data-box="communication-evidence" data-x="680" data-y="2170" data-w="440" data-h="110"><rect class="box" x="680" y="2170" width="440" height="110"/>
+<text x="900" y="2225">事件送达与恢复</text>
+</g>
+<g id="applicability" data-box="applicability" data-x="1300" data-y="2170" data-w="440" data-h="110"><rect class="box" x="1300" y="2170" width="440" height="110"/>
+<text x="1520" y="2225">可检边界与适用条件</text>
+</g>
+<path class="link" data-from="comparison" data-to="diagnostic-evidence" d="M900,2090 V2130 H280 V2170"/>
+<path class="link" data-from="comparison" data-to="communication-evidence" d="M900,2090 V2170"/>
+<path class="link" data-from="comparison" data-to="applicability" d="M900,2090 V2130 H1520 V2170"/>
+</svg>

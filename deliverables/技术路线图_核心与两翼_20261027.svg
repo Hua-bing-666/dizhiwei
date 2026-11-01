@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2160" viewBox="0 0 1800 2160" data-print-width-mm="155" role="img" aria-labelledby="title desc">
+<title id="title">南疆滴灌支管异常识别与采集策略研究技术路线</title>
+<desc id="desc">拟开展的研究技术路线。两侧水力机理和同步测量研究为中间的归一化残差及不重叠块特征提供依据。块级CUSUM位于主轴，向左形成候选事件、可靠LoRa传输和人工核查研究，向右开展固定采样及事件触发采样的同判据比较。主轴同时开展同误报水平的判据及基线参数标定。两翼研究与判据参数在冻结阶段汇合，继而进行双支路留出批次验证和基线比较，评价可检幅度、持续时间及适用条件。仅健康标定数据用于健康参照；故障操作真值用于独立评价。图示研究计划，不表示实物性能已取得。</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#252525"/></marker>
+<style>
+text{font-family:SimSun,"Times New Roman",serif;font-size:40px;fill:#111;text-anchor:middle;dominant-baseline:central}
+.heading{font-size:42px;font-weight:700}.core-title{font-size:44px;font-weight:700}
+.box{fill:#fff;stroke:#3c3c3c;stroke-width:1.6}.input{stroke:#555;stroke-width:1.4}
+.feature{fill:#fafafa;stroke:#303030;stroke-width:2}.core{fill:#e8e8e8;stroke:#202020;stroke-width:2.8}
+.focus{fill:#f3f3f3;stroke:#303030;stroke-width:2.2}.result{fill:#f7f7f7;stroke:#353535;stroke-width:1.9}
+.link{fill:none;stroke:#303030;stroke-width:1.6;stroke-linejoin:round;marker-end:url(#arrow)}.main{stroke-width:2.2}
+.rule{stroke:#aaa;stroke-width:1.1}
+</style></defs><rect width="1800" height="2160" fill="#fff"/>
+<text x="310" y="50" class="heading">故障与正常扰动建模</text>
+<text x="1490" y="50" class="heading">同步测量与健康标定</text>
+<path class="rule" d="M30,85 H590 M1210,85 H1770"/>
+<g id="faults" data-box="faults" data-x="30" data-y="120" data-w="300" data-h="90"><rect class="box input" x="30" y="120" width="300" height="90" rx="12"/>
+<text x="180" y="165">等效泄漏/受限</text>
+</g>
+<g id="disturbance" data-box="disturbance" data-x="370" data-y="120" data-w="220" data-h="90"><rect class="box input" x="370" y="120" width="220" height="90" rx="12"/>
+<text x="480" y="165">供压/切换</text>
+</g>
+<g id="model" data-box="model" data-x="30" data-y="290" data-w="560" data-h="100"><rect class="box" x="30" y="290" width="560" height="100"/>
+<text x="310" y="340">故障与扰动水力建模</text>
+</g>
+<path class="link" data-from="faults" data-to="model" d="M180,210 V250 H210 V290"/>
+<path class="link" data-from="disturbance" data-to="model" d="M480,210 V250 H410 V290"/>
+<g id="pressure-flow" data-box="pressure-flow" data-x="30" data-y="460" data-w="260" data-h="140"><rect class="box" x="30" y="460" width="260" height="140"/>
+<text x="160" y="505" class="heading">压力—流量</text>
+<text x="160" y="560">耦合特征</text>
+</g>
+<g id="resistance" data-box="resistance" data-x="330" data-y="460" data-w="260" data-h="140"><rect class="box" x="330" y="460" width="260" height="140"/>
+<text x="460" y="505" class="heading">区段阻力</text>
+<text x="460" y="560">变化特征</text>
+</g>
+<path class="link" data-from="model" data-to="pressure-flow" d="M310,390 V425 H160 V460"/>
+<path class="link" data-from="model" data-to="resistance" d="M310,390 V425 H460 V460"/>
+<g id="sensitivity" data-box="sensitivity" data-x="30" data-y="670" data-w="560" data-h="90"><rect class="box" x="30" y="670" width="560" height="90"/>
+<text x="310" y="715">特征敏感性与扰动分析</text>
+</g>
+<path class="link" data-from="pressure-flow" data-to="sensitivity" d="M160,600 V635 H210 V670"/>
+<path class="link" data-from="resistance" data-to="sensitivity" d="M460,600 V635 H410 V670"/>
+<g id="pressure" data-box="pressure" data-x="1210" data-y="120" data-w="260" data-h="90"><rect class="box input" x="1210" y="120" width="260" height="90" rx="12"/>
+<text x="1340" y="165">压力/压差</text>
+</g>
+<g id="flow" data-box="flow" data-x="1510" data-y="120" data-w="260" data-h="90"><rect class="box input" x="1510" y="120" width="260" height="90" rx="12"/>
+<text x="1640" y="165">流量脉冲</text>
+</g>
+<g id="alignment" data-box="alignment" data-x="1210" data-y="290" data-w="560" data-h="100"><rect class="box" x="1210" y="290" width="560" height="100"/>
+<text x="1490" y="340">时序对齐与连续计数</text>
+</g>
+<path class="link" data-from="pressure" data-to="alignment" d="M1340,210 V250 H1390 V290"/>
+<path class="link" data-from="flow" data-to="alignment" d="M1640,210 V250 H1590 V290"/>
+<g id="calibration" data-box="calibration" data-x="1210" data-y="460" data-w="560" data-h="110"><rect class="box" x="1210" y="460" width="560" height="110"/>
+<text x="1490" y="515">标定与测量误差分析</text>
+</g>
+<path class="link" data-from="alignment" data-to="calibration" d="M1490,390 V460"/>
+<g id="reference" data-box="reference" data-x="1210" data-y="670" data-w="560" data-h="90"><rect class="box" x="1210" y="670" width="560" height="90"/>
+<text x="1490" y="715">独立健康参照与残差尺度</text>
+</g>
+<path class="link" data-from="calibration" data-to="reference" d="M1490,570 V670"/>
+<g id="blocks" data-box="blocks" data-x="680" data-y="645" data-w="440" data-h="140"><rect class="box feature" x="680" y="645" width="440" height="140"/>
+<text x="900" y="690" class="heading">归一化参照残差</text>
+<text x="900" y="745">不重叠块特征</text>
+</g>
+<path class="link main" data-from="sensitivity" data-to="blocks" d="M590,715 H680"/>
+<path class="link" data-from="reference" data-to="blocks" d="M1210,715 H1120"/>
+<g id="cusum" data-box="cusum" data-x="680" data-y="920" data-w="440" data-h="150"><rect class="box core" x="680" y="920" width="440" height="150"/>
+<text x="900" y="965" class="core-title">块级CUSUM判据</text>
+<text x="900" y="1020">切换工况挂起与复判</text>
+</g>
+<path class="link main" data-from="blocks" data-to="cusum" d="M900,785 V920"/>
+<g id="candidate" data-box="candidate" data-x="30" data-y="925" data-w="560" data-h="140"><rect class="box" x="30" y="925" width="560" height="140"/>
+<text x="310" y="970" class="heading">持续异常候选</text>
+<text x="310" y="1025">观测记录与事件关联</text>
+</g>
+<g id="sampling" data-box="sampling" data-x="1210" data-y="925" data-w="560" data-h="140"><rect class="box focus" x="1210" y="925" width="560" height="140"/>
+<text x="1490" y="970" class="heading">事件触发采样研究</text>
+<text x="1490" y="1025">固定采样对照与统一判据</text>
+</g>
+<path class="link" data-from="cusum" data-to="candidate" d="M680,995 H590"/>
+<path class="link main" data-from="cusum" data-to="sampling" d="M1120,995 H1210"/>
+<g id="delivery" data-box="delivery" data-x="30" data-y="1140" data-w="560" data-h="140"><rect class="box" x="30" y="1140" width="560" height="140"/>
+<text x="310" y="1185" class="heading">LoRa可靠传输</text>
+<text x="310" y="1240">重发、去重与提交后确认</text>
+</g>
+<path class="link" data-from="candidate" data-to="delivery" d="M310,1065 V1140"/>
+<g id="recheck" data-box="recheck" data-x="30" data-y="1370" data-w="560" data-h="140"><rect class="box" x="30" y="1370" width="560" height="140"/>
+<text x="310" y="1415" class="heading">可核查告警链</text>
+<text x="310" y="1470">人工核查与同工况复测</text>
+</g>
+<path class="link" data-from="delivery" data-to="recheck" d="M310,1280 V1370"/>
+<g id="fixed" data-box="fixed" data-x="1210" data-y="1165" data-w="260" data-h="90"><rect class="box input" x="1210" y="1165" width="260" height="90" rx="12"/>
+<text x="1340" y="1210">固定采样</text>
+</g>
+<g id="triggered" data-box="triggered" data-x="1510" data-y="1165" data-w="260" data-h="90"><rect class="box input" x="1510" y="1165" width="260" height="90" rx="12"/>
+<text x="1640" y="1210">事件触发</text>
+</g>
+<path class="link" data-from="sampling" data-to="fixed" d="M1490,1065 V1115 H1340 V1165"/>
+<path class="link" data-from="sampling" data-to="triggered" d="M1490,1065 V1115 H1640 V1165"/>
+<g id="sampling-config" data-box="sampling-config" data-x="1210" data-y="1370" data-w="560" data-h="140"><rect class="box" x="1210" y="1370" width="560" height="140"/>
+<text x="1490" y="1415" class="heading">策略设计与参数选择</text>
+<text x="1490" y="1470">时延、漏检与采集通信开销</text>
+</g>
+<path class="link" data-from="fixed" data-to="sampling-config" d="M1340,1255 V1310 H1390 V1370"/>
+<path class="link" data-from="triggered" data-to="sampling-config" d="M1640,1255 V1310 H1590 V1370"/>
+<g id="fair-calibration" data-box="fair-calibration" data-x="680" data-y="1190" data-w="440" data-h="140"><rect class="box" x="680" y="1190" width="440" height="140"/>
+<text x="900" y="1235" class="heading">按统一误报目标标定</text>
+<text x="900" y="1290">判据与基线参数</text>
+</g>
+<path class="link main" data-from="cusum" data-to="fair-calibration" d="M900,1070 V1190"/>
+<g id="freeze" data-box="freeze" data-x="650" data-y="1560" data-w="500" data-h="140"><rect class="box feature" x="650" y="1560" width="500" height="140"/>
+<text x="900" y="1605" class="heading">联合调参与参数冻结</text>
+<text x="900" y="1660">参照、判据及采样策略</text>
+</g>
+<path class="link main" data-from="fair-calibration" data-to="freeze" d="M900,1330 V1560"/>
+<path class="link" data-from="recheck" data-to="freeze" d="M310,1510 V1535 H730 V1560"/>
+<path class="link" data-from="sampling-config" data-to="freeze" d="M1490,1510 V1535 H1070 V1560"/>
+<g id="validation" data-box="validation" data-x="600" data-y="1780" data-w="600" data-h="110"><rect class="box" x="600" y="1780" width="600" height="110"/>
+<text x="900" y="1835">留出批次独立验证</text>
+</g>
+<path class="link main" data-from="freeze" data-to="validation" d="M900,1700 V1780"/>
+<g id="bench" data-box="bench" data-x="30" data-y="1765" data-w="450" data-h="140"><rect class="box" x="30" y="1765" width="450" height="140"/>
+<text x="255" y="1810" class="heading">双支路对照试验</text>
+<text x="255" y="1865">A支路注入/B支路切换</text>
+</g>
+<g id="records" data-box="records" data-x="1320" data-y="1765" data-w="450" data-h="140"><rect class="box" x="1320" y="1765" width="450" height="140"/>
+<text x="1545" y="1810" class="heading">独立计量</text>
+<text x="1545" y="1865">与操作记录</text>
+</g>
+<path class="link" data-from="bench" data-to="validation" d="M480,1835 H600"/>
+<path class="link" data-from="records" data-to="validation" d="M1320,1835 H1200"/>
+<g id="comparison" data-box="comparison" data-x="600" data-y="1980" data-w="600" data-h="140"><rect class="box" x="600" y="1980" width="600" height="140"/>
+<text x="900" y="2025" class="heading">基线与策略对照评价</text>
+<text x="900" y="2080">检出、误报、时延、送达与开销</text>
+</g>
+<path class="link main" data-from="validation" data-to="comparison" d="M900,1890 V1980"/>
+<g id="baselines" data-box="baselines" data-x="30" data-y="1980" data-w="450" data-h="140"><rect class="box" x="30" y="1980" width="450" height="140"/>
+<text x="255" y="2025" class="heading">单阈值基线</text>
+<text x="255" y="2080">固定采样基线</text>
+</g>
+<path class="link" data-from="baselines" data-to="comparison" d="M480,2050 H600"/>
+<g id="outcome" data-box="outcome" data-x="1320" data-y="1980" data-w="450" data-h="140"><rect class="box result" x="1320" y="1980" width="450" height="140"/>
+<text x="1545" y="2025" class="heading">可检边界与适用条件</text>
+<text x="1545" y="2080" class="heading">幅度—持续时间</text>
+</g>
+<path class="link main" data-from="comparison" data-to="outcome" d="M1200,2050 H1320"/>
+</svg>
