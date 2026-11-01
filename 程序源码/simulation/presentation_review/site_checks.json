@@ -1,0 +1,332 @@
+{
+  "date": "2026-10-04",
+  "classification": "offline_software_ui_checks_not_physical_validation",
+  "physical_data": false,
+  "widths": [
+    375,
+    768,
+    1024,
+    1440
+  ],
+  "navigation_checks": [
+    {
+      "page": "overview",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "monitor",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "devices",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "history",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "settings",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "overview",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "monitor",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "devices",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "history",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "settings",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "overview",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "monitor",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "devices",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "history",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "settings",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "overview",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "monitor",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "events",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "devices",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "history",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "settings",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "replay_checks": [
+    {
+      "scenario": "normal",
+      "noise": "0.3",
+      "state": "normal"
+    },
+    {
+      "scenario": "normal",
+      "noise": "1.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "normal",
+      "noise": "3.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "normal",
+      "noise": "10.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "0.3",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "1.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "3.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "supply",
+      "noise": "10.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "leak",
+      "noise": "0.3",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "leak",
+      "noise": "1.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "leak",
+      "noise": "3.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "leak",
+      "noise": "10.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "0.3",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "1.0",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "3.0",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "restriction",
+      "noise": "10.0",
+      "state": "restriction_pattern"
+    },
+    {
+      "scenario": "drift",
+      "noise": "0.3",
+      "state": "normal"
+    },
+    {
+      "scenario": "drift",
+      "noise": "1.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "drift",
+      "noise": "3.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "drift",
+      "noise": "10.0",
+      "state": "normal"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "0.3",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "1.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "3.0",
+      "state": "leak_pattern"
+    },
+    {
+      "scenario": "load_unknown",
+      "noise": "10.0",
+      "state": "leak_pattern"
+    }
+  ],
+  "workflow_checks": [
+    "all_24_traces_match_frozen_observations_features_and_states",
+    "normal_and_reference_do_not_create_fault_events",
+    "quality_gates_hide_current_readings_and_stop_playback",
+    "create_and_deduplicate_continuous_candidate",
+    "review_required_before_saving",
+    "note_and_recheck_evidence_required",
+    "offline_and_invalid_cannot_archive",
+    "pending_and_uncertain_maintenance_remain_open_with_history",
+    "archive_is_manual_does_not_rewrite_diagnosis_or_snapshot",
+    "cross_page_counts_filter_search_and_history",
+    "settings_save_without_rewriting_historical_device_id",
+    "events_and_profile_survive_page_reload",
+    "reading_pagination_follows_selected_cursor",
+    "play_advances_one_second_and_pause_stops",
+    "end_of_replay_stops",
+    "quality_event_snapshot_has_no_current_values",
+    "computed_invalid_output_hides_values_and_blocks_recovery",
+    "legacy_event_preserved_and_new_version_does_not_deduplicate",
+    "corrupt_storage_warns_without_overwriting_original"
+  ],
+  "export_checks": [
+    {
+      "file": "drip-demo-workspace.json",
+      "events": 1,
+      "history_entries": 5,
+      "physical_data": false
+    },
+    {
+      "file": "drip-reference-leak-450s.csv",
+      "data_rows": 451,
+      "source_marked": true
+    },
+    {
+      "file": "DEMO-A-001.json",
+      "physical_data": false
+    }
+  ],
+  "accessibility_checks": [
+    "native_modal_escape_closes",
+    "keyboard_skip_link",
+    "aria_navigation_and_filter_states",
+    "reduced_motion_styles_present",
+    {
+      "check": "mobile_chart_axis_font_size",
+      "actual_px": 12
+    }
+  ],
+  "external_requests": [],
+  "console_errors": [],
+  "screenshots": [
+    "overview-375.png",
+    "monitor-375.png",
+    "events-375.png",
+    "devices-375.png",
+    "history-375.png",
+    "settings-375.png",
+    "overview-1440.png",
+    "monitor-1440.png",
+    "events-1440.png",
+    "devices-1440.png",
+    "history-1440.png",
+    "settings-1440.png",
+    "event-dialog-desktop.png",
+    "event-dialog-mobile.png",
+    "maintenance-desktop.png",
+    "events-with-record-desktop.png",
+    "events-with-record-mobile.png",
+    "overview-with-record-desktop.png",
+    "overview-final-desktop.png",
+    "overview-final-mobile.png",
+    "overview-lower-desktop.png"
+  ],
+  "scope": "current A06/A07 observed replay operations site; historical research page outside this checker",
+  "status": "passed",
+  "download_directory": "tmp/presentation_site_review/downloads-e45845aa-233c-4066-a72b-a3cb2e2ba071",
+  "source_sha256": "0226a252449d373ada79fe2074769a1b8d310bd4dbe135b526a6caaf3afa17a5"
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+  "validator_sha256": "1ee86215d4870aef16f960609c923b962f4101f7a05f031f20da9bfd50ff07cf",
+  "stage": "7C",
+  "schedule_cases": 9,
+  "counter_snapshots": 2000,
+  "stale_read_rejected": true,
+  "mux_overlap_rejected": true,
+  "late_counter_latch_rejected": true,
+  "missing_ready_rejected": true,
+  "timer_gap_requires_explicit_reset": true,
+  "counter_reset_counterexample": true,
+  "ambiguous_wrap_interval_rejected": true,
+  "invalid_counter_endpoint_excluded_from_future_windows": true,
+  "timing_fault_index": 360,
+  "next_valid_index": 371,
+  "physical_timing_measured": false,
+  "exclusions": [
+    "actual timer interrupt latency",
+    "actual ADC timestamps",
+    "race-free hardware counter latch",
+    "sensor response bandwidth"
+  ]
+}

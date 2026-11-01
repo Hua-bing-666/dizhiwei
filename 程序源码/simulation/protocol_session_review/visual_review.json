@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-06",
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+  "report_sha256": "b9cf73e736a7521e359971b60dfbc8319a9bc348a1e788403be4f1715c1fe492",
+  "plot_script_sha256": "44bf19faffd137e8419af4ab896020544dff222813ee89204b8e9405cf14a109",
+  "figures": [
+    {
+      "name": "01_双压力转换与计数端点",
+      "final_png_viewed": true,
+      "grayscale_distinguishable": true,
+      "no_observed_clipping_or_misalignment": true,
+      "file_sha256": {
+        "png": "5f84dfc3e1b26854e39be7cff7fcf9ebf75a885011b42cd3aa069e1425b9d804",
+        "svg": "b54adde011bf96256b7712ae6d0672c07a1f37791d34fe126f2960c470135e40"
+      }
+    },
+    {
+      "name": "02_重试预算与长中断边界",
+      "final_png_viewed": true,
+      "grayscale_distinguishable": true,
+      "no_observed_clipping_or_misalignment": true,
+      "file_sha256": {
+        "png": "3c56eaa49d50669de73e92bbacd18bd2d8c82b7b15af205cfb260069b7ce705e",
+        "svg": "68b148e59d871886588e0850cb3789d751702f7307fd03baa5819193bd647b6c"
+      }
+    }
+  ],
+  "source_and_artifact_hashes_checked": true,
+  "report_local_links_checked": true,
+  "exclusions": [
+    "Word insertion and printed size",
+    "physical RF and acquisition timing",
+    "power measurements",
+    "STM32 compilation/execution"
+  ]
+}

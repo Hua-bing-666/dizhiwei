@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+  "validator_sha256": "1ee86215d4870aef16f960609c923b962f4101f7a05f031f20da9bfd50ff07cf",
+  "stage": "7B",
+  "checks": [
+    "event_source_idempotence",
+    "owner_fencing",
+    "old_pending_identity_preserved",
+    "commit_visible_before_ack",
+    "restart_session_sequence",
+    "two_device_namespace",
+    "new_session_selected_before_old_uptime",
+    "unmapped_clock_is_not_current",
+    "sample_conflict_full_rollback",
+    "unknown_config_rejected",
+    "uptime_regression_rejected",
+    "registry_immutable",
+    "pre_commit_rollback",
+    "post_commit_reopen_dedup",
+    "wrong_ack_rejected",
+    "age_from_independent_mapping",
+    "mapping_uncertainty_retained",
+    "capacity_rejection_keeps_pending",
+    "eligible_second_frame_not_fifo_blocked",
+    "bounded_attempts_and_late_ack",
+    "expired_record_retained",
+    "session_and_sequence_exhaustion_rejected",
+    "burst_backoff_is_bounded_and_preserves_later_attempts"
+  ],
+  "actual_sqlite_files": true,
+  "power_loss_tested": false,
+  "exclusions": [
+    "Flash atomic allocation",
+    "SD journal",
+    "authentication",
+    "actual clock synchronisation"
+  ]
+}

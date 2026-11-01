@@ -1,0 +1,21 @@
+{
+  "status": "passed_synthetic_logic",
+  "physical_data": false,
+  "healthy_rows_reproduced": 1152,
+  "sampling_rows_reproduced": 11520,
+  "quality_rows_reproduced": 2304,
+  "window_oracle_cases": 24,
+  "causal_and_unread_pressure_cases": 24,
+  "prior_frontend_equivalence_cases": 9,
+  "counter_reset_recovery_checked": true,
+  "bad_calibration_blocked": true,
+  "validator_sha256": "b8438fa88dbb1335300f0528ef89db27f8a26424961ece1b09c17cba7e2ae908",
+  "parameters_sha256": "bfd515ff7031d0c26f281a562418b89beb5ba96cd351c4bf2f20785c64b7f52e",
+  "exclusions": [
+    "sensor accuracy",
+    "physical health of commissioning",
+    "real sleep or energy",
+    "field performance",
+    "Word layout"
+  ]
+}
