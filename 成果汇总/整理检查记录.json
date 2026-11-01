@@ -5,5 +5,7 @@
   "source_code_paths_preserved": true,
   "simulations_rerun": false,
   "desktop_rebuilt": false,
-  "scope": "File checks and navigation; existing research and executable not recertified"
+  "scope": "File checks and navigation; existing research and executable not recertified",
+  "repository_blob_hashes_verified": 147,
+  "text_files_with_git_line_ending_normalization": 37
 }
