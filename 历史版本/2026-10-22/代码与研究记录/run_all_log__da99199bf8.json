@@ -1,0 +1,56 @@
+[
+ {
+  "step": "可辨识性分析",
+  "script": "ident.py",
+  "returncode": 0,
+  "seconds": 0.37
+ },
+ {
+  "step": "★块判据与门限重定",
+  "script": "E9_block_threshold.py",
+  "returncode": 0,
+  "seconds": 1.16
+ },
+ {
+  "step": "★真实性缺口补齐",
+  "script": "E10_robustness.py",
+  "returncode": 0,
+  "seconds": 1.29
+ },
+ {
+  "step": "重叠版门限(对照)",
+  "script": "E3_corrected.py",
+  "returncode": 0,
+  "seconds": 0.83
+ },
+ {
+  "step": "可检边界旧口径(对照)",
+  "script": "E6_E7_v2.py",
+  "returncode": 0,
+  "seconds": 0.62
+ },
+ {
+  "step": "轮灌切换(块判据)",
+  "script": "E11_switching.py",
+  "returncode": 0,
+  "seconds": 0.94
+ },
+ {
+  "step": "轮灌切换(旧口径对照)",
+  "script": "E4_v2.py",
+  "returncode": 0,
+  "seconds": 1.19
+ },
+ {
+  "step": "干管参照差分收益",
+  "script": "F1_F2.py",
+  "returncode": 0,
+  "seconds": 0.61
+ },
+ {
+  "step": "图件生成",
+  "script": "make_figures.py",
+  "returncode": 0,
+  "seconds": 5.75
+ }
+]
