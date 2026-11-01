@@ -1,0 +1,95 @@
+{
+  "config": {
+    "version": "20261006-integer-diagnosis-v1",
+    "physical_data": false,
+    "old_seeds": [
+      45000,
+      45001,
+      45002,
+      45003
+    ],
+    "new_seeds": [
+      51000,
+      51001
+    ],
+    "sigmas": [
+      0.3,
+      3.0,
+      10.0
+    ],
+    "cases": [
+      [
+        "normal",
+        false
+      ],
+      [
+        "supply_step",
+        false
+      ],
+      [
+        "leak_r90",
+        false
+      ],
+      [
+        "restriction_r90",
+        false
+      ],
+      [
+        "pulse8",
+        false
+      ],
+      [
+        "fast_leak_switch",
+        false
+      ],
+      [
+        "nan_pressure",
+        true
+      ],
+      [
+        "spike_range",
+        true
+      ],
+      [
+        "counter_reset",
+        true
+      ],
+      [
+        "bad_calibration",
+        true
+      ],
+      [
+        "fault_initial",
+        true
+      ],
+      [
+        "drift_p0",
+        true
+      ]
+    ],
+    "pressure_unit_kpa": 0.01,
+    "lut_pressure_kpa": [
+      10,
+      200
+    ],
+    "lut_step_kpa": 0.5,
+    "parameter_scale": 1000000,
+    "max_pulses_per_second": 450,
+    "pulses_per_litre_assumption": 540,
+    "main_window_s": 10,
+    "rapid_window_s": 3,
+    "main_confirmation": 5,
+    "rapid_confirmation": 2,
+    "monitor_start_index": 130,
+    "calibration_on_host_only": true,
+    "parameter_tuning_on_test": false
+  },
+  "sources": {
+    "simulation/review_integer_diagnosis.py": "bde0b671c57f140d864e594e2e8638e93b292acc1441ec65829fa08a6ad05ae1",
+    "simulation/integer_diagnosis_reference.py": "4be423f70cc7d1612d60957e977282de3c6e1ff8ac5c2fcd591733c81c569ea5",
+    "firmware/integer_diagnosis.c": "206966a69de8b7ef55450abe8c8b89c843d47fd717c95c8e8a5483d7ac284ed4",
+    "firmware/integer_diagnosis.h": "abf857e376e9fd7310a1efa49db9bbd7fadfd16c1a18cbc337b778e547db14e2",
+    "scripts/validate_integer_diagnosis.py": "4e7e6fa8846e4e8991de6f54f0777b23745c9313540a5370159538bf56db0033",
+    "simulation/event_admission_review/frozen_parameters.json": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261"
+  }
+}

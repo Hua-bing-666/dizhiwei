@@ -1,0 +1,45 @@
+{
+  "config": {
+    "version": "20261006-acquisition-closeout-v1",
+    "physical_data": false,
+    "input_period_ms": 1000,
+    "pressure_span_ms": 30,
+    "counter_tolerance_ms": 1,
+    "configuration_id": 11,
+    "reference_id": 1,
+    "monitor_start": 130,
+    "telemetry_period_s": 60,
+    "modes": [
+      "clean",
+      "loss",
+      "outage60",
+      "ack_blackout"
+    ],
+    "channel_seed": 52000,
+    "link_scenes": [
+      "normal",
+      "pulse8",
+      "restriction_r90",
+      "nan_pressure"
+    ],
+    "link_sigmas": [
+      0.3,
+      10.0
+    ],
+    "link_seed": 51000,
+    "live_capacity": 16,
+    "history_capacity": 64,
+    "tune_on_results": false
+  },
+  "sources": {
+    "simulation/review_acquisition_pipeline.py": "5a95a82f297b6ca2a6f9e614b984d0bd566cb71973ad26add7a122f5a0038be6",
+    "prototype/acquisition_pipeline.py": "3f435ac18f062a496188531b9c078fa822d9f7b7132630efae827ee42e6bd15f",
+    "firmware/acquisition_bridge.c": "2fb260c47f5ece33af59cb7b4b7fbeaeb181b76757110221b218b51b7922a46a",
+    "scripts/validate_acquisition_pipeline.py": "8f859124e4c4e2bd8d174e0b04e957c0b930d69ceb9a615c16703812d9cee552",
+    "simulation/acquisition_timing.py": "ba46bfee64fa2fc5c5ef1c128832fbccb019257ae22ee2003fdaaffc14ea9195",
+    "prototype/compact_protocol.py": "5ca0629f236c9b8b5e800c428e0d23b4e1738af3914237555a996ea1069a8e98",
+    "prototype/session_transport.py": "0062a590fd67d4be223c5be5d7323246aa3cf4ec4a281a7c31f52b66ae8c0d1e",
+    "simulation/integer_diagnosis_review/frozen_parameters.json": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+    "simulation/integer_diagnosis_review/profiles.json": "7740f96a59ef391422e605e259fd4baba5f5698b5bb78af0ffd8c0c49fb85ae9"
+  }
+}

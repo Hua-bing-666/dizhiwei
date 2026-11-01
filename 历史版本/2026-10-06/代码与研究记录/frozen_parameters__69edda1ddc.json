@@ -1,0 +1,214 @@
+{
+  "config": {
+    "version": "20261006-rapid-delivery-v1",
+    "seeds": [
+      43000,
+      43001,
+      43002,
+      43003,
+      43004,
+      43005,
+      43006,
+      43007,
+      43008,
+      43009,
+      43010,
+      43011,
+      43012,
+      43013,
+      43014,
+      43015
+    ],
+    "pressure_sigmas": [
+      0.3,
+      3.0,
+      10.0
+    ],
+    "scenes": [
+      "normal",
+      "long_normal",
+      "supply_step",
+      "supply_ramp",
+      "leak_r90",
+      "leak_r720",
+      "pulse8",
+      "pulse20",
+      "pulse40",
+      "fast_leak_switch"
+    ],
+    "windows": [
+      1,
+      3
+    ],
+    "fixed_pressure_acquisition_hz": 1,
+    "short_confirmation_points": 2,
+    "fast_scale_multiplier": 6,
+    "rapid_output": "attention_requires_review_not_confirmed_water_fault",
+    "quality_range_assumption": [
+      0,
+      200
+    ],
+    "allowed_initial_reference": "externally_confirmed_healthy_plus_numeric_checks",
+    "link_modes": [
+      "clean",
+      "loss",
+      "outage"
+    ],
+    "link_seeds": [
+      44000,
+      44001,
+      44002,
+      44003,
+      44004,
+      44005,
+      44006,
+      44007,
+      44008,
+      44009,
+      44010,
+      44011
+    ],
+    "data_loss_probability": 0.2,
+    "ack_loss_probability": 0.25,
+    "outage": [
+      180,
+      210
+    ],
+    "retry_interval_s": 2,
+    "send_cap_packets_per_second": 1,
+    "flush_seconds": 120,
+    "strategies": [
+      "periodic10",
+      "periodic60",
+      "event60"
+    ],
+    "payload_scope": "event records and status timestamps; not full sensor payload",
+    "physical_data": false,
+    "energy_measured": false
+  },
+  "baseline": {
+    "config": {
+      "version": "20261006-quality-interval-v1",
+      "training_seeds": [
+        40000,
+        40001,
+        40002,
+        40003,
+        40004,
+        40005,
+        40006,
+        40007,
+        40008,
+        40009,
+        40010,
+        40011
+      ],
+      "test_seeds": [
+        41000,
+        41001,
+        41002,
+        41003,
+        41004,
+        41005,
+        41006,
+        41007,
+        41008,
+        41009,
+        41010,
+        41011,
+        41012,
+        41013,
+        41014,
+        41015
+      ],
+      "pressure_sigmas": [
+        0.3,
+        3.0,
+        10.0
+      ],
+      "periods_s": [
+        1,
+        2,
+        5
+      ],
+      "all_integer_phases": true,
+      "quality_modes": [
+        "finite",
+        "range"
+      ],
+      "pressure_range_assumption_kpa": [
+        0,
+        200
+      ],
+      "model_exponent": 0.5,
+      "pressure_window_actual_points": 10,
+      "pulse_window_bins": 10,
+      "pulses_per_litre_assumption": 540,
+      "continuous_one_second_counter_snapshots": true,
+      "confirmation_points": 5,
+      "high_hold_observations": 30,
+      "initial_calibration": [
+        20,
+        120
+      ],
+      "monitor_start": 130,
+      "healthy_peak_margin": 1.1,
+      "fast_scale_multiplier": 6,
+      "online_drift_recalibration": false,
+      "physical_data": false,
+      "energy_measured": false,
+      "input_to_runtime": [
+        "timestamp",
+        "cumulative_counter",
+        "requested_pressure_read"
+      ],
+      "excluded_runtime_inputs": [
+        "scenario",
+        "fault_time",
+        "fault_duration",
+        "true_severity",
+        "unread_pressure",
+        "future"
+      ]
+    },
+    "reference": {
+      "n_fitted": 0.5006660685225397,
+      "a_l_min": 2.800581837156769,
+      "p1_min_kpa": 65.55171902093646,
+      "p1_max_kpa": 146.30931204545425,
+      "healthy_points": 120,
+      "synthetic_calibration": true
+    },
+    "limits": {
+      "1": [
+        90.40939794543239,
+        107.32965504041577
+      ],
+      "2": [
+        68.7530549678843,
+        90.04361971994825
+      ],
+      "5": [
+        68.7530549678843,
+        89.85599456953919
+      ]
+    },
+    "sources": {
+      "simulation/review_quality_intervals.py": "fa85a25601b08e9eb5069a2ba4877d2c97edc17d94469e22754cc253ca4db569",
+      "simulation/sampling_quality_runtime.py": "fefc111d7feabff645a1e1af7510ea5423e423017c82d500759e616508cf5917",
+      "simulation/hybrid_sampling_review/frozen_parameters.json": "6c4743a9c4fdab057ad9c08b94a10b34c987c282c8ee8bb90a501e86a8bd0314",
+      "simulation/review_hybrid_sampling.py": "58be71a46e9eba21f13d1ecc7006d8e8ce0ee15a7845d4b2534be32bf2a33437",
+      "simulation/review_operating_reference.py": "c817861ffd41f573deb5888ab517f300b0b0e33a39cf1ed18a655638e5dc0ae0"
+    },
+    "training_sha256": "9b7e37dd0408acac45d157df549236698076e8bb6ff2ba3753a7f8760c13ba97",
+    "selection": "Healthy maxima including long-normal and every integer phase. No test faults."
+  },
+  "sources": {
+    "simulation/review_rapid_delivery.py": "763a4d49d4c614f1daca35c6ddf574083cde5832409f751247800e796a41bb13",
+    "simulation/rapid_review_runtime.py": "02f5fde63d938e937615753c9cc1edca6b76cc2138cb17b09c88b258124b9948",
+    "prototype/reliable_outbox.py": "980fe227826e4912ada85894785b8d1c3b8a71030a0b453d4dd904b03d7a1e9e",
+    "simulation/quality_interval_review/frozen_parameters.json": "bfd515ff7031d0c26f281a562418b89beb5ba96cd351c4bf2f20785c64b7f52e",
+    "simulation/review_quality_intervals.py": "fa85a25601b08e9eb5069a2ba4877d2c97edc17d94469e22754cc253ca4db569",
+    "simulation/sampling_quality_runtime.py": "fefc111d7feabff645a1e1af7510ea5423e423017c82d500759e616508cf5917"
+  }
+}
