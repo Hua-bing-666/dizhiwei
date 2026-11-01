@@ -1,0 +1,24 @@
+{
+  "status": "passed_for_listed_synthetic_checks",
+  "physical_data": false,
+  "reproduced_method_records": 17280,
+  "healthy_reference_regression": true,
+  "healthy_only_limit_fitting": true,
+  "frozen_parameters_and_source_hashes": true,
+  "original_model_recovery": true,
+  "future_invariance_all_six_methods": true,
+  "scalar_ewma_recurrence": true,
+  "bounded_transition_review": true,
+  "unknown_load_ambiguity_preserved": true,
+  "statistics_and_exposure_recomputed": true,
+  "streaming_replay_equivalent_runs": 24,
+  "nonuniform_sampling_rejected": true,
+  "inference_limits": [
+    "no real hydraulic validation",
+    "no energy validation",
+    "no independent model-family validation"
+  ],
+  "validator_sha256": "002a3ca5e6e585efddbd74d5a6a966822a225f3d7e13ebc407f553eeabc0a3f3",
+  "streaming_source_sha256": "e39d3bbc9de9eb83c27d7172894b7ee4a526efcef9d2555516727f3e10c9543c",
+  "summary_sha256": "ff27e0ab1ead21fcc34b5f3b5ba407b59145692fc59ef11dcdbcafc0ae3467c5"
+}

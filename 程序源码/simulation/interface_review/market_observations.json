@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "physical_data": false,
+  "records": [
+    {
+      "url": "https://www.dfrobot.com.cn/goods-3561.html",
+      "model": "SEN0549",
+      "date": "2026-10-04",
+      "classification": "manufacturer_public_listing_not_quote",
+      "http_status": 200,
+      "html_sha256": "be0d71a40292ccc24729fe8004dd30e28cfb5ad76e81b7072676aefa79e68650",
+      "title": "Gravity：液体流量传感器（G1/4）-液体传感器-DFRobot创客商城",
+      "display_price_cny": 109.0,
+      "shipping_tax_checkout_verified": false,
+      "stock_verified": false
+    },
+    {
+      "url": "https://www.dfrobot.com.cn/goods-1734.html",
+      "model": "DFR0553",
+      "date": "2026-10-04",
+      "classification": "manufacturer_public_listing_not_quote",
+      "http_status": 200,
+      "html_sha256": "54b1d2c9b9194df6715b8bc7aed5021186fc1e669d5c3e24d00f342f722e9d7b",
+      "title": "Gravity:I2C ADS1115 16位AD转换模块(Arduino、树莓派兼容)-电流/电压传感器-DFRobot创客商城",
+      "display_price_cny": 79.0,
+      "shipping_tax_checkout_verified": false,
+      "stock_verified": false
+    },
+    {
+      "url": "https://www.ebyte.com/product/1077.html",
+      "model": "E220-400T22D",
+      "date": "2026-10-04",
+      "classification": "manufacturer_public_listing_not_quote",
+      "http_status": 200,
+      "html_sha256": "cdf36c9a1b69ff8d9699272dd0cc95bf785a5e2d5ddae5bae400aacf6371f40d",
+      "title": "E220-400T22D LLCC68芯片LoRa无线模块-lora扩频技术-亿佰特无线通信模块",
+      "manual_links": [
+        {
+          "label": "【用户手册】E220-400T22D_UserManual_CN",
+          "url": "https://www.ebyte.com/downpdf/1077.html"
+        }
+      ],
+      "supplier_taobao_links": [
+        "https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.368f1debNhcuP4&ft=t&id=622908748357",
+        "https://item.taobao.com/item.htm?id=660727383363"
+      ],
+      "display_price_cny": null,
+      "stock_verified": false
+    }
+  ],
+  "limits": "HTML展示价及厂家出口链接；未登录或下单，具体SKU、含税运费、库存、压力传感器报价未确认"
+}

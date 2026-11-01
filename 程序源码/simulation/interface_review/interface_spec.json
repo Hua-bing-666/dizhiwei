@@ -1,0 +1,32 @@
+{
+  "version": "20261004-A04A08-v1",
+  "classification": "candidate_functional_interfaces_not_build_released",
+  "physical_data": false,
+  "mcu": "STM32F103C8T6 LQFP48, 3.3V, design to 64KB Flash and 20KB SRAM",
+  "pins": [
+    {"pin":"PB6","function":"I2C1_SCL","peer":"ADS1115 SCL","direction":"open_drain","logic_v":3.3},
+    {"pin":"PB7","function":"I2C1_SDA","peer":"ADS1115 SDA","direction":"bidirectional_open_drain","logic_v":3.3},
+    {"pin":"PA0","function":"TIM2_CH1 external pulse count candidate","peer":"SN74LVC1G17 Y","direction":"input","logic_v":3.3},
+    {"pin":"PA9","function":"USART1_TX","peer":"E220 RXD pin3","direction":"output","logic_v":3.3},
+    {"pin":"PA10","function":"USART1_RX","peer":"E220 TXD pin4","direction":"input","logic_v":3.3},
+    {"pin":"PB0","function":"GPIO radio buffer status","peer":"E220 AUX pin5; no pull-down/LED load","direction":"input","logic_v":3.3},
+    {"pin":"PB10","function":"GPIO radio mode0","peer":"E220 M0 pin1; boot low via candidate 10kohm","direction":"output","logic_v":3.3},
+    {"pin":"PB11","function":"GPIO radio mode1","peer":"E220 M1 pin2; boot low via candidate 10kohm","direction":"output","logic_v":3.3},
+    {"pin":"PA4","function":"SPI1_CS GPIO","peer":"microSD CS","direction":"output","logic_v":3.3},
+    {"pin":"PA5","function":"SPI1_SCK","peer":"microSD SCK","direction":"output","logic_v":3.3},
+    {"pin":"PA6","function":"SPI1_MISO","peer":"microSD MISO","direction":"input","logic_v":3.3},
+    {"pin":"PA7","function":"SPI1_MOSI","peer":"microSD MOSI","direction":"output","logic_v":3.3},
+    {"pin":"PA2","function":"USART2_TX debug candidate","peer":"temporary 3.3V USB-TTL RX","direction":"output","logic_v":3.3},
+    {"pin":"PA3","function":"USART2_RX debug candidate","peer":"temporary 3.3V USB-TTL TX","direction":"input","logic_v":3.3},
+    {"pin":"PA13","function":"SWDIO reserved","peer":"ST-Link","direction":"bidirectional","logic_v":3.3},
+    {"pin":"PA14","function":"SWCLK reserved","peer":"ST-Link","direction":"input","logic_v":3.3},
+    {"pin":"PB1","function":"GPIO operator B-state marker candidate","peer":"manual marker switch; not a valve-position sensor","direction":"input","logic_v":3.3}
+  ],
+  "pressure": {"channels":2,"range_kpa":200,"accuracy_code_required":"A1 or supplier-confirmed equivalent ±0.25%FS","current_min_ma":4,"current_max_ma":20,"supply_v":24,"shunt_ohm":150,"shunt_tolerance_fraction":0.001,"shunt_power_rating_w_candidate":0.25,"adc_vdd":3.3,"adc_pga_v":4.096,"adc_data_rate_sps_candidate":128,"i2c_address_candidate":"0x48 ADDR=GND","i2c_clock_hz_candidate":100000,"i2c_pullup_ohm_candidate":4700,"rc_and_input_protection":"functional requirements only; resistor/capacitor/clamp and fault-current ratings not build-released"},
+  "flow": {"model":"SEN0549","supply_v":5,"range_l_min":[0.3,5],"pulses_per_litre":540,"counter_window_s":10,"buffer":"SN74LVC1G17 at 3.3V; input rated 0—5.5V","unverified":"sensor output circuit, connector order, edge noise and unpowered behaviour of the whole interface"},
+  "radio": {"model":"E220-400T22D x2","vcc_candidate":5,"uart_logic_v":3.3,"uart_baud":9600,"uart_format":"8N1","mode":"M1=M0=0, transparent; RSSI tail off; WOR off","packet_limit_bytes_candidate":64,"air_rate_bps_candidate":2400,"frequency_and_power":"actual permitted configuration and antenna match to be frozen before RF use; module maxima are not a deployment approval","aux":"input-only buffer/status; meaning depends on firmware UAUX setting; not remote delivery ACK","firmware_release_and_configuration_readback_verified":false},
+  "power_design_allowances_ma_not_measured": {"mcu_3v3":100,"sd_3v3":200,"adc_buffer_3v3":10,"other_3v3":50,"radio_5v":200,"flow_5v":10,"buck_efficiency_assumption":0.85,"design_reserve_factor":1.5,"node_5v_rating_candidate_ma":1000,"node_3v3_rating_candidate_ma":1000,"receiver_radio_5v_rating_candidate_ma":500,"dc24v_pressure_only_max_ma":40},
+  "budget_caps_cny_not_quotes": {"control_radio_storage_debug":350,"flow_adc":200,"analogue_and_level_interface":80,"water_materials_excluding_pump":350,"power_and_enclosure":200,"record_consumables":60,"reserve":80,"two_pressure_transmitters":680},
+  "mandatory_borrowing": ["continuous adjustable water source, 7.953L/min design maximum at matching pressure point","pressure reference and flow collection/reference equipment","existing PC"],
+  "release_gates": ["A1+200kPa+4—20mA written quote and thread dimensions","ADC protection and supply-off injection tests","actual board/SD/USB-TTL logic and power pin inspection","power-transient check with simultaneous RF and SD write","module firmware/config readback and real AUX timing","microSD/Flash recoverable journal and boot ID allocation","pump curve and independent reference measurement","RF/serial raw logs and real website ingestion"]
+}

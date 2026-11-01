@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-05",
+  "reviewer": "Codex visual inspection",
+  "method": "Native WPS PDF rendered with bundled PDFium, scale 1.8",
+  "pdf_sha256": "17223c9f95086c23991b2eaf7e7258bc523392407d9a285c8744ecb40abe95a4",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "5512ff7dff7c1a5ab76983f0497af94b68c92af9a620c72360dcbfea902652b9",
+      "basis": "Byte-identical to image actually inspected in pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 2,
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4",
+      "basis": "Byte-identical to image actually inspected in pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 3,
+      "sha256": "289e15b44b0ec28b4a46de52c2a3c9f83375fc5bd27fd3ebdbc989a335ff1ffb",
+      "basis": "Byte-identical to image actually inspected in pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 4,
+      "sha256": "c764b19c65be3225a2610320bbdac41677010deed216f297c6439c8ea1050058",
+      "basis": "Byte-identical to image actually inspected in final_release_pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 5,
+      "sha256": "dee37200dff6f7d67824fc0bd95acfe8f4998eac3367e4efbe9c12875c54839b",
+      "basis": "Byte-identical to image actually inspected in final_release_pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 6,
+      "sha256": "c00598711051b95d32089147c39d13b0bb3c7dabfe85d760c7ada0f806331802",
+      "basis": "Byte-identical to image actually inspected in final_release_pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 7,
+      "sha256": "d57f45c9f6207c41aa9fd850f832dc439aabfa7cff8b3d86f7a7d157a8bc96e4",
+      "basis": "Byte-identical to image actually inspected in final_release_pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 8,
+      "sha256": "b7f382223d805803cdb27d4e50d26f7c28e560c3f461ab6cc496aecbfd7e9c53",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 9,
+      "sha256": "1595aac2a07e42d3b4a9b10d8dd4904bba82ba890379d7f4b1eeafe26b6f0f0b",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 10,
+      "sha256": "1f4773864a5db5269bb3ce514c5e6ee8ff0344bc9360e1a465bb780b534de12d",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 11,
+      "sha256": "15a0112eaf9430b185b6c55dcae1e699e206dc7d945073d0760a200962ef22e0",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 12,
+      "sha256": "8ccbc36989564eebd8235d1afb5f5eb63b2f27b8d93e96a401320e8721652ac1",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 13,
+      "sha256": "f2139551c3ee93870947b320b081e5a5348cf5a7f4144003946e30871e874635",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 14,
+      "sha256": "2e9ae33fbee5eb9cede3550e1947536b0339c00c4d9357d90807999718dd7b1e",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 15,
+      "sha256": "f15d595c53cb2e707f16a774e9d152373a187b97aa58f6e57cd45cc25ba60ab9",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 16,
+      "sha256": "6340347726666a70c0e0e31ebf4ab989cf212f063985f0056f14433d99c89758",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 17,
+      "sha256": "4516d27f93923618ce2b17ad12927ff34ba2c020c12d986be8509df8d0e10861",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 18,
+      "sha256": "f0c5fb8746eb07279024fb2249cc5ba482cb4d4bc96a0c007fa1f2298bc41671",
+      "basis": "Final page image opened and visually inspected",
+      "layout_review": "pass"
+    },
+    {
+      "page": 19,
+      "sha256": "3f723735c011473b9e9cb262606aae5c2e36281aed5593a5e666784e97d60667",
+      "basis": "Byte-identical to image actually inspected in pages",
+      "layout_review": "pass"
+    },
+    {
+      "page": 20,
+      "sha256": "fed0075492021c113837f4398b29f6f216044537f9225396d778e9a7ffd4e4fb",
+      "basis": "Byte-identical to image actually inspected in pages",
+      "layout_review": "pass"
+    }
+  ],
+  "observations": [
+    "School cover, notes, application form and approval areas retained; fillable values blank.",
+    "All four tables and their captions centered; complete tables kept on one page.",
+    "All nine illustrations paired with captions; no observed clipping or overlapping annotations.",
+    "R combining accent retained using Cambria Math; body font size not reduced.",
+    "Pages 8 and 12 leave space to preserve the next complete figure or experimental table.",
+    "Page 18 ends the budget section before the original approval pages.",
+    "Three body pages have trailing whitespace over 25%; accepted with stated reasons, not claimed absent."
+  ],
+  "physical_validation": false,
+  "warning": "Inspection applies only to these file and page hashes. Re-render and inspect after edits."
+}

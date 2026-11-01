@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-06",
+  "status": "passed_standalone_figures",
+  "parameters_sha256": "477507d97d04bd1cedb21b880eba6be0038c5f39042445faf5bfd77b78d78c30",
+  "figures": [
+    {
+      "name": "01_事件送达与数据过期",
+      "viewed_final_png": true,
+      "layout_and_annotations_checked": true,
+      "grayscale_readable": true,
+      "file_sha256": {
+        "png": "1d43b4afc2d2a00ed48fc04b4bd059aadfb0f0908bf0a4e3df051d5a8853ea1f",
+        "svg": "825fd2083d660104eca2ff6a783286045e50eecbbc6b411923b5743f5c8a36cf"
+      }
+    },
+    {
+      "name": "02_质量状态与窗口恢复",
+      "viewed_final_png": true,
+      "layout_and_annotations_checked": true,
+      "grayscale_readable": true,
+      "file_sha256": {
+        "png": "bfe0a7399734f616e34128f9335245be3742ecac43838ca5b7d29770f2ef293c",
+        "svg": "fa4a470d4b149f26e070995ff0ba9cb1b7b377b2690acbbccbeacd16649956c7"
+      }
+    }
+  ],
+  "report_sha256": "0913170888f8b1c79b9b0661046e363c3d8462817194c7664f2311244ba5e24f",
+  "plot_script_sha256": "e6f79513cfd0ad7704aa342dd74ff76c76ba3110121bf683c7d34bae02f31995",
+  "exclusions": [
+    "Word page layout",
+    "real hardware and radio",
+    "energy"
+  ]
+}

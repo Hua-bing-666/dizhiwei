@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "477507d97d04bd1cedb21b880eba6be0038c5f39042445faf5bfd77b78d78c30",
+  "validator_sha256": "6bd3dd92dd9fbc63cfdc5d7af0e120be10d05ef6b4256a77258e9ff2a244061e",
+  "stage": "6B",
+  "trajectories_reproduced": 144,
+  "explicit_healthy_approval_gate": true,
+  "exact_invalid_window_cases": 3,
+  "full_payload_orderly_restart": true,
+  "lost_ack_dedup": true,
+  "conflict_transaction_rollback": true,
+  "nonfinite_json_rejected": true,
+  "old_arrival_cannot_replace_new_sample": true,
+  "freshness_uses_acquisition_time": true,
+  "exclusions": [
+    "MCU firmware",
+    "radio",
+    "sudden power loss",
+    "automatic diagnosis of initial fault"
+  ]
+}
