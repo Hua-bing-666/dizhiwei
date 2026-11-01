@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "amplitude_records_checked": 3000,
+  "healthy_controls_checked": 300,
+  "sampling_replays_checked": 256,
+  "independent_closed_form_parameter_max_error": 3.9968028886505635e-15,
+  "independent_frontend_max_error": 0.0,
+  "paired_seed_dependence_retained": true,
+  "phase_aggregation_per_seed": true,
+  "parameters_retuned": false,
+  "six_figures_exported": true,
+  "figure_checks": [
+    {
+      "name": "图8-1_水力观测响应",
+      "pixels": [
+        3420,
+        1367
+      ],
+      "min_font_pt": 7.2
+    },
+    {
+      "name": "图8-2_候选判据对照",
+      "pixels": [
+        3420,
+        1367
+      ],
+      "min_font_pt": 7.2
+    },
+    {
+      "name": "图8-3_幅值检出边界",
+      "pixels": [
+        3420,
+        1367
+      ],
+      "min_font_pt": 7.2
+    },
+    {
+      "name": "图8-4_观测歧义与测压漂移",
+      "pixels": [
+        3420,
+        1338
+      ],
+      "min_font_pt": 7.2
+    },
+    {
+      "name": "补图S1_首次提示时序",
+      "pixels": [
+        3420,
+        1367
+      ],
+      "min_font_pt": 7.2
+    },
+    {
+      "name": "补图S2_采样响应与读取代价",
+      "pixels": [
+        3420,
+        1367
+      ],
+      "min_font_pt": 7.2
+    }
+  ],
+  "docx_pages": 3,
+  "no_paragraph_split": true,
+  "docx_sha256": "d001aeb806aae37ea956a9a8dc130dfc2077aeacb21bed4fd0a7b9d6d57dfcbe",
+  "physical_data": false,
+  "physical_print_test": false
+}

@@ -1,0 +1,23 @@
+{
+  "source_sha256": "3eb63147e1c6d86c3aa49339533ee9b62ed4297c65f4a605d4534f521b3c180d",
+  "output_sha256": "b9a598ef51cdd00fa0a066e3640b57e2cf7a5cba3c3a44787be7ca0c56067f62",
+  "source_text_preserved_indices": [
+    1,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "unrelated_platform_claims_not_revalidated": true,
+  "figures": 2,
+  "inline_figure_width_cm": 14.45,
+  "body_font_pt": 10.5,
+  "caption_font_pt": 9
+}

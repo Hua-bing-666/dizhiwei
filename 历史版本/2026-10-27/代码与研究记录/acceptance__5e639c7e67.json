@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "original_record_reproduction": 324,
+  "exported_method_records": 3024,
+  "all_54_strata_recounted": true,
+  "frozen_algorithm_source_lock": {
+    "review_hybrid_sampling.py": "exact frozen source match",
+    "review_operating_reference.py": "exact frozen source match",
+    "review_diagnosis.py": "exact frozen source match after desktop ROOT adapter normalization"
+  },
+  "independent_wilson_interval_check": true,
+  "independent_frontend_max_abs_error": 0.0,
+  "prefix_causality_checks": 6,
+  "independent_confirmation_and_early_checks": 18,
+  "observational_identifiability_equalities": 80,
+  "model_balance": {
+    "max_leak_load_observation_difference": 0.0,
+    "max_flow_equation_residual": 0.0,
+    "max_supply_pressure_balance_residual_kpa": 3.730349362740526e-14
+  },
+  "figure_checks": [
+    {
+      "name": "图8-1_候选判据扩展验证",
+      "pixels": [
+        3420,
+        2670
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_font_pt": 7.5,
+      "svg_outlined": true
+    },
+    {
+      "name": "图8-2_负载歧义与漂移反例",
+      "pixels": [
+        3420,
+        2340
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_font_pt": 7.8,
+      "svg_outlined": true
+    },
+    {
+      "name": "补图S1_高噪声时序与门限",
+      "pixels": [
+        4020,
+        2760
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "min_font_pt": 7.0,
+      "svg_outlined": true
+    }
+  ],
+  "docx_pages": 3,
+  "no_split_paragraphs": true,
+  "native_render": "WPS PDF export, then PDFium rasterization; standard renderer failed because runtime has no LibreOffice",
+  "physical_print_test_performed": false,
+  "physical_data": false
+}
