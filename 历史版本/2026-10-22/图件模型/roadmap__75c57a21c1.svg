@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="540pt" height="432pt" viewBox="0 0 540 432" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-22T12:40:36.026904</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 432 
+L 540 432 
+L 540 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="card">
+    <path d="M 54.631104 196.887847 
+L 207.908027 196.887847 
+L 207.908027 52.357927 
+L 54.631104 52.357927 
+z
+" clip-path="url(#pb75416658d)" style="fill: #0072b2; stroke: #0072b2; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 54.631104 196.887847 
+L 207.908027 196.887847 
+L 207.908027 92.741287 
+L 54.631104 92.741287 
+z
+" clip-path="url(#pb75416658d)" style="fill: #ffffff; stroke: #0072b2; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 332.091973 196.887847 
+L 485.368896 196.887847 
+L 485.368896 52.357927 
+L 332.091973 52.357927 
+z
+" clip-path="url(#pb75416658d)" style="fill: #e69f00; stroke: #e69f00; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 332.091973 196.887847 
+L 485.368896 196.887847 
+L 485.368896 92.741287 
+L 332.091973 92.741287 
+z
+" clip-path="url(#pb75416658d)" style="fill: #ffffff; stroke: #e69f00; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 332.091973 379.642073 
+L 485.368896 379.642073 
+L 485.368896 235.112153 
+L 332.091973 235.112153 
+z
+" clip-path="url(#pb75416658d)" style="fill: #009e73; stroke: #009e73; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 332.091973 379.642073 
+L 485.368896 379.642073 
+L 485.368896 275.495513 
+L 332.091973 275.495513 
+z
+" clip-path="url(#pb75416658d)" style="fill: #ffffff; stroke: #009e73; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 54.631104 379.642073 
+L 207.908027 379.642073 
+L 207.908027 235.112153 
+L 54.631104 235.112153 
+z
+" clip-path="url(#pb75416658d)" style="fill: #cc79a7; stroke: #cc79a7; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="card">
+    <path d="M 54.631104 379.642073 
+L 207.908027 379.642073 
+L 207.908027 275.495513 
+L 54.631104 275.495513 
+z
+" clip-path="url(#pb75416658d)" style="fill: #ffffff; stroke: #cc79a7; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="deco">
+    <path d="M 218.126489 124.622887 
+Q 270 93.498781 320.627193 123.875096 
+" clip-path="url(#pb75416658d)" style="fill: none; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 317.265821 118.59294 
+L 320.627193 123.875096 
+L 314.384645 123.3949 
+z
+" clip-path="url(#pb75416658d)" style="fill: #8c8c8c; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="deco">
+    <path d="M 495.587357 124.622887 
+Q 532.138202 216 496.127153 306.027624 
+" clip-path="url(#pb75416658d)" style="fill: none; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 500.806675 301.868048 
+L 496.127153 306.027624 
+L 495.607206 299.78826 
+z
+" clip-path="url(#pb75416658d)" style="fill: #8c8c8c; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="deco">
+    <path d="M 321.873511 307.377113 
+Q 270 338.501219 219.372807 308.124904 
+" clip-path="url(#pb75416658d)" style="fill: none; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 222.734179 313.40706 
+L 219.372807 308.124904 
+L 225.615355 308.6051 
+z
+" clip-path="url(#pb75416658d)" style="fill: #8c8c8c; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="deco">
+    <path d="M 44.412643 307.377113 
+Q 7.861798 216 43.872847 125.972376 
+" clip-path="url(#pb75416658d)" style="fill: none; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 39.193325 130.131952 
+L 43.872847 125.972376 
+L 44.392794 132.21174 
+z
+" clip-path="url(#pb75416658d)" style="fill: #8c8c8c; stroke: #8c8c8c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="66.893258" y="76.129685" transform="rotate(-0 66.893258 76.129685)">01</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="95.50495" y="76.680467" transform="rotate(-0 95.50495 76.680467)">测量与建模</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8c8c8c" x="66.893258" y="109.648791" transform="rotate(-0 66.893258 109.648791)">2027.3—4</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 131.639459)">器件选型与装配</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 147.736724)">跨工况参考标定</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 163.83399)">健康关系与分档</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 179.931256)">有线采集通路</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="344.354126" y="76.129685" transform="rotate(-0 344.354126 76.129685)">02</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="372.965819" y="76.680467" transform="rotate(-0 372.965819 76.680467)">判据与实验</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8c8c8c" x="344.354126" y="109.648791" transform="rotate(-0 344.354126 109.648791)">2027.5—6</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 131.639459)">双参数判据门限</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 147.736724)">工况分档参照</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 163.83399)">54—72 次实验</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 179.931256)">三类扰动对照</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="344.354126" y="258.883911" transform="rotate(-0 344.354126 258.883911)">03</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="372.965819" y="259.434692" transform="rotate(-0 372.965819 259.434692)">通信与联调</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8c8c8c" x="344.354126" y="292.403016" transform="rotate(-0 344.354126 292.403016)">2027.7—8</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 314.393684)">LoRa 真实链路</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 330.49095)">接收服务落库</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 346.588215)">8 小时连续记录</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(344.354126 362.685481)">重启与恢复</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="66.893258" y="258.883911" transform="rotate(-0 66.893258 258.883911)">04</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #ffffff" x="95.50495" y="259.434692" transform="rotate(-0 95.50495 259.434692)">验证与成果</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8c8c8c" x="66.893258" y="292.403016" transform="rotate(-0 66.893258 292.403016)">2027.9—2028.2</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 314.393684)">留出批次与消融</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 330.49095)">论文与软著</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 346.588215)">竞赛参与</text>
+    <text style="font-size: 12.5px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(66.893258 362.685481)">原型与结题报告</text>
+   </g>
+   <g id="text_17">
+    <g id="patch_2">
+     <path d="M 246 119.636164 
+L 294 119.636164 
+Q 295.92 119.636164 295.92 117.716164 
+L 295.92 105.140539 
+Q 295.92 103.220539 294 103.220539 
+L 246 103.220539 
+Q 244.08 103.220539 244.08 105.140539 
+L 244.08 117.716164 
+Q 244.08 119.636164 246 119.636164 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="270" y="114.73304" transform="rotate(-0 270 114.73304)">标定结果</text>
+   </g>
+   <g id="text_18">
+    <g id="patch_3">
+     <path d="M 525.494582 240 
+L 525.494582 192 
+Q 525.494582 190.08 523.574582 190.08 
+L 510.998957 190.08 
+Q 509.078957 190.08 509.078957 192 
+L 509.078957 240 
+Q 509.078957 241.92 510.998957 241.92 
+L 523.574582 241.92 
+Q 525.494582 241.92 525.494582 240 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(520.591457 240) rotate(-90)">判据参数</text>
+   </g>
+   <g id="text_19">
+    <g id="patch_4">
+     <path d="M 246 328.779461 
+L 294 328.779461 
+Q 295.92 328.779461 295.92 326.859461 
+L 295.92 314.283836 
+Q 295.92 312.363835 294 312.363835 
+L 246 312.363835 
+Q 244.08 312.363835 244.08 314.283836 
+L 244.08 326.859461 
+Q 244.08 328.779461 246 328.779461 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="270" y="323.876336" transform="rotate(-0 270 323.876336)">联调数据</text>
+   </g>
+   <g id="text_20">
+    <g id="patch_5">
+     <path d="M 30.921043 240 
+L 30.921043 192 
+Q 30.921043 190.08 29.001043 190.08 
+L 16.425418 190.08 
+Q 14.505418 190.08 14.505418 192 
+L 14.505418 240 
+Q 14.505418 241.92 16.425418 241.92 
+L 29.001043 241.92 
+Q 30.921043 241.92 30.921043 240 
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(26.017918 240) rotate(-90)">验证反馈</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(244 209.910516)">支管故障</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Noto Sans SC', 'DejaVu Sans', sans-serif; fill: #1a1a1a" transform="translate(218 229.249641)">能否从轮灌中分出</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb75416658d">
+   <rect x="4.32" y="3.456" width="531.36" height="425.088"/>
+  </clipPath>
+ </defs>
+</svg>

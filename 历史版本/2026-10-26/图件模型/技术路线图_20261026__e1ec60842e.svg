@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2090" viewBox="0 0 1800 2090" role="img" aria-labelledby="title desc">
+  <title id="title">滴灌支管道早期故障诊断原型系统技术路线图</title>
+  <desc id="desc">拟开展的研究技术路线。总体设计后，硬件模块、测量平台与水力模型、软件模块三线研制。水力模型形成的健康参照输入本地判断。各模块独立调试并逐级联调，贯通测量、判断、传输、展示与核查；在双支路清水台架开展故障和正常扰动对照，采用独立记录、参考计量及留出验证。评价结果反馈总体设计，修订测量、诊断和采集参数。图示研制与验证安排，不代表实物性能已完成验收。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L14,6 L0,12 Z" fill="#222"/></marker>
+    <style>
+      text { font-family: SimSun, "Times New Roman", serif; font-size: 42px; fill: #111; text-anchor: middle; dominant-baseline: central; }
+      .heading { font-size: 44px; font-weight: 700; }
+      .stage { font-size: 46px; font-weight: 700; }
+      .box { fill: #fff; stroke: #222; stroke-width: 2; }
+      .main { stroke-width: 2.6; }
+      .link { fill: none; stroke: #222; stroke-width: 2.2; stroke-linejoin: round; marker-end: url(#arrow); }
+      .feedback { stroke-dasharray: 12 9; }
+    </style>
+  </defs>
+  <rect width="1800" height="2090" fill="#fff"/>
+
+  <g id="overall" data-box="overall" data-x="300" data-y="40" data-w="1200" data-h="150">
+    <rect class="box main" x="300" y="40" width="1200" height="150"/>
+    <text class="stage" x="900" y="85">总体设计</text>
+    <text x="900" y="145">明确南疆棉田支管巡检场景、研究边界、测点与系统接口</text>
+  </g>
+
+  <g id="hardware-head" data-box="hardware-head" data-x="60" data-y="270" data-w="500" data-h="80">
+    <text class="stage" x="310" y="310">硬件模块设计</text>
+  </g>
+  <g id="model-head" data-box="model-head" data-x="650" data-y="270" data-w="500" data-h="80">
+    <text class="stage" x="900" y="310">测量平台与水力模型</text>
+  </g>
+  <g id="software-head" data-box="software-head" data-x="1240" data-y="270" data-w="500" data-h="80">
+    <text class="stage" x="1490" y="310">软件模块设计</text>
+  </g>
+  <path class="link" data-from="overall" data-to="hardware-head" d="M900,190 V230 H310 V270"/>
+  <path class="link" data-from="overall" data-to="model-head" d="M900,190 V270"/>
+  <path class="link" data-from="overall" data-to="software-head" d="M900,190 V230 H1490 V270"/>
+
+  <g id="hardware-1" data-box="hardware-1" data-x="60" data-y="385" data-w="500" data-h="200">
+    <rect class="box" x="60" y="385" width="500" height="200"/>
+    <text class="heading" x="310" y="430">传感器与接口选型</text>
+    <text x="310" y="485">压力/压差与流量测量</text>
+    <text x="310" y="540">信号调理与电平匹配</text>
+  </g>
+  <g id="hardware-2" data-box="hardware-2" data-x="60" data-y="640" data-w="500" data-h="200">
+    <rect class="box" x="60" y="640" width="500" height="200"/>
+    <text class="heading" x="310" y="685">主控与外围电路</text>
+    <text x="310" y="740">LoRa、存储与指示接口</text>
+    <text x="310" y="795">执行器接口预留</text>
+  </g>
+  <g id="hardware-3" data-box="hardware-3" data-x="60" data-y="895" data-w="500" data-h="200">
+    <rect class="box" x="60" y="895" width="500" height="200"/>
+    <text class="heading" x="310" y="940">测量链调试与标定</text>
+    <text x="310" y="995">采样时序与连续计数</text>
+    <text x="310" y="1050">误差与数据完整性检查</text>
+  </g>
+  <path class="link" data-from="hardware-head" data-to="hardware-1" d="M310,350 V385"/>
+  <path class="link" data-from="hardware-1" data-to="hardware-2" d="M310,585 V640"/>
+  <path class="link" data-from="hardware-2" data-to="hardware-3" d="M310,840 V895"/>
+
+  <g id="model-1" data-box="model-1" data-x="650" data-y="385" data-w="500" data-h="200">
+    <rect class="box" x="650" y="385" width="500" height="200"/>
+    <text class="heading" x="900" y="430">双支路清水台架</text>
+    <text x="900" y="485">A支路监测与故障注入</text>
+    <text x="900" y="540">B支路负载切换对照</text>
+  </g>
+  <g id="model-2" data-box="model-2" data-x="650" data-y="640" data-w="500" data-h="200">
+    <rect class="box" x="650" y="640" width="500" height="200"/>
+    <text class="heading" x="900" y="685">水力模型与健康参照</text>
+    <text x="900" y="740">建立压力—流量关系</text>
+    <text x="900" y="795">独立健康工况标定</text>
+  </g>
+  <g id="model-3" data-box="model-3" data-x="650" data-y="895" data-w="500" data-h="200">
+    <rect class="box" x="650" y="895" width="500" height="200"/>
+    <text class="heading" x="900" y="940">仿真与适用边界分析</text>
+    <text x="900" y="995">故障、扰动及测量误差</text>
+    <text x="900" y="1050">据此设计台架对照试验</text>
+  </g>
+  <path class="link" data-from="model-head" data-to="model-1" d="M900,350 V385"/>
+  <path class="link" data-from="model-1" data-to="model-2" d="M900,585 V640"/>
+  <path class="link" data-from="model-2" data-to="model-3" d="M900,840 V895"/>
+
+  <g id="software-1" data-box="software-1" data-x="1240" data-y="385" data-w="500" data-h="200">
+    <rect class="box" x="1240" y="385" width="500" height="200"/>
+    <text class="heading" x="1490" y="430">数据处理与本地判断</text>
+    <text x="1490" y="485">质量检查与块级CUSUM</text>
+    <text x="1490" y="540">异常候选与切换复判</text>
+  </g>
+  <g id="software-2" data-box="software-2" data-x="1240" data-y="640" data-w="500" data-h="200">
+    <rect class="box" x="1240" y="640" width="500" height="200"/>
+    <text class="heading" x="1490" y="685">采集与上报策略</text>
+    <text x="1490" y="740">固定采样与事件触发对照</text>
+    <text x="1490" y="795">数据与事件留存</text>
+  </g>
+  <g id="software-3" data-box="software-3" data-x="1240" data-y="895" data-w="500" data-h="200">
+    <rect class="box" x="1240" y="895" width="500" height="200"/>
+    <text class="heading" x="1490" y="940">接收服务与巡检平台</text>
+    <text x="1490" y="995">校验去重、提交后确认</text>
+    <text x="1490" y="1050">展示、核查与维护复测</text>
+  </g>
+  <path class="link" data-from="software-head" data-to="software-1" d="M1490,350 V385"/>
+  <path class="link" data-from="software-1" data-to="software-2" d="M1490,585 V640"/>
+  <path class="link" data-from="software-2" data-to="software-3" d="M1490,840 V895"/>
+  <path class="link" data-from="model-2" data-to="software-1" d="M1150,690 H1195 V485 H1240"/>
+
+  <g id="integration" data-box="integration" data-x="300" data-y="1215" data-w="1200" data-h="140">
+    <rect class="box main" x="300" y="1215" width="1200" height="140"/>
+    <text class="stage" x="900" y="1257">模块独立调试与逐级联调</text>
+    <text x="900" y="1315">贯通“测量—判断—传输—展示与核查”</text>
+  </g>
+  <path class="link" data-from="hardware-3" data-to="integration" d="M310,1095 V1150 H700 V1215"/>
+  <path class="link" data-from="model-3" data-to="integration" d="M900,1095 V1215"/>
+  <path class="link" data-from="software-3" data-to="integration" d="M1490,1095 V1150 H1100 V1215"/>
+
+  <g id="validation" data-box="validation" data-x="180" data-y="1420" data-w="1440" data-h="200">
+    <rect class="box main" x="180" y="1420" width="1440" height="200"/>
+    <text class="stage" x="900" y="1465">双支路台架对照试验</text>
+    <text x="900" y="1520">等效泄漏、区段受限 / 健康工况、供压扰动、B支路切换</text>
+    <text x="900" y="1575">独立操作记录与参考计量 · 调参与留出验证分离</text>
+  </g>
+  <path class="link" data-from="integration" data-to="validation" d="M900,1355 V1420"/>
+
+  <g id="evaluation" data-box="evaluation" data-x="180" data-y="1685" data-w="1440" data-h="190">
+    <rect class="box main" x="180" y="1685" width="1440" height="190"/>
+    <text class="stage" x="900" y="1730">性能评价与参数修订</text>
+    <text x="900" y="1785">误报与检出、识别时延、事件送达与恢复</text>
+    <text x="900" y="1835">采集与通信开销、适用条件与可检边界</text>
+  </g>
+  <path class="link" data-from="validation" data-to="evaluation" d="M900,1620 V1685"/>
+  <path class="link feedback" data-from="evaluation" data-to="overall" d="M1620,1780 H1770 V115 H1500"/>
+  <text x="1635" y="78">试验反馈</text>
+
+  <g id="outputs" data-box="outputs" data-x="300" data-y="1940" data-w="1200" data-h="110">
+    <rect class="box main" x="300" y="1940" width="1200" height="110"/>
+    <text class="heading" x="900" y="1995">形成原型系统、实验数据与研究结论</text>
+  </g>
+  <path class="link" data-from="evaluation" data-to="outputs" d="M900,1875 V1940"/>
+</svg>
