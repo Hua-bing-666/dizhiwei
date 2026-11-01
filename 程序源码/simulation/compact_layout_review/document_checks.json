@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-05",
+  "status": "programmatic_pass_visual_review_pending",
+  "physical_validation": false,
+  "pages": 20,
+  "tables": [
+    {
+      "header": [
+        "工作包",
+        "必交付",
+        "评价及进入条件",
+        "证据与资源"
+      ],
+      "rows": 5,
+      "widths_pt": [
+        74.7,
+        106.7,
+        154.7,
+        117.4
+      ],
+      "editable": true,
+      "center_alignment": true,
+      "wrapper_width_matches": true,
+      "header_centered": true,
+      "rows_cannot_split": true
+    },
+    {
+      "header": [
+        "层次",
+        "计划规模",
+        "对照与判定"
+      ],
+      "rows": 7,
+      "widths_pt": [
+        90.7,
+        149.4,
+        213.4
+      ],
+      "editable": true,
+      "center_alignment": true,
+      "wrapper_width_matches": true,
+      "header_centered": true,
+      "rows_cannot_split": true
+    },
+    {
+      "header": [
+        "时段",
+        "工作与交付",
+        "进入或验收条件"
+      ],
+      "rows": 9,
+      "widths_pt": [
+        96.05,
+        160.05,
+        197.4
+      ],
+      "editable": true,
+      "center_alignment": true,
+      "wrapper_width_matches": true,
+      "header_centered": true,
+      "rows_cannot_split": true
+    },
+    {
+      "header": [
+        "用途",
+        "上限 元",
+        "配置与价格依据"
+      ],
+      "rows": 10,
+      "widths_pt": [
+        117.4,
+        58.7,
+        277.4
+      ],
+      "editable": true,
+      "center_alignment": true,
+      "wrapper_width_matches": true,
+      "header_centered": true,
+      "rows_cannot_split": true
+    }
+  ],
+  "actual_pdf_table_positions": [
+    {
+      "caption": "表1 四工作包与验证交付",
+      "page": 12,
+      "caption_center_pt": 297.5214385986328,
+      "table_center_pt": 297.6500129699707,
+      "center_error_pt": 0.12857437133789062,
+      "matches_body_center": true
+    },
+    {
+      "caption": "表2 独立实验与对照安排",
+      "page": 12,
+      "caption_center_pt": 297.5214385986328,
+      "table_center_pt": 297.6500129699707,
+      "center_error_pt": 0.12857437133789062,
+      "matches_body_center": true
+    },
+    {
+      "caption": "表3 三阶段与实施里程碑",
+      "page": 15,
+      "caption_center_pt": 297.4796447753906,
+      "table_center_pt": 297.6500053405762,
+      "center_error_pt": 0.17036056518554688,
+      "matches_body_center": true
+    },
+    {
+      "caption": "表4 候选资源与条件预算",
+      "page": 18,
+      "caption_center_pt": 297.4796447753906,
+      "table_center_pt": 297.6500053405762,
+      "center_error_pt": 0.17036056518554688,
+      "matches_body_center": true
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 2,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 3,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 4,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 5,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 6,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 7,
+      "page": 14,
+      "complete_on_one_page": true
+    },
+    {
+      "number": 8,
+      "page": 14,
+      "complete_on_one_page": true
+    }
+  ],
+  "chinese": 5,
+  "english": 3,
+  "sections": [
+    {
+      "heading": "一、项目简介（300字左右）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "二、申请理由（包括自身/团队具备的知识条件、特长、兴趣等）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "三、项目方案（项目内容、项目目标、技术路线、实验方案、要解决的主要问题）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "四、国、内外研究现状和发展动态",
+      "page": 13,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "五、项目的特色与创新点",
+      "page": 14,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "六、项目预期成果",
+      "page": 15,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "七、项目年度目标和工作内容（按年度写）",
+      "page": 15,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "八、已有基础",
+      "page": 16,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "九、项目经费使用计划",
+      "page": 18,
+      "first_body_on_same_page": true
+    }
+  ],
+  "eight_original_figures_and_logo_unchanged": true,
+  "one_diagram_rearranged": true,
+  "all_document_text_unchanged": true,
+  "font_sizes_unchanged": true,
+  "images_aspect_preserved": true,
+  "page_geometry": [
+    {
+      "page": 1,
+      "characters_checked": 119,
+      "inside_A4": true
+    },
+    {
+      "page": 2,
+      "characters_checked": 406,
+      "inside_A4": true
+    },
+    {
+      "page": 3,
+      "characters_checked": 285,
+      "inside_A4": true
+    },
+    {
+      "page": 4,
+      "characters_checked": 1257,
+      "inside_A4": true
+    },
+    {
+      "page": 5,
+      "characters_checked": 314,
+      "inside_A4": true
+    },
+    {
+      "page": 6,
+      "characters_checked": 621,
+      "inside_A4": true
+    },
+    {
+      "page": 7,
+      "characters_checked": 711,
+      "inside_A4": true
+    },
+    {
+      "page": 8,
+      "characters_checked": 1245,
+      "inside_A4": true
+    },
+    {
+      "page": 9,
+      "characters_checked": 663,
+      "inside_A4": true
+    },
+    {
+      "page": 10,
+      "characters_checked": 564,
+      "inside_A4": true
+    },
+    {
+      "page": 11,
+      "characters_checked": 441,
+      "inside_A4": true
+    },
+    {
+      "page": 12,
+      "characters_checked": 1056,
+      "inside_A4": true
+    },
+    {
+      "page": 13,
+      "characters_checked": 1434,
+      "inside_A4": true
+    },
+    {
+      "page": 14,
+      "characters_checked": 1842,
+      "inside_A4": true
+    },
+    {
+      "page": 15,
+      "characters_checked": 1054,
+      "inside_A4": true
+    },
+    {
+      "page": 16,
+      "characters_checked": 598,
+      "inside_A4": true
+    },
+    {
+      "page": 17,
+      "characters_checked": 519,
+      "inside_A4": true
+    },
+    {
+      "page": 18,
+      "characters_checked": 785,
+      "inside_A4": true
+    },
+    {
+      "page": 19,
+      "characters_checked": 25,
+      "inside_A4": true
+    },
+    {
+      "page": 20,
+      "characters_checked": 42,
+      "inside_A4": true
+    }
+  ],
+  "original_user_file_preserved": true,
+  "render_method": "WPS native PDF and bundled PDFium; packaged renderer previously diagnosed missing LibreOffice",
+  "artifact_sha256": {
+    "deliverables/大创申报书_紧凑排版稿.docx": "c58a42d542cfd018d36b05e062608b90dcf9d753a82b932931d198ed31857190",
+    "deliverables/大创申报书_紧凑排版审阅版.pdf": "816757c5ed205fae26b814a61e77bec9cb5938320762cc7a5c3dc271f2190806",
+    "application/正式模板正文.md": "7c0334746d19ac3834f81024d42c4859d07cf6b1103494eed6da81c73c676ce0",
+    "application/申报精选参考文献.json": "51e8d3e83da87d0bee2852d1fbb6bcc9cd5b92009a3fc7745514ca0aa5d8ebe9",
+    "deliverables/index.html": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f",
+    "scripts/verify_compact_application.py": "40971488021b3217e839213937649b74eb890c621bd1627761e03b33f66442b2"
+  }
+}
