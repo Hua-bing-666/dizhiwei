@@ -1,0 +1,16 @@
+{
+  "reviewed_docx_pages": [
+    1,
+    2,
+    3
+  ],
+  "reviewed_figure_count": 6,
+  "main_figures_in_docx": 4,
+  "all_pages_readable": true,
+  "all_figures_viewed_individually": true,
+  "no_glyph_or_clipping_defects": true,
+  "caption_pairing": true,
+  "unrelated_source_text_preserved": true,
+  "print_width_cm": 14.45,
+  "physical_print_test": false
+}

@@ -1,0 +1,916 @@
+{
+  "date": "2026-10-27",
+  "artifact_count": 50,
+  "image_count": 37,
+  "pdf_count": 13,
+  "source_status_counts": {
+    "downloaded": 42,
+    "reused_original": 4,
+    "extracted_native_image": 4
+  },
+  "no_screenshots": true,
+  "assets": [
+    {
+      "folder": "01_MDM490差压变送器",
+      "name": "MDM490_原厂实物图.webp",
+      "url": "https://www.microsensorcorp.com/storage/product/December2019/10-MDM490.webp",
+      "source_page": "https://www.microsensorcorp.com/Product-details_Differential-Pressure-Transmitter-MDM490.html",
+      "kind": "实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "01_MDM490差压变送器/MDM490_原厂实物图.webp",
+      "bytes": 18020,
+      "sha256": "b86f19ef4c0e5f69f56396a2cb269c5d3e9e70ff35ddc1d336179ebf3b6747ea",
+      "final_url": "https://www.microsensorcorp.com/storage/product/December2019/10-MDM490.webp",
+      "metadata": {
+        "width": 800,
+        "height": 800,
+        "format": "WEBP"
+      }
+    },
+    {
+      "folder": "01_MDM490差压变送器",
+      "name": "MDM490_接线与安装手册.pdf",
+      "url": "https://www.microsensorcorp.com/Manual/MDM490-Operation-Manual.pdf",
+      "source_page": "https://www.microsensorcorp.com/Product-details_Differential-Pressure-Transmitter-MDM490.html",
+      "kind": "原厂PDF",
+      "note": "",
+      "status": "downloaded",
+      "file": "01_MDM490差压变送器/MDM490_接线与安装手册.pdf",
+      "bytes": 630666,
+      "sha256": "bd211a494e0504cd56f688bc3115b29b738f68dc7459f8c416138f3f2de8a577",
+      "final_url": "https://www.microsensorcorp.com/Manual/MDM490-Operation-Manual.pdf",
+      "metadata": {
+        "pages": 16,
+        "circuit_or_wiring_pages": [
+          7,
+          9,
+          13
+        ]
+      }
+    },
+    {
+      "folder": "01_MDM490差压变送器",
+      "name": "MDM490_数据手册与尺寸接线图.pdf",
+      "url": "https://www.microsensorcorp.com/Datasheet/MDM490-Differential-Pressure-Transmitter.pdf",
+      "source_page": "https://www.microsensorcorp.com/Product-details_Differential-Pressure-Transmitter-MDM490.html",
+      "kind": "原厂PDF",
+      "note": "",
+      "status": "downloaded",
+      "file": "01_MDM490差压变送器/MDM490_数据手册与尺寸接线图.pdf",
+      "bytes": 705193,
+      "sha256": "ad4357721aa11f67452bddc00d303de14f7347edec437111f9491ef35d9b2515",
+      "final_url": "https://www.microsensorcorp.com/Datasheet/MDM490-Differential-Pressure-Transmitter.pdf",
+      "metadata": {
+        "pages": 6,
+        "circuit_or_wiring_pages": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "folder": "02_SEN0549流量计",
+      "name": "SEN0549_尺寸原图.jpg",
+      "url": "https://dfimg.dfrobot.com/wiki/17449/SEN0549_liquid-flow-sensor_dimension_V1.0.jpg",
+      "source_page": "https://wiki.dfrobot.com/sen0549/",
+      "kind": "尺寸或接线图",
+      "note": "",
+      "status": "downloaded",
+      "file": "02_SEN0549流量计/SEN0549_尺寸原图.jpg",
+      "bytes": 40278,
+      "sha256": "9a090a139c0576578d25ff9b9051e86b7bee9b25a7ff9b9e8e396568d198d790",
+      "final_url": "https://dfimg.dfrobot.com/wiki/17449/SEN0549_liquid-flow-sensor_dimension_V1.0.jpg",
+      "metadata": {
+        "width": 1026,
+        "height": 653,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "02_SEN0549流量计",
+      "name": "SEN0549_接线原图.webp",
+      "url": "https://dfimg.dfrobot.com/nobody/wiki/390a3fc739826cbf83a43c030d3036d1_0x0.png.webp",
+      "source_page": "https://wiki.dfrobot.com/sen0549/",
+      "kind": "尺寸或接线图",
+      "note": "",
+      "status": "downloaded",
+      "file": "02_SEN0549流量计/SEN0549_接线原图.webp",
+      "bytes": 8062,
+      "sha256": "578d195b478201366340e34a0fe7de139eb00909021c44046df6f14a88dd6bde",
+      "final_url": "https://dfimg.dfrobot.com/nobody/wiki/390a3fc739826cbf83a43c030d3036d1_0x0.png.webp",
+      "metadata": {
+        "width": 441,
+        "height": 243,
+        "format": "WEBP"
+      }
+    },
+    {
+      "folder": "02_SEN0549流量计",
+      "name": "SEN0549_正面原图.jpg",
+      "url": "https://dfimg.dfrobot.com/enshop/SEN0549/SEN0549_Main_01.jpg",
+      "source_page": "https://www.dfrobot.com/product-2607.html",
+      "kind": "实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "02_SEN0549流量计/SEN0549_正面原图.jpg",
+      "bytes": 193143,
+      "sha256": "9dea4480cc59b805574afa9dd53b743fbfedb1105c159c82138beea992ff60b9",
+      "final_url": "https://dfimg.dfrobot.com/enshop/SEN0549/SEN0549_Main_01.jpg",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "02_SEN0549流量计",
+      "name": "SEN0549_细节原图01.jpg",
+      "url": "https://dfimg.dfrobot.com/enshop/SEN0549_Detail_05.jpg",
+      "source_page": "https://www.dfrobot.com/product-2607.html",
+      "kind": "实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "02_SEN0549流量计/SEN0549_细节原图01.jpg",
+      "bytes": 247289,
+      "sha256": "8bca6d9e9e020af554e16c38ff6916120ded32f3a5a3904b62257c2912226920",
+      "final_url": "https://dfimg.dfrobot.com/enshop/SEN0549_Detail_05.jpg",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "02_SEN0549流量计",
+      "name": "SEN0549_细节原图02.jpg",
+      "url": "https://dfimg.dfrobot.com/enshop/SEN0549_Detail_06.jpg",
+      "source_page": "https://www.dfrobot.com/product-2607.html",
+      "kind": "实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "02_SEN0549流量计/SEN0549_细节原图02.jpg",
+      "bytes": 182432,
+      "sha256": "e702f437e6f05dfb877d60b492de21ff2473ac9d5df66a7835a273282c371c5e",
+      "final_url": "https://dfimg.dfrobot.com/enshop/SEN0549_Detail_06.jpg",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "02_SEN0549流量计",
+      "name": "SEN0549_背面原图.jpg",
+      "url": "https://dfimg.dfrobot.com/enshop/SEN0549_Back_03.jpg",
+      "source_page": "https://www.dfrobot.com/product-2607.html",
+      "kind": "实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "02_SEN0549流量计/SEN0549_背面原图.jpg",
+      "bytes": 178788,
+      "sha256": "6499e068e686eca01ae4f12ce7973be62836b63aa5498252523559fd3cdcfd7a",
+      "final_url": "https://dfimg.dfrobot.com/enshop/SEN0549_Back_03.jpg",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "03_GD32F103CBT6主控",
+      "name": "GD32F103CBT6_尺寸参照原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20221231_GigaDevice-Semicon-Beijing-GD32F103CBT6_C77979_blank.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/C77979.html",
+      "kind": "芯片实物图",
+      "note": "芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "03_GD32F103CBT6主控/GD32F103CBT6_尺寸参照原图.jpg",
+      "bytes": 27880,
+      "sha256": "0d05b6f2c586424c73328fa96cd71ed3fe15bb70f0b15f674ec607092a4f711f",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20221231_GigaDevice-Semicon-Beijing-GD32F103CBT6_C77979_blank.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "03_GD32F103CBT6主控",
+      "name": "GD32F103CBT6_引脚符号原图.svg",
+      "url": "https://image.easyeda.com/component_svgs/prod/8df398d823b0401b8c1c6dc414e60246.svg?t=1744296306",
+      "source_page": "https://www.lcsc.com/product-detail/C77979.html",
+      "kind": "SVG引脚符号",
+      "note": "引脚符号图，不是外围应用电路",
+      "status": "downloaded",
+      "file": "03_GD32F103CBT6主控/GD32F103CBT6_引脚符号原图.svg",
+      "bytes": 37893,
+      "sha256": "523cffa23465263837f5efd55621972e3ac22254e964767a5510a6c390d61bfb",
+      "final_url": "https://image.easyeda.com/component_svgs/prod/8df398d823b0401b8c1c6dc414e60246.svg?t=1744296306",
+      "metadata": {}
+    },
+    {
+      "folder": "03_GD32F103CBT6主控",
+      "name": "GD32F103CBT6_正面原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20221231_GigaDevice-Semicon-Beijing-GD32F103CBT6_C77979_front.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/C77979.html",
+      "kind": "芯片实物图",
+      "note": "芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "03_GD32F103CBT6主控/GD32F103CBT6_正面原图.jpg",
+      "bytes": 80167,
+      "sha256": "43888350e440e3fadd355db6f8cd23dde411a451e2c754931f79e953da5c01b4",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20221231_GigaDevice-Semicon-Beijing-GD32F103CBT6_C77979_front.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "03_GD32F103CBT6主控",
+      "name": "GD32F103CBT6_背面原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20221231_GigaDevice-Semicon-Beijing-GD32F103CBT6_C77979_back.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/C77979.html",
+      "kind": "芯片实物图",
+      "note": "芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "03_GD32F103CBT6主控/GD32F103CBT6_背面原图.jpg",
+      "bytes": 76310,
+      "sha256": "deaee38c1b54b060bdfdf5b7091fbf83ff7735f8a20bf87afe8c9fa25c5f7ecb",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20221231_GigaDevice-Semicon-Beijing-GD32F103CBT6_C77979_back.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "03_GD32F103CBT6主控",
+      "name": "GD32F103xx_原厂数据手册.pdf",
+      "file": "03_GD32F103CBT6主控/GD32F103xx_原厂数据手册.pdf",
+      "kind": "原厂PDF_既有下载原件",
+      "source_page": "https://www.gigadevice.com/",
+      "url": null,
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\大创想法 - 副本\\application\\figures\\vendor_hardware\\GD32F103CBT6\\GD32F103xx_Datasheet_官方.pdf",
+      "note": "本地既有原厂PDF，保留原始文件；此次渠道链接返回HTML，未伪装为PDF",
+      "status": "reused_original",
+      "bytes": 1747108,
+      "sha256": "53da1a17a1523e835383d83fa4b20b4f17fa706e20e8ae8645ef212499366c1a",
+      "metadata": {
+        "pages": 112
+      }
+    },
+    {
+      "folder": "04_E220-400T22D无线模块",
+      "name": "E220-400T22D_外形尺寸与引脚原图.jpg",
+      "url": "https://www.ebyte.com/Uploadfiles/Picture/2025-11-24/20251124144039550.jpg",
+      "source_page": "https://www.ebyte.com/product/1077.html",
+      "kind": "原厂尺寸与引脚图",
+      "note": "",
+      "status": "downloaded",
+      "file": "04_E220-400T22D无线模块/E220-400T22D_外形尺寸与引脚原图.jpg",
+      "bytes": 99068,
+      "sha256": "fd7aeb0c0aff7500e156fdab89728dfaecd6d2ed3d4678c5bda4c2fe34eafb5d",
+      "final_url": "https://www.ebyte.com/Uploadfiles/Picture/2025-11-24/20251124144039550.jpg",
+      "metadata": {
+        "width": 1000,
+        "height": 989,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "04_E220-400T22D无线模块",
+      "name": "E220-400T22D_模块实物原图_01.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20230131_Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283_front.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283.html",
+      "kind": "模块实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "04_E220-400T22D无线模块/E220-400T22D_模块实物原图_01.jpg",
+      "bytes": 123939,
+      "sha256": "752c4f0ff83335ee3392f5168c9f7c565a7e5d9dd35a1214fba7e31f21e3279b",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20230131_Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283_front.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "04_E220-400T22D无线模块",
+      "name": "E220-400T22D_模块实物原图_02.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20230131_Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283_back.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283.html",
+      "kind": "模块实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "04_E220-400T22D无线模块/E220-400T22D_模块实物原图_02.jpg",
+      "bytes": 122920,
+      "sha256": "3a9d0cb5f66377d2310155adc8dd5fb06be0b7c7700b563f2bb7f0e9e3cf2b3d",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20230131_Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283_back.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "04_E220-400T22D无线模块",
+      "name": "E220-400T22D_模块实物原图_03.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20230131_Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283_blank.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283.html",
+      "kind": "模块实物图",
+      "note": "",
+      "status": "downloaded",
+      "file": "04_E220-400T22D无线模块/E220-400T22D_模块实物原图_03.jpg",
+      "bytes": 33737,
+      "sha256": "54b8d0698496d9d034b4c1cc7b7e8ce250a775f054c9c4eb0daad479c1567bcd",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20230131_Chengdu-Ebyte-Elec-Tech-E220-400T22D_C970283_blank.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "04_E220-400T22D无线模块",
+      "name": "E220系列_原厂使用手册.pdf",
+      "url": "https://www.ebyte.com/downpdf/1077.html",
+      "source_page": "https://www.ebyte.com/product/1077.html",
+      "kind": "原厂PDF",
+      "note": "实际型号为7脚D版；使用对应D版章节",
+      "status": "downloaded",
+      "file": "04_E220-400T22D无线模块/E220系列_原厂使用手册.pdf",
+      "bytes": 3246393,
+      "sha256": "16e96063832794158f08ee1396a017051af00b4baedbcc31520d26aaf0ed5a99",
+      "final_url": "https://www.ebyte.com/downpdf/1077.html",
+      "metadata": {
+        "pages": 40,
+        "circuit_or_wiring_pages": []
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015E1_尺寸参照原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20251022_XLSEMI-XL4015E1_C51661_blank.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/Voltage-Regulators-DC-DC-Switching-Regulators_XLSEMI-XL4015E1_C51661.html",
+      "kind": "芯片实物图",
+      "note": "芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "05_XL4015降压电源/XL4015E1_尺寸参照原图.jpg",
+      "bytes": 25536,
+      "sha256": "be919805254e41f555df38e96f03f89d1e8f3ffc15590ab7c4b3aa7a0c7a2c30",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20251022_XLSEMI-XL4015E1_C51661_blank.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015E1_正面原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20251022_XLSEMI-XL4015E1_C51661_front.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/Voltage-Regulators-DC-DC-Switching-Regulators_XLSEMI-XL4015E1_C51661.html",
+      "kind": "芯片实物图",
+      "note": "芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "05_XL4015降压电源/XL4015E1_正面原图.jpg",
+      "bytes": 103386,
+      "sha256": "9580e25428e8096b578c58c04bc74921f16e2a66e7e958d5bd0407142e4951e0",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20251022_XLSEMI-XL4015E1_C51661_front.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015E1_背面原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20251022_XLSEMI-XL4015E1_C51661_back.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/Voltage-Regulators-DC-DC-Switching-Regulators_XLSEMI-XL4015E1_C51661.html",
+      "kind": "芯片实物图",
+      "note": "芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "05_XL4015降压电源/XL4015E1_背面原图.jpg",
+      "bytes": 101852,
+      "sha256": "0ce84c6e4ce6fa1646fc0b71d6f6bba9f488e63ee7047c8376cb1fbca7eaf7fd",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20251022_XLSEMI-XL4015E1_C51661_back.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂DEMO板内嵌实物原图_01.jpeg",
+      "file": "05_XL4015降压电源/XL4015_原厂DEMO板内嵌实物原图_01.jpeg",
+      "kind": "原厂PDF内嵌原图_无渲染",
+      "source_page": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "url": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "origin_pdf_page": 4,
+      "note": "直接提取PDF原始图片流，非页面渲染、非截图；这是原厂DEMO板照片，不代表通用蓝色降压模块",
+      "status": "extracted_native_image",
+      "bytes": 32603,
+      "sha256": "dd4f933e33c62674e44ac7043cf9301305c7a68c21fcb3a5cad8d29daf3af722",
+      "metadata": {
+        "width": 676,
+        "height": 456,
+        "format": "jpeg"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂DEMO板内嵌实物原图_02.jpeg",
+      "file": "05_XL4015降压电源/XL4015_原厂DEMO板内嵌实物原图_02.jpeg",
+      "kind": "原厂PDF内嵌原图_无渲染",
+      "source_page": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "url": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "origin_pdf_page": 4,
+      "note": "直接提取PDF原始图片流，非页面渲染、非截图；这是原厂DEMO板照片，不代表通用蓝色降压模块",
+      "status": "extracted_native_image",
+      "bytes": 30152,
+      "sha256": "1fc8dd3bf8ab41e111eaa77e52c5a77014219a662d7153129c95aa6196b3ffcb",
+      "metadata": {
+        "width": 585,
+        "height": 472,
+        "format": "jpeg"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂DEMO板内嵌实物原图_03.png",
+      "file": "05_XL4015降压电源/XL4015_原厂DEMO板内嵌实物原图_03.png",
+      "kind": "原厂PDF内嵌原图_无渲染",
+      "source_page": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "url": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "origin_pdf_page": 4,
+      "note": "直接提取PDF原始图片流，非页面渲染、非截图；这是原厂DEMO板照片，不代表通用蓝色降压模块",
+      "status": "extracted_native_image",
+      "bytes": 77902,
+      "sha256": "2eaca45e934263d2a4793cff5d2b87da32f6c7ce6d11a3e8db0184e0dd07dee2",
+      "metadata": {
+        "width": 620,
+        "height": 497,
+        "format": "png"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂DEMO板内嵌实物原图_04.png",
+      "file": "05_XL4015降压电源/XL4015_原厂DEMO板内嵌实物原图_04.png",
+      "kind": "原厂PDF内嵌原图_无渲染",
+      "source_page": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "url": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "origin_pdf_page": 4,
+      "note": "直接提取PDF原始图片流，非页面渲染、非截图；这是原厂DEMO板照片，不代表通用蓝色降压模块",
+      "status": "extracted_native_image",
+      "bytes": 85271,
+      "sha256": "d3ceb475bc70d1ff2cb4989f96afd0280f0c4f78b92db8268d88b9aca0b9737b",
+      "metadata": {
+        "width": 596,
+        "height": 497,
+        "format": "png"
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂DEMO板原理图与PCB.pdf",
+      "url": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "source_page": "https://www.xlsemi.com/products_DC_DC_buck_mv.html",
+      "kind": "原厂PDF_含原理图及板图",
+      "note": "",
+      "status": "downloaded",
+      "file": "05_XL4015降压电源/XL4015_原厂DEMO板原理图与PCB.pdf",
+      "bytes": 743682,
+      "sha256": "950c928ee365cd321b502bee8f0cbc72a8726eb4187e9a5b2c0fc000aaaec473",
+      "final_url": "https://www.xlsemi.com/demo/XL4015-DEMO.pdf",
+      "metadata": {
+        "pages": 6,
+        "circuit_or_wiring_pages": [
+          1,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂数据手册_中文.pdf",
+      "url": "https://www.xlsemi.com/datasheet/XL4015-CN.pdf",
+      "source_page": "https://www.xlsemi.com/products_DC_DC_buck_mv.html",
+      "kind": "原厂PDF_含应用电路",
+      "note": "",
+      "status": "downloaded",
+      "file": "05_XL4015降压电源/XL4015_原厂数据手册_中文.pdf",
+      "bytes": 398894,
+      "sha256": "ac03e116d8df29b208cd5bc7bd22bda99704fd21e67511fefa519557f10258ce",
+      "final_url": "https://www.xlsemi.com/datasheet/XL4015-CN.pdf",
+      "metadata": {
+        "pages": 10,
+        "circuit_or_wiring_pages": [
+          3,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "folder": "05_XL4015降压电源",
+      "name": "XL4015_原厂数据手册_英文.pdf",
+      "url": "https://www.xlsemi.com/datasheet/XL4015-EN.pdf",
+      "source_page": "https://www.xlsemi.com/products_DC_DC_buck_mv.html",
+      "kind": "原厂PDF_含应用电路",
+      "note": "",
+      "status": "downloaded",
+      "file": "05_XL4015降压电源/XL4015_原厂数据手册_英文.pdf",
+      "bytes": 345005,
+      "sha256": "3c15d21803d947670d6e39e58462d2cd368d52a54e782f8c9f84c6a8d66174d7",
+      "final_url": "https://www.xlsemi.com/datasheet/XL4015-EN.pdf",
+      "metadata": {
+        "pages": 10,
+        "circuit_or_wiring_pages": [
+          3,
+          8
+        ]
+      }
+    },
+    {
+      "folder": "06_SGM58031可选ADC",
+      "name": "SGM58031_原厂数据手册与应用电路.pdf",
+      "url": "https://www.sg-micro.com/rect/assets/3ed1796d-7e46-4f32-b06f-a6eae4586cec/SGM58031.pdf?access_token=JB0xlRQ-10F_vQg1XXqsnx8zy4iF65LO",
+      "source_page": "https://www.sg-micro.com/product/SGM58031",
+      "kind": "原厂PDF_含应用电路",
+      "note": "可选ADC，不代表必装",
+      "status": "downloaded",
+      "file": "06_SGM58031可选ADC/SGM58031_原厂数据手册与应用电路.pdf",
+      "bytes": 956118,
+      "sha256": "a2252fc0344b48df176986b8fa5097c403407f9315b634077daf57a7844457da",
+      "final_url": "https://www.sg-micro.com/rect/assets/3ed1796d-7e46-4f32-b06f-a6eae4586cec/SGM58031.pdf?access_token=JB0xlRQ-10F_vQg1XXqsnx8zy4iF65LO",
+      "metadata": {
+        "pages": 27,
+        "circuit_or_wiring_pages": []
+      }
+    },
+    {
+      "folder": "06_SGM58031可选ADC",
+      "name": "SGM58031_尺寸参照原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20240525_SGMICRO-SGM58031XMS10G-TR_C700177_blank.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/analog-to-digital-converters-adc_sgmicro-sgm58031xms10g-tr_C700177.html",
+      "kind": "芯片实物图",
+      "note": "SGM58031为可选ADC；芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "06_SGM58031可选ADC/SGM58031_尺寸参照原图.jpg",
+      "bytes": 21998,
+      "sha256": "075cb3beb5027fe3622f4d081e84fb22895573f059e13bdfaabca7fcdcee1f88",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20240525_SGMICRO-SGM58031XMS10G-TR_C700177_blank.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "06_SGM58031可选ADC",
+      "name": "SGM58031_正面原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20240525_SGMICRO-SGM58031XMS10G-TR_C700177_front.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/analog-to-digital-converters-adc_sgmicro-sgm58031xms10g-tr_C700177.html",
+      "kind": "芯片实物图",
+      "note": "SGM58031为可选ADC；芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "06_SGM58031可选ADC/SGM58031_正面原图.jpg",
+      "bytes": 76038,
+      "sha256": "c769ed6d32d5b80e87dbc8db7af60214dc9b67797bfb78f79ac1ca688a69ed4d",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20240525_SGMICRO-SGM58031XMS10G-TR_C700177_front.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "06_SGM58031可选ADC",
+      "name": "SGM58031_背面原图.jpg",
+      "url": "https://assets.lcsc.com/images/lcsc/900x900/20240525_SGMICRO-SGM58031XMS10G-TR_C700177_back.jpg",
+      "source_page": "https://www.lcsc.com/product-detail/analog-to-digital-converters-adc_sgmicro-sgm58031xms10g-tr_C700177.html",
+      "kind": "芯片实物图",
+      "note": "SGM58031为可选ADC；芯片照片不是开发板照片",
+      "status": "downloaded",
+      "file": "06_SGM58031可选ADC/SGM58031_背面原图.jpg",
+      "bytes": 76415,
+      "sha256": "0f3e3d22fdd1b9465d42dca11285811d48383b4cc3bc77ba9422e8ed68bab28e",
+      "final_url": "https://assets.lcsc.com/images/lcsc/900x900/20240525_SGMICRO-SGM58031XMS10G-TR_C700177_back.jpg",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "07_MP2359降压电源",
+      "name": "MP2359_原厂数据手册与应用电路.pdf",
+      "file": "07_MP2359降压电源/MP2359_原厂数据手册与应用电路.pdf",
+      "kind": "原厂PDF_既有下载原件",
+      "source_page": "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2359/document_id/228",
+      "url": null,
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\大创想法 - 副本\\application\\figures\\vendor_hardware\\MP2359\\MP2359_Datasheet_MPS官方Rev1.21.pdf",
+      "note": "本地2026-10-18下载原件；当前原厂地址对本机返回HTML，保留既有原件",
+      "status": "reused_original",
+      "bytes": 423844,
+      "sha256": "d06660ac39c597789926adb63bce25815ed6adfe535e5c46f0ba84f6f2d6367b",
+      "metadata": {
+        "pages": 11
+      }
+    },
+    {
+      "folder": "07_MP2359降压电源",
+      "name": "MP2359_尺寸参照原图_既有下载.jpg",
+      "file": "07_MP2359降压电源/MP2359_尺寸参照原图_既有下载.jpg",
+      "kind": "芯片实物图_既有下载原件",
+      "source_page": "https://jlcpcb.com/partdetail/Monolithic_PowerSystems-MP2359DJ_LFZ/C14259",
+      "url": null,
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\大创想法 - 副本\\application\\figures\\vendor_hardware\\MP2359\\MP2359_实物尺寸_格尺参照_立创商城.jpg",
+      "note": "本地2026-10-18下载原图，非截图",
+      "status": "reused_original",
+      "bytes": 58841,
+      "sha256": "b392735e5a4e2c678f85639f93ee934afaf6e4b91fe01d58c8eb9035d99f78e5",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "07_MP2359降压电源",
+      "name": "MP2359_芯片实物原图_既有下载.jpg",
+      "file": "07_MP2359降压电源/MP2359_芯片实物原图_既有下载.jpg",
+      "kind": "芯片实物图_既有下载原件",
+      "source_page": "https://jlcpcb.com/partdetail/Monolithic_PowerSystems-MP2359DJ_LFZ/C14259",
+      "url": null,
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\大创想法 - 副本\\application\\figures\\vendor_hardware\\MP2359\\MP2359_实物_TSOT23-6_立创商城.jpg",
+      "note": "本地2026-10-18下载原图；当前图片源拒绝下载，复用原图，非截图",
+      "status": "reused_original",
+      "bytes": 20931,
+      "sha256": "16bc40c1f53552a7796a1067f76710a203cea9ad1c3aed9a66fb428ef64f9501",
+      "metadata": {
+        "width": 900,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_升压模块实物原图_01.jpg",
+      "url": "https://www.sunrom.com/media/product/769.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "渠道模块实物图",
+      "note": "通用XL6009升压模块参考，BOM未固定板卡品牌",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_升压模块实物原图_01.jpg",
+      "bytes": 200930,
+      "sha256": "262ec64f88cf41f27dc0b3774eddb95f22deda0a71088544db618d9d389bde12",
+      "final_url": "https://www.sunrom.com/media/product/769.jpg",
+      "metadata": {
+        "width": 1200,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_升压模块实物原图_02.jpg",
+      "url": "https://www.sunrom.com/media/product/769_0.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "渠道模块实物图",
+      "note": "通用XL6009升压模块参考，BOM未固定板卡品牌",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_升压模块实物原图_02.jpg",
+      "bytes": 190700,
+      "sha256": "d452a9f1965de66d6b8c750f5be09b7c4f967b58eb1f6950005a92bbce182c58",
+      "final_url": "https://www.sunrom.com/media/product/769_0.jpg",
+      "metadata": {
+        "width": 1200,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_升压模块实物原图_03.jpg",
+      "url": "https://www.sunrom.com/media/product/769_1.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "渠道模块实物图",
+      "note": "通用XL6009升压模块参考，BOM未固定板卡品牌",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_升压模块实物原图_03.jpg",
+      "bytes": 206318,
+      "sha256": "2b52eb8676cc2c70dc934c6e22554860d98a80614eec5f57716f32ee2f520ca8",
+      "final_url": "https://www.sunrom.com/media/product/769_1.jpg",
+      "metadata": {
+        "width": 1200,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_升压模块实物原图_04.jpg",
+      "url": "https://www.sunrom.com/media/product/769_2.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "渠道模块实物图",
+      "note": "通用XL6009升压模块参考，BOM未固定板卡品牌",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_升压模块实物原图_04.jpg",
+      "bytes": 178296,
+      "sha256": "6bec677a67b33de3c2001158efd0509a681ad74969d5748a3feb3bb620d573c5",
+      "final_url": "https://www.sunrom.com/media/product/769_2.jpg",
+      "metadata": {
+        "width": 1200,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_升压模块实物原图_05.jpg",
+      "url": "https://www.sunrom.com/media/product/769_3.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "渠道模块实物图",
+      "note": "通用XL6009升压模块参考，BOM未固定板卡品牌",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_升压模块实物原图_05.jpg",
+      "bytes": 166222,
+      "sha256": "4ae7f91520e6aad4a534ed8235a2d9f14b03356d428ccf6052d6e93cb2e5e16a",
+      "final_url": "https://www.sunrom.com/media/product/769_3.jpg",
+      "metadata": {
+        "width": 1200,
+        "height": 900,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_原厂排版数据手册_渠道分发.pdf",
+      "url": "https://www.sunrom.com/download/67.pdf",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "原厂PDF_渠道分发",
+      "note": "参考模块；芯片手册应用电压不等于本项目24V配置，元件参数须按项目设计",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_原厂排版数据手册_渠道分发.pdf",
+      "bytes": 250326,
+      "sha256": "698cc23789ee1fe0e7b77d25007d311b748866161a207edaed82e4b37e9ccd33",
+      "final_url": "https://www.sunrom.com/download/67.pdf",
+      "metadata": {
+        "pages": 8,
+        "circuit_or_wiring_pages": [
+          3
+        ]
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_参考模块原理图_商家原图.jpg",
+      "url": "https://www.sunrom.com/media/content/769/sch.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "参考模块原理图",
+      "note": "参考模块；芯片手册应用电压不等于本项目24V配置，元件参数须按项目设计",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_参考模块原理图_商家原图.jpg",
+      "bytes": 63247,
+      "sha256": "7743131dfae943721d1923bc12d32a35fa445b0e73f890865bda24f768a4ae10",
+      "final_url": "https://www.sunrom.com/media/content/769/sch.jpg",
+      "metadata": {
+        "width": 760,
+        "height": 452,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "08_XL6009升压模块",
+      "name": "XL6009_参考模块尺寸_商家原图.jpg",
+      "url": "https://www.sunrom.com/media/content/769/dim.jpg",
+      "source_page": "https://www.sunrom.com/p/step-up-dc-dc-based-on-xl6009",
+      "kind": "参考模块尺寸图",
+      "note": "参考模块；芯片手册应用电压不等于本项目24V配置，元件参数须按项目设计",
+      "status": "downloaded",
+      "file": "08_XL6009升压模块/XL6009_参考模块尺寸_商家原图.jpg",
+      "bytes": 50314,
+      "sha256": "220580e08db6e38885f98ed7f90b3d419dc799be4e5718bc1dc1bd165045967c",
+      "final_url": "https://www.sunrom.com/media/content/769/dim.jpg",
+      "metadata": {
+        "width": 583,
+        "height": 453,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "09_DS3231时钟模块",
+      "name": "DFR0819_原厂模块完整原理图.pdf",
+      "url": "https://dfimg.dfrobot.com/wiki/21786/DFR0819_ds3231-rtc-module_schematics_V1.0.pdf",
+      "source_page": "https://wiki.dfrobot.com/dfr0819",
+      "kind": "原厂PDF_模块参考资料",
+      "note": "",
+      "status": "downloaded",
+      "file": "09_DS3231时钟模块/DFR0819_原厂模块完整原理图.pdf",
+      "bytes": 63619,
+      "sha256": "36982862e3c32f282485f0d25bb09be599f5f84d49a9b41c553cda5f7ca474df",
+      "final_url": "https://dfimg.dfrobot.com/wiki/21786/DFR0819_ds3231-rtc-module_schematics_V1.0.pdf",
+      "metadata": {
+        "pages": 1,
+        "circuit_or_wiring_pages": []
+      }
+    },
+    {
+      "folder": "09_DS3231时钟模块",
+      "name": "DFR0819_原厂芯片数据手册.pdf",
+      "url": "https://dfimg.dfrobot.com/wiki/21786/DFR0819_ds3231-rtc-module_datasheet_V1.0.pdf",
+      "source_page": "https://wiki.dfrobot.com/dfr0819",
+      "kind": "原厂PDF_模块参考资料",
+      "note": "",
+      "status": "downloaded",
+      "file": "09_DS3231时钟模块/DFR0819_原厂芯片数据手册.pdf",
+      "bytes": 843828,
+      "sha256": "dc81cd89bee82d0c57b654d6315e03dec913fb8fe753cc80b2a3f1cca71cbb34",
+      "final_url": "https://dfimg.dfrobot.com/wiki/21786/DFR0819_ds3231-rtc-module_datasheet_V1.0.pdf",
+      "metadata": {
+        "pages": 20,
+        "circuit_or_wiring_pages": []
+      }
+    },
+    {
+      "folder": "09_DS3231时钟模块",
+      "name": "DFR0819_引脚原图.webp",
+      "url": "https://dfimg.dfrobot.com/nobody/wiki/8ea270128d1d88af0ef7a79c25de4735_0x0.png.webp",
+      "source_page": "https://wiki.dfrobot.com/dfr0819",
+      "kind": "引脚原图",
+      "note": "",
+      "status": "downloaded",
+      "file": "09_DS3231时钟模块/DFR0819_引脚原图.webp",
+      "bytes": 62652,
+      "sha256": "92be901d03af40bde9c2492da02ba7e8153a7e6a4b195272cc1fc2a305ce5146",
+      "final_url": "https://dfimg.dfrobot.com/nobody/wiki/8ea270128d1d88af0ef7a79c25de4735_0x0.png.webp",
+      "metadata": {
+        "width": 1053,
+        "height": 540,
+        "format": "WEBP"
+      }
+    },
+    {
+      "folder": "09_DS3231时钟模块",
+      "name": "DFR0819_模块实物原图.jpg",
+      "url": "https://dfimg.dfrobot.com/enshop/DFR0819/DFR0819_Main_01.jpg",
+      "source_page": "https://wiki.dfrobot.com/dfr0819",
+      "kind": "参考模块实物图",
+      "note": "品牌模块示例，BOM未固定板卡品牌；接入须按实际模块电平和接口核对",
+      "status": "downloaded",
+      "file": "09_DS3231时钟模块/DFR0819_模块实物原图.jpg",
+      "bytes": 174125,
+      "sha256": "95e7366156a9ad2c4ee4c2dd9a8bfc72d0c5d16860da152329761216c79c72cc",
+      "final_url": "https://dfimg.dfrobot.com/enshop/DFR0819/DFR0819_Main_01.jpg",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      }
+    },
+    {
+      "folder": "10_microSD存储模块",
+      "name": "DFR0229_原厂模块完整原理图.pdf",
+      "url": "https://dfimg.dfrobot.com/wiki/18556/DFR0229_fermion-microsd-card-module_schematics_V1.0.pdf",
+      "source_page": "https://wiki.dfrobot.com/dfr0229/",
+      "kind": "原厂PDF_模块参考资料",
+      "note": "",
+      "status": "downloaded",
+      "file": "10_microSD存储模块/DFR0229_原厂模块完整原理图.pdf",
+      "bytes": 123088,
+      "sha256": "185161a6832d39699860a7eaaa8ab0bc04f81816b1b1dc59b4219e0985a26640",
+      "final_url": "https://dfimg.dfrobot.com/wiki/18556/DFR0229_fermion-microsd-card-module_schematics_V1.0.pdf",
+      "metadata": {
+        "pages": 1,
+        "circuit_or_wiring_pages": []
+      }
+    },
+    {
+      "folder": "10_microSD存储模块",
+      "name": "DFR0229_模块实物原图.jpg",
+      "url": "https://dfimg.dfrobot.com/enshop/DFR0229/DFR0229_Main_01.jpg",
+      "source_page": "https://wiki.dfrobot.com/dfr0229/",
+      "kind": "参考模块实物图",
+      "note": "品牌模块示例，BOM未固定板卡品牌；接入须按实际模块电平和接口核对",
+      "status": "downloaded",
+      "file": "10_microSD存储模块/DFR0229_模块实物原图.jpg",
+      "bytes": 105777,
+      "sha256": "6735c6e17aa997f7f4ed007853fda9bad42b5ac5a8d4554e7d3429c9b2a3641b",
+      "final_url": "https://dfimg.dfrobot.com/enshop/DFR0229/DFR0229_Main_01.jpg",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      }
+    }
+  ]
+}

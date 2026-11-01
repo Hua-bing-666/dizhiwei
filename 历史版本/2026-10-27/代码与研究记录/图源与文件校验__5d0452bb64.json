@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-27",
+  "purpose": "申报书硬件模块插图",
+  "original_images": 12,
+  "main_photos": 6,
+  "backup_photos": 3,
+  "diagrams": 3,
+  "no_watermark_removal": true,
+  "original_files_unchanged": true,
+  "assets": [
+    {
+      "file": "01_正文首选实物图/01_主控模块_地阔星STM32成品板.png",
+      "name": "01_主控模块_地阔星STM32成品板.png",
+      "caption": "STM32主控模块实物示意",
+      "source_page": "https://oshwhub.com/li-chuang-kai-fa-ban/lichuang-gekuo-star-stm32f103c8t6-development-board",
+      "source_url": "https://image.lceda.cn/oshwhub/pullImage/cfb99e2df4dd44d39c4dc30367d14c4e.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\tmp\\proposal_hardware_images_20261027\\board_osh1.jpg",
+      "note": "采用本轮预算方案的STM32成品板；正文若仍写GD32，应先统一型号",
+      "watermark": "左上角保留原图“官方开发板”角标，无商城大面积覆盖水印",
+      "metadata": {
+        "width": 990,
+        "height": 689,
+        "format": "PNG"
+      },
+      "sha256": "bf67eb35a451709f69e879320cd040c989088268dde108baf15c46440508a4b0",
+      "bytes": 440512,
+      "processing": "下载原文件保存在05目录；此文件仅无损转换为PNG以兼容Word，未改变画面",
+      "original_file": "05_下载原文件/01_主控模块_地阔星STM32成品板.webp",
+      "original_sha256": "405c38c6bcdd44c34694ff1e47250990b096b86aa44627ffd4dfff5636eb5379"
+    },
+    {
+      "file": "01_正文首选实物图/02_压力变送器_HPM1300候选实物.jpg",
+      "name": "02_压力变送器_HPM1300候选实物.jpg",
+      "caption": "压力变送器实物示意",
+      "source_page": "https://hjsensor.cn/products_13/629.html",
+      "source_url": "https://hjsensor.cn/static/upload/image/20240102/1704184173159793.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\02_HPM1300压力变送器候选\\HPM1300_中文官网实物原图_01.jpg",
+      "note": "HPM1300系列候选图；两路压力测量在正文说明数量即可，型号与量程以最终选型为准",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 1920,
+        "height": 1551,
+        "format": "JPEG"
+      },
+      "sha256": "5da4b27bea6181d14b4094d4d2ab87ded2fab43aec8e3de48f99668bfaaa20e6",
+      "bytes": 610053,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "01_正文首选实物图/03_流量传感器_SEN0549实物.jpg",
+      "name": "03_流量传感器_SEN0549实物.jpg",
+      "caption": "SEN0549流量传感器实物示意",
+      "source_page": "https://www.dfrobot.com/product-2607.html",
+      "source_url": "https://dfimg.dfrobot.com/enshop/SEN0549/SEN0549_Main_01.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\03_SEN0549流量计\\SEN0549_正面原图.jpg",
+      "note": "",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      },
+      "sha256": "9dea4480cc59b805574afa9dd53b743fbfedb1105c159c82138beea992ff60b9",
+      "bytes": 193143,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "01_正文首选实物图/04_LoRa通信模块_E220实物.jpg",
+      "name": "04_LoRa通信模块_E220实物.jpg",
+      "caption": "E220-400T22D无线通信模块实物示意",
+      "source_page": "https://www.ebyte.com/product/1077.html",
+      "source_url": "",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\大创想法 - 副本\\application\\figures\\vendor_hardware\\E220-400T22D\\E220-400T22D_实物_亿佰特官网.jpg",
+      "note": "沿用此前下载的原厂白底图；器件标签上的EBYTE是实物标识，未擦除",
+      "watermark": "未见商城覆盖水印，保留实物标签",
+      "metadata": {
+        "width": 520,
+        "height": 431,
+        "format": "JPEG"
+      },
+      "sha256": "426099e594fde58e7e4c1b921a915cd6570db4b6e17394a298fd353834f2a791",
+      "bytes": 74283,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "01_正文首选实物图/05_microSD存储模块_实物示意.jpg",
+      "name": "05_microSD存储模块_实物示意.jpg",
+      "caption": "microSD存储模块实物示意",
+      "source_page": "https://www.waveshare.net/shop/Micro-SD-Storage-Board.htm",
+      "source_url": "https://www.waveshare.net/photo/accBoard/Micro-SD-Storage-Board/Micro-SD-Storage-Board-1.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\05_3V3裸卡座式microSD参考\\MicroSD_3V3卡座模块原图_01.jpg",
+      "note": "3.3V卡座式模块外观参考，不将参考板品牌写为已采购品牌",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 583,
+        "height": 437,
+        "format": "JPEG"
+      },
+      "sha256": "72fd2203a308ed5a43bf2d18140e0f6e8de1d721efc88e6f7be84ec7378240e5",
+      "bytes": 44470,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "01_正文首选实物图/06_DS3231时钟模块_实物示意.jpg",
+      "name": "06_DS3231时钟模块_实物示意.jpg",
+      "caption": "DS3231时钟模块实物示意",
+      "source_page": "https://wiki.dfrobot.com/dfr0819",
+      "source_url": "https://dfimg.dfrobot.com/enshop/DFR0819/DFR0819_Main_01.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\硬件图片与原理图_20261027\\09_DS3231时钟模块\\DFR0819_模块实物原图.jpg",
+      "note": "DFRobot模块作DS3231器件与接口外观参考；不将其等同于预算中的12元通用模块",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      },
+      "sha256": "95e7366156a9ad2c4ee4c2dd9a8bfc72d0c5d16860da152329761216c79c72cc",
+      "bytes": 174125,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "02_备用角度实物图/01_压力变送器_备用角度.jpg",
+      "name": "01_压力变送器_备用角度.jpg",
+      "caption": "压力变送器备用外观图",
+      "source_page": "https://hjsensor.cn/products_13/629.html",
+      "source_url": "https://hjsensor.cn/static/upload/image/20240102/1704184176538247.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\02_HPM1300压力变送器候选\\HPM1300_中文官网实物原图_02.jpg",
+      "note": "同系列外观示意，出线配置可能与首选图不同",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 1920,
+        "height": 1551,
+        "format": "JPEG"
+      },
+      "sha256": "83ad3c7c98b416fabdf2b19dbcb0d1f094d7ba5473148815fe056e7fdf9ae2da",
+      "bytes": 466263,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "02_备用角度实物图/02_流量传感器_备用角度.jpg",
+      "name": "02_流量传感器_备用角度.jpg",
+      "caption": "流量传感器备用外观图",
+      "source_page": "https://www.dfrobot.com/product-2607.html",
+      "source_url": "https://dfimg.dfrobot.com/enshop/SEN0549_Back_03.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\03_SEN0549流量计\\SEN0549_背面原图.jpg",
+      "note": "",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 1560,
+        "height": 1040,
+        "format": "JPEG"
+      },
+      "sha256": "6499e068e686eca01ae4f12ce7973be62836b63aa5498252523559fd3cdcfd7a",
+      "bytes": 178788,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "02_备用角度实物图/03_microSD存储模块_备用角度.jpg",
+      "name": "03_microSD存储模块_备用角度.jpg",
+      "caption": "microSD存储模块备用外观图",
+      "source_page": "https://www.waveshare.net/shop/Micro-SD-Storage-Board.htm",
+      "source_url": "https://www.waveshare.net/photo/accBoard/Micro-SD-Storage-Board/Micro-SD-Storage-Board-2.jpg",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\05_3V3裸卡座式microSD参考\\MicroSD_3V3卡座模块原图_02.jpg",
+      "note": "",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 565,
+        "height": 424,
+        "format": "JPEG"
+      },
+      "sha256": "243c4dbeb3facbf25f95d78c7e13ad1d5c10764cc7215f45f3b89e1a257fc2c0",
+      "bytes": 41126,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "03_按需插入的接口与原理图/01_LM2596典型降压电路_原厂原图.jpeg",
+      "name": "01_LM2596典型降压电路_原厂原图.jpeg",
+      "caption": "LM2596典型降压电路",
+      "source_page": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\tmp\\proposal_hardware_images_20261027\\lm2596_native_circuit.jpeg",
+      "note": "原厂手册第1页内嵌图片；固定5V输出示例，图中参数不冒称本项目实际调压模块的完整PCB电路",
+      "watermark": "保留原厂图右下角小号版权标注，无大面积覆盖水印",
+      "metadata": {
+        "width": 1512,
+        "height": 366,
+        "format": "JPEG"
+      },
+      "sha256": "1d0f9326bbfb809d6722822d0a3f14ae2b7b74e07a2d4dff9b5a2b954e0251cf",
+      "bytes": 47719,
+      "processing": "直接提取PDF内嵌原始图片流，未进行页面截图或渲染",
+      "source_pdf_page": 1,
+      "source_pdf_xref": 29
+    },
+    {
+      "file": "03_按需插入的接口与原理图/02_压力变送器接线定义_原厂原图.png",
+      "name": "02_压力变送器接线定义_原厂原图.png",
+      "caption": "压力变送器电气接线定义",
+      "source_page": "https://hjsensor.cn/products_13/629.html",
+      "source_url": "https://hjsensor.cn/static/upload/image/20251128/1764313443153052.png",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\02_HPM1300压力变送器候选\\HPM1300_电气接线定义原始图.png",
+      "note": "在介绍4—20mA接入方式时选用；原图同时含其他输出类型，不是主控PCB接线图",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 970,
+        "height": 757,
+        "format": "PNG"
+      },
+      "sha256": "2d3a041c72dca3c7ee8442ff3aae45d8cafb97eb7f2c7f6e420e723b63393951",
+      "bytes": 56508,
+      "processing": "复制原始文件，未去水印、未抠图、未截图"
+    },
+    {
+      "file": "03_按需插入的接口与原理图/03_流量传感器三线接口_原厂原图.png",
+      "name": "03_流量传感器三线接口_原厂原图.png",
+      "caption": "流量传感器三线接口示意",
+      "source_page": "https://wiki.dfrobot.com/sen0549/",
+      "source_url": "https://dfimg.dfrobot.com/nobody/wiki/390a3fc739826cbf83a43c030d3036d1_0x0.png.webp",
+      "origin_local": "C:\\Users\\Lenovo\\Desktop\\大创想法\\1500元台架选型与原图_20261027\\原始图片与原理图\\03_SEN0549流量计\\SEN0549_接线原图.webp",
+      "note": "仅在正文说明线色或接口时使用；原图按源格式保留",
+      "watermark": "未见明显叠加水印",
+      "metadata": {
+        "width": 441,
+        "height": 243,
+        "format": "PNG"
+      },
+      "sha256": "4eaeee16f65b5b2b3975728b996bcdafa3c9cd3dbfe932401ccde5ac41d728d1",
+      "bytes": 31647,
+      "processing": "下载原文件保存在05目录；此文件仅无损转换为PNG以兼容Word，未改变画面",
+      "original_file": "05_下载原文件/03_流量传感器三线接口_原厂原图.webp",
+      "original_sha256": "578d195b478201366340e34a0fe7de139eb00909021c44046df6f14a88dd6bde"
+    }
+  ],
+  "composite": {
+    "svg": "04_可直接插入的实物图拼版\\主要硬件模块实物图_六图拼版.svg",
+    "png": "04_可直接插入的实物图拼版\\主要硬件模块实物图_六图拼版.png",
+    "description": "内嵌原始照片的排版拼图，未改动原图内容"
+  }
+}

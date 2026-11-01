@@ -1,0 +1,19 @@
+{
+  "reviewed_docx_pages": [
+    1,
+    2,
+    3
+  ],
+  "reviewed_figures": [
+    "图8-1",
+    "图8-2",
+    "补图S1"
+  ],
+  "all_pages_readable": true,
+  "no_missing_chinese_glyphs": true,
+  "no_clipping_or_overlap": true,
+  "captions_paired_with_figures": true,
+  "word_print_width_cm": 14.45,
+  "notes": "Actual native WPS page images and all three plots individually viewed; no physical printer test.",
+  "physical_print_verified": false
+}

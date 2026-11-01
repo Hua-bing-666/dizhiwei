@@ -1,0 +1,21 @@
+{
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "reviewed_figures": 6,
+  "main_figures": 4,
+  "supplementary_figures": 2,
+  "requested_direction": "期刊主图 强对比配色 鲜明的数据分区 少量重点标注",
+  "no_clipped_text": true,
+  "no_missing_glyphs": true,
+  "no_split_captions": true,
+  "no_split_paragraphs": true,
+  "print_width_cm": 14.45,
+  "original_numeric_files_byte_identical": true,
+  "physical_print_test": false,
+  "native_renderer": "WPS read-only PDF export and PDFium rasterization",
+  "notes": "All six plates inspected individually; all four final Word pages viewed after final changes."
+}
