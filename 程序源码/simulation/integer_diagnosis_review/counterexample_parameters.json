@@ -1,0 +1,13 @@
+{
+  "pressure_case_kpa": 119.999,
+  "table_case_kpa": 120.25,
+  "table_threshold": 0.19875194974032762,
+  "table_threshold_micro": 198752,
+  "domain_case_kpa": 10.004,
+  "prediction": "5*sqrt(p1/120) L/min",
+  "flow_l_min": 6,
+  "window_s": 3,
+  "script_sha256": "be19d35196f78c3c91b2b045a44cc937618a58281860e126ea47c4c47f0beea7",
+  "parameters_sha256": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+  "physical_data": false
+}

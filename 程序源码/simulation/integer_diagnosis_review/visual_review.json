@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-06",
+  "physical_data": false,
+  "parameters_sha256": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+  "report_sha256": "0ea3375786222a7602081eb44684a7700bdee04e98993e2859197595e67eae26",
+  "contract_sha256": "fd75f4b4428053a879d579afe984be5d72a2188942aa086e10d593c44ab11245",
+  "plan_sha256": "e02f5b7de254de6c1484bbed17dc3fa34aa618f76e469d68a6768a13e8d393f0",
+  "figure_name": "01_主诊断短窗与质量恢复对照",
+  "png_sha256": "5a46b852d013aeab0a225d95f7e9bb03b130b245a9b6fd77c3943bbc3f10a378",
+  "final_png_viewed": true,
+  "black_and_white_distinguishable": true,
+  "no_observed_text_overlap_clipping_or_misalignment": true,
+  "end_markers_within_axes": true,
+  "artifacts_and_profile_hashes_verified": true,
+  "compiler_version": "gcc.exe (MinGW.org GCC-6.3.0-1) 6.3.0",
+  "exclusions": [
+    "Word insertion and print size",
+    "STM32 target compilation and execution",
+    "whole-firmware memory and stack",
+    "real sampling cycle",
+    "SD/Flash persistence or power cut",
+    "radio and energy",
+    "physical diagnosis accuracy"
+  ]
+}

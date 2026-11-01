@@ -1,0 +1,44 @@
+{
+  "status": "passed_standalone_figures",
+  "physical_data": false,
+  "review_method": "Actual PNG inspection plus automated text bounds and collision checks",
+  "figures": [
+    {
+      "name": "01_组合方法收益与反例",
+      "sha256": {
+        "png": "279cbeb2e85fe9e39ad6fd976f9cbed0d8922505f28937b6281a7210be7ad20d",
+        "svg": "493cdcfe7121565eeae6243bd5b716adae6a0b67dd089a5e8cf3dd4c418763f5"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    },
+    {
+      "name": "02_采集覆盖与起始时刻",
+      "sha256": {
+        "png": "d9da94bf5698f92779b021653313cf17e4f6f5bd0d00bfe8db14d569407a16ea",
+        "svg": "bf333870a12bce32f335c654f139b63816c7cbce138ac9fba17768c271b24f63"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    },
+    {
+      "name": "03_巡检相位失败案例",
+      "sha256": {
+        "png": "8d5d667b201371a26830b237dbf6e7ee7c35b60c6daddf3a1b978f2a32c3f508",
+        "svg": "3a91a60c7cb8f2a40cccec263debb1cbf632d6431721df408173d37b5667b257"
+      },
+      "grayscale_readable": true,
+      "misplaced_or_occluded_text_observed": false
+    }
+  ],
+  "corrections": [
+    "failure figure tick corner collision removed",
+    "failure trace vertical limits expanded to include visible-domain data"
+  ],
+  "source_figure_checks_sha256": "9f3712118e48f04fb5a58c26b19f729d6b305cc5f57a8b3af7e9ed121dc4ea7d",
+  "report_sha256": "0f2e5049927e1f8a3a459af06dcf8f84de6dc524c68ad2f868ee740309410c2b",
+  "exclusions": [
+    "Word insertion and page layout",
+    "physical bench or field validation"
+  ]
+}
