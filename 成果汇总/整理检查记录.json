@@ -1,11 +1,15 @@
 {
-  "files_verified": 147,
+  "files_verified": 148,
   "package_integrity": "passed",
   "navigation_links": "passed",
   "source_code_paths_preserved": true,
   "simulations_rerun": false,
   "desktop_rebuilt": false,
   "scope": "File checks and navigation; existing research and executable not recertified",
-  "repository_blob_hashes_verified": 147,
-  "text_files_with_git_line_ending_normalization": 37
+  "repository_blob_hashes_verified": 148,
+  "text_files_with_git_line_ending_normalization": 37,
+  "current_proposal": "申报书_当前定稿_v4_20261101.docx",
+  "current_proposal_source": "用户确认的最后一版",
+  "current_proposal_byte_identical": true,
+  "current_proposal_content_edited": false
 }
