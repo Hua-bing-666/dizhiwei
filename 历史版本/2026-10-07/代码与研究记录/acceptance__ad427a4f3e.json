@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "output_sha256": "2ff7ec2acae3de2eacd06b86fcab8e508bcd1a8cea52dd071c513711dc24c9b4",
+  "source_sha256": "72697dab083a718ed138e9957b0f3ca9751e2834ea506280b120664b1d865b61",
+  "pages": 20,
+  "paragraph_updates": 21,
+  "figures": [
+    {
+      "caption": "图1 系统总体结构",
+      "media": "word/media/image2.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    },
+    {
+      "caption": "图2 双支路台架水路与测点布置",
+      "media": "word/media/image3.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    },
+    {
+      "caption": "图3 双支路验证台架三维布局（概念模型）",
+      "media": "word/media/image4.png",
+      "preserved_bytes": false,
+      "dpi": 559.1,
+      "width_pt": 425.0
+    },
+    {
+      "caption": "图4 压力与流量采集接口",
+      "media": "word/media/image5.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    },
+    {
+      "caption": "图5 拟研究的事件触发采集与模拟控制流程",
+      "media": "word/media/image6.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    },
+    {
+      "caption": "图6 固定1Hz基线的双时间窗诊断流程",
+      "media": "word/media/image7.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    },
+    {
+      "caption": "图7 事件接收确认与重传时序",
+      "media": "word/media/image8.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    },
+    {
+      "caption": "图8 巡检平台监测页面局部（C程序合成回放）",
+      "media": "word/media/image9.png",
+      "preserved_bytes": false,
+      "dpi": 386.3,
+      "width_pt": 425.0
+    },
+    {
+      "caption": "图9 候选判据的有效早期与正常误报对照（合成回放）",
+      "media": "word/media/image10.png",
+      "preserved_bytes": true,
+      "dpi": 360.0,
+      "width_pt": 400.0
+    },
+    {
+      "caption": "图10 初始K/R判据的负载歧义与压力漂移反例（仿真）",
+      "media": "word/media/image11.png",
+      "preserved_bytes": true,
+      "dpi": 342.9,
+      "width_pt": 420.0
+    }
+  ],
+  "centered_data_tables": 3,
+  "references": {
+    "Chinese": 5,
+    "English": 3
+  },
+  "superscript_citation_runs": 11,
+  "native_math": 11,
+  "protected_information_budget_signature_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "sampling_combinations_independently_recounted": 432,
+  "cross_operating_combinations": 72,
+  "trace_groups": 27,
+  "concept_mesh_entities": 207,
+  "physical_performance_verified": false,
+  "limitations": [
+    "simulations share model assumptions",
+    "adaptive schedule not deployed on STM32",
+    "physical LoRa, sensor, energy and valve performance not measured",
+    "desktop executable remains a planned packaging task"
+  ],
+  "visual_review_sha256": "ebc482c8b8d39fe59017ef4b40a0e853d288298df258e5e89af38ffacb0c72fe",
+  "pdf_sha256": "51d30021ffddc84bcaa424318eb208685bc55b321fef904d86a02d0487a048e5",
+  "evidence_sha256": {
+    "simulation/platform_upgrade/web_data.json": "290d9063cba8dc3fee9a24f424d1e0327cfe2314247cc2ec59014f99fee2a98e",
+    "simulation/platform_upgrade/scheduling_trials.json": "894f54c9f4eee3a6fde8fa58a73e5314f8582b42ee20826f9b0890dd3535b620",
+    "simulation/platform_upgrade/cross_operating_summary.json": "c3d70cbea526b361871797334906bebbb3f58914e25aa461d94ce94c30869909",
+    "simulation/platform_upgrade/service_acceptance.json": "152b95fa6d9a509e9491c7dca47dcdccc416798aa1f5624fb24f6f43097e00c5",
+    "simulation/platform_upgrade/browser_acceptance.json": "bed57e187f22a4f3f4b805ecc4729c0833bb0e85342d36816f32baa6dbbe5321",
+    "application/models/system_upgrade/bench_scene.json": "a4e0347a9e39f1dec4bb3d253b62392281a58657eb8a0f231b8aa821f2f451d6"
+  }
+}
