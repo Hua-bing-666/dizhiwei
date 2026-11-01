@@ -1,0 +1,243 @@
+"""Author-reviewed content and production brief. No simulated measurement claims."""
+from pathlib import Path
+import json, re
+
+ROOT=Path(__file__).resolve().parents[1]
+PROJ=ROOT/'projects'/'drip-research_ppt169_20261002'
+OUT=ROOT/'deliverables'; OUT.mkdir(exist_ok=True)
+
+slides=[
+dict(title='让轮灌监测看得清、报得可靠',kind='cover',status='创新训练申报方案',
+ content=['面向棉田轮灌工况的滴灌支管异常监测','与事件触发 LoRa 通信方法研究','2027.03—2028.02｜争取较高级别立项','前期基础：文献、模型与合成回放；尚无实物数据'],
+ note='本项目研究轮灌操作变化和水力异常可能混淆，以及短时告警在无线链路中可能丢失的问题。我们拟完成建模与异常感知、可靠事件通信、系统集成与分层验证三个工作包，实施期为二〇二七年三月至二〇二八年二月。前期已经完成的是文献、模型和合成回放，还没有实物或田间实验。'),
+dict(title='正常操作与异常可能同时改变测量',kind='problem',status='研究问题',
+ content=['正常：支路开关、供压调整、负载改变','异常：可控泄漏、水力受限、切换期短时异常','研究问题1：显著异常能否在正常扰动中被看见？','研究问题2：有限通信下，短时告警能否可靠保留？'],
+ note='压力与流量的变化可能来自正常操作，也可能来自泄漏或水力受限。我们首先检验单测点能够看到多大异常，并比较固定阈值、切换等待和状态辅助等方法。随后在相同本地检测器下比较通信策略，避免用检测差异制造通信优势。目标是改善异常监测与告警信息质量，暂不承担自动灌溉控制或增产承诺。'),
+dict(title='研究增量落在动态工况与可靠告警',kind='literature',status='文献依据与拟研究差异',
+ content=['2022｜滴灌堵塞综述：间接监测有局限','2026｜HydroNeuro：阀态建模与嵌入式异常感知','2026｜灌溉模拟平台：压力/流量、可控阀门与LoRa','2021/2025｜事件通信：已有节省发送的研究','本项目：连续切换、强基线、事件保留与通信取舍'],
+ note='滴灌堵塞综述提示压力和流量间接监测的局限，因此不能承诺逐滴头早期堵塞识别。HydroNeuro已经研究阀态与嵌入式异常感知，并非没有鲁棒性研究。灌溉模拟平台说明可控水路实验有可参考路径。农业事件通信也已有长期研究。本项目拟检验连续切换和短时异常，在强基线、相同告警确认规则下研究适用边界；这些是候选贡献，尚未被实物数据证明。'),
+dict(title='三个工作包组成完整研究闭环',kind='packages',status='拟开展研究',
+ content=['WP1｜水力建模与异常感知','测点可观测性、参数校核、正常边界、强基线','WP2｜告警约束下的可靠事件通信','滤波/限频/心跳、缓存/ACK/去重、公平对照','WP3｜系统集成与分层实验验证','台架、固件、回放网站、数据包、报告与演示'],
+ note='第一工作包建立模型并通过标定和实验确定测点可观测范围，评估异常判别与强基线。第二工作包研究固定采样下的通信策略，加入事件缓存、确认和去重，检验开销与告警及时性。第三工作包完成节点、接收端和水路台架集成，用带标签数据、软件、报告与演示兑现任务。研究问题保持聚焦，项目工作量覆盖建模、方法、实现和验证，论文再选择证据最充分的主贡献。'),
+dict(title='先把测点与假设放进同一个模型',kind='hydraulic',status='未标定简化模型',
+ content=['共同供压与阻力→A/B双支路；测量A支路','压力测点位于A支路上游节流之后','支路负载采用平方根压力关系；动态用一阶响应','共同阻力为零时，B切换不必影响A','不是水锤/CFD模型；现场参数仍需实测校核'],
+ note='模型包含共同供水阻力和两条支路，A支路记录压力和流量，压力点位于等效上游节流之后。负载用平方根压力关系描述，动态用一阶响应近似。模型能够检验供压、负载和测点假设的作用，但不是水锤或计算流体力学求解。当共同阻力为零时，B支路开关可以不影响A，这说明轮灌扰动不能被当作必然现场事实。'),
+dict(title='模型展示混淆，也为实验提供工况',kind='response',status='合成仿真｜非实测',
+ content=['同一组未标定参数下：正常切换 vs 切换期等效泄漏','B支路开启：180—299秒；重叠异常：190—279秒','图为模拟压力；有线小试将检验幅度与测点','下一步不是报告识别率，而是标定并建立操作标签'],
+ note='这张图比较同一组模型参数下的正常轮灌和切换期间等效泄漏，B支路在一百八十到二百九十九秒开启，异常在一百九十到二百七十九秒发生。曲线是模拟压力，用于设计需要采集的工况，不能作为真实设备性能或田间识别率。下一步应先标定压力与流量，并用独立操作记录标记异常时间，再判断模拟响应是否接近真实水路。'),
+dict(title='通信优势必须同时接受误差约束',kind='tradeoff',status='1920次合成回放｜非LoRa实测',
+ content=['同检测器、同滤波载荷、同事件保留与ACK规则','示例：随机丢包10%＋异常起点15秒链路阻断','较慢周期有竞争力；原始事件在噪声下频繁发送','远端误差相对本地模拟滤波量；帧数不等于能耗'],
+ note='通信回放包含八类场景、二十个种子、三种丢包率和四种策略，共一千九百二十次合成回放。这里展示百分之十随机丢包加十五秒阻断的正常和噪声场景，各策略使用相同检测器、滤波载荷和确认规则。滤波限频可能形成有用取舍，但较慢周期也有竞争力；原始事件在较大噪声下频繁发送，却得到更小的远端重构误差。误差相对本地模拟滤波值，帧数包含上行和确认、以及尾段清队列，不能推出真实能耗。'),
+dict(title='反例决定边界，而不是被隐藏',kind='boundaries',status='合成挑战检验',
+ content=['弱等效泄漏：候选检测0/20命中','正常切换但无阀态：每试次平均1次误报','较大噪声：每试次平均2.7次误报','30%随机丢包＋15秒阻断：短时告警仍可能超时','结论：缩小诊断承诺，保留强基线与失败案例'],
+ note='对抗检验说明当前方法有真实的模型内失败案例。弱等效泄漏在二十个噪声种子中均未被候选检测器命中，阀态缺失会使正常切换产生误报，较大噪声下每试次平均有二点七次误报。加入事件保留和确认后，百分之三十随机丢包加十五秒阻断仍不能保证所有短时告警在演示设定的二十秒内到达。通信可靠性也不能补救本地漏检。因此我们保留失败案例、强基线和测量边界，而不承诺所有工况准确识别。'),
+dict(title='由原始采集走向可追踪的系统',kind='system',status='拟实现系统｜网站当前为模型展示',
+ content=['压力/流量→微控制器→本地检测与事件缓存','LoRa发送→接收/ACK→日志与回放网站','数据字段：启动会话、序号、时间、测量、事件ID','恢复机制：超时、去重、掉电恢复、缓存溢出记录','先有线记录，再无线，再现场适应性'],
+ note='原型先完成压力和流量的有线原始采集，再实现本地检测和事件缓存。LoRa接收端返回确认并记录日志，网站用于展示、工况回放和证据追踪。数据包含启动会话、序号、时间、测量和事件编号，以便区分重启、重传和丢包。超时、去重、掉电恢复与溢出记录属于必须验证的工程任务。当前网站只展示模型和合成结果，尚未连接真实传感器。'),
+dict(title='分层验证把方法、硬件与场景分开',kind='validation',status='实验计划',
+ content=['第1层｜标定与台架：五类工况、独立操作标签','第2层｜独立批次：误报/漏检、强基线与参数消融','第3层｜真实无线：帧/字节、两段延迟、整机能量','现场有许可才采集；无故障标签只验证正常运行','核心条件拟≥3次独立重复；连续台架记录拟≥8h'],
+ note='实验先从参考标定、五类核心工况和独立操作标签开始，每个核心条件计划至少三次独立重复。方法参数由小试确定，验证按天或批次留出，避免相邻序列混入训练与测试。无线实验分别记录故障到本地发现、本地告警到远端收到两段延迟，并测量完整供电边界。计划至少八小时连续台架记录。真实现场必须取得许可，只有正常运行数据时不报告田间故障准确率。数量和时长是计划指标，提交前由导师核对资源。'),
+dict(title='一年有阶段门槛，2000元先启动',kind='timeline',status='拟定进度与预算｜非采购报价',
+ content=['2027.03—04｜标定、有线采集、可观测性','2027.05—08｜独立台架、可靠LoRa、整机测量','2027.09—10｜跨条件验证、论文成稿与投稿','2027.11—2028.02｜补实验、原型/报告/结项','启动2000元；需借参考仪器，论文费用另行核查'],
+ note='三四月先解决标定和可观测性，五到八月完成主要台架、真实LoRa和整机测量，九十月冻结方法并形成论文稿，余下时间补关键实验和结项材料。二千元是启动额度估算，不是采购报价，假设已有电脑并能借参考压力和电流测量仪器。获得资助后优先扩展实验条件和独立批次，第二节点或现场试验按资源落实。论文费用不包含在当前启动预算内。'),
+dict(title='用系统成果结项，用研究证据支撑论文',kind='ending',status='预期成果与立项目标',
+ content=['1节点＋1接收端＋1套双支路台架','标定与标签数据＋检测/通信对照＋复现程序','回放软件＋调研/研究报告＋过程记录＋论文稿','争取国家级：靠问题、增量、证据与实施条件','已有成果据实陈述；研究目标以实验兑现'],
+ note='本项目拟交付一个监测节点、一个接收端、一套双支路台架，以及带标定和标签的数据、检测与通信对照、复现程序和回放软件。调研与研究报告、过程记录和论文稿共同组成成果体系。我们按争取国家级的目标组织研究深度，但立项仍取决于评审和条件，不能以页面数量保证。结项以任务书和系统研究成果为依据，论文从证据充分的问题中提炼贡献，已有工作和未来目标分别陈述。'),
+dict(title='备用｜单测点不等于故障原因诊断',kind='counterexample',status='模型反例｜非实测',
+ content=['上游节流和供压下降可产生相同测点压力/流量','一个测点可以提示异常，却未必判定原因','共同阻力为零时，相邻支路切换可不影响测点','模型必须校核：供压、管路阻力、负载与测点','可行性成立的条件：信号可观测、可标定、可重复'],
+ note='单测点存在结构性歧义：在本模型中，可以构造上游节流与供压下降，使测点压力和流量相同。因此主要输出应是异常及建议检查，原因分类仅在有证据的条件下开展。共同阻力为零的反例又说明正常切换对测点的影响依赖实际水路。是否可行最终取决于可观测信号、标定质量和独立重复，而不是图形看起来像工程系统。'),
+dict(title='备用｜三个阶段有不同完成标准',kind='stages',status='成果路线',
+ content=['申报阶段｜模型论证、研究任务、实验设计与资源计划','大创结项｜系统、独立实测、方法对照、报告与过程','论文阶段｜一个主问题、真实数据、强基线、可复现贡献','主问题优先：可靠告警约束下的通信取舍','若无方法增量，调整为测量/部署边界研究'],
+ note='申报阶段交付的是有证据的前期分析和可执行任务体系，现阶段不需要把所有研究结果提前做完。大创结项需要拿出系统、独立实测、对照研究和过程材料。论文则要选择一个有证据的主问题，优先考察可靠告警约束下的通信取舍。若新检测没有超过强基线，就不强行包装算法创新；只有接线和界面展示，也不足以支撑高水平方法论文。'),
+dict(title='备用｜来源与证据索引',kind='sources',status='公开文献与本地复现',
+ content=['塔大实施细则：jwc.taru.edu.cn/info/1035/3872.htm','2026申报通知：jwc.taru.edu.cn/info/1052/4329.htm','堵塞综述｜10.1016/j.agwat.2022.107873','HydroNeuro｜10.3390/s26103010','灌溉模拟平台｜10.3390/land15030464','事件通信｜10.3390/s21165541；10.1016/j.ifacol.2025.11.761','本地证据：程序、JSON/CSV、审查报告与交互网站'],
+ note='学校实施细则和二〇二六申报通知用于理解项目与验收流程，本批要求下发后还要核对。主要技术依据包括堵塞检测综述、HydroNeuro、灌溉模拟平台和两项事件通信研究。所有模型结果均有本地程序和JSON或CSV记录，网站提供查看入口。这里列出的论文证明已有研究路径，不能代替本项目的创新与实物验证。'),
+]
+(PROJ/'analysis'/'deck_content.json').write_text(json.dumps(slides,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
+
+decision='''# 制作决策记录
+用户允许重新规划，并授权现阶段自主分析、仿真和制作材料。本次采用委托决策分支；未生成或伪造用户确认回执。
+Stage 1：评委；判断科学性、增量与可实施性；争取较高级别创新训练；正文12页+备用3页；中文；16:9；暂无正式模板，free_design；讲稿约6—8分钟为暂定，按通知调整；连续制作，规格不另行确认。
+Stage 2三个独立方向：
+1. 研究论证：问题—已有研究—工作包—模型—公平对照—边界—实施。奶白底、深绿结构线、橙色挑战提示；标题黑体与正文微软雅黑形成比例/字重对比。自定义mode逐步支持申报决策；自定义style强调证据与原生可编辑系统图。若有AI图，候选rendering为无纹理、平面、均匀线宽的工程示意，但本项目不选AI图。
+2. 实验手册：从标定与台架开展，再组织研究问题；冷灰背景、等宽参数轴；标题/正文同族形成一致性；自定义mode以实验操作顺序组织，自定义style以记录区与实验编号组织。若用AI，候选rendering为简洁剖面与等距空间、平面材质；当前不选。
+3. 场景叙事：操作—漏报风险—可靠告警—系统收益；深底、大规模留白；宋体标题与无衬线正文形成对比；自定义mode以具体工况推进，自定义style以场景事件带组织。若用AI，候选rendering为克制的纸面分层工况图；当前不选。
+选择1：评委当前需要评估研究依据与可行性，模型、对照与边界比场景渲染更关键。所有图采用程序结果驱动的原生矢量；图像来源none，不用伪设备/田间照片。颜色primary #164C45、secondary #EEF3EF、accent #B4512B；正文24px。讲稿开启，动画/音频关闭；brief规格。未选目录基底，按上述项目行为执行。
+'''
+(PROJ/'analysis'/'production_decisions.md').write_text(decision,encoding='utf-8',newline='\n')
+
+spec='''<!-- ppt-master-schema: design-spec/v1 -->
+# 滴灌异常监测申报 - Design Spec
+
+## I. Project Information
+
+| Item | Value |
+| --- | --- |
+| Project Name | 滴灌异常监测申报 |
+| Canvas Format | PPT 16:9 1280×720 |
+| Page Count | 15 |
+| Primary Language | zh-CN |
+| Target Audience | 大创立项评委与指导教师 |
+| Communication Intent | 先建立具体问题与研究增量，再以模型证据和任务闭环支持评审 |
+| Desired Audience Outcome | 认可研究问题的训练价值，并能审查实现条件和验证路线 |
+| Core Message / Ask / Action | 争取较高级别创新训练，以三个工作包与实证计划完成监测和可靠通信研究 |
+| Delivery Context | 现场答辩，暂按6—8分钟准备，正式时长待通知 |
+| Artifact Afterlife | 可编辑PPTX与独立审阅PDF |
+| Reading Mode | balanced |
+| Content Strategy | 保留事实与边界，按问题—研究—证据—实施组织 |
+| Design Style | 自定义研究论证方向 |
+| AI Image Acquisition Path | not applicable |
+| Generation Mode | continuous |
+| Spec Refinement | disabled |
+| Speaker Notes | enabled — workflow default |
+| Custom Animations | disabled — final Stage-2 proactive policy |
+| Narration Audio | disabled — workflow default |
+| Created Date | 2026-10-02 |
+
+## II. Canvas Specification
+
+| Property | Value |
+| --- | --- |
+| Format | PPT 16:9 |
+| Dimensions | 1280 × 720 |
+| viewBox | `0 0 1280 720` |
+| Margins | 48 px |
+| Content Area | 48 48 1184 624 |
+
+## III. Visual Theme
+
+### Theme Style
+- **Mode**: custom
+- **Mode Behavior**: 先给研究问题与拟研究差异；用三工作包建立闭环，模型与公平对照说明前期基础，反例明确边界，再用实现/验证/进度支持立项决策。
+- **Visual style**: custom
+- **Visual Style Behavior**: 稳定的页眉、细分隔线与来源脚注建立研究材料的秩序。证据页让坐标与数据占主导，系统页以连接和包含表达真实依赖，结尾保留显著留白；平面颜色表示状态而非装饰。
+- **Theme**: 深绿结构线与暖白证据版面
+- **Tone**: 有挑战、可核查、专业且克制
+
+### Color Scheme
+| Role | HEX | Purpose |
+| --- | --- | --- |
+| Background | #FAF9F5 | 页面底色 |
+| Secondary background | #EEF3EF | 语义分区 |
+| Primary | #164C45 | 研究主线与主曲线 |
+| Accent | #B4512B | 待验证挑战与异常 |
+| Secondary accent | #426B91 | 对照曲线 |
+| Body text | #20332F | 正文 |
+| Secondary text | #556762 | 标注与来源 |
+| Divider | #C7D2CB | 分隔线 |
+| Grid | #E0E7E2 | 坐标辅助线 |
+
+## IV. Typography System
+### Font Plan
+| Role | Character (Reference) | Primary | English if non-English | Fallback tail |
+| --- | --- | --- | --- | --- |
+| Title | 强无衬线、标题字重 | SimHei | Arial | none |
+| Body | 清晰无衬线、连续论证 | Microsoft YaHei | Arial | none |
+- **Title stack**: SimHei, Arial
+- **Body stack**: Microsoft YaHei, Arial
+### Font Size Hierarchy
+| Purpose | Anchor Size (px) |
+| --- | ---: |
+| Body | 24 |
+| Title | 42 |
+| Subtitle | 30 |
+| Lead | 28 |
+| Annotation | 18 |
+| Footnote | 16 |
+| Display | 60 |
+
+## V. Layout Principles
+### Deck-wide Direction
+- **Hierarchy direction**: 结论式标题→主要证据/工作对象→条件与来源
+- **Composition tendency**: 证据页以大图为主，流程页按依赖展开，概念页用留白强化一句话
+- **Cross-page continuity**: 页眉、来源和压力/异常配色一致；系统、曲线与任务载体随语义改变
+- **Spacing posture**: variable by page rhythm
+- **Spacing anchors**: page margin 48, block gap 28, column gutter 36, corner radius 6, body leading 38
+
+## VI. Icon Usage Specification
+- **Primary bundled library**: none
+| Icon Path | Suitable Scenarios |
+| --- | --- |
+
+## VIII. Image Resource List
+| Filename | Dimensions | Ratio | Purpose | Type | Image pattern | Crop Policy | Acquire Via | Status | Reference | text_policy | page_role |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## IX. Content Outline
+'''
+rels=['研究目标包含三个工作包与周期','正常与异常对比；检测与通信为先后依赖','已有研究与本项目拟研究问题对照','三个工作包相互依赖，建模/通信进入验证','共同供水分为A/B支路，A测点与节流位置有序','同参数下正常与重叠异常压力曲线对照','相同规则下四策略对照，正常与噪声场景并列','失败工况归属于感知与传输边界','采集到检测、缓存、发送、接收与回放为有序链接','标定先于独立批次，方法冻结先于真实通信评价','实施月份按时间顺序；启动预算依赖借用仪器','系统/数据/方法/报告共同构成预期成果','两个不同故障原因可映射到相同观测','申报、大创与论文按阶段递进且标准不同','制度、文献与程序分别支持流程、依据和模型证据']
+for i,s in enumerate(slides,1):
+    spec+=f"\n#### Slide {i:02} - {s['title']}\n\n- **Audience move**: 未审查本页问题→理解{ s['title'] }及其限定\n- **Relationships**: {rels[i-1]}\n- **Title**: {s['title']}\n- **Core message**: {s['content'][-1]}\n- **Content**: "+'；'.join(s['content'])+'\n'
+    if i==5:spec+='- **Mathematical content**: Q=C\\sqrt{P}\n'
+    if i==6:spec+='- **Visualization**: pressure-response 为模拟时间0—600秒下两条压力序列，横轴秒、纵轴kPa，0—140范围\n- **Native-ready**: pressure-response=yes\n- **Data class**: scenario\n'
+    if i==7:spec+='- **Visualization**: normal-tradeoff、noise-tradeoff 为正常/噪声场景四策略的发送帧数与远端压力MAE散点，读 simulation/communication_results/summary.json；假定丢包10%\n- **Native-ready**: normal-tradeoff=yes; noise-tradeoff=yes\n- **Data class**: scenario\n'
+spec+='''
+## X. Speaker Notes Requirements
+- **Generation**: enabled
+- **Filename**: match each SVG filename under notes/
+- **Content**: 以最终SVG可见证据组织论证，保留模拟/计划状态与关键限定，不声称已做实物实验
+- **Total duration**: 正文约6—8分钟；备用页按追问使用
+- **Notes style**: 自然、准确的中文科研申报表达
+- **Presentation purpose**: 支持评委判断研究问题、任务体系与可实施性
+'''
+(PROJ/'design_spec.md').write_text(spec,encoding='utf-8',newline='\n')
+lock='''<!-- ppt-master-schema: spec-lock/v1 -->
+# Execution Lock
+
+## canvas
+- viewBox: 0 0 1280 720
+- format: PPT 16:9
+## communication
+- primary_language: zh-CN
+- audience: 大创立项评委与指导教师
+- objective: 以研究问题、模型证据和三工作包支持较高级别立项评审，明确真实实施条件
+- core_message: 建模与异常感知、可靠事件通信、系统集成与分层验证形成可执行研究闭环
+## mode
+- mode: custom
+- mode_behavior: 先问题与已有研究，后任务与模型证据，再失败边界和实现路线，收束到预期系统与研究成果
+## visual_style
+- visual_style: custom
+- visual_style_behavior: 暖白证据版面、深绿结构线、克制异常强调；以坐标、依赖和阶段表达语义，图表与系统页具有不同空间组织
+## colors
+- background: #FAF9F5
+- secondary_bg: #EEF3EF
+- primary: #164C45
+- accent: #B4512B
+- secondary_accent: #426B91
+- text: #20332F
+- secondary_text: #556762
+- divider: #C7D2CB
+- grid: #E0E7E2
+## typography
+- font_family: Microsoft YaHei, Arial
+- title_family: SimHei, Arial
+- body_family: Microsoft YaHei, Arial
+- body: 24
+- title: 42
+- subtitle: 30
+- lead: 28
+- annotation: 18
+- footnote: 16
+- display: 60
+## icons
+- library: none
+- inventory: none
+## page_rhythm
+'''
+for i in range(1,16):lock+=f"- P{i:02}: "+('anchor' if i in [1,12] else 'breathing' if i in [2,8,13] else 'dense')+'\n'
+lock+='''## pptx_structure
+- mode: flat
+## forbidden
+- `mask`, `<style>`, `class`, external CSS, `<foreignObject>`, `textPath`, `@font-face`, `<animate*>`, `<set>`, `<script>` / event attributes, `<iframe>`
+- HTML named entities in text; write typography as raw Unicode and escape XML reserved characters
+- 研究目标可以写得有挑战，已有成果必须有证据 (user)
+'''
+(PROJ/'spec_lock.md').write_text(lock,encoding='utf-8',newline='\n')
+print('Authored complete 15-page brief, lock and delegated production record.')
+
+if __name__=='__main__':
+    # Source outline remains independently editable and is not a fake completed deck.
+    outline='# PPT逐页内容与讲稿 v0.3\n\n正文12页+备用3页。已有模型与仿真有源文件；实物与性能指标为计划。\n\n'
+    for i,s in enumerate(slides,1):
+        outline+=f"## {i}. {s['title']}\n\n状态：{s['status']}\n\n"+'\n'.join('- '+c for c in s['content'])+'\n\n讲稿：'+s['note']+'\n\n'
+    (ROOT/'application'/'PPT逐页内容与讲稿.md').write_text(outline.rstrip()+'\n',encoding='utf-8',newline='\n')

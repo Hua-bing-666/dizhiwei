@@ -1,0 +1,56 @@
+{
+  "batch": "revision2-11-15",
+  "review_mode": "read_only",
+  "prerequisites": {"static_gate_exit": 0, "blocking": 0, "introduced": 0, "renderer": "Edge Chromium, 1280×720 native canvas", "png_sanity_pass": true},
+  "pages": [
+    {
+      "page": "11_slide.svg", "page_role": "content",
+      "canvas": {"view_box": [0,0,1280,720], "width":1280, "height":720, "png_width":1280, "png_height":720},
+      "status": "needs_human", "iterations_run": 1,
+      "screenshot_paths": ["C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/11_slide.png"],
+      "findings": [], "untouched_concerns": [],
+      "needs_human_items": [{"rule":"H9", "evidence":"IX.P11明确2027.03—2028.02；本页只展示03—04、05—08、09—10、11—次年02，独立观看无法确认年份。", "suggested_fix_summary":"至少将首段写成2027.03—04、末段写成2027.11—2028.02，或在时间轴上方明确整个项目起止年；需要主代理调整可见内容。"}],
+      "design_intent_check": {"spec_says":"一年时间门槛、2000元条件预算", "render_delivers": false, "note":"四阶段、预算及借用条件清楚；六项260+500+500+250+130+360=2000元，数量与总额相符。缺年份是唯一明确问题。"}
+    },
+    {
+      "page": "12_slide.svg", "page_role": "closing",
+      "canvas": {"view_box": [0,0,1280,720], "width":1280, "height":720, "png_width":1280, "png_height":720},
+      "status": "needs_human", "iterations_run": 1,
+      "screenshot_paths": ["C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/12_slide.png"],
+      "findings": [{"iter":1,"rule":"H6","severity":"hard","element":"#prototype-delivery rect[x='395.59999999999997'] and text at x398.6/y605.62","evidence":"感知节点文字在浅色设备底部；其字形上半部与设备深绿屏幕末端(y598.62)重叠，深绿文字落在深绿屏幕上，肉眼可见上沿缺损。","fix_applied":null}],
+      "untouched_concerns": [],
+      "needs_human_items": [
+        {"rule":"H6", "suggested_fix_summary":"给感知节点标签留独立浅色区域，例如把屏幕高度由36缩至26，再复核文字与矩形距离。子代理按指令不修改。"},
+        {"rule":"CONTENT", "evidence":"收束页图为多支管田块+传感节点概念，并非承诺交付的双支路台架；图旁未直接标识概念状态，底部仅写研究目标。", "suggested_fix_summary":"在图内或图下补明确的目标部署概念/非实物标识，并说明实物验收为双支路台架，避免把场景愿景当已实现系统。"}
+      ],
+      "design_intent_check": {"spec_says":"一个原型与一组可复现证据构成两类成果", "render_delivers": true, "note":"左右成果区层级清楚，田块为矢量示意，没有真实照片证据伪装；需修设备文字碰撞并强化概念图状态。"}
+    },
+    {
+      "page": "13_slide.svg", "page_role": "content",
+      "canvas": {"view_box": [0,0,1280,720], "width":1280, "height":720, "png_width":1280, "png_height":720},
+      "status": "ok", "iterations_run": 1,
+      "screenshot_paths": ["C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/13_slide.png"],
+      "findings": [], "untouched_concerns": [], "needs_human_items": [],
+      "design_intent_check": {"spec_says":"两个原因汇入相同观测，并展示新增P0作用及剩余边界", "render_delivers": true, "note":"原因、观测与改善关系可一眼辨识；箭头、底部边界与输出范围无碰撞。单点到双点条件区别清楚。"}
+    },
+    {
+      "page": "14_slide.svg", "page_role": "content",
+      "canvas": {"view_box": [0,0,1280,720], "width":1280, "height":720, "png_width":1280, "png_height":720},
+      "status": "needs_human", "iterations_run": 1,
+      "screenshot_paths": ["C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/14_slide.png"],
+      "findings": [{"iter":1,"rule":"S4","severity":"soft","element":"#completion-standards final card body text/tspan","evidence":"论文卡将可复现贡献断成可复现贡/献，单字献落在第三行，而另两卡均为两行正文；视觉上出现显眼的单字孤行，且破坏词义单元。","fix_applied":null}],
+      "untouched_concerns": [],
+      "needs_human_items": [{"rule":"S4", "suggested_fix_summary":"保留文案，只重排论文卡正文为一个主问题 / 强基线；独立数据、消融；和可复现贡献，或把完整贡献二字一起移到第三行。优先避免单字孤行，并保持24px正文。"}],
+      "design_intent_check": {"spec_says":"申报、结项、论文三个阶段完成标准不同", "render_delivers": true, "note":"三栏比较清楚，时间和论文优先方向清晰；需修第三栏机械断词。"}
+    },
+    {
+      "page": "15_slide.svg", "page_role": "content",
+      "canvas": {"view_box": [0,0,1280,720], "width":1280, "height":720, "png_width":1280, "png_height":720},
+      "status": "ok", "iterations_run": 1,
+      "screenshot_paths": ["C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/15_slide.png"],
+      "findings": [], "untouched_concerns": [], "needs_human_items": [],
+      "design_intent_check": {"spec_says":"文献DOI与制度、程序及原始证据分组", "render_delivers": true, "note":"参考页20px文献/DOI及文件路径在原尺寸可读，左右分组清楚，长DIAGNOSIS.md与URL未越界；适合作备用来源页，无必要强行图形化。"}
+    }
+  ],
+  "summary": {"pages_reviewed":5, "hard_visual_hits":1, "missing_year_hits":1, "soft_hits":1, "content_state_concerns":1, "fixes_applied":0, "brand_token_changes_requested":false}
+}

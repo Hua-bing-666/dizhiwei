@@ -1,0 +1,26 @@
+{
+  "normal": {
+    "name": "正常轮灌",
+    "periodic_packets": 61,
+    "periodic_priority_packets": 61,
+    "event_packets": 35
+  },
+  "leak": {
+    "name": "稳定期等效泄漏",
+    "periodic_packets": 61,
+    "periodic_priority_packets": 63,
+    "event_packets": 61
+  },
+  "restriction": {
+    "name": "稳定期节流",
+    "periodic_packets": 61,
+    "periodic_priority_packets": 63,
+    "event_packets": 64
+  },
+  "overlap": {
+    "name": "轮灌切换期间等效泄漏",
+    "periodic_packets": 61,
+    "periodic_priority_packets": 63,
+    "event_packets": 39
+  }
+}

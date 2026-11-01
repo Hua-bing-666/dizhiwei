@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-04",
+  "classification": "application_figure_selection_and_proof_not_final_word_layout",
+  "physical_data": false,
+  "word_width_pt": 425,
+  "main_figures": [
+    {
+      "id": "F01",
+      "title": "系统职责与独立评价",
+      "classification": "proposed_system",
+      "placement": "方案：总体结构",
+      "question": "测量、无线桥接、PC持久化与维护怎样组成系统？",
+      "supported_claim": "数据库事务由PC服务完成，无线模块只桥接字节；实验标签独立。",
+      "limit": "拟实施职责图，未实物联调；不是本轮网站实际数据接入链。",
+      "png": "application/figures/presentation_review/system_responsibilities.png",
+      "svg": "application/figures/presentation_review/system_responsibilities.svg",
+      "width_pt": 425,
+      "caption": "F01 系统职责与独立评价。拟实施职责图，未实物联调；不是本轮网站实际数据接入链。",
+      "sha256": {
+        "png": "ae19edc4c27a24c4cdab3e9030f74accb1a25f7b4123d90cac52dafb5b16df54",
+        "svg": "0beed22e112214c7dd217bbbb16623345d590edc3c3d02a16771433ce431646f"
+      }
+    },
+    {
+      "id": "F02",
+      "title": "双支路水路与观测区段",
+      "classification": "proposed_water_layout",
+      "placement": "方案：水力感知",
+      "question": "为什么选P0/P1/Q，故障怎样注入和独立计量？",
+      "supported_claim": "两压力为侧取压；Q在分流前包含正常与泄漏总量，B仅提供正常扰动。",
+      "limit": "水路关系非厂家尺寸图；流量计/接头压损、背压和供水待实测。",
+      "png": "application/figures/presentation_review/water_layout.png",
+      "svg": "application/figures/presentation_review/water_layout.svg",
+      "width_pt": 425,
+      "caption": "F02 双支路水路与观测区段。水路关系非厂家尺寸图；流量计/接头压损、背压和供水待实测。",
+      "sha256": {
+        "png": "3c3e5bd1739a16aed2cdb6c1d971225cb707f25a333ff155b4d455047863e21f",
+        "svg": "7a171684ae82a78f0e65ddb671a2f3407731ea01e74414ddcaf1c0e1f9471707"
+      }
+    },
+    {
+      "id": "F03",
+      "title": "清水台架参数化装配候选",
+      "classification": "concept_cad",
+      "placement": "方案：台架实施",
+      "question": "这个结构怎样服务预实验与重复操作？",
+      "supported_claim": "装配布局、取压、受限及独立收集来自同一候选实体场景。",
+      "limit": "未制造；采购尺寸、整体装配及长时排水待验证，概念检查不等于可加工。",
+      "png": "application/figures/collection_review/collection_overview.png",
+      "svg": "application/figures/collection_review/collection_overview.svg",
+      "width_pt": 425,
+      "caption": "F03 清水台架参数化装配候选。未制造；采购尺寸、整体装配及长时排水待验证，概念检查不等于可加工。",
+      "sha256": {
+        "png": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b",
+        "svg": "9d90408a4759524bae0c285918566ea5db4f3c01a7cf101404fdc1feeb53e6bf"
+      }
+    },
+    {
+      "id": "F04",
+      "title": "双压力与流量采集接口",
+      "classification": "candidate_functional_interface",
+      "placement": "方案：采集硬件",
+      "question": "电源、电压范围和脉冲电平怎样接到主控？",
+      "supported_claim": "两路150Ω采样；ADC 3.3V；5V流量脉冲经容忍缓冲器转换。",
+      "limit": "保护/滤波定值未冻结，22mA已到ADC轨；不是投板或接线完成证据。",
+      "png": "application/figures/interface_review/measurement_interfaces.png",
+      "svg": "application/figures/interface_review/measurement_interfaces.svg",
+      "width_pt": 425,
+      "caption": "F04 双压力与流量采集接口。保护/滤波定值未冻结，22mA已到ADC轨；不是投板或接线完成证据。",
+      "sha256": {
+        "png": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e",
+        "svg": "16be4ba7866efbf57b76794456424a59063b35476a965605d0954de9e2941bb0"
+      }
+    },
+    {
+      "id": "F05",
+      "title": "拟实施诊断流程与输出边界",
+      "classification": "proposed_workflow",
+      "placement": "方案：诊断",
+      "question": "无效、未持续偏离和候选异常怎样分别处理？",
+      "supported_claim": "原始记录保留，持续偏离才生成模式提示，模式仍需独立核查。",
+      "limit": "切换门控及完整误差区间判定尚未实现；当前仿真只含固定阈值与持续规则。",
+      "png": "application/figures/presentation_review/diagnosis_proposal.png",
+      "svg": "application/figures/presentation_review/diagnosis_proposal.svg",
+      "width_pt": 425,
+      "caption": "F05 拟实施诊断流程与输出边界。切换门控及完整误差区间判定尚未实现；当前仿真只含固定阈值与持续规则。",
+      "sha256": {
+        "png": "4a94945de85d0e3f86dc76bc6ba2f153f194a11fd4e5376778feb08f08d14c09",
+        "svg": "ef2b40c9d9fc9487c616506300f7950bda6994b2969c258689e0359c1e16117a"
+      }
+    },
+    {
+      "id": "F06",
+      "title": "不同压力噪声下的配对规则统计",
+      "classification": "uncalibrated_simulation_print_variant",
+      "placement": "方案/基础：仿真",
+      "question": "候选规则的收益和代价是否随噪声条件改变？",
+      "supported_claim": "高压力噪声下固定Q规则更好，保留劣势；打印版仅增加纹理区分。",
+      "limit": "每格20种子，基础序列跨场景/噪声复用；区间为假定噪声模型内统计，不是实测准确率。",
+      "png": "application/figures/presentation_review/noise_outcomes_print.png",
+      "svg": "application/figures/presentation_review/noise_outcomes_print.svg",
+      "width_pt": 425,
+      "caption": "F06 不同压力噪声下的配对规则统计。每格20种子，基础序列跨场景/噪声复用；区间为假定噪声模型内统计，不是实测准确率。",
+      "sha256": {
+        "png": "e9ba5f9c927e7bd3062bcb2f688e65a82882a6fc9a353e6d803233027af107e0",
+        "svg": "b1aa5547f333f73fd18c5948a3d78dd18b83190503fb9520009e17861ca59cc7"
+      }
+    },
+    {
+      "id": "F07",
+      "title": "未知负载与压力漂移反例",
+      "classification": "uncalibrated_simulation_counterexample",
+      "placement": "方案/基础：失败边界",
+      "question": "变化模式为什么不能直接当作故障原因？",
+      "supported_claim": "未知正常负载可与泄漏同观测；真实阻力未变时漂移仍能触发受限模式。",
+      "limit": "seed10300示例；不得推出真实设备辨因或已实现误报抑制。",
+      "png": "application/figures/diagnosis_review/failure_counterexamples.png",
+      "svg": "application/figures/diagnosis_review/failure_counterexamples.svg",
+      "width_pt": 425,
+      "caption": "F07 未知负载与压力漂移反例。seed10300示例；不得推出真实设备辨因或已实现误报抑制。",
+      "sha256": {
+        "png": "4bacd869181649b8e8b6d8b68c3b3d320c3db72d12e6f8e6abb62508b184b88f",
+        "svg": "05a8aeafbd7c29ba3a2a9624c2bcf1fed8a22c7319738ff296392c923b2379f9"
+      }
+    },
+    {
+      "id": "F08",
+      "title": "持久化确认与丢ACK路径",
+      "classification": "candidate_protocol_host_checked",
+      "placement": "方案：可靠告警",
+      "question": "怎样区分接收保存、重复去重与人工核查？",
+      "supported_claim": "PC事务成功后确认，重发复用原身份；人工查看和复测分开。",
+      "limit": "主机字节/事务已检查；真实串口、RF、节点掉电未验，FIFO反例不满足20s期限。",
+      "png": "application/figures/interface_review/durable_event_sequence.png",
+      "svg": "application/figures/interface_review/durable_event_sequence.svg",
+      "width_pt": 425,
+      "caption": "F08 持久化确认与丢ACK路径。主机字节/事务已检查；真实串口、RF、节点掉电未验，FIFO反例不满足20s期限。",
+      "sha256": {
+        "png": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15",
+        "svg": "ee0ca588b849d959d402f609064b81e5801331e7d1327ee5baab38958760bd00"
+      }
+    },
+    {
+      "id": "F09",
+      "title": "运行主站诊断面板局部",
+      "classification": "actual_browser_synthetic_ui_capture",
+      "placement": "已有基础：软件",
+      "question": "当前确实实现了哪一部分界面？",
+      "supported_claim": "来自实际运行主站的原生截图，展示候选状态、特征、核查提示与事件入口。",
+      "limit": "合成观测，LoRa未接入；K/R̂用10点均值；不证明诊断性能或实物维修。",
+      "png": "application/figures/presentation_review/website_diagnosis_panel.png",
+      "svg": null,
+      "width_pt": 425,
+      "caption": "F09 运行主站诊断面板局部。合成观测，LoRa未接入；K/R̂用10点均值；不证明诊断性能或实物维修。",
+      "sha256": {
+        "png": "5ba58045accf1589de4f8ae8efbfee79f6ee8f93641aaa2be25e358fe06a4a49"
+      }
+    }
+  ],
+  "supplemental": [
+    {
+      "title": "量程与测量界限",
+      "png": "application/figures/diagnosis_review/range_and_measurement.png",
+      "decision": "量程/误差附表已足够时保留链接，不再重复正文图",
+      "default_word_insertion": false,
+      "sha256": "e5a19823221a5fa77cd2503868b34126a9ba5d3f7e8f4ff4a9d115916483d2a8"
+    },
+    {
+      "title": "单次有效早期示例",
+      "png": "application/figures/diagnosis_review/early_reference_example.png",
+      "decision": "需要解释早期定义时使用，不能替代全部成功/失败统计",
+      "default_word_insertion": false,
+      "sha256": "c62a3719c683a1f791e64beb9049b1b2f2d3358ee9419de725f280d89231259e"
+    },
+    {
+      "title": "有界误差敏感性",
+      "png": "application/figures/diagnosis_review/bounded_error_margin.png",
+      "decision": "支持阈值进入条件；静态界限不是分类器性能",
+      "default_word_insertion": false,
+      "sha256": "cb0d513990dc35d3862b3a77e41cda9090886fa72f9ab0be17e3e3fc4ea2f686"
+    },
+    {
+      "title": "电源和候选引脚",
+      "png": "application/figures/interface_review/power_and_pin_resources.png",
+      "decision": "支持接口附件，不与正文采集图重复展开",
+      "default_word_insertion": false,
+      "sha256": "63170dbe4036f59ce36f481f1a203248323371eb31bab908a240facdbf68fe85"
+    },
+    {
+      "title": "泄漏容量与时长",
+      "png": "application/figures/collection_review/collection_metering.png",
+      "decision": "支持短时计量及长时排水待项",
+      "default_word_insertion": false,
+      "sha256": "d518d8d19e3c24e84a826ef5573ec1719b54b2c909a7aac0cf2ca57d40709e6b"
+    },
+    {
+      "title": "安装与取出空间",
+      "png": "application/figures/collection_review/collection_installation.png",
+      "decision": "支持概念几何/检修讨论，非制造验收",
+      "default_word_insertion": false,
+      "sha256": "3b8e840316972ce6bd4bc8898377844d1b5c87f8f8eea02ab533174544a907bc"
+    },
+    {
+      "title": "网页总览原生截图",
+      "png": "application/figures/presentation_review/website_overview_desktop.png",
+      "decision": "仅作电子附件；整屏缩入Word达不到9pt，不纳入正文",
+      "default_word_insertion": false,
+      "sha256": "b1e941d6f687bb1c4aae30181e50a070f816356baf93252ddc836e7f7994d42b"
+    },
+    {
+      "title": "网页事件列表原生截图",
+      "png": "application/figures/presentation_review/website_events_desktop.png",
+      "decision": "仅作电子附件，记录为人工演示；不是无线交付证据",
+      "default_word_insertion": false,
+      "sha256": "4f66f2e5968eb6b69c59acfb294c86958abeda5fd7d4e8efb3544ae707a0af05"
+    }
+  ],
+  "replacement_policy": [
+    "system_scope → F01：区分模块桥接和PC持久化",
+    "bench_model → F03：使用收集优化同源布局",
+    "pressure_frontend → F04：补齐5V流量电平与未冻结保护",
+    "diagnosis_flow → F05：明确拟实施与当前仿真的差别",
+    "protocol_sequence → F08：正常和丢ACK路径分开",
+    "platform_replay → F09：使用当前运行主站而非旧研究面板",
+    "旧量程与早期图不继续混用新旧参数；按最新数据和目的选图"
+  ],
+  "tables_for_A11": [
+    "T1 候选资源与条件预算：金额上限/展示价/报价分开",
+    "T2 四工作包：交付、指标、资源与证据对应",
+    "T3 独立故障、正常干扰与通信实验矩阵",
+    "T4 三阶段进度与里程碑：进入条件、任务与成果时间分开"
+  ],
+  "source_sha256": {
+    "scripts/build_presentation_review.py": "7dd04f5fb0842a060e7981ea4bda4164e1567fa8eef8b523b839d32cafa45c26",
+    "simulation/presentation_review/web_replay.json": "8853e8e12de87770558cf3a208aa848bc4566df6b769bc16a9453d46e8cec435",
+    "simulation/presentation_review/capture_checks.json": "6cc4f50b27717dc9115635abff541f616294b55064a64bc2e10bfa3c31954283",
+    "application/figures/presentation_review/figure_provenance.json": "afff0e5d87186617ad3d4ef6ee5b60d0dc755dd0b534a424bc546989fe2c8b2b",
+    "application/figures/presentation_review/statistics_provenance.json": "61ef05fc2e599b889de0b3610110549058f559cd9daf7c67df2cbc6c4a028dc1"
+  }
+}

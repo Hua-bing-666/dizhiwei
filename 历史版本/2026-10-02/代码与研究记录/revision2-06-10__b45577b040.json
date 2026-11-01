@@ -1,0 +1,175 @@
+{
+  "review_batch": "revision2-06-10",
+  "read_only": true,
+  "prerequisite": {
+    "static_gate_exit": 0,
+    "blocking": 0,
+    "introduced": 0,
+    "renderer": "local Edge Chromium, native size",
+    "render_record": "C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/render-records.json"
+  },
+  "canvas": {
+    "view_box": [
+      0,
+      0,
+      1280,
+      720
+    ],
+    "width": 1280,
+    "height": 720,
+    "png_width": 1280,
+    "png_height": 720
+  },
+  "pages": [
+    {
+      "page": "06_slide.svg",
+      "page_role": "content",
+      "status": "ok",
+      "iterations_run": 1,
+      "screenshot_paths": [
+        "C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/06_slide.png"
+      ],
+      "findings": [],
+      "untouched_concerns": [
+        {
+          "rule": "S1",
+          "severity": "soft",
+          "evidence": "Two first-prompt annotation baselines are 387.043 and 402.672: gap 15.629 px for 18 px labels (<18.9 px). Their leader lines cross, creating a crowded annotation cluster near x272–306/y387–456.",
+          "reason": "read-only review; orchestrator owns edits",
+          "suggested_fix_summary": "Separate labels and leader lines; shift leakage label upward or to another quadrant without altering times or data."
+        }
+      ],
+      "needs_human_items": [],
+      "design_intent_check": {
+        "spec_says": "First prompt and failure-reference times, with example lead times for both fault classes.",
+        "render_delivers": true,
+        "note": "76 s = 485−409; 126 s = 522−396. Seed 10300, σ0.3 kPa, example-not-hardware and demonstration 15% criterion are stated. Failure marks are inferable via color and the right-side times."
+      },
+      "png_sanity": {
+        "dimensions_match": true,
+        "largest_color_fraction": 0.7985243055555555
+      }
+    },
+    {
+      "page": "07_slide.svg",
+      "page_role": "content",
+      "status": "ok",
+      "iterations_run": 1,
+      "screenshot_paths": [
+        "C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/07_slide.png"
+      ],
+      "findings": [],
+      "untouched_concerns": [],
+      "needs_human_items": [],
+      "design_intent_check": {
+        "spec_says": "Matched normal/noise communication tradeoff charts with legend and units.",
+        "render_delivers": true,
+        "note": "All four points have nearby strategy labels without collision. Both vertical axes state kPa; footer explains horizontal frames including ACK and tail and MAE reference. Distinct x/y scales are explicitly numbered; no shared-scale implication."
+      },
+      "png_sanity": {
+        "dimensions_match": true,
+        "largest_color_fraction": 0.4548480902777778
+      }
+    },
+    {
+      "page": "08_slide.svg",
+      "page_role": "content",
+      "status": "ok",
+      "iterations_run": 1,
+      "screenshot_paths": [
+        "C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/08_slide.png"
+      ],
+      "findings": [],
+      "untouched_concerns": [],
+      "needs_human_items": [],
+      "design_intent_check": {
+        "spec_says": "Emphasize 12/20 and retain drift/load/model failure boundaries.",
+        "render_delivers": true,
+        "note": "The dominant number is explicitly tied to two fault classes, σ10 kPa and simulated seeds. Three boundary panels are well separated. High contrast and no collisions; no hardware accuracy claim."
+      },
+      "png_sanity": {
+        "dimensions_match": true,
+        "largest_color_fraction": 0.2727224392361111
+      }
+    },
+    {
+      "page": "09_slide.svg",
+      "page_role": "content",
+      "status": "needs_human",
+      "iterations_run": 1,
+      "screenshot_paths": [
+        "C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/09_slide.png"
+      ],
+      "findings": [
+        {
+          "iter": 1,
+          "rule": "H4",
+          "severity": "hard",
+          "element": "#management-replay-ui text[font-size='20'][fill='#B4512B']",
+          "evidence": "Candidate-output text uses #B4512B at 20 px against #F6ECE6; calculated contrast 4.349:1 < small-text 4.5 threshold. Foreground is a locked brand token.",
+          "fix_applied": null
+        }
+      ],
+      "untouched_concerns": [],
+      "needs_human_items": [
+        {
+          "rule": "H4",
+          "element": "#management-replay-ui candidate-output text",
+          "suggested_fix_summary": "Resolve at brand/role level: use 24 px label if it fits, or approved darker foreground for small status text. Do not locally recolor the locked accent without the orchestrator’s brand decision."
+        },
+        {
+          "rule": "CONTENT",
+          "element": "#management-replay-ui trend plot",
+          "evidence": "The mock UI says 450 s while the full 0–600 s trace is shown without a current-position cursor. The blue dashed line is unlabeled and the percent-axis has no numeric ticks.",
+          "suggested_fix_summary": "Add a 450 s cursor and distinguish full-session replay from current cards; label the dashed line as the illustrative 15% criterion and provide minimal numeric percent ticks."
+        }
+      ],
+      "design_intent_check": {
+        "spec_says": "Synthetic replay UI plus device/trend/event/replay functions, explicitly not online hardware.",
+        "render_delivers": true,
+        "note": "Design-demo, synthetic-replay and not-connected labels are prominent. Footer explicitly identifies a redrawn interface, not a real device screenshot. Text sizes in the embedded interface are 16–24 px, acceptable for secondary detail but not a replacement for live demonstration."
+      },
+      "png_sanity": {
+        "dimensions_match": true,
+        "largest_color_fraction": 0.5824088541666667
+      }
+    },
+    {
+      "page": "10_slide.svg",
+      "page_role": "content",
+      "status": "needs_human",
+      "iterations_run": 1,
+      "screenshot_paths": [
+        "C:/Users/Lenovo/Desktop/大创想法/tmp/visual_redesign/10_slide.png"
+      ],
+      "findings": [],
+      "untouched_concerns": [],
+      "needs_human_items": [
+        {
+          "rule": "CONTENT",
+          "element": "experiment matrix and 54-operation total",
+          "evidence": "Total says 54 independent operations; each of 9 matrix cells says each fault type ≥3 trials, which specifies a minimum of 54 rather than exactly 54.",
+          "suggested_fix_summary": "Use '至少54次' for a ≥3 per-type minimum, or '各3次' if the stated grid is exactly54. Keep planned-not-completed status."
+        }
+      ],
+      "design_intent_check": {
+        "spec_says": "54-operation experiment matrix with calibration, strong baseline/ablation and radio/whole-system levels.",
+        "render_delivers": true,
+        "note": "Matrix pressure units and 5/10/15% relative-flow degrees are explicit. Three types of verification are in one bottom band. Independent-day/batch holdout and no adjacent-point pseudoreplication are visible. Repeated cell text is clear but contains the count inconsistency noted above."
+      },
+      "png_sanity": {
+        "dimensions_match": true,
+        "largest_color_fraction": 0.722724609375
+      }
+    }
+  ],
+  "summary": {
+    "pages_reviewed": 5,
+    "hard_hits": 1,
+    "soft_hits": 1,
+    "content_clarifications": 2,
+    "fixes_applied": 0,
+    "brand_review_appended": false,
+    "brand_review_note": "Parent restricts writing to this result JSON; H4 escalation is reported here and sent to parent, without modifying brand_review.json."
+  }
+}

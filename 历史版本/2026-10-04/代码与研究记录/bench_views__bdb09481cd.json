@@ -1,0 +1,708 @@
+{
+  "projectedAnchors": {
+    "iso": {
+      "P0": [
+        432.5504649408111,
+        39.947108110184935,
+        -0.6561069184567004
+      ],
+      "R": [
+        499.8857061747724,
+        91.00172839643041,
+        -0.6598393442385535
+      ],
+      "P1": [
+        556.4473088113,
+        82.83995155501862,
+        -0.6749120108962294
+      ],
+      "Q": [
+        623.7825500452614,
+        140.19986555196786,
+        -0.6771699518706567
+      ],
+      "A": [
+        723.4387070715243,
+        168.3953372208042,
+        -0.6937702719011818
+      ],
+      "B": [
+        442.9698129444815,
+        148.1891956734442,
+        -0.6849114896632307
+      ],
+      "leak": [
+        650.7303175737109,
+        273.1547944111018,
+        -0.7010405990753248
+      ],
+      "node": [
+        424.8740674203925,
+        256.2616452635833,
+        -0.7085550640110581
+      ],
+      "leak_rim": [
+        607.6902881403113,
+        228.12739462419853,
+        -0.6887600559051139
+      ],
+      "outlet_bottom": [
+        640.8192268274202,
+        229.50809809341598,
+        -0.6961475497809866
+      ],
+      "vessel_lip": [
+        640.8192268274202,
+        239.59656792965737,
+        -0.6937883741126969
+      ],
+      "foot_edge": [
+        576.0242496766572,
+        271.93359825524203,
+        -0.6869408708985453
+      ],
+      "tray_edge": [
+        584.1044784900622,
+        274.7309575637172,
+        -0.6881672899502482
+      ],
+      "base_left": [
+        175.3812857806521,
+        242.04342777586515,
+        -0.6724799808816343
+      ],
+      "base_right": [
+        660.1950226651741,
+        409.884989081736,
+        -0.7460651252102259
+      ],
+      "base_front": [
+        660.1950226651741,
+        409.884989081736,
+        -0.7460651252102259
+      ],
+      "base_back": [
+        824.618714219348,
+        244.67675028147406,
+        -0.6736344828722696
+      ]
+    },
+    "top": {
+      "P0": [
+        298.37303868374744,
+        117.45449399147272,
+        -0.7277832539382081
+      ],
+      "R": [
+        410.3880171927766,
+        117.50378057380223,
+        -0.7167831494371627
+      ],
+      "P1": [
+        504.48059914036116,
+        117.45449399147272,
+        -0.7277832539382081
+      ],
+      "Q": [
+        616.4955776493904,
+        117.51498206978624,
+        -0.7142831256869251
+      ],
+      "A": [
+        782.2777458427536,
+        117.50378057380223,
+        -0.7167831494371627
+      ],
+      "B": [
+        410.3880171927766,
+        278.8052689760265,
+        -0.7168191497911662
+      ],
+      "leak": [
+        750.5082612496676,
+        269.5409424113644,
+        -0.6940168427138859
+      ],
+      "node": [
+        477.5970042981942,
+        444.6500826558228,
+        -0.7028560171536726
+      ],
+      "leak_rim": [
+        655.4767901705325,
+        229.60114608578903,
+        -0.6984079748812497
+      ],
+      "outlet_bottom": [
+        710.5881595969748,
+        229.58322369230424,
+        -0.7024080128616297
+      ],
+      "vessel_lip": [
+        710.5881595969748,
+        229.60114608569938,
+        -0.69840797490125
+      ],
+      "foot_edge": [
+        631.7296148162302,
+        278.94327140654923,
+        -0.686018857188239
+      ],
+      "tray_edge": [
+        645.1714120132839,
+        278.94327140654923,
+        -0.686018857188239
+      ],
+      "base_left": [
+        96.7460773674949,
+        502.97670088835326,
+        -0.6852688500798345
+      ],
+      "base_right": [
+        903.2539226325051,
+        502.97670088835326,
+        -0.6852688500798345
+      ],
+      "base_front": [
+        903.2539226325051,
+        502.97670088835326,
+        -0.6852688500798345
+      ],
+      "base_back": [
+        903.2539226325051,
+        36.99462328192774,
+        -0.6851648490571576
+      ]
+    },
+    "front": {
+      "P0": [
+        271.50000000000006,
+        47.77976475260306,
+        -0.6452606771048346
+      ],
+      "R": [
+        398.44444444444457,
+        102.15428465374053,
+        -0.642744371055881
+      ],
+      "P1": [
+        505.07777777777784,
+        47.77976475260306,
+        -0.6452606771048346
+      ],
+      "Q": [
+        632.0222222222222,
+        114.51213008581725,
+        -0.6421724833174824
+      ],
+      "A": [
+        819.9000000000001,
+        102.1542846537406,
+        -0.642744371055881
+      ],
+      "B": [
+        398.4444444444445,
+        143.97029792112693,
+        -0.6777901650148521
+      ],
+      "leak": [
+        783.8962474158709,
+        254.2456683868761,
+        -0.6705395032937977
+      ],
+      "node": [
+        474.61111111111114,
+        256.15180153223685,
+        -0.7106068819154294
+      ],
+      "leak_rim": [
+        676.198888888889,
+        222.1469251361767,
+        -0.66287263421722
+      ],
+      "outlet_bottom": [
+        738.6555555555556,
+        202.3743725437167,
+        -0.6637876545940825
+      ],
+      "vessel_lip": [
+        738.6555555555556,
+        222.14692503731388,
+        -0.662872634221795
+      ],
+      "foot_edge": [
+        649.2866667682222,
+        296.21895364431174,
+        -0.6707445080777821
+      ],
+      "tray_edge": [
+        664.5199998476668,
+        296.21895364431174,
+        -0.6707445080777822
+      ],
+      "base_left": [
+        43.000000000000036,
+        358.2512603872796,
+        -0.7192362178333989
+      ],
+      "base_right": [
+        957.0000000000001,
+        358.2512603872796,
+        -0.7192362178333989
+      ],
+      "base_front": [
+        957.0000000000001,
+        358.2512603872796,
+        -0.7192362178333989
+      ],
+      "base_back": [
+        957.0000000000001,
+        237.44944428149674,
+        -0.617992813063038
+      ]
+    },
+    "pressure": {
+      "P0": [
+        294.991377137746,
+        124.88004165814873,
+        -0.6855558496615091
+      ],
+      "R": [
+        482.5991629159182,
+        381.7580453262001,
+        -0.694933685822996
+      ],
+      "P1": [
+        640.1897029695831,
+        396.34820212411637,
+        -0.7149113490029481
+      ],
+      "Q": [
+        827.7974887477554,
+        678.0764239595649,
+        -0.7227945852627178
+      ],
+      "A": [
+        1105.4570116994503,
+        871.581030514794,
+        -0.7479012172434187
+      ],
+      "B": [
+        127.22735524361968,
+        543.2660112652088,
+        -0.7123985221397917
+      ],
+      "leak": [
+        717.5120196982294,
+        1208.5003239948282,
+        -0.746196285201999
+      ],
+      "node": [
+        -125.45122006378374,
+        936.9437575677382,
+        -0.7315511787865295
+      ],
+      "leak_rim": [
+        646.2990206483521,
+        999.625012402641,
+        -0.7309693067948333
+      ],
+      "outlet_bottom": [
+        738.602051251213,
+        1032.4528890495076,
+        -0.7412100718843133
+      ],
+      "vessel_lip": [
+        738.602051251213,
+        1072.2132377197393,
+        -0.7388187120654792
+      ],
+      "foot_edge": [
+        497.94034009137454,
+        1140.9538976190229,
+        -0.725510305003987
+      ],
+      "tray_edge": [
+        520.4532740095398,
+        1158.6583425717292,
+        -0.7274247940595642
+      ],
+      "base_left": [
+        -891.6464000356772,
+        668.5856658126304,
+        -0.6730920844474257
+      ],
+      "base_right": [
+        459.1296575671633,
+        1730.8523806794606,
+        -0.787961429696535
+      ],
+      "base_front": [
+        459.1296575671633,
+        1730.8523806794606,
+        -0.787961429696535
+      ],
+      "base_back": [
+        1485.7593241760255,
+        1264.2738124112134,
+        -0.7375074581146811
+      ]
+    },
+    "leak": {
+      "P0": [
+        -300.1909464652131,
+        -506.5003195588065,
+        -0.6485677964620868
+      ],
+      "R": [
+        -99.39266639919083,
+        -304.07585280399786,
+        -0.6517005025902538
+      ],
+      "P1": [
+        69.27788885626838,
+        -280.5670537876413,
+        -0.6690028033035857
+      ],
+      "Q": [
+        270.07616892229066,
+        -60.04380330535203,
+        -0.6703234012838191
+      ],
+      "A": [
+        567.2576234200043,
+        103.5863441309306,
+        -0.6885723627607846
+      ],
+      "B": [
+        -343.3338279991369,
+        -94.48986583116303,
+        -0.6706569456047593
+      ],
+      "leak": [
+        280.5316384256777,
+        431.23753634853676,
+        -0.6867517548590746
+      ],
+      "node": [
+        -473.5721649372459,
+        295.945033999367,
+        -0.686655740039795
+      ],
+      "leak_rim": [
+        170.5503859408595,
+        243.3411422752704,
+        -0.6758274717295297
+      ],
+      "outlet_bottom": [
+        269.3431397333427,
+        274.7956790862076,
+        -0.684190987885432
+      ],
+      "vessel_lip": [
+        269.3431397333427,
+        303.75373276059605,
+        -0.6812916148777317
+      ],
+      "foot_edge": [
+        53.44357357196207,
+        371.1198308569243,
+        -0.6702771936217535
+      ],
+      "tray_edge": [
+        77.53936677828831,
+        385.854608813812,
+        -0.6716099114370306
+      ],
+      "base_left": [
+        -1244.376181072814,
+        81.55891766666964,
+        -0.6429835421491672
+      ],
+      "base_right": [
+        201.371435402548,
+        965.6456098147072,
+        -0.7229466123985109
+      ],
+      "base_front": [
+        201.371435402548,
+        965.6456098147072,
+        -0.7229466123985109
+      ],
+      "base_back": [
+        906.0903466912815,
+        360.1749807820734,
+        -0.6681835548010511
+      ]
+    }
+  },
+  "viewports": [
+    [
+      "iso",
+      "bench_isometric",
+      1000,
+      460
+    ],
+    [
+      "top",
+      "bench_top",
+      1000,
+      540
+    ],
+    [
+      "front",
+      "bench_front",
+      1000,
+      440
+    ],
+    [
+      "pressure",
+      "bench_pressure_detail",
+      620,
+      500
+    ],
+    [
+      "leak",
+      "bench_leak_detail",
+      620,
+      500
+    ]
+  ],
+  "sceneSha256": "4e7348de31fc52816b86d248ed4eb4bcd6287aa462710d1419622f4725445869",
+  "imageSha256": {
+    "bench_isometric.png": "302ae4d180831f76c388854682d97506b5aac7894e8764667dc61b877d95a1c8",
+    "bench_top.png": "5d900c6724538edffb6ab93c511fb788d23696c560408838e3e54cb318b3bbd0",
+    "bench_front.png": "c6fe5a5d8666cad14b1f85d7646db7f686902ee37d9833f037a33ee45b25bf54",
+    "bench_pressure_detail.png": "2b2a40fffc3db837f1e5554bfda8f7d5f71b550aead40b44e613d273957e97e6",
+    "bench_leak_detail.png": "9c20d212a8614ecdd3e2f5e9a79f62982e579519239e5504eb861bd32398519d"
+  },
+  "interactiveChecks": {
+    "views": 5,
+    "controls": "passed",
+    "desktopOverflow": false,
+    "narrowOverflow": false,
+    "meshCount": 199,
+    "source": "actual offline WebGL scene; not physical validation",
+    "viewerSha256": "7f00e535876147df07251315316c3730c1be638410d64185ec0a6bc3ee1089ec"
+  },
+  "annotationVisibilityChecks": [
+    {
+      "view": "iso",
+      "checks": [
+        {
+          "label": "P0",
+          "anchor": "P0",
+          "targetPart": "P0_connector",
+          "firstHits": [
+            "P0_connector",
+            "P0_connector",
+            "P0_connector",
+            "P0_connector",
+            "P0_connector"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "R",
+          "anchor": "R",
+          "targetPart": "restriction_pivot",
+          "firstHits": [
+            "restriction_pivot",
+            "restriction_pivot",
+            "restriction_pivot",
+            "restriction_pivot",
+            "restriction_pivot"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "P1",
+          "anchor": "P1",
+          "targetPart": "P1_connector",
+          "firstHits": [
+            "P1_connector",
+            "P1_connector",
+            "P1_connector",
+            "P1_connector",
+            "P1_connector"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "Q",
+          "anchor": "Q",
+          "targetPart": "Q_pulse_cap",
+          "firstHits": [
+            "Q_pulse_cap",
+            "Q_pulse_cap",
+            "Q_pulse_cap",
+            "Q_pulse_cap",
+            "Q_pulse_cap"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "A",
+          "anchor": "A",
+          "targetPart": "A_equivalent_load_pivot",
+          "firstHits": [
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "B",
+          "anchor": "B",
+          "targetPart": "B_switch_pivot",
+          "firstHits": [
+            "B_switch_pivot",
+            "B_switch_pivot",
+            "B_switch_pivot",
+            "B_switch_pivot",
+            "B_switch_pivot"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "leak",
+          "anchor": "leak",
+          "targetPart": "open_measuring_vessel",
+          "firstHits": [
+            "open_measuring_vessel",
+            "open_measuring_vessel",
+            "open_measuring_vessel",
+            "open_measuring_vessel",
+            "open_measuring_vessel"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "node",
+          "anchor": "node",
+          "targetPart": "electronics_lid",
+          "firstHits": [
+            "electronics_lid",
+            "electronics_lid",
+            "electronics_lid",
+            "electronics_lid",
+            "electronics_lid"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        }
+      ]
+    },
+    {
+      "view": "top",
+      "checks": [
+        {
+          "label": "P0",
+          "anchor": "P0",
+          "targetPart": "P0_connector",
+          "firstHits": [
+            "P0_connector",
+            "P0_connector",
+            "P0_connector",
+            "P0_connector",
+            "P0_connector"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "R",
+          "anchor": "R",
+          "targetPart": "restriction_pivot",
+          "firstHits": [
+            "restriction_pivot",
+            "restriction_pivot",
+            "restriction_pivot",
+            "restriction_pivot",
+            "restriction_pivot"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "P1",
+          "anchor": "P1",
+          "targetPart": "P1_connector",
+          "firstHits": [
+            "P1_connector",
+            "P1_connector",
+            "P1_connector",
+            "P1_connector",
+            "P1_connector"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "Q",
+          "anchor": "Q",
+          "targetPart": "Q_pulse_cap",
+          "firstHits": [
+            "Q_pulse_cap",
+            "Q_pulse_cap",
+            "Q_pulse_cap",
+            "Q_pulse_cap",
+            "Q_pulse_cap"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "A",
+          "anchor": "A",
+          "targetPart": "A_equivalent_load_pivot",
+          "firstHits": [
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot",
+            "A_equivalent_load_pivot"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "B",
+          "anchor": "B",
+          "targetPart": "B_switch_pivot",
+          "firstHits": [
+            "B_switch_pivot",
+            "B_switch_pivot",
+            "B_switch_pivot",
+            "B_switch_pivot",
+            "B_switch_pivot"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "leak",
+          "anchor": "leak_rim",
+          "targetPart": "open_measuring_vessel",
+          "firstHits": [
+            "open_measuring_vessel",
+            "open_measuring_vessel",
+            "open_measuring_vessel",
+            "open_measuring_vessel",
+            "open_measuring_vessel"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        },
+        {
+          "label": "node",
+          "anchor": "node",
+          "targetPart": "electronics_lid",
+          "firstHits": [
+            "electronics_lid",
+            "electronics_lid",
+            "electronics_lid",
+            "electronics_lid",
+            "electronics_lid"
+          ],
+          "targetVisibleWithinHalfPixel": true
+        }
+      ]
+    }
+  ]
+}

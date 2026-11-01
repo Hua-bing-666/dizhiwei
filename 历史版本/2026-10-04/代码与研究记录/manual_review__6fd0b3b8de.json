@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-04",
+  "classification": "agent_visual_review_of_actual_rendered_png_not_external_certification",
+  "independent_external_review": false,
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "measurement_interfaces",
+      "viewed": true,
+      "png_sha256": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e",
+      "checks": [
+        "two separate low-side current loops and common ground",
+        "AIN labels visible at correct inputs",
+        "5V pulse goes through 3.3V buffer; functional protection not released"
+      ]
+    },
+    {
+      "name": "power_and_pin_resources",
+      "viewed": true,
+      "png_sha256": "63170dbe4036f59ce36f481f1a203248323371eb31bab908a240facdbf68fe85",
+      "checks": [
+        "5V branches and 3.3V buck supply distinguished",
+        "eight grouped pin rows and separate manual B marker",
+        "UART logic and USB power caveats visible"
+      ]
+    },
+    {
+      "name": "durable_event_sequence",
+      "viewed": true,
+      "png_sha256": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15",
+      "checks": [
+        "normal and lost-ACK paths separated",
+        "ACK follows COMMIT and returns to sender lane",
+        "retry uses original identity and duplicate commit; human state separate"
+      ]
+    }
+  ]
+}

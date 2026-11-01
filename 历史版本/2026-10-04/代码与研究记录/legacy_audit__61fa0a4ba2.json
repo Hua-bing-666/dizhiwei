@@ -1,0 +1,17 @@
+{
+  "historical_rows_reproduced": 480,
+  "modified_historical_files": false,
+  "historical_healthy_c": 0.35,
+  "historical_leak_final_c": 0.44,
+  "historical_restriction_final_r": 4.8,
+  "current_healthy_c": 0.28,
+  "current_leak_final_c": 0.37,
+  "current_restriction_final_r": 8.0,
+  "gaussian_sigma_not_hardware_bound": true,
+  "classification": "historical_reproduction_not_physical_validation",
+  "source_sha256": {
+    "simulation/diagnosis_results/trials.csv": "7317491630d3a43c87a62e2ce8e8abd19e00da9c537fb012bb2f201e9e3d423d",
+    "simulation/diagnosis_results/summary.json": "c987a6d513c7a9302f62ab444e78220c3e5ea95a3b8b69a3cdda4c5c855c0e49",
+    "simulation/diagnosis_feasibility.py": "e427fd9af502a0fe633a117fdce34befbff367c54540fa2e7514824496653656"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "classification": "uncalibrated_design_calculation_not_hardware_test",
+  "healthy_c": 0.28,
+  "leak_max_c": 0.37,
+  "r_range": [
+    0.8,
+    8.0
+  ],
+  "grid_count": 24,
+  "q_a_range_l_min": [
+    1.8530162187023838,
+    4.337435171754428
+  ],
+  "max_total_flow_l_min": 7.95332079448847,
+  "pressure_sensor_only_dp_bound_kpa": 1.0,
+  "shunt_v_range": [
+    0.6,
+    3.0
+  ],
+  "adc_nominal_pressure_step_kpa": 0.010416666666666668,
+  "flow_quantization_l_min": {
+    "1s": 0.1111111111111111,
+    "10s": 0.011111111111111112
+  },
+  "excluded_sen0257_single_bound_kpa": [
+    8,
+    16
+  ],
+  "severity_checks": 36,
+  "disjoint_intervals": 36,
+  "disjoint_by_kind_degree": {
+    "leak_0.05": 6,
+    "leak_0.1": 6,
+    "leak_0.15": 6,
+    "restriction_0.05": 6,
+    "restriction_0.1": 6,
+    "restriction_0.15": 6
+  },
+  "caveat": "Optimistic bounded-error calculation includes only sensor nominal limits and count quantization, excluding ADC/shunt/temperature/calibration/skew; disjoint intervals are not detection accuracy or Gaussian noise sigma. Pump curve and continuous duty required.",
+  "flow_accuracy_assumptions": {
+    "reading": "1% of reading",
+    "full_scale": "1% of upper range 5 L/min; conservative alternate interpretation"
+  },
+  "full_scale_disjoint_intervals": 34,
+  "full_scale_disjoint_by_kind_degree": {
+    "leak_0.05": 4,
+    "leak_0.1": 6,
+    "leak_0.15": 6,
+    "restriction_0.05": 6,
+    "restriction_0.1": 6,
+    "restriction_0.15": 6
+  }
+}

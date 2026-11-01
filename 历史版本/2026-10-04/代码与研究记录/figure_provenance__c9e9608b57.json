@@ -1,0 +1,359 @@
+{
+  "classification": "candidate_functional_diagrams",
+  "physical_data": false,
+  "figures": [
+    {
+      "name": "measurement_interfaces",
+      "width": 1000,
+      "height": 930,
+      "classification": "candidate_functional_design_not_build_released",
+      "connections": [
+        {
+          "meaning": "24V to P0变送器",
+          "points": [
+            [
+              132,
+              148
+            ],
+            [
+              132,
+              180
+            ]
+          ]
+        },
+        {
+          "meaning": "P0变送器 current loop and ADC sense tap",
+          "points": [
+            [
+              235,
+              226
+            ],
+            [
+              310,
+              226
+            ],
+            [
+              425,
+              226
+            ]
+          ]
+        },
+        {
+          "meaning": "AIN0 protected normal 0.6—3.0V",
+          "points": [
+            [
+              655,
+              226
+            ],
+            [
+              740,
+              226
+            ]
+          ]
+        },
+        {
+          "meaning": "24V to P1变送器",
+          "points": [
+            [
+              132,
+              378
+            ],
+            [
+              132,
+              410
+            ]
+          ]
+        },
+        {
+          "meaning": "P1变送器 current loop and ADC sense tap",
+          "points": [
+            [
+              235,
+              456
+            ],
+            [
+              310,
+              456
+            ],
+            [
+              425,
+              456
+            ]
+          ]
+        },
+        {
+          "meaning": "AIN1 protected normal 0.6—3.0V",
+          "points": [
+            [
+              655,
+              456
+            ],
+            [
+              740,
+              456
+            ]
+          ]
+        },
+        {
+          "meaning": "ADC I2C PB7/SDA",
+          "points": [
+            [
+              790,
+              590
+            ],
+            [
+              790,
+              615
+            ]
+          ]
+        },
+        {
+          "meaning": "ADC I2C PB6/SCL",
+          "points": [
+            [
+              920,
+              590
+            ],
+            [
+              920,
+              615
+            ]
+          ]
+        },
+        {
+          "meaning": "5V pulse to tolerant buffer input",
+          "points": [
+            [
+              235,
+              777
+            ],
+            [
+              395,
+              777
+            ]
+          ]
+        },
+        {
+          "meaning": "3.3V buffered pulse to PA0",
+          "points": [
+            [
+              655,
+              777
+            ],
+            [
+              805,
+              777
+            ]
+          ]
+        }
+      ],
+      "svg_sha256": "16be4ba7866efbf57b76794456424a59063b35476a965605d0954de9e2941bb0",
+      "minimum_text_px": 23,
+      "minimum_text_pt_at_425pt_width": 9.775
+    },
+    {
+      "name": "power_and_pin_resources",
+      "width": 1000,
+      "height": 785,
+      "classification": "candidate_functional_design_not_build_released",
+      "connections": [
+        {
+          "meaning": "5V to external 3.3V converter",
+          "points": [
+            [
+              175,
+              232
+            ],
+            [
+              270,
+              232
+            ]
+          ]
+        },
+        {
+          "meaning": "5V radio power",
+          "points": [
+            [
+              102,
+              274
+            ],
+            [
+              102,
+              360
+            ]
+          ]
+        },
+        {
+          "meaning": "5V flow sensor power",
+          "points": [
+            [
+              230,
+              232
+            ],
+            [
+              230,
+              330
+            ],
+            [
+              365,
+              330
+            ],
+            [
+              365,
+              360
+            ]
+          ]
+        },
+        {
+          "meaning": "3.3V to MCU ADC and SD",
+          "points": [
+            [
+              460,
+              232
+            ],
+            [
+              487,
+              232
+            ],
+            [
+              487,
+              518
+            ],
+            [
+              245,
+              518
+            ],
+            [
+              245,
+              555
+            ]
+          ]
+        }
+      ],
+      "svg_sha256": "53607698969621c2c483d520ca0d3fae0c8abe000a66de0d6df7fca0d7e7ffda",
+      "minimum_text_px": 23,
+      "minimum_text_pt_at_425pt_width": 9.775
+    },
+    {
+      "name": "durable_event_sequence",
+      "width": 1000,
+      "height": 930,
+      "classification": "candidate_functional_design_not_build_released",
+      "connections": [
+        {
+          "meaning": "① EVENT + 三元身份",
+          "points": [
+            [
+              135,
+              275
+            ],
+            [
+              510,
+              275
+            ]
+          ]
+        },
+        {
+          "meaning": "② 校验、写入或去重",
+          "points": [
+            [
+              510,
+              355
+            ],
+            [
+              865,
+              355
+            ]
+          ]
+        },
+        {
+          "meaning": "③ COMMIT已成功",
+          "points": [
+            [
+              865,
+              430
+            ],
+            [
+              510,
+              430
+            ]
+          ]
+        },
+        {
+          "meaning": "④ ACK：事件身份+指纹",
+          "points": [
+            [
+              510,
+              505
+            ],
+            [
+              135,
+              505
+            ]
+          ]
+        },
+        {
+          "meaning": "ACK lost then resend exact event",
+          "points": [
+            [
+              135,
+              649
+            ],
+            [
+              510,
+              649
+            ]
+          ]
+        },
+        {
+          "meaning": "check exact existing committed body",
+          "points": [
+            [
+              510,
+              721
+            ],
+            [
+              865,
+              721
+            ]
+          ]
+        },
+        {
+          "meaning": "commit duplicate lookup transaction",
+          "points": [
+            [
+              865,
+              774
+            ],
+            [
+              510,
+              774
+            ]
+          ]
+        },
+        {
+          "meaning": "same ACK for exact duplicate",
+          "points": [
+            [
+              510,
+              832
+            ],
+            [
+              135,
+              832
+            ]
+          ]
+        }
+      ],
+      "svg_sha256": "ee0ca588b849d959d402f609064b81e5801331e7d1327ee5baab38958760bd00",
+      "minimum_text_px": 23,
+      "minimum_text_pt_at_425pt_width": 9.775
+    }
+  ],
+  "source_sha256": {
+    "scripts/draw_interface_review.py": "9fb41681b6dc466c110ce349cea9dc7fadc786a65a3f825361de91c0feab163f",
+    "simulation/interface_review/interface_spec.json": "09aa59e383c8a35abbf2963a6552667e4988f38b0e9873b26968f22711c65c37",
+    "simulation/interface_review/hardware_checks.json": "590728f879db67624b1419ec0a64c538afbd754d0c66e8fe0b4379506737c0c6",
+    "simulation/interface_review/protocol_checks.json": "878da7dafed41da88590287fd863e03e4869590c1a478e5cc4bddb08c34fc2b1"
+  }
+}

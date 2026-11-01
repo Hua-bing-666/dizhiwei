@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-04",
+  "reviewer": "root agent visual inspection",
+  "independent_external_review": false,
+  "physical_validation": false,
+  "scope": "12 current 425pt browser proofs viewed; not Word pagination",
+  "findings": [
+    "No observed critical clipping, misplaced labels or text occlusion after architecture label adjustment",
+    "Water routes labelled; comparator hatch and curve markers survive grayscale",
+    "Proposed gates and synthetic website identity remain visible"
+  ],
+  "proofs": [
+    {
+      "file": "application/figures/presentation_review/proofs/F01_425pt.png",
+      "sha256": "f4b137934fff2935f574cc3f46254f34ffe1dec0aba3a56e3b19af0c55ed367e",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F02_425pt.png",
+      "sha256": "5a7efe53eb7b94df536f526e02bb15efa4faea3cde46d798085ae44a51c0cc1c",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F03_425pt.png",
+      "sha256": "80a56c1e81810a75073bde42dbc4dd94a0e9adf9f5b2ba201a406ef9cf3af190",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F04_425pt.png",
+      "sha256": "e6a8d8612d28adb31c590b4aa20af48cbeaeb6d34fd2f603823533c062c108da",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F05_425pt.png",
+      "sha256": "3d051d46ee9711a7e4ef6206a3e610bbf6a0b5c51f0f9d27858bd961c9ff3e50",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F06_425pt.png",
+      "sha256": "8a7223f10d1cbf4434bd792098bf6b12a614972e3c1bfd5848bf71db3dee31d9",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F07_425pt.png",
+      "sha256": "ceaaa18031dcc224afd8b921c8a8037359b879ea445b6a6cb10561d573b73df7",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F08_425pt.png",
+      "sha256": "59456e6078f1363508a9f209d88053d47f1a3f12e85c5a0c7859cbefb465ddc3",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F09_425pt.png",
+      "sha256": "a7798d38762dedd194d7f62c29571ccd86aad1af3f4c62c2625f951ab9ef1454",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F02_gray_425pt.png",
+      "sha256": "8dbbbcc17c823705f0eb16664f1e73e9aa7f99a357fc1a0d433b9a41b1550d9d",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F06_gray_425pt.png",
+      "sha256": "faf59d390814592f0b3258a4cbbd6032fdd5ba37884642ef90afcc6961bb143a",
+      "viewed": true
+    },
+    {
+      "file": "application/figures/presentation_review/proofs/F07_gray_425pt.png",
+      "sha256": "01fd3969b5b9ef7a035f4afd6aad347cef3e83d8497fce7986fc761e53ccfb9f",
+      "viewed": true
+    }
+  ]
+}
