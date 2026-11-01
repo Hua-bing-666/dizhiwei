@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-06",
+  "classification": "actual_local_browser_captures_of_synthetic_ui_not_hardware",
+  "physical_data": false,
+  "dom_replaced": false,
+  "css_overridden": false,
+  "print_media": true,
+  "pixels_postprocessed": false,
+  "screenshots": [
+    {
+      "name": "website_diagnosis_panel",
+      "selector": ".diagnosis-card",
+      "viewport": {
+        "width": 1440,
+        "height": 1800,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 338.203125,
+        "width": 1000,
+        "height": 490.3125
+      },
+      "texts": [
+        {
+          "text": "当前诊断",
+          "fontPx": 30,
+          "x": 29,
+          "y": 31,
+          "width": 120,
+          "height": 40
+        },
+        {
+          "text": "合成回放 · P0—P1及下游负载",
+          "fontPx": 24,
+          "x": 29,
+          "y": 82,
+          "width": 311.109375,
+          "height": 32
+        },
+        {
+          "text": "等效泄漏候选",
+          "fontPx": 24,
+          "x": 58,
+          "y": 144.59375,
+          "width": 144,
+          "height": 32
+        },
+        {
+          "text": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+          "fontPx": 24,
+          "x": 29,
+          "y": 206.1875,
+          "width": 432,
+          "height": 32
+        },
+        {
+          "text": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+          "fontPx": 24,
+          "x": 29,
+          "y": 243.375,
+          "width": 432,
+          "height": 32
+        },
+        {
+          "text": "负载特征 K",
+          "fontPx": 24,
+          "x": 532,
+          "y": 157.59375,
+          "width": 116.5,
+          "height": 32
+        },
+        {
+          "text": "0.323",
+          "fontPx": 46,
+          "x": 532,
+          "y": 212.1875,
+          "width": 113.25,
+          "height": 62
+        },
+        {
+          "text": "L",
+          "fontPx": 20.44,
+          "x": 533,
+          "y": 292.078125,
+          "width": 10.96875,
+          "height": 21
+        },
+        {
+          "text": "/",
+          "fontPx": 20.44,
+          "x": 548.40625,
+          "y": 292.078125,
+          "width": 10.03125,
+          "height": 21
+        },
+        {
+          "text": "min",
+          "fontPx": 20.44,
+          "x": 562.875,
+          "y": 292.078125,
+          "width": 34.09375,
+          "height": 21
+        },
+        {
+          "text": "kPa",
+          "fontPx": 20.44,
+          "x": 554.59375,
+          "y": 322.5625,
+          "width": 31.921875,
+          "height": 21
+        },
+        {
+          "text": "区段阻力 R̂",
+          "fontPx": 24,
+          "x": 767.5,
+          "y": 157.59375,
+          "width": 116.9375,
+          "height": 32
+        },
+        {
+          "text": "0.78",
+          "fontPx": 46,
+          "x": 767.5,
+          "y": 212.1875,
+          "width": 86.84375,
+          "height": 62
+        },
+        {
+          "text": "kPa",
+          "fontPx": 20.44,
+          "x": 804.921875,
+          "y": 292.078125,
+          "width": 31.921875,
+          "height": 21
+        },
+        {
+          "text": "(",
+          "fontPx": 20.44,
+          "x": 768.5,
+          "y": 327.640625,
+          "width": 8.484375,
+          "height": 21
+        },
+        {
+          "text": "L",
+          "fontPx": 20.44,
+          "x": 783.984375,
+          "y": 327.46875,
+          "width": 10.96875,
+          "height": 21
+        },
+        {
+          "text": "/",
+          "fontPx": 20.44,
+          "x": 799.390625,
+          "y": 327.46875,
+          "width": 10.03125,
+          "height": 21
+        },
+        {
+          "text": "min",
+          "fontPx": 20.44,
+          "x": 813.859375,
+          "y": 327.46875,
+          "width": 34.09375,
+          "height": 21
+        },
+        {
+          "text": ")",
+          "fontPx": 20.44,
+          "x": 847.953125,
+          "y": 327.640625,
+          "width": 8.484375,
+          "height": 21
+        },
+        {
+          "text": "2",
+          "fontPx": 16.8,
+          "x": 863.4375,
+          "y": 317.21875,
+          "width": 9,
+          "height": 17
+        },
+        {
+          "text": "建议核查",
+          "fontPx": 24,
+          "x": 29,
+          "y": 309.5625,
+          "width": 96,
+          "height": 32
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 24,
+          "x": 29,
+          "y": 351.75,
+          "width": 432,
+          "height": 32
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 24,
+          "x": 29,
+          "y": 388.9375,
+          "width": 408,
+          "height": 32
+        },
+        {
+          "text": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。",
+          "fontPx": 24,
+          "x": 29,
+          "y": 426.125,
+          "width": 48,
+          "height": 32
+        }
+      ],
+      "overlaps": [],
+      "minimumTextPx": 16.8,
+      "minimumTextPtAt425pt": 7.14,
+      "sha256": "c435815fd27cbae5db43f5ad0dd04d3a0f09145b9c4f51cc9b0158235e53c707",
+      "state": {
+        "scenario": "leak",
+        "noise": "0.3",
+        "quality": "replay",
+        "time": 450,
+        "page": "overview",
+        "eventFilter": "all",
+        "eventSearch": "",
+        "historyTab": "readings",
+        "historyPage": 22,
+        "selectedEventId": null
+      },
+      "diagnosis": {
+        "key": "leak_pattern",
+        "label": "等效泄漏候选",
+        "tone": "warning",
+        "reason": "当前模型的负载特征达到泄漏模式判据；未知正常负载增长也可能形成相同观测。",
+        "hint": "先核对正常负载与阀态，再检查下游旁路和接头。候选模式不能代替独立故障标签。"
+      },
+      "displayed": {
+        "k": "0.323",
+        "r": "0.78",
+        "q": "3.39 L/min"
+      }
+    }
+  ],
+  "research_notice_checks": [],
+  "source_sha256": {
+    "site": "d3d57704d31f7c630d9cbb40144e5df0d25d530f1ff191f470a5b9ee86ef584f",
+    "script": "16680b258eab3befed5d3ba2d9282b0f669c99f5c7ce5c9fc6ea0b8850901aed"
+  },
+  "math": {
+    "unitCount": 2,
+    "radicalCount": 1,
+    "fractionCount": 2,
+    "exponentCount": 1
+  },
+  "responsive_units": [
+    {
+      "width": 375,
+      "documentWidth": 360,
+      "units": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "documentWidth": 753,
+      "units": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1009,
+      "units": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "units": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ]
+    }
+  ],
+  "status": "captured_requires_visual_review"
+}

@@ -1,0 +1,16 @@
+{
+  "physical_data": false,
+  "parameters_sha256": "05e88b369dd6d281253b450824ddd74d68ce4213c909f13f2484a76ca07dd8dc",
+  "runs": 216,
+  "updates": 130896,
+  "monitored_updates": 102816,
+  "field_differences": 0,
+  "wire_frames": 131671,
+  "link_runs": 80,
+  "clean_link_runs": 20,
+  "datasets": {
+    "results.csv": "9216c3cc31cb77a1df5bddb0b8c766b7337a8839d35868550e2aec92519d2f34",
+    "link_results.csv": "849f2cb872e4bc28f1190ac4cfe90af2755e348eb3b6ae9f980731137cd467d1",
+    "fault_examples.json": "c5333bbc345321f2cddebe7be632f8487b94472fefb2a5b4eb6a4a143d68af40"
+  }
+}

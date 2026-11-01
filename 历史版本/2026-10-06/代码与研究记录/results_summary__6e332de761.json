@@ -1,0 +1,24 @@
+{
+  "parameters_sha256": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+  "physical_data": false,
+  "runs": 216,
+  "records": 102816,
+  "c_oracle_records": 130896,
+  "datasets": {
+    "results.csv": "1c51165730bfc81d300dd2532fa573a9ea26d15bebd23ad49dd93ebc90e8d352",
+    "differences.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "profiles.json": "7740f96a59ef391422e605e259fd4baba5f5698b5bb78af0ffd8c0c49fb85ae9",
+    "examples.json": "ac43a82fe2af5f1ab583a4a563965b185a66449e91326c392b6f980e87b41075"
+  },
+  "totals": {
+    "input_quantization_different_records": 0,
+    "input_quantization_event_mask_differences": 0,
+    "input_quantization_pattern_differences": 0,
+    "integer_approximation_different_records": 0,
+    "integer_approximation_event_mask_differences": 0,
+    "integer_approximation_pattern_differences": 0,
+    "end_to_end_different_records": 0,
+    "end_to_end_event_mask_differences": 0,
+    "end_to_end_pattern_differences": 0
+  }
+}

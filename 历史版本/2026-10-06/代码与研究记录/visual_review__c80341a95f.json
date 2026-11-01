@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-06",
+  "review_method": "人工逐页查看最终WPS导出页面；逐张查看实际嵌入图片的灰度版本，并结合正文核对逻辑。",
+  "output_sha256": "a5f476387e6553c4cafe459c51e31a97b81330080f839e60a8887e906b601c37",
+  "pdf_sha256": "34e9f3c9c47237cf2afd7595c5b32835b8f470d07b262d04761f9691732a90ed",
+  "pages": [
+    {
+      "page": 1,
+      "file": "tmp/method_revision/pages/page-01.png",
+      "sha256": "2a5f802471d9825d1d1044137b080d3616a79956292248d5d09a6d9c616050d7"
+    },
+    {
+      "page": 2,
+      "file": "tmp/method_revision/pages/page-02.png",
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4"
+    },
+    {
+      "page": 3,
+      "file": "tmp/method_revision/pages/page-03.png",
+      "sha256": "8de4c53661403876c4b9725043549e16b14ea29aeb343247452ab6678e003549"
+    },
+    {
+      "page": 4,
+      "file": "tmp/method_revision/pages/page-04.png",
+      "sha256": "6c579049f9c54ad27d6953c441db1e84ff559632e9a3cdc52e9a9260b0b528f4"
+    },
+    {
+      "page": 5,
+      "file": "tmp/method_revision/pages/page-05.png",
+      "sha256": "109ad910b319bfdac6ca5e077865b7c5422c1446a2ebfb47a979179448558c10"
+    },
+    {
+      "page": 6,
+      "file": "tmp/method_revision/pages/page-06.png",
+      "sha256": "615eed41d2b10ce5045fdc8c216da68d50676c46b544ddfe9c78921bac3a6f7d"
+    },
+    {
+      "page": 7,
+      "file": "tmp/method_revision/pages/page-07.png",
+      "sha256": "0ed0699ae4a78456af237c57de94d493b6801abb00cb6606143b62dcf1c74214"
+    },
+    {
+      "page": 8,
+      "file": "tmp/method_revision/pages/page-08.png",
+      "sha256": "514c10aca0311a78d083337a4936c87cb5f6690410171ef392b450fda52957ac"
+    },
+    {
+      "page": 9,
+      "file": "tmp/method_revision/pages/page-09.png",
+      "sha256": "91cd12f03439c827fcbf33d38fe578335a351dc16deda45b94f43218ed266372"
+    },
+    {
+      "page": 10,
+      "file": "tmp/method_revision/pages/page-10.png",
+      "sha256": "d0cd6dbd356211e94e4899cdbb1c13e90a93de25c6867a89d6af29c15b03c516"
+    },
+    {
+      "page": 11,
+      "file": "tmp/method_revision/pages/page-11.png",
+      "sha256": "9f1e838049bfa91617fa148967eb8817d53116b9c2d3a97a39943d09dc14d6c3"
+    },
+    {
+      "page": 12,
+      "file": "tmp/method_revision/pages/page-12.png",
+      "sha256": "edc717b47f991343e14439f4c0f94e9b0ed330b468e33aeae6756a83e9275bb8"
+    },
+    {
+      "page": 13,
+      "file": "tmp/method_revision/pages/page-13.png",
+      "sha256": "fe88aaaefa7037df91cec958bf2616a67c53fe70d8d7170102e7c89b4360064e"
+    },
+    {
+      "page": 14,
+      "file": "tmp/method_revision/pages/page-14.png",
+      "sha256": "3b7cad3dd169e62248536d387fbb6720d44bdf32053f465831b03ad792c2715d"
+    },
+    {
+      "page": 15,
+      "file": "tmp/method_revision/pages/page-15.png",
+      "sha256": "42064e90ca4a56519f63c6c3377472beae1fada048f681f5873cb0d79d4c3677"
+    },
+    {
+      "page": 16,
+      "file": "tmp/method_revision/pages/page-16.png",
+      "sha256": "7d1d2c05d67a2d5adaebcab698dabac4d8fed5dcf55aa683d06fb8c10b3a154a"
+    },
+    {
+      "page": 17,
+      "file": "tmp/method_revision/pages/page-17.png",
+      "sha256": "d114ba6c1594bb3daac8bffb41ce2668d097f7de8897038b09bad98ff2cfc8b2"
+    },
+    {
+      "page": 18,
+      "file": "tmp/method_revision/pages/page-18.png",
+      "sha256": "13e75fe338bd60163152a8a5e93dba9f8ec1d9794a75d388c222bb412871c194"
+    },
+    {
+      "page": 19,
+      "file": "tmp/method_revision/pages/page-19.png",
+      "sha256": "4887de89a9a5cba180bfa3a6bba5e339af2b7786d9414ab31faead2325d6fe78"
+    },
+    {
+      "page": 20,
+      "file": "tmp/method_revision/pages/page-20.png",
+      "sha256": "74f0ac97b4671f846a4d866de41046791112f6d6b33d600357825230c4ef4470"
+    },
+    {
+      "page": 21,
+      "file": "tmp/method_revision/pages/page-21.png",
+      "sha256": "25bf4dd44c50f6528b963944b95b8ea088896bad3370f00fc3d568bdb4d5ed04"
+    }
+  ],
+  "all_pages_individually_viewed": true,
+  "all_ten_figures_reviewed": true,
+  "grayscale_reviewed": true,
+  "figures": [
+    {
+      "figure": 1,
+      "caption": "图1 系统总体结构",
+      "grayscale_file": "tmp/method_revision/图1-gray.png",
+      "grayscale_sha256": "897dfe7b63d052c50d0848d2c686c0f860b99fa4ab646e8f951a952e0a6c2028",
+      "review_note": "LoRa/UART、ACK和读取/记录箭头方向及标签对应；虚线图例明确预留与评价。"
+    },
+    {
+      "figure": 2,
+      "caption": "图2 双支路台架水路与测点布置",
+      "grayscale_file": "tmp/method_revision/图2-gray.png",
+      "grayscale_sha256": "54dcf97f567e3506349cc5777045c069afc0db13ba2c611c692cb2dee1afafba",
+      "review_note": "P0/P1包围R，Q位于分流前；泄漏独立收集，正常回水分开；右侧留白完整。"
+    },
+    {
+      "figure": 3,
+      "caption": "图3 验证台架三维布局设计",
+      "grayscale_file": "tmp/method_revision/图3-gray.png",
+      "grayscale_sha256": "296347a46c05e4a061bd91c2444b5e750852cb8682f4ae72b15070efa2c158bc",
+      "review_note": "编号1至8与测点、阀件、收集容器和节点对应；为结构设计图，未声称实物。"
+    },
+    {
+      "figure": 4,
+      "caption": "图4 压力与流量采集接口",
+      "grayscale_file": "tmp/method_revision/图4-gray.png",
+      "grayscale_sha256": "028edc40d5531ac5ff1b11701aedd97a3df61b506c33cac2720700ff5a30a541",
+      "review_note": "两路4–20mA回路、150Ω取样、ADS1115及5V至3.3V脉冲接口对应正文；为功能接口图。"
+    },
+    {
+      "figure": 5,
+      "caption": "图5 拟研究的事件触发采集与模拟控制流程",
+      "grayscale_file": "tmp/method_revision/图5-gray.png",
+      "grayscale_sha256": "7049106fe6ac8cafacbf2534ea7c9a7b1d87fe37ca1495e0d460f78d767400db",
+      "review_note": "拟研究的分级采集与保护条件分开；恢复箭头和人工模拟入口清晰；未冒充当前已实现策略。"
+    },
+    {
+      "figure": 6,
+      "caption": "图6 固定1Hz基线的双时间窗诊断流程",
+      "grayscale_file": "tmp/method_revision/图6-gray.png",
+      "grayscale_sha256": "294d6e0cccaf3e17fc352ea23fe1e1e65abdaeab5b7032e58ff2f0e3667a1dff",
+      "review_note": "3秒/10秒窗口、4/11计数端点、3/10压力观测、2/5次确认与当前软件语义一致。"
+    },
+    {
+      "figure": 7,
+      "caption": "图7 事件接收确认与重传时序",
+      "grayscale_file": "tmp/method_revision/图7-gray.png",
+      "grayscale_sha256": "8ece504d55659206d00c2346cfedd6fdf2908834644a2375ddd929fa25cc27fe",
+      "review_note": "事务成功后确认，同身份重发去重后再确认；实线/虚线无需颜色区分。"
+    },
+    {
+      "figure": 8,
+      "caption": "图8 前期巡检界面（K/R合成数据回放）",
+      "grayscale_file": "tmp/method_revision/图8-gray.png",
+      "grayscale_sha256": "7a14d11147fd51f05947c9fad18ae013043f3cf3610e383ce0d549eeaade2b4c",
+      "review_note": "根号、上标和量纲显示正常；图注及正文明确为前期K/R合成回放界面。"
+    },
+    {
+      "figure": 9,
+      "caption": "图9 候选判据的有效早期与正常误报对照（合成回放）",
+      "grayscale_file": "tmp/method_revision/图9-gray.png",
+      "grayscale_sha256": "43336e633b82907690b087971a6f5458e0a183a35ba56c9ad05a9bf0a69114ef",
+      "review_note": "空白/斜线/交叉纹理与图例对应；三面板区分早期识别及正常误报；全部计数核对来源。"
+    },
+    {
+      "figure": 10,
+      "caption": "图10 初始K/R判据的负载歧义与压力漂移反例（仿真）",
+      "grayscale_file": "tmp/method_revision/图10-gray.png",
+      "grayscale_sha256": "6dbb27756b4bbfccd116cd61c61a8bb06cd3f737bf6c9151adc783a697ce7d20",
+      "review_note": "实线、空心圆与虚线可灰度区分；R量纲、K相对参照及时间轴正常；明确初始模型反例。"
+    }
+  ],
+  "visual_findings": "本次实际查看未发现压线、标注越框、裁切、异常拉伸或图注跨页。",
+  "necessary_blank_areas": {
+    "11": "保留图8完整可读尺寸，图像随说明置于次页。",
+    "13": "保留表2完整呈现。",
+    "19": "正文结束及预算空位。",
+    "1–3,20–21": "学校模板、填写信息及审批区域。"
+  },
+  "scope_limit": "本轮验收是文档、图文和软件证据一致性复核；不代表实物、射频、功耗或田间性能通过。"
+}

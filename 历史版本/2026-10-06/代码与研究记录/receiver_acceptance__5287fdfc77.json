@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "05e88b369dd6d281253b450824ddd74d68ce4213c909f13f2484a76ca07dd8dc",
+  "validator_sha256": "8f859124e4c4e2bd8d174e0b04e957c0b930d69ceb9a615c16703812d9cee552",
+  "checks": [
+    "unknown_evidence_has_no_commit_or_ACK",
+    "pre_commit_fault_rolls_back_without_ACK",
+    "post_commit_replay_is_idempotent_and_ACKs_original_identity",
+    "old_snapshot_age_and_first_receipt_never_refreshed_by_retransmission",
+    "held_counter_is_unavailable_not_current_flow_evidence",
+    "same_identity_conflict_never_overwrites_original"
+  ]
+}

@@ -1,0 +1,1706 @@
+{
+  "classification": "uncalibrated_synthetic_heldout_noise_test",
+  "physical_data": false,
+  "fresh_trajectories": 960,
+  "paired_method_records": 2880,
+  "unique_test_noise_seeds": 40,
+  "training_seed_overlap": false,
+  "seed_reuse": "Same base noise sequence reused across all six kinds and four sigmas; not 960 independent experiments.",
+  "generalization": "New random seeds only. Same hydraulic law, fixed timing and severity; no field or model-domain validation.",
+  "thresholds_optimized_on_test": false,
+  "parameters_sha256": "607623ee3069110265e7ffa9fc319a87d7fb84312b4a7269b676442c50d3ff07",
+  "parameters": {
+    "settings": {
+      "version": "20261006-cusum-v1",
+      "k": 0.5,
+      "min_h": 5.0,
+      "healthy_peak_margin": 1.1,
+      "k_relative_scale_floor": 0.003,
+      "r_absolute_scale_floor": 0.03,
+      "fixed_acquisition_s": 1,
+      "training_seeds": [
+        21000,
+        21001,
+        21002,
+        21003,
+        21004,
+        21005,
+        21006,
+        21007,
+        21008,
+        21009,
+        21010,
+        21011,
+        21012,
+        21013,
+        21014,
+        21015,
+        21016,
+        21017,
+        21018,
+        21019,
+        21020,
+        21021,
+        21022,
+        21023,
+        21024,
+        21025,
+        21026,
+        21027,
+        21028,
+        21029,
+        21030,
+        21031,
+        21032,
+        21033,
+        21034,
+        21035,
+        21036,
+        21037,
+        21038,
+        21039
+      ],
+      "test_seeds": [
+        22000,
+        22001,
+        22002,
+        22003,
+        22004,
+        22005,
+        22006,
+        22007,
+        22008,
+        22009,
+        22010,
+        22011,
+        22012,
+        22013,
+        22014,
+        22015,
+        22016,
+        22017,
+        22018,
+        22019,
+        22020,
+        22021,
+        22022,
+        22023,
+        22024,
+        22025,
+        22026,
+        22027,
+        22028,
+        22029,
+        22030,
+        22031,
+        22032,
+        22033,
+        22034,
+        22035,
+        22036,
+        22037,
+        22038,
+        22039
+      ],
+      "parameter_selection": "Healthy-only maximum path score, per channel; no fault outcomes used.",
+      "training_kinds": [
+        "normal",
+        "supply"
+      ],
+      "operating_state_gating": false,
+      "missing_observations_filled": false,
+      "scale_estimator": "1.4826*MAD over initial healthy [20,120), with declared floors",
+      "uncertainty": "Random pressure sigma is not manufacturer accuracy; no physical measurements.",
+      "controls_horizon_s": 470,
+      "long_healthy_horizon_s": 3470,
+      "controls_observations": 471,
+      "long_healthy_observations": 3471
+    },
+    "training_trajectories": 320,
+    "h_k": 362.7048818947263,
+    "h_r": 419.7513639093557,
+    "source_hashes": {
+      "simulation/review_cusum.py": "c3b21a6cb4b4960fa23b660abb947ae9182dd499bbe711d32bbdec9427a59638",
+      "simulation/review_diagnosis.py": "c2d0f89bd8c8ec3dd43cc91c3623fd2793132dfece20aa13bfa66842bf286d4f",
+      "simulation/diagnosis_review/protocol.json": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426"
+    }
+  },
+  "groups": [
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 1,
+      "false_onsets": 1,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 1,
+      "false_onsets": 1,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 39,
+      "false_onsets": 189,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "normal",
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 1,
+      "false_onsets": 1,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 1,
+      "false_onsets": 1,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 1,
+      "false_onsets": 2,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 39,
+      "false_onsets": 209,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "supply",
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 1,
+      "false_onsets": 2,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 48.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 51.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 50.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 48.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 51.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 50.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 48.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 51.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 42.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 48.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 2,
+      "false_alarm_trials": 38,
+      "false_onsets": 95,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 47.5,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "prior_false_alarm": 38,
+        "valid_early": 2
+      }
+    },
+    {
+      "kind": "leak",
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 29,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 12.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "late_detection": 11,
+        "valid_early": 29
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 78.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 110.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 100.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 78.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 110.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 94.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 78.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 110.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 69.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 40,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 78.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "valid_early": 40
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 2,
+      "false_alarm_trials": 38,
+      "false_onsets": 95,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 109.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "prior_false_alarm": 38,
+        "valid_early": 2
+      }
+    },
+    {
+      "kind": "restriction",
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 36,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 9200,
+      "median_valid_lead_s": 23.0,
+      "no_correct_detection_trials": 0,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "late_detection": 4,
+        "valid_early": 36
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 52,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 93,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 0,
+      "false_onsets": 0,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 329,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "drift",
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 5,
+      "false_onsets": 5,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 41,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 41,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 41,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 40,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 223,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    },
+    {
+      "kind": "load_unknown",
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "early_trials": 0,
+      "false_alarm_trials": 40,
+      "false_onsets": 41,
+      "exposure_seconds": 18800,
+      "median_valid_lead_s": null,
+      "no_correct_detection_trials": null,
+      "wrong_first_trials": 0,
+      "outcomes": {
+        "no_fault_control": 40
+      }
+    }
+  ],
+  "stresses": [
+    {
+      "case": "timestamp_delay_0",
+      "method": "flow_only",
+      "first_alarm_s": 187,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "pressure_time_skew",
+      "value": 0.0
+    },
+    {
+      "case": "timestamp_delay_0",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "pressure_time_skew",
+      "value": 0.0
+    },
+    {
+      "case": "timestamp_delay_0",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "pressure_time_skew",
+      "value": 0.0
+    },
+    {
+      "case": "timestamp_delay_0.1",
+      "method": "flow_only",
+      "first_alarm_s": 187,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "pressure_time_skew",
+      "value": 0.1
+    },
+    {
+      "case": "timestamp_delay_0.1",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "pressure_time_skew",
+      "value": 0.1
+    },
+    {
+      "case": "timestamp_delay_0.1",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "pressure_time_skew",
+      "value": 0.1
+    },
+    {
+      "case": "timestamp_delay_1",
+      "method": "flow_only",
+      "first_alarm_s": 187,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "pressure_time_skew",
+      "value": 1.0
+    },
+    {
+      "case": "timestamp_delay_1",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "pressure_time_skew",
+      "value": 1.0
+    },
+    {
+      "case": "timestamp_delay_1",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "pressure_time_skew",
+      "value": 1.0
+    },
+    {
+      "case": "timestamp_delay_5",
+      "method": "flow_only",
+      "first_alarm_s": 187,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "pressure_time_skew",
+      "value": 5.0
+    },
+    {
+      "case": "timestamp_delay_5",
+      "method": "physical",
+      "first_alarm_s": 306,
+      "first_pattern": "uncertain",
+      "alarm_onsets": 1,
+      "challenge": "pressure_time_skew",
+      "value": 5.0
+    },
+    {
+      "case": "timestamp_delay_5",
+      "method": "cusum",
+      "first_alarm_s": 310,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "pressure_time_skew",
+      "value": 5.0
+    },
+    {
+      "case": "load_exponent_0_supply_80",
+      "method": "flow_only",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0/80"
+    },
+    {
+      "case": "load_exponent_0_supply_80",
+      "method": "physical",
+      "first_alarm_s": 187,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0/80"
+    },
+    {
+      "case": "load_exponent_0_supply_80",
+      "method": "cusum",
+      "first_alarm_s": 193,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0/80"
+    },
+    {
+      "case": "load_exponent_0_supply_160",
+      "method": "flow_only",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0/160"
+    },
+    {
+      "case": "load_exponent_0_supply_160",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0/160"
+    },
+    {
+      "case": "load_exponent_0_supply_160",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0/160"
+    },
+    {
+      "case": "load_exponent_0.3_supply_80",
+      "method": "flow_only",
+      "first_alarm_s": 189,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.3/80"
+    },
+    {
+      "case": "load_exponent_0.3_supply_80",
+      "method": "physical",
+      "first_alarm_s": 191,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.3/80"
+    },
+    {
+      "case": "load_exponent_0.3_supply_80",
+      "method": "cusum",
+      "first_alarm_s": 201,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.3/80"
+    },
+    {
+      "case": "load_exponent_0.3_supply_160",
+      "method": "flow_only",
+      "first_alarm_s": 190,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.3/160"
+    },
+    {
+      "case": "load_exponent_0.3_supply_160",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.3/160"
+    },
+    {
+      "case": "load_exponent_0.3_supply_160",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.3/160"
+    },
+    {
+      "case": "load_exponent_0.5_supply_80",
+      "method": "flow_only",
+      "first_alarm_s": 187,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.5/80"
+    },
+    {
+      "case": "load_exponent_0.5_supply_80",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.5/80"
+    },
+    {
+      "case": "load_exponent_0.5_supply_80",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.5/80"
+    },
+    {
+      "case": "load_exponent_0.5_supply_160",
+      "method": "flow_only",
+      "first_alarm_s": 187,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.5/160"
+    },
+    {
+      "case": "load_exponent_0.5_supply_160",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.5/160"
+    },
+    {
+      "case": "load_exponent_0.5_supply_160",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.5/160"
+    },
+    {
+      "case": "load_exponent_0.8_supply_80",
+      "method": "flow_only",
+      "first_alarm_s": 186,
+      "first_pattern": "restriction_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.8/80"
+    },
+    {
+      "case": "load_exponent_0.8_supply_80",
+      "method": "physical",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.8/80"
+    },
+    {
+      "case": "load_exponent_0.8_supply_80",
+      "method": "cusum",
+      "first_alarm_s": null,
+      "first_pattern": null,
+      "alarm_onsets": 0,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.8/80"
+    },
+    {
+      "case": "load_exponent_0.8_supply_160",
+      "method": "flow_only",
+      "first_alarm_s": 186,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.8/160"
+    },
+    {
+      "case": "load_exponent_0.8_supply_160",
+      "method": "physical",
+      "first_alarm_s": 191,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.8/160"
+    },
+    {
+      "case": "load_exponent_0.8_supply_160",
+      "method": "cusum",
+      "first_alarm_s": 201,
+      "first_pattern": "leak_pattern",
+      "alarm_onsets": 1,
+      "challenge": "unfitted_healthy_load_law",
+      "value": "0.8/160"
+    }
+  ],
+  "long_healthy": [
+    {
+      "pressure_sigma_kpa": 0.3,
+      "method": "flow_only",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 0.3,
+      "method": "physical",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 0.3,
+      "method": "cusum",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 1.0,
+      "method": "flow_only",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 1.0,
+      "method": "physical",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 1.0,
+      "method": "cusum",
+      "trials": 40,
+      "false_alarm_trials": 3,
+      "alarm_onsets": 7
+    },
+    {
+      "pressure_sigma_kpa": 3.0,
+      "method": "flow_only",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 3.0,
+      "method": "physical",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 3.0,
+      "method": "cusum",
+      "trials": 40,
+      "false_alarm_trials": 4,
+      "alarm_onsets": 16
+    },
+    {
+      "pressure_sigma_kpa": 10.0,
+      "method": "flow_only",
+      "trials": 40,
+      "false_alarm_trials": 0,
+      "alarm_onsets": 0
+    },
+    {
+      "pressure_sigma_kpa": 10.0,
+      "method": "physical",
+      "trials": 40,
+      "false_alarm_trials": 40,
+      "alarm_onsets": 1317
+    },
+    {
+      "pressure_sigma_kpa": 10.0,
+      "method": "cusum",
+      "trials": 40,
+      "false_alarm_trials": 3,
+      "alarm_onsets": 19
+    }
+  ],
+  "long_healthy_note": "Reuses held-out seeds; separate horizon challenge, not new independent trials.",
+  "source_sha256": {
+    "heldout_observations.npz": "241273605d90f2d02d2d95506e6eecac7460d6e78a81e4cc158dd5ff5aa15a51",
+    "paired_results.csv": "c68ff6b114872620c6f45880c0dd150bf432559a011095cd29e5e20e657ba150",
+    "healthy_training.csv": "0383cc8571beb003958a6c8aabb1946883e62c7eb2f5982b26431b0d3418da0f",
+    "stress_results.csv": "16f35705f7271b0188fd5db6961f81b5c74a33a92433e09755e65a72744ece64",
+    "long_healthy_results.csv": "efd3eebf6743cf42804d4152e359f77e65b5b62a05a8e90994c154e9f0e23382"
+  }
+}
