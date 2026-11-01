@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261",
+  "validator_sha256": "168fa8c12e83ba94a4c01fd46b18d6ccf87429445b181c430f222a1776ba2146",
+  "checks": [
+    "one_thousand_telemetry_updates_keep_one_live_and_bounded_history",
+    "latest_telemetry_identity_survives_history_pruning_without_requeue",
+    "seventeenth_dense_event_rejected_without_overwriting_sixteen",
+    "exact_ttl_frees_event_slot_without_extending_deadline"
+  ],
+  "telemetry_stress_records": 1000,
+  "inherited_budget_checks": 19,
+  "peak_telemetry_stress_wire_bytes": 3630,
+  "last_dense_event_storage": {
+    "rows": {
+      "recovery_meta": 1,
+      "recovery_live": 16,
+      "recovery_probe": 0,
+      "recovery_audit": 2,
+      "admission_policy": 1
+    },
+    "retained_wire_bytes": 969,
+    "snapshot_bytes": 0,
+    "last_telemetry_wire_bytes": 0
+  },
+  "conservative_wire_and_snapshot_bound_bytes": 5283,
+  "exclusions": [
+    "SQLite pages and journal",
+    "Flash layout and wear",
+    "sudden power loss"
+  ]
+}

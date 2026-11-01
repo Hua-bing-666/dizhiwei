@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-06",
+  "physical_data": false,
+  "parameters_sha256": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261",
+  "report_sha256": "940524cb2a0e6ab7b0fbe26fe56c4b9fc824a355898f0048cd00215f15700154",
+  "figures": [
+    {
+      "name": "01_事件接纳与遥测让位",
+      "png_sha256": "45b0ae1dda998e26d31d1df0bb3b444308e0e299d8198496e401781c926c27e0",
+      "final_png_viewed": true,
+      "black_and_white_distinguishable": true,
+      "no_observed_overlap_clipping_or_misalignment": true
+    },
+    {
+      "name": "02_事件缺失与通信取舍",
+      "png_sha256": "f7fcafda03524771b8a9d37825eb7c013845a04cfed49c97abc1476e3c9a0563",
+      "final_png_viewed": true,
+      "black_and_white_distinguishable": true,
+      "no_observed_overlap_clipping_or_misalignment": true
+    }
+  ],
+  "group_summary_independently_recomputed": true,
+  "frozen_sources_and_gate_hashes_verified": true,
+  "exclusions": [
+    "Word insertion and print size",
+    "STM32 RAM or Flash acceptance",
+    "Sudden power loss",
+    "Physical radio or energy measurements",
+    "Field diagnosis performance"
+  ]
+}

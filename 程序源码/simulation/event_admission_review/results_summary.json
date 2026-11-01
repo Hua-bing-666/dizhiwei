@@ -1,0 +1,15 @@
+{
+  "parameters_sha256": "6bec73cc33fc58fe1419b926bec0bec7a070f389e92584512adaa19a304a7261",
+  "physical_data": false,
+  "datasets": {
+    "paired_results.csv": {
+      "rows": 648,
+      "sha256": "6a0f3eefb8dfe186735d02f38596bc97f8ff6e7b6fb880337bfdaa5bf968cc9e"
+    },
+    "holdout_results.csv": {
+      "rows": 96,
+      "sha256": "46cf06d930c863e79b84e3f8bee78880a1ab7f84ff932e5ddf5b05abf802c382"
+    }
+  },
+  "note": "Matched generated snapshots and business requests; same synthetic model, not physical trials"
+}
