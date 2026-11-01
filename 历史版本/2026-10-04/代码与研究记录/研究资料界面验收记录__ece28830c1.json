@@ -1,0 +1,204 @@
+{
+  "classification": "offline_software_ui_checks_not_physical_validation",
+  "widths": [
+    375,
+    768,
+    1024,
+    1440
+  ],
+  "navigation_checks": [
+    {
+      "page": "overview",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "diagnosis",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "model",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "evidence",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "communication",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "routes",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "slides",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "files",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "page": "overview",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "diagnosis",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "model",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "evidence",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "communication",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "routes",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "slides",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "files",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "page": "overview",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "diagnosis",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "model",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "evidence",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "communication",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "routes",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "slides",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "files",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "page": "overview",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "diagnosis",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "model",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "evidence",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "communication",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "routes",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "slides",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "page": "files",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "maintenance_checks": [
+    "review_required",
+    "note_required",
+    "recheck_evidence_required",
+    "manual_archive_marked_demo",
+    "export_clicked",
+    "survives_page_reload",
+    "offline_cannot_archive",
+    "invalid_not_normal",
+    "actual_export_json_verified"
+  ],
+  "viewer_checks": [
+    {
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    "button_and_keyboard_controls_executed"
+  ],
+  "external_requests": [],
+  "console_errors": [],
+  "status": "passed"
+}

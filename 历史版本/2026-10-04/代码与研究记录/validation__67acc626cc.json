@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-04",
+  "status": "passed_with_uncalibrated_simulation_scope",
+  "physical_validation": false,
+  "independent_external_review": false,
+  "generator_imported": false,
+  "checks": [
+    {
+      "check": "hydraulic_truth_numerical_supply_balance",
+      "result": "passed",
+      "detail": "3606 kind/time points; healthy references and severity independently recomputed"
+    },
+    {
+      "check": "existing_range_grid",
+      "result": "passed",
+      "detail": "24 rows independently solved, preserving the hardware-design parameters"
+    },
+    {
+      "check": "raw_draws_and_paired_replay",
+      "result": "passed",
+      "detail": "480 saved noise draws; all 960 rule records and 24 selected traces independently checked"
+    },
+    {
+      "check": "group_and_failure_accounting",
+      "result": "passed",
+      "detail": "48 groups, exclusive 20-trial outcomes, success-only medians and Wilson intervals"
+    },
+    {
+      "check": "non_identifiability_counterexample",
+      "result": "passed",
+      "detail": "all 80 paired leak/unknown-normal-load raw observations are exactly equal"
+    },
+    {
+      "check": "future_perturbation",
+      "result": "passed",
+      "detail": "future samples do not affect the independent causal replay or earlier events"
+    },
+    {
+      "check": "bounded_boxes_and_threshold_margins",
+      "result": "passed",
+      "detail": "288 targets; all 4608 healthy/fault box corners and 8 grouped summaries independently checked; per-target feature only"
+    },
+    {
+      "check": "timing_challenges",
+      "result": "passed",
+      "detail": "8 noiseless skew challenges independently replayed; not measured sensor response"
+    },
+    {
+      "check": "healthy_model_mismatch",
+      "result": "passed",
+      "detail": "16 method records independently solved/replayed; pressure exponents remain hypothetical"
+    },
+    {
+      "check": "historical_preservation",
+      "result": "passed",
+      "detail": "legacy reproduction record and its three source hashes checked; historical results not replaced"
+    }
+  ],
+  "source_sha256": {
+    "scripts/validate_diagnosis_review.py": "d3c382209c62b96b953a9ad695c09e6595c948f4abe404c4eaee65ecec1b310c",
+    "simulation/diagnosis_review/protocol.json": "c4a24c697c0547a458c01018ac92fe1fe9a6fae30286725b61c4579758bf7426",
+    "simulation/diagnosis_review/summary.json": "b06c2843683fabe074cee8c854291052e61a67785852454ea64dab91a0b5d195",
+    "simulation/diagnosis_review/raw_trials.npz": "3852f834b15fbcea22a24b1b41d2d1b7f4cd9c13bf8b2cf22a4969f0dab4ee38",
+    "simulation/diagnosis_review/method_results.csv": "648d6be82e0879b4bb80046627e8d3a777f2e2ad0467f57002781ac901b2667b",
+    "simulation/diagnosis_review/error_intervals.csv": "53916f83979ff1deb75b0f849c16b0f41a45074412fb13e366e8657fe9c1ec9b",
+    "simulation/diagnosis_review/timing_challenges.csv": "6702a212f8663e829891bb3b30859288adabb89c04efb2132135423febec5880",
+    "simulation/diagnosis_review/model_mismatch_challenges.csv": "a32095689e2132983d7bd0b00357880f52749253f8e37830844302be4d90c447",
+    "simulation/diagnosis_review/legacy_audit.json": "61fa0a4ba27726c6556f744b14db098cf4b38a845c5032a27c09a35f8fae8d70",
+    "simulation/hardware_results/range_grid.csv": "35d5f07302f4f0f35d8bb47673d4a32078fda9cafe4545a2f94a0eaada59e367"
+  }
+}
