@@ -1,0 +1,10 @@
+{
+  "step_reopened_valid": true,
+  "valid_solids": 199,
+  "fluid_centre_probes": 96,
+  "blocked_fluid_probes": 0,
+  "free_discharge_gap_mm": 20.0,
+  "glb_header_length_and_metre_Yup_transform": "passed",
+  "manufacturing_or_physical_validation": false,
+  "limits": "Centre probes are sparse concept checks, not a whole-bore, clearance, pressure or assembly approval."
+}

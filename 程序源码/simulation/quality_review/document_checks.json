@@ -1,0 +1,574 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_programmatic_native_draft_checks_visual_review_pending",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "native_pdf_pages": 25,
+  "figures": [
+    {
+      "caption": "图1 系统职责与独立评价关系 拟实施方案",
+      "source": "application/figures/quality_review/system_responsibilities.png",
+      "sha256": "cff97b343170759328495174ca06f0400c0010b0acbae71863ec45f21e4208d8",
+      "width_pt": 420.0,
+      "height_pt": 289.8,
+      "relative_aspect_error": 2.220446049250313e-16,
+      "minimum_major_font_pt": 10.08,
+      "native_page": 5,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图2 双支路清水台架与故障注入位置 原理关系示意",
+      "source": "application/figures/quality_review/water_layout.png",
+      "sha256": "fe86f290ea9930b51e145edcbcb9a054d966a8502dc3f8230840d439c4af5e6c",
+      "width_pt": 420.0,
+      "height_pt": 273.0,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 10.08,
+      "native_page": 6,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图3 台架装配及独立收集布局 未制造概念模型",
+      "source": "application/figures/quality_review/collection_overview.png",
+      "sha256": "b89b95c427708c9025604bb160387adebf28af844cb022ac48e50e2bdcb518b0",
+      "width_pt": 420.0,
+      "height_pt": 378.85,
+      "relative_aspect_error": 2.6396367859726766e-05,
+      "minimum_major_font_pt": 10.08,
+      "native_page": 7,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图4 双压力与流量采集接口 功能设计 保护定值待验证",
+      "source": "application/figures/quality_review/measurement_interfaces.png",
+      "sha256": "607e92d9f1a61b8925ccca19ab4cfdc618e2c94951609398bcce456091ec4638",
+      "width_pt": 420.0,
+      "height_pt": 390.6,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 10.08,
+      "native_page": 8,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图5 质量与工况辅助诊断流程 拟实施 门控尚未实现",
+      "source": "application/figures/quality_review/diagnosis_proposal.png",
+      "sha256": "11bb2165580ddfb6dfbdbb81a578e0dc9c62a80ae9d2cf1682524f25be736ecd",
+      "width_pt": 420.0,
+      "height_pt": 357.0,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 10.08,
+      "native_page": 10,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图6 持久化确认与丢ACK重试关系 候选协议 非真实射频",
+      "source": "application/figures/quality_review/durable_event_sequence.png",
+      "sha256": "fa6a168611eedd246aa53af8be889f711510e0bbb79ed2baa9a67255de6d253e",
+      "width_pt": 420.0,
+      "height_pt": 390.6,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 10.08,
+      "native_page": 12,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图7 当前离线Web诊断卡片 原生截图 合成观测 未接实物",
+      "source": "application/figures/quality_review/website_diagnosis_panel.png",
+      "sha256": "3b2605439253b49e4d5eb0dbc3262ec9292a3015c8c89631230557f7d7271216",
+      "width_pt": 390.0,
+      "height_pt": 475.05,
+      "relative_aspect_error": 4.952793685175649e-05,
+      "minimum_major_font_pt": 9.558823529411764,
+      "native_page": 13,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图8 不同压力噪声下的有效早期计数 同源合成统计 非实测",
+      "source": "application/figures/quality_review/noise_outcomes_print.png",
+      "sha256": "543925384cf0c535f8c6836641ae3228e9ba4ac0a29ed252b0e1bf6ad86799c8",
+      "width_pt": 420.0,
+      "height_pt": 405.3,
+      "relative_aspect_error": 2.220446049250313e-16,
+      "minimum_major_font_pt": 9.607843137254902,
+      "native_page": 20,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图9 未知负载 漂移与模型失配反例 合成证据",
+      "source": "application/figures/quality_review/failure_counterexamples.png",
+      "sha256": "511dfed33e54b09132bbb5b5ab19e9d9590c09790715cb55fcc2b8128b5b4f25",
+      "width_pt": 420.0,
+      "height_pt": 405.3,
+      "relative_aspect_error": 2.220446049250313e-16,
+      "minimum_major_font_pt": 9.607843137254902,
+      "native_page": 21,
+      "image_and_caption_same_page": true
+    }
+  ],
+  "editable_tables": [
+    {
+      "caption": "表1 四工作包与验证交付",
+      "rows": 5,
+      "columns": 4,
+      "widths_pt": [
+        70.0,
+        100.0,
+        145.0,
+        110.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 14
+    },
+    {
+      "caption": "表2 独立实验与对照安排",
+      "rows": 7,
+      "columns": 3,
+      "widths_pt": [
+        85.0,
+        140.0,
+        200.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 15
+    },
+    {
+      "caption": "表3 三阶段与实施里程碑",
+      "rows": 9,
+      "columns": 3,
+      "widths_pt": [
+        90.0,
+        150.0,
+        185.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 19
+    },
+    {
+      "caption": "表4 候选资源与条件预算",
+      "rows": 10,
+      "columns": 3,
+      "widths_pt": [
+        110.0,
+        55.0,
+        260.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 23
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "page": 17
+    },
+    {
+      "number": 2,
+      "page": 17
+    },
+    {
+      "number": 3,
+      "page": 17
+    },
+    {
+      "number": 4,
+      "page": 17
+    },
+    {
+      "number": 5,
+      "page": 17
+    },
+    {
+      "number": 6,
+      "page": 17
+    },
+    {
+      "number": 7,
+      "page": 17
+    },
+    {
+      "number": 8,
+      "page": 17
+    },
+    {
+      "number": 9,
+      "page": 17
+    },
+    {
+      "number": 10,
+      "page": 17
+    },
+    {
+      "number": 11,
+      "page": 17
+    },
+    {
+      "number": 12,
+      "page": 17
+    },
+    {
+      "number": 13,
+      "page": 18
+    },
+    {
+      "number": 14,
+      "page": 18
+    },
+    {
+      "number": 15,
+      "page": 18
+    },
+    {
+      "number": 16,
+      "page": 18
+    },
+    {
+      "number": 17,
+      "page": 18
+    }
+  ],
+  "chinese_references": 11,
+  "english_references": 6,
+  "pdf_character_bounds": [
+    {
+      "page": 1,
+      "characters": 154,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 2,
+      "characters": 447,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 3,
+      "characters": 391,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 4,
+      "characters": 1367,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 5,
+      "characters": 332,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 6,
+      "characters": 324,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 7,
+      "characters": 693,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 8,
+      "characters": 746,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 9,
+      "characters": 1150,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 10,
+      "characters": 471,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 11,
+      "characters": 860,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 12,
+      "characters": 192,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 13,
+      "characters": 343,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 14,
+      "characters": 636,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 15,
+      "characters": 1120,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 16,
+      "characters": 1287,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 17,
+      "characters": 1733,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 18,
+      "characters": 1838,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 19,
+      "characters": 1083,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 20,
+      "characters": 577,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 21,
+      "characters": 443,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 22,
+      "characters": 739,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 23,
+      "characters": 427,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 24,
+      "characters": 37,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    },
+    {
+      "page": 25,
+      "characters": 64,
+      "width_pt": 595.2999877929688,
+      "height_pt": 841.9000244140625
+    }
+  ],
+  "outside_page_characters": [],
+  "rendered_pages": [
+    {
+      "page": 1,
+      "path": "tmp/quality_application/render-final/page-01.png",
+      "sha256": "bfbfed516c3617642394f277619a3cd7ecf0934238aa2eb231c6400459498055"
+    },
+    {
+      "page": 2,
+      "path": "tmp/quality_application/render-final/page-02.png",
+      "sha256": "142ba23466ba81df28372384766755520fc799d5dba7922f0cdb1ed905918715"
+    },
+    {
+      "page": 3,
+      "path": "tmp/quality_application/render-final/page-03.png",
+      "sha256": "b334746e03eddb48e4e6b82085251fb8052c52a4339c5339c55676f78f09e633"
+    },
+    {
+      "page": 4,
+      "path": "tmp/quality_application/render-final/page-04.png",
+      "sha256": "50655aebe714d0922652713c30f46b9cf3dbdd509d50c6d729948fbc0d5d28d4"
+    },
+    {
+      "page": 5,
+      "path": "tmp/quality_application/render-final/page-05.png",
+      "sha256": "48123793a41e8a45aeacb9c795a4fd25ce1bf2e336b2b3c5e42cdfaf2e6fc9f8"
+    },
+    {
+      "page": 6,
+      "path": "tmp/quality_application/render-final/page-06.png",
+      "sha256": "a8a09d2d1e3d03a5ad440b4fd71ad9e4fa7715f7490b6c5d43b78e0dec90a714"
+    },
+    {
+      "page": 7,
+      "path": "tmp/quality_application/render-final/page-07.png",
+      "sha256": "29f3dbc118608c7700f461a353847a76bfbcd94191622463bf9d8e1714da8e5a"
+    },
+    {
+      "page": 8,
+      "path": "tmp/quality_application/render-final/page-08.png",
+      "sha256": "f7447759fd8aa4150e22c51d43894486aa1bcf5bc236c8f7b525b3d8896360ec"
+    },
+    {
+      "page": 9,
+      "path": "tmp/quality_application/render-final/page-09.png",
+      "sha256": "5a91bf65ab455e01dd80b84d7b836a2e7ae39164ada43bd145bf6dbd58683df9"
+    },
+    {
+      "page": 10,
+      "path": "tmp/quality_application/render-final/page-10.png",
+      "sha256": "7487da64b075d2e98fdc0fe2bff251423e7c2c11cc7657ffae844db2caf6aa89"
+    },
+    {
+      "page": 11,
+      "path": "tmp/quality_application/render-final/page-11.png",
+      "sha256": "010394701d910c9a8b1f28586f8ae1ef238f04672389f179f966f879b5ba8911"
+    },
+    {
+      "page": 12,
+      "path": "tmp/quality_application/render-final/page-12.png",
+      "sha256": "9ca3d47e14bd99171db5933ef25b8bd4fbc171a29d48211a5543a5b01a631000"
+    },
+    {
+      "page": 13,
+      "path": "tmp/quality_application/render-final/page-13.png",
+      "sha256": "9507b147a24124d59a93ca3a27fb2bdb2849f4c223390bee30270eb7669ef4e6"
+    },
+    {
+      "page": 14,
+      "path": "tmp/quality_application/render-final/page-14.png",
+      "sha256": "c0efaa305978b6658b59a5d00c6e210a5be9080572958a8def34f0a851828f3a"
+    },
+    {
+      "page": 15,
+      "path": "tmp/quality_application/render-final/page-15.png",
+      "sha256": "40284b808623ec5d1ba454537095572eeb75d567b2ae0c1a5515a60f73703bbb"
+    },
+    {
+      "page": 16,
+      "path": "tmp/quality_application/render-final/page-16.png",
+      "sha256": "35063c222b96c77b366f52ff91974290651a5ab0935530d0dfadd270726fef20"
+    },
+    {
+      "page": 17,
+      "path": "tmp/quality_application/render-final/page-17.png",
+      "sha256": "94301366a9cd6b2a71ed5bb1a139dc4a6dcf24153e0c500d4efbf65cffcec5aa"
+    },
+    {
+      "page": 18,
+      "path": "tmp/quality_application/render-final/page-18.png",
+      "sha256": "0742d5cc0bcf5db0569f1d3991857625b2d7d16e2b85721201d12794ee3425a5"
+    },
+    {
+      "page": 19,
+      "path": "tmp/quality_application/render-final/page-19.png",
+      "sha256": "b620e7871d3b73fbacfd491ee02025a6a53e9023910d17e8c8127de421c391f8"
+    },
+    {
+      "page": 20,
+      "path": "tmp/quality_application/render-final/page-20.png",
+      "sha256": "4974326b96462fe5cc42e7d4f53eb195423b61537cd624be42ca80603c277ae1"
+    },
+    {
+      "page": 21,
+      "path": "tmp/quality_application/render-final/page-21.png",
+      "sha256": "e425bf975e9de5dca0e66f89bc49674b1fa344424a036e91b16e05a9c364b61e"
+    },
+    {
+      "page": 22,
+      "path": "tmp/quality_application/render-final/page-22.png",
+      "sha256": "2879e35f3a64def9cdb575db343d723cf883d061c97fae85f30400b71f223446"
+    },
+    {
+      "page": 23,
+      "path": "tmp/quality_application/render-final/page-23.png",
+      "sha256": "e535068c8c8bf7b24c6589372f4e102c5897d1de4edb5eb56fe594f5544dce49"
+    },
+    {
+      "page": 24,
+      "path": "tmp/quality_application/render-final/page-24.png",
+      "sha256": "7245f18486166bf56f3f66ee0473772c5188744e9875e486cf2d9e8e914ba838"
+    },
+    {
+      "page": 25,
+      "path": "tmp/quality_application/render-final/page-25.png",
+      "sha256": "293963a9ddf9f56849d630fd7d2cf3d28542b26c1c205077af249ba808a319ba"
+    }
+  ],
+  "source_sha256": {
+    "scripts/verify_quality_application.py": "3d39cc4cdac0676637ab2eb6a363acccb476db53185fb5a5c906a9d56cf053e5",
+    "application/正式模板正文.md": "dfb68bfa70597902e5db119c1e56abbb72de8ce33603a7c5cfc21063ca3b65dc",
+    "scripts/prepare_quality_payload.py": "e8a35b78df643ad35c4782e1c93d64976c3f2487348bad82cd550895e2ea6cff",
+    "scripts/fill_quality_application.ps1": "e9545cb892c3eb14bb6474a4e404e889739f423fcbb0a97da442c4d7cb2bef34",
+    "application/references.json": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb",
+    "tmp/quality_application/candidate/大创申报书_模板审阅版.pdf": "4f5a5c41b0247cadb96c538e6496797440bdd1497df0d3bd90360ee13876a13c",
+    "tmp/quality_application/candidate/大创申报书_模板填写稿.docx": "f8507ec81cfcd097486eedd3e0d58d876f977a3732a9f5e5d75ec2792e60f758",
+    "tmp/quality_application/candidate/native_layout.json": "bfc44d19e26275806800e5825c3c666076a6d4ee3c5072112d64b8d57b513981",
+    "tmp/quality_application/application_payload.json": "11ca4cad5f610f52da07f69220122347384b06061463f88999ac3da4acea97ae",
+    "simulation/quality_review/website_capture_checks.json": "050242c96febf8f4cbf0750724803c90c6fa58ab534918d7ce9dd826bbad6e40"
+  },
+  "school_section_headings": [
+    {
+      "heading": "一、项目简介（300字左右）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "二、申请理由（包括自身/团队具备的知识条件、特长、兴趣等）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "三、项目方案（项目内容、项目目标、技术路线、实验方案、要解决的主要问题）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "四、国、内外研究现状和发展动态",
+      "page": 16,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "五、项目的特色与创新点",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "六、项目预期成果",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "七、项目年度目标和工作内容（按年度写）",
+      "page": 19,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "八、已有基础",
+      "page": 20,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "九、项目经费使用计划",
+      "page": 22,
+      "first_body_on_same_page": true
+    }
+  ]
+}

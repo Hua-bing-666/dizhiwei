@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-05",
+  "classification": "ideal_pulse_and_usable_capacity_sensitivity_not_calibration",
+  "physical_validation": false,
+  "geometric_capacity_ml": 678.5840131753953,
+  "model_maximum_leak_l_min": 1.0550517985348604,
+  "sample_20s_required_ml_with_1_25_margin": 439.6049160561918,
+  "sample_30s_required_ml_with_1_25_margin": 659.4073740842878,
+  "capacity_sensitivity": [
+    {
+      "usable_fraction_assumption": 0.6,
+      "usable_capacity_ml_assumption": 407.15040790523716,
+      "maximum_seconds_with_1_25_margin": 18.52346928045699,
+      "twenty_seconds_fits_assumed_capacity": false,
+      "thirty_seconds_fits_assumed_capacity": false
+    },
+    {
+      "usable_fraction_assumption": 0.75,
+      "usable_capacity_ml_assumption": 508.93800988154646,
+      "maximum_seconds_with_1_25_margin": 23.154336600571238,
+      "twenty_seconds_fits_assumed_capacity": true,
+      "thirty_seconds_fits_assumed_capacity": false
+    },
+    {
+      "usable_fraction_assumption": 0.9,
+      "usable_capacity_ml_assumption": 610.7256118578558,
+      "maximum_seconds_with_1_25_margin": 27.78520392068549,
+      "twenty_seconds_fits_assumed_capacity": true,
+      "thirty_seconds_fits_assumed_capacity": false
+    },
+    {
+      "usable_fraction_assumption": 1.0,
+      "usable_capacity_ml_assumption": 678.5840131753953,
+      "maximum_seconds_with_1_25_margin": 30.872448800761653,
+      "twenty_seconds_fits_assumed_capacity": true,
+      "thirty_seconds_fits_assumed_capacity": true
+    }
+  ],
+  "recommended_provisional_sample_s": 20,
+  "required_calibrated_usable_capacity_ml_min": 440,
+  "pulse_windows": [
+    {
+      "window_s": 1,
+      "pulse_step_l_min": 0.1111111111111111,
+      "phase_only_max_error_l_min": 0.1111111111111111,
+      "minimum_expected_pulses_at_0_3_l_min": 2.7,
+      "causal_window_mean_delay_s": 0.5
+    },
+    {
+      "window_s": 5,
+      "pulse_step_l_min": 0.022222222222222223,
+      "phase_only_max_error_l_min": 0.022222222222222223,
+      "minimum_expected_pulses_at_0_3_l_min": 13.5,
+      "causal_window_mean_delay_s": 2.5
+    },
+    {
+      "window_s": 10,
+      "pulse_step_l_min": 0.011111111111111112,
+      "phase_only_max_error_l_min": 0.011111111111111112,
+      "minimum_expected_pulses_at_0_3_l_min": 27.0,
+      "causal_window_mean_delay_s": 5.0
+    },
+    {
+      "window_s": 20,
+      "pulse_step_l_min": 0.005555555555555556,
+      "phase_only_max_error_l_min": 0.005555555555555556,
+      "minimum_expected_pulses_at_0_3_l_min": 54.0,
+      "causal_window_mean_delay_s": 10.0
+    }
+  ],
+  "ideal_constant_flow_phase_checks": [
+    {
+      "flow_l_min": 0.3,
+      "window_s": 1,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.07777777777777778
+    },
+    {
+      "flow_l_min": 0.3,
+      "window_s": 5,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.011111111111111127
+    },
+    {
+      "flow_l_min": 0.3,
+      "window_s": 10,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 0.3,
+      "window_s": 20,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 1.85,
+      "window_s": 1,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.07222222222222241
+    },
+    {
+      "flow_l_min": 1.85,
+      "window_s": 5,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.016666666666666607
+    },
+    {
+      "flow_l_min": 1.85,
+      "window_s": 10,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.005555555555555536
+    },
+    {
+      "flow_l_min": 1.85,
+      "window_s": 20,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 3.0,
+      "window_s": 1,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 3.0,
+      "window_s": 5,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 3.0,
+      "window_s": 10,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 3.0,
+      "window_s": 20,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 4.34,
+      "window_s": 1,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.10444444444444478
+    },
+    {
+      "flow_l_min": 4.34,
+      "window_s": 5,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.015555555555555323
+    },
+    {
+      "flow_l_min": 4.34,
+      "window_s": 10,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.006666666666666821
+    },
+    {
+      "flow_l_min": 4.34,
+      "window_s": 20,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0.004444444444444251
+    },
+    {
+      "flow_l_min": 5.0,
+      "window_s": 1,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 5.0,
+      "window_s": 5,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 5.0,
+      "window_s": 10,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    },
+    {
+      "flow_l_min": 5.0,
+      "window_s": 20,
+      "phases": 1000,
+      "maximum_phase_only_error_l_min": 0
+    }
+  ],
+  "phase_checks_total": 20000,
+  "limitations": [
+    "Usable fractions are assumptions, not measured capacity",
+    "No sensor pulse jitter, missed edges or MCU firmware modeled",
+    "Long experiments require independent drainage; cup only for discrete sampling",
+    "Ten-second windows create lag and are not reproduced by the Gaussian replay filter"
+  ],
+  "source_sha256": {
+    "scripts/quality_recheck.py": "edc3268fd29a5fad609a616467423c9c80dfca0f8b6f55d64e590868a7e3ed73",
+    "application/models/collection_review/bench_layout.json": "3f0137c9f9efbc341ddefb4185b5f021398802c5fac19949ee1cc80afc757c99",
+    "simulation/hardware_results/range_grid.csv": "35d5f07302f4f0f35d8bb47673d4a32078fda9cafe4545a2f94a0eaada59e367",
+    "simulation/hardware_results/summary.json": "0616fcc5338adf838d869e23973af72e00d78871dc1522dc5b9f754759d6810a"
+  }
+}

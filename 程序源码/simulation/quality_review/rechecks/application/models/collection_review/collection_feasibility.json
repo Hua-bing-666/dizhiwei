@@ -1,0 +1,319 @@
+{
+  "classification": "uncalibrated_concept_capacity_and_local_CAD_checks",
+  "source_sha256": {
+    "application/models/collection_review/bench_layout.step": "81db6d8af3766dc7979c839ac730e690ce8b028d49f5107a4116a97b8f246a45",
+    "application/models/collection_review/bench_layout.json": "3f0137c9f9efbc341ddefb4185b5f021398802c5fac19949ee1cc80afc757c99",
+    "simulation/hardware_results/range_grid.csv": "35d5f07302f4f0f35d8bb47673d4a32078fda9cafe4545a2f94a0eaada59e367",
+    "simulation/hardware_results/summary.json": "0616fcc5338adf838d869e23973af72e00d78871dc1522dc5b9f754759d6810a",
+    "scripts/audit_bench_collection.py": "976cf9adbe5060f366d9b68116ea88fd637c400e253f3d9b2c9f296a8dfb09c1"
+  },
+  "design_calculation": {
+    "grid_rows": 24,
+    "healthy_c": 0.28,
+    "max_leak_c": 0.37,
+    "max_leak_l_min": 1.0550517985348604,
+    "worst_grid_row": {
+      "ps_kpa": "160",
+      "b_open": "False",
+      "c": "0.37",
+      "r": "0.8",
+      "p0_kpa": "152.47466245233105",
+      "p1_kpa": "137.42398735699314",
+      "q_a_l_min": "4.337435171754428",
+      "q_total_l_min": "4.337435171754428"
+    },
+    "sample_seconds": 30,
+    "capacity_margin_factor": 1.25,
+    "baseline_inner_radius_mm": 37,
+    "baseline_inner_height_mm": 60,
+    "baseline_geometric_capacity_ml": 258.05042056586564,
+    "candidate_geometric_capacity_ml": 678.5840131753953,
+    "required_with_margin_ml": 659.4073740842878,
+    "candidate_model_capacity_pass": true,
+    "max_seconds_with_margin": 30.872448800761653,
+    "ten_minute_required_with_margin_l": 13.188147481685755
+  },
+  "geometry_checks": {
+    "scope": "collection vessel and tray versus all 197 other concept solids; AABB rejection and exact common volume for remaining pairs; excludes the mutual vessel/tray mounting contact",
+    "candidate_pairs": 394,
+    "aabb_rejected_pairs": 393,
+    "exact_pairs": [
+      {
+        "collection_part": "removable_catch_tray",
+        "other_part": "removable_deck",
+        "common_volume_mm3": 0.0
+      }
+    ],
+    "positive_volume_conflicts": [],
+    "support_foot_to_tray_min_distance_mm": 15.0,
+    "enlarged_tray_with_old_support_counterexample_volume_mm3": 3208.725116671673,
+    "outlet_to_lip_vertical_gap_mm": 19.999999800000012,
+    "cup_outer_diameter_mm": 126,
+    "tray_inner_width_mm": 140,
+    "cup_to_tray_inner_side_clearance_mm": 7
+  },
+  "sampled_removal_path": {
+    "positions": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        -15,
+        8
+      ],
+      [
+        0,
+        -30,
+        8
+      ],
+      [
+        0,
+        -45,
+        8
+      ],
+      [
+        0,
+        -60,
+        8
+      ],
+      [
+        0,
+        -75,
+        8
+      ],
+      [
+        0,
+        -90,
+        8
+      ],
+      [
+        0,
+        -105,
+        8
+      ],
+      [
+        0,
+        -120,
+        8
+      ],
+      [
+        0,
+        -135,
+        8
+      ],
+      [
+        0,
+        -150,
+        8
+      ],
+      [
+        0,
+        -165,
+        8
+      ],
+      [
+        0,
+        -180,
+        8
+      ],
+      [
+        0,
+        -195,
+        8
+      ],
+      [
+        0,
+        -210,
+        8
+      ],
+      [
+        0,
+        -225,
+        8
+      ]
+    ],
+    "sampled_positions": 20,
+    "exact_checks": [
+      {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "other_part": "removable_catch_tray",
+        "common_volume_mm3": 0.0
+      },
+      {
+        "translation_mm": [
+          0,
+          0,
+          2
+        ],
+        "other_part": "removable_catch_tray",
+        "common_volume_mm3": 0.0
+      },
+      {
+        "translation_mm": [
+          0,
+          0,
+          4
+        ],
+        "other_part": "removable_catch_tray",
+        "common_volume_mm3": 0.0
+      },
+      {
+        "translation_mm": [
+          0,
+          0,
+          6
+        ],
+        "other_part": "removable_catch_tray",
+        "common_volume_mm3": 0.0
+      }
+    ],
+    "positive_volume_conflicts": 0,
+    "lift_mm": 8,
+    "forward_slide_mm": 225,
+    "tray_lip_vertical_clearance_mm": 1,
+    "continuous_swept_volume_verified": false,
+    "hands_handles_and_splash_verified": false
+  },
+  "annotation_anchor_checks": [
+    {
+      "label": "P0",
+      "target_part": "P0_connector",
+      "point_mm": [
+        225,
+        430,
+        239
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "R",
+      "target_part": "restriction_pivot",
+      "point_mm": [
+        350,
+        430,
+        184
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "P1",
+      "target_part": "P1_connector",
+      "point_mm": [
+        455,
+        430,
+        239
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "Q",
+      "target_part": "Q_pulse_cap",
+      "point_mm": [
+        580,
+        430,
+        171.5
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "A",
+      "target_part": "A_equivalent_load_pivot",
+      "point_mm": [
+        765,
+        430,
+        184
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "B",
+      "target_part": "B_switch_pivot",
+      "point_mm": [
+        350,
+        250,
+        184
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "leak",
+      "target_part": "open_measuring_vessel",
+      "point_mm": [
+        729.5477272147525,
+        260.4522727852475,
+        70
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "leak_rim",
+      "target_part": "open_measuring_vessel",
+      "point_mm": [
+        623.5,
+        305,
+        92
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    },
+    {
+      "label": "node",
+      "target_part": "electronics_lid",
+      "point_mm": [
+        425,
+        65,
+        114
+      ],
+      "distance_to_target_shape_mm": 0.0,
+      "on_target_boundary": true
+    }
+  ],
+  "acceptance": {
+    "geometric_and_assumed_grid_calculation": "passed",
+    "physical_capacity_calibrated": false,
+    "splash_and_air_gap_effects_verified": false,
+    "continuous_collection_or_return_verified": false,
+    "vendor_connector_fit_verified": false,
+    "global_interference_or_manufacturing_release": false
+  },
+  "required_follow_up": [
+    "Calibrate effective capacity by mass/volume and determine safe filling limit with splash headroom.",
+    "Measure actual maximum leakage over the eventual pressure/valve range; resize if it exceeds this assumption.",
+    "Before any long run, implement a free discharge collection/return route that does not create downstream head; the short-sampling cup does not satisfy continuous operation.",
+    "Confirm purchased dimensions, hose routing, wet/electrical separation and actual assembly."
+  ]
+}
