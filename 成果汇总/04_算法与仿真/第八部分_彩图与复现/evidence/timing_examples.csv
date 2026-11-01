@@ -1,0 +1,7 @@
+﻿scene,method,seed,sigma,false_onsets,false_exposure_s,early_valid,outcome,first_post_s,first_pattern,first_correct_s,critical_s,lead_s,missed_correct_pattern,transition_review_onsets,paused_observations,paused_before_reference,outside_reference_observations,observed_frames,eligible_frames,insufficient_frames,trigger_observations,send_attempts
+leak,threshold,61000,3.0,0,230,True,valid_early,404,leak_pattern,404,454,50,False,0,0,0,0,471,471,0,0,47
+leak,guarded_fast,61000,3.0,0,230,True,valid_early,404,leak_pattern,404,454,50,False,0,0,0,0,471,471,0,0,47
+leak,hybrid,61000,3.0,0,230,True,valid_early,397,leak_pattern,397,454,57,False,0,0,0,0,471,471,0,0,47
+restriction,threshold,61000,3.0,0,230,True,valid_early,386,restriction_pattern,386,494,108,False,0,0,0,0,471,471,0,0,47
+restriction,guarded_fast,61000,3.0,0,230,True,valid_early,399,restriction_pattern,399,494,95,False,0,0,0,0,471,471,0,0,47
+restriction,hybrid,61000,3.0,0,230,True,valid_early,399,restriction_pattern,399,494,95,False,0,0,0,0,471,471,0,0,47

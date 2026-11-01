@@ -29,3 +29,6 @@ deliverables/清水试验台架_V1.2.html whitespace=-space-before-tab
 application/quality_release/application_native_layout.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 application/quality_release/book_native_layout.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 application/quality_release/application_payload.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Keep frozen evidence hashes stable on every platform.
+/成果汇总/04_算法与仿真/第八部分_彩图与复现/** -text
