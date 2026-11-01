@@ -1,0 +1,191 @@
+[
+  {
+    "scene": "normal",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "supply",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "leak",
+    "sigma": 0.3,
+    "samples": 631,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "restriction",
+    "sigma": 0.3,
+    "samples": 631,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "drift",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "pulse",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "missing",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 5
+  },
+  {
+    "scene": "range",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 1
+  },
+  {
+    "scene": "counter",
+    "sigma": 0.3,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 1
+  },
+  {
+    "scene": "normal",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "supply",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "leak",
+    "sigma": 3.0,
+    "samples": 631,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "restriction",
+    "sigma": 3.0,
+    "samples": 631,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "drift",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 3,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "pulse",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "missing",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 5
+  },
+  {
+    "scene": "range",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 1
+  },
+  {
+    "scene": "counter",
+    "sigma": 3.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 1
+  },
+  {
+    "scene": "normal",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "supply",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "leak",
+    "sigma": 10.0,
+    "samples": 631,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "restriction",
+    "sigma": 10.0,
+    "samples": 631,
+    "candidate_onsets": 2,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "drift",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "pulse",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 1,
+    "quality_onsets": 0
+  },
+  {
+    "scene": "missing",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 5
+  },
+  {
+    "scene": "range",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 1
+  },
+  {
+    "scene": "counter",
+    "sigma": 10.0,
+    "samples": 601,
+    "candidate_onsets": 0,
+    "quality_onsets": 1
+  }
+]
