@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-05",
+  "scope": "A01/A03/A11 school-template draft integration",
+  "status": "passed_internal_draft_checks_administrative_and_resource_confirmation_pending",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "independent_external_review": false,
+  "historical_evidence_base": "00fd12a6cea04540e17dbc75d5627c7bea75674c",
+  "pages": 24,
+  "figures": [
+    {
+      "caption": "图1 系统职责与独立评价关系 拟实施方案",
+      "source": "application/figures/presentation_review/system_responsibilities.png",
+      "sha256": "ae19edc4c27a24c4cdab3e9030f74accb1a25f7b4123d90cac52dafb5b16df54",
+      "width_pt": 410.0,
+      "height_pt": 282.9,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 5,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图2 双支路清水台架与故障注入位置 原理关系示意",
+      "source": "application/figures/presentation_review/water_layout.png",
+      "sha256": "3c3e5bd1739a16aed2cdb6c1d971225cb707f25a333ff155b4d455047863e21f",
+      "width_pt": 410.0,
+      "height_pt": 266.5,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 6,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图3 台架装配及独立收集布局 未制造概念模型",
+      "source": "application/figures/collection_review/collection_overview.png",
+      "sha256": "011bf429655d2e6324e9b86b50428f55aa2e3630155302fac141524d6b01887b",
+      "width_pt": 410.0,
+      "height_pt": 369.8,
+      "relative_aspect_error": 5.40803634200282e-05,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 7,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图4 双压力与流量采集接口 功能设计 保护定值待验证",
+      "source": "application/figures/interface_review/measurement_interfaces.png",
+      "sha256": "6a64f406a0985935ce33e8cfbc103bebfff4983136fa70c6c0d4c5cc59b4630e",
+      "width_pt": 410.0,
+      "height_pt": 381.3,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 8,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图5 质量与工况辅助诊断流程 拟实施 门控尚未实现",
+      "source": "application/figures/presentation_review/diagnosis_proposal.png",
+      "sha256": "4a94945de85d0e3f86dc76bc6ba2f153f194a11fd4e5376778feb08f08d14c09",
+      "width_pt": 410.0,
+      "height_pt": 348.5,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 10,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图6 持久化确认与丢ACK重试关系 候选协议 非真实射频",
+      "source": "application/figures/interface_review/durable_event_sequence.png",
+      "sha256": "f83c739f0e8b3dae45d98f7da71863eff658b088877dee2aabb37c58e86d3d15",
+      "width_pt": 410.0,
+      "height_pt": 381.3,
+      "relative_aspect_error": 0.0,
+      "minimum_major_font_pt": 9.43,
+      "native_page": 12,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图7 当前离线Web诊断卡片 原生截图 合成观测 未接实物",
+      "source": "application/figures/application_integration/website_diagnosis_panel.png",
+      "sha256": "0687905d135d94de7e51151b958d50e5b05eb2b2eb20033e008b10b6da511bff",
+      "width_pt": 380.0,
+      "height_pt": 461.05,
+      "relative_aspect_error": 4.4657097288736125e-05,
+      "minimum_major_font_pt": 9.313725490196079,
+      "native_page": 13,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图8 不同压力噪声下的有效早期计数 同源合成统计 非实测",
+      "source": "application/figures/presentation_review/noise_outcomes_print.png",
+      "sha256": "e9ba5f9c927e7bd3062bcb2f688e65a82882a6fc9a353e6d803233027af107e0",
+      "width_pt": 410.0,
+      "height_pt": 395.3,
+      "relative_aspect_error": 2.976234765417196e-05,
+      "minimum_major_font_pt": 9.044117647058824,
+      "native_page": 20,
+      "image_and_caption_same_page": true
+    },
+    {
+      "caption": "图9 未知负载 漂移与模型失配反例 合成证据",
+      "source": "application/figures/diagnosis_review/failure_counterexamples.png",
+      "sha256": "4bacd869181649b8e8b6d8b68c3b3d320c3db72d12e6f8e6abb62508b184b88f",
+      "width_pt": 410.0,
+      "height_pt": 395.3,
+      "relative_aspect_error": 2.976234765417196e-05,
+      "minimum_major_font_pt": 9.044117647058824,
+      "native_page": 21,
+      "image_and_caption_same_page": true
+    }
+  ],
+  "editable_tables": [
+    {
+      "caption": "表1 四工作包与验证交付",
+      "rows": 5,
+      "columns": 4,
+      "widths_pt": [
+        55.0,
+        105.0,
+        155.0,
+        110.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 14
+    },
+    {
+      "caption": "表2 独立实验与对照安排",
+      "rows": 7,
+      "columns": 3,
+      "widths_pt": [
+        85.0,
+        140.0,
+        200.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 14
+    },
+    {
+      "caption": "表3 三阶段与实施里程碑",
+      "rows": 9,
+      "columns": 3,
+      "widths_pt": [
+        90.0,
+        150.0,
+        185.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 19
+    },
+    {
+      "caption": "表4 候选资源与条件预算",
+      "rows": 10,
+      "columns": 3,
+      "widths_pt": [
+        110.0,
+        55.0,
+        260.0
+      ],
+      "editable": true,
+      "header_repeats": true,
+      "native_page": 22
+    }
+  ],
+  "references": {
+    "total": 17,
+    "chinese": 11,
+    "english": 6
+  },
+  "school_section_headings": [
+    {
+      "heading": "一、项目简介（300字左右）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "二、申请理由（包括自身/团队具备的知识条件、特长、兴趣等）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "三、项目方案（项目内容、项目目标、技术路线、实验方案、要解决的主要问题）",
+      "page": 4,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "四、国、内外研究现状和发展动态",
+      "page": 15,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "五、项目的特色与创新点",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "六、项目预期成果",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "七、项目年度目标和工作内容（按年度写）",
+      "page": 18,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "八、已有基础",
+      "page": 19,
+      "first_body_on_same_page": true
+    },
+    {
+      "heading": "九、项目经费使用计划",
+      "page": 22,
+      "first_body_on_same_page": true
+    }
+  ],
+  "visual_review_record": "simulation/application_integration/manual_review.json",
+  "programmatic_review_record": "simulation/application_integration/document_checks.json",
+  "rendered_pages_retention": "Local QA PNGs remain under ignored tmp; SHA receipts are packaged. Regenerate from the native PDF.",
+  "source_sha256": {
+    "scripts/verify_application_integration.py": "6887265c0628eb46b5696d6deea867dda6ac3de11480215c2ef4562c24404fed",
+    "application/正式模板正文.md": "429dfccaf6334d1c49827d81f48882826710de80f97b4e31e194aa64920cdc7f",
+    "scripts/prepare_application_payload.py": "0df0ed58733f57c0672c5f01064c0fa588ac656dc9e823927c9eca3623cfe40f",
+    "scripts/fill_application_template.ps1": "22b138661d43db38fb410bdcc5a149ae095950a42a70495fde08c3aef286bea7",
+    "application/references.json": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb",
+    "deliverables/大创申报书_模板审阅版.pdf": "2c709efcc6131268041b72c9457f4d88964cafb225868873578799f9a1d10075",
+    "deliverables/大创申报书_模板填写稿.docx": "12c619645eb4612794782acc12f533ab48c44ba2da87af2f2aa314def8f1b184",
+    "application/application_integration/native_layout.json": "808de89a76bcb5fd39cccead5c522175eb229b9d20697e1a5ef3aa2fc59cee80",
+    "application/application_integration/payload.json": "120b5c7ebcd990cd30c33850798d70f0ca5281652e5a9c7b71f035a411625c7b",
+    "simulation/application_integration/website_capture_checks.json": "bd58a6927581761a90c8a6486c57d85535676b2ed95eff7f77f685400379390a",
+    "simulation/application_integration/document_checks.json": "9f9bb9d1740a38409fcffb40f1c4b878b34320ba5279f3c20eb7d7ab376acd02",
+    "simulation/application_integration/manual_review.json": "14cd6744ca7d80754d7fc4baca070895f9c06c44c0a985b50fd7ffba6afbb3fa",
+    "scripts/finalize_application_integration.py": "4fcaf3169947328b3f31bb8e9cfe43942946a810d7b881a3ab6602ba0dee3e0a",
+    "scripts/capture_application_panel.mjs": "8075713f4bbf0489d965aaf609744a7f37593b1d0636775c4e2f5979383c162f",
+    "docs/学校模板申报书整合与分项验收.md": "07da50eaca7353630e0e8106b420f84baa652614100ff587fa8568292115db6b",
+    "application/application_integration/template_contract.md": "e64e5425b9e33ff8d9ddb51d44af4188e805c9c722851fb2c6417fb887d436c3"
+  },
+  "unresolved": [
+    "real identities and team allocation",
+    "teacher and reference instrument/water access confirmation",
+    "pressure specification quotations and actual procurement",
+    "input protection values and actual firmware",
+    "2027 batch terms and formal goals",
+    "PPT synchronization"
+  ],
+  "planned_not_achieved": {
+    "main_fault_operations": 54,
+    "normal_operations": 18,
+    "switching_fault_operations": 12,
+    "controlled_wireless_replay_batches": 36,
+    "continuous_recording_hours": 8,
+    "restarts": 3,
+    "correct_first_persistent_candidate_target_10_15_percent": 0.9,
+    "normal_confirmed_false_alarms_per_hour_target": 1,
+    "conditional_budget_cap_yuan": 2000
+  }
+}

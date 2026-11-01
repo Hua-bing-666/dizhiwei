@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-05",
+  "status": "programmatic_bounds_checked_visual_review_pending",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "water_layout",
+      "width": 1000,
+      "height": 470,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 470
+      },
+      "textCount": 15,
+      "overlappingLabels": [],
+      "labelsOutsideOwnBox": [],
+      "guideLabelsOverBoxes": [],
+      "minFontPt": 10.08,
+      "outside": [],
+      "png_sha256": "45f04fac4f1bbcd4df164f0c90c3565f4e0fd2e42d4e87d775d761feb3db44d4",
+      "svg_sha256": "148b211b6f56cb8ed57c1d28826ba58878bb0ea960e9f1dda09f6da728f63c9f"
+    }
+  ]
+}

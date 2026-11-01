@@ -1,0 +1,322 @@
+{
+  "status": "programmatic_pass_visual_record_required",
+  "date": "2026-10-05",
+  "pages": 20,
+  "blank_field_cells": 42,
+  "school_template_retained": true,
+  "images": [
+    {
+      "caption": "图1 支管巡检原型系统组成与评价关系",
+      "page": 5,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图2 双支路验证台架的测点与故障注入位置",
+      "page": 5,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图3 验证台架的参数化装配与独立收集概念设计",
+      "page": 6,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图4 双压力与流量采集的功能接口设计",
+      "page": 7,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图5 数据质量与运行工况约束下的诊断方法设计",
+      "page": 9,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图6 事件持久化确认及确认丢失后的重传设计",
+      "page": 10,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图7 离线平台的支管诊断界面 合成数据回放",
+      "page": 11,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图8 压力噪声对有效早期识别的影响 合成模型对照",
+      "page": 16,
+      "figure_and_caption_together": true
+    },
+    {
+      "caption": "图9 未知负载与压力漂移造成的诊断歧义 合成分析",
+      "page": 17,
+      "figure_and_caption_together": true
+    }
+  ],
+  "image_binaries_and_sizes_unchanged": true,
+  "tables": [
+    {
+      "caption": "表1 系统研制工作包与验收要求",
+      "page": 12,
+      "caption_center_pt": 297.4798583984375,
+      "table_center_pt": 297.6500129699707,
+      "error_pt": 0.17015457153320312,
+      "complete_on_one_page": true
+    },
+    {
+      "caption": "表2 独立实验与对照安排",
+      "page": 13,
+      "caption_center_pt": 297.58211517333984,
+      "table_center_pt": 297.6500129699707,
+      "error_pt": 0.06789779663085938,
+      "complete_on_one_page": true
+    },
+    {
+      "caption": "表3 项目实施进度与阶段验收",
+      "page": 15,
+      "caption_center_pt": 297.52223205566406,
+      "table_center_pt": 297.6500053405762,
+      "error_pt": 0.12777328491210938,
+      "complete_on_one_page": true
+    },
+    {
+      "caption": "表4 原型研制经费估算",
+      "page": 18,
+      "caption_center_pt": 297.48060607910156,
+      "table_center_pt": 297.6500053405762,
+      "error_pt": 0.16939926147460938,
+      "complete_on_one_page": true
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "page": 14
+    },
+    {
+      "number": 2,
+      "page": 14
+    },
+    {
+      "number": 3,
+      "page": 14
+    },
+    {
+      "number": 4,
+      "page": 14
+    },
+    {
+      "number": 5,
+      "page": 14
+    },
+    {
+      "number": 6,
+      "page": 14
+    },
+    {
+      "number": 7,
+      "page": 14
+    },
+    {
+      "number": 8,
+      "page": 14
+    }
+  ],
+  "chinese": 5,
+  "english": 3,
+  "all_drafted_text_in_docx_and_pdf": true,
+  "math_accent_preserved": true,
+  "budget_total": 2000,
+  "input_preserved": true,
+  "physical_validation": false,
+  "trailing_whitespace": [
+    {
+      "page": 4,
+      "bottom_gap_pt": 100.9,
+      "ratio": 0.144
+    },
+    {
+      "page": 5,
+      "bottom_gap_pt": 6.2,
+      "ratio": 0.009
+    },
+    {
+      "page": 6,
+      "bottom_gap_pt": 43.6,
+      "ratio": 0.062
+    },
+    {
+      "page": 7,
+      "bottom_gap_pt": 11.0,
+      "ratio": 0.016
+    },
+    {
+      "page": 8,
+      "bottom_gap_pt": 230.3,
+      "ratio": 0.329
+    },
+    {
+      "page": 9,
+      "bottom_gap_pt": 104.6,
+      "ratio": 0.149
+    },
+    {
+      "page": 10,
+      "bottom_gap_pt": 112.7,
+      "ratio": 0.161
+    },
+    {
+      "page": 11,
+      "bottom_gap_pt": 61.7,
+      "ratio": 0.088
+    },
+    {
+      "page": 12,
+      "bottom_gap_pt": 233.7,
+      "ratio": 0.334
+    },
+    {
+      "page": 13,
+      "bottom_gap_pt": 12.4,
+      "ratio": 0.018
+    },
+    {
+      "page": 14,
+      "bottom_gap_pt": 6.4,
+      "ratio": 0.009
+    },
+    {
+      "page": 15,
+      "bottom_gap_pt": 72.8,
+      "ratio": 0.104
+    },
+    {
+      "page": 16,
+      "bottom_gap_pt": 10.9,
+      "ratio": 0.016
+    },
+    {
+      "page": 17,
+      "bottom_gap_pt": 22.7,
+      "ratio": 0.032
+    },
+    {
+      "page": 18,
+      "bottom_gap_pt": 235.1,
+      "ratio": 0.336
+    }
+  ],
+  "body_pages_over_25_percent": [
+    8,
+    12,
+    18
+  ],
+  "page_geometry": [
+    {
+      "page": 1,
+      "glyphs_checked": 71,
+      "inside_A4": true
+    },
+    {
+      "page": 2,
+      "glyphs_checked": 406,
+      "inside_A4": true
+    },
+    {
+      "page": 3,
+      "glyphs_checked": 429,
+      "inside_A4": true
+    },
+    {
+      "page": 4,
+      "glyphs_checked": 1388,
+      "inside_A4": true
+    },
+    {
+      "page": 5,
+      "glyphs_checked": 367,
+      "inside_A4": true
+    },
+    {
+      "page": 6,
+      "glyphs_checked": 611,
+      "inside_A4": true
+    },
+    {
+      "page": 7,
+      "glyphs_checked": 654,
+      "inside_A4": true
+    },
+    {
+      "page": 8,
+      "glyphs_checked": 1232,
+      "inside_A4": true
+    },
+    {
+      "page": 9,
+      "glyphs_checked": 534,
+      "inside_A4": true
+    },
+    {
+      "page": 10,
+      "glyphs_checked": 399,
+      "inside_A4": true
+    },
+    {
+      "page": 11,
+      "glyphs_checked": 329,
+      "inside_A4": true
+    },
+    {
+      "page": 12,
+      "glyphs_checked": 885,
+      "inside_A4": true
+    },
+    {
+      "page": 13,
+      "glyphs_checked": 1262,
+      "inside_A4": true
+    },
+    {
+      "page": 14,
+      "glyphs_checked": 1883,
+      "inside_A4": true
+    },
+    {
+      "page": 15,
+      "glyphs_checked": 1053,
+      "inside_A4": true
+    },
+    {
+      "page": 16,
+      "glyphs_checked": 677,
+      "inside_A4": true
+    },
+    {
+      "page": 17,
+      "glyphs_checked": 551,
+      "inside_A4": true
+    },
+    {
+      "page": 18,
+      "glyphs_checked": 751,
+      "inside_A4": true
+    },
+    {
+      "page": 19,
+      "glyphs_checked": 25,
+      "inside_A4": true
+    },
+    {
+      "page": 20,
+      "glyphs_checked": 42,
+      "inside_A4": true
+    }
+  ],
+  "render_method": "Native WPS PDF and bundled PDFium; packaged renderer missing LibreOffice",
+  "artifact_sha256": {
+    "deliverables/大创申报书_语言与范围修订稿.docx": "3b0e557bd6fbd0a660ab7012215a25b4b60bf9dc6498e3b84ed1232ddbd97e44",
+    "deliverables/大创申报书_语言与范围修订审阅版.pdf": "17223c9f95086c23991b2eaf7e7258bc523392407d9a285c8744ecb40abe95a4",
+    "application/正式模板正文.md": "7518bb5d8b572ef193c351d15838c1e136fbddd7d7971eefd70e0d7d71185eb8",
+    "application/申报精选参考文献.json": "00f605f6377f516341cc90226cd6b244eafba36e065e67c2d9ceb985435b90f1",
+    "deliverables/index.html": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f"
+  }
+}

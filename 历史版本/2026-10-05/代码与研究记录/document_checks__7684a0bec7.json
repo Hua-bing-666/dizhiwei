@@ -1,0 +1,264 @@
+{
+  "status": "programmatic_pass_visual_review_required",
+  "date": "2026-10-05",
+  "pages": 20,
+  "native_math_objects": 27,
+  "WPS_equation_API_count": 27,
+  "equation_semantics_retained_after_save": true,
+  "four_core_equations_native": true,
+  "body_and_form_content_preserved_except_two_recorded_edits": true,
+  "preserved_package_parts": 27,
+  "changed_metadata_parts": [],
+  "input_preserved": true,
+  "blank_fields": 42,
+  "figure_dimensions_preserved": true,
+  "figures": [
+    {
+      "caption": "图1 支管巡检原型系统组成与评价关系",
+      "page": 5,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图2 双支路验证台架的测点与故障注入位置",
+      "page": 5,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图3 验证台架的参数化装配与独立收集概念设计",
+      "page": 6,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图4 双压力与流量采集的功能接口设计",
+      "page": 7,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图5 数据质量与运行工况约束下的诊断方法设计",
+      "page": 9,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图6 事件持久化确认及确认丢失后的重传设计",
+      "page": 10,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图7 离线平台的支管诊断界面 合成数据回放",
+      "page": 11,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图8 压力噪声对有效早期识别的影响 合成模型对照",
+      "page": 16,
+      "figure_caption_same_page": true
+    },
+    {
+      "caption": "图9 未知负载与压力漂移造成的诊断歧义 合成分析",
+      "page": 17,
+      "figure_caption_same_page": true
+    }
+  ],
+  "tables": [
+    {
+      "caption": "表1 系统研制工作包与验收要求",
+      "page": 12,
+      "center_error_pt": 0.17015457153320312,
+      "complete_on_one_page": true
+    },
+    {
+      "caption": "表2 独立实验与对照安排",
+      "page": 13,
+      "center_error_pt": 0.06789779663085938,
+      "complete_on_one_page": true
+    },
+    {
+      "caption": "表3 项目实施进度与阶段验收",
+      "page": 15,
+      "center_error_pt": 0.12777328491210938,
+      "complete_on_one_page": true
+    },
+    {
+      "caption": "表4 原型研制经费估算",
+      "page": 18,
+      "center_error_pt": 0.16939926147460938,
+      "complete_on_one_page": true
+    }
+  ],
+  "references": {
+    "chinese": 5,
+    "english": 3,
+    "page": 14
+  },
+  "page_geometry": [
+    {
+      "page": 1,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 2,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 3,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 4,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 5,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 6,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 7,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 8,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 9,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 10,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 11,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 12,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 13,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 14,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 15,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 16,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 17,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 18,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 19,
+      "glyphs_inside_page": true
+    },
+    {
+      "page": 20,
+      "glyphs_inside_page": true
+    }
+  ],
+  "trailing_whitespace": [
+    {
+      "page": 4,
+      "bottom_gap_pt": 99.8,
+      "ratio": 0.143
+    },
+    {
+      "page": 5,
+      "bottom_gap_pt": 5.1,
+      "ratio": 0.007
+    },
+    {
+      "page": 6,
+      "bottom_gap_pt": 42.5,
+      "ratio": 0.061
+    },
+    {
+      "page": 7,
+      "bottom_gap_pt": 9.9,
+      "ratio": 0.014
+    },
+    {
+      "page": 8,
+      "bottom_gap_pt": 182.4,
+      "ratio": 0.261
+    },
+    {
+      "page": 9,
+      "bottom_gap_pt": 103.5,
+      "ratio": 0.148
+    },
+    {
+      "page": 10,
+      "bottom_gap_pt": 111.6,
+      "ratio": 0.16
+    },
+    {
+      "page": 11,
+      "bottom_gap_pt": 60.6,
+      "ratio": 0.087
+    },
+    {
+      "page": 12,
+      "bottom_gap_pt": 232.6,
+      "ratio": 0.333
+    },
+    {
+      "page": 13,
+      "bottom_gap_pt": 11.3,
+      "ratio": 0.016
+    },
+    {
+      "page": 14,
+      "bottom_gap_pt": 5.3,
+      "ratio": 0.008
+    },
+    {
+      "page": 15,
+      "bottom_gap_pt": 71.7,
+      "ratio": 0.103
+    },
+    {
+      "page": 16,
+      "bottom_gap_pt": 9.8,
+      "ratio": 0.014
+    },
+    {
+      "page": 17,
+      "bottom_gap_pt": 21.6,
+      "ratio": 0.031
+    },
+    {
+      "page": 18,
+      "bottom_gap_pt": 234.0,
+      "ratio": 0.335
+    }
+  ],
+  "pages_with_over_25_percent_trailing_whitespace": [
+    8,
+    12,
+    18
+  ],
+  "physical_validation": false,
+  "artifact_sha256": {
+    "deliverables/大创申报书_公式与插图修订稿.docx": "8b294c67a4a28973d1b1dc4f50f266ea018901665a83fa270e5eaf3f2066bd03",
+    "deliverables/大创申报书_公式与插图审阅版.pdf": "e8c490f61a7cd1d3b0bc8da138ce17d0b69c964f88c3b2a5bfeb921f85bd9b40",
+    "application/正式模板正文.md": "9ced77eed28cd694f5fdbea85c614156eed971de9593b20e0440c67df760e4f5",
+    "deliverables/index.html": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f"
+  }
+}

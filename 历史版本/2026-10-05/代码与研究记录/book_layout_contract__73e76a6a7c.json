@@ -1,0 +1,125 @@
+{
+  "source": "application/实施项目书.md",
+  "figures": [
+    {
+      "caption": "图1 拟实施系统职责与独立评价关系",
+      "path": "application/figures/quality_review/system_responsibilities.png",
+      "width_pt": 420
+    },
+    {
+      "caption": "图2 测点与故障注入的水路关系",
+      "path": "application/figures/quality_review/water_layout.png",
+      "width_pt": 420
+    },
+    {
+      "caption": "图3 取样容量与脉冲窗口的设计取舍",
+      "path": "application/figures/quality_review/sampling_window_tradeoff.png",
+      "width_pt": 420
+    },
+    {
+      "caption": "图4 提交后确认与重复事件的接收关系",
+      "path": "application/figures/quality_review/durable_event_sequence.png",
+      "width_pt": 420
+    },
+    {
+      "caption": "图5 当前合成回放网站的诊断卡片",
+      "path": "application/figures/quality_review/website_diagnosis_panel.png",
+      "width_pt": 390
+    }
+  ],
+  "tables": [
+    {
+      "header": [
+        "阶段",
+        "应完成的内容",
+        "验收所需证据"
+      ],
+      "rows": 4,
+      "editable": true,
+      "repeat_header": true,
+      "widths_pt": [
+        90,
+        135,
+        195
+      ]
+    },
+    {
+      "header": [
+        "项目",
+        "拟定规模",
+        "必须记录及通过条件"
+      ],
+      "rows": 7,
+      "editable": true,
+      "repeat_header": true,
+      "widths_pt": [
+        90,
+        135,
+        195
+      ]
+    },
+    {
+      "header": [
+        "用途",
+        "预算帽 元",
+        "成交前核对"
+      ],
+      "rows": 10,
+      "editable": true,
+      "repeat_header": true,
+      "widths_pt": [
+        110,
+        55,
+        255
+      ]
+    },
+    {
+      "header": [
+        "时段",
+        "应交付内容",
+        "进入下一阶段的条件"
+      ],
+      "rows": 8,
+      "editable": true,
+      "repeat_header": true,
+      "widths_pt": [
+        105,
+        150,
+        165
+      ]
+    },
+    {
+      "header": [
+        "触发条件",
+        "处理动作",
+        "重新进入条件"
+      ],
+      "rows": 7,
+      "editable": true,
+      "repeat_header": true,
+      "widths_pt": [
+        100,
+        160,
+        160
+      ]
+    },
+    {
+      "header": [
+        "正式材料要素",
+        "本书对应位置",
+        "提交时仍需核定"
+      ],
+      "rows": 8,
+      "editable": true,
+      "repeat_header": true,
+      "widths_pt": [
+        100,
+        170,
+        150
+      ]
+    }
+  ],
+  "body_pt": 11,
+  "table_pt": 10.5,
+  "purpose": "autonomous_execution_book_not_official_taskbook_template"
+}

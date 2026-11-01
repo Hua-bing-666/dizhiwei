@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-05",
+  "status": "actual_visual_review_pass_with_stated_whitespace",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "5512ff7dff7c1a5ab76983f0497af94b68c92af9a620c72360dcbfea902652b9",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 2,
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 3,
+      "sha256": "289e15b44b0ec28b4a46de52c2a3c9f83375fc5bd27fd3ebdbc989a335ff1ffb",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 4,
+      "sha256": "c764b19c65be3225a2610320bbdac41677010deed216f297c6439c8ea1050058",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 5,
+      "sha256": "5bd142a32c180a913bcd3f6579b2f11e486085b384ac98502bb5336ef872a724",
+      "basis": "Actually opened this turn; final PNG identical to inspected pages",
+      "layout": "pass"
+    },
+    {
+      "page": 6,
+      "sha256": "0ca837a26f911c5f88870d48aaa3f283cc4ead5387c1086b799baec2e53c4def",
+      "basis": "Actually opened this turn; final PNG identical to inspected pages",
+      "layout": "pass"
+    },
+    {
+      "page": 7,
+      "sha256": "68fe138c12161ab3c1b5429480b15a1ae80fd5e815449ea6b16aad85d8a5ff8f",
+      "basis": "Actually opened this turn; final PNG identical to inspected pages",
+      "layout": "pass"
+    },
+    {
+      "page": 8,
+      "sha256": "3c334e8383763bb78e96a3c8e3786d0582a6c11d103cc6668e50d98edc1127bd",
+      "basis": "Actually opened this turn; final PNG identical to inspected pages",
+      "layout": "pass"
+    },
+    {
+      "page": 9,
+      "sha256": "9c2f11f96bf8daa9ad61a33d6895caee0e9020c4d3930fef559364a9e45599d1",
+      "basis": "Actually opened this turn; final PNG identical to inspected final_pages",
+      "layout": "pass"
+    },
+    {
+      "page": 10,
+      "sha256": "114e52c41e4757c86406c34a31375b60d10033057c83575c97324a66fcd483ed",
+      "basis": "Actually opened this turn; final PNG identical to inspected final_pages",
+      "layout": "pass"
+    },
+    {
+      "page": 11,
+      "sha256": "15a0112eaf9430b185b6c55dcae1e699e206dc7d945073d0760a200962ef22e0",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 12,
+      "sha256": "238db8782a1ee16c74d5ef95a0d843fd5e0cea836a22d2ac190147b397b5b2e0",
+      "basis": "Actually opened this turn; final PNG identical to inspected shipping_pages",
+      "layout": "pass"
+    },
+    {
+      "page": 13,
+      "sha256": "f2139551c3ee93870947b320b081e5a5348cf5a7f4144003946e30871e874635",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 14,
+      "sha256": "2e9ae33fbee5eb9cede3550e1947536b0339c00c4d9357d90807999718dd7b1e",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 15,
+      "sha256": "f15d595c53cb2e707f16a774e9d152373a187b97aa58f6e57cd45cc25ba60ab9",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 16,
+      "sha256": "5f51128c6a398b68961a3a7a6be82de8004901a6a16ec180f4c4f5380283b2c5",
+      "basis": "Actually opened this turn; final PNG identical to inspected final_pages",
+      "layout": "pass"
+    },
+    {
+      "page": 17,
+      "sha256": "ad6807bc55ca449f7b879c99ec5035e178031d754b938679d0010cb3eb829986",
+      "basis": "Actually opened this turn; final PNG identical to inspected final_pages",
+      "layout": "pass"
+    },
+    {
+      "page": 18,
+      "sha256": "f0c5fb8746eb07279024fb2249cc5ba482cb4d4bc96a0c007fa1f2298bc41671",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 19,
+      "sha256": "3f723735c011473b9e9cb262606aae5c2e36281aed5593a5e666784e97d60667",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    },
+    {
+      "page": 20,
+      "sha256": "fed0075492021c113837f4398b29f6f216044537f9225396d778e9a7ffd4e4fb",
+      "basis": "Byte-identical to individually inspected previous release page",
+      "layout": "pass"
+    }
+  ],
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "sha256": "9437427a152fa0e8975630405dbd346b6e62a9c3005d2cffd5eaec6fe1768bc5",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "water_layout",
+      "sha256": "8033e86765751f11554836dbf2b7161d0393f525bab48519712130582b6e77d7",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "collection_overview",
+      "sha256": "22c34808b58fe2b3a96e3801b680f69c52315e6943074e01d9901ca757d07de5",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "measurement_interfaces",
+      "sha256": "1930eef5bca0bae1658ddd8f550261af957e2896e9295b81884d2b4d092bf661",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "diagnosis_proposal",
+      "sha256": "5f081bfd49595ef3e36e01d85743a2b12036b9b49c3bb309637535dd18f4456f",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "durable_event_sequence",
+      "sha256": "1d8770fb6171b95435d0efcb702581976388a5b2a23ad0fa4967f7340930ba1b",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "noise_outcomes_print",
+      "sha256": "0c9f0b4dcd0383d1b6f71dab57bad0f5e33972ea55ead618873ae8460f493e1a",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    },
+    {
+      "name": "failure_counterexamples",
+      "sha256": "55bc6981618102920dac9ca028e0638f87e740f4ebb9fb40c437bc8042b60d42",
+      "basis": "Final figure actually opened this turn",
+      "annotation_and_layout": "pass",
+      "data_modified": false
+    }
+  ],
+  "physical_validation": false,
+  "render": "WPS native PDF + bundled PDFium; packaged renderer lacks LibreOffice",
+  "pagination_exceptions": [
+    8,
+    12,
+    18
+  ],
+  "validity": "Only these artifact and image hashes; repeat inspection after edits."
+}

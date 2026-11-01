@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_individual_visual_inspection",
+  "reviewer": "root_agent_manual_image_inspection",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "basis": "Actual view_image inspections this turn, not inferred from machine pass counts. First12 final execution pages are hash-identical to the individually viewed prior render; final page13 viewed separately.",
+  "documents": [
+    {
+      "name": "school_application",
+      "docx_path": "tmp/quality_application/candidate/大创申报书_模板填写稿.docx",
+      "docx_sha256": "f8507ec81cfcd097486eedd3e0d58d876f977a3732a9f5e5d75ec2792e60f758",
+      "pdf_path": "tmp/quality_application/candidate/大创申报书_模板审阅版.pdf",
+      "pdf_sha256": "4f5a5c41b0247cadb96c538e6496797440bdd1497df0d3bd90360ee13876a13c",
+      "page_count": 25,
+      "pages": [
+        {
+          "page": 1,
+          "path": "tmp/quality_application/render-final/page-01.png",
+          "sha256": "bfbfed516c3617642394f277619a3cd7ecf0934238aa2eb231c6400459498055"
+        },
+        {
+          "page": 2,
+          "path": "tmp/quality_application/render-final/page-02.png",
+          "sha256": "142ba23466ba81df28372384766755520fc799d5dba7922f0cdb1ed905918715"
+        },
+        {
+          "page": 3,
+          "path": "tmp/quality_application/render-final/page-03.png",
+          "sha256": "b334746e03eddb48e4e6b82085251fb8052c52a4339c5339c55676f78f09e633"
+        },
+        {
+          "page": 4,
+          "path": "tmp/quality_application/render-final/page-04.png",
+          "sha256": "50655aebe714d0922652713c30f46b9cf3dbdd509d50c6d729948fbc0d5d28d4"
+        },
+        {
+          "page": 5,
+          "path": "tmp/quality_application/render-final/page-05.png",
+          "sha256": "48123793a41e8a45aeacb9c795a4fd25ce1bf2e336b2b3c5e42cdfaf2e6fc9f8"
+        },
+        {
+          "page": 6,
+          "path": "tmp/quality_application/render-final/page-06.png",
+          "sha256": "a8a09d2d1e3d03a5ad440b4fd71ad9e4fa7715f7490b6c5d43b78e0dec90a714"
+        },
+        {
+          "page": 7,
+          "path": "tmp/quality_application/render-final/page-07.png",
+          "sha256": "29f3dbc118608c7700f461a353847a76bfbcd94191622463bf9d8e1714da8e5a"
+        },
+        {
+          "page": 8,
+          "path": "tmp/quality_application/render-final/page-08.png",
+          "sha256": "f7447759fd8aa4150e22c51d43894486aa1bcf5bc236c8f7b525b3d8896360ec"
+        },
+        {
+          "page": 9,
+          "path": "tmp/quality_application/render-final/page-09.png",
+          "sha256": "5a91bf65ab455e01dd80b84d7b836a2e7ae39164ada43bd145bf6dbd58683df9"
+        },
+        {
+          "page": 10,
+          "path": "tmp/quality_application/render-final/page-10.png",
+          "sha256": "7487da64b075d2e98fdc0fe2bff251423e7c2c11cc7657ffae844db2caf6aa89"
+        },
+        {
+          "page": 11,
+          "path": "tmp/quality_application/render-final/page-11.png",
+          "sha256": "010394701d910c9a8b1f28586f8ae1ef238f04672389f179f966f879b5ba8911"
+        },
+        {
+          "page": 12,
+          "path": "tmp/quality_application/render-final/page-12.png",
+          "sha256": "9ca3d47e14bd99171db5933ef25b8bd4fbc171a29d48211a5543a5b01a631000"
+        },
+        {
+          "page": 13,
+          "path": "tmp/quality_application/render-final/page-13.png",
+          "sha256": "9507b147a24124d59a93ca3a27fb2bdb2849f4c223390bee30270eb7669ef4e6"
+        },
+        {
+          "page": 14,
+          "path": "tmp/quality_application/render-final/page-14.png",
+          "sha256": "c0efaa305978b6658b59a5d00c6e210a5be9080572958a8def34f0a851828f3a"
+        },
+        {
+          "page": 15,
+          "path": "tmp/quality_application/render-final/page-15.png",
+          "sha256": "40284b808623ec5d1ba454537095572eeb75d567b2ae0c1a5515a60f73703bbb"
+        },
+        {
+          "page": 16,
+          "path": "tmp/quality_application/render-final/page-16.png",
+          "sha256": "35063c222b96c77b366f52ff91974290651a5ab0935530d0dfadd270726fef20"
+        },
+        {
+          "page": 17,
+          "path": "tmp/quality_application/render-final/page-17.png",
+          "sha256": "94301366a9cd6b2a71ed5bb1a139dc4a6dcf24153e0c500d4efbf65cffcec5aa"
+        },
+        {
+          "page": 18,
+          "path": "tmp/quality_application/render-final/page-18.png",
+          "sha256": "0742d5cc0bcf5db0569f1d3991857625b2d7d16e2b85721201d12794ee3425a5"
+        },
+        {
+          "page": 19,
+          "path": "tmp/quality_application/render-final/page-19.png",
+          "sha256": "b620e7871d3b73fbacfd491ee02025a6a53e9023910d17e8c8127de421c391f8"
+        },
+        {
+          "page": 20,
+          "path": "tmp/quality_application/render-final/page-20.png",
+          "sha256": "4974326b96462fe5cc42e7d4f53eb195423b61537cd624be42ca80603c277ae1"
+        },
+        {
+          "page": 21,
+          "path": "tmp/quality_application/render-final/page-21.png",
+          "sha256": "e425bf975e9de5dca0e66f89bc49674b1fa344424a036e91b16e05a9c364b61e"
+        },
+        {
+          "page": 22,
+          "path": "tmp/quality_application/render-final/page-22.png",
+          "sha256": "2879e35f3a64def9cdb575db343d723cf883d061c97fae85f30400b71f223446"
+        },
+        {
+          "page": 23,
+          "path": "tmp/quality_application/render-final/page-23.png",
+          "sha256": "e535068c8c8bf7b24c6589372f4e102c5897d1de4edb5eb56fe594f5544dce49"
+        },
+        {
+          "page": 24,
+          "path": "tmp/quality_application/render-final/page-24.png",
+          "sha256": "7245f18486166bf56f3f66ee0473772c5188744e9875e486cf2d9e8e914ba838"
+        },
+        {
+          "page": 25,
+          "path": "tmp/quality_application/render-final/page-25.png",
+          "sha256": "293963a9ddf9f56849d630fd7d2cf3d28542b26c1c205077af249ba808a319ba"
+        }
+      ],
+      "review_note": "All25 final-page PNGs individually viewed; page19 rechecked at release.",
+      "checks": [
+        "Readable typography and table cells",
+        "No observed clipping or overlap",
+        "Figure/caption pairing and aspect preserved",
+        "Headers and page numbers correctly placed",
+        "Template/heading hierarchy intact"
+      ]
+    },
+    {
+      "name": "execution_book",
+      "docx_path": "tmp/quality_book/实施项目书.docx",
+      "docx_sha256": "de301d24e483ce984f448170428e16795469977a7f9ee85f93ffa1a2c2b52335",
+      "pdf_path": "tmp/quality_book/实施项目书.pdf",
+      "pdf_sha256": "dc677dad6ca23b0ac6a5603ba8d049101c145b6752e1204271b4c111dc11f49e",
+      "page_count": 13,
+      "pages": [
+        {
+          "page": 1,
+          "path": "tmp/quality_book/render-v4/page-01.png",
+          "sha256": "d6ff9cf26f12de83991e2c5b28829f4777087d6b36097ca108128840a79a7aea"
+        },
+        {
+          "page": 2,
+          "path": "tmp/quality_book/render-v4/page-02.png",
+          "sha256": "5c118154b4f7d13752ffa13f46e500747893751831a5b6de4423800d72ed0cec"
+        },
+        {
+          "page": 3,
+          "path": "tmp/quality_book/render-v4/page-03.png",
+          "sha256": "480f59917221409816a136a078e1e0fe34337a8cc1369a739d77b48b09e26e0b"
+        },
+        {
+          "page": 4,
+          "path": "tmp/quality_book/render-v4/page-04.png",
+          "sha256": "0b031875a647ceeae8ac3fed6d4e41e35d3d89be703e00ce7ddfd0b44cf6d7b4"
+        },
+        {
+          "page": 5,
+          "path": "tmp/quality_book/render-v4/page-05.png",
+          "sha256": "98e5e1b82bdd54933c522fb288eef613670fd76d0f861a8cc4db4bb531d918d9"
+        },
+        {
+          "page": 6,
+          "path": "tmp/quality_book/render-v4/page-06.png",
+          "sha256": "969406cb3ac9582a9a09a8f25cf84841e30541d96f53c00dcc7c8af43ae3c3e8"
+        },
+        {
+          "page": 7,
+          "path": "tmp/quality_book/render-v4/page-07.png",
+          "sha256": "d5578c88ae6ceefedcc1ae20dfec2395a7d3c9428268f08a2dcb173dee6f1370"
+        },
+        {
+          "page": 8,
+          "path": "tmp/quality_book/render-v4/page-08.png",
+          "sha256": "9c28704ca6e6ae5727740426e768346d48f8e50229358151672d75281972fcc8"
+        },
+        {
+          "page": 9,
+          "path": "tmp/quality_book/render-v4/page-09.png",
+          "sha256": "6ec270ad57360e52f0ba2760051625ed2eb188b05ca5eac075f62b8412eaa498"
+        },
+        {
+          "page": 10,
+          "path": "tmp/quality_book/render-v4/page-10.png",
+          "sha256": "9fd33adab5af408b15688e1c05e27f378770901d82d0b5947d985a8d6a5f8601"
+        },
+        {
+          "page": 11,
+          "path": "tmp/quality_book/render-v4/page-11.png",
+          "sha256": "0a3969d3aae0a6c80f7d0c7702592bbc66b8f7a4a038b1001cb74119fb0f0edb"
+        },
+        {
+          "page": 12,
+          "path": "tmp/quality_book/render-v4/page-12.png",
+          "sha256": "38454bbfa2f4708c6407cb899c591db354f29c94589961e38a523d9151d38b68"
+        },
+        {
+          "page": 13,
+          "path": "tmp/quality_book/render-v4/page-13.png",
+          "sha256": "138d462ce50a6adbbac9d23c9a58ba7fe3670f3c34e0be81a56083479ce56832"
+        }
+      ],
+      "review_note": "Prior individually inspected pages1–12 verified byte-identical; final page13 individually viewed and rechecked at release.",
+      "checks": [
+        "Readable typography and table cells",
+        "No observed clipping or overlap",
+        "Figure/caption pairing and aspect preserved",
+        "Headers and page numbers correctly placed",
+        "Template/heading hierarchy intact"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "path": "application/figures/quality_review/system_responsibilities.png",
+      "sha256": "cff97b343170759328495174ca06f0400c0010b0acbae71863ec45f21e4208d8",
+      "review_note": "Node, radio bridge, PC commit/ACK and manual maintenance roles follow intended implementation; independent evaluation distinct."
+    },
+    {
+      "path": "application/figures/quality_review/water_layout.png",
+      "sha256": "fe86f290ea9930b51e145edcbcb9a054d966a8502dc3f8230840d439c4af5e6c",
+      "review_note": "P0 then R then P1 then Q then normal/leak split; B only healthy shared-supply perturbation."
+    },
+    {
+      "path": "application/figures/quality_review/collection_overview.png",
+      "sha256": "b89b95c427708c9025604bb160387adebf28af844cb022ac48e50e2bdcb518b0",
+      "review_note": "Model-coordinate callouts retained; conceptual fittings, cup and free-gap limitations explicit; not manufacturing evidence."
+    },
+    {
+      "path": "application/figures/quality_review/measurement_interfaces.png",
+      "sha256": "607e92d9f1a61b8925ccca19ab4cfdc618e2c94951609398bcce456091ec4638",
+      "review_note": "4–20mA/150ohm/ADC and5V pulse level conversion clear; protection unspecified explicitly."
+    },
+    {
+      "path": "application/figures/quality_review/diagnosis_proposal.png",
+      "sha256": "11bb2165580ddfb6dfbdbb81a578e0dc9c62a80ae9d2cf1682524f25be736ecd",
+      "review_note": "Proposed quality/operation gates separated from present synthetic classifier; arrows and failure exits legible."
+    },
+    {
+      "path": "application/figures/quality_review/durable_event_sequence.png",
+      "sha256": "fa6a168611eedd246aa53af8be889f711510e0bbb79ed2baa9a67255de6d253e",
+      "review_note": "PC commit before ACK; duplicate event and human review separated; no claim of deployed RF."
+    },
+    {
+      "path": "application/figures/quality_review/noise_outcomes_print.png",
+      "sha256": "543925384cf0c535f8c6836641ae3228e9ba4ac0a29ed252b0e1bf6ad86799c8",
+      "review_note": "Axes and sample definitions readable; 10kPa failure and fixed-Q comparison retained."
+    },
+    {
+      "path": "application/figures/quality_review/failure_counterexamples.png",
+      "sha256": "511dfed33e54b09132bbb5b5ab19e9d9590c09790715cb55fcc2b8128b5b4f25",
+      "review_note": "Unknown-load/drift/model-mismatch counterexamples retained; uncertainty not disguised as success."
+    },
+    {
+      "path": "application/figures/quality_review/sampling_window_tradeoff.png",
+      "sha256": "3144c30fb2159df495b181dc337dfe800613ca9708ce489e07dc05f609f2f241",
+      "review_note": "Bar label overlap corrected;75% usable-capacity assumption explicit; pulse steps/lag support design decision."
+    },
+    {
+      "path": "application/figures/quality_review/website_diagnosis_panel.png",
+      "sha256": "3b2605439253b49e4d5eb0dbc3262ec9292a3015c8c89631230557f7d7271216",
+      "review_note": "Native latest UI crop; source, units and ambiguous leak interpretation visible; exact same image embedded in both documents."
+    },
+    {
+      "path": "application/figures/quality_review/website_overview_desktop.png",
+      "sha256": "87d9451276071186ea4761c8f4f4d28b597200304f22e231e4ab10c3b5eb0ced",
+      "review_note": "Latest actual local browser capture inspected; controlled hierarchy and readable chart/source labels."
+    },
+    {
+      "path": "application/figures/quality_review/website_events_desktop.png",
+      "sha256": "2b50b201ccbbd82f548bb1c844370c411117e2d6490c13951ce0664cff5c6484",
+      "review_note": "Latest actual local browser capture inspected; pending recheck and unreceived-radio identities visible."
+    }
+  ],
+  "site_screenshots": [
+    {
+      "path": "tmp/quality_site_review/overview-1440.png",
+      "sha256": "565ea8aa1fb2ed02109a0970a3cba851ef61d60ccce9b2fd9ffc1609e4a55a47",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/monitor-1440.png",
+      "sha256": "f57e8449b36fbcb2d76c3512b04e318899411d43d7701032dd9e277dd73a508c",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/events-1440.png",
+      "sha256": "79bd261deddf2a860ddbc788ea7cad0813f80236b0f9861dd12abd9b37fb8b69",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/devices-1440.png",
+      "sha256": "47062f803ece65b3efcd856d962c367843e80f369f83d42de4839147a98666f3",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/history-1440.png",
+      "sha256": "9f723bca46b238b9cefee84d76c32ba05018103040e7174dcc109db5bcc648ee",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/settings-1440.png",
+      "sha256": "d06f092d2d91fa9adbf001ad0dbab3871d00fc6bdefee62fdf5b34dd84645813",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/overview-375.png",
+      "sha256": "8ba378f26091b247babd32f7f573c72faf0eff67ada359ffcb704163970d182c",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/monitor-375.png",
+      "sha256": "a5d8486996b1d06d2f24698295088006f08f48fa0f3efc474413e89a0f563e6b",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/events-375.png",
+      "sha256": "2e56f57e77f3958f1f6bc644ec03302fd1d074ec0bb29b605819fc194d1cb51e",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/devices-375.png",
+      "sha256": "1a7336e410259de0dcb07c5bf70096e8e92da4725f50453c551342f17f5f90e5",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/history-375.png",
+      "sha256": "6e281b7bc05dcdb34c3743fe5b8cdd94030a223eec8214f56f2e290038472d09",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/settings-375.png",
+      "sha256": "c240d85b0cac619182221d63ede90ac94cb10b6d209f1c85d58728acaf17bb0e",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/event-dialog-desktop.png",
+      "sha256": "661edf5069ef7e09f08d2520d4f139a28ff22fe26b864027a506c95bc3608bb1",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/event-dialog-mobile.png",
+      "sha256": "e08bb26813efaffee96f9f1b8912510da93fa21d128ad9f727f00dab1afac58c",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/events-with-record-desktop.png",
+      "sha256": "f99bc020001dd38a7ef21adc84b66b5e8c90688ca01774edda52374f21c81448",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/events-with-record-mobile.png",
+      "sha256": "0a1a890f2f9986fef4157d2aec8b93cd23fb7158c7646f32d39d443eb4488116",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/maintenance-desktop.png",
+      "sha256": "1402c98f222bd648c3d8f6cf806d339e0944598c0e985662945d707a1738c6b7",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/overview-lower-desktop.png",
+      "sha256": "58b289c3a3c56d2b1f263f058244b3943019bdf842293422d6a5616e46d30890",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/quality-overview-desktop.png",
+      "sha256": "565ea8aa1fb2ed02109a0970a3cba851ef61d60ccce9b2fd9ffc1609e4a55a47",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    },
+    {
+      "path": "tmp/quality_site_review/quality-overview-mobile.png",
+      "sha256": "8ba378f26091b247babd32f7f573c72faf0eff67ada359ffcb704163970d182c",
+      "review_note": "Individually viewed; mobile/desktop hierarchy, text wrapping, intended table scroll and controls assessed in this state."
+    }
+  ],
+  "official_taskbook_template_obtained": false,
+  "remaining_limitations": [
+    "No physical/field/RF or power experiments",
+    "CAD visual/geometric review is not full manufacturing or continuous-clearance verification",
+    "No formal school taskbook or approval/signatures",
+    "PPT unchanged historical draft",
+    "Only inspected viewports/states; not universal accessibility certification"
+  ],
+  "model_viewer_source_sha256": "e81aa4d9b7c36e4c5c1bbec3a314633557f3e23abf044b3412ee74705c7256ee",
+  "model_viewer_screenshots": [
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-iso.png",
+      "sha256": "c2b505a1cb678735ca3785aa8933b151eb6e1c7d0b2146371d1fa87e56d4e69a",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-top.png",
+      "sha256": "15a6c3ad1584e41e7e4ff4288dffaac3a0b8d06af7b9f69c020668ed564b690b",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-front.png",
+      "sha256": "8c17756abd284f3c17498dd693e4206cc1a1673a442f9552e9e5f982dd8d7441",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-pressure.png",
+      "sha256": "8b7fdcc13e10e860afa6a1e013d856ff51f487c7552bcd718a401620a50901f0",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-375-leak.png",
+      "sha256": "80d028934e174bfe86c4a69cb3b48d61f218f2f73d0427bcb55556ed782f51c5",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-iso.png",
+      "sha256": "9beff82b7a87eddd59d86374801a177239d2a49c989db2762a1e8c51169e4b33",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-top.png",
+      "sha256": "5f40247297a626d65ef2acdfafcb649138fc5bc0c576c4e96f6824f2a5fda33b",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-front.png",
+      "sha256": "c51a92d899710ab5adc0e024dd5af11b40128865e0f858f54b2b991a3727ad20",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-pressure.png",
+      "sha256": "9f332aa000879d99d9d636088ba432781fecfa501433316ef4d36f5d82cab34d",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    },
+    {
+      "path": "tmp/quality_model_viewer/viewer-1440-leak.png",
+      "sha256": "bdd00189ba31fb07d19f918724091a3ae1f3505d9c29948595e1598af4b736d5",
+      "review_note": "Final screenshot individually viewed: five views each at375/1440px; original anchor/leader relationship, corrected overlap and mobile heading inspected."
+    }
+  ],
+  "model_viewer_note": "375px front2/6 overlap corrected by label avoidance; top/local cup label uses existing leak_rim anchor. Scene geometry unchanged;20s/440mL conditions labeled, long drainage unverified."
+}

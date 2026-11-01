@@ -1,0 +1,87 @@
+{
+  "source": "WPS native ranges",
+  "physical_validation": false,
+  "pages": 24,
+  "figures": [
+    {
+      "end_page": 5,
+      "caption": "图1 系统职责与独立评价关系 拟实施方案",
+      "width_pt": 410.0,
+      "start_page": 5
+    },
+    {
+      "end_page": 6,
+      "caption": "图2 双支路清水台架与故障注入位置 原理关系示意",
+      "width_pt": 410.0,
+      "start_page": 6
+    },
+    {
+      "end_page": 7,
+      "caption": "图3 台架装配及独立收集布局 未制造概念模型",
+      "width_pt": 410.0,
+      "start_page": 7
+    },
+    {
+      "end_page": 8,
+      "caption": "图4 双压力与流量采集接口 功能设计 保护定值待验证",
+      "width_pt": 410.0,
+      "start_page": 8
+    },
+    {
+      "end_page": 10,
+      "caption": "图5 质量与工况辅助诊断流程 拟实施 门控尚未实现",
+      "width_pt": 410.0,
+      "start_page": 10
+    },
+    {
+      "end_page": 12,
+      "caption": "图6 持久化确认与丢ACK重试关系 候选协议 非真实射频",
+      "width_pt": 410.0,
+      "start_page": 12
+    },
+    {
+      "end_page": 13,
+      "caption": "图7 当前离线Web诊断卡片 原生截图 合成观测 未接实物",
+      "width_pt": 380.0,
+      "start_page": 13
+    },
+    {
+      "end_page": 20,
+      "caption": "图8 不同压力噪声下的有效早期计数 同源合成统计 非实测",
+      "width_pt": 410.0,
+      "start_page": 20
+    },
+    {
+      "end_page": 21,
+      "caption": "图9 未知负载 漂移与模型失配反例 合成证据",
+      "width_pt": 410.0,
+      "start_page": 21
+    }
+  ],
+  "tables": [
+    {
+      "page": 14,
+      "caption": "表1 四工作包与验证交付",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "page": 14,
+      "caption": "表2 独立实验与对照安排",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "page": 19,
+      "caption": "表3 三阶段与实施里程碑",
+      "rows": 9,
+      "columns": 3
+    },
+    {
+      "page": 22,
+      "caption": "表4 候选资源与条件预算",
+      "rows": 10,
+      "columns": 3
+    }
+  ]
+}

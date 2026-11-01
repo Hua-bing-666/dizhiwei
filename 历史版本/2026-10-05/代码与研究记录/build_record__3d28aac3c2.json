@@ -1,0 +1,16 @@
+{
+  "input_path": "C:\\Users\\Lenovo\\Desktop\\大创想法\\deliverables\\大创申报书_表格与文献修订稿.docx",
+  "input_sha256": "31a70caea9c29ec1609585228dca0fb1c1bbffdb84d1bcd94163553d7a030f54",
+  "output_path": "C:\\Users\\Lenovo\\Desktop\\大创想法\\deliverables\\大创申报书_紧凑排版稿.docx",
+  "changes": {
+    "empty_keep_next_removed": 40,
+    "body_paragraphs_may_flow": 34,
+    "table_wrappers_may_flow": 1,
+    "unnecessary_breaks_removed": 1
+  },
+  "text_rewritten": false,
+  "image_sizes_changed": "Only figure 2 height; width and printed font sizes retained",
+  "compact_figure_sha256": "45f04fac4f1bbcd4df164f0c90c3565f4e0fd2e42d4e87d775d761feb3db44d4",
+  "body_font_sizes_changed": false,
+  "school_form_retained": true
+}

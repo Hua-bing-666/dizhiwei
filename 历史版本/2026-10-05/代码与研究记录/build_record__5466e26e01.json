@@ -1,0 +1,192 @@
+{
+  "input": "deliverables/大创申报书_语言与范围修订稿.docx",
+  "input_sha256": "3b0e557bd6fbd0a660ab7012215a25b4b60bf9dc6498e3b84ed1232ddbd97e44",
+  "output": "deliverables/大创申报书_公式与插图修订稿.docx",
+  "native_equation_count": 27,
+  "equations": [
+    {
+      "source": "P0"
+    },
+    {
+      "source": "P1"
+    },
+    {
+      "source": "P0"
+    },
+    {
+      "source": "P1"
+    },
+    {
+      "source": "P0−P1=R·Q²"
+    },
+    {
+      "source": "Q=(Cₙ+Cₗ)√P1"
+    },
+    {
+      "source": "Cₙ"
+    },
+    {
+      "source": "Cₗ"
+    },
+    {
+      "source": "kPa/(L/min)²"
+    },
+    {
+      "source": "(L/min)/√kPa"
+    },
+    {
+      "source": "Cₙ=0.28"
+    },
+    {
+      "source": "R=0.8"
+    },
+    {
+      "source": "K=Q/√P1"
+    },
+    {
+      "source": "R̂=(P0−P1)/Q²"
+    },
+    {
+      "source": "R̂"
+    },
+    {
+      "source": "R̂"
+    },
+    {
+      "source": "P0"
+    },
+    {
+      "source": "P1"
+    },
+    {
+      "source": "R̂"
+    },
+    {
+      "source": "P0"
+    },
+    {
+      "source": "σ"
+    },
+    {
+      "source": "σ"
+    },
+    {
+      "source": "σ"
+    },
+    {
+      "source": "σ"
+    },
+    {
+      "source": "σ"
+    },
+    {
+      "source": "P0"
+    },
+    {
+      "source": "R̂"
+    }
+  ],
+  "replaced_figures": [
+    {
+      "figure": 1,
+      "part": "word/media/image2.png",
+      "source": "application/figures/equation_revision/system_responsibilities.png",
+      "sha256": "9437427a152fa0e8975630405dbd346b6e62a9c3005d2cffd5eaec6fe1768bc5"
+    },
+    {
+      "figure": 2,
+      "part": "word/media/image3.png",
+      "source": "application/figures/equation_revision/water_layout.png",
+      "sha256": "8033e86765751f11554836dbf2b7161d0393f525bab48519712130582b6e77d7"
+    },
+    {
+      "figure": 3,
+      "part": "word/media/image4.png",
+      "source": "application/figures/equation_revision/collection_overview.png",
+      "sha256": "22c34808b58fe2b3a96e3801b680f69c52315e6943074e01d9901ca757d07de5"
+    },
+    {
+      "figure": 4,
+      "part": "word/media/image5.png",
+      "source": "application/figures/equation_revision/measurement_interfaces.png",
+      "sha256": "1930eef5bca0bae1658ddd8f550261af957e2896e9295b81884d2b4d092bf661"
+    },
+    {
+      "figure": 5,
+      "part": "word/media/image6.png",
+      "source": "application/figures/equation_revision/diagnosis_proposal.png",
+      "sha256": "5f081bfd49595ef3e36e01d85743a2b12036b9b49c3bb309637535dd18f4456f"
+    },
+    {
+      "figure": 6,
+      "part": "word/media/image7.png",
+      "source": "application/figures/equation_revision/durable_event_sequence.png",
+      "sha256": "1d8770fb6171b95435d0efcb702581976388a5b2a23ad0fa4967f7340930ba1b"
+    },
+    {
+      "figure": 8,
+      "part": "word/media/image9.png",
+      "source": "application/figures/equation_revision/noise_outcomes_print.png",
+      "sha256": "0c9f0b4dcd0383d1b6f71dab57bad0f5e33972ea55ead618873ae8460f493e1a"
+    },
+    {
+      "figure": 9,
+      "part": "word/media/image10.png",
+      "source": "application/figures/equation_revision/failure_counterexamples.png",
+      "sha256": "55bc6981618102920dac9ca028e0638f87e740f4ebb9fb40c437bc8042b60d42"
+    }
+  ],
+  "text_replacements": [
+    {
+      "before": "台架按测量、装配和维护需求进行结构设计。图3采用参数化三维模型表达管路固定、侧向取压、活接拆装、采集盒布置和独立收集路径；底板初步采用900×520mm、管中心高度140mm的布局。各接口安装长度和直管段按器件安装要求校核，采集盒与出水、回水路径保持隔离，管路拆卸和容器取出空间纳入结构检查。三维模型用于方案论证与装配复核，实物制造后开展漏水、排气、固定和计量稳定性检查。",
+      "after": "台架按测量、装配和维护需求进行结构设计。图3采用参数化三维模型表达管路固定、侧向取压、活接拆装、采集盒布置和独立收集路径；结构布局兼顾测点访问、活接拆装和收集容器取放。各接口安装长度和直管段按器件安装要求校核，采集盒与出水、回水路径保持隔离，管路拆卸和容器取出空间纳入结构检查。三维模型用于方案论证与装配复核，实物制造后开展漏水、排气、固定和计量稳定性检查。"
+    },
+    {
+      "before": "节点以STM32F103C8T6为主控，采用两路4—20mA压力变送器、ADS1115模数转换模块和脉冲式流量计获取P0、P1、Q，使用microSD保存原始记录，通过E220-400T22D模块实现LoRa通信。压力器件按0—200kPa表压和±0.25%FS等级提出选型要求，可采用满足相应规格的MPM489系列产品；台架流量测量采用SEN0549，覆盖0.3—5L/min工作范围。接收端由另一只E220模块及3.3V逻辑USB-TTL接口连接计算机，形成单节点验证所需的发收链路。",
+      "after": "节点以STM32F103C8T6为主控，采用两路4—20mA压力变送器、ADS1115模数转换模块和脉冲式流量计获取P0、P1、Q，使用microSD保存原始记录，通过E220-400T22D模块实现LoRa通信。压力器件按0—200kPa表压和±0.25%FS等级提出选型要求；台架流量测量采用SEN0549，覆盖0.3—5L/min工作范围。接收端由另一只E220模块及3.3V逻辑USB-TTL接口连接计算机，形成单节点验证所需的发收链路。"
+    }
+  ],
+  "physical_validation": false,
+  "preserved_package_parts": {
+    "[Content_Types].xml": "4d35aacfade36f6f76137b89a48f1b25d8660f9bfcdbc96cf145c46710c9e02f",
+    "_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "_rels/.rels": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977",
+    "customXml/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "customXml/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "customXml/_rels/item1.xml.rels": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0",
+    "customXml/item1.xml": "8a60b65a7e5ffb3b913994c45515677e6c0a31b8e1ccb255bae5da5e159f20e2",
+    "customXml/itemProps1.xml": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1",
+    "docProps/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docProps/app.xml": "dfef9be0ede616c309a7f9344c41627a22afd8d15cd928935d6e097f7d9c88c0",
+    "docProps/core.xml": "c286a48f0905b48bb28d9ce9df6234b0ff827fa44ed5cde48849b3b495a5a2d6",
+    "docProps/custom.xml": "e51586735783c114bd32e6ec9194ca54b04204408f44ebd67c9ee65df543e3c1",
+    "word/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "word/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "word/_rels/document.xml.rels": "6efb5ef04bed897a089cf6d96391a0ffd36622cf31fbd0aa31a03c117dd930bb",
+    "word/_rels/fontTable.xml.rels": "7ef4cc2d22c5d89562930bc30f7690b70caea625b49f51c774b8d2b1fad821fd",
+    "word/fonts/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "word/fonts/font1.odttf": "feccf98b8c9d7eea8a90149cda3ce72416270bb2fb3cdcb3f913bdbc55daca26",
+    "word/fonts/font2.odttf": "55817a99530e60948c5d82227b0c075b0bd9a83a9a1dbe48b1606d278ac62484",
+    "word/fonts/font3.odttf": "8608542ad0f8abb4fad959b2b5d1b91bd6377a36c35e0b59c32df3e4c041a4a0",
+    "word/fonts/font4.odttf": "c41094c50d90f29d164a330b07ae2b5e8c45ec86f17a5f0f87dbcab46e83e468",
+    "word/fonts/font5.odttf": "95cfb25f908f52e9db760849ce236d9c467515588e9be9cae4b1e81d6d87dad7",
+    "word/fontTable.xml": "b25c5edebfc8d89503fc156f9cb7010b0e5471ce047f955ee8f769918a3f9fc8",
+    "word/footer1.xml": "4ebd1697db075beeb3e4e86df34694da7d47e1cc84a4e15788e68f647cbb7613",
+    "word/styles.xml": "4f3a0a0ece003b4ef86728201c39e648d0963aeed0afa5fa223d37fc67d4a0c2",
+    "word/theme/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "word/theme/theme1.xml": "bea0a0590dea0ed9e97fa4391c1b7980640249387153014388eaaa628837b32c"
+  },
+  "media_sha256": {
+    "word/media/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "word/media/image1.png": "e67151cf7f69b3144175889ec3c673585ead75853a4db70a48c11123b18a6678",
+    "word/media/image10.png": "55bc6981618102920dac9ca028e0638f87e740f4ebb9fb40c437bc8042b60d42",
+    "word/media/image2.png": "9437427a152fa0e8975630405dbd346b6e62a9c3005d2cffd5eaec6fe1768bc5",
+    "word/media/image3.png": "8033e86765751f11554836dbf2b7161d0393f525bab48519712130582b6e77d7",
+    "word/media/image4.png": "22c34808b58fe2b3a96e3801b680f69c52315e6943074e01d9901ca757d07de5",
+    "word/media/image5.png": "1930eef5bca0bae1658ddd8f550261af957e2896e9295b81884d2b4d092bf661",
+    "word/media/image6.png": "5f081bfd49595ef3e36e01d85743a2b12036b9b49c3bb309637535dd18f4456f",
+    "word/media/image7.png": "1d8770fb6171b95435d0efcb702581976388a5b2a23ad0fa4967f7340930ba1b",
+    "word/media/image8.png": "3b2605439253b49e4d5eb0dbc3262ec9292a3015c8c89631230557f7d7271216",
+    "word/media/image9.png": "0c9f0b4dcd0383d1b6f71dab57bad0f5e33972ea55ead618873ae8460f493e1a"
+  }
+}

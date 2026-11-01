@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-05",
+  "status": "document_review_pass_with_stated_pagination_exceptions",
+  "pages": 20,
+  "native_math_objects": 27,
+  "four_core_equations_editable": true,
+  "figures": 9,
+  "revised_figures": 8,
+  "editable_tables": 4,
+  "references": {
+    "chinese": 5,
+    "english": 3
+  },
+  "information_fields_blank": true,
+  "physical_validation": false,
+  "pagination_exceptions": [
+    8,
+    12,
+    18
+  ],
+  "artifact_sha256": {
+    "deliverables/大创申报书_公式与插图修订稿.docx": "8b294c67a4a28973d1b1dc4f50f266ea018901665a83fa270e5eaf3f2066bd03",
+    "deliverables/大创申报书_公式与插图审阅版.pdf": "e8c490f61a7cd1d3b0bc8da138ce17d0b69c964f88c3b2a5bfeb921f85bd9b40",
+    "application/正式模板正文.md": "9ced77eed28cd694f5fdbea85c614156eed971de9593b20e0440c67df760e4f5",
+    "deliverables/index.html": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f"
+  },
+  "evidence_sha256": {
+    "simulation/equation_figure_review/document_checks.json": "7684a0bec75a2caba911e87b497576fcd7cd76d22e598935c1f3cea7a8653ebf",
+    "simulation/equation_figure_review/visual_review.json": "57448794cac1141f8330c9c25f40d5144fd741286b682aca0af977071179e27d",
+    "simulation/equation_figure_review/figure_checks.json": "3baaabf0cc9645de7643e47c299c691b10e17ed532eb03ccf6bab90fba2e3720"
+  }
+}

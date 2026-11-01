@@ -1,0 +1,77 @@
+{
+  "classification": "host_mock_only",
+  "hardware_compiled": false,
+  "physical_execution": false,
+  "checks": [
+    {
+      "name": "normal does not generate protection",
+      "passed": true
+    },
+    {
+      "name": "invalid",
+      "passed": true
+    },
+    {
+      "name": "unknown_operation",
+      "passed": true
+    },
+    {
+      "name": "unconfirmed",
+      "passed": true
+    },
+    {
+      "name": "request is not actual or demo execution",
+      "passed": true
+    },
+    {
+      "name": "duplicate is idempotent",
+      "passed": true
+    },
+    {
+      "name": "conflicting content rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong branch feedback rejected",
+      "passed": true
+    },
+    {
+      "name": "receipt does not imply output or valve closure",
+      "passed": true
+    },
+    {
+      "name": "repeated execution produces one demo effect",
+      "passed": true
+    },
+    {
+      "name": "manual reset stops demonstration",
+      "passed": true
+    },
+    {
+      "name": "manual operation uses same request states",
+      "passed": true
+    }
+  ],
+  "commands": [
+    {
+      "command_id": "demo-1",
+      "branch_id": "A",
+      "source": "automatic",
+      "reason": "known severe candidate",
+      "status": "manually_reset",
+      "mode": "simulation",
+      "physical_verified": false,
+      "output": "off"
+    },
+    {
+      "command_id": "manual-2",
+      "branch_id": "A",
+      "source": "manual",
+      "reason": "operator request",
+      "status": "requested",
+      "mode": "simulation",
+      "physical_verified": false,
+      "output": "off"
+    }
+  ]
+}

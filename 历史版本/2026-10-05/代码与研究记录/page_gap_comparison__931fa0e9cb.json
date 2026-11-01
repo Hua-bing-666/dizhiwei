@@ -1,0 +1,194 @@
+{
+  "method": "PDFium text and image vertical bounds; A4 body margins 70.9pt; excludes cover, instructions, registration, signatures and approval; measures trailing whitespace, not total ink area",
+  "threshold": 0.25,
+  "before": {
+    "pages": 19,
+    "pages_with_bottom_gap_over_25_percent": [
+      5,
+      6,
+      11,
+      12,
+      14,
+      17,
+      18
+    ],
+    "rows": [
+      {
+        "page": 4,
+        "bottom_gap_pt": 19.0,
+        "bottom_gap_ratio": 0.027
+      },
+      {
+        "page": 5,
+        "bottom_gap_pt": 242.4,
+        "bottom_gap_ratio": 0.346
+      },
+      {
+        "page": 6,
+        "bottom_gap_pt": 268.6,
+        "bottom_gap_ratio": 0.384
+      },
+      {
+        "page": 7,
+        "bottom_gap_pt": 26.9,
+        "bottom_gap_ratio": 0.038
+      },
+      {
+        "page": 8,
+        "bottom_gap_pt": 31.8,
+        "bottom_gap_ratio": 0.045
+      },
+      {
+        "page": 9,
+        "bottom_gap_pt": 167.6,
+        "bottom_gap_ratio": 0.239
+      },
+      {
+        "page": 10,
+        "bottom_gap_pt": 104.9,
+        "bottom_gap_ratio": 0.15
+      },
+      {
+        "page": 11,
+        "bottom_gap_pt": 347.3,
+        "bottom_gap_ratio": 0.496
+      },
+      {
+        "page": 12,
+        "bottom_gap_pt": 203.4,
+        "bottom_gap_ratio": 0.29
+      },
+      {
+        "page": 13,
+        "bottom_gap_pt": 69.6,
+        "bottom_gap_ratio": 0.099
+      },
+      {
+        "page": 14,
+        "bottom_gap_pt": 321.5,
+        "bottom_gap_ratio": 0.459
+      },
+      {
+        "page": 15,
+        "bottom_gap_pt": 50.9,
+        "bottom_gap_ratio": 0.073
+      },
+      {
+        "page": 16,
+        "bottom_gap_pt": 19.0,
+        "bottom_gap_ratio": 0.027
+      },
+      {
+        "page": 17,
+        "bottom_gap_pt": 306.6,
+        "bottom_gap_ratio": 0.438
+      },
+      {
+        "page": 18,
+        "bottom_gap_pt": 261.7,
+        "bottom_gap_ratio": 0.374
+      },
+      {
+        "page": 19,
+        "bottom_gap_pt": 36.4,
+        "bottom_gap_ratio": 0.052
+      },
+      {
+        "page": 20,
+        "bottom_gap_pt": 39.2,
+        "bottom_gap_ratio": 0.056
+      },
+      {
+        "page": 21,
+        "bottom_gap_pt": 61.6,
+        "bottom_gap_ratio": 0.088
+      },
+      {
+        "page": 22,
+        "bottom_gap_pt": 44.0,
+        "bottom_gap_ratio": 0.063
+      }
+    ]
+  },
+  "after": {
+    "pages": 15,
+    "pages_with_bottom_gap_over_25_percent": [],
+    "rows": [
+      {
+        "page": 4,
+        "bottom_gap_pt": 74.5,
+        "bottom_gap_ratio": 0.106
+      },
+      {
+        "page": 5,
+        "bottom_gap_pt": 22.3,
+        "bottom_gap_ratio": 0.032
+      },
+      {
+        "page": 6,
+        "bottom_gap_pt": 37.2,
+        "bottom_gap_ratio": 0.053
+      },
+      {
+        "page": 7,
+        "bottom_gap_pt": 10.0,
+        "bottom_gap_ratio": 0.014
+      },
+      {
+        "page": 8,
+        "bottom_gap_pt": 141.2,
+        "bottom_gap_ratio": 0.202
+      },
+      {
+        "page": 9,
+        "bottom_gap_pt": 21.6,
+        "bottom_gap_ratio": 0.031
+      },
+      {
+        "page": 10,
+        "bottom_gap_pt": 46.6,
+        "bottom_gap_ratio": 0.067
+      },
+      {
+        "page": 11,
+        "bottom_gap_pt": 8.9,
+        "bottom_gap_ratio": 0.013
+      },
+      {
+        "page": 12,
+        "bottom_gap_pt": 17.3,
+        "bottom_gap_ratio": 0.025
+      },
+      {
+        "page": 13,
+        "bottom_gap_pt": 29.5,
+        "bottom_gap_ratio": 0.042
+      },
+      {
+        "page": 14,
+        "bottom_gap_pt": 10.5,
+        "bottom_gap_ratio": 0.015
+      },
+      {
+        "page": 15,
+        "bottom_gap_pt": 62.9,
+        "bottom_gap_ratio": 0.09
+      },
+      {
+        "page": 16,
+        "bottom_gap_pt": 37.2,
+        "bottom_gap_ratio": 0.053
+      },
+      {
+        "page": 17,
+        "bottom_gap_pt": 35.2,
+        "bottom_gap_ratio": 0.05
+      },
+      {
+        "page": 18,
+        "bottom_gap_pt": 156.2,
+        "bottom_gap_ratio": 0.223
+      }
+    ]
+  }
+}

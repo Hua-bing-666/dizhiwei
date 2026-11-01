@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-05",
+  "status": "passed_scoped_pagination_and_image_review",
+  "pages": 20,
+  "body_pages": 15,
+  "figures": 9,
+  "data_tables": 4,
+  "chinese_references": 5,
+  "english_references": 3,
+  "all_document_text_unchanged": true,
+  "character_font_sizes_unchanged": true,
+  "original_user_file_preserved": true,
+  "input_sha256": "31a70caea9c29ec1609585228dca0fb1c1bbffdb84d1bcd94163553d7a030f54",
+  "physical_validation": false,
+  "administrative_complete": false,
+  "scope": "申报书分页、段距、图2版面；网站、实施书、仿真数据、三维实体和PPT未改",
+  "page_gap_definition": "PDFium text and image vertical bounds; A4 body margins 70.9pt; excludes cover, instructions, registration, signatures and approval; measures trailing whitespace, not total ink area",
+  "pages_with_trailing_gap_over_25_percent": {
+    "before": 7,
+    "after": 0
+  },
+  "checks": [
+    "simulation/compact_layout_review/document_checks.json",
+    "simulation/compact_layout_review/figure_checks.json",
+    "simulation/compact_layout_review/page_gap_comparison.json",
+    "simulation/compact_layout_review/visual_review.json"
+  ],
+  "unchanged_files": [
+    {
+      "path": "deliverables/index.html",
+      "sha256": "a1baa1af7627b1b04efc6b7dcd8189d0893d65818d9bfdb98cdf71c99174a26f"
+    },
+    {
+      "path": "deliverables/实施项目书.docx",
+      "sha256": "de301d24e483ce984f448170428e16795469977a7f9ee85f93ffa1a2c2b52335"
+    },
+    {
+      "path": "deliverables/实施项目书.pdf",
+      "sha256": "dc677dad6ca23b0ac6a5603ba8d049101c145b6752e1204271b4c111dc11f49e"
+    },
+    {
+      "path": "application/正式模板正文.md",
+      "sha256": "7c0334746d19ac3834f81024d42c4859d07cf6b1103494eed6da81c73c676ce0"
+    },
+    {
+      "path": "application/references.json",
+      "sha256": "1c0a174202ec4c28950850c2a20ad96fb6b8a3b6ca06edccf4be3bfd59c14dfb"
+    }
+  ],
+  "files": [
+    {
+      "path": "deliverables/大创申报书_紧凑排版稿.docx",
+      "sha256": "c58a42d542cfd018d36b05e062608b90dcf9d753a82b932931d198ed31857190"
+    },
+    {
+      "path": "deliverables/大创申报书_紧凑排版审阅版.pdf",
+      "sha256": "816757c5ed205fae26b814a61e77bec9cb5938320762cc7a5c3dc271f2190806"
+    },
+    {
+      "path": "deliverables/使用说明.md",
+      "sha256": "f5a53fffc028dd9c6c10bf6e43884ec4f63f7314a4ed56cd0a27ae8aa1115c7f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "741721cdd024d2411ccd9b637f975b8a2c8e8cfacd7384eb61aae387308e148e"
+    },
+    {
+      "path": "docs/申报书分页与图片复核.md",
+      "sha256": "cfa589f0315cea32807936b8ed4a5d3bce8c3e1ed32df9d18b16dfd155f7a11e"
+    },
+    {
+      "path": "application/compact_layout_revision/body.md",
+      "sha256": "7c0334746d19ac3834f81024d42c4859d07cf6b1103494eed6da81c73c676ce0"
+    },
+    {
+      "path": "application/compact_layout_revision/build_record.json",
+      "sha256": "3d28aac3c2159725f0a31523d8c4de26de3573bcf460a1999f0e949afb81fcb6"
+    },
+    {
+      "path": "application/compact_layout_revision/native_layout.json",
+      "sha256": "5a7b5e283135acdcb24cb239ee18ac7a3ce5134f0c48a3f2cd465c7fb0e34ebb"
+    },
+    {
+      "path": "application/figures/compact_layout/water_layout.png",
+      "sha256": "45f04fac4f1bbcd4df164f0c90c3565f4e0fd2e42d4e87d775d761feb3db44d4"
+    },
+    {
+      "path": "application/figures/compact_layout/water_layout.svg",
+      "sha256": "148b211b6f56cb8ed57c1d28826ba58878bb0ea960e9f1dda09f6da728f63c9f"
+    },
+    {
+      "path": "simulation/compact_layout_review/document_checks.json",
+      "sha256": "f42133f5cc1b383a60432017d1f3ea4dec78d4f264b70abf41fe24e6271afe41"
+    },
+    {
+      "path": "simulation/compact_layout_review/figure_checks.json",
+      "sha256": "60cbcfe27ffbeb72c263b7cd9a26b7086cd675865a9a1857371f33360c824ed6"
+    },
+    {
+      "path": "simulation/compact_layout_review/page_gap_comparison.json",
+      "sha256": "931fa0e9cb2e29cf60a39221593c1eca3fb373bdb3b03322cd401fef8b8f536d"
+    },
+    {
+      "path": "simulation/compact_layout_review/visual_review.json",
+      "sha256": "ddcc55a2f475d9939180176cf4a7bd8f38a4cdf22cfca5b2e7ddafed1ee2c1e5"
+    },
+    {
+      "path": "scripts/compact_application_layout.py",
+      "sha256": "0def2fa67fc2b29773555a4eb18d0b96292cea8107621352ab2a44cbf528bd7a"
+    },
+    {
+      "path": "scripts/build_compact_water_figure.py",
+      "sha256": "920de75a78b46da1a39c6e183cb29e51d654efeef88c9c50efcf4124697faad0"
+    },
+    {
+      "path": "scripts/verify_compact_water_figure.mjs",
+      "sha256": "1e71337fdfe12932af604f94e54d7fb30904a9cfeb50d2c83599cbc7312d473a"
+    },
+    {
+      "path": "scripts/export_compact_application.ps1",
+      "sha256": "53ff335618fd042701aaa0c65f634a515894b2e23c8a3061e88e7dcf897fe869"
+    },
+    {
+      "path": "scripts/verify_compact_application.py",
+      "sha256": "40971488021b3217e839213937649b74eb890c621bd1627761e03b33f66442b2"
+    },
+    {
+      "path": "scripts/measure_application_page_gaps.py",
+      "sha256": "34eec4daee39e2f4caff80f351e5473ffb88063ec799b4ab2a0ea526a4e5efbc"
+    },
+    {
+      "path": "scripts/finalize_compact_layout.py",
+      "sha256": "cefbb59d23542e5c37b385dd5b69c9c623f2bb752f18d568b56b1cc615e84278"
+    }
+  ]
+}

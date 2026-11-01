@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-05",
+  "scope": "application document and figures; local WPS print layout",
+  "status": "automated_checks_and_visual_review_passed_with_stated_scope",
+  "output": "deliverables/大创申报书_系统方案完善稿.docx",
+  "output_sha256": "e33c6265dc2a00d75bf3cf679758753d7a4ad9eec05f82e474bfa0e1f4930af1",
+  "source_sha256": "192a3405403ea9bb8a2404fd87cd354c339f33e5f0f96a6f81a91672de7645fb",
+  "pages": 21,
+  "native_math_count": 27,
+  "references": {
+    "Chinese": 5,
+    "English": 3
+  },
+  "figure_count": 10,
+  "revised_figure_count": 9,
+  "figure_pages": {
+    "1": 5,
+    "2": 5,
+    "3": 6,
+    "4": 7,
+    "5": 9,
+    "6": 10,
+    "7": 11,
+    "8": 12,
+    "9": 17,
+    "10": 18
+  },
+  "centered_body_tables": 3,
+  "revised_figure_width_pt": 420,
+  "unchanged_platform_figure_width_pt": 390,
+  "pdf_images": [
+    {
+      "page": 5,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 73.19999999999993,
+      "bottom": 350.4
+    },
+    {
+      "page": 5,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 475.56000000000006,
+      "bottom": 714.96
+    },
+    {
+      "page": 6,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 359.76,
+      "bottom": 704.16
+    },
+    {
+      "page": 7,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 324.9599999999999,
+      "bottom": 668.52
+    },
+    {
+      "page": 9,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 73.79999999999995,
+      "bottom": 443.4
+    },
+    {
+      "page": 10,
+      "x0": 88.68,
+      "x1": 508.68,
+      "top": 114.12,
+      "bottom": 395.52
+    },
+    {
+      "page": 11,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 78.60000000000002,
+      "bottom": 423.0
+    },
+    {
+      "page": 12,
+      "x0": 102.6,
+      "x1": 492.6,
+      "top": 75.60000000000002,
+      "bottom": 550.68
+    },
+    {
+      "page": 17,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 287.7599999999999,
+      "bottom": 628.8
+    },
+    {
+      "page": 18,
+      "x0": 87.6,
+      "x1": 507.6,
+      "top": 174.12,
+      "bottom": 515.16
+    }
+  ],
+  "physical_validation": false,
+  "energy_claim": null,
+  "page_receipts": [
+    {
+      "page": 1,
+      "file": "tmp/submission_document_review/final_pages/page-01.png",
+      "sha256": "2a5f802471d9825d1d1044137b080d3616a79956292248d5d09a6d9c616050d7"
+    },
+    {
+      "page": 2,
+      "file": "tmp/submission_document_review/final_pages/page-02.png",
+      "sha256": "6c9f0abc19193a0837d7517c12440876b2724d11ed5a1d3547e0258881ae73e4"
+    },
+    {
+      "page": 3,
+      "file": "tmp/submission_document_review/final_pages/page-03.png",
+      "sha256": "7e6555fd8e3f535b7bcf22539af8ad776279e72436881103069f98a6fc9d0b7e"
+    },
+    {
+      "page": 4,
+      "file": "tmp/submission_document_review/final_pages/page-04.png",
+      "sha256": "937ebe8859d90c041ea4c9f5ca1e4d0903789313dbbd72cb8eff32825a3d0894"
+    },
+    {
+      "page": 5,
+      "file": "tmp/submission_document_review/final_pages/page-05.png",
+      "sha256": "a569381163fde376813c174dffdb09abbed191e35697bbce252d2dc4309ee7ff"
+    },
+    {
+      "page": 6,
+      "file": "tmp/submission_document_review/final_pages/page-06.png",
+      "sha256": "53a6fd70b2e4ba2287a44d96077d62c27c5403695a0b2949359e1dfad90f5a46"
+    },
+    {
+      "page": 7,
+      "file": "tmp/submission_document_review/final_pages/page-07.png",
+      "sha256": "f3de98e8e52e33b92c8dc886b45fa3787d8a5f26b968cd3bb88288271ed7a554"
+    },
+    {
+      "page": 8,
+      "file": "tmp/submission_document_review/final_pages/page-08.png",
+      "sha256": "7dc2bc665fa51d608ca231462394c62f7a4f8c2c0c13be593a831d2d6cd87536"
+    },
+    {
+      "page": 9,
+      "file": "tmp/submission_document_review/final_pages/page-09.png",
+      "sha256": "aa6ca013d1c665026dd45e71081cbfe61909388bd8dfd65172e3eae02aee8c6f"
+    },
+    {
+      "page": 10,
+      "file": "tmp/submission_document_review/final_pages/page-10.png",
+      "sha256": "dab1519413241201db4f150df92c20da76e020a84e48f21f6f5d91bffe33a1d1"
+    },
+    {
+      "page": 11,
+      "file": "tmp/submission_document_review/final_pages/page-11.png",
+      "sha256": "a5b4f5428ce629e16a141efcbcd7d0565bbbfbbe128728d0d3309bb0236bb997"
+    },
+    {
+      "page": 12,
+      "file": "tmp/submission_document_review/final_pages/page-12.png",
+      "sha256": "11a9939c8a42c7033378c059bda4913ef6d08b8073496dbf0367409dc2834fde"
+    },
+    {
+      "page": 13,
+      "file": "tmp/submission_document_review/final_pages/page-13.png",
+      "sha256": "6b2c5fa15d5123ab9f7e545f7eefdaf117c9c6fc5f6f338b9074a8dc6ebc2a8b"
+    },
+    {
+      "page": 14,
+      "file": "tmp/submission_document_review/final_pages/page-14.png",
+      "sha256": "f63baf11fe0fb1a69c7e2e2b82e2d3985e45d8f14e98b8a3ce1e7063cd91e74e"
+    },
+    {
+      "page": 15,
+      "file": "tmp/submission_document_review/final_pages/page-15.png",
+      "sha256": "5f8de135fbfba76fa945c2aa317ed7563d6d92e915fdcf5099bae74d5c5ab567"
+    },
+    {
+      "page": 16,
+      "file": "tmp/submission_document_review/final_pages/page-16.png",
+      "sha256": "933cc035029101df0391a9c644095410cf3cdb0715d282d874177de0dbb28732"
+    },
+    {
+      "page": 17,
+      "file": "tmp/submission_document_review/final_pages/page-17.png",
+      "sha256": "ddafe6e35fb52d1ae01fb71a43683600731d3171b247647450998705708a72b6"
+    },
+    {
+      "page": 18,
+      "file": "tmp/submission_document_review/final_pages/page-18.png",
+      "sha256": "b039ca67388eb8256791662b36e16b8aec418a589b1597a80dec644c4fa26f97"
+    },
+    {
+      "page": 19,
+      "file": "tmp/submission_document_review/final_pages/page-19.png",
+      "sha256": "51d0f316801bcb710b81939aa8f45d061685bdcb30562680cbfa428ddba0984d"
+    },
+    {
+      "page": 20,
+      "file": "tmp/submission_document_review/final_pages/page-20.png",
+      "sha256": "74f0ac97b4671f846a4d866de41046791112f6d6b33d600357825230c4ef4470"
+    },
+    {
+      "page": 21,
+      "file": "tmp/submission_document_review/final_pages/page-21.png",
+      "sha256": "25bf4dd44c50f6528b963944b95b8ea088896bad3370f00fc3d568bdb4d5ed04"
+    }
+  ],
+  "visual_review": "application/submission_upgrade/visual_review.json"
+}
