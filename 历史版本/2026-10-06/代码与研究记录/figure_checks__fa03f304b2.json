@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-06",
+  "status": "programmatic_bounds_checked_visual_review_pending",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "width": 1000,
+      "height": 535,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 535
+      },
+      "textCount": 32,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 7,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "6c8125dd2f842596422b86b0524dae32d43d643450dae78ad23696376feb09d2",
+      "svg_sha256": "9c74f8898f6c8a9cbdd10b4f3ca00b15c2a80b8370d82415a6fe509624a0bf02"
+    },
+    {
+      "name": "event_sampling_strategy",
+      "width": 1000,
+      "height": 680,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 680
+      },
+      "textCount": 22,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 5,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "8410a6b243b799efa5722df5712c176ac01f174d1f70a3d75154d294b194aac9",
+      "svg_sha256": "e75c5a5fe756dfea678c307662becf84ca6373bc5dee92e0e14304ab2a9031a8"
+    },
+    {
+      "name": "diagnosis_proposal",
+      "width": 1000,
+      "height": 685,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 685
+      },
+      "textCount": 15,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 5,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "f5bfb8e3f2d292a6f392689033353ea8b4177c2ff95d3ce7282723185b82753b",
+      "svg_sha256": "2ce383a729593f07ac8a08ebfce1be00fc080d68e3b1c6d2dabca9a817c4f311"
+    },
+    {
+      "name": "durable_event_sequence",
+      "width": 1000,
+      "height": 635,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 635
+      },
+      "textCount": 13,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 3,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "5b0ea87d8dbdd4e6a82bfc122f9d29562cce94bbde61faf39a298f46d1acafa0",
+      "svg_sha256": "f4a032961ed4683c2a9fb7ed197f0adb35a1141cb5a3fac3122d440b23a2880d"
+    },
+    {
+      "name": "water_layout",
+      "width": 1090,
+      "height": 584,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 535.765625
+      },
+      "textCount": 13,
+      "minFontPt": 10.01834862385321,
+      "outside": [],
+      "boxCount": 8,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "86b73fc68306ef80c27d255d21ad9db8d677a926ee12d53989f185676c83668f",
+      "svg_sha256": "6b998709106df572475962f3515cfac68e9e8cca2b4a1aed3bf476ee82e1881f"
+    },
+    {
+      "name": "collection_overview",
+      "width": 1000,
+      "height": 745,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 745
+      },
+      "textCount": 16,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 0,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "a4f0c66d26bc9eb0f2f28fb08d009a344107051eed4f9908df5bad9759df2bb7",
+      "svg_sha256": "6480e8c80e5017a86f38aea1fad2b3feaf005afc61072a5f28fc11ba7e69ff6c"
+    },
+    {
+      "name": "measurement_interfaces",
+      "width": 1000,
+      "height": 750,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 750
+      },
+      "textCount": 29,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 7,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "124dc83f1879536865169e059e2a21b305d7faede2e6949942eac743a0638750",
+      "svg_sha256": "098cd67a1818bd25677a1bdf35bd894ab623935f57cc520ff7c16e458f68f0b7"
+    },
+    {
+      "name": "noise_outcomes_print",
+      "width": 612,
+      "height": 480,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 588.234375
+      },
+      "textCount": 42,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "boxCount": 0,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "04e80e37f6219c13eb710a792c9841c7a9bf3a6c7cff2c5c64b12ee301b4af49",
+      "svg_sha256": "e9011e6873e4766be4e92138a2731607ae53a46180d106b0388bab7963160ab5"
+    },
+    {
+      "name": "failure_counterexamples",
+      "width": 612,
+      "height": 496.79998779296875,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 811.75
+      },
+      "textCount": 30,
+      "minFontPt": 9.607843137254902,
+      "outside": [],
+      "boxCount": 0,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "a99ab9d6c86f98f47c9eccc1cb17468c3b4a577f47e3accef5b7a74a79b34565",
+      "svg_sha256": "f93b326d490f9bed34a61d8467e56aae6fe5049dcb4f6a59270fd8ce3c891569"
+    }
+  ]
+}

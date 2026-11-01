@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-06",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "system_responsibilities",
+      "svg": "application/figures/print_polish/system_responsibilities.svg",
+      "source": "application/figures/submission_upgrade/system_responsibilities.svg",
+      "source_sha256": "7471302866ef7f02693d7e8fb0dd5341e215e2a1b46a14230263610cf5608e76",
+      "removed_labels": [
+        "标签独立于检测结果",
+        "采集和发送计数；另测整机能量"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "event_sampling_strategy",
+      "svg": "application/figures/print_polish/event_sampling_strategy.svg",
+      "source": "application/figures/submission_upgrade/event_sampling_strategy.svg",
+      "source_sha256": "221772f02f125e69fc70092fd7674b123c9f638b00ab9a5c1819ee9f812df7b8",
+      "removed_labels": [
+        "周期候选经对照试验选择；确认按经过时间与真实观测次数计算。",
+        "模拟反馈不代表阀门关闭；无实物时只记录请求与演示状态。"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "diagnosis_proposal",
+      "svg": "application/figures/print_polish/diagnosis_proposal.svg",
+      "source": "application/figures/submission_upgrade/diagnosis_proposal.svg",
+      "source_sha256": "3ca54463bd2e5e5d2fbb10628fe82f7a74c9024e5ac42d7fae7c7ce0956d6317",
+      "removed_labels": [],
+      "physical_validation": false
+    },
+    {
+      "name": "durable_event_sequence",
+      "svg": "application/figures/print_polish/durable_event_sequence.svg",
+      "source": "application/figures/submission_upgrade/durable_event_sequence.svg",
+      "source_sha256": "a47b2147aa9871b00321fe6061366b9cdf6ecc20d7be4a3d168791fd7056a66a",
+      "removed_labels": [
+        "ACK表示接收端保存；人工已查看、处置与同工况复测分别记录。",
+        "有限重试后保留未确认事件；链路恢复后继续核对。"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "water_layout",
+      "svg": "application/figures/print_polish/water_layout.svg",
+      "source": "application/figures/submission_upgrade/water_layout.svg",
+      "source_sha256": "91bbb1c7fa18f7b5c8553b836f177a01cb2935c2261b94134f34f150cfc5e548",
+      "removed_labels": [
+        "Q计入A正常负载与泄漏总量",
+        "P0/P1侧向测压；Q在分流前。泄漏先独立计量，再人工回水。"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "collection_overview",
+      "svg": "application/figures/print_polish/collection_overview.svg",
+      "source": "application/figures/submission_upgrade/collection_overview.svg",
+      "source_sha256": "1f46ac07144a40d16d96b5552cc669aa93967ea9d3e5b5d96f787830eafc6340",
+      "removed_labels": [
+        "A支路：P0 → R → P1 → Q → 正常负载与泄漏分流。",
+        "Q包含正常与泄漏流量；B只提供正常负载变化对照。"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "measurement_interfaces",
+      "svg": "application/figures/print_polish/measurement_interfaces.svg",
+      "source": "application/figures/submission_upgrade/measurement_interfaces.svg",
+      "source_sha256": "d4e56c7e77807b8dced4e5ea6a83a1cf259b065b334ffe73082e38665e28015b",
+      "removed_labels": [
+        "正常量程0.6—3.0V；20mA耗散0.06W；22mA已达3.3V。",
+        "台架共地；压力回路与主控信号接口分级调理。"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "noise_outcomes_print",
+      "svg": "application/figures/print_polish/noise_outcomes_print.svg",
+      "source": "application/figures/submission_upgrade/noise_outcomes_print.svg",
+      "source_sha256": "57e689f3885b9162e3693144fd475ec5643f92cce664073a07235baddb56593a",
+      "removed_labels": [
+        "每组20个合成试次；误差线为模型内Wilson 95%区间。"
+      ],
+      "physical_validation": false
+    },
+    {
+      "name": "failure_counterexamples",
+      "svg": "application/figures/print_polish/failure_counterexamples.svg",
+      "source": "application/figures/submission_upgrade/failure_counterexamples.svg",
+      "source_sha256": "fc56e25e307cdefb10d7bbef48cab05f5de937339a2d836c744b3ec9ae353b06",
+      "removed_labels": [],
+      "physical_validation": false
+    }
+  ]
+}

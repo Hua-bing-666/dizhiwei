@@ -1,0 +1,12 @@
+{
+  "text_bounds_passed": true,
+  "text_collision_passed": true,
+  "files": {
+    "png": "b9c2f05ca76bc4ea7fa967c7ab12bd4f2dd1556df71928e6dfa6abba3b494f0a",
+    "svg": "0183e0693172180cbebea52e372b71fdee01ada5f2d1a971c074d07e260a7165"
+  },
+  "source_sha256": "c5333bbc345321f2cddebe7be632f8487b94472fefb2a5b4eb6a4a143d68af40",
+  "script_sha256": "5a2a0a3ec9dfabe269da29b2f3959e9b9a2e5a9eb4c4537ea83556acfb655c0d",
+  "classification": "Saved synthetic host outputs; not physical measurements",
+  "visual_review": "pending"
+}

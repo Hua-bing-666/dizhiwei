@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-06",
+  "status": "programmatic_bounds_checked_and_final_visual_review_completed",
+  "physical_validation": false,
+  "figures": [
+    {
+      "name": "dual_window_diagnosis",
+      "width": 1000,
+      "height": 710,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 710
+      },
+      "textCount": 16,
+      "minFontPt": 10.08,
+      "outside": [],
+      "boxCount": 7,
+      "boxIntersections": [],
+      "textOutsideOwnBox": [],
+      "png_sha256": "6cd1b5604616276ef2221f700c1925c0c670eeb8dcea8a2143917f95ebb87c74",
+      "svg_sha256": "58252c21d2fbb356b285923d5a24659de0d9a4ca8d64c7243256871c3be332ac"
+    }
+  ],
+  "visual_review_record": "application/method_revision/visual_review.json"
+}
