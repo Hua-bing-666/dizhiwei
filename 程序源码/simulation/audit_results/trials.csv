@@ -1,0 +1,961 @@
+﻿case,name,seed,method,false_starts,detected,delay,preexisting_alarm,periodic_priority_packets,event_packets
+normal,正常切换,8100,fixed,1,,,False,61,24
+normal,正常切换,8100,wait,1,,,False,61,24
+normal,正常切换,8100,normalized,0,,,False,61,24
+normal,正常切换,8100,candidate,0,,,False,61,24
+normal,正常切换,8101,fixed,1,,,False,61,30
+normal,正常切换,8101,wait,1,,,False,61,30
+normal,正常切换,8101,normalized,0,,,False,61,30
+normal,正常切换,8101,candidate,0,,,False,61,30
+normal,正常切换,8102,fixed,1,,,False,61,22
+normal,正常切换,8102,wait,1,,,False,61,22
+normal,正常切换,8102,normalized,0,,,False,61,22
+normal,正常切换,8102,candidate,0,,,False,61,22
+normal,正常切换,8103,fixed,1,,,False,61,32
+normal,正常切换,8103,wait,1,,,False,61,32
+normal,正常切换,8103,normalized,0,,,False,61,32
+normal,正常切换,8103,candidate,0,,,False,61,32
+normal,正常切换,8104,fixed,1,,,False,61,22
+normal,正常切换,8104,wait,1,,,False,61,22
+normal,正常切换,8104,normalized,0,,,False,61,22
+normal,正常切换,8104,candidate,0,,,False,61,22
+normal,正常切换,8105,fixed,1,,,False,61,27
+normal,正常切换,8105,wait,1,,,False,61,27
+normal,正常切换,8105,normalized,0,,,False,61,27
+normal,正常切换,8105,candidate,0,,,False,61,27
+normal,正常切换,8106,fixed,1,,,False,61,33
+normal,正常切换,8106,wait,1,,,False,61,33
+normal,正常切换,8106,normalized,0,,,False,61,33
+normal,正常切换,8106,candidate,0,,,False,61,33
+normal,正常切换,8107,fixed,1,,,False,61,35
+normal,正常切换,8107,wait,1,,,False,61,35
+normal,正常切换,8107,normalized,0,,,False,61,35
+normal,正常切换,8107,candidate,0,,,False,61,35
+normal,正常切换,8108,fixed,1,,,False,61,28
+normal,正常切换,8108,wait,1,,,False,61,28
+normal,正常切换,8108,normalized,0,,,False,61,28
+normal,正常切换,8108,candidate,0,,,False,61,28
+normal,正常切换,8109,fixed,1,,,False,61,24
+normal,正常切换,8109,wait,1,,,False,61,24
+normal,正常切换,8109,normalized,0,,,False,61,24
+normal,正常切换,8109,candidate,0,,,False,61,24
+normal,正常切换,8110,fixed,1,,,False,61,30
+normal,正常切换,8110,wait,1,,,False,61,30
+normal,正常切换,8110,normalized,0,,,False,61,30
+normal,正常切换,8110,candidate,0,,,False,61,30
+normal,正常切换,8111,fixed,1,,,False,61,33
+normal,正常切换,8111,wait,1,,,False,61,33
+normal,正常切换,8111,normalized,0,,,False,61,33
+normal,正常切换,8111,candidate,0,,,False,61,33
+normal,正常切换,8112,fixed,1,,,False,61,29
+normal,正常切换,8112,wait,1,,,False,61,29
+normal,正常切换,8112,normalized,0,,,False,61,29
+normal,正常切换,8112,candidate,0,,,False,61,29
+normal,正常切换,8113,fixed,1,,,False,61,31
+normal,正常切换,8113,wait,1,,,False,61,31
+normal,正常切换,8113,normalized,0,,,False,61,31
+normal,正常切换,8113,candidate,0,,,False,61,31
+normal,正常切换,8114,fixed,1,,,False,61,26
+normal,正常切换,8114,wait,1,,,False,61,26
+normal,正常切换,8114,normalized,0,,,False,61,26
+normal,正常切换,8114,candidate,0,,,False,61,26
+normal,正常切换,8115,fixed,1,,,False,61,27
+normal,正常切换,8115,wait,1,,,False,61,27
+normal,正常切换,8115,normalized,0,,,False,61,27
+normal,正常切换,8115,candidate,0,,,False,61,27
+normal,正常切换,8116,fixed,1,,,False,61,34
+normal,正常切换,8116,wait,1,,,False,61,34
+normal,正常切换,8116,normalized,0,,,False,61,34
+normal,正常切换,8116,candidate,0,,,False,61,34
+normal,正常切换,8117,fixed,1,,,False,61,29
+normal,正常切换,8117,wait,1,,,False,61,29
+normal,正常切换,8117,normalized,0,,,False,61,29
+normal,正常切换,8117,candidate,0,,,False,61,29
+normal,正常切换,8118,fixed,1,,,False,61,22
+normal,正常切换,8118,wait,1,,,False,61,22
+normal,正常切换,8118,normalized,0,,,False,61,22
+normal,正常切换,8118,candidate,0,,,False,61,22
+normal,正常切换,8119,fixed,1,,,False,61,44
+normal,正常切换,8119,wait,1,,,False,61,44
+normal,正常切换,8119,normalized,0,,,False,61,44
+normal,正常切换,8119,candidate,0,,,False,61,44
+ideal,原设定大幅泄漏,8100,fixed,1,True,2,False,63,40
+ideal,原设定大幅泄漏,8100,wait,1,True,2,False,63,40
+ideal,原设定大幅泄漏,8100,normalized,0,True,2,False,63,40
+ideal,原设定大幅泄漏,8100,candidate,0,True,2,False,63,40
+ideal,原设定大幅泄漏,8101,fixed,1,True,2,False,63,49
+ideal,原设定大幅泄漏,8101,wait,1,True,2,False,63,49
+ideal,原设定大幅泄漏,8101,normalized,0,True,2,False,63,49
+ideal,原设定大幅泄漏,8101,candidate,0,True,2,False,63,49
+ideal,原设定大幅泄漏,8102,fixed,1,True,2,False,63,41
+ideal,原设定大幅泄漏,8102,wait,1,True,2,False,63,41
+ideal,原设定大幅泄漏,8102,normalized,0,True,2,False,63,41
+ideal,原设定大幅泄漏,8102,candidate,0,True,2,False,63,41
+ideal,原设定大幅泄漏,8103,fixed,1,True,2,False,63,48
+ideal,原设定大幅泄漏,8103,wait,1,True,2,False,63,48
+ideal,原设定大幅泄漏,8103,normalized,0,True,2,False,63,48
+ideal,原设定大幅泄漏,8103,candidate,0,True,2,False,63,48
+ideal,原设定大幅泄漏,8104,fixed,1,True,2,False,63,38
+ideal,原设定大幅泄漏,8104,wait,1,True,2,False,63,38
+ideal,原设定大幅泄漏,8104,normalized,0,True,2,False,63,38
+ideal,原设定大幅泄漏,8104,candidate,0,True,2,False,63,38
+ideal,原设定大幅泄漏,8105,fixed,1,True,2,False,63,49
+ideal,原设定大幅泄漏,8105,wait,1,True,2,False,63,49
+ideal,原设定大幅泄漏,8105,normalized,0,True,2,False,63,49
+ideal,原设定大幅泄漏,8105,candidate,0,True,2,False,63,49
+ideal,原设定大幅泄漏,8106,fixed,1,True,2,False,63,50
+ideal,原设定大幅泄漏,8106,wait,1,True,2,False,63,50
+ideal,原设定大幅泄漏,8106,normalized,0,True,2,False,63,50
+ideal,原设定大幅泄漏,8106,candidate,0,True,2,False,63,50
+ideal,原设定大幅泄漏,8107,fixed,1,True,2,False,63,47
+ideal,原设定大幅泄漏,8107,wait,1,True,2,False,63,47
+ideal,原设定大幅泄漏,8107,normalized,0,True,2,False,63,47
+ideal,原设定大幅泄漏,8107,candidate,0,True,2,False,63,47
+ideal,原设定大幅泄漏,8108,fixed,1,True,2,False,63,39
+ideal,原设定大幅泄漏,8108,wait,1,True,2,False,63,39
+ideal,原设定大幅泄漏,8108,normalized,0,True,2,False,63,39
+ideal,原设定大幅泄漏,8108,candidate,0,True,2,False,63,39
+ideal,原设定大幅泄漏,8109,fixed,1,True,2,False,63,45
+ideal,原设定大幅泄漏,8109,wait,1,True,2,False,63,45
+ideal,原设定大幅泄漏,8109,normalized,0,True,2,False,63,45
+ideal,原设定大幅泄漏,8109,candidate,0,True,2,False,63,45
+ideal,原设定大幅泄漏,8110,fixed,1,True,2,False,63,47
+ideal,原设定大幅泄漏,8110,wait,1,True,2,False,63,47
+ideal,原设定大幅泄漏,8110,normalized,0,True,2,False,63,47
+ideal,原设定大幅泄漏,8110,candidate,0,True,2,False,63,47
+ideal,原设定大幅泄漏,8111,fixed,1,True,2,False,63,50
+ideal,原设定大幅泄漏,8111,wait,1,True,2,False,63,50
+ideal,原设定大幅泄漏,8111,normalized,0,True,2,False,63,50
+ideal,原设定大幅泄漏,8111,candidate,0,True,2,False,63,50
+ideal,原设定大幅泄漏,8112,fixed,1,True,2,False,63,44
+ideal,原设定大幅泄漏,8112,wait,1,True,2,False,63,44
+ideal,原设定大幅泄漏,8112,normalized,0,True,2,False,63,44
+ideal,原设定大幅泄漏,8112,candidate,0,True,2,False,63,44
+ideal,原设定大幅泄漏,8113,fixed,1,True,2,False,63,46
+ideal,原设定大幅泄漏,8113,wait,1,True,2,False,63,46
+ideal,原设定大幅泄漏,8113,normalized,0,True,2,False,63,46
+ideal,原设定大幅泄漏,8113,candidate,0,True,2,False,63,46
+ideal,原设定大幅泄漏,8114,fixed,1,True,2,False,63,45
+ideal,原设定大幅泄漏,8114,wait,1,True,2,False,63,45
+ideal,原设定大幅泄漏,8114,normalized,0,True,2,False,63,45
+ideal,原设定大幅泄漏,8114,candidate,0,True,2,False,63,45
+ideal,原设定大幅泄漏,8115,fixed,1,True,2,False,63,48
+ideal,原设定大幅泄漏,8115,wait,1,True,2,False,63,48
+ideal,原设定大幅泄漏,8115,normalized,0,True,2,False,63,48
+ideal,原设定大幅泄漏,8115,candidate,0,True,2,False,63,48
+ideal,原设定大幅泄漏,8116,fixed,1,True,2,False,63,55
+ideal,原设定大幅泄漏,8116,wait,1,True,2,False,63,55
+ideal,原设定大幅泄漏,8116,normalized,0,True,2,False,63,55
+ideal,原设定大幅泄漏,8116,candidate,0,True,2,False,63,55
+ideal,原设定大幅泄漏,8117,fixed,1,True,2,False,63,44
+ideal,原设定大幅泄漏,8117,wait,1,True,2,False,63,44
+ideal,原设定大幅泄漏,8117,normalized,0,True,2,False,63,44
+ideal,原设定大幅泄漏,8117,candidate,0,True,2,False,63,44
+ideal,原设定大幅泄漏,8118,fixed,1,True,2,False,63,39
+ideal,原设定大幅泄漏,8118,wait,1,True,2,False,63,39
+ideal,原设定大幅泄漏,8118,normalized,0,True,2,False,63,39
+ideal,原设定大幅泄漏,8118,candidate,0,True,2,False,63,39
+ideal,原设定大幅泄漏,8119,fixed,1,True,2,False,63,55
+ideal,原设定大幅泄漏,8119,wait,1,True,2,False,63,55
+ideal,原设定大幅泄漏,8119,normalized,0,True,2,False,63,55
+ideal,原设定大幅泄漏,8119,candidate,0,True,2,False,63,55
+weak,小幅等效泄漏,8100,fixed,1,False,,False,61,23
+weak,小幅等效泄漏,8100,wait,1,False,,False,61,23
+weak,小幅等效泄漏,8100,normalized,0,False,,False,61,23
+weak,小幅等效泄漏,8100,candidate,0,False,,False,61,23
+weak,小幅等效泄漏,8101,fixed,1,False,,False,61,30
+weak,小幅等效泄漏,8101,wait,1,False,,False,61,30
+weak,小幅等效泄漏,8101,normalized,0,False,,False,61,30
+weak,小幅等效泄漏,8101,candidate,0,False,,False,61,30
+weak,小幅等效泄漏,8102,fixed,1,False,,False,61,23
+weak,小幅等效泄漏,8102,wait,1,False,,False,61,23
+weak,小幅等效泄漏,8102,normalized,0,False,,False,61,23
+weak,小幅等效泄漏,8102,candidate,0,False,,False,61,23
+weak,小幅等效泄漏,8103,fixed,1,False,,False,61,32
+weak,小幅等效泄漏,8103,wait,1,False,,False,61,32
+weak,小幅等效泄漏,8103,normalized,0,False,,False,61,32
+weak,小幅等效泄漏,8103,candidate,0,False,,False,61,32
+weak,小幅等效泄漏,8104,fixed,1,False,,False,61,22
+weak,小幅等效泄漏,8104,wait,1,False,,False,61,22
+weak,小幅等效泄漏,8104,normalized,0,False,,False,61,22
+weak,小幅等效泄漏,8104,candidate,0,False,,False,61,22
+weak,小幅等效泄漏,8105,fixed,1,False,,False,61,27
+weak,小幅等效泄漏,8105,wait,1,False,,False,61,27
+weak,小幅等效泄漏,8105,normalized,0,False,,False,61,27
+weak,小幅等效泄漏,8105,candidate,0,False,,False,61,27
+weak,小幅等效泄漏,8106,fixed,1,False,,False,61,33
+weak,小幅等效泄漏,8106,wait,1,False,,False,61,33
+weak,小幅等效泄漏,8106,normalized,0,False,,False,61,33
+weak,小幅等效泄漏,8106,candidate,0,False,,False,61,33
+weak,小幅等效泄漏,8107,fixed,1,False,,False,61,36
+weak,小幅等效泄漏,8107,wait,1,False,,False,61,36
+weak,小幅等效泄漏,8107,normalized,0,False,,False,61,36
+weak,小幅等效泄漏,8107,candidate,0,False,,False,61,36
+weak,小幅等效泄漏,8108,fixed,1,False,,False,61,26
+weak,小幅等效泄漏,8108,wait,1,False,,False,61,26
+weak,小幅等效泄漏,8108,normalized,0,False,,False,61,26
+weak,小幅等效泄漏,8108,candidate,0,False,,False,61,26
+weak,小幅等效泄漏,8109,fixed,1,False,,False,61,24
+weak,小幅等效泄漏,8109,wait,1,False,,False,61,24
+weak,小幅等效泄漏,8109,normalized,0,False,,False,61,24
+weak,小幅等效泄漏,8109,candidate,0,False,,False,61,24
+weak,小幅等效泄漏,8110,fixed,1,False,,False,61,29
+weak,小幅等效泄漏,8110,wait,1,False,,False,61,29
+weak,小幅等效泄漏,8110,normalized,0,False,,False,61,29
+weak,小幅等效泄漏,8110,candidate,0,False,,False,61,29
+weak,小幅等效泄漏,8111,fixed,1,False,,False,61,34
+weak,小幅等效泄漏,8111,wait,1,False,,False,61,34
+weak,小幅等效泄漏,8111,normalized,0,False,,False,61,34
+weak,小幅等效泄漏,8111,candidate,0,False,,False,61,34
+weak,小幅等效泄漏,8112,fixed,1,False,,False,61,29
+weak,小幅等效泄漏,8112,wait,1,False,,False,61,29
+weak,小幅等效泄漏,8112,normalized,0,False,,False,61,29
+weak,小幅等效泄漏,8112,candidate,0,False,,False,61,29
+weak,小幅等效泄漏,8113,fixed,1,False,,False,61,30
+weak,小幅等效泄漏,8113,wait,1,False,,False,61,30
+weak,小幅等效泄漏,8113,normalized,0,False,,False,61,30
+weak,小幅等效泄漏,8113,candidate,0,False,,False,61,30
+weak,小幅等效泄漏,8114,fixed,1,False,,False,61,26
+weak,小幅等效泄漏,8114,wait,1,False,,False,61,26
+weak,小幅等效泄漏,8114,normalized,0,False,,False,61,26
+weak,小幅等效泄漏,8114,candidate,0,False,,False,61,26
+weak,小幅等效泄漏,8115,fixed,1,False,,False,61,28
+weak,小幅等效泄漏,8115,wait,1,False,,False,61,28
+weak,小幅等效泄漏,8115,normalized,0,False,,False,61,28
+weak,小幅等效泄漏,8115,candidate,0,False,,False,61,28
+weak,小幅等效泄漏,8116,fixed,1,False,,False,61,34
+weak,小幅等效泄漏,8116,wait,1,False,,False,61,34
+weak,小幅等效泄漏,8116,normalized,0,False,,False,61,34
+weak,小幅等效泄漏,8116,candidate,0,False,,False,61,34
+weak,小幅等效泄漏,8117,fixed,1,False,,False,61,29
+weak,小幅等效泄漏,8117,wait,1,False,,False,61,29
+weak,小幅等效泄漏,8117,normalized,0,False,,False,61,29
+weak,小幅等效泄漏,8117,candidate,0,False,,False,61,29
+weak,小幅等效泄漏,8118,fixed,1,False,,False,61,30
+weak,小幅等效泄漏,8118,wait,1,False,,False,61,30
+weak,小幅等效泄漏,8118,normalized,0,False,,False,61,30
+weak,小幅等效泄漏,8118,candidate,0,False,,False,61,30
+weak,小幅等效泄漏,8119,fixed,1,False,,False,61,44
+weak,小幅等效泄漏,8119,wait,1,False,,False,61,44
+weak,小幅等效泄漏,8119,normalized,0,False,,False,61,44
+weak,小幅等效泄漏,8119,candidate,0,False,,False,61,44
+overlap,切换期间泄漏,8100,fixed,1,False,,True,63,46
+overlap,切换期间泄漏,8100,wait,0,True,22,False,63,46
+overlap,切换期间泄漏,8100,normalized,0,True,2,False,63,46
+overlap,切换期间泄漏,8100,candidate,0,True,2,False,63,46
+overlap,切换期间泄漏,8101,fixed,1,False,,True,63,46
+overlap,切换期间泄漏,8101,wait,0,True,22,False,63,46
+overlap,切换期间泄漏,8101,normalized,0,True,2,False,63,46
+overlap,切换期间泄漏,8101,candidate,0,True,2,False,63,46
+overlap,切换期间泄漏,8102,fixed,1,False,,True,63,43
+overlap,切换期间泄漏,8102,wait,0,True,22,False,63,43
+overlap,切换期间泄漏,8102,normalized,0,True,2,False,63,43
+overlap,切换期间泄漏,8102,candidate,0,True,2,False,63,43
+overlap,切换期间泄漏,8103,fixed,1,False,,True,63,50
+overlap,切换期间泄漏,8103,wait,0,True,22,False,63,50
+overlap,切换期间泄漏,8103,normalized,0,True,2,False,63,50
+overlap,切换期间泄漏,8103,candidate,0,True,2,False,63,50
+overlap,切换期间泄漏,8104,fixed,1,False,,True,63,38
+overlap,切换期间泄漏,8104,wait,0,True,22,False,63,38
+overlap,切换期间泄漏,8104,normalized,0,True,2,False,63,38
+overlap,切换期间泄漏,8104,candidate,0,True,2,False,63,38
+overlap,切换期间泄漏,8105,fixed,1,False,,True,63,54
+overlap,切换期间泄漏,8105,wait,0,True,22,False,63,54
+overlap,切换期间泄漏,8105,normalized,0,True,2,False,63,54
+overlap,切换期间泄漏,8105,candidate,0,True,2,False,63,54
+overlap,切换期间泄漏,8106,fixed,1,False,,True,63,52
+overlap,切换期间泄漏,8106,wait,0,True,22,False,63,52
+overlap,切换期间泄漏,8106,normalized,0,True,2,False,63,52
+overlap,切换期间泄漏,8106,candidate,0,True,2,False,63,52
+overlap,切换期间泄漏,8107,fixed,1,False,,True,63,53
+overlap,切换期间泄漏,8107,wait,0,True,22,False,63,53
+overlap,切换期间泄漏,8107,normalized,0,True,2,False,63,53
+overlap,切换期间泄漏,8107,candidate,0,True,2,False,63,53
+overlap,切换期间泄漏,8108,fixed,1,False,,True,63,46
+overlap,切换期间泄漏,8108,wait,0,True,22,False,63,46
+overlap,切换期间泄漏,8108,normalized,0,True,2,False,63,46
+overlap,切换期间泄漏,8108,candidate,0,True,3,False,63,46
+overlap,切换期间泄漏,8109,fixed,1,False,,True,63,39
+overlap,切换期间泄漏,8109,wait,0,True,22,False,63,39
+overlap,切换期间泄漏,8109,normalized,0,True,2,False,63,39
+overlap,切换期间泄漏,8109,candidate,0,True,2,False,63,39
+overlap,切换期间泄漏,8110,fixed,1,False,,True,63,49
+overlap,切换期间泄漏,8110,wait,0,True,22,False,63,49
+overlap,切换期间泄漏,8110,normalized,0,True,2,False,63,49
+overlap,切换期间泄漏,8110,candidate,0,True,2,False,63,49
+overlap,切换期间泄漏,8111,fixed,1,False,,True,63,45
+overlap,切换期间泄漏,8111,wait,0,True,22,False,63,45
+overlap,切换期间泄漏,8111,normalized,0,True,2,False,63,45
+overlap,切换期间泄漏,8111,candidate,0,True,2,False,63,45
+overlap,切换期间泄漏,8112,fixed,1,False,,True,63,36
+overlap,切换期间泄漏,8112,wait,0,True,22,False,63,36
+overlap,切换期间泄漏,8112,normalized,0,True,2,False,63,36
+overlap,切换期间泄漏,8112,candidate,0,True,3,False,63,36
+overlap,切换期间泄漏,8113,fixed,1,False,,True,63,44
+overlap,切换期间泄漏,8113,wait,0,True,22,False,63,44
+overlap,切换期间泄漏,8113,normalized,0,True,2,False,63,44
+overlap,切换期间泄漏,8113,candidate,0,True,2,False,63,44
+overlap,切换期间泄漏,8114,fixed,1,False,,True,63,48
+overlap,切换期间泄漏,8114,wait,0,True,22,False,63,48
+overlap,切换期间泄漏,8114,normalized,0,True,2,False,63,48
+overlap,切换期间泄漏,8114,candidate,0,True,2,False,63,48
+overlap,切换期间泄漏,8115,fixed,1,False,,True,63,46
+overlap,切换期间泄漏,8115,wait,0,True,22,False,63,46
+overlap,切换期间泄漏,8115,normalized,0,True,2,False,63,46
+overlap,切换期间泄漏,8115,candidate,0,True,2,False,63,46
+overlap,切换期间泄漏,8116,fixed,1,False,,True,63,49
+overlap,切换期间泄漏,8116,wait,0,True,22,False,63,49
+overlap,切换期间泄漏,8116,normalized,0,True,2,False,63,49
+overlap,切换期间泄漏,8116,candidate,0,True,2,False,63,49
+overlap,切换期间泄漏,8117,fixed,1,False,,True,63,45
+overlap,切换期间泄漏,8117,wait,0,True,22,False,63,45
+overlap,切换期间泄漏,8117,normalized,0,True,2,False,63,45
+overlap,切换期间泄漏,8117,candidate,0,True,2,False,63,45
+overlap,切换期间泄漏,8118,fixed,1,False,,True,63,36
+overlap,切换期间泄漏,8118,wait,0,True,22,False,63,36
+overlap,切换期间泄漏,8118,normalized,0,True,2,False,63,36
+overlap,切换期间泄漏,8118,candidate,0,True,2,False,63,36
+overlap,切换期间泄漏,8119,fixed,1,False,,True,63,59
+overlap,切换期间泄漏,8119,wait,0,True,22,False,63,59
+overlap,切换期间泄漏,8119,normalized,0,True,2,False,63,59
+overlap,切换期间泄漏,8119,candidate,0,True,2,False,63,59
+short,切换期短异常 8s,8100,fixed,1,False,,True,63,34
+short,切换期短异常 8s,8100,wait,1,False,,False,63,34
+short,切换期短异常 8s,8100,normalized,0,True,2,False,63,34
+short,切换期短异常 8s,8100,candidate,0,True,2,False,63,34
+short,切换期短异常 8s,8101,fixed,1,False,,True,63,44
+short,切换期短异常 8s,8101,wait,1,False,,False,63,44
+short,切换期短异常 8s,8101,normalized,0,True,2,False,63,44
+short,切换期短异常 8s,8101,candidate,0,True,2,False,63,44
+short,切换期短异常 8s,8102,fixed,1,False,,True,63,36
+short,切换期短异常 8s,8102,wait,1,False,,False,63,36
+short,切换期短异常 8s,8102,normalized,0,True,2,False,63,36
+short,切换期短异常 8s,8102,candidate,0,True,2,False,63,36
+short,切换期短异常 8s,8103,fixed,1,False,,True,63,43
+short,切换期短异常 8s,8103,wait,1,False,,False,63,43
+short,切换期短异常 8s,8103,normalized,0,True,2,False,63,43
+short,切换期短异常 8s,8103,candidate,0,True,2,False,63,43
+short,切换期短异常 8s,8104,fixed,1,False,,True,63,35
+short,切换期短异常 8s,8104,wait,1,False,,False,63,35
+short,切换期短异常 8s,8104,normalized,0,True,2,False,63,35
+short,切换期短异常 8s,8104,candidate,0,True,2,False,63,35
+short,切换期短异常 8s,8105,fixed,1,False,,True,63,38
+short,切换期短异常 8s,8105,wait,1,False,,False,63,38
+short,切换期短异常 8s,8105,normalized,0,True,2,False,63,38
+short,切换期短异常 8s,8105,candidate,0,True,2,False,63,38
+short,切换期短异常 8s,8106,fixed,1,False,,True,63,45
+short,切换期短异常 8s,8106,wait,1,False,,False,63,45
+short,切换期短异常 8s,8106,normalized,0,True,2,False,63,45
+short,切换期短异常 8s,8106,candidate,0,True,2,False,63,45
+short,切换期短异常 8s,8107,fixed,1,False,,True,63,46
+short,切换期短异常 8s,8107,wait,1,False,,False,63,46
+short,切换期短异常 8s,8107,normalized,0,True,2,False,63,46
+short,切换期短异常 8s,8107,candidate,0,True,2,False,63,46
+short,切换期短异常 8s,8108,fixed,1,False,,True,63,41
+short,切换期短异常 8s,8108,wait,1,False,,False,63,41
+short,切换期短异常 8s,8108,normalized,0,True,2,False,63,41
+short,切换期短异常 8s,8108,candidate,0,True,3,False,63,41
+short,切换期短异常 8s,8109,fixed,1,False,,True,63,33
+short,切换期短异常 8s,8109,wait,1,False,,False,63,33
+short,切换期短异常 8s,8109,normalized,0,True,2,False,63,33
+short,切换期短异常 8s,8109,candidate,0,True,2,False,63,33
+short,切换期短异常 8s,8110,fixed,1,False,,True,63,48
+short,切换期短异常 8s,8110,wait,1,False,,False,63,48
+short,切换期短异常 8s,8110,normalized,0,True,2,False,63,48
+short,切换期短异常 8s,8110,candidate,0,True,2,False,63,48
+short,切换期短异常 8s,8111,fixed,1,False,,True,63,42
+short,切换期短异常 8s,8111,wait,1,False,,False,63,42
+short,切换期短异常 8s,8111,normalized,0,True,2,False,63,42
+short,切换期短异常 8s,8111,candidate,0,True,2,False,63,42
+short,切换期短异常 8s,8112,fixed,1,False,,True,63,39
+short,切换期短异常 8s,8112,wait,1,False,,False,63,39
+short,切换期短异常 8s,8112,normalized,0,True,2,False,63,39
+short,切换期短异常 8s,8112,candidate,0,True,3,False,63,39
+short,切换期短异常 8s,8113,fixed,1,False,,True,63,47
+short,切换期短异常 8s,8113,wait,1,False,,False,63,47
+short,切换期短异常 8s,8113,normalized,0,True,2,False,63,47
+short,切换期短异常 8s,8113,candidate,0,True,2,False,63,47
+short,切换期短异常 8s,8114,fixed,1,False,,True,63,37
+short,切换期短异常 8s,8114,wait,1,False,,False,63,37
+short,切换期短异常 8s,8114,normalized,0,True,2,False,63,37
+short,切换期短异常 8s,8114,candidate,0,True,2,False,63,37
+short,切换期短异常 8s,8115,fixed,1,False,,True,63,39
+short,切换期短异常 8s,8115,wait,1,False,,False,63,39
+short,切换期短异常 8s,8115,normalized,0,True,2,False,63,39
+short,切换期短异常 8s,8115,candidate,0,True,2,False,63,39
+short,切换期短异常 8s,8116,fixed,1,False,,True,63,45
+short,切换期短异常 8s,8116,wait,1,False,,False,63,45
+short,切换期短异常 8s,8116,normalized,0,True,2,False,63,45
+short,切换期短异常 8s,8116,candidate,0,True,2,False,63,45
+short,切换期短异常 8s,8117,fixed,1,False,,True,63,39
+short,切换期短异常 8s,8117,wait,1,False,,False,63,39
+short,切换期短异常 8s,8117,normalized,0,True,2,False,63,39
+short,切换期短异常 8s,8117,candidate,0,True,2,False,63,39
+short,切换期短异常 8s,8118,fixed,1,False,,True,63,32
+short,切换期短异常 8s,8118,wait,1,False,,False,63,32
+short,切换期短异常 8s,8118,normalized,0,True,2,False,63,32
+short,切换期短异常 8s,8118,candidate,0,True,2,False,63,32
+short,切换期短异常 8s,8119,fixed,1,False,,True,63,56
+short,切换期短异常 8s,8119,wait,1,False,,False,63,56
+short,切换期短异常 8s,8119,normalized,0,True,2,False,63,56
+short,切换期短异常 8s,8119,candidate,0,True,2,False,63,56
+restriction,测点上游节流,8100,fixed,1,True,2,False,63,48
+restriction,测点上游节流,8100,wait,1,True,2,False,63,48
+restriction,测点上游节流,8100,normalized,0,False,,False,63,48
+restriction,测点上游节流,8100,candidate,0,True,2,False,63,48
+restriction,测点上游节流,8101,fixed,1,True,2,False,63,47
+restriction,测点上游节流,8101,wait,1,True,2,False,63,47
+restriction,测点上游节流,8101,normalized,0,False,,False,63,47
+restriction,测点上游节流,8101,candidate,0,True,2,False,63,47
+restriction,测点上游节流,8102,fixed,1,True,2,False,63,46
+restriction,测点上游节流,8102,wait,1,True,2,False,63,46
+restriction,测点上游节流,8102,normalized,0,False,,False,63,46
+restriction,测点上游节流,8102,candidate,0,True,2,False,63,46
+restriction,测点上游节流,8103,fixed,1,True,2,False,63,60
+restriction,测点上游节流,8103,wait,1,True,2,False,63,60
+restriction,测点上游节流,8103,normalized,0,False,,False,63,60
+restriction,测点上游节流,8103,candidate,0,True,2,False,63,60
+restriction,测点上游节流,8104,fixed,1,True,2,False,63,51
+restriction,测点上游节流,8104,wait,1,True,2,False,63,51
+restriction,测点上游节流,8104,normalized,0,False,,False,63,51
+restriction,测点上游节流,8104,candidate,0,True,2,False,63,51
+restriction,测点上游节流,8105,fixed,1,True,2,False,63,51
+restriction,测点上游节流,8105,wait,1,True,2,False,63,51
+restriction,测点上游节流,8105,normalized,0,False,,False,63,51
+restriction,测点上游节流,8105,candidate,0,True,2,False,63,51
+restriction,测点上游节流,8106,fixed,1,True,2,False,63,58
+restriction,测点上游节流,8106,wait,1,True,2,False,63,58
+restriction,测点上游节流,8106,normalized,0,False,,False,63,58
+restriction,测点上游节流,8106,candidate,0,True,2,False,63,58
+restriction,测点上游节流,8107,fixed,1,True,2,False,63,59
+restriction,测点上游节流,8107,wait,1,True,2,False,63,59
+restriction,测点上游节流,8107,normalized,0,False,,False,63,59
+restriction,测点上游节流,8107,candidate,0,True,2,False,63,59
+restriction,测点上游节流,8108,fixed,1,True,2,False,63,46
+restriction,测点上游节流,8108,wait,1,True,2,False,63,46
+restriction,测点上游节流,8108,normalized,0,False,,False,63,46
+restriction,测点上游节流,8108,candidate,0,True,2,False,63,46
+restriction,测点上游节流,8109,fixed,1,True,2,False,63,50
+restriction,测点上游节流,8109,wait,1,True,2,False,63,50
+restriction,测点上游节流,8109,normalized,0,False,,False,63,50
+restriction,测点上游节流,8109,candidate,0,True,2,False,63,50
+restriction,测点上游节流,8110,fixed,1,True,2,False,63,53
+restriction,测点上游节流,8110,wait,1,True,2,False,63,53
+restriction,测点上游节流,8110,normalized,0,False,,False,63,53
+restriction,测点上游节流,8110,candidate,0,True,2,False,63,53
+restriction,测点上游节流,8111,fixed,1,True,2,False,63,59
+restriction,测点上游节流,8111,wait,1,True,2,False,63,59
+restriction,测点上游节流,8111,normalized,0,False,,False,63,59
+restriction,测点上游节流,8111,candidate,0,True,2,False,63,59
+restriction,测点上游节流,8112,fixed,1,True,2,False,63,48
+restriction,测点上游节流,8112,wait,1,True,2,False,63,48
+restriction,测点上游节流,8112,normalized,0,False,,False,63,48
+restriction,测点上游节流,8112,candidate,0,True,2,False,63,48
+restriction,测点上游节流,8113,fixed,1,True,2,False,63,54
+restriction,测点上游节流,8113,wait,1,True,2,False,63,54
+restriction,测点上游节流,8113,normalized,0,False,,False,63,54
+restriction,测点上游节流,8113,candidate,0,True,2,False,63,54
+restriction,测点上游节流,8114,fixed,1,True,2,False,63,55
+restriction,测点上游节流,8114,wait,1,True,2,False,63,55
+restriction,测点上游节流,8114,normalized,0,False,,False,63,55
+restriction,测点上游节流,8114,candidate,0,True,2,False,63,55
+restriction,测点上游节流,8115,fixed,1,True,2,False,63,52
+restriction,测点上游节流,8115,wait,1,True,2,False,63,52
+restriction,测点上游节流,8115,normalized,0,False,,False,63,52
+restriction,测点上游节流,8115,candidate,0,True,2,False,63,52
+restriction,测点上游节流,8116,fixed,1,True,2,False,63,52
+restriction,测点上游节流,8116,wait,1,True,2,False,63,52
+restriction,测点上游节流,8116,normalized,0,False,,False,63,52
+restriction,测点上游节流,8116,candidate,0,True,2,False,63,52
+restriction,测点上游节流,8117,fixed,1,True,2,False,63,53
+restriction,测点上游节流,8117,wait,1,True,2,False,63,53
+restriction,测点上游节流,8117,normalized,0,False,,False,63,53
+restriction,测点上游节流,8117,candidate,0,True,2,False,63,53
+restriction,测点上游节流,8118,fixed,1,True,2,False,63,44
+restriction,测点上游节流,8118,wait,1,True,2,False,63,44
+restriction,测点上游节流,8118,normalized,0,False,,False,63,44
+restriction,测点上游节流,8118,candidate,0,True,2,False,63,44
+restriction,测点上游节流,8119,fixed,1,True,2,False,63,59
+restriction,测点上游节流,8119,wait,1,True,2,False,63,59
+restriction,测点上游节流,8119,normalized,0,False,,False,63,59
+restriction,测点上游节流,8119,candidate,0,True,2,False,63,59
+source,允许供压改变（假设）,8100,fixed,2,,,False,63,32
+source,允许供压改变（假设）,8100,wait,2,,,False,63,32
+source,允许供压改变（假设）,8100,normalized,0,,,False,63,32
+source,允许供压改变（假设）,8100,candidate,1,,,False,63,32
+source,允许供压改变（假设）,8101,fixed,2,,,False,63,34
+source,允许供压改变（假设）,8101,wait,2,,,False,63,34
+source,允许供压改变（假设）,8101,normalized,0,,,False,63,34
+source,允许供压改变（假设）,8101,candidate,1,,,False,63,34
+source,允许供压改变（假设）,8102,fixed,2,,,False,63,29
+source,允许供压改变（假设）,8102,wait,2,,,False,63,29
+source,允许供压改变（假设）,8102,normalized,0,,,False,63,29
+source,允许供压改变（假设）,8102,candidate,1,,,False,63,29
+source,允许供压改变（假设）,8103,fixed,2,,,False,63,33
+source,允许供压改变（假设）,8103,wait,2,,,False,63,33
+source,允许供压改变（假设）,8103,normalized,0,,,False,63,33
+source,允许供压改变（假设）,8103,candidate,1,,,False,63,33
+source,允许供压改变（假设）,8104,fixed,2,,,False,63,29
+source,允许供压改变（假设）,8104,wait,2,,,False,63,29
+source,允许供压改变（假设）,8104,normalized,0,,,False,63,29
+source,允许供压改变（假设）,8104,candidate,1,,,False,63,29
+source,允许供压改变（假设）,8105,fixed,2,,,False,63,42
+source,允许供压改变（假设）,8105,wait,2,,,False,63,42
+source,允许供压改变（假设）,8105,normalized,0,,,False,63,42
+source,允许供压改变（假设）,8105,candidate,1,,,False,63,42
+source,允许供压改变（假设）,8106,fixed,2,,,False,63,43
+source,允许供压改变（假设）,8106,wait,2,,,False,63,43
+source,允许供压改变（假设）,8106,normalized,0,,,False,63,43
+source,允许供压改变（假设）,8106,candidate,1,,,False,63,43
+source,允许供压改变（假设）,8107,fixed,2,,,False,63,45
+source,允许供压改变（假设）,8107,wait,2,,,False,63,45
+source,允许供压改变（假设）,8107,normalized,0,,,False,63,45
+source,允许供压改变（假设）,8107,candidate,1,,,False,63,45
+source,允许供压改变（假设）,8108,fixed,2,,,False,63,35
+source,允许供压改变（假设）,8108,wait,2,,,False,63,35
+source,允许供压改变（假设）,8108,normalized,0,,,False,63,35
+source,允许供压改变（假设）,8108,candidate,1,,,False,63,35
+source,允许供压改变（假设）,8109,fixed,2,,,False,63,35
+source,允许供压改变（假设）,8109,wait,2,,,False,63,35
+source,允许供压改变（假设）,8109,normalized,0,,,False,63,35
+source,允许供压改变（假设）,8109,candidate,1,,,False,63,35
+source,允许供压改变（假设）,8110,fixed,2,,,False,63,34
+source,允许供压改变（假设）,8110,wait,2,,,False,63,34
+source,允许供压改变（假设）,8110,normalized,0,,,False,63,34
+source,允许供压改变（假设）,8110,candidate,1,,,False,63,34
+source,允许供压改变（假设）,8111,fixed,2,,,False,63,46
+source,允许供压改变（假设）,8111,wait,2,,,False,63,46
+source,允许供压改变（假设）,8111,normalized,0,,,False,63,46
+source,允许供压改变（假设）,8111,candidate,1,,,False,63,46
+source,允许供压改变（假设）,8112,fixed,2,,,False,63,37
+source,允许供压改变（假设）,8112,wait,2,,,False,63,37
+source,允许供压改变（假设）,8112,normalized,0,,,False,63,37
+source,允许供压改变（假设）,8112,candidate,1,,,False,63,37
+source,允许供压改变（假设）,8113,fixed,2,,,False,63,44
+source,允许供压改变（假设）,8113,wait,2,,,False,63,44
+source,允许供压改变（假设）,8113,normalized,0,,,False,63,44
+source,允许供压改变（假设）,8113,candidate,1,,,False,63,44
+source,允许供压改变（假设）,8114,fixed,2,,,False,63,35
+source,允许供压改变（假设）,8114,wait,2,,,False,63,35
+source,允许供压改变（假设）,8114,normalized,0,,,False,63,35
+source,允许供压改变（假设）,8114,candidate,1,,,False,63,35
+source,允许供压改变（假设）,8115,fixed,2,,,False,63,37
+source,允许供压改变（假设）,8115,wait,2,,,False,63,37
+source,允许供压改变（假设）,8115,normalized,0,,,False,63,37
+source,允许供压改变（假设）,8115,candidate,1,,,False,63,37
+source,允许供压改变（假设）,8116,fixed,2,,,False,63,42
+source,允许供压改变（假设）,8116,wait,2,,,False,63,42
+source,允许供压改变（假设）,8116,normalized,0,,,False,63,42
+source,允许供压改变（假设）,8116,candidate,1,,,False,63,42
+source,允许供压改变（假设）,8117,fixed,2,,,False,63,35
+source,允许供压改变（假设）,8117,wait,2,,,False,63,35
+source,允许供压改变（假设）,8117,normalized,0,,,False,63,35
+source,允许供压改变（假设）,8117,candidate,1,,,False,63,35
+source,允许供压改变（假设）,8118,fixed,2,,,False,63,30
+source,允许供压改变（假设）,8118,wait,2,,,False,63,30
+source,允许供压改变（假设）,8118,normalized,0,,,False,63,30
+source,允许供压改变（假设）,8118,candidate,1,,,False,63,30
+source,允许供压改变（假设）,8119,fixed,2,,,False,63,43
+source,允许供压改变（假设）,8119,wait,2,,,False,63,43
+source,允许供压改变（假设）,8119,normalized,0,,,False,63,43
+source,允许供压改变（假设）,8119,candidate,1,,,False,63,43
+missing,正常切换但无阀态,8100,fixed,1,,,False,63,25
+missing,正常切换但无阀态,8100,wait,1,,,False,63,25
+missing,正常切换但无阀态,8100,normalized,0,,,False,63,25
+missing,正常切换但无阀态,8100,candidate,1,,,False,63,25
+missing,正常切换但无阀态,8101,fixed,1,,,False,63,31
+missing,正常切换但无阀态,8101,wait,1,,,False,63,31
+missing,正常切换但无阀态,8101,normalized,0,,,False,63,31
+missing,正常切换但无阀态,8101,candidate,1,,,False,63,31
+missing,正常切换但无阀态,8102,fixed,1,,,False,63,23
+missing,正常切换但无阀态,8102,wait,1,,,False,63,23
+missing,正常切换但无阀态,8102,normalized,0,,,False,63,23
+missing,正常切换但无阀态,8102,candidate,1,,,False,63,23
+missing,正常切换但无阀态,8103,fixed,1,,,False,63,32
+missing,正常切换但无阀态,8103,wait,1,,,False,63,32
+missing,正常切换但无阀态,8103,normalized,0,,,False,63,32
+missing,正常切换但无阀态,8103,candidate,1,,,False,63,32
+missing,正常切换但无阀态,8104,fixed,1,,,False,63,23
+missing,正常切换但无阀态,8104,wait,1,,,False,63,23
+missing,正常切换但无阀态,8104,normalized,0,,,False,63,23
+missing,正常切换但无阀态,8104,candidate,1,,,False,63,23
+missing,正常切换但无阀态,8105,fixed,1,,,False,63,36
+missing,正常切换但无阀态,8105,wait,1,,,False,63,36
+missing,正常切换但无阀态,8105,normalized,0,,,False,63,36
+missing,正常切换但无阀态,8105,candidate,1,,,False,63,36
+missing,正常切换但无阀态,8106,fixed,1,,,False,63,33
+missing,正常切换但无阀态,8106,wait,1,,,False,63,33
+missing,正常切换但无阀态,8106,normalized,0,,,False,63,33
+missing,正常切换但无阀态,8106,candidate,1,,,False,63,33
+missing,正常切换但无阀态,8107,fixed,1,,,False,63,37
+missing,正常切换但无阀态,8107,wait,1,,,False,63,37
+missing,正常切换但无阀态,8107,normalized,0,,,False,63,37
+missing,正常切换但无阀态,8107,candidate,1,,,False,63,37
+missing,正常切换但无阀态,8108,fixed,1,,,False,63,28
+missing,正常切换但无阀态,8108,wait,1,,,False,63,28
+missing,正常切换但无阀态,8108,normalized,0,,,False,63,28
+missing,正常切换但无阀态,8108,candidate,1,,,False,63,28
+missing,正常切换但无阀态,8109,fixed,1,,,False,63,24
+missing,正常切换但无阀态,8109,wait,1,,,False,63,24
+missing,正常切换但无阀态,8109,normalized,0,,,False,63,24
+missing,正常切换但无阀态,8109,candidate,1,,,False,63,24
+missing,正常切换但无阀态,8110,fixed,1,,,False,63,33
+missing,正常切换但无阀态,8110,wait,1,,,False,63,33
+missing,正常切换但无阀态,8110,normalized,0,,,False,63,33
+missing,正常切换但无阀态,8110,candidate,1,,,False,63,33
+missing,正常切换但无阀态,8111,fixed,1,,,False,63,33
+missing,正常切换但无阀态,8111,wait,1,,,False,63,33
+missing,正常切换但无阀态,8111,normalized,0,,,False,63,33
+missing,正常切换但无阀态,8111,candidate,1,,,False,63,33
+missing,正常切换但无阀态,8112,fixed,1,,,False,63,30
+missing,正常切换但无阀态,8112,wait,1,,,False,63,30
+missing,正常切换但无阀态,8112,normalized,0,,,False,63,30
+missing,正常切换但无阀态,8112,candidate,1,,,False,63,30
+missing,正常切换但无阀态,8113,fixed,1,,,False,63,31
+missing,正常切换但无阀态,8113,wait,1,,,False,63,31
+missing,正常切换但无阀态,8113,normalized,0,,,False,63,31
+missing,正常切换但无阀态,8113,candidate,1,,,False,63,31
+missing,正常切换但无阀态,8114,fixed,1,,,False,63,27
+missing,正常切换但无阀态,8114,wait,1,,,False,63,27
+missing,正常切换但无阀态,8114,normalized,0,,,False,63,27
+missing,正常切换但无阀态,8114,candidate,1,,,False,63,27
+missing,正常切换但无阀态,8115,fixed,1,,,False,63,27
+missing,正常切换但无阀态,8115,wait,1,,,False,63,27
+missing,正常切换但无阀态,8115,normalized,0,,,False,63,27
+missing,正常切换但无阀态,8115,candidate,1,,,False,63,27
+missing,正常切换但无阀态,8116,fixed,1,,,False,63,34
+missing,正常切换但无阀态,8116,wait,1,,,False,63,34
+missing,正常切换但无阀态,8116,normalized,0,,,False,63,34
+missing,正常切换但无阀态,8116,candidate,1,,,False,63,34
+missing,正常切换但无阀态,8117,fixed,1,,,False,63,30
+missing,正常切换但无阀态,8117,wait,1,,,False,63,30
+missing,正常切换但无阀态,8117,normalized,0,,,False,63,30
+missing,正常切换但无阀态,8117,candidate,1,,,False,63,30
+missing,正常切换但无阀态,8118,fixed,1,,,False,63,33
+missing,正常切换但无阀态,8118,wait,1,,,False,63,33
+missing,正常切换但无阀态,8118,normalized,0,,,False,63,33
+missing,正常切换但无阀态,8118,candidate,1,,,False,63,33
+missing,正常切换但无阀态,8119,fixed,1,,,False,63,44
+missing,正常切换但无阀态,8119,wait,1,,,False,63,44
+missing,正常切换但无阀态,8119,normalized,0,,,False,63,44
+missing,正常切换但无阀态,8119,candidate,1,,,False,63,44
+late,正常切换阀态迟到 20s,8100,fixed,1,,,False,65,33
+late,正常切换阀态迟到 20s,8100,wait,2,,,False,65,33
+late,正常切换阀态迟到 20s,8100,normalized,0,,,False,65,33
+late,正常切换阀态迟到 20s,8100,candidate,2,,,False,65,33
+late,正常切换阀态迟到 20s,8101,fixed,1,,,False,65,35
+late,正常切换阀态迟到 20s,8101,wait,2,,,False,65,35
+late,正常切换阀态迟到 20s,8101,normalized,0,,,False,65,35
+late,正常切换阀态迟到 20s,8101,candidate,2,,,False,65,35
+late,正常切换阀态迟到 20s,8102,fixed,1,,,False,65,29
+late,正常切换阀态迟到 20s,8102,wait,2,,,False,65,29
+late,正常切换阀态迟到 20s,8102,normalized,0,,,False,65,29
+late,正常切换阀态迟到 20s,8102,candidate,2,,,False,65,29
+late,正常切换阀态迟到 20s,8103,fixed,1,,,False,65,34
+late,正常切换阀态迟到 20s,8103,wait,2,,,False,65,34
+late,正常切换阀态迟到 20s,8103,normalized,0,,,False,65,34
+late,正常切换阀态迟到 20s,8103,candidate,2,,,False,65,34
+late,正常切换阀态迟到 20s,8104,fixed,1,,,False,65,26
+late,正常切换阀态迟到 20s,8104,wait,2,,,False,65,26
+late,正常切换阀态迟到 20s,8104,normalized,0,,,False,65,26
+late,正常切换阀态迟到 20s,8104,candidate,2,,,False,65,26
+late,正常切换阀态迟到 20s,8105,fixed,1,,,False,65,33
+late,正常切换阀态迟到 20s,8105,wait,2,,,False,65,33
+late,正常切换阀态迟到 20s,8105,normalized,0,,,False,65,33
+late,正常切换阀态迟到 20s,8105,candidate,2,,,False,65,33
+late,正常切换阀态迟到 20s,8106,fixed,1,,,False,65,35
+late,正常切换阀态迟到 20s,8106,wait,2,,,False,65,35
+late,正常切换阀态迟到 20s,8106,normalized,0,,,False,65,35
+late,正常切换阀态迟到 20s,8106,candidate,2,,,False,65,35
+late,正常切换阀态迟到 20s,8107,fixed,1,,,False,65,39
+late,正常切换阀态迟到 20s,8107,wait,2,,,False,65,39
+late,正常切换阀态迟到 20s,8107,normalized,0,,,False,65,39
+late,正常切换阀态迟到 20s,8107,candidate,2,,,False,65,39
+late,正常切换阀态迟到 20s,8108,fixed,1,,,False,65,30
+late,正常切换阀态迟到 20s,8108,wait,2,,,False,65,30
+late,正常切换阀态迟到 20s,8108,normalized,0,,,False,65,30
+late,正常切换阀态迟到 20s,8108,candidate,2,,,False,65,30
+late,正常切换阀态迟到 20s,8109,fixed,1,,,False,65,28
+late,正常切换阀态迟到 20s,8109,wait,2,,,False,65,28
+late,正常切换阀态迟到 20s,8109,normalized,0,,,False,65,28
+late,正常切换阀态迟到 20s,8109,candidate,2,,,False,65,28
+late,正常切换阀态迟到 20s,8110,fixed,1,,,False,65,32
+late,正常切换阀态迟到 20s,8110,wait,2,,,False,65,32
+late,正常切换阀态迟到 20s,8110,normalized,0,,,False,65,32
+late,正常切换阀态迟到 20s,8110,candidate,2,,,False,65,32
+late,正常切换阀态迟到 20s,8111,fixed,1,,,False,65,33
+late,正常切换阀态迟到 20s,8111,wait,2,,,False,65,33
+late,正常切换阀态迟到 20s,8111,normalized,0,,,False,65,33
+late,正常切换阀态迟到 20s,8111,candidate,2,,,False,65,33
+late,正常切换阀态迟到 20s,8112,fixed,1,,,False,65,31
+late,正常切换阀态迟到 20s,8112,wait,2,,,False,65,31
+late,正常切换阀态迟到 20s,8112,normalized,0,,,False,65,31
+late,正常切换阀态迟到 20s,8112,candidate,2,,,False,65,31
+late,正常切换阀态迟到 20s,8113,fixed,1,,,False,65,26
+late,正常切换阀态迟到 20s,8113,wait,2,,,False,65,26
+late,正常切换阀态迟到 20s,8113,normalized,0,,,False,65,26
+late,正常切换阀态迟到 20s,8113,candidate,2,,,False,65,26
+late,正常切换阀态迟到 20s,8114,fixed,1,,,False,65,41
+late,正常切换阀态迟到 20s,8114,wait,2,,,False,65,41
+late,正常切换阀态迟到 20s,8114,normalized,0,,,False,65,41
+late,正常切换阀态迟到 20s,8114,candidate,2,,,False,65,41
+late,正常切换阀态迟到 20s,8115,fixed,1,,,False,65,35
+late,正常切换阀态迟到 20s,8115,wait,2,,,False,65,35
+late,正常切换阀态迟到 20s,8115,normalized,0,,,False,65,35
+late,正常切换阀态迟到 20s,8115,candidate,2,,,False,65,35
+late,正常切换阀态迟到 20s,8116,fixed,1,,,False,65,35
+late,正常切换阀态迟到 20s,8116,wait,2,,,False,65,35
+late,正常切换阀态迟到 20s,8116,normalized,0,,,False,65,35
+late,正常切换阀态迟到 20s,8116,candidate,2,,,False,65,35
+late,正常切换阀态迟到 20s,8117,fixed,1,,,False,65,32
+late,正常切换阀态迟到 20s,8117,wait,2,,,False,65,32
+late,正常切换阀态迟到 20s,8117,normalized,0,,,False,65,32
+late,正常切换阀态迟到 20s,8117,candidate,2,,,False,65,32
+late,正常切换阀态迟到 20s,8118,fixed,1,,,False,65,24
+late,正常切换阀态迟到 20s,8118,wait,2,,,False,65,24
+late,正常切换阀态迟到 20s,8118,normalized,0,,,False,65,24
+late,正常切换阀态迟到 20s,8118,candidate,2,,,False,65,24
+late,正常切换阀态迟到 20s,8119,fixed,1,,,False,65,45
+late,正常切换阀态迟到 20s,8119,wait,2,,,False,65,45
+late,正常切换阀态迟到 20s,8119,normalized,0,,,False,65,45
+late,正常切换阀态迟到 20s,8119,candidate,2,,,False,65,45
+noise,较大噪声下正常切换,8100,fixed,6,,,False,66,490
+noise,较大噪声下正常切换,8100,wait,4,,,False,66,490
+noise,较大噪声下正常切换,8100,normalized,2,,,False,66,490
+noise,较大噪声下正常切换,8100,candidate,3,,,False,66,490
+noise,较大噪声下正常切换,8101,fixed,4,,,False,67,483
+noise,较大噪声下正常切换,8101,wait,4,,,False,67,483
+noise,较大噪声下正常切换,8101,normalized,4,,,False,67,483
+noise,较大噪声下正常切换,8101,candidate,2,,,False,67,483
+noise,较大噪声下正常切换,8102,fixed,4,,,False,66,490
+noise,较大噪声下正常切换,8102,wait,2,,,False,66,490
+noise,较大噪声下正常切换,8102,normalized,3,,,False,66,490
+noise,较大噪声下正常切换,8102,candidate,3,,,False,66,490
+noise,较大噪声下正常切换,8103,fixed,4,,,False,65,502
+noise,较大噪声下正常切换,8103,wait,2,,,False,65,502
+noise,较大噪声下正常切换,8103,normalized,2,,,False,65,502
+noise,较大噪声下正常切换,8103,candidate,2,,,False,65,502
+noise,较大噪声下正常切换,8104,fixed,2,,,False,65,491
+noise,较大噪声下正常切换,8104,wait,2,,,False,65,491
+noise,较大噪声下正常切换,8104,normalized,2,,,False,65,491
+noise,较大噪声下正常切换,8104,candidate,1,,,False,65,491
+noise,较大噪声下正常切换,8105,fixed,5,,,False,69,485
+noise,较大噪声下正常切换,8105,wait,4,,,False,69,485
+noise,较大噪声下正常切换,8105,normalized,2,,,False,69,485
+noise,较大噪声下正常切换,8105,candidate,4,,,False,69,485
+noise,较大噪声下正常切换,8106,fixed,3,,,False,65,497
+noise,较大噪声下正常切换,8106,wait,3,,,False,65,497
+noise,较大噪声下正常切换,8106,normalized,2,,,False,65,497
+noise,较大噪声下正常切换,8106,candidate,2,,,False,65,497
+noise,较大噪声下正常切换,8107,fixed,4,,,False,67,488
+noise,较大噪声下正常切换,8107,wait,3,,,False,67,488
+noise,较大噪声下正常切换,8107,normalized,4,,,False,67,488
+noise,较大噪声下正常切换,8107,candidate,3,,,False,67,488
+noise,较大噪声下正常切换,8108,fixed,3,,,False,63,507
+noise,较大噪声下正常切换,8108,wait,3,,,False,63,507
+noise,较大噪声下正常切换,8108,normalized,3,,,False,63,507
+noise,较大噪声下正常切换,8108,candidate,1,,,False,63,507
+noise,较大噪声下正常切换,8109,fixed,2,,,False,65,503
+noise,较大噪声下正常切换,8109,wait,2,,,False,65,503
+noise,较大噪声下正常切换,8109,normalized,2,,,False,65,503
+noise,较大噪声下正常切换,8109,candidate,2,,,False,65,503
+noise,较大噪声下正常切换,8110,fixed,2,,,False,65,482
+noise,较大噪声下正常切换,8110,wait,2,,,False,65,482
+noise,较大噪声下正常切换,8110,normalized,6,,,False,65,482
+noise,较大噪声下正常切换,8110,candidate,2,,,False,65,482
+noise,较大噪声下正常切换,8111,fixed,5,,,False,67,496
+noise,较大噪声下正常切换,8111,wait,5,,,False,67,496
+noise,较大噪声下正常切换,8111,normalized,4,,,False,67,496
+noise,较大噪声下正常切换,8111,candidate,3,,,False,67,496
+noise,较大噪声下正常切换,8112,fixed,5,,,False,66,491
+noise,较大噪声下正常切换,8112,wait,5,,,False,66,491
+noise,较大噪声下正常切换,8112,normalized,3,,,False,66,491
+noise,较大噪声下正常切换,8112,candidate,3,,,False,66,491
+noise,较大噪声下正常切换,8113,fixed,6,,,False,67,468
+noise,较大噪声下正常切换,8113,wait,4,,,False,67,468
+noise,较大噪声下正常切换,8113,normalized,3,,,False,67,468
+noise,较大噪声下正常切换,8113,candidate,4,,,False,67,468
+noise,较大噪声下正常切换,8114,fixed,3,,,False,66,488
+noise,较大噪声下正常切换,8114,wait,3,,,False,66,488
+noise,较大噪声下正常切换,8114,normalized,3,,,False,66,488
+noise,较大噪声下正常切换,8114,candidate,3,,,False,66,488
+noise,较大噪声下正常切换,8115,fixed,4,,,False,63,496
+noise,较大噪声下正常切换,8115,wait,3,,,False,63,496
+noise,较大噪声下正常切换,8115,normalized,0,,,False,63,496
+noise,较大噪声下正常切换,8115,candidate,1,,,False,63,496
+noise,较大噪声下正常切换,8116,fixed,6,,,False,73,496
+noise,较大噪声下正常切换,8116,wait,5,,,False,73,496
+noise,较大噪声下正常切换,8116,normalized,2,,,False,73,496
+noise,较大噪声下正常切换,8116,candidate,6,,,False,73,496
+noise,较大噪声下正常切换,8117,fixed,6,,,False,67,484
+noise,较大噪声下正常切换,8117,wait,5,,,False,67,484
+noise,较大噪声下正常切换,8117,normalized,3,,,False,67,484
+noise,较大噪声下正常切换,8117,candidate,3,,,False,67,484
+noise,较大噪声下正常切换,8118,fixed,5,,,False,66,499
+noise,较大噪声下正常切换,8118,wait,5,,,False,66,499
+noise,较大噪声下正常切换,8118,normalized,3,,,False,66,499
+noise,较大噪声下正常切换,8118,candidate,3,,,False,66,499
+noise,较大噪声下正常切换,8119,fixed,5,,,False,67,498
+noise,较大噪声下正常切换,8119,wait,5,,,False,67,498
+noise,较大噪声下正常切换,8119,normalized,3,,,False,67,498
+noise,较大噪声下正常切换,8119,candidate,3,,,False,67,498
+drift,传感器慢漂移,8100,fixed,6,,,False,73,45
+drift,传感器慢漂移,8100,wait,6,,,False,73,45
+drift,传感器慢漂移,8100,normalized,0,,,False,73,45
+drift,传感器慢漂移,8100,candidate,8,,,False,73,45
+drift,传感器慢漂移,8101,fixed,10,,,False,74,44
+drift,传感器慢漂移,8101,wait,10,,,False,74,44
+drift,传感器慢漂移,8101,normalized,0,,,False,74,44
+drift,传感器慢漂移,8101,candidate,8,,,False,74,44
+drift,传感器慢漂移,8102,fixed,9,,,False,73,42
+drift,传感器慢漂移,8102,wait,9,,,False,73,42
+drift,传感器慢漂移,8102,normalized,0,,,False,73,42
+drift,传感器慢漂移,8102,candidate,7,,,False,73,42
+drift,传感器慢漂移,8103,fixed,10,,,False,72,46
+drift,传感器慢漂移,8103,wait,10,,,False,72,46
+drift,传感器慢漂移,8103,normalized,0,,,False,72,46
+drift,传感器慢漂移,8103,candidate,8,,,False,72,46
+drift,传感器慢漂移,8104,fixed,7,,,False,72,34
+drift,传感器慢漂移,8104,wait,7,,,False,72,34
+drift,传感器慢漂移,8104,normalized,0,,,False,72,34
+drift,传感器慢漂移,8104,candidate,6,,,False,72,34
+drift,传感器慢漂移,8105,fixed,9,,,False,72,47
+drift,传感器慢漂移,8105,wait,9,,,False,72,47
+drift,传感器慢漂移,8105,normalized,0,,,False,72,47
+drift,传感器慢漂移,8105,candidate,7,,,False,72,47
+drift,传感器慢漂移,8106,fixed,9,,,False,75,49
+drift,传感器慢漂移,8106,wait,9,,,False,75,49
+drift,传感器慢漂移,8106,normalized,0,,,False,75,49
+drift,传感器慢漂移,8106,candidate,9,,,False,75,49
+drift,传感器慢漂移,8107,fixed,9,,,False,75,42
+drift,传感器慢漂移,8107,wait,9,,,False,75,42
+drift,传感器慢漂移,8107,normalized,0,,,False,75,42
+drift,传感器慢漂移,8107,candidate,9,,,False,75,42
+drift,传感器慢漂移,8108,fixed,8,,,False,74,40
+drift,传感器慢漂移,8108,wait,8,,,False,74,40
+drift,传感器慢漂移,8108,normalized,0,,,False,74,40
+drift,传感器慢漂移,8108,candidate,7,,,False,74,40
+drift,传感器慢漂移,8109,fixed,5,,,False,68,39
+drift,传感器慢漂移,8109,wait,4,,,False,68,39
+drift,传感器慢漂移,8109,normalized,0,,,False,68,39
+drift,传感器慢漂移,8109,candidate,4,,,False,68,39
+drift,传感器慢漂移,8110,fixed,7,,,False,71,40
+drift,传感器慢漂移,8110,wait,7,,,False,71,40
+drift,传感器慢漂移,8110,normalized,0,,,False,71,40
+drift,传感器慢漂移,8110,candidate,6,,,False,71,40
+drift,传感器慢漂移,8111,fixed,10,,,False,76,38
+drift,传感器慢漂移,8111,wait,10,,,False,76,38
+drift,传感器慢漂移,8111,normalized,0,,,False,76,38
+drift,传感器慢漂移,8111,candidate,9,,,False,76,38
+drift,传感器慢漂移,8112,fixed,9,,,False,76,41
+drift,传感器慢漂移,8112,wait,9,,,False,76,41
+drift,传感器慢漂移,8112,normalized,0,,,False,76,41
+drift,传感器慢漂移,8112,candidate,8,,,False,76,41
+drift,传感器慢漂移,8113,fixed,9,,,False,78,47
+drift,传感器慢漂移,8113,wait,9,,,False,78,47
+drift,传感器慢漂移,8113,normalized,0,,,False,78,47
+drift,传感器慢漂移,8113,candidate,9,,,False,78,47
+drift,传感器慢漂移,8114,fixed,8,,,False,76,39
+drift,传感器慢漂移,8114,wait,8,,,False,76,39
+drift,传感器慢漂移,8114,normalized,0,,,False,76,39
+drift,传感器慢漂移,8114,candidate,8,,,False,76,39
+drift,传感器慢漂移,8115,fixed,10,,,False,77,45
+drift,传感器慢漂移,8115,wait,10,,,False,77,45
+drift,传感器慢漂移,8115,normalized,0,,,False,77,45
+drift,传感器慢漂移,8115,candidate,9,,,False,77,45
+drift,传感器慢漂移,8116,fixed,6,,,False,68,37
+drift,传感器慢漂移,8116,wait,6,,,False,68,37
+drift,传感器慢漂移,8116,normalized,0,,,False,68,37
+drift,传感器慢漂移,8116,candidate,4,,,False,68,37
+drift,传感器慢漂移,8117,fixed,8,,,False,77,43
+drift,传感器慢漂移,8117,wait,8,,,False,77,43
+drift,传感器慢漂移,8117,normalized,0,,,False,77,43
+drift,传感器慢漂移,8117,candidate,9,,,False,77,43
+drift,传感器慢漂移,8118,fixed,9,,,False,74,42
+drift,传感器慢漂移,8118,wait,9,,,False,74,42
+drift,传感器慢漂移,8118,normalized,0,,,False,74,42
+drift,传感器慢漂移,8118,candidate,8,,,False,74,42
+drift,传感器慢漂移,8119,fixed,10,,,False,77,50
+drift,传感器慢漂移,8119,wait,10,,,False,77,50
+drift,传感器慢漂移,8119,normalized,0,,,False,77,50
+drift,传感器慢漂移,8119,candidate,9,,,False,77,50
+slow,健康动态变慢 30s,8100,fixed,1,,,False,61,28
+slow,健康动态变慢 30s,8100,wait,1,,,False,61,28
+slow,健康动态变慢 30s,8100,normalized,0,,,False,61,28
+slow,健康动态变慢 30s,8100,candidate,0,,,False,61,28
+slow,健康动态变慢 30s,8101,fixed,2,,,False,61,23
+slow,健康动态变慢 30s,8101,wait,1,,,False,61,23
+slow,健康动态变慢 30s,8101,normalized,0,,,False,61,23
+slow,健康动态变慢 30s,8101,candidate,0,,,False,61,23
+slow,健康动态变慢 30s,8102,fixed,1,,,False,61,26
+slow,健康动态变慢 30s,8102,wait,1,,,False,61,26
+slow,健康动态变慢 30s,8102,normalized,0,,,False,61,26
+slow,健康动态变慢 30s,8102,candidate,0,,,False,61,26
+slow,健康动态变慢 30s,8103,fixed,1,,,False,61,29
+slow,健康动态变慢 30s,8103,wait,1,,,False,61,29
+slow,健康动态变慢 30s,8103,normalized,0,,,False,61,29
+slow,健康动态变慢 30s,8103,candidate,0,,,False,61,29
+slow,健康动态变慢 30s,8104,fixed,2,,,False,61,29
+slow,健康动态变慢 30s,8104,wait,1,,,False,61,29
+slow,健康动态变慢 30s,8104,normalized,0,,,False,61,29
+slow,健康动态变慢 30s,8104,candidate,0,,,False,61,29
+slow,健康动态变慢 30s,8105,fixed,2,,,False,61,27
+slow,健康动态变慢 30s,8105,wait,1,,,False,61,27
+slow,健康动态变慢 30s,8105,normalized,0,,,False,61,27
+slow,健康动态变慢 30s,8105,candidate,0,,,False,61,27
+slow,健康动态变慢 30s,8106,fixed,1,,,False,61,31
+slow,健康动态变慢 30s,8106,wait,1,,,False,61,31
+slow,健康动态变慢 30s,8106,normalized,0,,,False,61,31
+slow,健康动态变慢 30s,8106,candidate,0,,,False,61,31
+slow,健康动态变慢 30s,8107,fixed,2,,,False,61,38
+slow,健康动态变慢 30s,8107,wait,1,,,False,61,38
+slow,健康动态变慢 30s,8107,normalized,0,,,False,61,38
+slow,健康动态变慢 30s,8107,candidate,0,,,False,61,38
+slow,健康动态变慢 30s,8108,fixed,2,,,False,61,24
+slow,健康动态变慢 30s,8108,wait,1,,,False,61,24
+slow,健康动态变慢 30s,8108,normalized,0,,,False,61,24
+slow,健康动态变慢 30s,8108,candidate,0,,,False,61,24
+slow,健康动态变慢 30s,8109,fixed,1,,,False,61,25
+slow,健康动态变慢 30s,8109,wait,1,,,False,61,25
+slow,健康动态变慢 30s,8109,normalized,0,,,False,61,25
+slow,健康动态变慢 30s,8109,candidate,0,,,False,61,25
+slow,健康动态变慢 30s,8110,fixed,1,,,False,61,38
+slow,健康动态变慢 30s,8110,wait,1,,,False,61,38
+slow,健康动态变慢 30s,8110,normalized,0,,,False,61,38
+slow,健康动态变慢 30s,8110,candidate,0,,,False,61,38
+slow,健康动态变慢 30s,8111,fixed,2,,,False,61,33
+slow,健康动态变慢 30s,8111,wait,1,,,False,61,33
+slow,健康动态变慢 30s,8111,normalized,0,,,False,61,33
+slow,健康动态变慢 30s,8111,candidate,0,,,False,61,33
+slow,健康动态变慢 30s,8112,fixed,1,,,False,61,26
+slow,健康动态变慢 30s,8112,wait,1,,,False,61,26
+slow,健康动态变慢 30s,8112,normalized,0,,,False,61,26
+slow,健康动态变慢 30s,8112,candidate,0,,,False,61,26
+slow,健康动态变慢 30s,8113,fixed,1,,,False,61,23
+slow,健康动态变慢 30s,8113,wait,1,,,False,61,23
+slow,健康动态变慢 30s,8113,normalized,0,,,False,61,23
+slow,健康动态变慢 30s,8113,candidate,0,,,False,61,23
+slow,健康动态变慢 30s,8114,fixed,1,,,False,61,30
+slow,健康动态变慢 30s,8114,wait,1,,,False,61,30
+slow,健康动态变慢 30s,8114,normalized,0,,,False,61,30
+slow,健康动态变慢 30s,8114,candidate,0,,,False,61,30
+slow,健康动态变慢 30s,8115,fixed,1,,,False,61,29
+slow,健康动态变慢 30s,8115,wait,1,,,False,61,29
+slow,健康动态变慢 30s,8115,normalized,0,,,False,61,29
+slow,健康动态变慢 30s,8115,candidate,0,,,False,61,29
+slow,健康动态变慢 30s,8116,fixed,2,,,False,61,28
+slow,健康动态变慢 30s,8116,wait,1,,,False,61,28
+slow,健康动态变慢 30s,8116,normalized,0,,,False,61,28
+slow,健康动态变慢 30s,8116,candidate,0,,,False,61,28
+slow,健康动态变慢 30s,8117,fixed,1,,,False,61,29
+slow,健康动态变慢 30s,8117,wait,1,,,False,61,29
+slow,健康动态变慢 30s,8117,normalized,0,,,False,61,29
+slow,健康动态变慢 30s,8117,candidate,0,,,False,61,29
+slow,健康动态变慢 30s,8118,fixed,1,,,False,61,22
+slow,健康动态变慢 30s,8118,wait,1,,,False,61,22
+slow,健康动态变慢 30s,8118,normalized,0,,,False,61,22
+slow,健康动态变慢 30s,8118,candidate,0,,,False,61,22
+slow,健康动态变慢 30s,8119,fixed,2,,,False,61,37
+slow,健康动态变慢 30s,8119,wait,1,,,False,61,37
+slow,健康动态变慢 30s,8119,normalized,0,,,False,61,37
+slow,健康动态变慢 30s,8119,candidate,0,,,False,61,37

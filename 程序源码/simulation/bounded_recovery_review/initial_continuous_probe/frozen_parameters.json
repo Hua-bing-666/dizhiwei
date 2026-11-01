@@ -1,0 +1,82 @@
+{
+  "config": {
+    "version": "20261006-bounded-recovery-v1",
+    "physical_data": false,
+    "initial_attempts": 8,
+    "recovery_attempts": 4,
+    "business_capacity": 16,
+    "history_capacity": 64,
+    "retention_ms": 300000,
+    "probe_interval_ms": 30000,
+    "ack_proof_limit_ms": 8000,
+    "dispatch_interval_ms": 1000,
+    "flush_s": 310,
+    "policies": [
+      "burst_backoff",
+      "bounded_recovery"
+    ],
+    "scenes": [
+      "normal",
+      "pulse8",
+      "restriction_r90",
+      "nan_pressure",
+      "counter_reset",
+      "drift_p0"
+    ],
+    "sigmas": [
+      0.3,
+      3.0,
+      10.0
+    ],
+    "seeds": [
+      46000,
+      46001,
+      46002,
+      46003
+    ],
+    "modes": [
+      "clean",
+      "loss",
+      "outage"
+    ],
+    "boundary_scenes": [
+      "pulse8",
+      "nan_pressure",
+      "restriction_r90"
+    ],
+    "boundary_sigmas": [
+      0.3,
+      10.0
+    ],
+    "boundary_seeds": [
+      47000,
+      47001
+    ],
+    "boundary_outage_seconds": [
+      20,
+      120,
+      360
+    ],
+    "new_seeds": [
+      48000,
+      48001
+    ],
+    "new_modes": [
+      "double_outage",
+      "ack_blackout",
+      "dead"
+    ]
+  },
+  "previous_parameters_sha256": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+  "sources": {
+    "simulation/review_bounded_recovery.py": "b1beba1953ee57457c64ea4e8aa9b02c10077f9058420b4e1db6ea1f0b603e5c",
+    "prototype/recovery_transport.py": "bfa0f4886edda742a6282595678b020d2bf883a8b531668efb96fb60047c106b",
+    "scripts/validate_bounded_recovery.py": "a01f1913ae64b975662611729c8d8a00099e0631e2d60fd8fda6826ee628c4e9",
+    "prototype/session_transport.py": "0062a590fd67d4be223c5be5d7323246aa3cf4ec4a281a7c31f52b66ae8c0d1e",
+    "prototype/compact_protocol.py": "5ca0629f236c9b8b5e800c428e0d23b4e1738af3914237555a996ea1069a8e98",
+    "simulation/review_integrated_monitor.py": "fa504b2f4040831f507fb52ba3708668e2d74e924ca3e7c3cf00fe3bb097acf3",
+    "simulation/protocol_session_review/frozen_parameters.json": "6c36cecd9574f412545b76b48855553209ceb64f406a41de4fe91836d9f24e43",
+    "simulation/protocol_session_review/byte_link_results.csv": "0f165cd504216138ded383ea8b6f74130fe241b165dd41cbfa09d6c45d2a7de9",
+    "simulation/protocol_session_review/boundary_results.csv": "25d541f57cbded340b4aafdf4da111a6f0ac0f5116ad6fd36d60a5a97c84aeea"
+  }
+}

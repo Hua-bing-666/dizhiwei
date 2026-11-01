@@ -1,0 +1,15 @@
+{
+  "final_png_individually_viewed": true,
+  "files": {
+    "png": "b9c2f05ca76bc4ea7fa967c7ab12bd4f2dd1556df71928e6dfa6abba3b494f0a",
+    "svg": "0183e0693172180cbebea52e372b71fdee01ada5f2d1a971c074d07e260a7165"
+  },
+  "source_sha256": "c5333bbc345321f2cddebe7be632f8487b94472fefb2a5b4eb6a4a143d68af40",
+  "checks": [
+    "legend clear; no clipping or observed text overlap",
+    "black/white line styles and markers distinguish the two fault traces",
+    "counter reset recovery 423/430; rejected endpoint recovery 424/431"
+  ],
+  "physical_data": false,
+  "svg_change": "Normalized line-ending and trailing whitespace only; PNG bytes unchanged"
+}

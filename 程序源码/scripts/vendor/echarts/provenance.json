@@ -1,0 +1,10 @@
+{
+  "version": "6.0.0",
+  "repository": "https://github.com/apache/echarts",
+  "files": {
+    "echarts.min.js": "https://raw.githubusercontent.com/apache/echarts/6.0.0/dist/echarts.min.js",
+    "LICENSE": "https://raw.githubusercontent.com/apache/echarts/6.0.0/LICENSE",
+    "NOTICE": "https://raw.githubusercontent.com/apache/echarts/6.0.0/NOTICE"
+  },
+  "license": "Apache-2.0"
+}

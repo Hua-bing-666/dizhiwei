@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-06",
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "cd01f502fedb48119ef0276f31a5b20e25c73f8a71df24a13308cd4593b5752e",
+  "report_sha256": "6a2a24e94374daacb057b30bcb0c0051235eed78be2fd777cbe4e054fae835fb",
+  "figures": [
+    {
+      "name": "01_ACK触发的恢复过程",
+      "final_png_viewed": true,
+      "no_observed_clipping_or_misalignment": true,
+      "message_markers_separated": true,
+      "grayscale_distinguishable": true,
+      "file_sha256": {
+        "png": "5d75380bd2964f655cd645a9a36438c768b53611b8589f44ad34574403f15523",
+        "svg": "87ae8a43d3e9fa6166bdc381d39a595c5012f053cf9a2a1fb67aafe7c0cae896"
+      }
+    },
+    {
+      "name": "02_恢复效果与字节开销",
+      "final_png_viewed": true,
+      "no_observed_clipping_or_misalignment": true,
+      "message_markers_separated": true,
+      "grayscale_distinguishable": true,
+      "file_sha256": {
+        "png": "975bdae8674f9a4ff5ed95977748033f2f6d238cbe2d9422b2a185755c4e7d05",
+        "svg": "dd6ea7348db15770f9a2c5229f3e36f1ce3842e0bd32d9481cba7de300a599a8"
+      }
+    }
+  ],
+  "local_links_checked": true,
+  "grouped_results_recomputed": true,
+  "archived_initial_sources_checked": true,
+  "plotted_times_and_original_acquisition_times_checked": true,
+  "exclusions": [
+    "Word insertion and printed size",
+    "actual RF, clock synchronisation and power",
+    "Flash atomicity and sudden power loss"
+  ]
+}

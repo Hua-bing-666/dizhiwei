@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "parameters_sha256": "05e88b369dd6d281253b450824ddd74d68ce4213c909f13f2484a76ca07dd8dc",
+  "validator_sha256": "8f859124e4c4e2bd8d174e0b04e957c0b930d69ceb9a615c16703812d9cee552",
+  "checks": [
+    "nonfinite_never_valid_at_fault_endpoint",
+    "range_never_valid_at_fault_endpoint",
+    "not_ready_never_valid_at_fault_endpoint",
+    "stale_never_valid_at_fault_endpoint",
+    "repeated_never_valid_at_fault_endpoint",
+    "overlap_never_valid_at_fault_endpoint",
+    "future_never_valid_at_fault_endpoint",
+    "span_never_valid_at_fault_endpoint",
+    "late_counter_never_valid_at_fault_endpoint",
+    "nan_latch_never_valid_at_fault_endpoint",
+    "known_counter_reset_endpoint_rebuilds_differently_from_missing_endpoint",
+    "sequence_or_clock_gap_halts_without_new_snapshot",
+    "sequence_or_clock_gap_halts_without_new_snapshot",
+    "counter_representation_halts_without_new_snapshot",
+    "C_input_contract_rejection_halts_without_new_snapshot",
+    "explicit_new_instance_starts_new_measurement_not_gap_filling",
+    "invalid_identity_rejected_before_starting_worker"
+  ],
+  "compiler_command": [
+    "D:/bin/gcc.exe",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wconversion",
+    "-O2",
+    "-ftrapv",
+    "C:\\Users\\Lenovo\\Desktop\\大创想法\\firmware\\integer_diagnosis.c",
+    "C:\\Users\\Lenovo\\Desktop\\大创想法\\firmware\\acquisition_bridge.c",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\大创想法\\tmp\\acquisition_pipeline\\bridge.exe"
+  ]
+}

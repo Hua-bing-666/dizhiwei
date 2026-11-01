@@ -1,0 +1,466 @@
+{
+  "paired_results.csv": [
+    {
+      "group": [
+        "clean",
+        "burst_backoff"
+      ],
+      "runs": 72,
+      "generated": 328,
+      "received": 328,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 995.5138888888889,
+      "max_event_lag_ms": 1000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "clean",
+        "bounded_recovery"
+      ],
+      "runs": 72,
+      "generated": 328,
+      "received": 328,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 995.5138888888889,
+      "max_event_lag_ms": 1000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 2
+    },
+    {
+      "group": [
+        "loss",
+        "burst_backoff"
+      ],
+      "runs": 72,
+      "generated": 328,
+      "received": 328,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1777.4583333333333,
+      "max_event_lag_ms": 6000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "loss",
+        "bounded_recovery"
+      ],
+      "runs": 72,
+      "generated": 328,
+      "received": 328,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1842.375,
+      "max_event_lag_ms": 6000,
+      "probe_attempts": 57,
+      "recovery_attempts": 74,
+      "reactivated": 52,
+      "max_slots": 5
+    },
+    {
+      "group": [
+        "outage",
+        "burst_backoff"
+      ],
+      "runs": 72,
+      "generated": 328,
+      "received": 328,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1791.388888888889,
+      "max_event_lag_ms": 66000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "outage",
+        "bounded_recovery"
+      ],
+      "runs": 72,
+      "generated": 328,
+      "received": 328,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1890.5555555555557,
+      "max_event_lag_ms": 52000,
+      "probe_attempts": 126,
+      "recovery_attempts": 180,
+      "reactivated": 180,
+      "max_slots": 9
+    }
+  ],
+  "boundary_results.csv": [
+    {
+      "group": [
+        "20",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1485.6666666666667,
+      "max_event_lag_ms": 26000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "20",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1485.6666666666667,
+      "max_event_lag_ms": 12000,
+      "probe_attempts": 0,
+      "recovery_attempts": 28,
+      "reactivated": 28,
+      "max_slots": 8
+    },
+    {
+      "group": [
+        "120",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 43,
+      "missing": 40,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 46,
+      "mean_bytes": 3495.25,
+      "max_event_lag_ms": 98000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "120",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 3982.25,
+      "max_event_lag_ms": 116000,
+      "probe_attempts": 42,
+      "recovery_attempts": 70,
+      "reactivated": 70,
+      "max_slots": 10
+    },
+    {
+      "group": [
+        "360",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 13,
+      "missing": 70,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 128,
+      "mean_bytes": 5299.333333333333,
+      "max_event_lag_ms": 88000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "360",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 34,
+      "missing": 49,
+      "rejected_messages": 7,
+      "expired_messages": 60,
+      "unresolved_messages": 0,
+      "mean_bytes": 6155.25,
+      "max_event_lag_ms": 295000,
+      "probe_attempts": 148,
+      "recovery_attempts": 66,
+      "reactivated": 66,
+      "max_slots": 16
+    }
+  ],
+  "new_seed_results.csv": [
+    {
+      "group": [
+        "double_outage",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 91,
+      "received": 91,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 2976.8333333333335,
+      "max_event_lag_ms": 67000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "double_outage",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 91,
+      "received": 91,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 3135.0833333333335,
+      "max_event_lag_ms": 60000,
+      "probe_attempts": 33,
+      "recovery_attempts": 68,
+      "reactivated": 68,
+      "max_slots": 9
+    },
+    {
+      "group": [
+        "ack_blackout",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 91,
+      "received": 91,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 189,
+      "mean_bytes": 10075.333333333334,
+      "max_event_lag_ms": 6000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "ack_blackout",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 91,
+      "received": 79,
+      "missing": 12,
+      "rejected_messages": 14,
+      "expired_messages": 175,
+      "unresolved_messages": 0,
+      "mean_bytes": 11389.166666666666,
+      "max_event_lag_ms": 6000,
+      "probe_attempts": 314,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 16
+    },
+    {
+      "group": [
+        "dead",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 91,
+      "received": 0,
+      "missing": 91,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 189,
+      "mean_bytes": 7051.333333333333,
+      "max_event_lag_ms": 0,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "dead",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 91,
+      "received": 0,
+      "missing": 91,
+      "rejected_messages": 14,
+      "expired_messages": 175,
+      "unresolved_messages": 0,
+      "mean_bytes": 7961.166666666667,
+      "max_event_lag_ms": 0,
+      "probe_attempts": 314,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 16
+    }
+  ],
+  "holdout_results.csv": [
+    {
+      "group": [
+        "loss",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1892.75,
+      "max_event_lag_ms": 13000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "loss",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 1894.75,
+      "max_event_lag_ms": 15000,
+      "probe_attempts": 0,
+      "recovery_attempts": 23,
+      "reactivated": 13,
+      "max_slots": 7
+    },
+    {
+      "group": [
+        "double_outage",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 2861.25,
+      "max_event_lag_ms": 67000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "double_outage",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 0,
+      "mean_bytes": 3010.3333333333335,
+      "max_event_lag_ms": 56000,
+      "probe_attempts": 31,
+      "recovery_attempts": 65,
+      "reactivated": 65,
+      "max_slots": 9
+    },
+    {
+      "group": [
+        "ack_blackout",
+        "burst_backoff"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 83,
+      "missing": 0,
+      "rejected_messages": 0,
+      "expired_messages": 0,
+      "unresolved_messages": 181,
+      "mean_bytes": 9643.333333333334,
+      "max_event_lag_ms": 6000,
+      "probe_attempts": 0,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 0
+    },
+    {
+      "group": [
+        "ack_blackout",
+        "bounded_recovery"
+      ],
+      "runs": 12,
+      "generated": 83,
+      "received": 74,
+      "missing": 9,
+      "rejected_messages": 10,
+      "expired_messages": 171,
+      "unresolved_messages": 0,
+      "mean_bytes": 11178.416666666666,
+      "max_event_lag_ms": 6000,
+      "probe_attempts": 315,
+      "recovery_attempts": 0,
+      "reactivated": 0,
+      "max_slots": 16
+    }
+  ]
+}

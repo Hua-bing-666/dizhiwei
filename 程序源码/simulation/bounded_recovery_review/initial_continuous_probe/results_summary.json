@@ -1,0 +1,18 @@
+{
+  "physical_data": false,
+  "parameters_sha256": "45f97ebdf6cc48a3f8895d54c86942b8b4b5e23570f5d8f387891921409f7dd3",
+  "datasets": {
+    "paired_results.csv": {
+      "rows": 432,
+      "sha256": "1159fc84799c8bb1b86e5ca7bdba7922f17771c0c14f97866e1b6591620f734f"
+    },
+    "boundary_results.csv": {
+      "rows": 72,
+      "sha256": "68cc4e648e7eef5f3a7897fe5e3a628c4b4fd3eec1c8689b0b45f8529f3c3d7c"
+    },
+    "new_seed_results.csv": {
+      "rows": 72,
+      "sha256": "169fa041ecb086337095a7566f87a33270464c05f1a778f3695c57a44053ed71"
+    }
+  }
+}
