@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-06",
+  "records": [
+    {
+      "file": "tmp/protocol_session/E220-current.pdf",
+      "url": "https://www.ebyte.com/downpdf/1077.html",
+      "sha256": "16e96063832794158f08ee1396a017051af00b4baedbcc31520d26aaf0ed5a99",
+      "pages": 40
+    },
+    {
+      "file": "tmp/protocol_session/ADS1115-current.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf",
+      "sha256": "eefff4d412ce2dcd7e659f47238edc9b2fa02e5971f2625af730502033701834",
+      "pages": 57
+    }
+  ]
+}

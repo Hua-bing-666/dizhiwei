@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-06",
+  "prior": "deliverables/大创申报书_图文与引文修订稿.docx",
+  "prior_sha256": "9692420653ed15313e8da84f3c91b8dc95678d8dfa8238ddce86f2448ea01874",
+  "output": "deliverables/大创申报书_版式修订稿.docx",
+  "output_sha256": "f241eaaa05129764de3679d8a108ecf0db66466f8a839dde21218e71f2e7aab5",
+  "changed_pages": [
+    17
+  ],
+  "other19_pages_identical": true,
+  "all_text_and_native_math_identical": true,
+  "all_figure_parts_unchanged": true,
+  "removed": "One-cell nested prose table with top and bottom border; outer school template retained."
+}

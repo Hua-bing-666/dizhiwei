@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "physical_data": false,
+  "checks": [
+    "duplicate_gap_and_excess_counter_delta_rejected_without_mutation",
+    "representation_bounds_checked_before_state_update",
+    "counter_rollback_rebuilds_window_and_emits_quality_reason",
+    "fixed_capacity_layout_and_host_size_observation",
+    "signed_64_bit_products_bounded_by_input_and_configuration_contract",
+    "configuration_zero_decrease_or_out_of_contract_threshold_rejected"
+  ],
+  "parameters_sha256": "371cc7fd6c1860d81c15e3803ee6968e8b35b8815d3fb7604f041350038c806d",
+  "validator_sha256": "4e7e6fa8846e4e8991de6f54f0777b23745c9313540a5370159538bf56db0033",
+  "compile_command": [
+    "D:/bin/gcc.exe",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wconversion",
+    "-O2",
+    "-ftrapv",
+    "-DBUILD_HARNESS",
+    "C:\\Users\\Lenovo\\Desktop\\大创想法\\firmware\\integer_diagnosis.c",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\大创想法\\tmp\\integer_diagnosis\\core.exe"
+  ],
+  "host_sizeof": {
+    "state": 200,
+    "configuration": 1548,
+    "candidate_slot": 84,
+    "candidate_storage": 6968
+  },
+  "arithmetic_max_products": {
+    "leak_left": 4500000000000000,
+    "leak_right": 40500000000000000,
+    "resistance_left": 162000000000000,
+    "resistance_right": 2025000000000000000
+  },
+  "scope": "Host widths, static schema and arithmetic; no target map, ISR or persistence",
+  "documentation": "docs/MCU输入与整数诊断_分项执行计划.md"
+}
