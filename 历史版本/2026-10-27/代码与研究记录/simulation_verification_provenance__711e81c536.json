@@ -1,0 +1,21 @@
+{
+  "original_record_reproduction": 324,
+  "exported_method_records": 3024,
+  "all_54_strata_recounted": true,
+  "frozen_algorithm_source_lock": {
+    "review_hybrid_sampling.py": "exact frozen source match",
+    "review_operating_reference.py": "exact frozen source match",
+    "review_diagnosis.py": "exact frozen source match after desktop ROOT adapter normalization"
+  },
+  "independent_wilson_interval_check": true,
+  "independent_frontend_max_abs_error": 0.0,
+  "prefix_causality_checks": 6,
+  "independent_confirmation_and_early_checks": 18,
+  "model_balance": {
+    "max_leak_load_observation_difference": 0.0,
+    "max_flow_equation_residual": 0.0,
+    "max_supply_pressure_balance_residual_kpa": 3.730349362740526e-14
+  },
+  "physical_data": false,
+  "original_acceptance_sha256": "5e639c7e6782e5dead10fb5defb18d0fdb3d8f196fe26a81d0c64d5e824b28ff"
+}

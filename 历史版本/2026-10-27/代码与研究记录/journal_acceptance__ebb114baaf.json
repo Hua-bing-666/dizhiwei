@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "visual_direction": "High-contrast journal plates, selected by user",
+  "source_numerical_results_retained": true,
+  "high_noise_outcome_groups_checked": 9,
+  "actual_matrix_cells_checked": 30,
+  "paired_seed_counterexample_points": 80,
+  "exact_leak_load_overlap": true,
+  "conditional_lead_groups_checked": 6,
+  "phase_aggregation_preserved": true,
+  "figure_checks": [
+    {
+      "name": "图8-1_压力流量响应轨迹",
+      "chart_type": "paired_response_trajectory",
+      "pixels": [
+        3660,
+        2220
+      ],
+      "min_font_pt": 8.5,
+      "pdf_fonts_embedded": true
+    },
+    {
+      "name": "图8-2_高噪声试次结局",
+      "chart_type": "stacked_outcome_comparison",
+      "pixels": [
+        3660,
+        1920
+      ],
+      "min_font_pt": 8.4,
+      "pdf_fonts_embedded": true
+    },
+    {
+      "name": "图8-3_离散检出边界",
+      "chart_type": "discrete_probability_matrix",
+      "pixels": [
+        3660,
+        1920
+      ],
+      "min_font_pt": 8.0,
+      "pdf_fonts_embedded": true
+    },
+    {
+      "name": "图8-4_终值特征与观测歧义",
+      "chart_type": "paired_terminal_feature_scatter",
+      "pixels": [
+        3660,
+        2190
+      ],
+      "min_font_pt": 8.5,
+      "pdf_fonts_embedded": true
+    },
+    {
+      "name": "补图S1_提前量分布",
+      "chart_type": "conditional_lead_violin",
+      "pixels": [
+        3660,
+        2010
+      ],
+      "min_font_pt": 8.0,
+      "pdf_fonts_embedded": true
+    },
+    {
+      "name": "补图S2_采集代价与响应余量",
+      "chart_type": "paired_acquisition_tradeoff",
+      "pixels": [
+        3660,
+        2160
+      ],
+      "min_font_pt": 8.5,
+      "pdf_fonts_embedded": true
+    }
+  ],
+  "docx_pages": 4,
+  "no_split_paragraphs": true,
+  "original_8_2_8_3_text_preserved": true,
+  "physical_data": false,
+  "physical_print_test": false
+}

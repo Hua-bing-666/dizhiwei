@@ -1,0 +1,749 @@
+{
+  "physical_data": false,
+  "new_waveform_trajectories": 300,
+  "new_amplitude_trajectories": 3000,
+  "amplitude_healthy_control_trajectories": 300,
+  "new_sampling_observation_trajectories": 32,
+  "sampling_phase_replays": 256,
+  "timing_replayed_trajectories": 2,
+  "amplitude_seeds": [
+    62000,
+    62001,
+    62002,
+    62003,
+    62004,
+    62005,
+    62006,
+    62007,
+    62008,
+    62009,
+    62010,
+    62011,
+    62012,
+    62013,
+    62014,
+    62015,
+    62016,
+    62017,
+    62018,
+    62019,
+    62020,
+    62021,
+    62022,
+    62023,
+    62024,
+    62025,
+    62026,
+    62027,
+    62028,
+    62029,
+    62030,
+    62031,
+    62032,
+    62033,
+    62034,
+    62035,
+    62036,
+    62037,
+    62038,
+    62039,
+    62040,
+    62041,
+    62042,
+    62043,
+    62044,
+    62045,
+    62046,
+    62047,
+    62048,
+    62049,
+    62050,
+    62051,
+    62052,
+    62053,
+    62054,
+    62055,
+    62056,
+    62057,
+    62058,
+    62059,
+    62060,
+    62061,
+    62062,
+    62063,
+    62064,
+    62065,
+    62066,
+    62067,
+    62068,
+    62069,
+    62070,
+    62071,
+    62072,
+    62073,
+    62074,
+    62075,
+    62076,
+    62077,
+    62078,
+    62079,
+    62080,
+    62081,
+    62082,
+    62083,
+    62084,
+    62085,
+    62086,
+    62087,
+    62088,
+    62089,
+    62090,
+    62091,
+    62092,
+    62093,
+    62094,
+    62095,
+    62096,
+    62097,
+    62098,
+    62099
+  ],
+  "sampling_seeds": [
+    63000,
+    63001,
+    63002,
+    63003,
+    63004,
+    63005,
+    63006,
+    63007,
+    63008,
+    63009,
+    63010,
+    63011,
+    63012,
+    63013,
+    63014,
+    63015
+  ],
+  "training_seed_overlap": false,
+  "parameters_retuned": false,
+  "amplitude_metric": "No pre-fault alarm; first post-fault pattern correct by t=600. Not 15%-early detection.",
+  "amplitude_ramp_s": 180,
+  "amplitude_fault_start_s": 360,
+  "amplitude_max_balance_residual_kpa": 6.394884621840902e-14,
+  "amplitude_groups": [
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "amplitude": 0.05,
+      "n": 100,
+      "correct": 2,
+      "ci95": [
+        0.00550196755016235,
+        0.07001179072854388
+      ],
+      "outcomes": {
+        "correct": 2,
+        "no_confirmation": 98
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "amplitude": 0.1,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "amplitude": 0.15,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "amplitude": 0.2,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 0.3,
+      "amplitude": 0.3,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "amplitude": 0.05,
+      "n": 100,
+      "correct": 46,
+      "ci95": [
+        0.36560808309024106,
+        0.5573513967663177
+      ],
+      "outcomes": {
+        "correct": 46,
+        "no_confirmation": 54
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "amplitude": 0.1,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "amplitude": 0.15,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "amplitude": 0.2,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 3.0,
+      "amplitude": 0.3,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "amplitude": 0.05,
+      "n": 100,
+      "correct": 40,
+      "ci95": [
+        0.3094012864324589,
+        0.4979974132089382
+      ],
+      "outcomes": {
+        "correct": 40,
+        "no_confirmation": 60
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "amplitude": 0.1,
+      "n": 100,
+      "correct": 99,
+      "ci95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "outcomes": {
+        "correct": 99,
+        "no_confirmation": 1
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "amplitude": 0.15,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "amplitude": 0.2,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "leak",
+      "sigma": 10.0,
+      "amplitude": 0.3,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "amplitude": 0.05,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "amplitude": 0.1,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "amplitude": 0.15,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "amplitude": 0.2,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 0.3,
+      "amplitude": 0.3,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "amplitude": 0.05,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "amplitude": 0.1,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "amplitude": 0.15,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "amplitude": 0.2,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 3.0,
+      "amplitude": 0.3,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "amplitude": 0.05,
+      "n": 100,
+      "correct": 22,
+      "ci95": [
+        0.150012823846054,
+        0.31070353514985793
+      ],
+      "outcomes": {
+        "correct": 22,
+        "no_confirmation": 78
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "amplitude": 0.1,
+      "n": 100,
+      "correct": 93,
+      "ci95": [
+        0.8625048526092651,
+        0.9656807389327273
+      ],
+      "outcomes": {
+        "correct": 93,
+        "no_confirmation": 7
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "amplitude": 0.15,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "amplitude": 0.2,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    },
+    {
+      "scene": "restriction",
+      "sigma": 10.0,
+      "amplitude": 0.3,
+      "n": 100,
+      "correct": 100,
+      "ci95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "outcomes": {
+        "correct": 100
+      }
+    }
+  ],
+  "sampling_groups": [
+    {
+      "scene": "leak",
+      "period": 1,
+      "unique_seeds": 16,
+      "replays": 16,
+      "early_percent": 100.0,
+      "early_phase_range": [
+        100.0,
+        100.0
+      ],
+      "phase_rates": [
+        100.0
+      ],
+      "pressure_reads_median": 471.0,
+      "pressure_reads_iqr": [
+        471.0,
+        471.0
+      ],
+      "lead_median_s": 52.5,
+      "lead_iqr_s": [
+        48.75,
+        54.0
+      ]
+    },
+    {
+      "scene": "leak",
+      "period": 2,
+      "unique_seeds": 16,
+      "replays": 32,
+      "early_percent": 100.0,
+      "early_phase_range": [
+        100.0,
+        100.0
+      ],
+      "phase_rates": [
+        100.0,
+        100.0
+      ],
+      "pressure_reads_median": 402.5,
+      "pressure_reads_iqr": [
+        388.25,
+        413.5
+      ],
+      "lead_median_s": 52.5,
+      "lead_iqr_s": [
+        48.75,
+        54.0
+      ]
+    },
+    {
+      "scene": "leak",
+      "period": 5,
+      "unique_seeds": 16,
+      "replays": 80,
+      "early_percent": 100.0,
+      "early_phase_range": [
+        100.0,
+        100.0
+      ],
+      "phase_rates": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "pressure_reads_median": 330.2,
+      "pressure_reads_iqr": [
+        305.2,
+        348.6
+      ],
+      "lead_median_s": 51.5,
+      "lead_iqr_s": [
+        48.75,
+        53.65
+      ]
+    },
+    {
+      "scene": "fast_leak_switch",
+      "period": 1,
+      "unique_seeds": 16,
+      "replays": 16,
+      "early_percent": 100.0,
+      "early_phase_range": [
+        100.0,
+        100.0
+      ],
+      "phase_rates": [
+        100.0
+      ],
+      "pressure_reads_median": 471.0,
+      "pressure_reads_iqr": [
+        471.0,
+        471.0
+      ],
+      "lead_median_s": 7.5,
+      "lead_iqr_s": [
+        6.75,
+        8.25
+      ]
+    },
+    {
+      "scene": "fast_leak_switch",
+      "period": 2,
+      "unique_seeds": 16,
+      "replays": 32,
+      "early_percent": 100.0,
+      "early_phase_range": [
+        100.0,
+        100.0
+      ],
+      "phase_rates": [
+        100.0,
+        100.0
+      ],
+      "pressure_reads_median": 445.5,
+      "pressure_reads_iqr": [
+        445.5,
+        453.0
+      ],
+      "lead_median_s": 7.5,
+      "lead_iqr_s": [
+        6.75,
+        8.25
+      ]
+    },
+    {
+      "scene": "fast_leak_switch",
+      "period": 5,
+      "unique_seeds": 16,
+      "replays": 80,
+      "early_percent": 100.0,
+      "early_phase_range": [
+        100.0,
+        100.0
+      ],
+      "phase_rates": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "pressure_reads_median": 431.0,
+      "pressure_reads_iqr": [
+        429.0,
+        434.8
+      ],
+      "lead_median_s": 7.5,
+      "lead_iqr_s": [
+        6.75,
+        8.2
+      ]
+    }
+  ],
+  "amplitude_healthy_controls": [
+    {
+      "sigma": 0.3,
+      "n": 100,
+      "false_trials": 0,
+      "post360_false_trials": 0
+    },
+    {
+      "sigma": 3.0,
+      "n": 100,
+      "false_trials": 0,
+      "post360_false_trials": 0
+    },
+    {
+      "sigma": 10.0,
+      "n": 100,
+      "false_trials": 0,
+      "post360_false_trials": 0
+    }
+  ],
+  "dependencies": "Same seeds paired across amplitudes, scenes, sigma. Waveform seeds reused for amplitudes. Sampling phases share identical observation traces; never pool as independent seeds.",
+  "sampling_metric": "15%-early rule; phase range, not independent-repeat confidence intervals. Read counts are not energy measurements.",
+  "seconds": 58.07,
+  "source_sha256": {
+    "diagnosis_feasibility.py": "e427fd9af502a0fe633a117fdce34befbff367c54540fa2e7514824496653656",
+    "review_diagnosis.py": "1f5ccb1904ae96ad6b1bb3c525cdb45069122bd66e0926e24baf0ca6f620cb1e",
+    "review_hybrid_sampling.py": "58be71a46e9eba21f13d1ecc7006d8e8ce0ee15a7845d4b2534be32bf2a33437",
+    "review_operating_reference.py": "c817861ffd41f573deb5888ab517f300b0b0e33a39cf1ed18a655638e5dc0ae0",
+    "sampling_quality_runtime.py": "fefc111d7feabff645a1e1af7510ea5423e423017c82d500759e616508cf5917"
+  }
+}
