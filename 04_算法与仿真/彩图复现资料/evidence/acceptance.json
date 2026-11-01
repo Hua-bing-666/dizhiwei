@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "figure_count": 7,
+  "independent_hydraulic_replay": true,
+  "strict_leak_load_identity": true,
+  "comparison_groups_recounted": 9,
+  "amplitude_cells_recounted": 30,
+  "ecdf_groups_recounted": 6,
+  "phase_aggregation_checked": true,
+  "raw_seed": 10300,
+  "all_figures_600_dpi": true,
+  "pdf_fonts_embedded": true,
+  "svg_text_editable": true,
+  "physical_data": false,
+  "scope": "Numerical and figure checks; historical Word layout checks are archived"
+}
